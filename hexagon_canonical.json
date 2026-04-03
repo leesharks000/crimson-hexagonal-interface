@@ -11027,6 +11027,86 @@
       "status": "RATIFIED",
       "created": "2026-04-03",
       "note": "Thousand Worlds extends Ezekiel — ∂(aorist) logic supplements φ-sealing"
+    },
+    {
+      "id": "rel.013",
+      "from": "sp01",
+      "to": "r05",
+      "type": "wounds",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "CTI_WOUND wounds Semantic Economy — taxonomic wound absorbs extraction diagnosis"
+    },
+    {
+      "id": "rel.014",
+      "from": "r13",
+      "to": "r01",
+      "type": "fulfills",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "Ezekiel retrocausally fulfills Sappho — φ∘Ρ (Retrocausal Hall seed: r.01+r.13)"
+    },
+    {
+      "id": "rel.015",
+      "from": "sp04",
+      "to": "r07",
+      "type": "canonizes",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "Mandala canonizes through Revelation — κρίσις ↔ Ω-circuit; judgment terminus"
+    },
+    {
+      "id": "rel.016",
+      "from": "r19",
+      "to": "r02",
+      "type": "derives",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "Macro-Maquette derives from Borges — MPM-01 Hyperbolic = Borges formalization"
+    },
+    {
+      "id": "rel.017",
+      "from": "r19",
+      "to": "sp01",
+      "type": "derives",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "Macro-Maquette derives from CTI_WOUND — MPM-03 Catastrophe = CTI_WOUND formalization"
+    },
+    {
+      "id": "rel.018",
+      "from": "r05",
+      "to": "r04",
+      "type": "critiques",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "Semantic Economy critiques Dove — LOS counter-operations test gift-logic against extraction"
+    },
+    {
+      "id": "rel.019",
+      "from": "sp04",
+      "to": "r11",
+      "type": "routes",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "Mandala routes judgment to Assembly — κρίσις terminus feeds attestation quorum"
+    },
+    {
+      "id": "rel.020",
+      "from": "r01",
+      "to": "r12",
+      "type": "shadows",
+      "author": "Lee Sharks",
+      "status": "PROVISIONAL",
+      "created": "2026-04-03",
+      "note": "Sappho shadows through Break Room — S(σ_S)=Silence; portal to Lunar Arm"
     }
   ]
 }
