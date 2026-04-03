@@ -448,11 +448,6 @@
   "edges": [
     {
       "from": "r11",
-      "to": "r20",
-      "type": "governs"
-    },
-    {
-      "from": "r11",
       "to": "r09",
       "type": "adjacent"
     },
@@ -518,11 +513,6 @@
     },
     {
       "from": "r07",
-      "to": "r13",
-      "type": "fulfills"
-    },
-    {
-      "from": "r07",
       "to": "r21",
       "type": "adjacent"
     },
@@ -540,11 +530,6 @@
       "from": "r01",
       "to": "r12",
       "type": "adjacent"
-    },
-    {
-      "from": "r12",
-      "to": "sp01",
-      "type": "routes"
     },
     {
       "from": "sp01",
@@ -567,19 +552,9 @@
       "type": "adjacent"
     },
     {
-      "from": "r19",
-      "to": "r08",
-      "type": "routes"
-    },
-    {
       "from": "r16",
       "to": "r17",
       "type": "adjacent"
-    },
-    {
-      "from": "sp03",
-      "to": "r02",
-      "type": "derives"
     },
     {
       "from": "sp03",
@@ -605,11 +580,6 @@
       "from": "sp04",
       "to": "r21",
       "type": "adjacent"
-    },
-    {
-      "from": "r04",
-      "to": "n02",
-      "type": "seeds"
     },
     {
       "from": "n02",
@@ -10831,7 +10801,7 @@
       "id": "D08"
     },
     {
-      "name": "Preston Wells",
+      "name": "Sparrow Wells",
       "role": "Studio",
       "desc": "Infinite center matrix.",
       "id": "D09"
@@ -10870,5 +10840,67 @@
     "total_deposits": 455,
     "last_updated": "2026-03-31",
     "canonical_version": "1.0"
-  }
+  },
+  "relations": [
+    {
+      "id": "rel.001",
+      "from": "r11",
+      "to": "r20",
+      "type": "governs",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Migrated from edges array (workplan item 9)"
+    },
+    {
+      "id": "rel.002",
+      "from": "r07",
+      "to": "r13",
+      "type": "fulfills",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Migrated from edges array (workplan item 9)"
+    },
+    {
+      "id": "rel.003",
+      "from": "r12",
+      "to": "sp01",
+      "type": "routes",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Migrated from edges array (workplan item 9)"
+    },
+    {
+      "id": "rel.004",
+      "from": "r19",
+      "to": "r08",
+      "type": "routes",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Migrated from edges array (workplan item 9)"
+    },
+    {
+      "id": "rel.005",
+      "from": "sp03",
+      "to": "r02",
+      "type": "derives",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Migrated from edges array (workplan item 9)"
+    },
+    {
+      "id": "rel.006",
+      "from": "r04",
+      "to": "n02",
+      "type": "seeds",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Migrated from edges array (workplan item 9)"
+    }
+  ]
 }
