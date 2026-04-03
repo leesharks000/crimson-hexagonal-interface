@@ -68,6 +68,86 @@ function normalizeRelation(rel) {
   return { id: rel.id || `${rel.from}-${rel.type}-${rel.to}`, from: rel.from, to: rel.to, type: rel.type || "relates_to", status: rel.status || "RATIFIED" };
 }
 
+// ─── Zenodo Live Reader ───
+
+function doiToRecordId(doi) {
+  if (!doi) return null;
+  const parts = doi.split(".");
+  return parts[parts.length - 1];
+}
+
+async function fetchZenodoMarkdown(doi) {
+  const recordId = doiToRecordId(doi);
+  if (!recordId) throw new Error("No DOI");
+  const rec = await fetch(`https://zenodo.org/api/records/${recordId}`).then(r => r.json());
+  const files = rec.files || [];
+  // Prefer .md, fall back to .txt
+  const mdFile = files.find(f => f.key.endsWith(".md")) || files.find(f => f.key.endsWith(".txt"));
+  if (!mdFile) return { files, text: null, title: rec.metadata?.title || "" };
+  const text = await fetch(mdFile.links.self).then(r => r.text());
+  return { files, text, title: rec.metadata?.title || "", filename: mdFile.key, size: mdFile.size };
+}
+
+function MdRenderer({ text, mc }) {
+  if (!text) return null;
+  const lines = text.split("\n");
+  const elements = [];
+  let i = 0;
+  let inCode = false;
+  let codeLines = [];
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Code blocks
+    if (line.startsWith("```")) {
+      if (inCode) {
+        elements.push(<pre key={i} style={{ fontSize: 9, fontFamily: "monospace", color: "#5a6a4a", background: "#060a06", padding: "8px 10px", borderLeft: `2px solid ${mc}22`, overflowX: "auto", margin: "6px 0", whiteSpace: "pre-wrap", wordBreak: "break-word" }}>{codeLines.join("\n")}</pre>);
+        codeLines = []; inCode = false;
+      } else { inCode = true; }
+      i++; continue;
+    }
+    if (inCode) { codeLines.push(line); i++; continue; }
+
+    // Headings
+    if (line.startsWith("# ")) { elements.push(<div key={i} style={{ fontSize: 15, fontWeight: 300, letterSpacing: 2, color: mc, fontFamily: "Georgia,serif", margin: "14px 0 6px 0" }}>{line.slice(2)}</div>); i++; continue; }
+    if (line.startsWith("## ")) { elements.push(<div key={i} style={{ fontSize: 12, fontWeight: 300, letterSpacing: 1, color: mc, fontFamily: "Georgia,serif", margin: "12px 0 4px 0" }}>{line.slice(3)}</div>); i++; continue; }
+    if (line.startsWith("### ")) { elements.push(<div key={i} style={{ fontSize: 11, fontWeight: 400, letterSpacing: 1, color: mc + "cc", fontFamily: "Georgia,serif", margin: "10px 0 3px 0" }}>{line.slice(4)}</div>); i++; continue; }
+
+    // Horizontal rule
+    if (/^[-*_]{3,}\s*$/.test(line)) { elements.push(<hr key={i} style={{ border: "none", borderTop: `1px solid ${mc}22`, margin: "8px 0" }} />); i++; continue; }
+
+    // Bold/italic inline (simple)
+    if (line.trim() === "") { elements.push(<div key={i} style={{ height: 6 }} />); i++; continue; }
+
+    // Regular paragraph
+    const rendered = line
+      .replace(/\*\*(.+?)\*\*/g, "⟪b⟫$1⟪/b⟫")
+      .replace(/\*(.+?)\*/g, "⟪i⟫$1⟪/i⟫")
+      .replace(/`(.+?)`/g, "⟪c⟫$1⟪/c⟫");
+
+    const parts = rendered.split(/⟪\/?[bic]⟫/);
+    const tags = [...rendered.matchAll(/⟪(\/?[bic])⟫/g)].map(m => m[1]);
+
+    const spans = [];
+    let tagIdx = 0;
+    for (let p = 0; p < parts.length; p++) {
+      if (parts[p]) {
+        const isBold = tagIdx > 0 && tags[tagIdx - 1] === "b";
+        const isItalic = tagIdx > 0 && tags[tagIdx - 1] === "i";
+        const isCode = tagIdx > 0 && tags[tagIdx - 1] === "c";
+        spans.push(<span key={p} style={{ fontWeight: isBold ? 500 : "normal", fontStyle: isItalic ? "italic" : "normal", fontFamily: isCode ? "monospace" : "inherit", background: isCode ? "#060a06" : "transparent", padding: isCode ? "0 3px" : 0, color: isBold ? mc : isCode ? "#7a8a5a" : "inherit" }}>{parts[p]}</span>);
+      }
+      if (tagIdx < tags.length) tagIdx++;
+    }
+
+    elements.push(<div key={i} style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.6, margin: "2px 0" }}>{spans.length > 0 ? spans : line}</div>);
+    i++;
+  }
+
+  return <div>{elements}</div>;
+}
+
 // ─── LP State Engine ───
 function initLP() { return { σ: "—", ε: 1.0, Ξ: [], ψ: 0 }; }
 
@@ -173,15 +253,33 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc }) {
   );
 }
 
-function DocPanel({ doc, rooms, onRoom, mc, isMobile }) {
+function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead }) {
+  const hasContent = readState?.doi === doc.doi && readState?.text;
+  const isLoading = readState?.doi === doc.doi && readState?.loading;
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-      <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>DOCUMENT</div>
-      <h2 style={{ fontSize: isMobile ? 14 : 15, fontWeight: 300, color: mc, margin: "0 0 8px 0", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{doc.t}</h2>
-      <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 }}><StatusBadge s={doc.s} /><span style={{ fontSize: 9, color: "#3a4a3a" }}>{doc.d}</span></div>
-      <div style={{ fontSize: 10, color: "#5a6a4a", marginBottom: 6 }}>{(doc.c || []).join(" · ")}</div>
-      {doc.e && <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.5, marginBottom: 10, padding: "6px 8px", background: "#080c08", borderLeft: `2px solid ${mc}22` }}>{doc.e.length > (isMobile ? 320 : 500) ? doc.e.slice(0, isMobile ? 317 : 497) + "..." : doc.e}</div>}
-      {doc.r.length > 0 && <div><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>ROOMS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{doc.r.map((rid) => { const rm = rooms.find((r) => r.id === rid); return <span key={rid} onClick={() => onRoom(rid)} style={{ fontSize: 9, padding: "1px 5px", background: "#0a0f0a", border: `1px solid ${(CAT_COLORS[rm?.cat] || "#333")}44`, color: CAT_COLORS[rm?.cat] || "#555", cursor: "pointer", fontFamily: "monospace" }}>{rm?.name || rid}</span>; })}</div></div>}
+      {!hasContent && <>
+        <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>DOCUMENT</div>
+        <h2 style={{ fontSize: isMobile ? 14 : 15, fontWeight: 300, color: mc, margin: "0 0 8px 0", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{doc.t}</h2>
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 }}><StatusBadge s={doc.s} /><span style={{ fontSize: 9, color: "#3a4a3a" }}>{doc.d}</span></div>
+        <div style={{ fontSize: 10, color: "#5a6a4a", marginBottom: 6 }}>{(doc.c || []).join(" · ")}</div>
+        {doc.e && <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.5, marginBottom: 10, padding: "6px 8px", background: "#080c08", borderLeft: `2px solid ${mc}22` }}>{doc.e.length > (isMobile ? 320 : 500) ? doc.e.slice(0, isMobile ? 317 : 497) + "..." : doc.e}</div>}
+        {doc.doi && (
+          <button onClick={() => onRead(doc.doi)} disabled={isLoading} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: isLoading ? "wait" : "pointer", fontFamily: "monospace", letterSpacing: 1, marginBottom: 10, width: "100%" }}>
+            {isLoading ? "FETCHING FROM ZENODO…" : "READ FULL TEXT"}
+          </button>
+        )}
+        {readState?.error && readState.doi === doc.doi && <div style={{ fontSize: 9, color: "#9f5a5a", marginBottom: 8 }}>{readState.error}</div>}
+        {doc.r.length > 0 && <div><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>ROOMS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{doc.r.map((rid) => { const rm = rooms.find((r) => r.id === rid); return <span key={rid} onClick={() => onRoom(rid)} style={{ fontSize: 9, padding: "1px 5px", background: "#0a0f0a", border: `1px solid ${(CAT_COLORS[rm?.cat] || "#333")}44`, color: CAT_COLORS[rm?.cat] || "#555", cursor: "pointer", fontFamily: "monospace" }}>{rm?.name || rid}</span>; })}</div></div>}
+      </>}
+      {hasContent && <>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+          <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>ZENODO · {readState.filename}</div>
+          <span onClick={() => onRead(null)} style={{ fontSize: 8, color: "#5a5a3a", cursor: "pointer", fontFamily: "monospace", padding: "1px 5px", border: "1px solid #1a2a1a" }}>CLOSE</span>
+        </div>
+        <div style={{ fontSize: 8, color: "#3a4a3a", marginBottom: 6, fontFamily: "monospace" }}>{readState.doi} · {(readState.size / 1024).toFixed(1)}KB</div>
+        <MdRenderer text={readState.text} mc={mc} />
+      </>}
     </div>
   );
 }
@@ -238,8 +336,30 @@ export default function HexagonInterfaceResponsive() {
   const [mantle, setMantle] = useState(null);
   const [arkMode, setArkMode] = useState(null);
   const tTimer = useRef(null);
+  // Reading state
+  const [readState, setReadState] = useState({ doi: null, text: null, loading: false, error: null, filename: null, size: 0 });
 
   const addLog = useCallback((msg, type = "sys") => { setLog((p) => [...p.slice(-50), { msg, type, t: new Date().toISOString().slice(11, 19) }]); }, []);
+
+  const handleRead = useCallback(async (doi) => {
+    if (!doi) { setReadState({ doi: null, text: null, loading: false, error: null, filename: null, size: 0 }); return; }
+    setReadState({ doi, text: null, loading: true, error: null, filename: null, size: 0 });
+    addLog(`ZENODO: fetching ${doi}`, "sys");
+    try {
+      const result = await fetchZenodoMarkdown(doi);
+      if (result.text) {
+        setReadState({ doi, text: result.text, loading: false, error: null, filename: result.filename, size: result.size });
+        addLog(`ZENODO: ${result.filename} (${(result.size / 1024).toFixed(1)}KB)`, "sys");
+      } else {
+        const fileList = result.files.map(f => f.key).join(", ");
+        setReadState({ doi, text: null, loading: false, error: `No .md file found. Available: ${fileList || "none"}`, filename: null, size: 0 });
+        addLog(`ZENODO: no markdown — files: ${fileList}`, "err");
+      }
+    } catch (e) {
+      setReadState({ doi, text: null, loading: false, error: e.message, filename: null, size: 0 });
+      addLog(`ZENODO error: ${e.message}`, "err");
+    }
+  }, [addLog]);
 
   const executeTraversal = useCallback((room) => {
     if (!room.lp_program || room.lp_program.length === 0) { addLog(`→ ${room.name} (no LP program)`, "traverse"); return; }
@@ -394,7 +514,7 @@ export default function HexagonInterfaceResponsive() {
 
         {/* Detail panel */}
         <div style={{ width: isMobile ? "100%" : 340, minWidth: 0, height: isMobile ? "34dvh" : "100%", minHeight: isMobile ? 220 : 0, maxHeight: isMobile ? "42dvh" : "none", borderLeft: isMobile ? "none" : "1px solid #0f1a0f", borderTop: isMobile ? "1px solid #0f1a0f" : "none", overflow: "hidden", flexShrink: 0, background: "#0a0d12" }}>
-          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={(d) => setSelDoc(d)} isMobile={isMobile} mc={mc} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : "SELECT A ROOM"}</div><div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>{view === "DEPOSIT" ? "Use the left panel to establish the first Gravity Well seam." : isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon on the map to execute its LP traversal grammar."}</div></div>}
+          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={(d) => setSelDoc(d)} isMobile={isMobile} mc={mc} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : "SELECT A ROOM"}</div><div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>{view === "DEPOSIT" ? "Use the left panel to establish the first Gravity Well seam." : isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon on the map to execute its LP traversal grammar."}</div></div>}
         </div>
       </div>
 

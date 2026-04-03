@@ -241,7 +241,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 
 | Priority | Task | Depends on | Status |
 |---|---|---|---|
-| 1 | Full-text document rendering (fetch markdown from Zenodo files API) | Zenodo file access | OPEN |
+| 1 | Full-text document rendering (fetch markdown from Zenodo files API) | Zenodo file access | ✓ DONE |
 | 2 | Citation chain navigation (document → relations → linked documents) | Typed relations in data | OPEN |
 | 3 | Trail builder (save ordered reading paths, name them, share them) | Trail object type | OPEN |
 | 4 | Side-by-side comparison (two documents from different rooms) | Reading pane | OPEN |
@@ -510,7 +510,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 12. JSX reads canonical JSON instead of embedding transformed data copy — DONE 2026-04-03
 13. Room entry executes LP traversal grammar (ACTIVATE → SET_LOGOS → ROTATE → RENDER) — DONE 2026-04-03 (LP programs for all 26 rooms in canonical JSON; animated traversal engine; LP state tuple ⟨σ,ε,Ξ,ψ⟩ live in sidecar; Ark mode register colors shift per room)
-14. Full-text document rendering in Library
+14. Full-text document rendering in Library — DONE 2026-04-03 (live Zenodo fetch: DOI → record API → .md file → rendered in reading pane; markdown renderer with headers, code blocks, bold/italic, HR)
 15. Pending actions panel in Dashboard
 16. **Dream system** — archive consolidation engine (Pattern 1)
 17. **Mode as dead code elimination** — command registration per mode (Pattern 3)
