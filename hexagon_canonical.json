@@ -10838,8 +10838,49 @@
     "constitution_doi": "10.5281/zenodo.19355075",
     "se_constitution_doi": "10.5281/zenodo.18320411",
     "total_deposits": 455,
-    "last_updated": "2026-03-31",
-    "canonical_version": "1.0"
+    "last_updated": "2026-04-03",
+    "canonical_version": "1.0",
+    "ratified_relation_types": {
+      "topological": [
+        "adjacent"
+      ],
+      "argumentative": [
+        "canonizes",
+        "cites",
+        "critiques",
+        "derives",
+        "extends",
+        "fulfills",
+        "governs",
+        "mirrors",
+        "responds_to",
+        "routes",
+        "seeds",
+        "shadows",
+        "supports",
+        "supersedes",
+        "wounds"
+      ],
+      "infrastructure": [
+        "custody_lock"
+      ],
+      "note": "Ratified 2026-04-03. Provisional until prototype deployment allows empirical revision."
+    },
+    "mode_mapping": {
+      "ANALYTIC": [
+        "MAP",
+        "READ",
+        "TRACE"
+      ],
+      "OPERATIVE": [
+        "WORK",
+        "ORACLE"
+      ],
+      "AUDIT": [
+        "ASSEMBLY"
+      ],
+      "note": "Ratified 2026-04-03. 6 constitutional -> 3 runtime. Provisional until prototype deployment."
+    }
   },
   "relations": [
     {

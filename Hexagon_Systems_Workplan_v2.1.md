@@ -137,9 +137,9 @@ Before building any more surface, stabilize the data layer.
 
 | Issue | Status | Priority |
 |---|---|---|
-| D09 reads "Preston Wells" — should be "Sparrow Wells" | OPEN | Immediate |
-| Typed relations mixed into edges array — Constitution says these should be separate first-class objects | OPEN | Near-term |
-| Relation type lists don't align across Constitution, Event Schema, and canonical JSON | OPEN | Near-term |
+| D09 reads "Preston Wells" — should be "Sparrow Wells" | DONE (2026-04-03) | Immediate |
+| Typed relations mixed into edges array — Constitution says these should be separate first-class objects | DONE (2026-04-03) | Near-term |
+| Relation type lists don't align across Constitution, Event Schema, and canonical JSON | RATIFIED (2026-04-03, provisional) | Near-term |
 | JSX embeds transformed copy of data instead of reading canonical JSON | OPEN | Near-term |
 | No placeholder structures for operators, institutions, trails, annotations, proposals, witness actions | OPEN | Medium-term |
 | Room categories ("ext", "special") vs. Constitution's Layer 0 immutability claim needs resolution | OPEN | Medium-term |
@@ -193,7 +193,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | OPERATIVE | WORK, ORACLE | Generation, invocation, transformation |
 | AUDIT | ASSEMBLY | Governance, witness, promotion |
 
-This mapping must be ratified and added to the Constitution as a formal bridge section. Without it, the two documents speak different languages about modes.
+**RATIFIED 2026-04-03 (provisional).** This mapping is ratified for build purposes. Provisional until prototype deployment allows empirical revision. To be added to the Constitution as a formal bridge section once the prototype confirms the mapping works in practice.
 
 ---
 
@@ -501,10 +501,10 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 ### Immediate (current)
 
-8. Fix D09 "Preston Wells" → "Sparrow Wells" in canonical JSON
-9. Separate typed relations from topological edges in canonical JSON (relations array with provenance fields)
-10. Ratify canonical union relation type list (16 types)
-11. Ratify the 6→3 mode mapping (Constitutional → Runtime bridge)
+8. Fix D09 "Preston Wells" → "Sparrow Wells" in canonical JSON — DONE 2026-04-03
+9. Separate typed relations from topological edges in canonical JSON — DONE 2026-04-03 (relations array with provenance fields)
+10. Ratify canonical union relation type list (16+1 types) — RATIFIED 2026-04-03, provisional
+11. Ratify the 6→3 mode mapping (Constitutional → Runtime bridge) — RATIFIED 2026-04-03, provisional
 
 ### Near-term (April 2026)
 
