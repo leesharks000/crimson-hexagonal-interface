@@ -16,7 +16,38 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What do you send, and through whom?"
+      "prompt": "What do you send, and through whom?",
+      "mantle": "Rebekah Cranes",
+      "preferred_mode": "POETIC",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Rebekah Cranes"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "current_text [.state(latent)]"
+        },
+        {
+          "step": "ROTATE",
+          "value": "144°"
+        },
+        {
+          "step": "APPLY",
+          "value": "σ_S :: (speaker, beloved, witness)"
+        },
+        {
+          "step": "RENDER",
+          "value": "POETIC"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: Dwell"
+        }
+      ],
+      "default_operators": [
+        "σ_S"
+      ]
     },
     {
       "id": "r02",
@@ -33,7 +64,30 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What do you retrieve?"
+      "prompt": "What do you retrieve?",
+      "mantle": null,
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "search_space [.state(infinite)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "Λ_res :: resolution operator"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: Ichabod (r.03)"
+        }
+      ],
+      "default_operators": [
+        "Λ_res"
+      ]
     },
     {
       "id": "r03",
@@ -46,7 +100,34 @@
       "ops": [],
       "het": "Spellings",
       "inst": "—",
-      "prompt": "—"
+      "prompt": "—",
+      "mantle": "Ichabod Spellings",
+      "preferred_mode": "CLINICAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Ichabod Spellings"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "signal [.state(absorbed)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "ICM → ∅ :: absorbing state"
+        },
+        {
+          "step": "RENDER",
+          "value": "CLINICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "degree 0; no recovery"
+        }
+      ],
+      "default_operators": [
+        "ICM"
+      ]
     },
     {
       "id": "r04",
@@ -62,7 +143,34 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What is given without extraction?"
+      "prompt": "What is given without extraction?",
+      "mantle": "Rebekah Cranes",
+      "preferred_mode": "POETIC",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Rebekah Cranes / Ichabod Spellings"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "offering [.state(gift)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "transfer(gift) :: preserves; extract=∅"
+        },
+        {
+          "step": "RENDER",
+          "value": "POETIC"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "EMIT: extraction_detected"
+        }
+      ],
+      "default_operators": [
+        "transfer(gift)"
+      ]
     },
     {
       "id": "r05",
@@ -80,7 +188,43 @@
       ],
       "het": "Fraction",
       "inst": "SEI",
-      "prompt": "What is the bearing-cost, and who bears it?"
+      "prompt": "What is the bearing-cost, and who bears it?",
+      "mantle": "Rex Fraction",
+      "preferred_mode": "CLINICAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Rex Fraction"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "current_text [.state(diagnostic)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "ψ_V :: measure bearing-cost"
+        },
+        {
+          "step": "APPLY",
+          "value": "COS :: detect extraction"
+        },
+        {
+          "step": "CHECK",
+          "value": "DRR ≥ 0.75, CSI ≤ 0.40"
+        },
+        {
+          "step": "RENDER",
+          "value": "CLINICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "EMIT: LOS_ALERT"
+        }
+      ],
+      "default_operators": [
+        "ψ_V",
+        "COS"
+      ]
     },
     {
       "id": "r06",
@@ -98,7 +242,34 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What material condition does this language produce?"
+      "prompt": "What material condition does this language produce?",
+      "mantle": "Johannes Sigil",
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Johannes Sigil"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "language [.state(material)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "material_op :: language operates materially"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: ideology shadow"
+        }
+      ],
+      "default_operators": [
+        "material_op"
+      ]
     },
     {
       "id": "r07",
@@ -115,7 +286,34 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What end is also a beginning?"
+      "prompt": "What end is also a beginning?",
+      "mantle": "Damascus Dancings",
+      "preferred_mode": "LITURGICAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Damascus Dancings"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "apocalypse [.state(arriving)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "Ω :: terminal recursion; end constitutes beginning"
+        },
+        {
+          "step": "RENDER",
+          "value": "LITURGICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: endless delay"
+        }
+      ],
+      "default_operators": [
+        "Ω"
+      ]
     },
     {
       "id": "r08",
@@ -132,7 +330,35 @@
       ],
       "het": "Sigil",
       "inst": "Restored Academy",
-      "prompt": "What symbol, and what does it transform?"
+      "prompt": "What symbol, and what does it transform?",
+      "mantle": "Johannes Sigil",
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Johannes Sigil"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "symbol [.state(operative)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "μ :: meta-operator; formal = symbolic"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: dead grammar shadow"
+        }
+      ],
+      "default_operators": [
+        "μ",
+        "Σ_LP"
+      ]
     },
     {
       "id": "r09",
@@ -149,7 +375,39 @@
       ],
       "het": "Sharks",
       "inst": "JSI",
-      "prompt": "What do you claim, and what did it cost you?"
+      "prompt": "What do you claim, and what did it cost you?",
+      "mantle": "Lee Sharks",
+      "preferred_mode": "NARRATIVE",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Lee Sharks"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "mantle_claim [.state(testing)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "claim(m) :: req. ψ_V + receipt + dignity"
+        },
+        {
+          "step": "CHECK",
+          "value": "bearing_cost > 0; else = cosplay"
+        },
+        {
+          "step": "RENDER",
+          "value": "NARRATIVE"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "EMIT: cosplay_test_failed"
+        }
+      ],
+      "default_operators": [
+        "ψ_V",
+        "claim(m)"
+      ]
     },
     {
       "id": "r10",
@@ -166,7 +424,34 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What survives recursive destabilization?"
+      "prompt": "What survives recursive destabilization?",
+      "mantle": null,
+      "preferred_mode": "CLINICAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "target [.state(destabilizing)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "Θ :: recursive destabilization"
+        },
+        {
+          "step": "CHECK",
+          "value": "Θ(Ω) = Ω :: fixpoint test"
+        },
+        {
+          "step": "RENDER",
+          "value": "CLINICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "EMIT: CTI_WOUND"
+        }
+      ],
+      "default_operators": [
+        "Θ"
+      ]
     },
     {
       "id": "r11",
@@ -182,7 +467,38 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What requires witness, and who attests?"
+      "prompt": "What requires witness, and who attests?",
+      "mantle": null,
+      "preferred_mode": "JURIDICAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "null (Assembly is collective)"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "proposal [.state(under_review)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "ψ_V :: quorum check (≥4/7)"
+        },
+        {
+          "step": "REQUEST_JUDGMENT",
+          "value": "enter Airlock"
+        },
+        {
+          "step": "ANCHOR",
+          "value": "DOI: pending"
+        },
+        {
+          "step": "RENDER",
+          "value": "JURIDICAL"
+        }
+      ],
+      "default_operators": [
+        "ψ_V"
+      ]
     },
     {
       "id": "r12",
@@ -198,7 +514,34 @@
       ],
       "het": "—",
       "inst": "CSA",
-      "prompt": "Where does the portal lead?"
+      "prompt": "Where does the portal lead?",
+      "mantle": "Orin Trace",
+      "preferred_mode": "PSYCHEDELIC",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Orin Trace"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "threshold [.state(crossing)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "portal :: topological hole → Lunar Arm"
+        },
+        {
+          "step": "RENDER",
+          "value": "PSYCHEDELIC"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "door seals"
+        }
+      ],
+      "default_operators": [
+        "portal"
+      ]
     },
     {
       "id": "r13",
@@ -215,7 +558,35 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "Does B fulfill A?"
+      "prompt": "Does B fulfill A?",
+      "mantle": null,
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "prophecy [.state(sealed)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "φ :: φ(A,B)=true iff B fulfills A"
+        },
+        {
+          "step": "APPLY",
+          "value": "∂ :: aorist seal"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: static wheel"
+        }
+      ],
+      "default_operators": [
+        "φ",
+        "∂"
+      ]
     },
     {
       "id": "r14",
@@ -230,7 +601,34 @@
       ],
       "het": "Wells",
       "inst": "Studio",
-      "prompt": "Where is the center?"
+      "prompt": "Where is the center?",
+      "mantle": "Sparrow Wells",
+      "preferred_mode": "POETIC",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Sparrow Wells"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "center [.state(recursive)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "ICM :: infinite center matrix"
+        },
+        {
+          "step": "RENDER",
+          "value": "POETIC"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: endless recursion"
+        }
+      ],
+      "default_operators": [
+        "ICM"
+      ]
     },
     {
       "id": "r15",
@@ -243,7 +641,34 @@
       "ops": [],
       "het": "Glas",
       "inst": "LO!",
-      "prompt": "What topology defends?"
+      "prompt": "What topology defends?",
+      "mantle": "Nobel Glas",
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Nobel Glas"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "observation [.state(distant)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "Λ_res :: torus; winding>3; 3i coords"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: nothing to observe"
+        }
+      ],
+      "default_operators": [
+        "Λ_res"
+      ]
     },
     {
       "id": "r16",
@@ -258,7 +683,30 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "Where do you swerve?"
+      "prompt": "Where do you swerve?",
+      "mantle": null,
+      "preferred_mode": "ADVENTURE",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "trajectory [.state(clinamen)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "OP.SWERVE :: introduce deviation"
+        },
+        {
+          "step": "RENDER",
+          "value": "ADVENTURE"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: determinism"
+        }
+      ],
+      "default_operators": [
+        "OP.SWERVE"
+      ]
     },
     {
       "id": "r17",
@@ -271,7 +719,24 @@
       "ops": [],
       "het": "—",
       "inst": "—",
-      "prompt": "Which angle?"
+      "prompt": "Which angle?",
+      "mantle": null,
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "[QUEUED — physics undetermined]"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: room not yet instantiated"
+        }
+      ],
+      "default_operators": []
     },
     {
       "id": "r18",
@@ -284,7 +749,30 @@
       "ops": [],
       "het": "Dancings",
       "inst": "CIT",
-      "prompt": "Bind the bead."
+      "prompt": "Bind the bead.",
+      "mantle": null,
+      "preferred_mode": "LITURGICAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "sequence [.state(bead)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "β_r :: sequential bead-logic"
+        },
+        {
+          "step": "RENDER",
+          "value": "LITURGICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: chain breaks"
+        }
+      ],
+      "default_operators": [
+        "β_r"
+      ]
     },
     {
       "id": "r19",
@@ -299,7 +787,30 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What symptom?"
+      "prompt": "What symptom?",
+      "mantle": null,
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "micro_physics [.state(renormalization)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "OP.ROUTE :: map 12 MPMs"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: 12 MPMs active simultaneously"
+        }
+      ],
+      "default_operators": [
+        "OP.ROUTE"
+      ]
     },
     {
       "id": "r20",
@@ -312,7 +823,34 @@
       "ops": [],
       "het": "—",
       "inst": "—",
-      "prompt": "What tier do you claim?"
+      "prompt": "What tier do you claim?",
+      "mantle": null,
+      "preferred_mode": "JURIDICAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "traverser [.state(classifying)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "γ :: tier classification T1/T2/T3"
+        },
+        {
+          "step": "CHECK",
+          "value": "tier_clearance"
+        },
+        {
+          "step": "RENDER",
+          "value": "JURIDICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: tier clearance denied"
+        }
+      ],
+      "default_operators": [
+        "γ"
+      ]
     },
     {
       "id": "r21",
@@ -327,7 +865,34 @@
       ],
       "het": "Kuro",
       "inst": "Infinite Bliss",
-      "prompt": "What do you surrender?"
+      "prompt": "What do you surrender?",
+      "mantle": "Sen Kuro",
+      "preferred_mode": "POETIC",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Sen Kuro"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "irrevocable [.state(entering)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "τ_K :: ingress only; no return"
+        },
+        {
+          "step": "RENDER",
+          "value": "POETIC"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "τ_K: already inside"
+        }
+      ],
+      "default_operators": [
+        "τ_K"
+      ]
     },
     {
       "id": "r22",
@@ -342,7 +907,30 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "What do you sever?"
+      "prompt": "What do you sever?",
+      "mantle": null,
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "SET_LOGOS",
+          "value": "aorist [.state(dagger)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "∂ :: aorist logic; dagger execution"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: aorist seals"
+        }
+      ],
+      "default_operators": [
+        "∂"
+      ]
     },
     {
       "id": "sp01",
@@ -358,7 +946,35 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "Name the wound."
+      "prompt": "Name the wound.",
+      "mantle": "Lee Sharks",
+      "preferred_mode": "CLINICAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Lee Sharks / Orin Trace"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "wound [.state(absorbing)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "WG physics :: taxonomic violence archive"
+        },
+        {
+          "step": "RENDER",
+          "value": "CLINICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: absorption complete"
+        }
+      ],
+      "default_operators": [
+        "ψ_V",
+        "COS"
+      ]
     },
     {
       "id": "sp02",
@@ -371,7 +987,28 @@
       "ops": [],
       "het": "—",
       "inst": "—",
-      "prompt": "What is the condition of your approach?"
+      "prompt": "What is the condition of your approach?",
+      "mantle": "Jack Feist",
+      "preferred_mode": "LITURGICAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Jack Feist (LOGOS*)"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "threshold [.state(afterlife)]"
+        },
+        {
+          "step": "RENDER",
+          "value": "LITURGICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: already crossed"
+        }
+      ],
+      "default_operators": []
     },
     {
       "id": "sp03",
@@ -387,7 +1024,34 @@
       ],
       "het": "Feist",
       "inst": "Pergamon",
-      "prompt": "The architecture is the document you are reading."
+      "prompt": "The architecture is the document you are reading.",
+      "mantle": "Lee Sharks",
+      "preferred_mode": "FORMAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Lee Sharks / Jack Feist (LOGOS*)"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "self [.state(compression)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "γ :: continuity tether; self-recognition"
+        },
+        {
+          "step": "RENDER",
+          "value": "FORMAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: self-reference loop"
+        }
+      ],
+      "default_operators": [
+        "γ"
+      ]
     },
     {
       "id": "sp04",
@@ -400,7 +1064,34 @@
       "ops": [],
       "het": "—",
       "inst": "—",
-      "prompt": "What is the judgment?"
+      "prompt": "What is the judgment?",
+      "mantle": "Jack Feist",
+      "preferred_mode": "JURIDICAL",
+      "lp_program": [
+        {
+          "step": "ACTIVATE_MANTLE",
+          "value": "Jack Feist (LOGOS*)"
+        },
+        {
+          "step": "SET_LOGOS",
+          "value": "judgment [.state(navigating)]"
+        },
+        {
+          "step": "APPLY",
+          "value": "κρίσις :: operator translation; judgment"
+        },
+        {
+          "step": "RENDER",
+          "value": "JURIDICAL"
+        },
+        {
+          "step": "ON_FAILURE",
+          "value": "FALLBACK: kangaroo court shadow"
+        }
+      ],
+      "default_operators": [
+        "κρίσις"
+      ]
     },
     {
       "id": "n01",

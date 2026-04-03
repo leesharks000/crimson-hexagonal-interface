@@ -455,7 +455,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 | R3 | `rotate [register]` switches Ark mode register, changes LLM system prompt + visual register | ✓ DONE |
 | R4 | `mantle [heteronym]` routes invocation through specific voice | ✓ DONE |
 | R5 | `check` runs LP diagnostic suite on current working state | ✓ DONE |
-| R6 | Room entry executes LP program (ACTIVATE → SET_LOGOS → ROTATE → RENDER) | OPEN |
+| R6 | Room entry executes LP program (ACTIVATE → SET_LOGOS → ROTATE → RENDER) | ✓ DONE |
 
 **Forward Library — LP additions:**
 
@@ -509,7 +509,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 ### Near-term (April 2026)
 
 12. JSX reads canonical JSON instead of embedding transformed data copy — DONE 2026-04-03
-13. Room entry executes LP traversal grammar (ACTIVATE → SET_LOGOS → ROTATE → RENDER)
+13. Room entry executes LP traversal grammar (ACTIVATE → SET_LOGOS → ROTATE → RENDER) — DONE 2026-04-03 (LP programs for all 26 rooms in canonical JSON; animated traversal engine; LP state tuple ⟨σ,ε,Ξ,ψ⟩ live in sidecar; Ark mode register colors shift per room)
 14. Full-text document rendering in Library
 15. Pending actions panel in Dashboard
 16. **Dream system** — archive consolidation engine (Pattern 1)
