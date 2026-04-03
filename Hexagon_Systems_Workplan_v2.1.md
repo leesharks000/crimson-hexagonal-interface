@@ -508,7 +508,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 ### Near-term (April 2026)
 
-12. JSX reads canonical JSON instead of embedding transformed data copy
+12. JSX reads canonical JSON instead of embedding transformed data copy — DONE 2026-04-03
 13. Room entry executes LP traversal grammar (ACTIVATE → SET_LOGOS → ROTATE → RENDER)
 14. Full-text document rendering in Library
 15. Pending actions panel in Dashboard
