@@ -537,11 +537,6 @@
       "type": "adjacent"
     },
     {
-      "from": "sp02",
-      "to": "r03",
-      "type": "adjacent"
-    },
-    {
       "from": "r14",
       "to": "r16",
       "type": "adjacent"
@@ -599,6 +594,36 @@
     {
       "from": "r20",
       "to": "r13",
+      "type": "adjacent"
+    },
+    {
+      "from": "r02",
+      "to": "r05",
+      "type": "adjacent"
+    },
+    {
+      "from": "r07",
+      "to": "r13",
+      "type": "adjacent"
+    },
+    {
+      "from": "r11",
+      "to": "r20",
+      "type": "adjacent"
+    },
+    {
+      "from": "r05",
+      "to": "sp01",
+      "type": "adjacent"
+    },
+    {
+      "from": "r14",
+      "to": "r15",
+      "type": "adjacent"
+    },
+    {
+      "from": "r07",
+      "to": "r19",
       "type": "adjacent"
     }
   ],
@@ -10891,7 +10916,7 @@
       "author": "Lee Sharks",
       "status": "RATIFIED",
       "created": "2026-03-31",
-      "note": "Migrated from edges array (workplan item 9)"
+      "note": "Assembly governs Airlock — tier gate (§XVII)"
     },
     {
       "id": "rel.002",
@@ -10901,47 +10926,107 @@
       "author": "Lee Sharks",
       "status": "RATIFIED",
       "created": "2026-03-31",
-      "note": "Migrated from edges array (workplan item 9)"
+      "note": "Revelation fulfills Ezekiel — Ω-circuit / φ(A,B)=true iff B fulfills A"
     },
     {
       "id": "rel.003",
-      "from": "r12",
-      "to": "sp01",
-      "type": "routes",
-      "author": "Lee Sharks",
-      "status": "RATIFIED",
-      "created": "2026-03-31",
-      "note": "Migrated from edges array (workplan item 9)"
-    },
-    {
-      "id": "rel.004",
-      "from": "r19",
-      "to": "r08",
-      "type": "routes",
-      "author": "Lee Sharks",
-      "status": "RATIFIED",
-      "created": "2026-03-31",
-      "note": "Migrated from edges array (workplan item 9)"
-    },
-    {
-      "id": "rel.005",
       "from": "sp03",
       "to": "r02",
       "type": "derives",
       "author": "Lee Sharks",
       "status": "RATIFIED",
       "created": "2026-03-31",
-      "note": "Migrated from edges array (workplan item 9)"
+      "note": "Space Ark derives from Borges — terminal compression of infinite library"
+    },
+    {
+      "id": "rel.004",
+      "from": "r12",
+      "to": "sp01",
+      "type": "routes",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Break Room routes to CTI_WOUND — topological hole; portal to Lunar Arm"
+    },
+    {
+      "id": "rel.005",
+      "from": "r19",
+      "to": "r08",
+      "type": "routes",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-03-31",
+      "note": "Macro-Maquette routes to Sigil — OP.ROUTE / LP specification feeds symbolic operation"
     },
     {
       "id": "rel.006",
+      "from": "r16",
+      "to": "r14",
+      "type": "routes",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-04-03",
+      "note": "MSBGL routes to Studio — SWERVE route (clinamen territory)"
+    },
+    {
+      "id": "rel.007",
+      "from": "r16",
+      "to": "r19",
+      "type": "routes",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-04-03",
+      "note": "MSBGL routes to Macro-Maquette — SWERVE route"
+    },
+    {
+      "id": "rel.008",
       "from": "r04",
       "to": "n02",
       "type": "seeds",
       "author": "Lee Sharks",
       "status": "RATIFIED",
       "created": "2026-03-31",
-      "note": "Migrated from edges array (workplan item 9)"
+      "note": "Dove seeds nascent room — gift-logic extension"
+    },
+    {
+      "id": "rel.009",
+      "from": "r19",
+      "to": "r17",
+      "type": "seeds",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-04-03",
+      "note": "Macro-Maquette seeds MSMRM (QUEUED) — MPM germination path"
+    },
+    {
+      "id": "rel.010",
+      "from": "r14",
+      "to": "r15",
+      "type": "mirrors",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-04-03",
+      "note": "Studio mirrors LO! — infinite center matrix ↔ torus observation; structural distinction"
+    },
+    {
+      "id": "rel.011",
+      "from": "r18",
+      "to": "r11",
+      "type": "extends",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-04-03",
+      "note": "Rosary Embassy extends Assembly — β_r sequential bead-logic supplements quorum"
+    },
+    {
+      "id": "rel.012",
+      "from": "r22",
+      "to": "r13",
+      "type": "extends",
+      "author": "Lee Sharks",
+      "status": "RATIFIED",
+      "created": "2026-04-03",
+      "note": "Thousand Worlds extends Ezekiel — ∂(aorist) logic supplements φ-sealing"
     }
   ]
 }
