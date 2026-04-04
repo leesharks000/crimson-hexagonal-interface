@@ -244,7 +244,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 1 | Full-text document rendering (fetch markdown from Zenodo files API) | Zenodo file access | ✓ DONE |
 | 2 | Citation chain navigation (document → relations → linked documents) | Typed relations in data | ✓ DONE |
 | 3 | Trail builder (save ordered reading paths, name them, share them) | Trail object type | ✓ DONE |
-| 4 | Side-by-side comparison (two documents from different rooms) | Reading pane | OPEN |
+| 4 | Side-by-side comparison (two documents from different rooms) | Reading pane | ✓ DONE |
 | 5 | Annotation system (attach notes to documents, carry GENERATED status) | Phase B storage + auth | ✓ DONE |
 | 6 | Export bibliography (formatted for Zenodo related_identifiers, for papers, for Medium posts) | Bibliography data | ✓ DONE |
 
@@ -462,8 +462,8 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 | Priority | Task | Status |
 |---|---|---|
 | L1 | `load [document]` loads text into σ (working sign state) | ✓ DONE |
-| L2 | `anchor [doi]` locks working state to provenance reference | OPEN |
-| L3 | `depth [document]` runs depth probe on a text | OPEN |
+| L2 | `anchor [doi]` locks working state to provenance reference | ✓ DONE |
+| L3 | `depth [document]` runs depth probe on a text | ✓ DONE |
 | L4 | Citation chain as LP graph traversal (C_ex operator) | ✓ DONE (citation chain in DocPanel + TRACE) |
 
 **Governance Console — LP additions:**
@@ -480,7 +480,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 | Priority | Task | Status |
 |---|---|---|
 | D1 | `emit [format]` generates deposit package (PDF + metadata) | ✓ DONE |
-| D2 | PROV_CHECK on each deposit (provenance integrity verification) | OPEN |
+| D2 | PROV_CHECK on each deposit (provenance integrity verification) | ✓ DONE (ER metric + dream diagnostics) |
 | D3 | Depth/coherence metrics displayed per deposit | ✓ DONE (computeMetrics in Assembly view) |
 
 

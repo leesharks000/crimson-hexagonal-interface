@@ -254,7 +254,7 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp }) {
   );
 }
 
-function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relations, documents, onDoc }) {
+function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relations, documents, onDoc, compareDoc, onCompare }) {
   const hasContent = readState?.doi === doc.doi && readState?.text;
   const isLoading = readState?.doi === doc.doi && readState?.loading;
   const [annotations, setAnnotations] = useState([]);
@@ -336,6 +336,26 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
             EMIT DEPOSIT PACKET
           </button>
         )}
+        {/* ANCHOR + DEPTH buttons */}
+        {doc.doi && (
+          <div style={{ display: "flex", gap: 4, marginBottom: 10 }}>
+            <button onClick={() => {
+              setLp && setLp(prev => ({ ...prev, ε: +Math.max(0, prev.ε - 0.15).toFixed(2) }));
+              addLog && addLog(`ANCHOR: ${doc.doi}`, "lp");
+              navigator.clipboard?.writeText(doc.doi);
+            }} style={{ flex: 1, background: "transparent", border: `1px solid ${mc}22`, color: mc + "aa", padding: "4px 8px", fontSize: 8, cursor: "pointer", fontFamily: "monospace" }}>
+              ANCHOR DOI
+            </button>
+            <button onClick={() => {
+              const m = computeMetrics(doc, { relations: relations || [], documents: documents || [] });
+              const report = `DEPTH PROBE: ${doc.t.slice(0,40)}\nDRR: ${m.DRR} (${m.DRR >= 0.75 ? "PASS" : "FAIL"})\nCSI: ${m.CSI} (${m.CSI <= 0.40 ? "PASS" : "FAIL"})\nPCS: ${m.PCS} (${m.PCS >= 0.70 ? "PASS" : "FAIL"})\nER: ${m.ER} (${m.ER >= 0.75 ? "PASS" : "FAIL"})\nTRS: ${m.TRS}`;
+              navigator.clipboard?.writeText(report);
+              addLog && addLog(`DEPTH: DRR=${m.DRR} CSI=${m.CSI} PCS=${m.PCS} ER=${m.ER}`, "lp");
+            }} style={{ flex: 1, background: "transparent", border: `1px solid ${mc}22`, color: mc + "aa", padding: "4px 8px", fontSize: 8, cursor: "pointer", fontFamily: "monospace" }}>
+              DEPTH PROBE
+            </button>
+          </div>
+        )}
         {readState?.error && readState.doi === doc.doi && <div style={{ fontSize: 9, color: "#9f5a5a", marginBottom: 8 }}>{readState.error}</div>}
         {doc.r.length > 0 && <div style={{ marginBottom: 8 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>ROOMS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{doc.r.map((rid) => { const rm = rooms.find((r) => r.id === rid); return <span key={rid} onClick={() => onRoom(rid)} style={{ fontSize: 9, padding: "1px 5px", background: "#0a0f0a", border: `1px solid ${(CAT_COLORS[rm?.cat] || "#333")}44`, color: CAT_COLORS[rm?.cat] || "#555", cursor: "pointer", fontFamily: "monospace" }}>{rm?.name || rid}</span>; })}</div></div>}
 
@@ -359,6 +379,31 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
                 <div style={{ fontSize: 7, color: "#2a3a2a" }}>{(d.c?.[0] || "") + " · " + d.d}</div>
               </div>
             ))}
+          </div>
+        )}
+
+        {/* Compare */}
+        {onCompare && (
+          <div style={{ marginBottom: 8 }}>
+            {!compareDoc ? (
+              <button onClick={() => onCompare(doc)} style={{ background: "transparent", border: `1px solid ${mc}22`, color: mc + "aa", padding: "3px 10px", fontSize: 8, cursor: "pointer", fontFamily: "monospace", width: "100%" }}>PIN FOR COMPARE</button>
+            ) : compareDoc.id !== doc.id ? (
+              <div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+                <div style={{ fontSize: 8, letterSpacing: 1, color: "#3a4a3a", marginBottom: 4 }}>COMPARING WITH</div>
+                <div style={{ fontSize: 9, color: mc, fontFamily: "Georgia,serif", marginBottom: 4 }}>{compareDoc.t.slice(0, 50)}</div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, fontSize: 8, fontFamily: "monospace" }}>
+                  <div><span style={{ color: "#3a4a3a" }}>rooms:</span> <span style={{ color: "#5a6a4a" }}>{(compareDoc.r || []).join(",")}</span></div>
+                  <div><span style={{ color: "#3a4a3a" }}>rooms:</span> <span style={{ color: "#5a6a4a" }}>{(doc.r || []).join(",")}</span></div>
+                  <div><span style={{ color: "#3a4a3a" }}>date:</span> <span style={{ color: "#5a6a4a" }}>{compareDoc.d}</span></div>
+                  <div><span style={{ color: "#3a4a3a" }}>date:</span> <span style={{ color: "#5a6a4a" }}>{doc.d}</span></div>
+                  <div><span style={{ color: "#3a4a3a" }}>kw:</span> <span style={{ color: "#5a6a4a" }}>{(compareDoc.k || []).length}</span></div>
+                  <div><span style={{ color: "#3a4a3a" }}>kw:</span> <span style={{ color: "#5a6a4a" }}>{(doc.k || []).length}</span></div>
+                </div>
+                <button onClick={() => onCompare(null)} style={{ background: "transparent", border: `1px solid #5a3a3a44`, color: "#5a3a3a", padding: "2px 8px", fontSize: 7, cursor: "pointer", fontFamily: "monospace", marginTop: 4 }}>CLEAR COMPARE</button>
+              </div>
+            ) : (
+              <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>This document is pinned for comparison. Select another document to compare.</div>
+            )}
           </div>
         )}
 
@@ -965,6 +1010,7 @@ export default function HexagonInterfaceResponsive() {
   const [mode, setMode] = useState(null);
   const [selRoom, setSelRoom] = useState(null);
   const [selDoc, setSelDoc] = useState(null);
+  const [compareDoc, setCompareDoc] = useState(null);
   const [view, setView] = useState("MAP");
   const [search, setSearch] = useState("");
   const [log, setLog] = useState([]);
@@ -1477,7 +1523,7 @@ export default function HexagonInterfaceResponsive() {
 
         {/* Detail panel */}
         <div style={{ width: isMobile ? "100%" : 340, minWidth: 0, height: isMobile ? "34dvh" : "100%", minHeight: isMobile ? 220 : 0, maxHeight: isMobile ? "42dvh" : "none", borderLeft: isMobile ? "none" : "1px solid #0f1a0f", borderTop: isMobile ? "1px solid #0f1a0f" : "none", overflow: "hidden", flexShrink: 0, background: "#0a0d12" }}>
-          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} relations={data.relations} documents={data.documents} onDoc={(d) => setSelDoc(d)} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={loadDocument} isMobile={isMobile} mc={mc} onApplyOp={applyOperator} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
+          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} relations={data.relations} documents={data.documents} onDoc={(d) => setSelDoc(d)} compareDoc={compareDoc} onCompare={setCompareDoc} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={loadDocument} isMobile={isMobile} mc={mc} onApplyOp={applyOperator} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
             {view === "DEPOSIT" ? <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>Use the left panel for archive operations.</div> : <>
               <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6, marginBottom: 10 }}>{isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon to execute its LP traversal grammar."}</div>
               <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>AVAILABLE ({(COMMAND_REGISTRY[mode] || []).length})</div>
