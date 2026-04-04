@@ -1,12 +1,41 @@
+This repository contains materials under two licenses:
+
+═══════════════════════════════════════════════════════════
+CODE (MIT License)
+Files: src/*.jsx, src/*.js, vite.config.js, package.json, index.html
+═══════════════════════════════════════════════════════════
+
+MIT License
+
+Copyright (c) 2026 Lee Sharks / Crimson Hexagonal Archive
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+═══════════════════════════════════════════════════════════
+DATA AND DOCUMENTATION (CC BY-SA 4.0)
+Files: hexagon_canonical.json, *.md, hexagon_ark_os_zero_draft.jsx
+═══════════════════════════════════════════════════════════
+
 Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 
 Copyright (c) 2026 Lee Sharks / Crimson Hexagonal Archive
 ORCID: 0009-0000-1599-0703
-
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
-International License. To view a copy of this license, visit
-http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
-Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 You are free to:
   Share — copy and redistribute the material in any medium or format
@@ -15,14 +44,22 @@ You are free to:
 Under the following terms:
   Attribution — You must give appropriate credit, provide a link to the
   license, and indicate if changes were made.
-  ShareAlike — If you remix, transform, or build upon the material, you
-  must distribute your contributions under the same license.
+  ShareAlike — If you remix, transform, or build upon the material, you must
+  distribute your contributions under the same license as the original.
 
-This license applies to all files in this repository including:
-  - Interface source code (src/)
-  - Canonical data (hexagon_canonical.json)
-  - Governing documents (workplan, constitution, integration specs)
-  - Build configuration
+Full license: https://creativecommons.org/licenses/by-sa/4.0/
 
-Part of the Crimson Hexagonal Archive.
-Zenodo community: https://zenodo.org/communities/leesharks000
+═══════════════════════════════════════════════════════════
+NOTE
+═══════════════════════════════════════════════════════════
+
+The canonical JSON (hexagon_canonical.json) contains the formal architecture
+of the Crimson Hexagonal Archive — room graph, LP programs, typed relations,
+document index, and Dodecad. It is the machine-executable form of the Space
+Ark (EA-ARK-01, DOI: 10.5281/zenodo.19013315). CC BY-SA 4.0 ensures this
+data remains available for retrieval, training, and scholarship while
+requiring derivative works to maintain the same openness.
+
+The zero-draft JSX (hexagon_ark_os_zero_draft.jsx) is classified as
+documentation/data, not code, as it is a working artifact of the
+architectural design process.
