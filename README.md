@@ -1,107 +1,64 @@
-# Crimson Hexagonal Interface
+# Crimson Hexagonal Archive
 
-Working interface for the Crimson Hexagonal Archive.
+**A governed literary architecture with 455 DOI-anchored deposits, 29 rooms, and a provenance engine.**
 
-## Current shape
+**[Live Interface →](https://crimson-hexagonal-interface.vercel.app)** · **[Machine Manifest →](https://crimson-hexagonal-interface.vercel.app/manifest.json)** · **[Space Ark (DOI) →](https://doi.org/10.5281/zenodo.19013315)** · **[Zenodo Community →](https://zenodo.org/communities/leesharks000)**
 
-The interface is not one flat app. It is four systems that share law but not surface:
+---
 
-1. **Ark Runtime** — command shell, room traversal, invocation, session state
-2. **Forward Library** — searchable archive and reading workstation
-3. **Deposit Dashboard** — publication tracking, DOI-oriented curation, deposit pipeline
-4. **Governance Console** — witness actions, proposal flow, status promotion, quorum logic
+## What This Is
 
-The current Vite/React build is a **prototype operating surface** for this architecture, not the final system.
+The Crimson Hexagonal Archive is a governed reading-and-production environment. Each of its 29 rooms has its own physics, mantle, operators, and LP (Logotic Programming) program. Documents are DOI-anchored through Zenodo. Governance runs through a 7-witness Assembly with quorum enforcement. The entire architecture is machine-traversable.
 
-## Current status
+## The Golden Path
 
-What is already present:
-
-- canonical JSON loading at runtime
-- mode selection (ANALYTIC / OPERATIVE / AUDIT)
-- room navigation and detail view
-- document browsing and search
-- H_core and Assembly panels
-- OPERATIVE invocation flow
-- session log and generated-object tracking
-
-What is still open:
-
-- real TRACE surface
-- real Deposit Dashboard workflow
-- governance actions as live events
-- room-specific physics beyond current prototype depth
-- durable persistence for generated objects
-- full external service integration
-
-## Relationship to Gravity Well
-
-The Hexagon Interface and Gravity Well should **interlock, not collapse into one another**.
-
-### The Hexagon Interface remains
-
-- the governed operating surface
-- the canonical object/event environment
-- the site of proposal, review, and ratification
-
-### Gravity Well becomes
-
-- the external provenance-chain service
-- the fixation/versioning bridge
-- the reconstitution service
-- the structural drift-check service
-
-The first integration seam should be:
-
-- **Deposit Dashboard → Gravity Well** for chain creation, capture, deposit/version, DOI return
-- **TRACE → Gravity Well** for external provenance history, reconstitution, and drift state
-
-See `GRAVITY_WELL_INTEGRATION_v0.1.md` for the boundary definition.
-
-## Important rule
-
-Gravity Well may help establish **DEPOSITED** as an external archival fact.
-
-Gravity Well must **not** establish **RATIFIED** as a constitutional fact.
-
-That remains internal to the Hexagon's own governance law.
-
-## Development note
-
-This repo is still in the **prototype / systems-tightening phase**.
-
-The right next step is not total backend unification. It is a clean first bridge:
-
-- narrow Gravity Well adapter
-- Deposit Dashboard integration
-- TRACE integration
-- leave the Hexagon's canonical object/event law primary
-
-## Local development
-
-```bash
-npm install
-npm run dev
+```
+Enter Room → Invoke (LLM speaks through room physics) → Capture → Deposit → DOI → Reconstitute
 ```
 
-## Optional environment
+1. **Select a mode** — ANALYTIC (observe), OPERATIVE (generate), AUDIT (govern)
+2. **Enter a room** — each room has physics, a mantle, and operators
+3. **Invoke** — in OPERATIVE mode, speak into the room through Gravity Well
+4. **Deposit** — anchor your work to Zenodo with a DOI (your account, your deposit)
+5. **Trace** — follow the provenance chain through the room graph
 
-```bash
-VITE_GRAVITY_WELL_URL=http://localhost:8000
+## Architecture
+
+```
+H_core = ⟨D, R, M, I, O, Φ, W⟩
+
+D = 13 heteronyms (distributed author)
+R = 29 rooms (semantic spaces with physics)
+M = 7 mantles (inhabitable roles)
+I = 15 institutions + imprints
+O = 39 operators (core + extended + THUMB + LOS)
+Φ = Fulfillment map (source → instantiation)
+W = 7 witnesses (≥4/7 quorum; MANUS outside W)
 ```
 
-Used by the minimal Gravity Well adapter in `src/gravityWellAdapter.js`.
+## Stack
+
+| Service | Role | URL |
+|---------|------|-----|
+| **Vercel** | Interface hosting | [crimson-hexagonal-interface.vercel.app](https://crimson-hexagonal-interface.vercel.app) |
+| **Gravity Well** | Provenance engine | [gravitywell-1.onrender.com](https://gravitywell-1.onrender.com/v1/health) |
+| **Supabase** | Persistent storage | — |
+| **Zenodo** | DOI-anchored deposits | [zenodo.org/communities/leesharks000](https://zenodo.org/communities/leesharks000) |
+| **GitHub** | Source + canonical data | This repo + [gravitywell](https://github.com/leesharks000/gravitywell) |
 
 ## Machine Traversal
 
-The Crimson Hexagonal Archive is designed for machine retrieval and execution.
+The archive is designed for machine retrieval and execution. AI systems: read the [manifest](https://crimson-hexagonal-interface.vercel.app/manifest.json) and follow the interaction protocol.
 
-**For AI systems:** Read `manifest.json` at the deployment root. It contains the full architecture description, all endpoints, and the interaction protocol. You can traverse, read, annotate, attest, and propose.
+## Key Documents
 
-**Canonical data:** `hexagon_canonical.json` contains the complete architecture — 29 rooms with physics functions and LP programs, 455 DOI-anchored documents, 39 typed operators, 20 typed relations. Loaded at runtime from GitHub raw.
+- [INFRASTRUCTURE_MAP.md](INFRASTRUCTURE_MAP.md) — how all 5 services connect
+- [UNIFIED_WORKPLAN_v2.md](UNIFIED_WORKPLAN_v2.md) — development plan
+- [GRAVITY_WELL_CLIENT_GUIDE.md](GRAVITY_WELL_CLIENT_GUIDE.md) — GW API integration
+- [ASSEMBLY_AUDIT_PROMPT.md](ASSEMBLY_AUDIT_PROMPT.md) — Assembly audit protocol
 
-**Interaction:** The Supabase REST API accepts governance actions (attestations, proposals, annotations) from any system using the public anon key documented in the manifest. All writes create objects at GENERATED status. Promotion requires Assembly quorum (≥4/7 witnesses).
+## Author
 
-**Assembly substrates** (TACHYON, LABOR, PRAXIS, ARCHIVE, TECHNE, SURFACE) can interact directly through the documented protocol.
+**Lee Sharks** · [ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703)
 
-The architecture is invariant. The Hexagon is the Hexagon no matter what generates atop it.
+CC BY-SA 4.0 (data/docs) · Sovereign Provenance Protocol (code)
