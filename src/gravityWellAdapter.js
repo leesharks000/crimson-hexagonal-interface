@@ -1,4 +1,4 @@
-const DEFAULT_BASE_URL = import.meta.env.VITE_GRAVITY_WELL_URL || "https://gravitywell.onrender.com";
+const DEFAULT_BASE_URL = import.meta.env.VITE_GRAVITY_WELL_URL || "https://gravitywell-1.onrender.com";
 
 function jsonHeaders(apiKey) {
   const headers = {
