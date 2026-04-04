@@ -1075,7 +1075,7 @@ export default function HexagonInterfaceResponsive() {
                   {libMode === "SEARCH" ? `FORWARD LIBRARY · ${data.documents.length} DEPOSITS` : `TRAIL BUILDER${trail.name ? ` · ${trail.name}` : ""}`}
                 </div>
                 <div style={{ display: "flex", gap: 4 }}>
-                  {["SEARCH", "TRAIL"].map(m => (
+                  {["SEARCH", "TRAIL", "BIBLIO"].map(m => (
                     <span key={m} onClick={() => setLibMode(m)} style={{ fontSize: 7, padding: "1px 5px", fontFamily: "monospace", color: libMode === m ? mc : "#3a4a3a", border: `1px solid ${libMode === m ? mc + "44" : "#0f1a0f"}`, cursor: "pointer" }}>{m}</span>
                   ))}
                 </div>
@@ -1125,6 +1125,43 @@ export default function HexagonInterfaceResponsive() {
                     </div>
                   ))
                 )}
+              </>}
+
+              {/* BIBLIO mode */}
+              {libMode === "BIBLIO" && <>
+                <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.6, marginBottom: 8 }}>Export citations from your trail or search results. Select a format below.</div>
+                {(() => {
+                  const docs = trail.docs.length > 0 ? trail.docs : (search ? searchResults : data.documents.slice(0, 20));
+                  const source = trail.docs.length > 0 ? `Trail: ${trail.name || "unnamed"}` : search ? `Search: "${search}"` : "Recent 20";
+                  return <>
+                    <div style={{ fontSize: 8, color: "#3a4a3a", marginBottom: 6, fontFamily: "monospace" }}>{source} · {docs.length} documents</div>
+                    <div style={{ display: "flex", gap: 4, marginBottom: 10 }}>
+                      {["Zenodo", "BibTeX", "Plain"].map(fmt => (
+                        <span key={fmt} onClick={() => {
+                          let output = "";
+                          if (fmt === "Zenodo") {
+                            output = docs.filter(d => d.doi).map(d => `{"identifier": "${d.doi}", "relation": "cites", "resource_type": "publication-technicalnote"}`).join(",\n");
+                            output = `[\n${output}\n]`;
+                          } else if (fmt === "BibTeX") {
+                            output = docs.filter(d => d.doi).map(d => {
+                              const key = (d.c?.[0] || "anon").replace(/[^a-zA-Z]/g, "") + (d.d || "").slice(0, 4);
+                              return `@misc{${key},\n  title = {${d.t}},\n  author = {${(d.c || []).join(" and ")}},\n  year = {${(d.d || "").slice(0, 4)}},\n  doi = {${d.doi}},\n  url = {https://doi.org/${d.doi}}\n}`;
+                            }).join("\n\n");
+                          } else {
+                            output = docs.map((d, i) => `${i + 1}. ${(d.c || []).join(", ")}. "${d.t}." ${d.d || ""}. DOI: ${d.doi || "n/a"}`).join("\n");
+                          }
+                          navigator.clipboard?.writeText(output).then(() => addLog(`${fmt}: ${docs.length} citations copied`, "sys")).catch(() => addLog(`${fmt}: clipboard unavailable`, "err"));
+                        }} style={{ fontSize: 8, padding: "3px 8px", fontFamily: "monospace", color: mc, border: `1px solid ${mc}44`, background: mc + "11", cursor: "pointer" }}>{fmt}</span>
+                      ))}
+                    </div>
+                    {docs.slice(0, 15).map((d, i) => (
+                      <div key={d.id} style={{ padding: "2px 0", borderBottom: "1px solid #060a06" }}>
+                        <div style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{i + 1}. {d.t.length > 60 ? d.t.slice(0, 57) + "..." : d.t}</div>
+                        <div style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace" }}>{d.doi || "no DOI"}</div>
+                      </div>
+                    ))}
+                  </>;
+                })()}
               </>}
             </div>
           )}

@@ -140,8 +140,8 @@ Before building any more surface, stabilize the data layer.
 | D09 reads "Preston Wells" — should be "Sparrow Wells" | DONE (2026-04-03) | Immediate |
 | Typed relations mixed into edges array — Constitution says these should be separate first-class objects | DONE (2026-04-03) | Near-term |
 | Relation type lists don't align across Constitution, Event Schema, and canonical JSON | RATIFIED (2026-04-03, provisional) | Near-term |
-| JSX embeds transformed copy of data instead of reading canonical JSON | OPEN | Near-term |
-| No placeholder structures for operators, institutions, trails, annotations, proposals, witness actions | OPEN | Medium-term |
+| JSX embeds transformed copy of data instead of reading canonical JSON | ✓ RESOLVED (item 12) | Near-term |
+| No placeholder structures for operators, institutions, trails, annotations, proposals, witness actions | ✓ RESOLVED (item 24) | Medium-term |
 | Room categories ("ext", "special") vs. Constitution's Layer 0 immutability claim needs resolution | OPEN | Medium-term |
 
 ### Object Types
@@ -209,7 +209,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 
 | Priority | Task | Depends on | Status |
 |---|---|---|---|
-| 1 | Room-specific interface physics (typography, color, available ops change per room) | Room data | OPEN |
+| 1 | Room-specific interface physics (typography, color, available ops change per room) | Room data | ✓ DONE (arkMode drives accent color per room via preferred_mode; operators shown in room panel) |
 | 2 | Ark mode register (FORMAL, ADVENTURE, POETIC, CLINICAL, etc.) as sub-modes affecting LLM system prompt and visual register | LLM integration | OPEN |
 | 3 | Generated objects persist to Supabase (session → proposal → Airlock) | Phase B storage | ✓ DONE |
 | 4 | Status transitions as visible events (not just label changes) | Event model | OPEN |
@@ -470,8 +470,8 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 | Priority | Task | Status |
 |---|---|---|
-| G1 | `submit` executes REQUEST_JUDGMENT → enters Airlock | OPEN |
-| G2 | `attest` creates WITNESS action (append-only) | OPEN |
+| G1 | `submit` executes REQUEST_JUDGMENT → enters Airlock | ✓ DONE |
+| G2 | `attest` creates WITNESS action (append-only) | ✓ DONE |
 | G3 | LP acceptance test metrics displayed on proposals during review | OPEN |
 | G4 | Status promotion runs CHECK against DRR/CSI/PCS thresholds | OPEN |
 
