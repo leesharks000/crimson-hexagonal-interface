@@ -227,6 +227,52 @@ function HexMap({ rooms, edges, selected, onSelect, mc, isMobile }) {
   );
 }
 
+function InvokePanel({ room, mc, lp, addLog, isMobile }) {
+  const [input, setInput] = useState("");
+  const [result, setResult] = useState(null);
+  const [invoking, setInvoking] = useState(false);
+  const [gwKey, setGwKey] = useState(() => localStorage?.getItem?.("gw_api_key") || "");
+
+  const handleInvoke = async () => {
+    if (!input.trim()) return;
+    if (!gwKey.trim()) return addLog("GW API key required — set in Dashboard → GW BRIDGE", "err");
+    setInvoking(true); setResult(null);
+    try {
+      addLog(`INVOKE: ${room.name} · ${room.preferred_mode}`, "lp");
+      const res = await gravityWell.invoke({
+        apiKey: gwKey, roomId: room.id, roomName: room.name, input,
+        physics: room.physics, mantle: room.mantle, preferredMode: room.preferred_mode,
+        operators: room.default_operators, lpProgram: room.lp_program,
+        lpState: lp ? { σ: lp.σ, ε: lp.ε, Ξ: lp.Ξ, ψ: lp.ψ } : null,
+      });
+      setResult(res);
+      addLog(`INVOKE: γ=${res.gamma} · ${res.model} · ${res.text.slice(0, 40)}…`, "lp");
+    } catch (e) {
+      setResult({ error: e.message });
+      addLog(`INVOKE error: ${e.message}`, "err");
+    }
+    setInvoking(false);
+  };
+
+  return (
+    <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+      <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>INVOKE · {room.mantle || room.name}</div>
+      {!gwKey && <div style={{ fontSize: 8, color: "#9f7a4a", marginBottom: 4 }}>GW API key required. Set in Dashboard → GW BRIDGE tab.</div>}
+      <div style={{ display: "flex", gap: 4, marginBottom: 6 }}>
+        <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleInvoke(); }} placeholder={`Speak into ${room.name}...`} style={{ flex: 1, background: "#080808", border: `1px solid ${mc}22`, color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: "Georgia,serif", outline: "none" }} />
+        <button onClick={handleInvoke} disabled={invoking || !gwKey} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: gwKey ? mc : "#3a4a3a", padding: "4px 10px", fontSize: 8, cursor: invoking ? "wait" : gwKey ? "pointer" : "not-allowed", fontFamily: "monospace", flexShrink: 0 }}>{invoking ? "…" : "INVOKE"}</button>
+      </div>
+      {result && !result.error && (
+        <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.6, padding: "6px 0", borderTop: `1px solid ${mc}11` }}>
+          {result.text}
+          <div style={{ fontSize: 7, color: "#2a3a2a", fontFamily: "monospace", marginTop: 4 }}>{result.model} · {room.preferred_mode} · γ={result.gamma} · GENERATED</div>
+        </div>
+      )}
+      {result?.error && <div style={{ fontSize: 9, color: "#9f5a5a", lineHeight: 1.4 }}>{result.error}</div>}
+    </div>
+  );
+}
+
 function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp, mode, lp, addLog }) {
   const roomDocs = useMemo(() => docs.filter((d) => d.r.includes(room.id)), [docs, room.id]);
   const roomRels = useMemo(() => relations.filter((r) => r.from === room.id || r.to === room.id), [relations, room.id]);
@@ -243,12 +289,9 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp, mode
       {room.default_operators?.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>OPERATORS (tap to apply)</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{room.default_operators.map((op, i) => <span key={i} onClick={() => onApplyOp && onApplyOp(op)} style={{ fontSize: 9, padding: "1px 5px", background: mc + "11", border: `1px solid ${mc}33`, color: mc, fontFamily: "monospace", cursor: "pointer" }}>{op}</span>)}</div></div>}
       {room.lp_program?.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>LP PROGRAM</div><div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>{room.lp_program.map((s, i) => <div key={i} style={{ fontSize: 9, fontFamily: "monospace", color: "#4a5a4a", lineHeight: 1.6 }}><span style={{ color: mc }}>{s.step}</span><span style={{ color: "#3a4a3a" }}> :: </span><span>{s.value}</span></div>)}</div></div>}
 
-      {/* INVOKE — requires Gravity Well (Phase 1.2) */}
+      {/* INVOKE — routes through Gravity Well */}
       {mode === "OPERATIVE" && (
-        <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: "2px solid #1a2a1a" }}>
-          <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>INVOKE · {room.mantle || room.name}</div>
-          <div style={{ fontSize: 8, color: "#4a5a4a", fontFamily: "Georgia,serif", lineHeight: 1.5 }}>Invocation routes through Gravity Well for provenance tracking. Deploy GW (Phase 1.2) to enable.</div>
-        </div>
+        <InvokePanel room={room} mc={mc} lp={lp} addLog={addLog} isMobile={isMobile} />
       )}
       {roomRels.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>RELATIONS ({roomRels.length})</div>{roomRels.map((r) => <div key={r.id} style={{ fontSize: 9, color: "#4a5a4a", padding: "2px 0" }}>{r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}</div>)}</div>}
       <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>DEPOSITS ({roomDocs.length})</div>
@@ -622,7 +665,7 @@ function runDream(data) {
   return { issues, stats };
 }
 
-function GovernanceActions({ mc, addLog, selDoc, data, isMobile }) {
+function GovernanceActions({ mc, addLog, selDoc, data, isMobile, gwApiKey }) {
   const [govTab, setGovTab] = useState("ACTIONS");
   const [proposalTitle, setProposalTitle] = useState("");
   const [proposalDesc, setProposalDesc] = useState("");
@@ -645,25 +688,36 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile }) {
 
   const submitProposal = async () => {
     if (!proposalTitle.trim()) return addLog("Proposal title required", "err");
-    if (!configured) { addLog("Supabase not configured — proposal recorded in session only", "sys"); setProposals(p => [...p, { id: Date.now(), title: proposalTitle, description: proposalDesc, proposal_type: proposalType, status: "GENERATED", created_at: new Date().toISOString(), target_id: selDoc?.id }]); setProposalTitle(""); setProposalDesc(""); return; }
-    try {
-      const result = await supabase.submitProposal({ title: proposalTitle, description: proposalDesc, proposal_type: proposalType, target_id: selDoc?.id || null, target_type: selDoc ? "document" : null, submitted_by: "MANUS" });
-      setProposals(p => [result, ...p]);
-      addLog(`Proposal submitted: ${proposalTitle.slice(0, 40)}`, "sys");
-      setProposalTitle(""); setProposalDesc("");
-    } catch (e) { addLog(`Proposal error: ${e.message}`, "err"); }
+    const localProposal = { id: Date.now(), title: proposalTitle, description: proposalDesc, proposal_type: proposalType, status: "GENERATED", created_at: new Date().toISOString(), target_id: selDoc?.id };
+    if (gwApiKey) {
+      try {
+        const result = await gravityWell.propose({ apiKey: gwApiKey, title: proposalTitle, description: proposalDesc, proposalType, targetId: selDoc?.id || null, targetType: selDoc ? "document" : null, submittedBy: "MANUS" });
+        const saved = result.data?.[0] || localProposal;
+        setProposals(p => [saved, ...p]);
+        addLog(`Proposal submitted via GW: ${proposalTitle.slice(0, 40)}`, "sys");
+        setProposalTitle(""); setProposalDesc(""); return;
+      } catch (e) { addLog(`GW proposal error: ${e.message} — saving locally`, "err"); }
+    }
+    addLog("No GW key — proposal recorded in session only", "sys");
+    setProposals(p => [...p, localProposal]);
+    setProposalTitle(""); setProposalDesc("");
   };
 
   const recordAttestation = async () => {
     if (!witnessContent.trim()) return addLog("Attestation content required", "err");
-    const action = { witness: witnessName, action_type: "attest", target_id: selDoc?.id || null, target_type: selDoc ? "document" : "general", content: witnessContent };
-    if (!configured) { addLog("Supabase not configured — action recorded in session only", "sys"); setActions(a => [{ ...action, id: Date.now(), created_at: new Date().toISOString() }, ...a]); setWitnessContent(""); return; }
-    try {
-      const result = await supabase.recordWitnessAction(witnessName, "attest", selDoc?.id || null, selDoc ? "document" : "general", witnessContent);
-      setActions(a => [result, ...a]);
-      addLog(`${witnessName} attestation recorded`, "sys");
-      setWitnessContent("");
-    } catch (e) { addLog(`Attestation error: ${e.message}`, "err"); }
+    const localAction = { witness: witnessName, action_type: "attest", target_id: selDoc?.id || null, target_type: selDoc ? "document" : "general", content: witnessContent, id: Date.now(), created_at: new Date().toISOString() };
+    if (gwApiKey) {
+      try {
+        const result = await gravityWell.attest({ apiKey: gwApiKey, witness: witnessName, targetId: selDoc?.id || null, targetType: selDoc ? "document" : "general", content: witnessContent });
+        const saved = result.data?.[0] || localAction;
+        setActions(a => [saved, ...a]);
+        addLog(`${witnessName} attestation recorded via GW`, "sys");
+        setWitnessContent(""); return;
+      } catch (e) { addLog(`GW attestation error: ${e.message} — saving locally`, "err"); }
+    }
+    addLog("No GW key — attestation recorded in session only", "sys");
+    setActions(a => [localAction, ...a]);
+    setWitnessContent("");
   };
 
   const tabs = [{ id: "ACTIONS", label: "ACTIONS" }, { id: "REVIEW", label: "REVIEW" }, { id: "AMEND", label: "AMEND" }, { id: "LEDGER", label: "LEDGER" }];
@@ -1069,7 +1123,8 @@ export default function HexagonInterfaceResponsive() {
   const [view, setView] = useState("MAP");
   const [search, setSearch] = useState("");
   const [log, setLog] = useState([]);
-  const [gwApiKey, setGwApiKey] = useState("");
+  const [gwApiKey, setGwApiKeyRaw] = useState(() => { try { return localStorage?.getItem?.("gw_api_key") || ""; } catch { return ""; } });
+  const setGwApiKey = (v) => { setGwApiKeyRaw(v); try { localStorage?.setItem?.("gw_api_key", v); } catch {} };
   const [depositState, setDepositState] = useState({ chain: null, error: null });
   // LP state
   const [lp, setLp] = useState(initLP());
@@ -1605,7 +1660,7 @@ export default function HexagonInterfaceResponsive() {
               )}
 
               {/* Governance Actions */}
-              <GovernanceActions mc={mc} addLog={addLog} selDoc={selDoc} data={data} isMobile={isMobile} />
+              <GovernanceActions mc={mc} addLog={addLog} selDoc={selDoc} data={data} isMobile={isMobile} gwApiKey={gwApiKey} />
             </div>
           )}
         </div>

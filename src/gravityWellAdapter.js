@@ -99,6 +99,59 @@ export const gravityWell = {
       body: { current_manifest: currentManifest },
     });
   },
+
+  invoke({ apiKey, roomId, roomName, input, physics, mantle, preferredMode, operators, lpProgram, lpState, chainId }) {
+    return request("/v1/invoke", {
+      method: "POST",
+      apiKey,
+      body: {
+        room_id: roomId,
+        room_name: roomName,
+        input,
+        physics,
+        mantle,
+        preferred_mode: preferredMode,
+        operators,
+        lp_program: lpProgram,
+        lp_state: lpState,
+        chain_id: chainId || null,
+      },
+    });
+  },
+
+  attest({ apiKey, witness, targetId, targetType, content }) {
+    return request("/v1/governance", {
+      method: "POST",
+      apiKey,
+      body: {
+        action: "attest",
+        witness,
+        target_id: targetId,
+        target_type: targetType,
+        content,
+      },
+    });
+  },
+
+  propose({ apiKey, title, description, proposalType, targetId, targetType, submittedBy }) {
+    return request("/v1/governance", {
+      method: "POST",
+      apiKey,
+      body: {
+        action: "propose",
+        title,
+        description,
+        proposal_type: proposalType,
+        target_id: targetId,
+        target_type: targetType,
+        submitted_by: submittedBy,
+      },
+    });
+  },
+
+  health() {
+    return request("/v1/health");
+  },
 };
 
 export function gravityWellStatusToHexagonStatus(chain) {
