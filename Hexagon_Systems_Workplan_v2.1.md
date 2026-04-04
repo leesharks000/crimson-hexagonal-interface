@@ -243,7 +243,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 |---|---|---|---|
 | 1 | Full-text document rendering (fetch markdown from Zenodo files API) | Zenodo file access | ✓ DONE |
 | 2 | Citation chain navigation (document → relations → linked documents) | Typed relations in data | OPEN |
-| 3 | Trail builder (save ordered reading paths, name them, share them) | Trail object type | OPEN |
+| 3 | Trail builder (save ordered reading paths, name them, share them) | Trail object type | ✓ DONE |
 | 4 | Side-by-side comparison (two documents from different rooms) | Reading pane | OPEN |
 | 5 | Annotation system (attach notes to documents, carry GENERATED status) | Phase B storage + auth | OPEN |
 | 6 | Export bibliography (formatted for Zenodo related_identifiers, for papers, for Medium posts) | Bibliography data | OPEN |
@@ -519,7 +519,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 ### Medium-term (May 2026)
 
 19. LP acceptance tests drive status promotion in Governance
-20. Trail builder in Library (trails as LP programs — ordered operation sequences)
+20. Trail builder in Library (trails as LP programs — ordered operation sequences) — DONE 2026-04-04 (SEARCH/TRAIL mode toggle; + button adds docs to trail; named trails with ordered stops; PREV/NEXT navigation with position tracking; click-to-read from trail; remove individual stops; CLEAR)
 21. One-click deposit pipeline (direct Zenodo API; future: via Gravity Well) — DONE 2026-04-04 (ZENODO tab in Dashboard: token input, title, description, version, keywords, file upload → create → upload → publish in one click; browser→Zenodo direct via CORS; token never persisted)
 22. Generated objects persist to Supabase
 23. **Assembly Chorus automation** — coordinator pattern with parallel substrates (Pattern 2)

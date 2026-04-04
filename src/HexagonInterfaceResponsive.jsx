@@ -712,6 +712,13 @@ export default function HexagonInterfaceResponsive() {
   const tTimer = useRef(null);
   // Reading state
   const [readState, setReadState] = useState({ doi: null, text: null, loading: false, error: null, filename: null, size: 0 });
+  // Trail state
+  const [trails, setTrails] = useState([]);
+  const [activeTrail, setActiveTrail] = useState(null);
+  const [trailStep, setTrailStep] = useState(0);
+  // Trail state
+  const [trail, setTrail] = useState({ name: "", docs: [], position: -1 });
+  const [libMode, setLibMode] = useState("SEARCH"); // SEARCH | TRAIL
 
   const addLog = useCallback((msg, type = "sys") => { setLog((p) => [...p.slice(-50), { msg, type, t: new Date().toISOString().slice(11, 19) }]); }, []);
 
@@ -804,7 +811,7 @@ export default function HexagonInterfaceResponsive() {
     </div>
   );
 
-  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
+  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRAILS", label: "TRAILS" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
 
   return (
     <div style={{ height: "100dvh", background: "#0a0d12", color: "#5a6a4a", fontFamily: "Georgia,serif", display: "flex", flexDirection: "column", overflow: "hidden" }}>
@@ -831,14 +838,62 @@ export default function HexagonInterfaceResponsive() {
 
           {view === "LIBRARY" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>FORWARD LIBRARY · {data.documents.length} DEPOSITS</div>
-              <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="search archive..." style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 11, fontFamily: "Georgia,serif", outline: "none", marginBottom: 10 }} />
-              {(search ? searchResults : data.documents.slice(0, isMobile ? 24 : 40)).map((d) => (
-                <div key={d.id} onClick={() => { setSelDoc(d); setView("MAP"); }} style={{ padding: "4px 0", borderBottom: "1px solid #0a0f0a", cursor: "pointer" }}>
-                  <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{d.t.length > 75 ? d.t.slice(0, 72) + "..." : d.t}</div>
-                  <div style={{ display: "flex", justifyContent: "space-between", marginTop: 1 }}><span style={{ fontSize: 8, color: "#2a3a2a" }}>{(d.c?.[0] || "") + " · " + d.d}</span><StatusBadge s={d.s} /></div>
+              {/* Library header with mode toggle */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>
+                  {libMode === "SEARCH" ? `FORWARD LIBRARY · ${data.documents.length} DEPOSITS` : `TRAIL BUILDER${trail.name ? ` · ${trail.name}` : ""}`}
                 </div>
-              ))}
+                <div style={{ display: "flex", gap: 4 }}>
+                  {["SEARCH", "TRAIL"].map(m => (
+                    <span key={m} onClick={() => setLibMode(m)} style={{ fontSize: 7, padding: "1px 5px", fontFamily: "monospace", color: libMode === m ? mc : "#3a4a3a", border: `1px solid ${libMode === m ? mc + "44" : "#0f1a0f"}`, cursor: "pointer" }}>{m}</span>
+                  ))}
+                </div>
+              </div>
+
+              {/* SEARCH mode */}
+              {libMode === "SEARCH" && <>
+                <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="search archive..." style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 11, fontFamily: "Georgia,serif", outline: "none", marginBottom: 10 }} />
+                {(search ? searchResults : data.documents.slice(0, isMobile ? 24 : 40)).map((d) => {
+                  const inTrail = trail.docs.some(td => td.id === d.id);
+                  return (
+                    <div key={d.id} style={{ display: "flex", gap: 4, padding: "4px 0", borderBottom: "1px solid #0a0f0a" }}>
+                      <div style={{ flex: 1, cursor: "pointer" }} onClick={() => { setSelDoc(d); setView("MAP"); }}>
+                        <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{d.t.length > 65 ? d.t.slice(0, 62) + "..." : d.t}</div>
+                        <div style={{ display: "flex", justifyContent: "space-between", marginTop: 1 }}><span style={{ fontSize: 8, color: "#2a3a2a" }}>{(d.c?.[0] || "") + " · " + d.d}</span><StatusBadge s={d.s} /></div>
+                      </div>
+                      <span onClick={(e) => { e.stopPropagation(); if (!inTrail) { setTrail(t => ({ ...t, docs: [...t.docs, d] })); addLog(`Trail +${d.t.slice(0, 30)}`, "sys"); } }} style={{ fontSize: 9, color: inTrail ? "#5a9f5a" : "#2a3a2a", cursor: inTrail ? "default" : "pointer", padding: "2px 4px", fontFamily: "monospace", flexShrink: 0, alignSelf: "center" }}>{inTrail ? "✓" : "+"}</span>
+                    </div>
+                  );
+                })}
+              </>}
+
+              {/* TRAIL mode */}
+              {libMode === "TRAIL" && <>
+                <input value={trail.name} onChange={(e) => setTrail(t => ({ ...t, name: e.target.value }))} placeholder="Trail name..." style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 11, fontFamily: "Georgia,serif", outline: "none", marginBottom: 6 }} />
+                <div style={{ display: "flex", gap: 4, marginBottom: 10 }}>
+                  <span style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>{trail.docs.length} stops</span>
+                  {trail.docs.length > 0 && <>
+                    <span onClick={() => { if (trail.position > 0) { const p = trail.position - 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }} style={{ fontSize: 8, color: trail.position > 0 ? mc : "#1a2a1a", cursor: trail.position > 0 ? "pointer" : "default", fontFamily: "monospace", padding: "0 4px" }}>◀ PREV</span>
+                    <span style={{ fontSize: 8, color: mc, fontFamily: "monospace" }}>{trail.position >= 0 ? trail.position + 1 : "—"}/{trail.docs.length}</span>
+                    <span onClick={() => { if (trail.position < trail.docs.length - 1) { const p = trail.position + 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }} style={{ fontSize: 8, color: trail.position < trail.docs.length - 1 ? mc : "#1a2a1a", cursor: trail.position < trail.docs.length - 1 ? "pointer" : "default", fontFamily: "monospace", padding: "0 4px" }}>NEXT ▶</span>
+                    <span onClick={() => setTrail({ name: "", docs: [], position: -1 })} style={{ fontSize: 8, color: "#5a3a3a", cursor: "pointer", fontFamily: "monospace", marginLeft: "auto", padding: "0 4px" }}>CLEAR</span>
+                  </>}
+                </div>
+                {trail.docs.length === 0 ? (
+                  <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>Switch to SEARCH, find documents, and click + to add them to a trail. Trails are ordered reading paths through the archive.</div>
+                ) : (
+                  trail.docs.map((d, i) => (
+                    <div key={`${d.id}-${i}`} style={{ display: "flex", gap: 6, padding: "4px 0", borderBottom: "1px solid #0a0f0a", background: i === trail.position ? mc + "08" : "transparent" }}>
+                      <span style={{ fontSize: 8, color: i === trail.position ? mc : "#2a3a2a", fontFamily: "monospace", width: 16, flexShrink: 0, textAlign: "right" }}>{i + 1}</span>
+                      <div style={{ flex: 1, cursor: "pointer" }} onClick={() => { setTrail(t => ({ ...t, position: i })); setSelDoc(d); setView("MAP"); }}>
+                        <div style={{ fontSize: 10, color: i === trail.position ? mc : "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{d.t.length > 60 ? d.t.slice(0, 57) + "..." : d.t}</div>
+                        <div style={{ fontSize: 8, color: "#2a3a2a" }}>{(d.c?.[0] || "") + " · " + d.d}</div>
+                      </div>
+                      <span onClick={() => setTrail(t => ({ ...t, docs: t.docs.filter((_, j) => j !== i), position: Math.min(t.position, t.docs.length - 2) }))} style={{ fontSize: 8, color: "#4a3a3a", cursor: "pointer", fontFamily: "monospace", padding: "0 3px", alignSelf: "center" }}>×</span>
+                    </div>
+                  ))
+                )}
+              </>}
             </div>
           )}
 
