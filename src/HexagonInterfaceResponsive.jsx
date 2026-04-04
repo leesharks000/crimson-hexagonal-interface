@@ -230,47 +230,6 @@ function HexMap({ rooms, edges, selected, onSelect, mc, isMobile }) {
 function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp, mode, lp, addLog }) {
   const roomDocs = useMemo(() => docs.filter((d) => d.r.includes(room.id)), [docs, room.id]);
   const roomRels = useMemo(() => relations.filter((r) => r.from === room.id || r.to === room.id), [relations, room.id]);
-  const [invokeInput, setInvokeInput] = useState("");
-  const [invokeResult, setInvokeResult] = useState(null);
-  const [invoking, setInvoking] = useState(false);
-
-  const handleInvoke = async () => {
-    if (!invokeInput.trim()) return;
-    setInvoking(true); setInvokeResult(null);
-    const systemPrompt = [
-      `You are operating inside the Crimson Hexagonal Archive, room ${room.id} (${room.name}).`,
-      `Room physics: ${room.physics}`,
-      `Mode: ${room.preferred_mode}`,
-      room.mantle ? `Active mantle: ${room.mantle}` : null,
-      `Operators available: ${(room.default_operators || []).join(", ")}`,
-      room.lp_program?.length > 0 ? `LP program: ${room.lp_program.map(s => `${s.step}: ${s.value}`).join("; ")}` : null,
-      lp ? `Current LP state: σ="${lp.σ}" ε=${lp.ε} Ξ=[${lp.Ξ.join(",")}] ψ=${lp.ψ}` : null,
-      `Respond in the register of ${room.preferred_mode} mode. Apply the room's physics to your response.`,
-      `You are ${room.mantle || "an unmangled voice"}. The architecture is running.`,
-    ].filter(Boolean).join("\n");
-
-    try {
-      addLog(`INVOKE: ${room.name} · ${room.preferred_mode}`, "lp");
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 1000,
-          system: systemPrompt,
-          messages: [{ role: "user", content: invokeInput }],
-        }),
-      });
-      const data = await res.json();
-      const text = (data.content || []).map(c => c.text || "").join("\n");
-      setInvokeResult({ text, model: data.model });
-      addLog(`INVOKE complete: ${text.slice(0, 40)}…`, "lp");
-    } catch (e) {
-      setInvokeResult({ error: e.message });
-      addLog(`INVOKE error: ${e.message}`, "err");
-    }
-    setInvoking(false);
-  };
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
       <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>{room.id} · {room.cat.toUpperCase()}</div>
@@ -284,21 +243,11 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp, mode
       {room.default_operators?.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>OPERATORS (tap to apply)</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{room.default_operators.map((op, i) => <span key={i} onClick={() => onApplyOp && onApplyOp(op)} style={{ fontSize: 9, padding: "1px 5px", background: mc + "11", border: `1px solid ${mc}33`, color: mc, fontFamily: "monospace", cursor: "pointer" }}>{op}</span>)}</div></div>}
       {room.lp_program?.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>LP PROGRAM</div><div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>{room.lp_program.map((s, i) => <div key={i} style={{ fontSize: 9, fontFamily: "monospace", color: "#4a5a4a", lineHeight: 1.6 }}><span style={{ color: mc }}>{s.step}</span><span style={{ color: "#3a4a3a" }}> :: </span><span>{s.value}</span></div>)}</div></div>}
 
-      {/* INVOKE — OPERATIVE mode only */}
+      {/* INVOKE — requires Gravity Well (Phase 1.2) */}
       {mode === "OPERATIVE" && (
-        <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+        <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: "2px solid #1a2a1a" }}>
           <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>INVOKE · {room.mantle || room.name}</div>
-          <div style={{ display: "flex", gap: 4, marginBottom: 6 }}>
-            <input value={invokeInput} onChange={(e) => setInvokeInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleInvoke(); }} placeholder={`Speak into ${room.name}...`} style={{ flex: 1, background: "#080808", border: `1px solid ${mc}22`, color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: "Georgia,serif", outline: "none" }} />
-            <button onClick={handleInvoke} disabled={invoking} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: invoking ? "wait" : "pointer", fontFamily: "monospace", flexShrink: 0 }}>{invoking ? "…" : "INVOKE"}</button>
-          </div>
-          {invokeResult && !invokeResult.error && (
-            <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.6, padding: "6px 0", borderTop: `1px solid ${mc}11` }}>
-              {invokeResult.text}
-              <div style={{ fontSize: 7, color: "#2a3a2a", fontFamily: "monospace", marginTop: 4 }}>{invokeResult.model} · {room.preferred_mode} · GENERATED</div>
-            </div>
-          )}
-          {invokeResult?.error && <div style={{ fontSize: 9, color: "#9f5a5a" }}>{invokeResult.error}</div>}
+          <div style={{ fontSize: 8, color: "#4a5a4a", fontFamily: "Georgia,serif", lineHeight: 1.5 }}>Invocation routes through Gravity Well for provenance tracking. Deploy GW (Phase 1.2) to enable.</div>
         </div>
       )}
       {roomRels.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>RELATIONS ({roomRels.length})</div>{roomRels.map((r) => <div key={r.id} style={{ fontSize: 9, color: "#4a5a4a", padding: "2px 0" }}>{r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}</div>)}</div>}
