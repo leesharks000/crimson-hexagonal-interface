@@ -1110,7 +1110,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
                   try {
                     const res = await fetch(`${gravityWell.baseUrl}/v1/admin/keys/create`, {
                       method: "POST",
-                      headers: { "Content-Type": "application/json", "Authorization": `Bearer ${token}` },
+                      headers: { "Content-Type": "application/json", "X-Admin-Token": token },
                       body: JSON.stringify({ label: "hexagon-interface" }),
                     });
                     if (!res.ok) throw new Error(`${res.status}: ${await res.text()}`);
