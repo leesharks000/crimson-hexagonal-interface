@@ -270,7 +270,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | Priority | Task | Depends on | Status |
 |---|---|---|---|
 | 1 | Pending actions panel (drafted but not deposited, deposited but not on academia.edu, needs assembly review) | Status tracking beyond Zenodo | ✓ DONE |
-| 2 | One-click deposit pipeline (document in hand → PDF → Zenodo → metadata → publish → DOI back) | Zenodo API integration | OPEN |
+| 2 | One-click deposit pipeline (document in hand → PDF → Zenodo → metadata → publish → DOI back) | Zenodo API integration | ✓ DONE |
 | 3 | Academia.edu / Medium posting tracker (which documents posted where, with links) | External posting status | OPEN |
 | 4 | Assembly review queue (documents awaiting feedback, with substrate assignments) | Governance integration | OPEN |
 | 5 | Retrieval monitoring (Google AIO, Bing — which documents surfacing, which not) | Web search integration | OPEN |
@@ -520,7 +520,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 19. LP acceptance tests drive status promotion in Governance
 20. Trail builder in Library (trails as LP programs — ordered operation sequences)
-21. One-click deposit pipeline (direct Zenodo API; future: via Gravity Well)
+21. One-click deposit pipeline (direct Zenodo API; future: via Gravity Well) — DONE 2026-04-04 (ZENODO tab in Dashboard: token input, title, description, version, keywords, file upload → create → upload → publish in one click; browser→Zenodo direct via CORS; token never persisted)
 22. Generated objects persist to Supabase
 23. **Assembly Chorus automation** — coordinator pattern with parallel substrates (Pattern 2)
 24. Add placeholder structures — DONE 2026-04-04 (operators: 39 across 4 tiers; institutions: 15; mantles: 7; trails, annotations, proposals, witness_actions as empty arrays; 12 object types registered in meta) && Add placeholder structures for operators registry, institutions array, trails, annotations, proposals, witness actions to canonical JSON

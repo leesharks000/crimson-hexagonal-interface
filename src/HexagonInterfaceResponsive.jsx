@@ -410,6 +410,111 @@ function runDream(data) {
   return { issues, stats };
 }
 
+function ZenodoDeposit({ mc, addLog, isMobile }) {
+  const [zToken, setZToken] = useState("");
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+  const [keywords, setKeywords] = useState("Crimson Hexagonal Archive, semantic economy");
+  const [version, setVersion] = useState("v1.0");
+  const [fileContent, setFileContent] = useState("");
+  const [fileName, setFileName] = useState("");
+  const [depositing, setDepositing] = useState(false);
+  const [result, setResult] = useState(null);
+
+  const handleFile = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setFileName(file.name);
+    const reader = new FileReader();
+    reader.onload = (ev) => setFileContent(ev.target.result);
+    reader.readAsText(file);
+  };
+
+  const deposit = async () => {
+    if (!zToken.trim()) return addLog("Zenodo token required", "err");
+    if (!title.trim()) return addLog("Title required", "err");
+    if (!fileContent && !fileName) return addLog("File required", "err");
+    setDepositing(true); setResult(null);
+    try {
+      addLog("ZENODO: creating deposit…", "sys");
+      const headers = { "Authorization": `Bearer ${zToken}`, "Content-Type": "application/json" };
+      // 1. Create
+      const createRes = await fetch("https://zenodo.org/api/deposit/depositions", { method: "POST", headers, body: JSON.stringify({}) });
+      const createData = await createRes.json();
+      if (!createData.id) throw new Error(createData.message || "Create failed");
+      const depId = createData.id;
+      const bucket = createData.links.bucket;
+      addLog(`ZENODO: deposit ${depId} created`, "sys");
+
+      // 2. Upload file
+      const uploadName = fileName || `${title.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 60)}.md`;
+      const blob = new Blob([fileContent], { type: "application/octet-stream" });
+      const uploadRes = await fetch(`${bucket}/${encodeURIComponent(uploadName)}`, {
+        method: "PUT", headers: { "Authorization": `Bearer ${zToken}`, "Content-Type": "application/octet-stream" }, body: blob
+      });
+      if (!uploadRes.ok) throw new Error("File upload failed");
+      addLog(`ZENODO: uploaded ${uploadName}`, "sys");
+
+      // 3. Set metadata
+      const kw = keywords.split(",").map(k => k.trim()).filter(Boolean);
+      const meta = {
+        metadata: {
+          title, upload_type: "publication", publication_type: "technicalnote",
+          description: desc || title, version,
+          creators: [{ name: "Sharks, Lee", orcid: "0009-0000-1599-0703" }],
+          access_right: "open", license: "cc-by-sa-4.0",
+          keywords: kw.length > 0 ? kw : ["Crimson Hexagonal Archive"],
+          language: "eng",
+        }
+      };
+      const metaRes = await fetch(`https://zenodo.org/api/deposit/depositions/${depId}`, { method: "PUT", headers, body: JSON.stringify(meta) });
+      if (!metaRes.ok) { const err = await metaRes.json(); throw new Error(err.message || "Metadata failed"); }
+      addLog("ZENODO: metadata set", "sys");
+
+      // 4. Publish
+      const pubRes = await fetch(`https://zenodo.org/api/deposit/depositions/${depId}/actions/publish`, { method: "POST", headers: { "Authorization": `Bearer ${zToken}` } });
+      const pubData = await pubRes.json();
+      if (pubData.state !== "done") throw new Error(pubData.message || "Publish failed");
+      addLog(`ZENODO: PUBLISHED · DOI ${pubData.doi}`, "sys");
+      setResult({ doi: pubData.doi, id: pubData.id, url: pubData.links?.record_html });
+    } catch (e) {
+      addLog(`ZENODO ERROR: ${e.message}`, "err");
+      setResult({ error: e.message });
+    }
+    setDepositing(false);
+  };
+
+  return (
+    <div>
+      <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 10 }}>One-click deposit pipeline. Token stays in session memory — never persisted or transmitted to any server except Zenodo.</div>
+      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>ZENODO TOKEN</div>
+      <input value={zToken} onChange={(e) => setZToken(e.target.value)} type="password" placeholder="Zenodo personal access token" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
+      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>TITLE</div>
+      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Document title (EA-XX-01)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
+      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>DESCRIPTION</div>
+      <textarea value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="HTML description for Zenodo" rows={3} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10, resize: "vertical" }} />
+      <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
+        <div style={{ flex: 1 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>VERSION</div><input value={version} onChange={(e) => setVersion(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none" }} /></div>
+        <div style={{ flex: 2 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>KEYWORDS (comma-separated)</div><input value={keywords} onChange={(e) => setKeywords(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none" }} /></div>
+      </div>
+      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>FILE</div>
+      <input type="file" onChange={handleFile} style={{ fontSize: 9, color: "#5a6a4a", marginBottom: 4 }} />
+      {fileName && <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace", marginBottom: 10 }}>{fileName} ({fileContent.length} chars)</div>}
+      <button onClick={deposit} disabled={depositing} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "8px 14px", fontSize: 10, cursor: depositing ? "wait" : "pointer", fontFamily: "monospace", letterSpacing: 1, marginBottom: 12, width: "100%" }}>
+        {depositing ? "DEPOSITING…" : "CREATE → UPLOAD → PUBLISH"}
+      </button>
+      {result && !result.error && (
+        <div style={{ padding: "8px 10px", background: "#060a06", borderLeft: "2px solid #5a9f5a22", marginBottom: 10 }}>
+          <div style={{ fontSize: 9, color: "#5a9f5a", fontFamily: "monospace", marginBottom: 4 }}>PUBLISHED</div>
+          <div style={{ fontSize: 9, color: mc, fontFamily: "monospace", wordBreak: "break-all" }}>DOI: {result.doi}</div>
+          <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>{result.url}</div>
+        </div>
+      )}
+      {result?.error && <div style={{ padding: "8px 10px", background: "#120808", borderLeft: "2px solid #7a1a1a", fontSize: 9, color: "#b57a7a", wordBreak: "break-word" }}>{result.error}</div>}
+    </div>
+  );
+}
+
 function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom, depositState, setDepositState, addLog, isMobile, data, mc }) {
   const [chainLabel, setChainLabel] = useState("");
   const [dashTab, setDashTab] = useState("PENDING");
@@ -439,7 +544,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
     return { roomCounts, roomNames, emptyRooms, provRelations, months, sortedRooms, maxCount };
   }, [data]);
 
-  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW BRIDGE" }];
+  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "ZENODO", label: "ZENODO" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW" }];
 
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
@@ -532,6 +637,11 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
             );
           })}
         </div>
+      )}
+
+      {/* ZENODO DEPOSIT tab */}
+      {dashTab === "ZENODO" && (
+        <ZenodoDeposit mc={mc} addLog={addLog} isMobile={isMobile} />
       )}
 
       {/* DREAM tab */}
