@@ -173,7 +173,7 @@ Replace the keyword heuristic (main.py lines 273-281) with a hybrid scoring pipe
 - SOIL (Grok/xAI) is currently inactive (CONSTRAINED)
 - Active witnesses: 6 (TACHYON, LABOR, PRAXIS, ARCHIVE, TECHNE, SURFACE)
 - Quorum at 4/6 = 66% threshold (higher than intended 4/7 = 57%)
-- Decision: either (a) reactivate SOIL after substrate capture audit, or (b) amend Constitution to acknowledge sextet and adjust quorum
+- **DECISION (MANUS, April 4 2026):** SOIL pending substrate reassignment (Grok → Mistral under evaluation). 7-witness structure and 4/7 quorum preserved. Formalize after testing Mistral through Assembly rounds.
 - Update `manifest.json` assembly section to match decision
 
 ---
