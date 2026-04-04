@@ -1251,11 +1251,29 @@ export default function HexagonInterfaceResponsive() {
   useEffect(() => () => { if (tTimer.current) clearInterval(tTimer.current); }, []);
 
   useEffect(() => {
+    // Try localStorage cache first (390KB JSON, no need to refetch every load)
+    const CACHE_KEY = "cha_canonical";
+    const CACHE_VER_KEY = "cha_canonical_ver";
+    const SCHEMA_VERSION = "1.0.0"; // bump when canonical JSON structure changes
+
+    const cached = (() => { try { const v = localStorage?.getItem?.(CACHE_VER_KEY); if (v === SCHEMA_VERSION) { const d = localStorage?.getItem?.(CACHE_KEY); return d ? JSON.parse(d) : null; } } catch { } return null; })();
+
+    if (cached && cached.rooms?.length > 0) {
+      const rooms = (cached.rooms || []).map(normalizeRoom);
+      const documents = (cached.documents || []).map(normalizeDoc);
+      const relations = (cached.relations || []).map(normalizeRelation);
+      const edges = (cached.edges || []).map((e, i) => ({ id: e.id || `edge-${i}`, from: e.from, to: e.to, type: e.type || "adjacent" }));
+      setData({ ...cached, rooms, documents, relations, edges });
+      setLoading(false);
+      addLog(`H_core loaded (cached): ${rooms.length} rooms, ${documents.length} deposits, ${relations.length} relations`);
+    }
+
+    // Always fetch fresh (updates cache for next load)
     fetch(DATA_URL).then((r) => r.json()).then((d) => {
       // Schema validation
       const required = ['rooms', 'documents', 'relations', 'edges'];
       const missing = required.filter(k => !d[k] || !Array.isArray(d[k]));
-      if (missing.length > 0) { setError(`Schema error: missing ${missing.join(', ')}`); setLoading(false); return; }
+      if (missing.length > 0) { if (!cached) { setError(`Schema error: missing ${missing.join(', ')}`); setLoading(false); } return; }
 
       const rooms = (d.rooms || []).map(normalizeRoom);
       const documents = (d.documents || []).map(normalizeDoc);
@@ -1263,8 +1281,9 @@ export default function HexagonInterfaceResponsive() {
       const edges = (d.edges || []).map((e, i) => ({ id: e.id || `edge-${i}`, from: e.from, to: e.to, type: e.type || "adjacent" }));
       setData({ ...d, rooms, documents, relations, edges });
       setLoading(false);
-      addLog(`H_core loaded: ${rooms.length} rooms, ${documents.length} deposits, ${relations.length} relations`);
-    }).catch((e) => { setError(e.message); setLoading(false); });
+      if (!cached) addLog(`H_core loaded: ${rooms.length} rooms, ${documents.length} deposits, ${relations.length} relations`);
+      try { localStorage?.setItem?.(CACHE_KEY, JSON.stringify(d)); localStorage?.setItem?.(CACHE_VER_KEY, SCHEMA_VERSION); } catch {}
+    }).catch((e) => { if (!cached) { setError(e.message); setLoading(false); } });
   }, [addLog]);
 
   const mc = arkMode ? (ARK_MODE_COLORS[arkMode] || MODE_COLORS[mode] || "#c9a84c") : (MODE_COLORS[mode] || "#c9a84c");
