@@ -1403,6 +1403,40 @@ export default function HexagonInterfaceResponsive() {
                   <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{v}</div>
                 </div>
               ))}
+
+              {/* Engine Pipeline */}
+              <div style={{ marginTop: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>ENGINE PIPELINE (closed loop)</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 2, alignItems: "center", marginBottom: 8 }}>
+                  {[["FL", "Forward Library", "documents enter"], ["→"], ["LE", "Lexical Engine", "freeze terminology"], ["→"], ["UKTP", "Universal Key Transform", "register transforms"], ["→"], ["GDE", "Generative Discipline Engine", "produce disciplines"], ["→"], ["SAG", "Structured Ark Generator", "generate variant Arks"], ["→"], ["FL", "Forward Library", "output re-enters"]].map((item, i) => {
+                    if (item.length === 1) return <span key={i} style={{ fontSize: 9, color: "#2a3a2a" }}>→</span>;
+                    const [code, name, desc] = item;
+                    return (
+                      <div key={i} style={{ padding: "4px 8px", background: mc + "08", border: `1px solid ${mc}22`, textAlign: "center", minWidth: isMobile ? 60 : 80 }}>
+                        <div style={{ fontSize: 10, color: mc, fontFamily: "monospace", letterSpacing: 1 }}>{code}</div>
+                        <div style={{ fontSize: 7, color: "#4a5a4a" }}>{isMobile ? desc : name}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "Georgia,serif", fontStyle: "italic" }}>The loop closes. Each output feeds the next input.</div>
+              </div>
+
+              {/* Object type counts */}
+              <div style={{ marginTop: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>CANONICAL OBJECT STORE</div>
+                {[
+                  ["Rooms", data.rooms.length], ["Documents", data.documents.length], ["Relations", data.relations.length],
+                  ["Edges", data.edges.length], ["Dodecad", data.dodecad?.length || 0],
+                  ["Operators", Object.values(data.operators || {}).reduce((s, a) => s + a.length, 0)],
+                  ["Institutions", (data.institutions || []).length], ["Mantles", (data.mantles || []).length],
+                ].map(([label, count], i) => (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
+                    <span style={{ fontSize: 9, color: "#5a6a4a" }}>{label}</span>
+                    <span style={{ fontSize: 9, color: mc, fontFamily: "monospace" }}>{count}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 

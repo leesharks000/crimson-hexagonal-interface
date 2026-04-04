@@ -212,8 +212,8 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 1 | Room-specific interface physics (typography, color, available ops change per room) | Room data | ✓ DONE (arkMode drives accent color per room via preferred_mode; operators shown in room panel) |
 | 2 | Ark mode register (FORMAL, ADVENTURE, POETIC, CLINICAL, etc.) as sub-modes affecting LLM system prompt and visual register | LLM integration | OPEN |
 | 3 | Generated objects persist to Supabase (session → proposal → Airlock) | Phase B storage | ✓ DONE |
-| 4 | Status transitions as visible events (not just label changes) | Event model | OPEN |
-| 5 | Pipeline visualization (FL → LE → UKTP → GDE → SAG → FL) as live process, not static diagram | Event model | OPEN |
+| 4 | Status transitions as visible events (not just label changes) | Event model | ✓ DONE (LP traversal animation, session log, governance actions logged) |
+| 5 | Pipeline visualization (FL → LE → UKTP → GDE → SAG → FL) as live process, not static diagram | Event model | ✓ DONE |
 | 6 | TRACE as real provenance navigation (click any object → see its full chain) | Canonical object store | ✓ DONE |
 | 7 | Read canonical JSON instead of embedding transformed data copy | Data migration | NEW |
 | 8 | GW capture integration: GENERATED objects staged to GW via `/v1/capture` | GW live + Phase C | FUTURE |
