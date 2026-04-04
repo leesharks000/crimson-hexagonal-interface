@@ -1312,8 +1312,10 @@ export default function HexagonInterfaceResponsive() {
     <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Georgia,serif", padding: 16 }}>
       <div style={{ textAlign: "center", maxWidth: 540 }}>
         <div style={{ fontSize: 10, letterSpacing: 3, color: "#3a4a3a", marginBottom: 4 }}>H_core · LOS · {data.meta?.total_deposits || data.documents.length} DEPOSITS</div>
-        <div style={{ fontSize: isMobile ? 18 : 22, letterSpacing: 3, color: "#c9a84c", marginBottom: 4 }}>Crimson Hexagonal Archive</div>
-        <div style={{ fontSize: 10, color: "#3a4a3a", marginBottom: 24 }}>{data.rooms.length} rooms · {data.documents.length} indexed · {data.relations.length} relations</div>
+        <div style={{ fontSize: isMobile ? 18 : 22, letterSpacing: 3, color: "#c9a84c", marginBottom: 6 }}>Crimson Hexagonal Archive</div>
+        <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 6, maxWidth: 420, margin: "0 auto 6px auto" }}>A governed literary architecture. {data.documents.length} DOI-anchored deposits across {data.rooms.length} rooms, each with its own physics, mantle, and operators. Machine-traversable. Provenance-bearing.</div>
+        <div style={{ fontSize: 10, color: "#3a4a3a", marginBottom: 20 }}>{data.rooms.length} rooms · {data.documents.length} indexed · {data.relations.length} relations · <a href="https://doi.org/10.5281/zenodo.19013315" target="_blank" rel="noreferrer" style={{ color: "#5a6a4a" }}>Space Ark v4.2.7</a></div>
+        <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 10 }}>SELECT MODE</div>
         <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, minmax(0, 1fr))", gap: 12 }}>
           {[["ANALYTIC", "Observe · Navigate · Trace provenance"], ["OPERATIVE", "Generate · Invoke · Transform"], ["AUDIT", "Govern · Witness · Promote"]].map(([m, desc]) => (
             <button key={m} onClick={() => { setMode(m); addLog(`Mode: ${m}`); }} style={{ background: "transparent", border: `1px solid ${MODE_COLORS[m]}44`, color: MODE_COLORS[m], padding: "14px 18px", fontSize: 11, letterSpacing: 2, cursor: "pointer", fontFamily: "monospace", textAlign: "center" }}>
@@ -1321,6 +1323,7 @@ export default function HexagonInterfaceResponsive() {
             </button>
           ))}
         </div>
+        <div style={{ fontSize: 8, color: "#2a3a2a", marginTop: 16 }}>Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>ORCID</a> · <a href="/manifest.json" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Machine Manifest</a></div>
       </div>
     </div>
   );
