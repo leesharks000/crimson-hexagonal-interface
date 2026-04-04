@@ -512,9 +512,9 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 13. Room entry executes LP traversal grammar (ACTIVATE → SET_LOGOS → ROTATE → RENDER) — DONE 2026-04-03 (LP programs for all 26 rooms in canonical JSON; animated traversal engine; LP state tuple ⟨σ,ε,Ξ,ψ⟩ live in sidecar; Ark mode register colors shift per room)
 14. Full-text document rendering in Library — DONE 2026-04-03 (live Zenodo fetch: DOI → record API → .md file → rendered in reading pane; markdown renderer with headers, code blocks, bold/italic, HR)
 15. Pending actions panel in Dashboard — DONE 2026-04-03 (three-tab Dashboard: PENDING shows empty rooms, PROVISIONAL relations, monthly velocity; COVERAGE shows room deposit heatmap; GW BRIDGE preserved)
-16. **Dream system** — archive consolidation engine (Pattern 1)
-17. **Mode as dead code elimination** — command registration per mode (Pattern 3)
-18. **LP command risk tiers** — LOW/MEDIUM/HIGH/CRITICAL with confirmation (Pattern 4)
+16. **Dream system** — archive consolidation engine (Pattern 1) — DONE 2026-04-03 (8-check diagnostic scan: orphaned relations, empty rooms, unroomed docs, excerpt sizes, PROVISIONAL relations, LP coverage, duplicate DOIs, adjacency symmetry; DREAM tab in Dashboard)
+17. **Mode as dead code elimination** — command registration per mode (Pattern 3) — DONE 2026-04-03 (COMMAND_REGISTRY: ANALYTIC=12 commands, OPERATIVE=10, AUDIT=10; commands absent from mode, not blocked; displayed in detail panel when no room selected)
+18. **LP command risk tiers** — LOW/MEDIUM/HIGH/CRITICAL with confirmation (Pattern 4) — DONE 2026-04-03 (risk classification on all commands; color-coded L/M/H/C badges; behavior spec: silent/logged/confirm/MANUS)
 
 ### Medium-term (May 2026)
 

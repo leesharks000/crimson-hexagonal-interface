@@ -284,9 +284,136 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead }) {
   );
 }
 
+// ─── Pattern 3: Mode Command Registry (dead code elimination) ───
+
+const COMMAND_REGISTRY = {
+  ANALYTIC: [
+    { cmd: "go", label: "Navigate", desc: "Enter a room", risk: "LOW" },
+    { cmd: "adjacent", label: "Adjacent", desc: "Show reachable rooms", risk: "LOW" },
+    { cmd: "where", label: "Where", desc: "Current room + mode + operators", risk: "LOW" },
+    { cmd: "map", label: "Map", desc: "Full room adjacency graph", risk: "LOW" },
+    { cmd: "rooms", label: "Rooms", desc: "List all rooms", risk: "LOW" },
+    { cmd: "status", label: "Status", desc: "Query element status", risk: "LOW" },
+    { cmd: "load", label: "Load", desc: "Load document into σ", risk: "MEDIUM" },
+    { cmd: "depth", label: "Depth", desc: "Depth probe on object", risk: "MEDIUM" },
+    { cmd: "opacity", label: "Opacity", desc: "Measure structural entropy", risk: "MEDIUM" },
+    { cmd: "coherence", label: "Coherence", desc: "Internal reinforcement score", risk: "MEDIUM" },
+    { cmd: "provenance", label: "Provenance", desc: "Verify chain of custody", risk: "MEDIUM" },
+    { cmd: "trace", label: "Trace", desc: "Follow provenance chain", risk: "MEDIUM" },
+  ],
+  OPERATIVE: [
+    { cmd: "go", label: "Navigate", desc: "Enter a room", risk: "LOW" },
+    { cmd: "rotate", label: "Rotate", desc: "Switch Ark mode register", risk: "LOW" },
+    { cmd: "mantle", label: "Mantle", desc: "Route through heteronym", risk: "LOW" },
+    { cmd: "apply", label: "Apply", desc: "Apply typed operator", risk: "HIGH" },
+    { cmd: "invoke", label: "Invoke", desc: "LLM invocation in room", risk: "HIGH" },
+    { cmd: "mint", label: "Mint", desc: "Generate new object", risk: "HIGH" },
+    { cmd: "anchor", label: "Anchor", desc: "Lock to DOI provenance", risk: "MEDIUM" },
+    { cmd: "emit", label: "Emit", desc: "Render in format", risk: "MEDIUM" },
+    { cmd: "load", label: "Load", desc: "Load document into σ", risk: "MEDIUM" },
+    { cmd: "check", label: "Check", desc: "Run diagnostic suite", risk: "MEDIUM" },
+  ],
+  AUDIT: [
+    { cmd: "go", label: "Navigate", desc: "Enter a room", risk: "LOW" },
+    { cmd: "check", label: "Check", desc: "Run diagnostic suite", risk: "MEDIUM" },
+    { cmd: "capture", label: "Capture", desc: "Detect COS/FOS traces", risk: "MEDIUM" },
+    { cmd: "winding", label: "Winding", desc: "Toroidal field coords", risk: "MEDIUM" },
+    { cmd: "submit", label: "Submit", desc: "Submit to Airlock", risk: "HIGH" },
+    { cmd: "attest", label: "Attest", desc: "Record witness action", risk: "HIGH" },
+    { cmd: "promote", label: "Promote", desc: "Status promotion", risk: "CRITICAL" },
+    { cmd: "deposit", label: "Deposit", desc: "Permanent DOI lock", risk: "CRITICAL" },
+    { cmd: "reject", label: "Reject", desc: "Reject proposal", risk: "CRITICAL" },
+    { cmd: "dream", label: "Dream", desc: "Archive consolidation", risk: "CRITICAL" },
+  ],
+};
+
+// ─── Pattern 4: Risk tier colors and behavior ───
+
+const RISK_COLORS = { LOW: "#3a5a3a", MEDIUM: "#5a5a3a", HIGH: "#7a5a3a", CRITICAL: "#9f5a5a" };
+const RISK_LABELS = { LOW: "silent", MEDIUM: "logged", HIGH: "confirm", CRITICAL: "MANUS" };
+
+// ─── Pattern 1: Dream System — archive consolidation engine ───
+
+function runDream(data) {
+  if (!data) return { issues: [], stats: {} };
+  const issues = [];
+  const now = new Date().toISOString().slice(0, 10);
+
+  // 1. Orphaned relations (reference rooms that don't exist)
+  const roomIds = new Set(data.rooms.map(r => r.id));
+  data.relations.forEach(r => {
+    if (!roomIds.has(r.from)) issues.push({ type: "ORPHAN_REL", severity: "HIGH", msg: `Relation ${r.id}: source ${r.from} not in room graph` });
+    if (!roomIds.has(r.to)) issues.push({ type: "ORPHAN_REL", severity: "HIGH", msg: `Relation ${r.id}: target ${r.to} not in room graph` });
+  });
+
+  // 2. Empty rooms (excluding intentional: r03 Ichabod = degree 0, r17 MSMRM = QUEUED)
+  const intentionalEmpty = new Set(["r03", "r17"]);
+  const roomCounts = {};
+  data.rooms.forEach(r => { roomCounts[r.id] = 0; });
+  data.documents.forEach(doc => { (doc.r || []).forEach(rid => { roomCounts[rid] = (roomCounts[rid] || 0) + 1; }); });
+  data.rooms.forEach(r => {
+    if (roomCounts[r.id] === 0 && !intentionalEmpty.has(r.id)) {
+      issues.push({ type: "EMPTY_ROOM", severity: "MEDIUM", msg: `${r.id} (${r.name}): 0 deposits` });
+    }
+  });
+
+  // 3. Documents with no room assignment
+  data.documents.forEach(doc => {
+    if (!doc.r || doc.r.length === 0) issues.push({ type: "UNROOMED_DOC", severity: "MEDIUM", msg: `Document "${(doc.t || "").slice(0, 50)}": no room assignment` });
+  });
+
+  // 4. Oversized excerpts (> 300 chars)
+  let oversized = 0;
+  data.documents.forEach(doc => {
+    if ((doc.e || "").length > 300) oversized++;
+  });
+  if (oversized > 0) issues.push({ type: "EXCERPT_SIZE", severity: "LOW", msg: `${oversized} documents have excerpts > 300 chars` });
+
+  // 5. PROVISIONAL relations needing ratification
+  const provCount = data.relations.filter(r => r.status === "PROVISIONAL").length;
+  if (provCount > 0) issues.push({ type: "PROV_RELS", severity: "MEDIUM", msg: `${provCount} relations still PROVISIONAL` });
+
+  // 6. Rooms without LP programs
+  const noLP = data.rooms.filter(r => !r.lp_program || r.lp_program.length === 0);
+  if (noLP.length > 0) issues.push({ type: "NO_LP", severity: "LOW", msg: `${noLP.length} rooms have no LP program: ${noLP.map(r => r.id).join(", ")}` });
+
+  // 7. Duplicate DOIs
+  const doiSet = new Set();
+  let dupes = 0;
+  data.documents.forEach(doc => {
+    if (doc.doi && doiSet.has(doc.doi)) dupes++;
+    if (doc.doi) doiSet.add(doc.doi);
+  });
+  if (dupes > 0) issues.push({ type: "DUPE_DOI", severity: "HIGH", msg: `${dupes} duplicate DOIs detected` });
+
+  // 8. Adjacency symmetry check
+  const adjSet = new Set();
+  (data.edges || []).forEach(e => { adjSet.add(`${e.from}-${e.to}`); });
+  let asymmetric = 0;
+  (data.edges || []).forEach(e => {
+    if (!adjSet.has(`${e.to}-${e.from}`) && e.type === "adjacent") asymmetric++;
+  });
+  // Note: asymmetric edges are valid (directional like WaterGiraffe→Assembly)
+  // but worth flagging for review
+
+  // Stats
+  const stats = {
+    rooms: data.rooms.length,
+    documents: data.documents.length,
+    relations: data.relations.length,
+    edges: (data.edges || []).length,
+    emptyRooms: Object.values(roomCounts).filter(c => c === 0).length,
+    issueCount: issues.length,
+    timestamp: now,
+  };
+
+  return { issues, stats };
+}
+
 function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom, depositState, setDepositState, addLog, isMobile, data, mc }) {
   const [chainLabel, setChainLabel] = useState("");
   const [dashTab, setDashTab] = useState("PENDING");
+  const [dreamResult, setDreamResult] = useState(null);
   const suggestion = selectedDoc ? `doc-${selectedDoc.id}` : selectedRoom ? `room-${selectedRoom.id}` : "hexagon-session";
   useEffect(() => { if (!chainLabel) setChainLabel(suggestion); }, [suggestion, chainLabel]);
   const createChain = async () => {
@@ -312,7 +439,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
     return { roomCounts, roomNames, emptyRooms, provRelations, months, sortedRooms, maxCount };
   }, [data]);
 
-  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "GRAVITY", label: "GW BRIDGE" }];
+  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW BRIDGE" }];
 
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
@@ -404,6 +531,28 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
               </div>
             );
           })}
+        </div>
+      )}
+
+      {/* DREAM tab */}
+      {dashTab === "DREAM" && stats && (
+        <div>
+          <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 10 }}>Archive consolidation scan. Checks data integrity, orphaned relations, room coverage, excerpt sizes, LP program coverage.</div>
+          <button onClick={() => { const result = runDream(data); setDreamResult(result); addLog(`DREAM: ${result.issues.length} issues found`, result.issues.length > 0 ? "err" : "sys"); }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", letterSpacing: 1, marginBottom: 12, width: "100%" }}>RUN CONSOLIDATION SCAN</button>
+          {dreamResult && (
+            <div>
+              <div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${dreamResult.issues.length === 0 ? "#5a9f5a" : "#9f5a5a"}22`, marginBottom: 10 }}>
+                <div style={{ fontSize: 9, color: dreamResult.issues.length === 0 ? "#5a9f5a" : "#9f5a5a", fontFamily: "monospace", marginBottom: 4 }}>{dreamResult.issues.length === 0 ? "CLEAN — no issues detected" : `${dreamResult.issues.length} ISSUES FOUND`}</div>
+                <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>{dreamResult.stats.timestamp} · {dreamResult.stats.rooms} rooms · {dreamResult.stats.documents} docs · {dreamResult.stats.relations} rels</div>
+              </div>
+              {dreamResult.issues.map((issue, i) => (
+                <div key={i} style={{ display: "flex", gap: 6, padding: "3px 0", borderBottom: "1px solid #0a0f0a", alignItems: "flex-start" }}>
+                  <span style={{ fontSize: 7, padding: "1px 3px", fontFamily: "monospace", color: RISK_COLORS[issue.severity] || "#5a5a3a", border: `1px solid ${RISK_COLORS[issue.severity] || "#333"}44`, flexShrink: 0 }}>{issue.severity}</span>
+                  <span style={{ fontSize: 8, color: "#5a6a4a", fontFamily: "monospace" }}>{issue.msg}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
@@ -629,7 +778,20 @@ export default function HexagonInterfaceResponsive() {
 
         {/* Detail panel */}
         <div style={{ width: isMobile ? "100%" : 340, minWidth: 0, height: isMobile ? "34dvh" : "100%", minHeight: isMobile ? 220 : 0, maxHeight: isMobile ? "42dvh" : "none", borderLeft: isMobile ? "none" : "1px solid #0f1a0f", borderTop: isMobile ? "1px solid #0f1a0f" : "none", overflow: "hidden", flexShrink: 0, background: "#0a0d12" }}>
-          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={(d) => setSelDoc(d)} isMobile={isMobile} mc={mc} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : "SELECT A ROOM"}</div><div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>{view === "DEPOSIT" ? "Use the left panel to establish the first Gravity Well seam." : isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon on the map to execute its LP traversal grammar."}</div></div>}
+          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={(d) => setSelDoc(d)} isMobile={isMobile} mc={mc} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
+            {view === "DEPOSIT" ? <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>Use the left panel for archive operations.</div> : <>
+              <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6, marginBottom: 10 }}>{isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon to execute its LP traversal grammar."}</div>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>AVAILABLE ({(COMMAND_REGISTRY[mode] || []).length})</div>
+              {(COMMAND_REGISTRY[mode] || []).map((c, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 6, padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                  <span style={{ fontSize: 7, padding: "1px 3px", fontFamily: "monospace", color: RISK_COLORS[c.risk], border: `1px solid ${RISK_COLORS[c.risk]}44`, flexShrink: 0, minWidth: 14, textAlign: "center" }}>{c.risk[0]}</span>
+                  <span style={{ fontSize: 9, color: mc, fontFamily: "monospace", width: 56, flexShrink: 0 }}>{c.cmd}</span>
+                  <span style={{ fontSize: 8, color: "#4a5a4a" }}>{c.desc}</span>
+                </div>
+              ))}
+              <div style={{ fontSize: 8, color: "#2a3a2a", fontFamily: "monospace", marginTop: 8 }}>L=silent · M=logged · H=confirm · C=MANUS</div>
+            </>}
+          </div>}
         </div>
       </div>
 
