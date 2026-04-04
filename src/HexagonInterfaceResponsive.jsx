@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { gravityWell, isGravityWellConfigured } from "./gravityWellAdapter.js";
+import { supabase, isSupabaseConfigured } from "./supabaseClient.js";
 
 const DATA_URL = "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json";
 
@@ -926,6 +927,7 @@ export default function HexagonInterfaceResponsive() {
                     <span onClick={() => { if (trail.position > 0) { const p = trail.position - 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }} style={{ fontSize: 8, color: trail.position > 0 ? mc : "#1a2a1a", cursor: trail.position > 0 ? "pointer" : "default", fontFamily: "monospace", padding: "0 4px" }}>◀ PREV</span>
                     <span style={{ fontSize: 8, color: mc, fontFamily: "monospace" }}>{trail.position >= 0 ? trail.position + 1 : "—"}/{trail.docs.length}</span>
                     <span onClick={() => { if (trail.position < trail.docs.length - 1) { const p = trail.position + 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }} style={{ fontSize: 8, color: trail.position < trail.docs.length - 1 ? mc : "#1a2a1a", cursor: trail.position < trail.docs.length - 1 ? "pointer" : "default", fontFamily: "monospace", padding: "0 4px" }}>NEXT ▶</span>
+                    {isSupabaseConfigured() && trail.name && <span onClick={async () => { try { await supabase.saveTrail(trail); addLog(`Trail saved: ${trail.name}`, "sys"); } catch (e) { addLog(`Trail save error: ${e.message}`, "err"); } }} style={{ fontSize: 8, color: "#5a9f5a", cursor: "pointer", fontFamily: "monospace", padding: "0 4px" }}>SAVE</span>}
                     <span onClick={() => setTrail({ name: "", docs: [], position: -1 })} style={{ fontSize: 8, color: "#5a3a3a", cursor: "pointer", fontFamily: "monospace", marginLeft: "auto", padding: "0 4px" }}>CLEAR</span>
                   </>}
                 </div>
