@@ -4,8 +4,8 @@
 //   VITE_SUPABASE_URL=https://xxxxx.supabase.co
 //   VITE_SUPABASE_ANON_KEY=eyJhbGci...
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "";
-const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || "";
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "https://swsqkdemsqvhgqdfjcwa.supabase.co";
+const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || "sb_publishable_p4JHf173hLgFUsjvXsL5HQ_qUIWAh95";
 
 export function isSupabaseConfigured() {
   return Boolean(SUPABASE_URL && SUPABASE_KEY);
