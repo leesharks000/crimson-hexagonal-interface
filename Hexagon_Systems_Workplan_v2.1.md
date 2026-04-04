@@ -518,7 +518,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 ### Medium-term (May 2026)
 
-19. LP acceptance tests drive status promotion in Governance
+19. LP acceptance tests drive status promotion in Governance — DONE 2026-04-04 (DRR/CSI/PCS/ER/TRS metric computation; visual metric bars with PASS/FAIL per document; status promotion pathway display; threshold gates mapped to transitions; PROVISIONAL relations queue in Governance Console)
 20. Trail builder in Library (trails as LP programs — ordered operation sequences) — DONE 2026-04-04 (SEARCH/TRAIL mode toggle in Library; + button adds docs to trail; named trails with ordered navigation PREV/NEXT; position tracking; remove/clear; built by LABOR substrate) — DONE 2026-04-04 (SEARCH/TRAIL mode toggle; + button adds docs to trail; named trails with ordered stops; PREV/NEXT navigation with position tracking; click-to-read from trail; remove individual stops; CLEAR)
 21. One-click deposit pipeline (direct Zenodo API; future: via Gravity Well) — DONE 2026-04-04 (ZENODO tab in Dashboard: token input, title, description, version, keywords, file upload → create → upload → publish in one click; browser→Zenodo direct via CORS; token never persisted)
 22. Generated objects persist to Supabase
