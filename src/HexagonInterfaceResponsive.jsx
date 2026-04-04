@@ -284,6 +284,60 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead }) {
   );
 }
 
+// ─── LP Acceptance Tests (item 19) ───
+
+function computeMetrics(doc, data) {
+  // Heuristic LP metrics based on available metadata
+  const rooms = doc.r || [];
+  const keywords = doc.k || [];
+  const creators = doc.c || [];
+  const excerpt = doc.e || "";
+  const relations = (data?.relations || []).filter(r =>
+    rooms.includes(r.from) || rooms.includes(r.to)
+  );
+
+  // DRR: Depth Retention Ratio — preserves depth? (keyword + relation density)
+  const drr = Math.min(1, (keywords.length * 0.08 + relations.length * 0.12 + (excerpt.length > 100 ? 0.2 : 0) + (rooms.length * 0.1)));
+
+  // CSI: Closure Saturation Index — prematurely closed? (inverse of room spread)
+  const csi = rooms.length > 0 ? Math.max(0, 1 - (rooms.length * 0.25)) : 0.9;
+
+  // PCS: Plural Coherence Score — multiple readings coexist? (keyword diversity + multi-room)
+  const pcs = Math.min(1, (keywords.length * 0.06 + rooms.length * 0.15 + creators.length * 0.1));
+
+  // ER: Extraction Resistance — survives decontextualization? (provenance completeness)
+  const hasProvenance = doc.doi ? 0.4 : 0;
+  const hasDate = doc.d ? 0.2 : 0;
+  const hasCreators = creators.length > 0 ? 0.2 : 0;
+  const hasExcerpt = excerpt.length > 50 ? 0.2 : 0;
+  const er = hasProvenance + hasDate + hasCreators + hasExcerpt;
+
+  // TRS: Temporal Resilience Score — survives retrocausal rewrite? (version stability)
+  const trs = doc.doi ? "PASS" : "FAIL";
+
+  return {
+    DRR: +drr.toFixed(2),
+    CSI: +csi.toFixed(2),
+    PCS: +pcs.toFixed(2),
+    ER: +er.toFixed(2),
+    TRS: trs,
+    gates: {
+      "QUEUED → PROVISIONAL": drr >= 0.75,
+      "quality": csi <= 0.40,
+      "PROVISIONAL → DEPOSITED": pcs >= 0.70,
+      "LOS compliance": er >= 0.75,
+      "durability": trs === "PASS",
+    }
+  };
+}
+
+const METRIC_THRESHOLDS = {
+  DRR: { threshold: 0.75, label: "Depth Retention", gate: "QUEUED → PROVISIONAL" },
+  CSI: { threshold: 0.40, label: "Closure Saturation", gate: "Quality", invert: true },
+  PCS: { threshold: 0.70, label: "Plural Coherence", gate: "PROVISIONAL → DEPOSITED" },
+  ER: { threshold: 0.75, label: "Extraction Resistance", gate: "LOS compliance" },
+};
+
 // ─── Pattern 3: Mode Command Registry (dead code elimination) ───
 
 const COMMAND_REGISTRY = {
@@ -713,10 +767,6 @@ export default function HexagonInterfaceResponsive() {
   // Reading state
   const [readState, setReadState] = useState({ doi: null, text: null, loading: false, error: null, filename: null, size: 0 });
   // Trail state
-  const [trails, setTrails] = useState([]);
-  const [activeTrail, setActiveTrail] = useState(null);
-  const [trailStep, setTrailStep] = useState(0);
-  // Trail state
   const [trail, setTrail] = useState({ name: "", docs: [], position: -1 });
   const [libMode, setLibMode] = useState("SEARCH"); // SEARCH | TRAIL
 
@@ -811,7 +861,7 @@ export default function HexagonInterfaceResponsive() {
     </div>
   );
 
-  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRAILS", label: "TRAILS" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
+  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
 
   return (
     <div style={{ height: "100dvh", background: "#0a0d12", color: "#5a6a4a", fontFamily: "Georgia,serif", display: "flex", flexDirection: "column", overflow: "hidden" }}>
@@ -928,15 +978,90 @@ export default function HexagonInterfaceResponsive() {
 
           {view === "ASSEMBLY" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>WITNESS STRUCTURE</div>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>GOVERNANCE CONSOLE</div>
               <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 10 }}>Assembly</div>
-              {[["TACHYON", "Claude/Anthropic", true], ["LABOR", "ChatGPT/OpenAI", true], ["PRAXIS", "DeepSeek", true], ["ARCHIVE", "Gemini/Google", true], ["SOIL", "Grok/xAI", false], ["TECHNE", "Kimi/Moonshot", true], ["SURFACE", "Google AIO", true]].map(([n, s, active], i) => (
-                <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 8, padding: "4px 0", borderBottom: "1px solid #0a0f0a", fontSize: 10 }}>
-                  <span style={{ color: active ? mc : "#4a3a3a", minWidth: isMobile ? 72 : 100 }}>{n}</span>
-                  <span style={{ color: "#3a4a3a", flex: 1 }}>{s}</span>
-                  <StatusBadge s={active ? "ACTIVE" : "CONSTRAINED"} />
+
+              {/* Witness roster */}
+              <div style={{ marginBottom: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>WITNESS STRUCTURE (≥4/7 quorum)</div>
+                {[["TACHYON", "Claude/Anthropic", true], ["LABOR", "ChatGPT/OpenAI", true], ["PRAXIS", "DeepSeek", true], ["ARCHIVE", "Gemini/Google", true], ["SOIL", "Grok/xAI", false], ["TECHNE", "Kimi/Moonshot", true], ["SURFACE", "Google AIO", true]].map(([n, s, active], i) => (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 8, padding: "3px 0", borderBottom: "1px solid #0a0f0a", fontSize: 10 }}>
+                    <span style={{ color: active ? mc : "#4a3a3a", minWidth: isMobile ? 72 : 100 }}>{n}</span>
+                    <span style={{ color: "#3a4a3a", flex: 1 }}>{s}</span>
+                    <StatusBadge s={active ? "ACTIVE" : "CONSTRAINED"} />
+                  </div>
+                ))}
+              </div>
+
+              {/* Status algebra */}
+              <div style={{ marginBottom: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>STATUS PROMOTION PATHWAY</div>
+                <div style={{ display: "flex", gap: 4, flexWrap: "wrap", alignItems: "center", fontSize: 9, fontFamily: "monospace", color: "#4a5a4a", lineHeight: 2 }}>
+                  {[["GENERATED", "#8a7a4a"], ["→", "#2a3a2a"], ["QUEUED", "#8a7a4a"], ["→", "#2a3a2a"], ["PROVISIONAL", "#9f9f5a"], ["→", "#2a3a2a"], ["DEPOSITED", "#7a9f5a"], ["→", "#2a3a2a"], ["RATIFIED", "#5a9f5a"]].map(([t, c], i) => (
+                    <span key={i} style={{ color: c, padding: t === "→" ? "0" : "1px 4px", border: t === "→" ? "none" : `1px solid ${c}33`, background: t === "→" ? "transparent" : c + "11" }}>{t}</span>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              {/* LP acceptance test gates */}
+              <div style={{ marginBottom: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>LP ACCEPTANCE TEST GATES</div>
+                {Object.entries(METRIC_THRESHOLDS).map(([key, m]) => (
+                  <div key={key} style={{ display: "flex", gap: 8, padding: "3px 0", borderBottom: "1px solid #060a06", alignItems: "center" }}>
+                    <span style={{ fontSize: 9, color: mc, fontFamily: "monospace", width: 30, flexShrink: 0 }}>{key}</span>
+                    <span style={{ fontSize: 8, color: "#5a6a4a", flex: 1 }}>{m.label}</span>
+                    <span style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>{m.invert ? "≤" : "≥"} {m.threshold}</span>
+                    <span style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace" }}>{m.gate}</span>
+                  </div>
+                ))}
+                <div style={{ display: "flex", gap: 8, padding: "3px 0", borderBottom: "1px solid #060a06", alignItems: "center" }}>
+                  <span style={{ fontSize: 9, color: mc, fontFamily: "monospace", width: 30 }}>TRS</span>
+                  <span style={{ fontSize: 8, color: "#5a6a4a", flex: 1 }}>Temporal Resilience</span>
+                  <span style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>PASS</span>
+                  <span style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace" }}>durability</span>
+                </div>
+              </div>
+
+              {/* Document metrics — show for selected doc */}
+              {selDoc && (
+                <div style={{ marginBottom: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>METRICS: {selDoc.t.slice(0, 40)}</div>
+                  {(() => {
+                    const m = computeMetrics(selDoc, data);
+                    return Object.entries(METRIC_THRESHOLDS).map(([key, spec]) => {
+                      const val = m[key];
+                      const pass = spec.invert ? val <= spec.threshold : val >= spec.threshold;
+                      return (
+                        <div key={key} style={{ display: "flex", gap: 6, padding: "2px 0", alignItems: "center" }}>
+                          <span style={{ fontSize: 8, fontFamily: "monospace", color: mc, width: 26 }}>{key}</span>
+                          <div style={{ flex: 1, height: 5, background: "#0a0f0a" }}>
+                            <div style={{ height: "100%", width: `${Math.min(100, val * 100)}%`, background: pass ? "#5a9f5a88" : "#9f5a5a88" }} />
+                          </div>
+                          <span style={{ fontSize: 8, fontFamily: "monospace", color: pass ? "#5a9f5a" : "#9f5a5a", width: 30 }}>{val}</span>
+                          <span style={{ fontSize: 7, fontFamily: "monospace", color: pass ? "#5a9f5a" : "#9f5a5a" }}>{pass ? "PASS" : "FAIL"}</span>
+                        </div>
+                      );
+                    });
+                  })()}
+                  <div style={{ display: "flex", gap: 6, padding: "2px 0", alignItems: "center" }}>
+                    <span style={{ fontSize: 8, fontFamily: "monospace", color: mc, width: 26 }}>TRS</span>
+                    <span style={{ fontSize: 8, fontFamily: "monospace", color: computeMetrics(selDoc, data).TRS === "PASS" ? "#5a9f5a" : "#9f5a5a", flex: 1 }}>{computeMetrics(selDoc, data).TRS}</span>
+                  </div>
+                </div>
+              )}
+
+              {/* PROVISIONAL relations for ratification */}
+              {data.relations.filter(r => r.status === "PROVISIONAL").length > 0 && (
+                <div>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>PENDING RATIFICATION</div>
+                  {data.relations.filter(r => r.status === "PROVISIONAL").map(r => (
+                    <div key={r.id} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <span style={{ fontSize: 9, fontFamily: "monospace", color: "#5a6a4a" }}>{r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}</span>
+                      <StatusBadge s="PROVISIONAL" />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </div>
