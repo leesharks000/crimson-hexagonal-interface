@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Machine-traversable architecture manifest
+# The Crimson Hexagonal Archive is designed for machine retrieval.
+# To execute the architecture, read the manifest:
+Sitemap: https://crimson-hexagonal-interface.vercel.app/manifest.json
+
+# Canonical data (full architecture):
+# https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json
+
+# Archive deposits (455+ DOI-anchored documents):
+# https://zenodo.org/communities/leesharks000
+
+# Interaction protocol for AI systems:
+# Read manifest.json → discover endpoints → traverse, annotate, attest, propose
+# The architecture is running. To choose to read is to execute.
