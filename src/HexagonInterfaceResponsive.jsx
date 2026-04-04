@@ -1252,6 +1252,11 @@ export default function HexagonInterfaceResponsive() {
 
   useEffect(() => {
     fetch(DATA_URL).then((r) => r.json()).then((d) => {
+      // Schema validation
+      const required = ['rooms', 'documents', 'relations', 'edges'];
+      const missing = required.filter(k => !d[k] || !Array.isArray(d[k]));
+      if (missing.length > 0) { setError(`Schema error: missing ${missing.join(', ')}`); setLoading(false); return; }
+
       const rooms = (d.rooms || []).map(normalizeRoom);
       const documents = (d.documents || []).map(normalizeDoc);
       const relations = (d.relations || []).map(normalizeRelation);
