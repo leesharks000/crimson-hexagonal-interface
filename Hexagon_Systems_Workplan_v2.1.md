@@ -214,7 +214,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 3 | Generated objects persist to Supabase (session → proposal → Airlock) | Phase B storage | ✓ DONE |
 | 4 | Status transitions as visible events (not just label changes) | Event model | OPEN |
 | 5 | Pipeline visualization (FL → LE → UKTP → GDE → SAG → FL) as live process, not static diagram | Event model | OPEN |
-| 6 | TRACE as real provenance navigation (click any object → see its full chain) | Canonical object store | OPEN |
+| 6 | TRACE as real provenance navigation (click any object → see its full chain) | Canonical object store | ✓ DONE |
 | 7 | Read canonical JSON instead of embedding transformed data copy | Data migration | NEW |
 | 8 | GW capture integration: GENERATED objects staged to GW via `/v1/capture` | GW live + Phase C | FUTURE |
 | 9 | GW reconstitution: Runtime startup pulls four-layer seed from GW | GW live + Phase C | FUTURE |
@@ -246,7 +246,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 3 | Trail builder (save ordered reading paths, name them, share them) | Trail object type | ✓ DONE |
 | 4 | Side-by-side comparison (two documents from different rooms) | Reading pane | OPEN |
 | 5 | Annotation system (attach notes to documents, carry GENERATED status) | Phase B storage + auth | ✓ DONE |
-| 6 | Export bibliography (formatted for Zenodo related_identifiers, for papers, for Medium posts) | Bibliography data | OPEN |
+| 6 | Export bibliography (formatted for Zenodo related_identifiers, for papers, for Medium posts) | Bibliography data | ✓ DONE |
 
 ### Integration with other systems
 
@@ -479,7 +479,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 | Priority | Task | Status |
 |---|---|---|
-| D1 | `emit [format]` generates deposit package (PDF + metadata) | OPEN |
+| D1 | `emit [format]` generates deposit package (PDF + metadata) | ✓ DONE |
 | D2 | PROV_CHECK on each deposit (provenance integrity verification) | OPEN |
 | D3 | Depth/coherence metrics displayed per deposit | OPEN |
 
