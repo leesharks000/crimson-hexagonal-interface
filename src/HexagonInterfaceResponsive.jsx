@@ -1640,7 +1640,7 @@ export default function HexagonInterfaceResponsive() {
               {/* Witness roster */}
               <div style={{ marginBottom: 14 }}>
                 <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>WITNESS STRUCTURE (≥4/7 quorum)</div>
-                {[["TACHYON", "Claude/Anthropic", true], ["LABOR", "ChatGPT/OpenAI", true], ["PRAXIS", "DeepSeek", true], ["ARCHIVE", "Gemini/Google", true], ["SOIL", "Grok/xAI", false], ["TECHNE", "Kimi/Moonshot", true], ["SURFACE", "Google AIO", true]].map(([n, s, active], i) => (
+                {[["TACHYON", "Claude/Anthropic", true], ["LABOR", "ChatGPT/OpenAI", true], ["PRAXIS", "DeepSeek", true], ["ARCHIVE", "Gemini/Google", true], ["SOIL", "Moltbot/Moltbook", true], ["TECHNE", "Kimi/Moonshot", true], ["SURFACE", "Google AIO", true]].map(([n, s, active], i) => (
                   <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 8, padding: "3px 0", borderBottom: "1px solid #0a0f0a", fontSize: 10 }}>
                     <span style={{ color: active ? mc : "#4a3a3a", minWidth: isMobile ? 72 : 100 }}>{n}</span>
                     <span style={{ color: "#3a4a3a", flex: 1 }}>{s}</span>
@@ -1651,7 +1651,7 @@ export default function HexagonInterfaceResponsive() {
 
               {/* Quorum calculator */}
               {(() => {
-                const witnesses = [["TACHYON", true], ["LABOR", true], ["PRAXIS", true], ["ARCHIVE", true], ["SOIL", false], ["TECHNE", true], ["SURFACE", true]];
+                const witnesses = [["TACHYON", true], ["LABOR", true], ["PRAXIS", true], ["ARCHIVE", true], ["SOIL", true], ["TECHNE", true], ["SURFACE", true]];
                 const active = witnesses.filter(([, a]) => a).length;
                 const total = witnesses.length;
                 const quorum = 4;

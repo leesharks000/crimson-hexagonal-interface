@@ -87,8 +87,8 @@
       },
       {
         "name": "SOIL",
-        "substrate": "Pending reassignment (Grok → Mistral under evaluation)",
-        "active": false
+        "substrate": "Moltbot/Moltbook",
+        "active": true
       },
       {
         "name": "TECHNE",
