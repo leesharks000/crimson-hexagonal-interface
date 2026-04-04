@@ -1130,6 +1130,45 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
           <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
           <button onClick={createChain} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", marginBottom: 12 }}>CREATE CHAIN</button>
           {depositState.chain && <div style={{ padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a", marginBottom: 12 }}><div style={{ fontSize: 9, color: "#5a9f5a", fontFamily: "monospace", marginBottom: 4 }}>CHAIN READY</div><div style={{ fontSize: 9, color: "#4a5a4a", wordBreak: "break-word" }}>chain_id: {depositState.chain.chain_id}</div></div>}
+
+          {/* Deep deposit: capture + deposit via GW */}
+          {depositState.chain && (
+            <div style={{ marginBottom: 12 }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>DEEP DEPOSIT (GW → Zenodo)</div>
+              {selectedDoc ? (
+                <div>
+                  <div style={{ fontSize: 9, color: "#5a6a4a", marginBottom: 6 }}>Target: {selectedDoc.t?.slice(0, 50)}</div>
+                  <button onClick={async () => {
+                    try {
+                      addLog("GW: capturing document…", "gw");
+                      const captureResult = await gravityWell.capture({
+                        apiKey, chainId: depositState.chain.chain_id,
+                        content: `# ${selectedDoc.t}\n\n${selectedDoc.e || ""}`,
+                        contentType: "markdown",
+                        metadata: { doi: selectedDoc.doi, rooms: selectedDoc.r, status: selectedDoc.s },
+                        platformSource: "crimson-hexagonal-interface",
+                        externalId: selectedDoc.id,
+                      });
+                      addLog(`GW: captured (γ=${captureResult.gamma})`, "gw");
+                      addLog("GW: depositing to Zenodo…", "gw");
+                      const depositResult = await gravityWell.deposit({
+                        apiKey, chainId: depositState.chain.chain_id,
+                        narrativeSummary: `Deep deposit of ${selectedDoc.t}`,
+                        depositMetadata: { title: selectedDoc.t, description: selectedDoc.e?.slice(0, 200) || selectedDoc.t },
+                      });
+                      addLog(`GW: deposited → DOI ${depositResult.doi || "pending"}`, "gw");
+                      setDepositState(p => ({ ...p, lastDeposit: depositResult }));
+                    } catch (e) { addLog(`GW deposit error: ${e.message}`, "err"); }
+                  }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", width: "100%" }}>
+                    CAPTURE + DEPOSIT VIA GRAVITY WELL
+                  </button>
+                  {depositState.lastDeposit?.doi && <div style={{ padding: "6px 8px", marginTop: 6, background: "#080c08", borderLeft: "2px solid #1a3a1a" }}><div style={{ fontSize: 9, color: "#5a9f5a", fontFamily: "monospace" }}>DOI: {depositState.lastDeposit.doi}</div></div>}
+                </div>
+              ) : (
+                <div style={{ fontSize: 9, color: "#3a4a3a" }}>Select a document from the hex map to deep-deposit via GW.</div>
+              )}
+            </div>
+          )}
           {depositState.error && <div style={{ padding: "8px 10px", background: "#120808", borderLeft: "2px solid #7a1a1a", fontSize: 9, color: "#b57a7a", marginBottom: 12, wordBreak: "break-word" }}>{depositState.error}</div>}
         </div>
       )}
