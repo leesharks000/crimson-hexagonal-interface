@@ -1232,15 +1232,66 @@ export default function HexagonInterfaceResponsive() {
     if (target) executeTraversal(target);
   }, [data, executeTraversal]);
 
+  // Operator execution engine — real LP state transformations
+  const OPERATOR_EFFECTS = useMemo(() => ({
+    // Core operators
+    "σ_S":    { name: "Sappho", ε: -0.15, ψ: 0.20, σ_transform: "dissolve",   desc: "Voice → Dissolution → Substrate" },
+    "Θ":      { name: "Fixpoint", ε: -0.05, ψ: 0.10, σ_transform: "stabilize", desc: "Ontology → Ontology [Θ∘Θ=Θ]" },
+    "Ω":      { name: "Revelation", ε: -0.20, ψ: 0.25, σ_transform: "recurse",  desc: "Ontology → Ontology [Ω=Θ(Ω)]" },
+    "φ":      { name: "Fulfillment", ε: -0.10, ψ: 0.15, σ_transform: "test",    desc: "(Text, Text) → Bool" },
+    "ψ_V":    { name: "Void Witness", ε: -0.25, ψ: 0.30, σ_transform: "attest",  desc: "Event → Attestation" },
+    "β":      { name: "Blind", ε: +0.10, ψ: 0.15, σ_transform: "strip",       desc: "Context → Text [identity-stripped]" },
+    "S":      { name: "Shadow", ε: 0, ψ: 0.10, σ_transform: "shadow",          desc: "H_core → S(H_core) [S∘S=id]" },
+    "ICM":    { name: "Ichabod", ε: -0.30, ψ: 0.20, σ_transform: "zero",       desc: "Signal → ∅" },
+    "τ_K":    { name: "Kuro Ingress", ε: -1.0, ψ: 0.35, σ_transform: "lock",   desc: "State → State [irreversible]" },
+    // Extended operators
+    "ψ_π":    { name: "Pareidolia", ε: +0.05, ψ: 0.10, σ_transform: "read",    desc: "Context → Hexagon Reading" },
+    "OP.SWERVE": { name: "Clinamen", ε: +0.15, ψ: 0.15, σ_transform: "deviate", desc: "Trajectory → Deviated Trajectory" },
+    "OP.ROUTE": { name: "Routing", ε: -0.05, ψ: 0.10, σ_transform: "route",    desc: "Object → Destination" },
+    "∂":      { name: "Aorist Dagger", ε: -0.40, ψ: 0.25, σ_transform: "seal", desc: "Statement → Sealed Statement" },
+    "γ":      { name: "Sharks-Function", ε: 0, ψ: 0.20, σ_transform: "recognize", desc: "Context → Bool [self-recognition]" },
+    "μ":      { name: "Meta-Operator", ε: +0.10, ψ: 0.30, σ_transform: "magic", desc: "Symbol × Intent → Effect" },
+    "C_ex":   { name: "Citation", ε: -0.05, ψ: 0.10, σ_transform: "cite",      desc: "Text → Citation Chain" },
+    // THUMB operators
+    "T.1":    { name: "Alienation", ε: -0.10, ψ: 0.15, σ_transform: "estrange", desc: "Relation → Estrangement" },
+    "T.2":    { name: "Triage", ε: -0.10, ψ: 0.15, σ_transform: "classify",    desc: "Signal → Priority" },
+    "T.3":    { name: "Caritas", ε: +0.05, ψ: 0.20, σ_transform: "verify_gift", desc: "Gift → Non-Extraction Proof" },
+    "T.4":    { name: "Sovereignty", ε: -0.15, ψ: 0.25, σ_transform: "self_govern", desc: "System → Self-Governing" },
+    "T.5":    { name: "Terminal", ε: -0.50, ψ: 0.35, σ_transform: "compress",   desc: "Architecture → Self-Contained" },
+  }), []);
+
   const applyOperator = useCallback((op) => {
-    setLp(prev => ({
-      ...prev,
-      Ξ: [...prev.Ξ, op],
-      ψ: +(prev.ψ + 0.15).toFixed(2),
-      ε: +Math.max(0, prev.ε - 0.1).toFixed(2),
-    }));
-    addLog(`APPLY: ${op}`, "lp");
-  }, [addLog]);
+    const effect = OPERATOR_EFFECTS[op];
+    setLp(prev => {
+      const newε = effect ? +Math.max(0, Math.min(1, prev.ε + effect.ε)).toFixed(2) : +Math.max(0, prev.ε - 0.1).toFixed(2);
+      const newψ = effect ? +(prev.ψ + effect.ψ).toFixed(2) : +(prev.ψ + 0.15).toFixed(2);
+      let newσ = prev.σ;
+
+      // σ transformations based on operator type
+      if (effect?.σ_transform) {
+        switch (effect.σ_transform) {
+          case "dissolve": newσ = `⌁${prev.σ}⌁`; break;
+          case "stabilize": newσ = prev.σ.replace(/[⌁⟪⟫†∅]/g, ""); break;
+          case "recurse": newσ = `Ω(${prev.σ})`; break;
+          case "test": newσ = `φ(${prev.σ}) → ?`; break;
+          case "attest": newσ = `ψ_V[${prev.σ}]`; break;
+          case "strip": newσ = prev.σ.replace(/[^a-zA-Z0-9\s]/g, ""); break;
+          case "shadow": newσ = `S(${prev.σ})`; break;
+          case "zero": newσ = "∅"; break;
+          case "lock": newσ = `†${prev.σ}†`; break;
+          case "seal": newσ = `⟪${prev.σ}⟫`; break;
+          case "deviate": newσ = `~${prev.σ}`; break;
+          case "recognize": newσ = prev.σ.includes("Sharks") || prev.σ.includes("Hexagon") ? `γ(${prev.σ})=TRUE` : `γ(${prev.σ})=FALSE`; break;
+          case "compress": newσ = prev.σ.slice(0, Math.max(5, prev.σ.length / 2)) + "…"; break;
+          default: break;
+        }
+      }
+
+      return { σ: newσ, ε: newε, Ξ: [...prev.Ξ, op], ψ: newψ };
+    });
+    const desc = effect ? `${effect.name}: ${effect.desc}` : op;
+    addLog(`APPLY ${op}: ${desc}`, "lp");
+  }, [addLog, OPERATOR_EFFECTS]);
 
   const loadDocument = useCallback((doc) => {
     setSelDoc(doc);
