@@ -451,7 +451,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 | Priority | Task | Status |
 |---|---|---|
 | R1 | Implement LP state tuple display in sidecar (σ, ε, Ξ, ψ) | ✓ DONE |
-| R2 | `apply [operator]` command produces LP state transitions, not just view changes | OPEN |
+| R2 | `apply [operator]` command produces LP state transitions, not just view changes | ✓ DONE |
 | R3 | `rotate [register]` switches Ark mode register, changes LLM system prompt + visual register | ✓ DONE |
 | R4 | `mantle [heteronym]` routes invocation through specific voice | ✓ DONE |
 | R5 | `check` runs LP diagnostic suite on current working state | ✓ DONE |
@@ -461,10 +461,10 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 
 | Priority | Task | Status |
 |---|---|---|
-| L1 | `load [document]` loads text into σ (working sign state) | OPEN |
+| L1 | `load [document]` loads text into σ (working sign state) | ✓ DONE |
 | L2 | `anchor [doi]` locks working state to provenance reference | OPEN |
 | L3 | `depth [document]` runs depth probe on a text | OPEN |
-| L4 | Citation chain as LP graph traversal (C_ex operator) | OPEN |
+| L4 | Citation chain as LP graph traversal (C_ex operator) | ✓ DONE (citation chain in DocPanel + TRACE) |
 
 **Governance Console — LP additions:**
 
@@ -472,8 +472,8 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 |---|---|---|
 | G1 | `submit` executes REQUEST_JUDGMENT → enters Airlock | ✓ DONE |
 | G2 | `attest` creates WITNESS action (append-only) | ✓ DONE |
-| G3 | LP acceptance test metrics displayed on proposals during review | OPEN |
-| G4 | Status promotion runs CHECK against DRR/CSI/PCS thresholds | OPEN |
+| G3 | LP acceptance test metrics displayed on proposals during review | ✓ DONE (metrics + gates shown when doc selected in Assembly) |
+| G4 | Status promotion runs CHECK against DRR/CSI/PCS thresholds | ✓ DONE (gates in TRACE + Assembly views) |
 
 **Deposit Dashboard — LP additions:**
 
@@ -481,7 +481,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 |---|---|---|
 | D1 | `emit [format]` generates deposit package (PDF + metadata) | ✓ DONE |
 | D2 | PROV_CHECK on each deposit (provenance integrity verification) | OPEN |
-| D3 | Depth/coherence metrics displayed per deposit | OPEN |
+| D3 | Depth/coherence metrics displayed per deposit | ✓ DONE (computeMetrics in Assembly view) |
 
 
 

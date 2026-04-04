@@ -227,7 +227,7 @@ function HexMap({ rooms, edges, selected, onSelect, mc, isMobile }) {
   );
 }
 
-function RoomPanel({ room, docs, relations, onDoc, isMobile, mc }) {
+function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp }) {
   const roomDocs = useMemo(() => docs.filter((d) => d.r.includes(room.id)), [docs, room.id]);
   const roomRels = useMemo(() => relations.filter((r) => r.from === room.id || r.to === room.id), [relations, room.id]);
   return (
@@ -240,7 +240,7 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc }) {
       </div>
       <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.5, marginBottom: 10, borderLeft: `2px solid ${mc}33`, paddingLeft: 8 }}>{room.desc}</div>
       <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>PHYSICS</div><div style={{ fontSize: 10, color: "#7a8a5a", fontFamily: "monospace" }}>{room.physics}</div></div>
-      {room.default_operators?.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>OPERATORS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{room.default_operators.map((op, i) => <span key={i} style={{ fontSize: 9, padding: "1px 5px", background: mc + "11", border: `1px solid ${mc}33`, color: mc, fontFamily: "monospace" }}>{op}</span>)}</div></div>}
+      {room.default_operators?.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>OPERATORS (tap to apply)</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{room.default_operators.map((op, i) => <span key={i} onClick={() => onApplyOp && onApplyOp(op)} style={{ fontSize: 9, padding: "1px 5px", background: mc + "11", border: `1px solid ${mc}33`, color: mc, fontFamily: "monospace", cursor: "pointer" }}>{op}</span>)}</div></div>}
       {room.lp_program?.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>LP PROGRAM</div><div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>{room.lp_program.map((s, i) => <div key={i} style={{ fontSize: 9, fontFamily: "monospace", color: "#4a5a4a", lineHeight: 1.6 }}><span style={{ color: mc }}>{s.step}</span><span style={{ color: "#3a4a3a" }}> :: </span><span>{s.value}</span></div>)}</div></div>}
       {roomRels.length > 0 && <div style={{ marginBottom: 10 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>RELATIONS ({roomRels.length})</div>{roomRels.map((r) => <div key={r.id} style={{ fontSize: 9, color: "#4a5a4a", padding: "2px 0" }}>{r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}</div>)}</div>}
       <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>DEPOSITS ({roomDocs.length})</div>
@@ -1048,6 +1048,22 @@ export default function HexagonInterfaceResponsive() {
     if (target) executeTraversal(target);
   }, [data, executeTraversal]);
 
+  const applyOperator = useCallback((op) => {
+    setLp(prev => ({
+      ...prev,
+      Ξ: [...prev.Ξ, op],
+      ψ: +(prev.ψ + 0.15).toFixed(2),
+      ε: +Math.max(0, prev.ε - 0.1).toFixed(2),
+    }));
+    addLog(`APPLY: ${op}`, "lp");
+  }, [addLog]);
+
+  const loadDocument = useCallback((doc) => {
+    setSelDoc(doc);
+    setLp(prev => ({ ...prev, σ: doc.t.slice(0, 60) }));
+    addLog(`LOAD: ${doc.t.slice(0, 40)}`, "lp");
+  }, [addLog]);
+
   const searchResults = useMemo(() => {
     if (!data || !search.trim()) return [];
     const q = search.toLowerCase();
@@ -1461,7 +1477,7 @@ export default function HexagonInterfaceResponsive() {
 
         {/* Detail panel */}
         <div style={{ width: isMobile ? "100%" : 340, minWidth: 0, height: isMobile ? "34dvh" : "100%", minHeight: isMobile ? 220 : 0, maxHeight: isMobile ? "42dvh" : "none", borderLeft: isMobile ? "none" : "1px solid #0f1a0f", borderTop: isMobile ? "1px solid #0f1a0f" : "none", overflow: "hidden", flexShrink: 0, background: "#0a0d12" }}>
-          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} relations={data.relations} documents={data.documents} onDoc={(d) => setSelDoc(d)} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={(d) => setSelDoc(d)} isMobile={isMobile} mc={mc} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
+          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} relations={data.relations} documents={data.documents} onDoc={(d) => setSelDoc(d)} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={loadDocument} isMobile={isMobile} mc={mc} onApplyOp={applyOperator} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
             {view === "DEPOSIT" ? <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>Use the left panel for archive operations.</div> : <>
               <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6, marginBottom: 10 }}>{isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon to execute its LP traversal grammar."}</div>
               <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>AVAILABLE ({(COMMAND_REGISTRY[mode] || []).length})</div>
