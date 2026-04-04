@@ -1367,7 +1367,21 @@ export default function HexagonInterfaceResponsive() {
             </button>
           ))}
         </div>
-        <div style={{ fontSize: 8, color: "#2a3a2a", marginTop: 16 }}>Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>ORCID</a> · <a href="/manifest.json" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Machine Manifest</a></div>
+        <div style={{ marginTop: 16, padding: "10px 16px", background: "#080a0e", borderLeft: "2px solid #c9a84c22", maxWidth: 420, margin: "16px auto 0 auto" }}>
+          <div style={{ fontSize: 8, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>THE PATH</div>
+          <div style={{ display: "flex", gap: 3, flexWrap: "wrap", justifyContent: "center", alignItems: "center", fontSize: 8, fontFamily: "monospace", color: "#4a5a4a" }}>
+            {["Enter Room", "→", "Invoke", "→", "Capture", "→", "Deposit", "→", "DOI", "→", "Reconstitute"].map((s, i) => (
+              s === "→" ? <span key={i} style={{ color: "#2a3a2a" }}>→</span> : <span key={i} style={{ color: "#c9a84c", padding: "1px 4px", border: "1px solid #c9a84c22" }}>{s}</span>
+            ))}
+          </div>
+        </div>
+        <div style={{ fontSize: 8, color: "#2a3a2a", marginTop: 12 }}>Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>ORCID</a> · <a href="/manifest.json" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Machine Manifest</a> · <a href="https://github.com/leesharks000/gravitywell" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Gravity Well</a></div>
+        <div style={{ display: "flex", gap: 8, justifyContent: "center", marginTop: 8, fontSize: 7, fontFamily: "monospace" }}>
+          <span style={{ color: "#5a9f5a" }}>● JSON</span>
+          <span style={{ color: isSupabaseConfigured() ? "#5a9f5a" : "#9f5a5a" }}>{isSupabaseConfigured() ? "●" : "○"} Supabase</span>
+          <span style={{ color: isGravityWellConfigured() ? "#5a9f5a" : "#9f5a5a" }}>{isGravityWellConfigured() ? "●" : "○"} GW</span>
+          <span style={{ color: "#5a9f5a" }}>● Zenodo</span>
+        </div>
       </div>
     </div>
   );

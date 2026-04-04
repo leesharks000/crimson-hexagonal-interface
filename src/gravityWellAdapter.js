@@ -162,5 +162,5 @@ export function gravityWellStatusToHexagonStatus(chain) {
 }
 
 export function isGravityWellConfigured() {
-  return Boolean(import.meta.env.VITE_GRAVITY_WELL_URL);
+  return DEFAULT_BASE_URL.includes("onrender.com") || Boolean(import.meta.env.VITE_GRAVITY_WELL_URL);
 }
