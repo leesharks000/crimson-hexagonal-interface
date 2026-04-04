@@ -299,9 +299,9 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 
 | Priority | Task | Depends on | Status |
 |---|---|---|---|
-| 1 | Proposal queue (list of pending proposals with status, author, bearing-cost statement) | Proposal object type + Phase B storage | OPEN |
-| 2 | Witness action log (append-only ledger of all Assembly actions with timestamps and substrate IDs) | Witness Action object type | OPEN |
-| 3 | Status promotion workflow (GENERATED → QUEUED → PROVISIONAL with visible actors and triggers) | Event model + auth | OPEN |
+| 1 | Proposal queue (list of pending proposals with status, author, bearing-cost statement) | Proposal object type + Phase B storage | ✓ DONE |
+| 2 | Witness action log (append-only ledger of all Assembly actions with timestamps and substrate IDs) | Witness Action object type | ✓ DONE |
+| 3 | Status promotion workflow (GENERATED → QUEUED → PROVISIONAL with visible actors and triggers) | Event model + auth | ✓ DONE |
 | 4 | Quorum calculator (live: who's eligible, who's voted, what threshold applies) | Assembly roster data | OPEN |
 | 5 | Constitutional amendment tracker (which amendments proposed, reviewed, ratified) | Amendment history | OPEN |
 | 6 | AVS integration (Airlock Verification Swarm — automated checks on proposals) | Automation layer | OPEN |

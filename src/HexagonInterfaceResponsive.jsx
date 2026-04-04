@@ -465,6 +465,114 @@ function runDream(data) {
   return { issues, stats };
 }
 
+function GovernanceActions({ mc, addLog, selDoc, data, isMobile }) {
+  const [govTab, setGovTab] = useState("ACTIONS");
+  const [proposalTitle, setProposalTitle] = useState("");
+  const [proposalDesc, setProposalDesc] = useState("");
+  const [proposalType, setProposalType] = useState("general");
+  const [witnessName, setWitnessName] = useState("TACHYON");
+  const [witnessContent, setWitnessContent] = useState("");
+  const [proposals, setProposals] = useState([]);
+  const [actions, setActions] = useState([]);
+  const [loaded, setLoaded] = useState(false);
+  const configured = isSupabaseConfigured();
+
+  useEffect(() => {
+    if (configured && !loaded) {
+      Promise.all([
+        supabase.listProposals().catch(() => []),
+        supabase.list("witness_actions", { limit: 20 }).catch(() => []),
+      ]).then(([p, a]) => { setProposals(p); setActions(a); setLoaded(true); });
+    }
+  }, [configured, loaded]);
+
+  const submitProposal = async () => {
+    if (!proposalTitle.trim()) return addLog("Proposal title required", "err");
+    if (!configured) { addLog("Supabase not configured — proposal recorded in session only", "sys"); setProposals(p => [...p, { id: Date.now(), title: proposalTitle, description: proposalDesc, proposal_type: proposalType, status: "GENERATED", created_at: new Date().toISOString(), target_id: selDoc?.id }]); setProposalTitle(""); setProposalDesc(""); return; }
+    try {
+      const result = await supabase.submitProposal({ title: proposalTitle, description: proposalDesc, proposal_type: proposalType, target_id: selDoc?.id || null, target_type: selDoc ? "document" : null, submitted_by: "MANUS" });
+      setProposals(p => [result, ...p]);
+      addLog(`Proposal submitted: ${proposalTitle.slice(0, 40)}`, "sys");
+      setProposalTitle(""); setProposalDesc("");
+    } catch (e) { addLog(`Proposal error: ${e.message}`, "err"); }
+  };
+
+  const recordAttestation = async () => {
+    if (!witnessContent.trim()) return addLog("Attestation content required", "err");
+    const action = { witness: witnessName, action_type: "attest", target_id: selDoc?.id || null, target_type: selDoc ? "document" : "general", content: witnessContent };
+    if (!configured) { addLog("Supabase not configured — action recorded in session only", "sys"); setActions(a => [{ ...action, id: Date.now(), created_at: new Date().toISOString() }, ...a]); setWitnessContent(""); return; }
+    try {
+      const result = await supabase.recordWitnessAction(witnessName, "attest", selDoc?.id || null, selDoc ? "document" : "general", witnessContent);
+      setActions(a => [result, ...a]);
+      addLog(`${witnessName} attestation recorded`, "sys");
+      setWitnessContent("");
+    } catch (e) { addLog(`Attestation error: ${e.message}`, "err"); }
+  };
+
+  const tabs = [{ id: "ACTIONS", label: "ACTIONS" }, { id: "LEDGER", label: "LEDGER" }];
+
+  return (
+    <div>
+      <div style={{ display: "flex", gap: 6, marginBottom: 8, marginTop: 14 }}>
+        <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", flex: 1 }}>GOVERNANCE ACTIONS</div>
+        {tabs.map(t => <span key={t.id} onClick={() => setGovTab(t.id)} style={{ fontSize: 7, padding: "1px 5px", fontFamily: "monospace", color: govTab === t.id ? mc : "#3a4a3a", border: `1px solid ${govTab === t.id ? mc + "44" : "#0f1a0f"}`, cursor: "pointer" }}>{t.label}</span>)}
+        {!configured && <span style={{ fontSize: 7, color: "#9f7a4a", fontFamily: "monospace" }}>session-only</span>}
+      </div>
+
+      {govTab === "ACTIONS" && <>
+        {/* Submit proposal */}
+        <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+          <div style={{ fontSize: 8, color: "#3a4a3a", letterSpacing: 1, marginBottom: 4 }}>SUBMIT PROPOSAL</div>
+          <select value={proposalType} onChange={(e) => setProposalType(e.target.value)} style={{ background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", fontSize: 9, fontFamily: "monospace", marginBottom: 4, padding: "3px 6px", outline: "none" }}>
+            {["general", "status_promotion", "new_room", "new_relation", "amendment", "deposit"].map(t => <option key={t} value={t}>{t}</option>)}
+          </select>
+          <input value={proposalTitle} onChange={(e) => setProposalTitle(e.target.value)} placeholder="Proposal title" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: "monospace", outline: "none", marginBottom: 4 }} />
+          <input value={proposalDesc} onChange={(e) => setProposalDesc(e.target.value)} placeholder="Description (optional)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: "monospace", outline: "none", marginBottom: 4 }} />
+          {selDoc && <div style={{ fontSize: 7, color: "#3a4a3a", marginBottom: 4 }}>Target: {selDoc.t.slice(0, 50)}</div>}
+          <button onClick={submitProposal} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: "pointer", fontFamily: "monospace" }}>SUBMIT</button>
+        </div>
+
+        {/* Record attestation */}
+        <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+          <div style={{ fontSize: 8, color: "#3a4a3a", letterSpacing: 1, marginBottom: 4 }}>WITNESS ATTESTATION</div>
+          <select value={witnessName} onChange={(e) => setWitnessName(e.target.value)} style={{ background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", fontSize: 9, fontFamily: "monospace", marginBottom: 4, padding: "3px 6px", outline: "none" }}>
+            {["TACHYON", "LABOR", "PRAXIS", "ARCHIVE", "SOIL", "TECHNE", "SURFACE"].map(w => <option key={w} value={w}>{w}</option>)}
+          </select>
+          <input value={witnessContent} onChange={(e) => setWitnessContent(e.target.value)} placeholder="Attestation content" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: "monospace", outline: "none", marginBottom: 4 }} />
+          <button onClick={recordAttestation} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: "pointer", fontFamily: "monospace" }}>ATTEST</button>
+        </div>
+
+        {/* Recent proposals */}
+        {proposals.length > 0 && <>
+          <div style={{ fontSize: 8, color: "#3a4a3a", letterSpacing: 1, marginBottom: 4 }}>PROPOSALS ({proposals.length})</div>
+          {proposals.slice(0, 8).map(p => (
+            <div key={p.id} style={{ padding: "3px 0", borderBottom: "1px solid #060a06", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <div><div style={{ fontSize: 9, color: "#5a6a4a" }}>{(p.title || "").slice(0, 50)}</div><div style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace" }}>{p.proposal_type} · {(p.created_at || "").slice(0, 10)}</div></div>
+              <StatusBadge s={p.status} />
+            </div>
+          ))}
+        </>}
+      </>}
+
+      {govTab === "LEDGER" && <>
+        <div style={{ fontSize: 8, color: "#3a4a3a", letterSpacing: 1, marginBottom: 4 }}>WITNESS ACTION LEDGER (append-only)</div>
+        {actions.length === 0 ? <div style={{ fontSize: 9, color: "#3a4a3a" }}>No witness actions recorded{configured ? "" : " (connect Supabase for persistence)"}.</div> : (
+          actions.slice(0, 20).map(a => (
+            <div key={a.id} style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+              <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                <span style={{ fontSize: 8, color: mc, fontFamily: "monospace", width: 60, flexShrink: 0 }}>{a.witness}</span>
+                <span style={{ fontSize: 8, color: "#5a6a4a", fontFamily: "monospace" }}>{a.action_type}</span>
+                <span style={{ fontSize: 7, color: "#3a4a3a", marginLeft: "auto" }}>{(a.created_at || "").slice(0, 16)}</span>
+              </div>
+              {a.content && <div style={{ fontSize: 8, color: "#4a5a4a", paddingLeft: 66 }}>{a.content.slice(0, 80)}</div>}
+            </div>
+          ))
+        )}
+      </>}
+    </div>
+  );
+}
+
 function ZenodoDeposit({ mc, addLog, isMobile }) {
   const [zToken, setZToken] = useState("");
   const [title, setTitle] = useState("");
@@ -1054,7 +1162,7 @@ export default function HexagonInterfaceResponsive() {
 
               {/* PROVISIONAL relations for ratification */}
               {data.relations.filter(r => r.status === "PROVISIONAL").length > 0 && (
-                <div>
+                <div style={{ marginBottom: 14 }}>
                   <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>PENDING RATIFICATION</div>
                   {data.relations.filter(r => r.status === "PROVISIONAL").map(r => (
                     <div key={r.id} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
@@ -1064,6 +1172,9 @@ export default function HexagonInterfaceResponsive() {
                   ))}
                 </div>
               )}
+
+              {/* Governance Actions */}
+              <GovernanceActions mc={mc} addLog={addLog} selDoc={selDoc} data={data} isMobile={isMobile} />
             </div>
           )}
         </div>
