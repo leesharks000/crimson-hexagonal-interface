@@ -777,8 +777,9 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile }) {
 function ZenodoDeposit({ mc, addLog, isMobile }) {
   const [zToken, setZToken] = useState("");
   const [title, setTitle] = useState("");
+  const [creator, setCreator] = useState("");
   const [desc, setDesc] = useState("");
-  const [keywords, setKeywords] = useState("Crimson Hexagonal Archive, semantic economy");
+  const [keywords, setKeywords] = useState("");
   const [version, setVersion] = useState("v1.0");
   const [fileContent, setFileContent] = useState("");
   const [fileName, setFileName] = useState("");
@@ -825,7 +826,7 @@ function ZenodoDeposit({ mc, addLog, isMobile }) {
         metadata: {
           title, upload_type: "publication", publication_type: "technicalnote",
           description: desc || title, version,
-          creators: [{ name: "Sharks, Lee", orcid: "0009-0000-1599-0703" }],
+          creators: [{ name: creator.trim() || "Anonymous" }],
           access_right: "open", license: "cc-by-sa-4.0",
           keywords: kw.length > 0 ? kw : ["Crimson Hexagonal Archive"],
           language: "eng",
@@ -850,11 +851,13 @@ function ZenodoDeposit({ mc, addLog, isMobile }) {
 
   return (
     <div>
-      <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 10 }}>One-click deposit pipeline. Token stays in session memory — never persisted or transmitted to any server except Zenodo.</div>
+      <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 10 }}>Deposit directly to Zenodo under your own account. You need a free Zenodo account and a personal access token (zenodo.org → Settings → Applications → Personal access tokens → New token with deposit:write scope). Token stays in your browser — never sent anywhere except Zenodo.</div>
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>ZENODO TOKEN</div>
       <input value={zToken} onChange={(e) => setZToken(e.target.value)} type="password" placeholder="Zenodo personal access token" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>TITLE</div>
       <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Document title (EA-XX-01)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
+      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>CREATOR (Last, First)</div>
+      <input value={creator} onChange={(e) => setCreator(e.target.value)} placeholder="Your name for Zenodo metadata" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>DESCRIPTION</div>
       <textarea value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="HTML description for Zenodo" rows={3} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10, resize: "vertical" }} />
       <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
