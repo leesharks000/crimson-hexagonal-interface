@@ -29,7 +29,142 @@ Access the code via GitHub raw URLs listed below. Read the files. Then provide y
 
 ---
 
-## KEY FILES TO READ (use GitHub raw URLs)
+## DIRECTORY STRUCTURES
+
+### Interface (`crimson-hexagonal-interface`)
+```
+.env                              # Supabase public keys
+.gitignore
+ASSEMBLY_AUDIT_PROMPT.md          # This document
+Ark_Runtime_Event_Schema_v1.1.md  # Event schema spec
+GRAVITY_WELL_INTEGRATION_v0.1.md  # Integration boundary spec
+Hexagon_Interface_Constitution.md # Constitutional spec
+Hexagon_Systems_Workplan_v2.1.md  # Full workplan (55 done, 0 open)
+LICENSE.md                        # Dual license (CC BY-SA 4.0 + SPP)
+README.md                         # Project documentation
+hexagon_canonical.json            # Canonical architecture data (390KB)
+index.html                        # Entry point + meta/JSON-LD/noscript
+package.json                      # Vite + React deps
+public/manifest.json              # Machine-traversable manifest
+public/robots.txt                 # Crawler directives → manifest
+src/HexagonInterfaceResponsive.jsx  # THE INTERFACE (1688 lines, single file)
+src/gravityWellAdapter.js         # GW integration stub (113 lines)
+src/main.jsx                      # React entry (9 lines)
+src/supabaseClient.js             # Supabase REST client (104 lines)
+supabase_schema.sql               # Phase B persistence schema (97 lines)
+vite.config.js                    # Build config
+```
+
+### Gravity Well (`gravitywell`)
+```
+.env.example                      # Environment variable template
+.gitignore
+DEPLOY.md                         # Deployment instructions
+Dockerfile                        # Container config
+README.md                         # Project documentation
+deploy.sh                         # Deployment script
+docker-compose.yml                # Container orchestration
+landing.html                      # Landing page
+main.py                           # ENTIRE BACKEND (1206 lines, single file)
+render.yaml                       # Render deployment config
+requirements.txt                  # Python deps
+test.sh                           # Test script
+```
+
+---
+
+## ALL RAW URLs (fetch these directly)
+
+### Interface — Every File
+- README: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/README.md`
+- **Interface JSX (primary):** `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/src/HexagonInterfaceResponsive.jsx`
+- Supabase client: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/src/supabaseClient.js`
+- GW adapter: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/src/gravityWellAdapter.js`
+- React entry: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/src/main.jsx`
+- **Canonical JSON:** `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json`
+- **Machine manifest:** `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/public/manifest.json`
+- robots.txt: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/public/robots.txt`
+- index.html: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/index.html`
+- package.json: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/package.json`
+- vite.config.js: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/vite.config.js`
+- Supabase schema: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/supabase_schema.sql`
+- **Workplan:** `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/Hexagon_Systems_Workplan_v2.1.md`
+- Constitution: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/Hexagon_Interface_Constitution.md`
+- GW integration spec: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/GRAVITY_WELL_INTEGRATION_v0.1.md`
+- Event schema: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/Ark_Runtime_Event_Schema_v1.1.md`
+- License: `https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/LICENSE.md`
+
+### Gravity Well — Every File
+- README: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/README.md`
+- **main.py (entire backend):** `https://raw.githubusercontent.com/leesharks000/gravitywell/main/main.py`
+- requirements.txt: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/requirements.txt`
+- Dockerfile: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/Dockerfile`
+- docker-compose.yml: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/docker-compose.yml`
+- render.yaml: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/render.yaml`
+- deploy.sh: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/deploy.sh`
+- test.sh: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/test.sh`
+- .env.example: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/.env.example`
+- DEPLOY.md: `https://raw.githubusercontent.com/leesharks000/gravitywell/main/DEPLOY.md`
+
+### Interface — Inline Configs (so you don't have to fetch)
+
+**package.json:**
+```json
+{
+  "name": "crimson-hexagonal-interface",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}
+```
+
+**Gravity Well requirements.txt:**
+```
+fastapi
+uvicorn
+httpx
+python-multipart
+pydantic
+aiofiles
+python-jose[cryptography]
+passlib[bcrypt]
+```
+
+### Gravity Well — API Endpoints (from main.py)
+```
+POST   /v1/admin/keys/create        — Create API key
+POST   /v1/admin/keys/revoke/{id}   — Revoke API key
+POST   /v1/chain/create             — Create provenance chain
+GET    /v1/chain/{chain_id}         — Get chain details
+GET    /v1/chains                   — List all chains
+POST   /v1/capture                  — Stage utterance to chain
+POST   /v1/deposit                  — Deposit chain to Zenodo
+GET    /v1/reconstitute/{chain_id}  — Four-layer reconstitution seed
+POST   /v1/drift/{chain_id}        — Structural drift detection
+GET    /v1/chain/{chain_id}/history — Chain version history
+GET    /v1/staged/{chain_id}        — List staged captures
+POST   /v1/admin/cleanup/{chain_id} — Clean up staged content
+GET    /v1/health                   — Health check
+GET    /v1/schema/bootstrap         — Bootstrap manifest schema
+POST   /v1/util/constraint-hash     — Compute constraint hash
+```
+
+---
+
+## KEY FILES TO READ (prioritized)
 
 ### Interface — Primary Files
 | File | Lines | Purpose | Raw URL |
