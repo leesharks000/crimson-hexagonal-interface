@@ -254,9 +254,24 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc }) {
   );
 }
 
-function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead }) {
+function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relations, documents, onDoc }) {
   const hasContent = readState?.doi === doc.doi && readState?.text;
   const isLoading = readState?.doi === doc.doi && readState?.loading;
+
+  // Citation chain: find related documents through room relations
+  const docRooms = doc.r || [];
+  const roomRelations = useMemo(() => (relations || []).filter(r => docRooms.includes(r.from) || docRooms.includes(r.to)), [relations, docRooms]);
+  const connectedRoomIds = useMemo(() => {
+    const ids = new Set();
+    roomRelations.forEach(r => { ids.add(r.from); ids.add(r.to); });
+    docRooms.forEach(id => ids.delete(id)); // exclude own rooms
+    return [...ids];
+  }, [roomRelations, docRooms]);
+  const connectedDocs = useMemo(() => {
+    if (!documents) return [];
+    return documents.filter(d => d.id !== doc.id && connectedRoomIds.some(rid => (d.r || []).includes(rid))).slice(0, 8);
+  }, [documents, doc.id, connectedRoomIds]);
+
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
       {!hasContent && <>
@@ -271,7 +286,30 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead }) {
           </button>
         )}
         {readState?.error && readState.doi === doc.doi && <div style={{ fontSize: 9, color: "#9f5a5a", marginBottom: 8 }}>{readState.error}</div>}
-        {doc.r.length > 0 && <div><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>ROOMS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{doc.r.map((rid) => { const rm = rooms.find((r) => r.id === rid); return <span key={rid} onClick={() => onRoom(rid)} style={{ fontSize: 9, padding: "1px 5px", background: "#0a0f0a", border: `1px solid ${(CAT_COLORS[rm?.cat] || "#333")}44`, color: CAT_COLORS[rm?.cat] || "#555", cursor: "pointer", fontFamily: "monospace" }}>{rm?.name || rid}</span>; })}</div></div>}
+        {doc.r.length > 0 && <div style={{ marginBottom: 8 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>ROOMS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{doc.r.map((rid) => { const rm = rooms.find((r) => r.id === rid); return <span key={rid} onClick={() => onRoom(rid)} style={{ fontSize: 9, padding: "1px 5px", background: "#0a0f0a", border: `1px solid ${(CAT_COLORS[rm?.cat] || "#333")}44`, color: CAT_COLORS[rm?.cat] || "#555", cursor: "pointer", fontFamily: "monospace" }}>{rm?.name || rid}</span>; })}</div></div>}
+
+        {/* Citation chain */}
+        {roomRelations.length > 0 && (
+          <div style={{ marginBottom: 8 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>RELATION CHAIN ({roomRelations.length})</div>
+            {roomRelations.map(r => (
+              <div key={r.id} style={{ fontSize: 8, color: "#4a5a4a", padding: "2px 0", fontFamily: "monospace" }}>
+                {r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}
+              </div>
+            ))}
+          </div>
+        )}
+        {connectedDocs.length > 0 && (
+          <div>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>CONNECTED ({connectedDocs.length})</div>
+            {connectedDocs.map(d => (
+              <div key={d.id} onClick={() => onDoc && onDoc(d)} style={{ padding: "3px 0", borderBottom: "1px solid #0a0f0a", cursor: "pointer" }}>
+                <div style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{d.t.length > 55 ? d.t.slice(0, 52) + "..." : d.t}</div>
+                <div style={{ fontSize: 7, color: "#2a3a2a" }}>{(d.c?.[0] || "") + " · " + d.d}</div>
+              </div>
+            ))}
+          </div>
+        )}
       </>}
       {hasContent && <>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
@@ -1181,7 +1219,7 @@ export default function HexagonInterfaceResponsive() {
 
         {/* Detail panel */}
         <div style={{ width: isMobile ? "100%" : 340, minWidth: 0, height: isMobile ? "34dvh" : "100%", minHeight: isMobile ? 220 : 0, maxHeight: isMobile ? "42dvh" : "none", borderLeft: isMobile ? "none" : "1px solid #0f1a0f", borderTop: isMobile ? "1px solid #0f1a0f" : "none", overflow: "hidden", flexShrink: 0, background: "#0a0d12" }}>
-          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={(d) => setSelDoc(d)} isMobile={isMobile} mc={mc} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
+          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} relations={data.relations} documents={data.documents} onDoc={(d) => setSelDoc(d)} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={(d) => setSelDoc(d)} isMobile={isMobile} mc={mc} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
             {view === "DEPOSIT" ? <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6 }}>Use the left panel for archive operations.</div> : <>
               <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.6, marginBottom: 10 }}>{isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon to execute its LP traversal grammar."}</div>
               <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>AVAILABLE ({(COMMAND_REGISTRY[mode] || []).length})</div>

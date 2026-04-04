@@ -242,7 +242,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | Priority | Task | Depends on | Status |
 |---|---|---|---|
 | 1 | Full-text document rendering (fetch markdown from Zenodo files API) | Zenodo file access | ✓ DONE |
-| 2 | Citation chain navigation (document → relations → linked documents) | Typed relations in data | OPEN |
+| 2 | Citation chain navigation (document → relations → linked documents) | Typed relations in data | ✓ DONE |
 | 3 | Trail builder (save ordered reading paths, name them, share them) | Trail object type | ✓ DONE |
 | 4 | Side-by-side comparison (two documents from different rooms) | Reading pane | OPEN |
 | 5 | Annotation system (attach notes to documents, carry GENERATED status) | Phase B storage + auth | OPEN |
