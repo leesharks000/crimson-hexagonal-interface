@@ -1091,11 +1091,39 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
       {dashTab === "GRAVITY" && (
         <div>
           <div style={{ fontSize: isMobile ? 14 : 16, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 8 }}>Gravity Well Bridge</div>
-          <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 12 }}>First seam only: create provenance chains, then route selected work toward external fixation.</div>
+          <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 12 }}>Provenance engine. Create API keys, chains, invoke rooms, route governance.</div>
           <div style={{ marginBottom: 12, padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a" }}>
             <div style={{ fontSize: 9, color: configured ? "#5a9f5a" : "#9f7a4a", marginBottom: 4, fontFamily: "monospace", wordBreak: "break-word" }}>{configured ? `GW URL: ${gravityWell.baseUrl}` : "VITE_GRAVITY_WELL_URL not set"}</div>
             <div style={{ fontSize: 9, color: "#4a5a4a" }}>Source: {selectedDoc ? `doc ${selectedDoc.id}` : selectedRoom ? `room ${selectedRoom.id}` : "none"}</div>
           </div>
+
+          {/* Create API Key */}
+          {!apiKey && (
+            <div style={{ marginBottom: 12, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>CREATE API KEY</div>
+              <div style={{ fontSize: 8, color: "#4a5a4a", marginBottom: 4 }}>Enter your GW admin token to generate an API key.</div>
+              <div style={{ display: "flex", gap: 4 }}>
+                <input id="gw-admin-token" type="password" placeholder="ADMIN_TOKEN" style={{ flex: 1, background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: "monospace", outline: "none" }} />
+                <button onClick={async () => {
+                  const token = document.getElementById("gw-admin-token")?.value;
+                  if (!token) return addLog("Admin token required", "err");
+                  try {
+                    const res = await fetch(`${gravityWell.baseUrl}/v1/admin/keys/create`, {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json", "Authorization": `Bearer ${token}` },
+                      body: JSON.stringify({ label: "hexagon-interface" }),
+                    });
+                    if (!res.ok) throw new Error(`${res.status}: ${await res.text()}`);
+                    const data = await res.json();
+                    const newKey = data.api_key || data.key;
+                    if (newKey) { setApiKey(newKey); addLog(`GW API key created: ${newKey.slice(0, 12)}…`, "sys"); }
+                    else { addLog("Key created but no key returned — check GW response", "err"); }
+                  } catch (e) { addLog(`Key creation error: ${e.message}`, "err"); }
+                }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: "pointer", fontFamily: "monospace" }}>CREATE</button>
+              </div>
+            </div>
+          )}
+
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>API KEY</div>
           <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 12 }} />
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>CHAIN LABEL</div>
