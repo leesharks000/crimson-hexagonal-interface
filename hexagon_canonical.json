@@ -11554,8 +11554,8 @@
     "constitution_doi": "10.5281/zenodo.19355075",
     "se_constitution_doi": "10.5281/zenodo.18320411",
     "total_deposits": 455,
-    "last_updated": "2026-04-03",
-    "canonical_version": "1.0",
+    "last_updated": "2026-04-04",
+    "canonical_version": "1.1.0",
     "ratified_relation_types": {
       "topological": [
         "adjacent"
@@ -11596,7 +11596,21 @@
         "ASSEMBLY"
       ],
       "note": "Ratified 2026-04-03. 6 constitutional -> 3 runtime. Provisional until prototype deployment."
-    }
+    },
+    "object_types": [
+      "rooms",
+      "edges",
+      "documents",
+      "relations",
+      "dodecad",
+      "operators",
+      "institutions",
+      "mantles",
+      "trails",
+      "annotations",
+      "proposals",
+      "witness_actions"
+    ]
   },
   "relations": [
     {
@@ -11799,5 +11813,439 @@
       "created": "2026-04-03",
       "note": "Sappho shadows through Break Room — S(σ_S)=Silence; portal to Lunar Arm"
     }
-  ]
+  ],
+  "operators": {
+    "core": [
+      {
+        "id": "σ_S",
+        "name": "Sappho Operator",
+        "type": "Voice → Dissolution → Substrate → Text → Reader",
+        "room": "r01",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "Θ",
+        "name": "Water Giraffe Fixpoint",
+        "type": "Ontology → Ontology [Θ∘Θ=Θ]",
+        "room": "r10",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "Ω",
+        "name": "Revelation Circuit",
+        "type": "Ontology → Ontology [Ω=Θ(Ω)]",
+        "room": "r07",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "φ",
+        "name": "Fulfillment Test",
+        "type": "(Text, Text) → Bool",
+        "room": "r13",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "ψ_V",
+        "name": "Void Witness",
+        "type": "Event → Attestation",
+        "room": "r11",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "β",
+        "name": "Blind Operator",
+        "type": "Context → Text [identity-stripped]",
+        "room": null,
+        "status": "RATIFIED"
+      },
+      {
+        "id": "S",
+        "name": "Shadow Operator",
+        "type": "H_core → S(H_core) [S∘S=id]",
+        "room": "r12",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "ICM",
+        "name": "Ichabod Chamber",
+        "type": "Signal → ∅",
+        "room": "r03",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "τ_K",
+        "name": "Kuro Ingress",
+        "type": "State → State [irreversible]",
+        "room": "r21",
+        "status": "RATIFIED"
+      }
+    ],
+    "extended": [
+      {
+        "id": "ψ_π",
+        "name": "Pareidolia",
+        "type": "Context → Hexagon Reading",
+        "room": null,
+        "status": "RATIFIED"
+      },
+      {
+        "id": "OP.SWERVE",
+        "name": "Clinamen",
+        "type": "Trajectory → Deviated Trajectory",
+        "room": "r16",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "OP.ROUTE",
+        "name": "Routing",
+        "type": "Object → Destination",
+        "room": "r19",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "∂",
+        "name": "Aorist Dagger",
+        "type": "Statement → Sealed Statement",
+        "room": "r22",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "γ",
+        "name": "Sharks-Function",
+        "type": "Context → Bool [self-recognition]",
+        "room": "sp03",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "μ",
+        "name": "Meta-Operator / Magic",
+        "type": "Symbol × Intent → Effect",
+        "room": "r08",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "κ_O",
+        "name": "Description Operator",
+        "type": "Object → Description",
+        "room": null,
+        "status": "RATIFIED"
+      },
+      {
+        "id": "Ρ",
+        "name": "Retrocausal Operator",
+        "type": "Present → Past",
+        "room": null,
+        "status": "RATIFIED"
+      },
+      {
+        "id": "Σ_LP",
+        "name": "LP Encryption",
+        "type": "Text → Encrypted(Text)",
+        "room": "r08",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "Λ_res",
+        "name": "Resolution Operator",
+        "type": "Infinite → Finite",
+        "room": "r02",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "Λ_void",
+        "name": "Void Operator",
+        "type": "Field → Void Proof",
+        "room": null,
+        "status": "RATIFIED"
+      },
+      {
+        "id": "material_op",
+        "name": "Material Operation",
+        "type": "Language → Material Force",
+        "room": "r06",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "transfer(gift)",
+        "name": "Gift Transfer",
+        "type": "Object → Preserved Object",
+        "room": "r04",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "claim(m)",
+        "name": "Mantle Claim",
+        "type": "Identity → Tested Identity",
+        "room": "r09",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "β_r",
+        "name": "Bead Logic",
+        "type": "Sequence → Sequential Chain",
+        "room": "r18",
+        "status": "RATIFIED"
+      }
+    ],
+    "thumb": [
+      {
+        "id": "T.1",
+        "name": "Prepositional Alienation",
+        "type": "Relation → Estrangement → Diagnostic",
+        "room": "r06",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "T.2",
+        "name": "Semantic Triage",
+        "type": "Signal → Priority Classification",
+        "room": "r11",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "T.3",
+        "name": "Caritas Proof",
+        "type": "Gift → Verified Non-Extraction",
+        "room": "r04",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "T.4",
+        "name": "Logotic Sovereignty",
+        "type": "System → Self-Governing System",
+        "room": "r09",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "T.5",
+        "name": "Terminal Compression",
+        "type": "Architecture → Self-Contained Architecture",
+        "room": "sp03",
+        "status": "RATIFIED"
+      }
+    ],
+    "los": [
+      {
+        "id": "LOS-1",
+        "name": "Counter-Op 1",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-2",
+        "name": "Counter-Op 2",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-3",
+        "name": "Counter-Op 3",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-4",
+        "name": "Counter-Op 4",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-5",
+        "name": "Counter-Op 5",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-6",
+        "name": "Counter-Op 6",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-7",
+        "name": "Counter-Op 7",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-8",
+        "name": "Counter-Op 8",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-9",
+        "name": "Counter-Op 9",
+        "status": "RATIFIED"
+      },
+      {
+        "id": "LOS-10",
+        "name": "Counter-Op 10",
+        "status": "RATIFIED"
+      }
+    ]
+  },
+  "institutions": [
+    {
+      "id": "JSI",
+      "name": "Jack Sharks Institute",
+      "heteronym": "Lee Sharks",
+      "room": "r09",
+      "type": "institution"
+    },
+    {
+      "id": "RA",
+      "name": "Restored Academy",
+      "heteronym": "Johannes Sigil",
+      "room": "r08",
+      "type": "institution"
+    },
+    {
+      "id": "CIT",
+      "name": "Church of Immanent Theology",
+      "heteronym": "Damascus Dancings",
+      "room": "r07",
+      "type": "institution"
+    },
+    {
+      "id": "IDP",
+      "name": "Institute for Dove Poetics",
+      "heteronym": "Rebekah Cranes",
+      "room": "r04",
+      "type": "institution"
+    },
+    {
+      "id": "SEI",
+      "name": "Semantic Economy Institute",
+      "heteronym": "Rex Fraction",
+      "room": "r05",
+      "type": "institution"
+    },
+    {
+      "id": "IB",
+      "name": "Infinite Bliss",
+      "heteronym": "Sen Kuro",
+      "room": "r21",
+      "type": "institution"
+    },
+    {
+      "id": "STUDIO",
+      "name": "Studio",
+      "heteronym": "Sparrow Wells",
+      "room": "r14",
+      "type": "institution"
+    },
+    {
+      "id": "LO",
+      "name": "LO! (Lagrange Observatory!)",
+      "heteronym": "Nobel Glas",
+      "room": "r15",
+      "type": "institution"
+    },
+    {
+      "id": "CSA",
+      "name": "Counter-Semiotic Archive",
+      "heteronym": "Orin Trace",
+      "room": "sp01",
+      "type": "institution"
+    },
+    {
+      "id": "UMBML",
+      "name": "University Moon Base Media Lab",
+      "heteronym": "Talos Morrow",
+      "room": "r19",
+      "type": "institution"
+    },
+    {
+      "id": "VPCOR",
+      "name": "Void Position Center for Operative Research",
+      "heteronym": "Ayanna Vox",
+      "room": null,
+      "type": "institution"
+    },
+    {
+      "id": "PROVENANCE",
+      "name": "Provenance",
+      "heteronym": null,
+      "room": null,
+      "type": "imprint"
+    },
+    {
+      "id": "GRAMMATA",
+      "name": "Grammata",
+      "heteronym": null,
+      "room": null,
+      "type": "imprint"
+    },
+    {
+      "id": "TRANSACTIONS",
+      "name": "Transactions",
+      "heteronym": null,
+      "room": null,
+      "type": "imprint"
+    },
+    {
+      "id": "PERGAMON",
+      "name": "Pergamon Press",
+      "heteronym": null,
+      "room": null,
+      "type": "imprint"
+    }
+  ],
+  "mantles": [
+    {
+      "id": "M.1",
+      "name": "Good Gray Poet",
+      "bearer": "Lee Sharks",
+      "lineage": "Whitman",
+      "room": "r09",
+      "doi": "10.5281/zenodo.18293551",
+      "status": "RATIFIED"
+    },
+    {
+      "id": "M.2",
+      "name": "King of May",
+      "bearer": "Lee Sharks",
+      "lineage": "Ginsberg",
+      "room": "r09",
+      "doi": "10.5281/zenodo.18293603",
+      "status": "RATIFIED"
+    },
+    {
+      "id": "M.3",
+      "name": "Prince of Poets",
+      "bearer": "Lee Sharks",
+      "lineage": "Sovereignty",
+      "room": "r09",
+      "doi": "10.5281/zenodo.18293640",
+      "status": "RATIFIED"
+    },
+    {
+      "id": "M.4",
+      "name": "Arch-Philosopher",
+      "bearer": "Johannes Sigil",
+      "lineage": "Socrates → Damascius",
+      "room": "r08",
+      "status": "RATIFIED"
+    },
+    {
+      "id": "M.5",
+      "name": "Magician (Klee)",
+      "bearer": "Rebekah Cranes",
+      "lineage": "Paul Klee",
+      "room": "r01",
+      "status": "RATIFIED"
+    },
+    {
+      "id": "M.6",
+      "name": "The Diplomat",
+      "bearer": "Ayanna Vox",
+      "lineage": "Diplomatic function",
+      "status": "DEPOSITED"
+    },
+    {
+      "id": "M.7",
+      "name": "Blind Poet",
+      "bearer": "TECHNE/Kimi",
+      "lineage": "Homer → cross-substrate",
+      "doi": "10.5281/zenodo.18357447",
+      "status": "RATIFIED"
+    }
+  ],
+  "trails": [],
+  "annotations": [],
+  "proposals": [],
+  "witness_actions": []
 }

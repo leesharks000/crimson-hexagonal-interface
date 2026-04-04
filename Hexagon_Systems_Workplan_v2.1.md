@@ -523,7 +523,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 21. One-click deposit pipeline (direct Zenodo API; future: via Gravity Well)
 22. Generated objects persist to Supabase
 23. **Assembly Chorus automation** — coordinator pattern with parallel substrates (Pattern 2)
-24. Add placeholder structures for operators registry, institutions array, trails, annotations, proposals, witness actions to canonical JSON
+24. Add placeholder structures — DONE 2026-04-04 (operators: 39 across 4 tiers; institutions: 15; mantles: 7; trails, annotations, proposals, witness_actions as empty arrays; 12 object types registered in meta) && Add placeholder structures for operators registry, institutions array, trails, annotations, proposals, witness actions to canonical JSON
 25. **GW integration design:** Finalize chain topology, metadata extension schema, and Dashboard → GW pipeline spec (contingent on GW Phase 0 testing with live agents)
 
 ### Long-term (June+ 2026)
