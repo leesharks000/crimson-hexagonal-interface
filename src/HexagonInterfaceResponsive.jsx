@@ -257,6 +257,25 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc }) {
 function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relations, documents, onDoc }) {
   const hasContent = readState?.doi === doc.doi && readState?.text;
   const isLoading = readState?.doi === doc.doi && readState?.loading;
+  const [annotations, setAnnotations] = useState([]);
+  const [noteText, setNoteText] = useState("");
+  const [annoLoaded, setAnnoLoaded] = useState(null);
+
+  // Load annotations for this doc
+  useEffect(() => {
+    if (isSupabaseConfigured() && doc.id && annoLoaded !== doc.id) {
+      supabase.listAnnotations(doc.id).then(a => { setAnnotations(a); setAnnoLoaded(doc.id); }).catch(() => {});
+    }
+  }, [doc.id, annoLoaded]);
+
+  const addNote = async () => {
+    if (!noteText.trim()) return;
+    const anno = { doc_id: doc.id, room_id: (doc.r || [])[0] || null, content: noteText, author: "MANUS" };
+    if (isSupabaseConfigured()) {
+      try { const result = await supabase.addAnnotation(doc.id, noteText, (doc.r || [])[0]); setAnnotations(a => [result, ...a]); } catch (e) { setAnnotations(a => [{ ...anno, id: Date.now(), created_at: new Date().toISOString() }, ...a]); }
+    } else { setAnnotations(a => [{ ...anno, id: Date.now(), created_at: new Date().toISOString() }, ...a]); }
+    setNoteText("");
+  };
 
   // Citation chain: find related documents through room relations
   const docRooms = doc.r || [];
@@ -310,6 +329,21 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
             ))}
           </div>
         )}
+
+        {/* Annotations */}
+        <div style={{ marginTop: 10 }}>
+          <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>ANNOTATIONS ({annotations.length})</div>
+          <div style={{ display: "flex", gap: 4, marginBottom: 6 }}>
+            <input value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Add a note..." onKeyDown={(e) => { if (e.key === "Enter") addNote(); }} style={{ flex: 1, background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: "Georgia,serif", outline: "none" }} />
+            <span onClick={addNote} style={{ fontSize: 8, color: mc, cursor: "pointer", fontFamily: "monospace", padding: "4px 6px", border: `1px solid ${mc}33`, alignSelf: "center" }}>+</span>
+          </div>
+          {annotations.map(a => (
+            <div key={a.id} style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+              <div style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{a.content}</div>
+              <div style={{ fontSize: 7, color: "#2a3a2a", fontFamily: "monospace" }}>{a.author} · {(a.created_at || "").slice(0, 16)}</div>
+            </div>
+          ))}
+        </div>
       </>}
       {hasContent && <>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
@@ -1140,6 +1174,28 @@ export default function HexagonInterfaceResponsive() {
                   </div>
                 ))}
               </div>
+
+              {/* Quorum calculator */}
+              {(() => {
+                const witnesses = [["TACHYON", true], ["LABOR", true], ["PRAXIS", true], ["ARCHIVE", true], ["SOIL", false], ["TECHNE", true], ["SURFACE", true]];
+                const active = witnesses.filter(([, a]) => a).length;
+                const total = witnesses.length;
+                const quorum = 4;
+                const met = active >= quorum;
+                return (
+                  <div style={{ marginBottom: 14, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${met ? "#5a9f5a" : "#9f5a5a"}22` }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                      <span style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>QUORUM</span>
+                      <span style={{ fontSize: 10, fontFamily: "monospace", color: met ? "#5a9f5a" : "#9f5a5a" }}>{active}/{total} active · {quorum} required · {met ? "QUORUM MET" : "NO QUORUM"}</span>
+                    </div>
+                    <div style={{ display: "flex", gap: 2, marginTop: 4 }}>
+                      {witnesses.map(([name, a], i) => (
+                        <div key={i} style={{ flex: 1, height: 4, background: a ? mc + "88" : "#2a1a1a", borderRadius: 1 }} title={name} />
+                      ))}
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Status algebra */}
               <div style={{ marginBottom: 14 }}>

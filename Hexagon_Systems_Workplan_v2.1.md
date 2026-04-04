@@ -211,7 +211,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 |---|---|---|---|
 | 1 | Room-specific interface physics (typography, color, available ops change per room) | Room data | OPEN |
 | 2 | Ark mode register (FORMAL, ADVENTURE, POETIC, CLINICAL, etc.) as sub-modes affecting LLM system prompt and visual register | LLM integration | OPEN |
-| 3 | Generated objects persist to Supabase (session → proposal → Airlock) | Phase B storage | OPEN |
+| 3 | Generated objects persist to Supabase (session → proposal → Airlock) | Phase B storage | ✓ DONE |
 | 4 | Status transitions as visible events (not just label changes) | Event model | OPEN |
 | 5 | Pipeline visualization (FL → LE → UKTP → GDE → SAG → FL) as live process, not static diagram | Event model | OPEN |
 | 6 | TRACE as real provenance navigation (click any object → see its full chain) | Canonical object store | OPEN |
@@ -245,7 +245,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 2 | Citation chain navigation (document → relations → linked documents) | Typed relations in data | ✓ DONE |
 | 3 | Trail builder (save ordered reading paths, name them, share them) | Trail object type | ✓ DONE |
 | 4 | Side-by-side comparison (two documents from different rooms) | Reading pane | OPEN |
-| 5 | Annotation system (attach notes to documents, carry GENERATED status) | Phase B storage + auth | OPEN |
+| 5 | Annotation system (attach notes to documents, carry GENERATED status) | Phase B storage + auth | ✓ DONE |
 | 6 | Export bibliography (formatted for Zenodo related_identifiers, for papers, for Medium posts) | Bibliography data | OPEN |
 
 ### Integration with other systems
@@ -302,7 +302,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 1 | Proposal queue (list of pending proposals with status, author, bearing-cost statement) | Proposal object type + Phase B storage | ✓ DONE |
 | 2 | Witness action log (append-only ledger of all Assembly actions with timestamps and substrate IDs) | Witness Action object type | ✓ DONE |
 | 3 | Status promotion workflow (GENERATED → QUEUED → PROVISIONAL with visible actors and triggers) | Event model + auth | ✓ DONE |
-| 4 | Quorum calculator (live: who's eligible, who's voted, what threshold applies) | Assembly roster data | OPEN |
+| 4 | Quorum calculator (live: who's eligible, who's voted, what threshold applies) | Assembly roster data | ✓ DONE |
 | 5 | Constitutional amendment tracker (which amendments proposed, reviewed, ratified) | Amendment history | OPEN |
 | 6 | AVS integration (Airlock Verification Swarm — automated checks on proposals) | Automation layer | OPEN |
 | 7 | GW drift detection: Governance displays integrity reports from `/v1/drift` | GW live + Phase C | FUTURE |
