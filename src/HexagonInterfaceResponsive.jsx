@@ -284,8 +284,9 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead }) {
   );
 }
 
-function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom, depositState, setDepositState, addLog, isMobile }) {
+function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom, depositState, setDepositState, addLog, isMobile, data, mc }) {
   const [chainLabel, setChainLabel] = useState("");
+  const [dashTab, setDashTab] = useState("PENDING");
   const suggestion = selectedDoc ? `doc-${selectedDoc.id}` : selectedRoom ? `room-${selectedRoom.id}` : "hexagon-session";
   useEffect(() => { if (!chainLabel) setChainLabel(suggestion); }, [suggestion, chainLabel]);
   const createChain = async () => {
@@ -294,22 +295,136 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
     try { const result = await gravityWell.createChain({ apiKey, label: chainLabel, metadata: { source: "crimson-hexagonal-interface" } }); setDepositState((p) => ({ ...p, chain: result, error: null })); addLog(`GW chain created: ${String(result.chain_id || "").slice(0, 8)}…`, "gw"); }
     catch (e) { setDepositState((p) => ({ ...p, error: e.message })); addLog(`GW error: ${e.message}`, "err"); }
   };
+
+  // Compute dashboard data
+  const stats = useMemo(() => {
+    if (!data) return null;
+    const roomCounts = {};
+    const roomNames = {};
+    data.rooms.forEach(r => { roomCounts[r.id] = 0; roomNames[r.id] = r.name; });
+    data.documents.forEach(doc => { (doc.r || []).forEach(rid => { roomCounts[rid] = (roomCounts[rid] || 0) + 1; }); });
+    const emptyRooms = data.rooms.filter(r => (roomCounts[r.id] || 0) === 0);
+    const provRelations = data.relations.filter(r => r.status === "PROVISIONAL");
+    const months = {};
+    data.documents.forEach(doc => { const d = doc.d || ""; if (d.length >= 7) months[d.slice(0, 7)] = (months[d.slice(0, 7)] || 0) + 1; });
+    const sortedRooms = [...data.rooms].sort((a, b) => (roomCounts[b.id] || 0) - (roomCounts[a.id] || 0));
+    const maxCount = Math.max(...Object.values(roomCounts), 1);
+    return { roomCounts, roomNames, emptyRooms, provRelations, months, sortedRooms, maxCount };
+  }, [data]);
+
+  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "GRAVITY", label: "GW BRIDGE" }];
+
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
       <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>DEPOSIT DASHBOARD</div>
-      <div style={{ fontSize: isMobile ? 16 : 18, letterSpacing: 3, color: "#c9a84c", fontFamily: "Georgia,serif", marginBottom: 10 }}>Gravity Well Bridge</div>
-      <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 12 }}>First seam only: create provenance chains, then route selected work toward external fixation.</div>
-      <div style={{ marginBottom: 12, padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a" }}>
-        <div style={{ fontSize: 9, color: configured ? "#5a9f5a" : "#9f7a4a", marginBottom: 4, fontFamily: "monospace", wordBreak: "break-word" }}>{configured ? `GW URL: ${gravityWell.baseUrl}` : "VITE_GRAVITY_WELL_URL not set"}</div>
-        <div style={{ fontSize: 9, color: "#4a5a4a" }}>Source: {selectedDoc ? `doc ${selectedDoc.id}` : selectedRoom ? `room ${selectedRoom.id}` : "none"}</div>
+      <div style={{ fontSize: isMobile ? 16 : 18, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 8 }}>Archive Operations</div>
+
+      {/* Stats row */}
+      {stats && (
+        <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 10 }}>
+          {[[data.documents.length, "deposits"], [data.rooms.length, "rooms"], [data.relations.length, "relations"], [stats.emptyRooms.length, "empty rooms"], [stats.provRelations.length, "provisional"]].map(([n, label], i) => (
+            <div key={i} style={{ fontSize: 9, fontFamily: "monospace" }}>
+              <span style={{ color: mc, fontSize: 12 }}>{n}</span>
+              <span style={{ color: "#3a4a3a", marginLeft: 3 }}>{label}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Tabs */}
+      <div style={{ display: "flex", gap: 6, marginBottom: 12, borderBottom: "1px solid #0f1a0f", paddingBottom: 6 }}>
+        {tabs.map(t => (
+          <span key={t.id} onClick={() => setDashTab(t.id)} style={{ fontSize: 8, letterSpacing: 1, fontFamily: "monospace", color: dashTab === t.id ? mc : "#3a4a3a", cursor: "pointer", padding: "2px 6px", borderBottom: dashTab === t.id ? `1px solid ${mc}` : "1px solid transparent" }}>{t.label}</span>
+        ))}
       </div>
-      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>API KEY</div>
-      <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 12 }} />
-      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>CHAIN LABEL</div>
-      <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
-      <button onClick={createChain} style={{ background: "#c9a84c11", border: "1px solid #c9a84c44", color: "#c9a84c", padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", marginBottom: 12 }}>CREATE CHAIN</button>
-      {depositState.chain && <div style={{ padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a", marginBottom: 12 }}><div style={{ fontSize: 9, color: "#5a9f5a", fontFamily: "monospace", marginBottom: 4 }}>CHAIN READY</div><div style={{ fontSize: 9, color: "#4a5a4a", wordBreak: "break-word" }}>chain_id: {depositState.chain.chain_id}</div></div>}
-      {depositState.error && <div style={{ padding: "8px 10px", background: "#120808", borderLeft: "2px solid #7a1a1a", fontSize: 9, color: "#b57a7a", marginBottom: 12, wordBreak: "break-word" }}>{depositState.error}</div>}
+
+      {/* PENDING tab */}
+      {dashTab === "PENDING" && stats && (
+        <div>
+          {/* Empty rooms */}
+          <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>EMPTY ROOMS ({stats.emptyRooms.length})</div>
+          {stats.emptyRooms.length === 0 ? <div style={{ fontSize: 9, color: "#5a9f5a", marginBottom: 10 }}>All rooms have deposits.</div> : (
+            <div style={{ marginBottom: 12 }}>
+              {stats.emptyRooms.map(r => (
+                <div key={r.id} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #0a0f0a" }}>
+                  <span style={{ fontSize: 9, color: mc, fontFamily: "Georgia,serif" }}>{r.name}</span>
+                  <span style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>{r.id} · {r.preferred_mode || "—"}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Provisional relations */}
+          <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>PROVISIONAL RELATIONS ({stats.provRelations.length})</div>
+          {stats.provRelations.length === 0 ? <div style={{ fontSize: 9, color: "#5a9f5a", marginBottom: 10 }}>All relations ratified.</div> : (
+            <div style={{ marginBottom: 12 }}>
+              {stats.provRelations.map(r => (
+                <div key={r.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "3px 0", borderBottom: "1px solid #0a0f0a" }}>
+                  <span style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "monospace" }}>
+                    {r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}
+                  </span>
+                  <StatusBadge s="PROVISIONAL" />
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Monthly velocity */}
+          <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>MONTHLY VELOCITY</div>
+          <div style={{ marginBottom: 12 }}>
+            {Object.entries(stats.months).sort(([a], [b]) => a.localeCompare(b)).slice(-6).map(([month, count]) => (
+              <div key={month} style={{ display: "flex", alignItems: "center", gap: 8, padding: "2px 0" }}>
+                <span style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace", width: 50, flexShrink: 0 }}>{month}</span>
+                <div style={{ flex: 1, height: 6, background: "#0a0f0a", position: "relative" }}>
+                  <div style={{ height: "100%", width: `${Math.min(100, (count / 210) * 100)}%`, background: mc + "66" }} />
+                </div>
+                <span style={{ fontSize: 8, color: mc, fontFamily: "monospace", width: 24, textAlign: "right", flexShrink: 0 }}>{count}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* COVERAGE tab */}
+      {dashTab === "COVERAGE" && stats && (
+        <div>
+          <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ROOM DEPOSIT COVERAGE</div>
+          {stats.sortedRooms.map(r => {
+            const count = stats.roomCounts[r.id] || 0;
+            const pct = (count / stats.maxCount) * 100;
+            const col = count === 0 ? "#9f5a5a" : count <= 3 ? "#9f9f5a" : mc;
+            return (
+              <div key={r.id} style={{ display: "flex", alignItems: "center", gap: 6, padding: "2px 0", borderBottom: "1px solid #060a06" }}>
+                <span style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace", width: 28, flexShrink: 0 }}>{r.id}</span>
+                <span style={{ fontSize: 8, color: count === 0 ? "#4a3a3a" : "#5a6a4a", fontFamily: "Georgia,serif", width: isMobile ? 80 : 110, flexShrink: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.name}</span>
+                <div style={{ flex: 1, height: 5, background: "#0a0f0a", position: "relative" }}>
+                  <div style={{ height: "100%", width: `${Math.max(count > 0 ? 2 : 0, pct)}%`, background: col + "88" }} />
+                </div>
+                <span style={{ fontSize: 7, color: col, fontFamily: "monospace", width: 22, textAlign: "right", flexShrink: 0 }}>{count}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* GRAVITY WELL tab */}
+      {dashTab === "GRAVITY" && (
+        <div>
+          <div style={{ fontSize: isMobile ? 14 : 16, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 8 }}>Gravity Well Bridge</div>
+          <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 12 }}>First seam only: create provenance chains, then route selected work toward external fixation.</div>
+          <div style={{ marginBottom: 12, padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a" }}>
+            <div style={{ fontSize: 9, color: configured ? "#5a9f5a" : "#9f7a4a", marginBottom: 4, fontFamily: "monospace", wordBreak: "break-word" }}>{configured ? `GW URL: ${gravityWell.baseUrl}` : "VITE_GRAVITY_WELL_URL not set"}</div>
+            <div style={{ fontSize: 9, color: "#4a5a4a" }}>Source: {selectedDoc ? `doc ${selectedDoc.id}` : selectedRoom ? `room ${selectedRoom.id}` : "none"}</div>
+          </div>
+          <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>API KEY</div>
+          <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 12 }} />
+          <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>CHAIN LABEL</div>
+          <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
+          <button onClick={createChain} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", marginBottom: 12 }}>CREATE CHAIN</button>
+          {depositState.chain && <div style={{ padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a", marginBottom: 12 }}><div style={{ fontSize: 9, color: "#5a9f5a", fontFamily: "monospace", marginBottom: 4 }}>CHAIN READY</div><div style={{ fontSize: 9, color: "#4a5a4a", wordBreak: "break-word" }}>chain_id: {depositState.chain.chain_id}</div></div>}
+          {depositState.error && <div style={{ padding: "8px 10px", background: "#120808", borderLeft: "2px solid #7a1a1a", fontSize: 9, color: "#b57a7a", marginBottom: 12, wordBreak: "break-word" }}>{depositState.error}</div>}
+        </div>
+      )}
     </div>
   );
 }
@@ -468,7 +583,7 @@ export default function HexagonInterfaceResponsive() {
             </div>
           )}
 
-          {view === "DEPOSIT" && <DepositPanel apiKey={gwApiKey} setApiKey={setGwApiKey} configured={isGravityWellConfigured()} selectedDoc={selDoc} selectedRoom={room} depositState={depositState} setDepositState={setDepositState} addLog={addLog} isMobile={isMobile} />}
+          {view === "DEPOSIT" && <DepositPanel apiKey={gwApiKey} setApiKey={setGwApiKey} configured={isGravityWellConfigured()} selectedDoc={selDoc} selectedRoom={room} depositState={depositState} setDepositState={setDepositState} addLog={addLog} isMobile={isMobile} data={data} mc={mc} />}
 
           {view === "DODECAD" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>

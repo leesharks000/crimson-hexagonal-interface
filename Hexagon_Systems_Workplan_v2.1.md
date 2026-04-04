@@ -269,12 +269,12 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 
 | Priority | Task | Depends on | Status |
 |---|---|---|---|
-| 1 | Pending actions panel (drafted but not deposited, deposited but not on academia.edu, needs assembly review) | Status tracking beyond Zenodo | OPEN |
+| 1 | Pending actions panel (drafted but not deposited, deposited but not on academia.edu, needs assembly review) | Status tracking beyond Zenodo | ✓ DONE |
 | 2 | One-click deposit pipeline (document in hand → PDF → Zenodo → metadata → publish → DOI back) | Zenodo API integration | OPEN |
 | 3 | Academia.edu / Medium posting tracker (which documents posted where, with links) | External posting status | OPEN |
 | 4 | Assembly review queue (documents awaiting feedback, with substrate assignments) | Governance integration | OPEN |
 | 5 | Retrieval monitoring (Google AIO, Bing — which documents surfacing, which not) | Web search integration | OPEN |
-| 6 | Room coverage heatmap (which rooms have many deposits, which are empty) | Room-document mapping | OPEN |
+| 6 | Room coverage heatmap (which rooms have many deposits, which are empty) | Room-document mapping | ✓ DONE |
 | 7 | GW-backed deposit pipeline: Dashboard calls GW `/v1/deposit` instead of direct Zenodo API | GW live + Phase C | FUTURE |
 | 8 | Retrieval A/B testing: compare document structure variants against search summary quality | GW compression wrappers | FUTURE |
 
@@ -511,7 +511,7 @@ These are not arbitrary — they are the LP kernel's own acceptance tests, forma
 12. JSX reads canonical JSON instead of embedding transformed data copy — DONE 2026-04-03
 13. Room entry executes LP traversal grammar (ACTIVATE → SET_LOGOS → ROTATE → RENDER) — DONE 2026-04-03 (LP programs for all 26 rooms in canonical JSON; animated traversal engine; LP state tuple ⟨σ,ε,Ξ,ψ⟩ live in sidecar; Ark mode register colors shift per room)
 14. Full-text document rendering in Library — DONE 2026-04-03 (live Zenodo fetch: DOI → record API → .md file → rendered in reading pane; markdown renderer with headers, code blocks, bold/italic, HR)
-15. Pending actions panel in Dashboard
+15. Pending actions panel in Dashboard — DONE 2026-04-03 (three-tab Dashboard: PENDING shows empty rooms, PROVISIONAL relations, monthly velocity; COVERAGE shows room deposit heatmap; GW BRIDGE preserved)
 16. **Dream system** — archive consolidation engine (Pattern 1)
 17. **Mode as dead code elimination** — command registration per mode (Pattern 3)
 18. **LP command risk tiers** — LOW/MEDIUM/HIGH/CRITICAL with confirmation (Pattern 4)
