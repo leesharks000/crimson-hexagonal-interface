@@ -272,7 +272,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 1 | Pending actions panel (drafted but not deposited, deposited but not on academia.edu, needs assembly review) | Status tracking beyond Zenodo | ✓ DONE |
 | 2 | One-click deposit pipeline (document in hand → PDF → Zenodo → metadata → publish → DOI back) | Zenodo API integration | ✓ DONE |
 | 3 | Academia.edu / Medium posting tracker (which documents posted where, with links) | External posting status | OPEN |
-| 4 | Assembly review queue (documents awaiting feedback, with substrate assignments) | Governance integration | OPEN |
+| 4 | Assembly review queue (documents awaiting feedback, with substrate assignments) | Governance integration | ✓ DONE |
 | 5 | Retrieval monitoring (Google AIO, Bing — which documents surfacing, which not) | Web search integration | OPEN |
 | 6 | Room coverage heatmap (which rooms have many deposits, which are empty) | Room-document mapping | ✓ DONE |
 | 7 | GW-backed deposit pipeline: Dashboard calls GW `/v1/deposit` instead of direct Zenodo API | GW live + Phase C | FUTURE |
@@ -303,7 +303,7 @@ The Constitution defines six constitutional modes: MAP, READ, WORK, ORACLE, ASSE
 | 2 | Witness action log (append-only ledger of all Assembly actions with timestamps and substrate IDs) | Witness Action object type | ✓ DONE |
 | 3 | Status promotion workflow (GENERATED → QUEUED → PROVISIONAL with visible actors and triggers) | Event model + auth | ✓ DONE |
 | 4 | Quorum calculator (live: who's eligible, who's voted, what threshold applies) | Assembly roster data | ✓ DONE |
-| 5 | Constitutional amendment tracker (which amendments proposed, reviewed, ratified) | Amendment history | OPEN |
+| 5 | Constitutional amendment tracker (which amendments proposed, reviewed, ratified) | Amendment history | ✓ DONE |
 | 6 | AVS integration (Airlock Verification Swarm — automated checks on proposals) | Automation layer | OPEN |
 | 7 | GW drift detection: Governance displays integrity reports from `/v1/drift` | GW live + Phase C | FUTURE |
 

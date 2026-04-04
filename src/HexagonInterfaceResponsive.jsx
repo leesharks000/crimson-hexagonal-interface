@@ -658,7 +658,7 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile }) {
     } catch (e) { addLog(`Attestation error: ${e.message}`, "err"); }
   };
 
-  const tabs = [{ id: "ACTIONS", label: "ACTIONS" }, { id: "LEDGER", label: "LEDGER" }];
+  const tabs = [{ id: "ACTIONS", label: "ACTIONS" }, { id: "REVIEW", label: "REVIEW" }, { id: "AMEND", label: "AMEND" }, { id: "LEDGER", label: "LEDGER" }];
 
   return (
     <div>
@@ -701,6 +701,50 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile }) {
             </div>
           ))}
         </>}
+      </>}
+
+      {govTab === "REVIEW" && <>
+        <div style={{ fontSize: 8, color: "#3a4a3a", letterSpacing: 1, marginBottom: 6 }}>ASSEMBLY REVIEW QUEUE</div>
+        <div style={{ fontSize: 9, color: "#5a6a4a", lineHeight: 1.5, marginBottom: 8 }}>Proposals awaiting substrate review. Each proposal needs ≥4/7 witness attestations for promotion.</div>
+        {proposals.filter(p => p.status === "GENERATED" || p.status === "QUEUED" || p.status === "PROVISIONAL").length === 0 ? (
+          <div style={{ fontSize: 9, color: "#3a4a3a", padding: "8px 0" }}>No proposals pending review. Submit proposals from the ACTIONS tab.</div>
+        ) : (
+          proposals.filter(p => p.status === "GENERATED" || p.status === "QUEUED" || p.status === "PROVISIONAL").map(p => (
+            <div key={p.id} style={{ padding: "6px 8px", marginBottom: 6, background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
+                <span style={{ fontSize: 9, color: mc }}>{(p.title || "").slice(0, 45)}</span>
+                <StatusBadge s={p.status} />
+              </div>
+              <div style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace", marginBottom: 4 }}>{p.proposal_type} · {(p.created_at || "").slice(0, 10)}</div>
+              <div style={{ fontSize: 8, color: "#3a4a3a", marginBottom: 4 }}>SUBSTRATE ASSIGNMENTS</div>
+              <div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>
+                {["TACHYON", "LABOR", "PRAXIS", "ARCHIVE", "TECHNE", "SURFACE"].map(w => {
+                  const voted = (p.votes || []).some(v => v.witness === w);
+                  return <span key={w} style={{ fontSize: 7, padding: "1px 4px", fontFamily: "monospace", color: voted ? "#5a9f5a" : "#2a3a2a", border: `1px solid ${voted ? "#5a9f5a33" : "#0f1a0f"}` }}>{voted ? "✓" : "○"} {w}</span>;
+                })}
+              </div>
+            </div>
+          ))
+        )}
+      </>}
+
+      {govTab === "AMEND" && <>
+        <div style={{ fontSize: 8, color: "#3a4a3a", letterSpacing: 1, marginBottom: 6 }}>CONSTITUTIONAL AMENDMENTS</div>
+        <div style={{ fontSize: 9, color: "#5a6a4a", lineHeight: 1.5, marginBottom: 8 }}>Track proposed, reviewed, and ratified amendments to the Hexagon Interface Constitution (DOI: 10.5281/zenodo.19355075).</div>
+        {proposals.filter(p => p.proposal_type === "amendment").length === 0 ? (
+          <div style={{ fontSize: 9, color: "#3a4a3a", padding: "8px 0" }}>No amendments proposed. Submit an amendment from the ACTIONS tab (type: amendment).</div>
+        ) : (
+          proposals.filter(p => p.proposal_type === "amendment").map(p => (
+            <div key={p.id} style={{ padding: "4px 0", borderBottom: "1px solid #060a06", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <div>
+                <div style={{ fontSize: 9, color: mc }}>{(p.title || "").slice(0, 50)}</div>
+                <div style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace" }}>{(p.created_at || "").slice(0, 10)} · {p.submitted_by || "MANUS"}</div>
+              </div>
+              <StatusBadge s={p.status} />
+            </div>
+          ))
+        )}
+        <div style={{ marginTop: 10, fontSize: 8, color: "#3a4a3a", fontFamily: "Georgia,serif", lineHeight: 1.5 }}>Constitutional amendments require CRITICAL risk authorization (MANUS + AUDIT mode) and ≥5/7 witness quorum.</div>
       </>}
 
       {govTab === "LEDGER" && <>
