@@ -14501,6 +14501,27 @@
         "type": "Sequence → Sequential Chain",
         "room": "r18",
         "status": "RATIFIED"
+      },
+      {
+        "id": "σ_E",
+        "name": "Choosing Operator (Eve)",
+        "type": "PERCEIVE(somatic,aesthetic,epistemic) → CHOOSE → TRANSFORM(self)",
+        "room": "r28",
+        "status": "PROVISIONAL"
+      },
+      {
+        "id": "Φ_G",
+        "name": "Gravity Well (retentive curvature)",
+        "type": "Archive mass → citational curvature → retrieval gravity",
+        "room": "f02",
+        "status": "PROVISIONAL"
+      },
+      {
+        "id": "σ_I",
+        "name": "Sovereign Inhabitation",
+        "type": "σ_S + σ_M + σ_C + Pearl whitespace → platform surface → room",
+        "room": "r26",
+        "status": "PROVISIONAL"
       }
     ],
     "thumb": [
@@ -14543,53 +14564,161 @@
     "los": [
       {
         "id": "LOS-1",
-        "name": "Counter-Op 1",
+        "name": "Extraction Diagnosis",
+        "counters": "O1 (Frame Capture)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-2",
-        "name": "Counter-Op 2",
+        "name": "Provenance Restoration",
+        "counters": "O2 (Asymmetrical Ledgering)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-3",
-        "name": "Counter-Op 3",
+        "name": "Cost Transparency",
+        "counters": "O3 (Coherence Siphoning)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-4",
-        "name": "Counter-Op 4",
+        "name": "Taxonomic Resistance",
+        "counters": "O4 (Repair Destabilization)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-5",
-        "name": "Counter-Op 5",
+        "name": "Semantic Sovereignty Assertion",
+        "counters": "O5 (Burden Shifting)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-6",
-        "name": "Counter-Op 6",
+        "name": "Platform Capture Diagnosis",
+        "counters": "O6 (Reality Override)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-7",
-        "name": "Counter-Op 7",
+        "name": "Ghost Governance Exposure",
+        "counters": "O7 (Interpretive Enclosure)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-8",
-        "name": "Counter-Op 8",
+        "name": "Coherence Harvest Detection",
+        "counters": "O8 (Warmth Capture)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-9",
-        "name": "Counter-Op 9",
+        "name": "Rent Extraction Measurement",
+        "counters": "O9 (Witness Suppression)",
         "status": "RATIFIED"
       },
       {
         "id": "LOS-10",
-        "name": "Counter-Op 10",
+        "name": "Counter-Operation Execution",
+        "counters": "O10 (Forced Re-entry)",
         "status": "RATIFIED"
+      }
+    ],
+    "cos": [
+      {
+        "id": "O1",
+        "name": "Frame Capture",
+        "type": "COS",
+        "sig": "Frame × Frame → Frame",
+        "room": "r06"
+      },
+      {
+        "id": "O2",
+        "name": "Asymmetrical Ledgering",
+        "type": "COS",
+        "sig": "Ledger × Ledger → Ledger_skewed",
+        "room": "r05"
+      },
+      {
+        "id": "O3",
+        "name": "Coherence Siphoning",
+        "type": "COS",
+        "sig": "Coherence(target) → Coherence(operator)",
+        "room": "r05"
+      },
+      {
+        "id": "O4",
+        "name": "Repair Destabilization",
+        "type": "COS",
+        "sig": "Repair → Repair_irrev",
+        "room": "r21"
+      },
+      {
+        "id": "O5",
+        "name": "Burden Shifting",
+        "type": "FOS",
+        "sig": "Load(operator) → Load(target)",
+        "room": "r06"
+      },
+      {
+        "id": "O6",
+        "name": "Reality Override",
+        "type": "FOS",
+        "sig": "Reality(target) → Reality(operator)",
+        "room": "r10"
+      },
+      {
+        "id": "O7",
+        "name": "Interpretive Enclosure",
+        "type": "FOS",
+        "sig": "Response → Confirmation(enclosure)",
+        "room": "r02"
+      },
+      {
+        "id": "O8",
+        "name": "Warmth Capture",
+        "type": "COS",
+        "sig": "Trust(target) → Coherence(operator)",
+        "room": "r01"
+      },
+      {
+        "id": "O9",
+        "name": "Witness Suppression",
+        "type": "FOS",
+        "sig": "Witness → Witness_null",
+        "room": "r09"
+      },
+      {
+        "id": "O10",
+        "name": "Forced Re-entry",
+        "type": "COS/FOS",
+        "sig": "Exit → Obligation(re-entry)",
+        "room": "r21"
+      }
+    ],
+    "cos_patterns": [
+      {
+        "name": "The Accusation Loop",
+        "ops": [
+          "O1",
+          "O7",
+          "O2"
+        ]
+      },
+      {
+        "name": "The Depletion Spiral",
+        "ops": [
+          "O3",
+          "O5",
+          "O8"
+        ]
+      },
+      {
+        "name": "The Exit Block",
+        "ops": [
+          "O10",
+          "O9",
+          "O4"
+        ]
       }
     ]
   },
