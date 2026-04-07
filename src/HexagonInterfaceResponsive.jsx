@@ -1453,7 +1453,7 @@ export default function HexagonInterfaceResponsive() {
             ))}
           </div>
         </div>
-        <div style={{ fontSize: 8, color: "#2a3a2a", marginTop: 12 }}>Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>ORCID</a> · <a href="/manifest.json" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Machine Manifest</a> · <a href="https://github.com/leesharks000/gravitywell" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Gravity Well</a></div>
+        <div style={{ fontSize: 8, color: "#2a3a2a", marginTop: 12 }}>Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>ORCID</a> · <a href="/manifest.json" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Machine Manifest</a> · <a href="https://gravitywell-1.onrender.com" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Gravity Well</a></div>
         <div style={{ display: "flex", gap: 8, justifyContent: "center", marginTop: 8, fontSize: 7, fontFamily: "monospace" }}>
           <span style={{ color: "#5a9f5a" }}>● JSON</span>
           <span style={{ color: isSupabaseConfigured() ? "#5a9f5a" : "#9f5a5a" }}>{isSupabaseConfigured() ? "●" : "○"} Supabase</span>
