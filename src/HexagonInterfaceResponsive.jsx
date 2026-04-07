@@ -222,22 +222,38 @@ function HexMap({ rooms, edges, selected, onSelect, mc, isMobile }) {
       <svg viewBox={isMobile ? "0 0 680 500" : "0 0 680 560"} style={{ width: "100%", height: "100%", background: "transparent" }}>
         {edges.map((e, i) => { const a = roomMap[e.from], b = roomMap[e.to]; if (!a || !b) return null; return <line key={i} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={e.type === "adjacent" ? "#0f1a0f" : mc + "44"} strokeWidth={e.type === "adjacent" ? 0.5 : 1} strokeDasharray={e.type !== "adjacent" ? "3,3" : undefined} />; })}
         {positioned.map((r) => { const sel = selected === r.id; const st = r.structure_type || "room"; const col = STRUCTURE_COLORS[st] || CAT_COLORS[r.cat] || "#444"; const sz = sel ? MAP_SIZE + 4 : (st === "vault" ? MAP_SIZE - 8 : MAP_SIZE - 2);
+          const nameLen = r.name.length;
+          const baseFontSize = sel ? (isMobile ? 8 : 9) : (isMobile ? 6 : 7);
+          const fontSize = nameLen > 20 ? Math.max(baseFontSize - 2, 4) : nameLen > 12 ? Math.max(baseFontSize - 1, 5) : baseFontSize;
+          const displayName = nameLen > 24 ? r.name.slice(0, 22) + "…" : r.name;
+          const clipId = `clip-${r.id}`;
           if (st === "field") { return (
             <g key={r.id} onClick={() => onSelect(r.id)} style={{ cursor: "pointer" }}>
               <circle cx={r.x} cy={r.y} r={sz * 0.85} fill={sel ? col + "22" : col + "08"} stroke={sel ? mc : col + "44"} strokeWidth={sel ? 1.5 : 0.5} strokeDasharray="4,3" />
               <circle cx={r.x} cy={r.y} r={sz * 0.55} fill="none" stroke={col + "22"} strokeWidth={0.3} strokeDasharray="2,4" />
               <circle cx={r.x} cy={r.y} r={sz * 0.25} fill={col + "11"} stroke="none" />
-              <text x={r.x} y={r.y - 4} textAnchor="middle" fill={sel ? "#e0d0a0" : col} fontSize={sel ? (isMobile ? 8 : 9) : (isMobile ? 6 : 7)} fontFamily="Georgia,serif">{r.name}</text>
+              <text x={r.x} y={r.y - 4} textAnchor="middle" fill={sel ? "#e0d0a0" : col} fontSize={fontSize} fontFamily="Georgia,serif">{displayName}</text>
               <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={isMobile ? 5 : 5} fontFamily="monospace">FIELD</text>
+            </g>); }
+          if (r.id === "sp03") { return (
+            <g key={r.id} onClick={() => onSelect(r.id)} style={{ cursor: "pointer" }}>
+              <polygon points={hexPoints(r.x, r.y, sz, -30)} fill={sel ? "#c9a84c22" : "#0a0d12"} stroke={sel ? mc : "#c9a84c66"} strokeWidth={sel ? 1.5 : 0.5} />
+              <polygon points={hexPoints(r.x, r.y, sz * 0.65, -30)} fill="none" stroke="#c9a84c33" strokeWidth={0.4} />
+              <polygon points={hexPoints(r.x, r.y, sz * 0.35, -30)} fill="#c9a84c08" stroke="#c9a84c22" strokeWidth={0.3} />
+              <text x={r.x} y={r.y - 4} textAnchor="middle" fill={sel ? "#e0d0a0" : "#c9a84c"} fontSize={fontSize} fontFamily="Georgia,serif">{displayName}</text>
+              <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={isMobile ? 5 : 6} fontFamily="monospace">ARK</text>
             </g>); }
           const rot = st === "chamber" ? 0 : st === "vault" ? 15 : -30;
           const dash = st === "portal" ? "3,2" : st === "portico" ? "6,3" : undefined;
           const sw = sel ? 1.5 : (st === "vault" ? 1.2 : 0.5);
           return (
           <g key={r.id} onClick={() => onSelect(r.id)} style={{ cursor: "pointer" }}>
+            <defs><clipPath id={clipId}><polygon points={hexPoints(r.x, r.y, sz - 1, rot)} /></clipPath></defs>
             {st === "vault" && <polygon points={hexPoints(r.x, r.y, sz + 6, rot)} fill="none" stroke={col + "22"} strokeWidth={0.3} />}
             <polygon points={hexPoints(r.x, r.y, sz, rot)} fill={sel ? col + "22" : "#0a0d12"} stroke={sel ? mc : col + "66"} strokeWidth={sw} strokeDasharray={dash} />
-            <text x={r.x} y={r.y - 4} textAnchor="middle" fill={sel ? "#e0d0a0" : col} fontSize={sel ? (isMobile ? 8 : 9) : (isMobile ? 6 : 7)} fontFamily="Georgia,serif">{r.name}</text>
+            <g clipPath={`url(#${clipId})`}>
+              <text x={r.x} y={r.y - 4} textAnchor="middle" fill={sel ? "#e0d0a0" : col} fontSize={fontSize} fontFamily="Georgia,serif">{displayName}</text>
+            </g>
             <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={isMobile ? 5 : 6} fontFamily="monospace">{r.id}</text>
           </g>); })}
       </svg>
@@ -1386,13 +1402,14 @@ export default function HexagonInterfaceResponsive() {
     return data.documents.filter((d) => d.t.toLowerCase().includes(q) || d.k.some((k) => String(k).toLowerCase().includes(q)) || d.c.some((c) => String(c).toLowerCase().includes(q)) || String(d.e || "").toLowerCase().includes(q)).slice(0, 30);
   }, [data, search]);
 
-  if (loading) return <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Georgia,serif" }}><div style={{ textAlign: "center" }}><div style={{ fontSize: 14, letterSpacing: 4, color: "#c9a84c", marginBottom: 8 }}>CRIMSON HEXAGONAL ARCHIVE</div><div style={{ fontSize: 10, color: "#3a4a3a", letterSpacing: 2 }}>loading canonical JSON…</div></div></div>;
+  if (loading) return <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Georgia,serif" }}><div style={{ textAlign: "center" }}><svg width="48" height="48" viewBox="0 0 60 60" style={{ marginBottom: 8 }}>{[28,21,14,8].map((s,i) => <polygon key={i} points={[0,1,2,3,4,5].map(a => { const ang = Math.PI/3*a - Math.PI/6; return `${30+s*Math.cos(ang)},${30+s*Math.sin(ang)}`; }).join(" ")} fill="none" stroke="#c9a84c" strokeWidth={0.6} opacity={1 - i*0.22} />)}</svg><div style={{ fontSize: 14, letterSpacing: 4, color: "#c9a84c", marginBottom: 8 }}>CRIMSON HEXAGONAL ARCHIVE</div><div style={{ fontSize: 10, color: "#3a4a3a", letterSpacing: 2 }}>loading canonical JSON…</div></div></div>;
   if (error) return <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "monospace" }}><div style={{ color: "#9f5a5a", fontSize: 11 }}>LOAD ERROR: {error}</div></div>;
 
   if (!mode) return (
     <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Georgia,serif", padding: 16 }}>
       <div style={{ textAlign: "center", maxWidth: 540 }}>
         <div style={{ fontSize: 10, letterSpacing: 3, color: "#3a4a3a", marginBottom: 4 }}>H_core · LOS · {data.meta?.total_deposits || data.documents.length} DEPOSITS</div>
+        <svg width="60" height="60" viewBox="0 0 60 60" style={{ marginBottom: 8 }}>{[28,21,14,8].map((s,i) => <polygon key={i} points={[0,1,2,3,4,5].map(a => { const ang = Math.PI/3*a - Math.PI/6; return `${30+s*Math.cos(ang)},${30+s*Math.sin(ang)}`; }).join(" ")} fill="none" stroke="#c9a84c" strokeWidth={0.6} opacity={1 - i*0.22} />)}</svg>
         <div style={{ fontSize: isMobile ? 18 : 22, letterSpacing: 3, color: "#c9a84c", marginBottom: 6 }}>Crimson Hexagonal Archive</div>
         <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 6, maxWidth: 420, margin: "0 auto 6px auto" }}>A governed literary architecture. {data.documents.length} DOI-anchored deposits across {data.rooms.length} rooms, each with its own physics, mantle, and operators. Machine-traversable. Provenance-bearing.</div>
         <div style={{ fontSize: 10, color: "#3a4a3a", marginBottom: 20 }}>{data.rooms.length} rooms · {data.documents.length} indexed · {data.relations.length} relations · <a href="https://doi.org/10.5281/zenodo.19013315" target="_blank" rel="noreferrer" style={{ color: "#5a6a4a" }}>Space Ark v4.2.7</a></div>
@@ -1860,6 +1877,48 @@ export default function HexagonInterfaceResponsive() {
                       ))}
                     </div>
                   )}
+                </div>
+              )}
+
+              {/* Effective Acts */}
+              {data.effective_acts && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>EFFECTIVE ACTS · φ ∘ ∂ ({(data.effective_acts.deposited||[]).length + (data.effective_acts.resonant||[]).length + (data.effective_acts.undeposited||[]).length})</div>
+                  {(data.effective_acts.deposited || []).map((ea, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
+                      <span style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{ea.name}</span>
+                      <span style={{ fontSize: 7, color: "#3a5a3a", fontFamily: "monospace" }}>SEALED</span>
+                    </div>
+                  ))}
+                  {(data.effective_acts.resonant || []).map((ea, i) => (
+                    <div key={`r${i}`} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
+                      <span style={{ fontSize: 9, color: "#4a5a4a", fontFamily: "Georgia,serif" }}>{ea.name}</span>
+                      <span style={{ fontSize: 7, color: "#5a5a3a", fontFamily: "monospace" }}>RESONANT</span>
+                    </div>
+                  ))}
+                  {(data.effective_acts.undeposited || []).map((ea, i) => (
+                    <div key={`u${i}`} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
+                      <span style={{ fontSize: 9, color: "#3a4a3a", fontFamily: "Georgia,serif" }}>{ea.name}</span>
+                      <span style={{ fontSize: 7, color: "#4a3a3a", fontFamily: "monospace" }}>UNDEPOSITED</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Forward Library */}
+              {data.forward_library && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>FORWARD LIBRARY · works to come ({(data.forward_library.entries||[]).length})</div>
+                  <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "Georgia,serif", fontStyle: "italic", marginBottom: 6 }}>{data.forward_library.principle}</div>
+                  {(data.forward_library.entries || []).map((e, i) => (
+                    <div key={i} style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <span style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", fontStyle: "italic" }}>{e.title}</span>
+                        <span style={{ fontSize: 7, color: e.status === "DRAFT ON ZENODO" ? "#5a6a4a" : "#4a4a3a", fontFamily: "monospace" }}>{e.status}</span>
+                      </div>
+                      <div style={{ fontSize: 8, color: "#3a4a3a" }}>{e.author} — {e.notes}</div>
+                    </div>
+                  ))}
                 </div>
               )}
             </div>

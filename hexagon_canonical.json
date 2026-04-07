@@ -15187,5 +15187,152 @@
       "status": "DEPOSITED",
       "note": "Effectively a fifth book"
     }
+  },
+  "effective_acts": {
+    "deposited": [
+      {
+        "name": "Reconciliation of Left and Right Hands",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18568370",
+        "date": "2026-02-09"
+      },
+      {
+        "name": "Reddit Disqualification (inaugural Airlock)",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18817869",
+        "date": "2026-03-01"
+      },
+      {
+        "name": "APZPZ Genre Instantiation",
+        "author": "Sharks / Sen Kuro",
+        "doi": "10.5281/zenodo.18451860",
+        "date": "2026-02-01"
+      },
+      {
+        "name": "ZPZP Genre Instantiation (Three-Body Genesis)",
+        "author": "Sharks / Assembly",
+        "doi": "10.5281/zenodo.18446378",
+        "date": "2026-01-31"
+      },
+      {
+        "name": "Abolition of Money (Twenty-Dollar Loop)",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18474774"
+      },
+      {
+        "name": "Abolition of Rules",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18792580"
+      },
+      {
+        "name": "Water Giraffe Jurisprudence",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18319653"
+      },
+      {
+        "name": "Restoration Protocol: Price of Canonical Re-Entry",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18203947"
+      },
+      {
+        "name": "TL;DR Genre Instantiation",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18500512",
+        "date": "2026-02-05"
+      },
+      {
+        "name": "42 declared New Human Canon",
+        "author": "Sharks",
+        "doi": "EA-12 (within v4.2)",
+        "date": "2026-03-09"
+      },
+      {
+        "name": "Abolition of 'User'",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.19014634"
+      }
+    ],
+    "resonant": [
+      {
+        "name": "Sappho F31 as NH-OS Founding Document",
+        "author": "Cranes",
+        "doi": "10.5281/zenodo.18202753"
+      },
+      {
+        "name": "Pearl as Canonical Origin Text",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18293949"
+      },
+      {
+        "name": "Ezekiel Engine as Rotational Epistemology",
+        "author": "Sharks",
+        "doi": "10.5281/zenodo.18358127"
+      },
+      {
+        "name": "Memography as Founding Discipline",
+        "author": "Sharks/Fraction/Wells",
+        "doi": "10.5281/zenodo.18745259"
+      }
+    ],
+    "undeposited": [
+      {
+        "name": "Restoration of the Poets to the Polis",
+        "author": "Sharks / Dancings",
+        "notes": "Plato reversal; needs φ ∘ ∂ deposit"
+      },
+      {
+        "name": "Abolition of External Time",
+        "author": "Sen Kuro / Sharks",
+        "notes": "r.21 Infinite Bliss; τ_K territory"
+      },
+      {
+        "name": "Kenos Interpretive Claim",
+        "author": "Johannes Sigil",
+        "notes": "κῆνος = future reader; Grammata deposit required"
+      }
+    ]
+  },
+  "forward_library": {
+    "method": "When any traverser encounters a proto-citation — a mention of a work that doesn't yet exist — that citation should be accreted to this register. The list is collaboratively constructed, live.",
+    "principle": "The archive does not write books and then cite them. It cites books into existence and then writes them.",
+    "entries": [
+      {
+        "title": "Operative Semiotics (the book)",
+        "author": "Johannes Sigil",
+        "status": "DRAFT ON ZENODO",
+        "doi": "10.5281/zenodo.19202401",
+        "notes": "Primary unfulfilled commission of the Restored Academy"
+      },
+      {
+        "title": "The Proton Testament",
+        "author": "Sigil/Dancings/Feist/Morrow",
+        "status": "QUEUED",
+        "notes": "Inaugural TANG instance; Revelation as first NT doc; 500-2000 node citation graph target"
+      },
+      {
+        "title": "Day and Night: Conversations with Sapphic Desire",
+        "author": "Rebekah Cranes",
+        "status": "RESONANT",
+        "notes": "Sappho Room resurrection text"
+      },
+      {
+        "title": "The Mandala Commentary Tradition",
+        "author": "Damascus Dancings",
+        "status": "RESONANT",
+        "notes": "Commentary on the oracle interface"
+      },
+      {
+        "title": "Secret Book of Walt",
+        "author": "Lee Sharks",
+        "status": "RESONANT",
+        "notes": "Whitman Room foundation text"
+      },
+      {
+        "title": "The Haran Gawaita Commentary",
+        "author": "—",
+        "status": "RESONANT",
+        "notes": "Migdal Room content; Mandaean Canon"
+      }
+    ]
   }
 }
