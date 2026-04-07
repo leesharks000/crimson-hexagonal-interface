@@ -683,7 +683,7 @@
       "default_operators": [
         "Λ_res"
       ],
-      "structure_type": "room"
+      "structure_type": "chamber"
     },
     {
       "id": "r16",
@@ -952,7 +952,7 @@
       "default_operators": [
         "∂"
       ],
-      "structure_type": "room"
+      "structure_type": "chamber"
     },
     {
       "id": "sp01",
@@ -1117,7 +1117,7 @@
       "default_operators": [
         "κρίσις"
       ],
-      "structure_type": "room"
+      "structure_type": "chamber"
     },
     {
       "id": "r25",
