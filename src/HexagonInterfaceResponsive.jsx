@@ -1,6 +1,7 @@
-import { useState, useEffect, useMemo, useCallback, useRef } from "react";
+import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from "react";
 import { gravityWell, isGravityWellConfigured } from "./gravityWellAdapter.js";
 import { supabase, isSupabaseConfigured } from "./supabaseClient.js";
+const HexMap3D = lazy(() => import("./HexMap3D.jsx"));
 
 const DATA_URL = "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json";
 
@@ -1577,7 +1578,7 @@ export default function HexagonInterfaceResponsive() {
     </div>
   );
 
-  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
+  const navItems = [{ id: "MAP", label: "MAP" }, { id: "MAP_3D", label: "3D" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
 
   return (
     <div style={{ height: "100dvh", background: "#0a0d12", color: "#5a6a4a", fontFamily: "Georgia,serif", display: "flex", flexDirection: "column", overflow: "hidden" }}>
@@ -1586,7 +1587,7 @@ export default function HexagonInterfaceResponsive() {
         <div style={{ display: "flex", alignItems: "center", gap: 12, minWidth: 0 }}>
           <span style={{ fontSize: 12, letterSpacing: 3, color: mc, cursor: "pointer", flexShrink: 0 }} onClick={() => { setSelRoom(null); setSelDoc(null); setView("MAP"); setArkMode(null); setTSteps([]); setMantle(null); setLp(initLP()); }}>⬡ CHA</span>
           <div style={{ display: "flex", gap: 8, overflowX: "auto", whiteSpace: "nowrap", scrollbarWidth: "none", minWidth: 0 }}>
-            {navItems.map((n) => <span key={n.id} onClick={() => { setView(n.id); if (n.id !== "MAP") setSelRoom(null); if (n.id !== "MAP" && n.id !== "DEPOSIT") setSelDoc(null); }} style={{ fontSize: isMobile ? 8 : 9, letterSpacing: 1, color: view === n.id ? mc : "#3a4a3a", cursor: "pointer", padding: "2px 6px", borderBottom: view === n.id ? `1px solid ${mc}` : "1px solid transparent", flexShrink: 0 }}>{n.label}</span>)}
+            {navItems.map((n) => <span key={n.id} onClick={() => { setView(n.id); if (n.id !== "MAP" && n.id !== "MAP_3D") setSelRoom(null); if (n.id !== "MAP" && n.id !== "MAP_3D" && n.id !== "DEPOSIT") setSelDoc(null); }} style={{ fontSize: isMobile ? 8 : 9, letterSpacing: 1, color: view === n.id ? mc : "#3a4a3a", cursor: "pointer", padding: "2px 6px", borderBottom: view === n.id ? `1px solid ${mc}` : "1px solid transparent", flexShrink: 0 }}>{n.label}</span>)}
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: isMobile ? "space-between" : "flex-end", gap: 8 }}>
@@ -1601,6 +1602,7 @@ export default function HexagonInterfaceResponsive() {
       <div style={{ flex: 1, display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden", minHeight: 0 }}>
         <div style={{ flex: 1, overflow: "hidden", position: "relative", minHeight: 0 }}>
           {view === "MAP" && <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
+          {view === "MAP_3D" && <Suspense fallback={<div style={{color:"#3a4a3a",padding:20,fontFamily:"monospace"}}>Loading 3D engine...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D /></div></Suspense>}
 
           {view === "LIBRARY" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>

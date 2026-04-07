@@ -60,7 +60,9 @@ export default function HexMap3D() {
   useEffect(() => {
     const el = mountRef.current;
     if (!el) return;
-    const W = window.innerWidth, H = window.innerHeight;
+    const parent = el.parentElement;
+    const W = parent?.clientWidth || window.innerWidth;
+    const H = parent?.clientHeight || window.innerHeight;
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x040606);
@@ -283,9 +285,11 @@ export default function HexMap3D() {
     loop();
 
     const onR = () => {
-      camera.aspect = window.innerWidth/window.innerHeight;
+      const pw = parent?.clientWidth || window.innerWidth;
+      const ph = parent?.clientHeight || window.innerHeight;
+      camera.aspect = pw/ph;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(pw, ph);
     };
     window.addEventListener("resize", onR);
 
@@ -335,7 +339,7 @@ export default function HexMap3D() {
   const nbrs = selR ? EDGES.filter(([a,b])=>a===selR.id||b===selR.id).map(([a,b])=>a===selR.id?b:a).filter((v,i,a)=>a.indexOf(v)===i) : [];
 
   return (
-    <div style={{width:"100vw",height:"100vh",position:"fixed",top:0,left:0,overflow:"hidden",background:"#040606"}}>
+    <div style={{width:"100%",height:"100%",position:"absolute",top:0,left:0,overflow:"hidden",background:"#040606"}}>
       <div ref={mountRef} style={{width:"100%",height:"100%"}}
         onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onWheel={onWheel} />
 
