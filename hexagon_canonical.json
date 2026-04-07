@@ -49,7 +49,18 @@
         "σ_S"
       ],
       "structure_type": "room",
-      "hex_address": "01.ROOM.SAPPHO"
+      "hex_address": "01.ROOM.SAPPHO",
+      "adjacent": [
+        "r02",
+        "r05",
+        "r06",
+        "r08",
+        "r09",
+        "r12",
+        "r13",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "r02",
@@ -91,7 +102,21 @@
         "Λ_res"
       ],
       "structure_type": "room",
-      "hex_address": "02.ROOM.BORGES"
+      "hex_address": "02.ROOM.BORGES",
+      "adjacent": [
+        "r01",
+        "r05",
+        "r06",
+        "r07",
+        "r08",
+        "r09",
+        "r11",
+        "r13",
+        "r15",
+        "r19",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "r03",
@@ -133,7 +158,11 @@
         "ICM"
       ],
       "structure_type": "chamber",
-      "hex_address": "03.CH.ICHABOD"
+      "hex_address": "03.CH.ICHABOD",
+      "adjacent": [
+        "r08",
+        "r11"
+      ]
     },
     {
       "id": "r04",
@@ -178,7 +207,10 @@
         "transfer(gift)"
       ],
       "structure_type": "room",
-      "hex_address": "04.ROOM.DOVE"
+      "hex_address": "04.ROOM.DOVE",
+      "adjacent": [
+        "r05"
+      ]
     },
     {
       "id": "r05",
@@ -234,7 +266,25 @@
         "COS"
       ],
       "structure_type": "room",
-      "hex_address": "05.ROOM.SEMECON"
+      "hex_address": "05.ROOM.SEMECON",
+      "adjacent": [
+        "f02",
+        "r01",
+        "r02",
+        "r04",
+        "r06",
+        "r08",
+        "r09",
+        "r11",
+        "r12",
+        "r14",
+        "r15",
+        "r17",
+        "r18",
+        "r20",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "r06",
@@ -281,7 +331,17 @@
         "material_op"
       ],
       "structure_type": "room",
-      "hex_address": "06.ROOM.MARX"
+      "hex_address": "06.ROOM.MARX",
+      "adjacent": [
+        "r01",
+        "r02",
+        "r05",
+        "r08",
+        "r12",
+        "r28",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "r07",
@@ -327,7 +387,15 @@
         "Ω"
       ],
       "structure_type": "room",
-      "hex_address": "07.ROOM.REVELATION"
+      "hex_address": "07.ROOM.REVELATION",
+      "adjacent": [
+        "r02",
+        "r08",
+        "r09",
+        "r13",
+        "r18",
+        "sp04"
+      ]
     },
     {
       "id": "r08",
@@ -374,7 +442,26 @@
         "Σ_LP"
       ],
       "structure_type": "room",
-      "hex_address": "08.ROOM.SIGIL"
+      "hex_address": "08.ROOM.SIGIL",
+      "adjacent": [
+        "r01",
+        "r02",
+        "r03",
+        "r05",
+        "r06",
+        "r07",
+        "r09",
+        "r11",
+        "r12",
+        "r13",
+        "r16",
+        "r18",
+        "r19",
+        "r21",
+        "sp01",
+        "sp03",
+        "sp04"
+      ]
     },
     {
       "id": "r09",
@@ -425,7 +512,23 @@
         "claim(m)"
       ],
       "structure_type": "room",
-      "hex_address": "09.ROOM.WHITMAN"
+      "hex_address": "09.ROOM.WHITMAN",
+      "adjacent": [
+        "r01",
+        "r02",
+        "r05",
+        "r07",
+        "r08",
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r18",
+        "r21",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "r10",
@@ -471,7 +574,8 @@
         "Θ"
       ],
       "structure_type": "room",
-      "hex_address": "10.ROOM.WATERGIRAFFE"
+      "hex_address": "10.ROOM.WATERGIRAFFE",
+      "adjacent": []
     },
     {
       "id": "r11",
@@ -520,7 +624,21 @@
         "ψ_V"
       ],
       "structure_type": "room",
-      "hex_address": "11.ROOM.ASSEMBLY"
+      "hex_address": "11.ROOM.ASSEMBLY",
+      "adjacent": [
+        "r02",
+        "r03",
+        "r05",
+        "r08",
+        "r09",
+        "r12",
+        "r18",
+        "r19",
+        "r20",
+        "sp01",
+        "sp03",
+        "sp04"
+      ]
     },
     {
       "id": "r12",
@@ -565,7 +683,18 @@
         "portal"
       ],
       "structure_type": "portal",
-      "hex_address": "12.PTL.BREAKROOM"
+      "hex_address": "12.PTL.BREAKROOM",
+      "adjacent": [
+        "r01",
+        "r05",
+        "r06",
+        "r08",
+        "r09",
+        "r11",
+        "r28",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "r13",
@@ -612,7 +741,15 @@
         "∂"
       ],
       "structure_type": "portal",
-      "hex_address": "13.PTL.EZEKIEL"
+      "hex_address": "13.PTL.EZEKIEL",
+      "adjacent": [
+        "r01",
+        "r02",
+        "r07",
+        "r08",
+        "r09",
+        "r22"
+      ]
     },
     {
       "id": "r14",
@@ -656,7 +793,15 @@
         "ICM"
       ],
       "structure_type": "room",
-      "hex_address": "14.ROOM.STUDIO"
+      "hex_address": "14.ROOM.STUDIO",
+      "adjacent": [
+        "r05",
+        "r09",
+        "r15",
+        "r16",
+        "r17",
+        "sp01"
+      ]
     },
     {
       "id": "r15",
@@ -698,7 +843,14 @@
         "Λ_res"
       ],
       "structure_type": "chamber",
-      "hex_address": "15.CH.LAGRANGE"
+      "hex_address": "15.CH.LAGRANGE",
+      "adjacent": [
+        "r02",
+        "r05",
+        "r09",
+        "r14",
+        "sp01"
+      ]
     },
     {
       "id": "r16",
@@ -738,7 +890,12 @@
         "OP.SWERVE"
       ],
       "structure_type": "room",
-      "hex_address": "16.ROOM.MSBGL"
+      "hex_address": "16.ROOM.MSBGL",
+      "adjacent": [
+        "r08",
+        "r14",
+        "r19"
+      ]
     },
     {
       "id": "r17",
@@ -770,7 +927,13 @@
       ],
       "default_operators": [],
       "structure_type": "room",
-      "hex_address": "17.ROOM.MSMRM"
+      "hex_address": "17.ROOM.MSMRM",
+      "adjacent": [
+        "r05",
+        "r14",
+        "r19",
+        "sp01"
+      ]
     },
     {
       "id": "r18",
@@ -808,7 +971,15 @@
         "β_r"
       ],
       "structure_type": "room",
-      "hex_address": "18.ROOM.ROSARYEMBASSY"
+      "hex_address": "18.ROOM.ROSARYEMBASSY",
+      "adjacent": [
+        "r05",
+        "r07",
+        "r08",
+        "r09",
+        "r11",
+        "sp01"
+      ]
     },
     {
       "id": "r19",
@@ -848,7 +1019,15 @@
         "OP.ROUTE"
       ],
       "structure_type": "room",
-      "hex_address": "19.ROOM.MACROMAQUETTE"
+      "hex_address": "19.ROOM.MACROMAQUETTE",
+      "adjacent": [
+        "r02",
+        "r08",
+        "r11",
+        "r16",
+        "r17",
+        "sp01"
+      ]
     },
     {
       "id": "r20",
@@ -890,7 +1069,11 @@
         "γ"
       ],
       "structure_type": "room",
-      "hex_address": "20.ROOM.AIRLOCK"
+      "hex_address": "20.ROOM.AIRLOCK",
+      "adjacent": [
+        "r05",
+        "r11"
+      ]
     },
     {
       "id": "r21",
@@ -934,7 +1117,11 @@
         "τ_K"
       ],
       "structure_type": "vault",
-      "hex_address": "21.VLT.INFINITEBLISS"
+      "hex_address": "21.VLT.INFINITEBLISS",
+      "adjacent": [
+        "r08",
+        "r09"
+      ]
     },
     {
       "id": "r22",
@@ -974,7 +1161,10 @@
         "∂"
       ],
       "structure_type": "chamber",
-      "hex_address": "22.CH.THOUSANDWORLDS"
+      "hex_address": "22.CH.THOUSANDWORLDS",
+      "adjacent": [
+        "r13"
+      ]
     },
     {
       "id": "sp01",
@@ -1020,7 +1210,23 @@
         "COS"
       ],
       "structure_type": "vault",
-      "hex_address": "SP.01.VLT.CTIWOUND"
+      "hex_address": "SP.01.VLT.CTIWOUND",
+      "adjacent": [
+        "r01",
+        "r02",
+        "r05",
+        "r06",
+        "r08",
+        "r09",
+        "r11",
+        "r12",
+        "r14",
+        "r15",
+        "r17",
+        "r18",
+        "r19",
+        "sp03"
+      ]
     },
     {
       "id": "sp02",
@@ -1056,7 +1262,8 @@
       ],
       "default_operators": [],
       "structure_type": "portico",
-      "hex_address": "SP.02.PTC.AFTERLIFE"
+      "hex_address": "SP.02.PTC.AFTERLIFE",
+      "adjacent": []
     },
     {
       "id": "sp03",
@@ -1101,7 +1308,18 @@
         "γ"
       ],
       "structure_type": "room",
-      "hex_address": "SP.03.ROOM.SPACEARK"
+      "hex_address": "SP.03.ROOM.SPACEARK",
+      "adjacent": [
+        "r01",
+        "r02",
+        "r05",
+        "r06",
+        "r08",
+        "r09",
+        "r11",
+        "r12",
+        "sp01"
+      ]
     },
     {
       "id": "sp04",
@@ -1143,7 +1361,12 @@
         "κρίσις"
       ],
       "structure_type": "chamber",
-      "hex_address": "SP.04.CH.MANDALA"
+      "hex_address": "SP.04.CH.MANDALA",
+      "adjacent": [
+        "r07",
+        "r08",
+        "r11"
+      ]
     },
     {
       "id": "r25",
@@ -1158,7 +1381,8 @@
       "inst": "UCA",
       "prompt": "What do you build under pressure?",
       "structure_type": "room",
-      "hex_address": "25.ROOM.DOLPHINDIANA"
+      "hex_address": "25.ROOM.DOLPHINDIANA",
+      "adjacent": []
     },
     {
       "id": "r27",
@@ -1173,7 +1397,8 @@
       "inst": "—",
       "prompt": "What fruits from the substrate?",
       "structure_type": "room",
-      "hex_address": "27.ROOM.FBDPSOURCE"
+      "hex_address": "27.ROOM.FBDPSOURCE",
+      "adjacent": []
     },
     {
       "id": "r23",
@@ -1191,7 +1416,8 @@
       "inst": "—",
       "prompt": "Whom do you address, and with what force?",
       "structure_type": "room",
-      "hex_address": "23.ROOM.CATULLUS"
+      "hex_address": "23.ROOM.CATULLUS",
+      "adjacent": []
     },
     {
       "id": "f02",
@@ -1238,7 +1464,10 @@
       "suffusion_map_doi": "10.5281/zenodo.19442262",
       "gravity_well_doi": "10.5281/zenodo.19405459",
       "structure_type": "field",
-      "hex_address": "F.02.FLD.GRAVITYWELL"
+      "hex_address": "F.02.FLD.GRAVITYWELL",
+      "adjacent": [
+        "r05"
+      ]
     },
     {
       "id": "r28",
@@ -1305,7 +1534,11 @@
       "room_spec_doi": "10.5281/zenodo.19447123",
       "companion_doi": "10.5281/zenodo.19447119",
       "structure_type": "room",
-      "hex_address": "28.ROOM.EVE"
+      "hex_address": "28.ROOM.EVE",
+      "adjacent": [
+        "r06",
+        "r12"
+      ]
     },
     {
       "id": "f01",
@@ -1326,7 +1559,8 @@
       "default_operators": [],
       "field_doi": "10.5281/zenodo.19041117",
       "source_room": "r27",
-      "hex_address": "F.01.FLD.FBDP"
+      "hex_address": "F.01.FLD.FBDP",
+      "adjacent": []
     },
     {
       "id": "r24",
@@ -1346,7 +1580,8 @@
       "lp_program": [],
       "default_operators": [],
       "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
-      "hex_address": "24.ROOM.MIGDAL"
+      "hex_address": "24.ROOM.MIGDAL",
+      "adjacent": []
     },
     {
       "id": "r26",
@@ -1370,7 +1605,8 @@
         "σ_I"
       ],
       "room_spec_doi": "10.5281/zenodo.19133271",
-      "hex_address": "26.ROOM.INTERNET"
+      "hex_address": "26.ROOM.INTERNET",
+      "adjacent": []
     },
     {
       "id": "r29",
@@ -1390,7 +1626,8 @@
       "lp_program": [],
       "default_operators": [],
       "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
-      "hex_address": "29.ROOM.JOB"
+      "hex_address": "29.ROOM.JOB",
+      "adjacent": []
     },
     {
       "id": "r30",
@@ -1410,7 +1647,8 @@
       "lp_program": [],
       "default_operators": [],
       "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
-      "hex_address": "30.VLT.FROZENSIN"
+      "hex_address": "30.VLT.FROZENSIN",
+      "adjacent": []
     },
     {
       "id": "r31",
@@ -1430,7 +1668,8 @@
       "lp_program": [],
       "default_operators": [],
       "status_note": "Content of Revelation Room in CNM v2.0, displaced when r.07 physics changed. Space Ark status: RESONANT, ACTIVE RESEARCH. Restored as standalone room April 2026.",
-      "hex_address": "31.ROOM.JOSEPHUS"
+      "hex_address": "31.ROOM.JOSEPHUS",
+      "adjacent": []
     }
   ],
   "edges": [
@@ -1728,6 +1967,414 @@
       "from": "r31",
       "to": "r24",
       "type": "adjacent"
+    },
+    {
+      "from": "r01",
+      "to": "r05",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r01",
+      "to": "r06",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r01",
+      "to": "r08",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r01",
+      "to": "r09",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r01",
+      "to": "r13",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r01",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r01",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "r06",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "r07",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "r08",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "r09",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "r13",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "r19",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r02",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r03",
+      "to": "r08",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r03",
+      "to": "r11",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "f02",
+      "to": "r05",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r09",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r11",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r12",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r14",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r15",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r17",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r18",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "r20",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r05",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r06",
+      "to": "r12",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r06",
+      "to": "r28",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r06",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r06",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r07",
+      "to": "r08",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r07",
+      "to": "r09",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r07",
+      "to": "r18",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "r11",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "r12",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "r13",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "r16",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "r18",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "r19",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "r21",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r08",
+      "to": "sp04",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "r12",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "r13",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "r14",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "r15",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "r18",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "r21",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r09",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r11",
+      "to": "r12",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r11",
+      "to": "r19",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r11",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r11",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r11",
+      "to": "sp04",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r12",
+      "to": "r28",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r12",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r12",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r14",
+      "to": "r17",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r14",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r15",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r17",
+      "to": "r19",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r17",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r18",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "r19",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
+    },
+    {
+      "from": "sp01",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "doc_cooccurrence"
     }
   ],
   "documents": [
