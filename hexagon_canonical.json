@@ -47,7 +47,8 @@
       ],
       "default_operators": [
         "σ_S"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r02",
@@ -87,7 +88,8 @@
       ],
       "default_operators": [
         "Λ_res"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r03",
@@ -127,7 +129,8 @@
       ],
       "default_operators": [
         "ICM"
-      ]
+      ],
+      "structure_type": "chamber"
     },
     {
       "id": "r04",
@@ -170,7 +173,8 @@
       ],
       "default_operators": [
         "transfer(gift)"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r05",
@@ -224,7 +228,8 @@
       "default_operators": [
         "ψ_V",
         "COS"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r06",
@@ -269,7 +274,8 @@
       ],
       "default_operators": [
         "material_op"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r07",
@@ -313,7 +319,8 @@
       ],
       "default_operators": [
         "Ω"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r08",
@@ -358,7 +365,8 @@
       "default_operators": [
         "μ",
         "Σ_LP"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r09",
@@ -407,7 +415,8 @@
       "default_operators": [
         "ψ_V",
         "claim(m)"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r10",
@@ -451,7 +460,8 @@
       ],
       "default_operators": [
         "Θ"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r11",
@@ -498,7 +508,8 @@
       ],
       "default_operators": [
         "ψ_V"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r12",
@@ -541,7 +552,8 @@
       ],
       "default_operators": [
         "portal"
-      ]
+      ],
+      "structure_type": "portal"
     },
     {
       "id": "r13",
@@ -586,7 +598,8 @@
       "default_operators": [
         "φ",
         "∂"
-      ]
+      ],
+      "structure_type": "portal"
     },
     {
       "id": "r14",
@@ -628,7 +641,8 @@
       ],
       "default_operators": [
         "ICM"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r15",
@@ -668,7 +682,8 @@
       ],
       "default_operators": [
         "Λ_res"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r16",
@@ -706,7 +721,8 @@
       ],
       "default_operators": [
         "OP.SWERVE"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r17",
@@ -736,7 +752,8 @@
           "value": "FALLBACK: room not yet instantiated"
         }
       ],
-      "default_operators": []
+      "default_operators": [],
+      "structure_type": "room"
     },
     {
       "id": "r18",
@@ -772,7 +789,8 @@
       ],
       "default_operators": [
         "β_r"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r19",
@@ -810,7 +828,8 @@
       ],
       "default_operators": [
         "OP.ROUTE"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r20",
@@ -850,7 +869,8 @@
       ],
       "default_operators": [
         "γ"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "r21",
@@ -892,7 +912,8 @@
       ],
       "default_operators": [
         "τ_K"
-      ]
+      ],
+      "structure_type": "vault"
     },
     {
       "id": "r22",
@@ -930,7 +951,8 @@
       ],
       "default_operators": [
         "∂"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "sp01",
@@ -974,7 +996,8 @@
       "default_operators": [
         "ψ_V",
         "COS"
-      ]
+      ],
+      "structure_type": "vault"
     },
     {
       "id": "sp02",
@@ -1008,7 +1031,8 @@
           "value": "FALLBACK: already crossed"
         }
       ],
-      "default_operators": []
+      "default_operators": [],
+      "structure_type": "portico"
     },
     {
       "id": "sp03",
@@ -1051,7 +1075,8 @@
       ],
       "default_operators": [
         "γ"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "sp04",
@@ -1091,7 +1116,8 @@
       ],
       "default_operators": [
         "κρίσις"
-      ]
+      ],
+      "structure_type": "room"
     },
     {
       "id": "n01",
@@ -1104,7 +1130,8 @@
       "ops": [],
       "het": "—",
       "inst": "UCA",
-      "prompt": "What do you build under pressure?"
+      "prompt": "What do you build under pressure?",
+      "structure_type": "room"
     },
     {
       "id": "n02",
@@ -1117,7 +1144,8 @@
       "ops": [],
       "het": "—",
       "inst": "—",
-      "prompt": "What fruits from the substrate?"
+      "prompt": "What fruits from the substrate?",
+      "structure_type": "field"
     },
     {
       "id": "n03",
@@ -1133,7 +1161,8 @@
       ],
       "het": "—",
       "inst": "—",
-      "prompt": "Whom do you address, and with what force?"
+      "prompt": "Whom do you address, and with what force?",
+      "structure_type": "room"
     },
     {
       "id": "f02",
@@ -1178,7 +1207,8 @@
       ],
       "field_spec_doi": "10.5281/zenodo.19442251",
       "suffusion_map_doi": "10.5281/zenodo.19442262",
-      "gravity_well_doi": "10.5281/zenodo.19405459"
+      "gravity_well_doi": "10.5281/zenodo.19405459",
+      "structure_type": "field"
     },
     {
       "id": "r28",
@@ -1243,7 +1273,8 @@
       },
       "gravity_well_mode": "transformative (generative, not retentive)",
       "room_spec_doi": "10.5281/zenodo.19447123",
-      "companion_doi": "10.5281/zenodo.19447119"
+      "companion_doi": "10.5281/zenodo.19447119",
+      "structure_type": "room"
     }
   ],
   "edges": [

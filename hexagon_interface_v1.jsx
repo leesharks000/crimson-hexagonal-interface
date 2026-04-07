@@ -3,15 +3,16 @@ import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 const DATA_URL = "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json";
 
 const CAT_COLORS = { core: "#c9a84c", ext: "#5a9f7b", special: "#9f5a7b", new: "#5a7a9f" };
+const STRUCTURE_COLORS = { room: "#c9a84c", chamber: "#7a5ac9", vault: "#c95a5a", portal: "#5ac9c9", portico: "#9f8a5a", field: "#5a9f5a" };
 const MODE_COLORS = { ANALYTIC: "#5a7a9f", OPERATIVE: "#c9a84c", AUDIT: "#9f5a7b" };
 const STATUS_COLORS = { RATIFIED: "#5a9f5a", DEPOSITED: "#7a9f5a", PROVISIONAL: "#9f9f5a", GENERATED: "#5a5a3a" };
 const S = 42, sq3 = Math.sqrt(3);
 
 const hex2px = (q, r, cx, cy) => ({ x: cx + S * 1.5 * q, y: cy + S * (sq3 * r + sq3 / 2 * q) });
-const hexPoints = (cx, cy, sz) => {
+const hexPoints = (cx, cy, sz, rotOffset = -30) => {
   const pts = [];
   for (let i = 0; i < 6; i++) {
-    const a = Math.PI / 180 * (60 * i - 30);
+    const a = Math.PI / 180 * (60 * i + rotOffset);
     pts.push(`${cx + sz * Math.cos(a)},${cy + sz * Math.sin(a)}`);
   }
   return pts.join(" ");
@@ -37,10 +38,31 @@ function HexMap({ rooms, edges, selected, onSelect, mode }) {
       })}
       {positioned.map(r => {
         const isSel = selected === r.id;
-        const col = CAT_COLORS[r.cat] || "#444";
+        const st = r.structure_type || "room";
+        const col = STRUCTURE_COLORS[st] || CAT_COLORS[r.cat] || "#444";
+        const sz = isSel ? S + 4 : (st === "vault" ? S - 8 : S - 2);
+
+        if (st === "field") {
+          // Fields: pulsing gradient circle, not hexagon
+          return (
+            <g key={r.id} onClick={() => onSelect(r.id)} style={{ cursor: "pointer" }}>
+              <circle cx={r.x} cy={r.y} r={sz * 0.8} fill={isSel ? col + "22" : col + "08"} stroke={isSel ? mc : col + "44"} strokeWidth={isSel ? 1.5 : 0.5} strokeDasharray="4,3" />
+              <circle cx={r.x} cy={r.y} r={sz * 0.5} fill="none" stroke={col + "22"} strokeWidth={0.3} strokeDasharray="2,4" />
+              <text x={r.x} y={r.y - 4} textAnchor="middle" fill={isSel ? "#e0d0a0" : col} fontSize={isSel ? 9 : 7} fontFamily="Georgia,serif">{r.name}</text>
+              <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={5} fontFamily="monospace">FIELD</text>
+            </g>
+          );
+        }
+
+        // Rotation: rooms=pointy-top(-30°), chambers=flat-top(0°), vaults=15°, portals=-30°
+        const rot = st === "chamber" ? 0 : st === "vault" ? 15 : -30;
+        const dashArray = st === "portal" ? "3,2" : st === "portico" ? "6,3" : undefined;
+        const strokeW = isSel ? 1.5 : (st === "vault" ? 1.2 : 0.5);
+
         return (
           <g key={r.id} onClick={() => onSelect(r.id)} style={{ cursor: "pointer" }}>
-            <polygon points={hexPoints(r.x, r.y, isSel ? S + 4 : S - 2)} fill={isSel ? col + "22" : "#0a0d12"} stroke={isSel ? mc : col + "66"} strokeWidth={isSel ? 1.5 : 0.5} />
+            <polygon points={hexPoints(r.x, r.y, sz, rot)} fill={isSel ? col + "22" : "#0a0d12"} stroke={isSel ? mc : col + "66"} strokeWidth={strokeW} strokeDasharray={dashArray} />
+            {st === "vault" && <polygon points={hexPoints(r.x, r.y, sz + 5, rot)} fill="none" stroke={col + "22"} strokeWidth={0.3} />}
             <text x={r.x} y={r.y - 4} textAnchor="middle" fill={isSel ? "#e0d0a0" : col} fontSize={isSel ? 9 : 7} fontFamily="Georgia,serif">{r.name}</text>
             <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={6} fontFamily="monospace">{r.id}</text>
           </g>
@@ -59,7 +81,7 @@ function RoomPanel({ room, docs, relations, mode, onDoc, onInvoke }) {
 
   return (
     <div style={{ padding: "14px 18px", overflowY: "auto", height: "100%" }}>
-      <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>{room.id} · {room.cat.toUpperCase()}</div>
+      <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>{room.id} · {(room.structure_type || room.cat).toUpperCase()}</div>
       <h2 style={{ fontSize: 18, fontWeight: 300, letterSpacing: 2, color: mc, margin: "0 0 6px 0", fontFamily: "Georgia,serif" }}>{room.name}</h2>
       <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.5, marginBottom: 10, borderLeft: `2px solid ${mc}33`, paddingLeft: 8 }}>{room.desc}</div>
       <div style={{ marginBottom: 10 }}>
