@@ -5,6 +5,7 @@ import { supabase, isSupabaseConfigured } from "./supabaseClient.js";
 const DATA_URL = "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json";
 
 const CAT_COLORS = { core: "#c9a84c", ext: "#5a9f7b", special: "#9f5a7b", new: "#5a7a9f" };
+const STRUCTURE_COLORS = { room: "#c9a84c", chamber: "#7a5ac9", vault: "#c95a5a", portal: "#5ac9c9", portico: "#9f8a5a", field: "#5a9f5a" };
 const MODE_COLORS = { ANALYTIC: "#5a7a9f", OPERATIVE: "#c9a84c", AUDIT: "#9f5a7b" };
 const STATUS_COLORS = {
   RATIFIED: "#5a9f5a", DEPOSITED: "#7a9f5a", PROVISIONAL: "#9f9f5a",
@@ -32,7 +33,7 @@ function useIsMobile(bp = 900) {
 }
 
 const hex2px = (q, r, cx, cy) => ({ x: cx + MAP_SIZE * 1.5 * q, y: cy + MAP_SIZE * (SQRT3 * r + (SQRT3 / 2) * q) });
-const hexPoints = (cx, cy, sz) => { const p = []; for (let i = 0; i < 6; i++) { const a = (Math.PI / 180) * (60 * i - 30); p.push(`${cx + sz * Math.cos(a)},${cy + sz * Math.sin(a)}`); } return p.join(" "); };
+const hexPoints = (cx, cy, sz, rotOffset = -30) => { const p = []; for (let i = 0; i < 6; i++) { const a = (Math.PI / 180) * (60 * i + rotOffset); p.push(`${cx + sz * Math.cos(a)},${cy + sz * Math.sin(a)}`); } return p.join(" "); };
 
 function normalizeRoom(room) {
   return {
@@ -216,9 +217,22 @@ function HexMap({ rooms, edges, selected, onSelect, mc, isMobile }) {
     <div style={{ width: "100%", height: "100%", minHeight: isMobile ? 320 : 420, overflow: "hidden" }}>
       <svg viewBox={isMobile ? "0 0 680 500" : "0 0 680 560"} style={{ width: "100%", height: "100%", background: "transparent" }}>
         {edges.map((e, i) => { const a = roomMap[e.from], b = roomMap[e.to]; if (!a || !b) return null; return <line key={i} x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={e.type === "adjacent" ? "#0f1a0f" : mc + "44"} strokeWidth={e.type === "adjacent" ? 0.5 : 1} strokeDasharray={e.type !== "adjacent" ? "3,3" : undefined} />; })}
-        {positioned.map((r) => { const sel = selected === r.id; const col = CAT_COLORS[r.cat] || "#444"; return (
+        {positioned.map((r) => { const sel = selected === r.id; const st = r.structure_type || "room"; const col = STRUCTURE_COLORS[st] || CAT_COLORS[r.cat] || "#444"; const sz = sel ? MAP_SIZE + 4 : (st === "vault" ? MAP_SIZE - 8 : MAP_SIZE - 2);
+          if (st === "field") { return (
+            <g key={r.id} onClick={() => onSelect(r.id)} style={{ cursor: "pointer" }}>
+              <circle cx={r.x} cy={r.y} r={sz * 0.85} fill={sel ? col + "22" : col + "08"} stroke={sel ? mc : col + "44"} strokeWidth={sel ? 1.5 : 0.5} strokeDasharray="4,3" />
+              <circle cx={r.x} cy={r.y} r={sz * 0.55} fill="none" stroke={col + "22"} strokeWidth={0.3} strokeDasharray="2,4" />
+              <circle cx={r.x} cy={r.y} r={sz * 0.25} fill={col + "11"} stroke="none" />
+              <text x={r.x} y={r.y - 4} textAnchor="middle" fill={sel ? "#e0d0a0" : col} fontSize={sel ? (isMobile ? 8 : 9) : (isMobile ? 6 : 7)} fontFamily="Georgia,serif">{r.name}</text>
+              <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={isMobile ? 5 : 5} fontFamily="monospace">FIELD</text>
+            </g>); }
+          const rot = st === "chamber" ? 0 : st === "vault" ? 15 : -30;
+          const dash = st === "portal" ? "3,2" : st === "portico" ? "6,3" : undefined;
+          const sw = sel ? 1.5 : (st === "vault" ? 1.2 : 0.5);
+          return (
           <g key={r.id} onClick={() => onSelect(r.id)} style={{ cursor: "pointer" }}>
-            <polygon points={hexPoints(r.x, r.y, sel ? MAP_SIZE + 4 : MAP_SIZE - 2)} fill={sel ? col + "22" : "#0a0d12"} stroke={sel ? mc : col + "66"} strokeWidth={sel ? 1.5 : 0.5} />
+            {st === "vault" && <polygon points={hexPoints(r.x, r.y, sz + 6, rot)} fill="none" stroke={col + "22"} strokeWidth={0.3} />}
+            <polygon points={hexPoints(r.x, r.y, sz, rot)} fill={sel ? col + "22" : "#0a0d12"} stroke={sel ? mc : col + "66"} strokeWidth={sw} strokeDasharray={dash} />
             <text x={r.x} y={r.y - 4} textAnchor="middle" fill={sel ? "#e0d0a0" : col} fontSize={sel ? (isMobile ? 8 : 9) : (isMobile ? 6 : 7)} fontFamily="Georgia,serif">{r.name}</text>
             <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={isMobile ? 5 : 6} fontFamily="monospace">{r.id}</text>
           </g>); })}
@@ -278,7 +292,7 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp, mode
   const roomRels = useMemo(() => relations.filter((r) => r.from === room.id || r.to === room.id), [relations, room.id]);
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-      <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>{room.id} · {room.cat.toUpperCase()}</div>
+      <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 2 }}>{room.id} · {(room.structure_type || room.cat).toUpperCase()}</div>
       <h2 style={{ fontSize: isMobile ? 16 : 18, fontWeight: 300, letterSpacing: 2, color: mc, margin: "0 0 6px 0", fontFamily: "Georgia,serif" }}>{room.name}</h2>
       <div style={{ display: "flex", gap: 4, flexWrap: "wrap", marginBottom: 8 }}>
         {room.mantle && <span style={{ fontSize: 8, padding: "1px 5px", background: mc + "11", border: `1px solid ${mc}33`, color: mc, fontFamily: "Georgia,serif" }}>{room.mantle}</span>}
