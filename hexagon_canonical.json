@@ -2464,7 +2464,9 @@
       "assignment": "reviewed",
       "r": [
         "r11"
-      ]
+      ],
+      "t": "The Hexagon Interface Constitution v2.0: System Specification for the Crimson Hexagonal Archive as Governed Commons",
+      "e": "LIVE: crimson-hexagonal-interface.vercel.app — Constitutional sentence: 'The Hexagon is a governed reading-and-production environment whose topology organizes, but does not replace, text, labor, and provenance.' Updated for 6-tuple H_core."
     },
     {
       "id": "19354818",
@@ -15091,6 +15093,26 @@
         "f02"
       ],
       "s": "RATIFIED"
+    },
+    {
+      "id": "19460944",
+      "t": "Interface Constitution v2.0 — System Specification as Governed Commons",
+      "d": "2026-04-07",
+      "doi": "10.5281/zenodo.19460944",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "interface constitution",
+        "governed commons",
+        "system specification",
+        "6-tuple"
+      ],
+      "e": "LIVE: crimson-hexagonal-interface.vercel.app — v2.0 of the constitutional specification.",
+      "r": [
+        "r11"
+      ],
+      "s": "RATIFIED"
     }
   ],
   "dodecad": [
@@ -27324,6 +27346,13 @@
       "id": "Z.19460734.19380602",
       "from": "19460734",
       "to": "19380602",
+      "type": "isNewVersionOf",
+      "source": "manual"
+    },
+    {
+      "id": "Z.19460944.19355075",
+      "from": "19460944",
+      "to": "19355075",
       "type": "isNewVersionOf",
       "source": "manual"
     }
