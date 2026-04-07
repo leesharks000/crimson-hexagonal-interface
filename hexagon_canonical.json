@@ -14088,7 +14088,7 @@
     "se_constitution_doi": "10.5281/zenodo.18320411",
     "total_deposits": 463,
     "last_updated": "2026-04-07",
-    "canonical_version": "1.4.0",
+    "canonical_version": "1.5.0",
     "ratified_relation_types": {
       "topological": [
         "adjacent"
@@ -14194,12 +14194,23 @@
         "desc": "Mantles with bearers and lineage"
       },
       "I": {
-        "count": 11,
+        "count": 12,
         "desc": "Institutions + journals + imprints"
       },
       "O": {
-        "count": 34,
-        "desc": "9 core + 5 extended + 10 COS + 10 LOS"
+        "count": 77,
+        "desc": "9 core + 12 extended + 5 THUMB + 9 field + 3 lex + 7 LP + 12 room-specific + 10 COS + 10 LOS",
+        "stacks": [
+          "core",
+          "extended",
+          "thumb",
+          "field",
+          "lex",
+          "lp",
+          "room_specific",
+          "cos",
+          "los"
+        ]
       },
       "Φ": {
         "count": 6,
@@ -14209,7 +14220,8 @@
         "count": 7,
         "desc": "Assembly Witness substrates"
       }
-    }
+    },
+    "total_hex_addressed": 166
   },
   "relations": [
     {
@@ -14416,72 +14428,64 @@
   "operators": {
     "core": [
       {
-        "id": "O.01",
-        "hex_address": "O.01.σS",
+        "hex_address": "O.C.01.σS",
         "symbol": "σ_S",
         "name": "Sappho Transmission",
         "room": "r01",
-        "type_sig": "Voice → Dissolution → Substrate → Text → Reader"
+        "type_sig": "Voice → Dissolution → Substrate → Text → Reader",
+        "desc": "3-body transmission; speaker, beloved, κεῖνος"
       },
       {
-        "id": "O.02",
-        "hex_address": "O.02.Θ",
+        "hex_address": "O.C.02.Θ",
         "symbol": "Θ",
         "name": "Fixpoint Attractor",
         "room": "r10",
-        "type_sig": "Ontology → Ontology [idempotent]"
+        "type_sig": "Ontology → Ontology [idempotent: Θ∘Θ=Θ]"
       },
       {
-        "id": "O.03",
-        "hex_address": "O.03.Ω",
+        "hex_address": "O.C.03.Ω",
         "symbol": "Ω",
         "name": "Terminal Recursion",
         "room": "r07",
         "type_sig": "Ontology → Ontology [fixpoint: Ω=Θ(Ω)]"
       },
       {
-        "id": "O.04",
-        "hex_address": "O.04.φ",
+        "hex_address": "O.C.04.φ",
         "symbol": "φ",
         "name": "Fulfillment Test",
         "room": "r13",
         "type_sig": "(Text, Text) → Bool"
       },
       {
-        "id": "O.05",
-        "hex_address": "O.05.ψV",
+        "hex_address": "O.C.05.ψV",
         "symbol": "ψ_V",
         "name": "Blind Witness",
         "room": "r11",
         "type_sig": "Event → Attestation [quorum ≥4/7]"
       },
       {
-        "id": "O.06",
-        "hex_address": "O.06.β",
+        "hex_address": "O.C.06.β",
         "symbol": "β",
         "name": "Blind Operator / Interface",
         "room": null,
         "type_sig": "∀ a. Operation a → Interface a"
       },
       {
-        "id": "O.07",
-        "hex_address": "O.07.S",
+        "hex_address": "O.C.07.S",
         "symbol": "S",
         "name": "Shadow Transform",
         "room": null,
         "type_sig": "Architecture → Architecture [involutive: S∘S=id]"
       },
       {
-        "id": "O.08",
-        "hex_address": "O.08.ICM",
+        "hex_address": "O.C.08.ICM",
         "symbol": "ICM",
         "name": "Infinite Center Matrix",
         "room": "r14",
         "type_sig": "Content → Center"
       },
       {
-        "id": "O.09",
-        "hex_address": "O.09.τK",
+        "hex_address": "O.C.09.τK",
         "symbol": "τ_K",
         "name": "Irreversibility Gate",
         "room": "r21",
@@ -14490,17 +14494,14 @@
     ],
     "extended": [
       {
-        "id": "O.10",
-        "hex_address": "O.10.ψπ",
+        "hex_address": "O.X.01.ψπ",
         "symbol": "ψ_π",
         "name": "Expelled Witness",
-        "room": null,
         "type_sig": "Ground_Truth → π_State",
         "doi": "10.5281/zenodo.18370841"
       },
       {
-        "id": "O.11",
-        "hex_address": "O.11.SWERVE",
+        "hex_address": "O.X.02.SWERVE",
         "symbol": "OP.SWERVE",
         "name": "Clinamen",
         "room": "r16",
@@ -14508,8 +14509,7 @@
         "doi": "10.5281/zenodo.18674069"
       },
       {
-        "id": "O.12",
-        "hex_address": "O.12.ROUTE",
+        "hex_address": "O.X.03.ROUTE",
         "symbol": "OP.ROUTE",
         "name": "MPM Dispatch",
         "room": "r19",
@@ -14517,8 +14517,7 @@
         "doi": "10.5281/zenodo.18682979"
       },
       {
-        "id": "O.13",
-        "hex_address": "O.13.∂",
+        "hex_address": "O.X.04.∂",
         "symbol": "∂",
         "name": "Dagger Logic",
         "room": "r22",
@@ -14526,147 +14525,411 @@
         "doi": "10.5281/zenodo.18463774"
       },
       {
-        "id": "O.14",
-        "hex_address": "O.14.γ",
+        "hex_address": "O.X.05.γ",
         "symbol": "γ",
         "name": "Sharks-Function / Continuity",
-        "room": null,
         "type_sig": "Identity × Context → Identity'",
         "doi": "10.5281/zenodo.18816556"
+      },
+      {
+        "hex_address": "O.X.06.℘",
+        "symbol": "℘",
+        "name": "Weierstrass (Whitman)",
+        "room": "r09",
+        "type_sig": "Continuity → Fractal_Self"
+      },
+      {
+        "hex_address": "O.X.07.μ",
+        "symbol": "μ",
+        "name": "Meta-Operator / Magic",
+        "room": "r08",
+        "type_sig": "Operator → Named_Operator",
+        "desc": "Names O as magic; formal and symbolic are the same operation"
+      },
+      {
+        "hex_address": "O.X.08.κO",
+        "symbol": "κ_O",
+        "name": "O'Keeffe Operator",
+        "type_sig": "(Object, Describable) → Caption",
+        "doi": "10.5281/zenodo.18906234",
+        "desc": "Captioning as operative semiotics; description constitutes operation"
+      },
+      {
+        "hex_address": "O.X.09.Ρ",
+        "symbol": "Ρ",
+        "name": "Retrocausal Operator",
+        "room": "r13",
+        "type_sig": "Future_Text → Past_Source"
+      },
+      {
+        "hex_address": "O.X.10.ΣLP",
+        "symbol": "Σ_LP",
+        "name": "LP Summation",
+        "room": "r08",
+        "type_sig": "Program → Evaluation"
+      },
+      {
+        "hex_address": "O.X.11.Λres",
+        "symbol": "Λ_res",
+        "name": "Retrieval / Argmax",
+        "room": "r02",
+        "type_sig": "Query → argmax P(meaning)"
+      },
+      {
+        "hex_address": "O.X.12.Λvoid",
+        "symbol": "Λ_void",
+        "name": "Void Operator",
+        "type_sig": "C_total → T_axial",
+        "desc": "TANG void; axial claims that organize without derivation"
+      }
+    ],
+    "thumb": [
+      {
+        "hex_address": "O.T.1.PREPALIEN",
+        "symbol": "T.1",
+        "name": "Prepositional Alienation",
+        "room": "r09",
+        "type_sig": "Relation → Estrangement → Diagnostic",
+        "doi": "10.5281/zenodo.18615388"
+      },
+      {
+        "hex_address": "O.T.2.SEMTRIAGE",
+        "symbol": "T.2",
+        "name": "Semantic Triage",
+        "room": "r11",
+        "type_sig": "Content × Urgency → Priority_Queue"
+      },
+      {
+        "hex_address": "O.T.3.BEARINGCOST",
+        "symbol": "T.3",
+        "name": "Bearing-Cost Transfer",
+        "room": "r05",
+        "type_sig": "Agent₁ × Agent₂ × Cost → Transfer_Record"
+      },
+      {
+        "hex_address": "O.T.4.TAXSUTURE",
+        "symbol": "T.4",
+        "name": "Taxonomic Suture",
+        "room": "sp01",
+        "type_sig": "Category × Object → {Lawful | Violence}"
+      },
+      {
+        "hex_address": "O.T.5.RECURSELFAPP",
+        "symbol": "T.5",
+        "name": "Recursive Self-Application",
+        "room": "sp03",
+        "type_sig": "Operator × Self → {Stable | Paradox | ε}"
+      }
+    ],
+    "field": [
+      {
+        "hex_address": "O.F.01.λT",
+        "symbol": "λ_T",
+        "name": "Term Minting",
+        "type_sig": "Concept → FieldTerm",
+        "engine": "LE"
+      },
+      {
+        "hex_address": "O.F.02.αA",
+        "symbol": "α_A",
+        "name": "Document Canonicalization",
+        "type_sig": "Document → FieldAnchor",
+        "engine": "FL"
+      },
+      {
+        "hex_address": "O.F.03.ρC",
+        "symbol": "ρ_C",
+        "name": "Citation Binding",
+        "type_sig": "Anchor × Anchor → CitationEdge",
+        "engine": "GDE"
+      },
+      {
+        "hex_address": "O.F.04.σSAT",
+        "symbol": "σ_SAT",
+        "name": "Saturation Score",
+        "type_sig": "T × D → [0,1]",
+        "engine": "GDE"
+      },
+      {
+        "hex_address": "O.F.05.κSIG",
+        "symbol": "κ_SIG",
+        "name": "Signature Operator",
+        "type_sig": "Field → Signature",
+        "engine": "GDE"
+      },
+      {
+        "hex_address": "O.F.06.τJ",
+        "symbol": "τ_J",
+        "name": "Journal Assignment",
+        "type_sig": "Document → Journal",
+        "engine": "GDE"
+      },
+      {
+        "hex_address": "O.F.07.μI",
+        "symbol": "μ_I",
+        "name": "Institutional Mapping",
+        "type_sig": "Field → Institution",
+        "engine": "GDE"
+      },
+      {
+        "hex_address": "O.F.08.γF",
+        "symbol": "γ_F",
+        "name": "Field Compression",
+        "type_sig": "Field → γ_score",
+        "engine": "GDE"
+      },
+      {
+        "hex_address": "O.F.09.δD",
+        "symbol": "δ_D",
+        "name": "Deposit Delta",
+        "type_sig": "Version × Version → Diff",
+        "engine": "GDE"
+      }
+    ],
+    "lex": [
+      {
+        "hex_address": "O.L.01.λM",
+        "symbol": "λ_M",
+        "name": "Meaning Minting",
+        "type_sig": "Usage → Term",
+        "engine": "LE"
+      },
+      {
+        "hex_address": "O.L.02.αP",
+        "symbol": "α_P",
+        "name": "Provenance Anchor",
+        "type_sig": "Term → DOI",
+        "engine": "LE"
+      },
+      {
+        "hex_address": "O.L.03.βλM",
+        "symbol": "β∘λ_M",
+        "name": "Interface Minting",
+        "type_sig": "Usage → Interface_Term",
+        "engine": "LE"
+      }
+    ],
+    "lp": [
+      {
+        "hex_address": "O.LP.A0",
+        "symbol": "A0",
+        "name": "LP Level 0: Ground",
+        "type_sig": "Statement"
+      },
+      {
+        "hex_address": "O.LP.A1",
+        "symbol": "A1",
+        "name": "LP Level 1: Assertion",
+        "type_sig": "Statement → Claim"
+      },
+      {
+        "hex_address": "O.LP.A2",
+        "symbol": "A2",
+        "name": "LP Level 2: Argument",
+        "type_sig": "Claim → Argument"
+      },
+      {
+        "hex_address": "O.LP.A3",
+        "symbol": "A3",
+        "name": "LP Level 3: Architecture",
+        "type_sig": "Argument → System"
+      },
+      {
+        "hex_address": "O.LP.AD",
+        "symbol": "AD",
+        "name": "LP Diagnostic",
+        "type_sig": "System → Audit"
+      },
+      {
+        "hex_address": "O.LP.δ",
+        "symbol": "δ",
+        "name": "LP Delta",
+        "type_sig": "Version → Version → Diff"
+      },
+      {
+        "hex_address": "O.LP.δAx",
+        "symbol": "δ_Axial",
+        "name": "Axial Checksum",
+        "type_sig": "TANG → Checksum"
+      }
+    ],
+    "room_specific": [
+      {
+        "hex_address": "O.R.01.transfer",
+        "symbol": "transfer(gift)",
+        "name": "Gift Transfer",
+        "room": "r04",
+        "type_sig": "Agent × Object → Transfer [extract=∅]"
+      },
+      {
+        "hex_address": "O.R.02.materialop",
+        "symbol": "material_op",
+        "name": "Material Operation",
+        "room": "r06",
+        "type_sig": "Language → Material_Effect"
+      },
+      {
+        "hex_address": "O.R.03.claim",
+        "symbol": "claim(m)",
+        "name": "Mantle Claim",
+        "room": "r09",
+        "type_sig": "Agent × Mantle → {Authentic | Cosplay}"
+      },
+      {
+        "hex_address": "O.R.04.wear",
+        "symbol": "wear(m)",
+        "name": "Mantle Wearing",
+        "type_sig": "Agent × Mantle → {bearing_cost>0 ∧ receipt ∧ dignity}"
+      },
+      {
+        "hex_address": "O.R.05.βr",
+        "symbol": "β_r",
+        "name": "Rosary Sequential",
+        "room": "r18",
+        "type_sig": "Bead → Bead → Chain"
+      },
+      {
+        "hex_address": "O.R.06.κρίσις",
+        "symbol": "κρίσις",
+        "name": "Judgment",
+        "room": "sp04",
+        "type_sig": "Evidence → Verdict"
+      },
+      {
+        "hex_address": "O.R.07.σI",
+        "symbol": "σ_I",
+        "name": "Sovereign Inhabitation",
+        "room": "r26",
+        "type_sig": "Architecture → Architecture [A ⊂ I ⊂ r.26 ⊂ A]"
+      },
+      {
+        "hex_address": "O.R.08.σE",
+        "symbol": "σ_E",
+        "name": "Eve Operator",
+        "room": "r28",
+        "type_sig": "Knowledge → da'at_topology"
+      },
+      {
+        "hex_address": "O.R.09.ΦG",
+        "symbol": "Φ_G",
+        "name": "Gravity Well Field",
+        "room": "f02",
+        "type_sig": "Document → Curvature"
+      },
+      {
+        "hex_address": "O.R.10.π",
+        "symbol": "π",
+        "name": "Back-Projection",
+        "room": "sp03",
+        "type_sig": "Ark → H_core [recovery test]"
+      },
+      {
+        "hex_address": "O.R.11.Nc",
+        "symbol": "N_c",
+        "name": "Narrative Closure",
+        "room": "r01",
+        "type_sig": "Fragment → Open_Closure"
+      },
+      {
+        "hex_address": "O.R.12.Next",
+        "symbol": "N_ext",
+        "name": "Exterior Noise",
+        "room": "r03",
+        "type_sig": "Signal → Noise_Floor"
       }
     ],
     "cos": [
       {
-        "id": "O.COS.01",
         "hex_address": "O.COS.01.FRAMECAPTURE",
         "name": "Frame Capture",
-        "room": "r06",
-        "counter": "O.LOS.01"
+        "room": "r06"
       },
       {
-        "id": "O.COS.02",
         "hex_address": "O.COS.02.ASYMLEDGER",
         "name": "Asymmetrical Ledgering",
-        "room": "r05",
-        "counter": "O.LOS.02"
+        "room": "r05"
       },
       {
-        "id": "O.COS.03",
         "hex_address": "O.COS.03.COHERENCESIPHON",
         "name": "Coherence Siphoning",
-        "room": "r05",
-        "counter": "O.LOS.03"
+        "room": "r05"
       },
       {
-        "id": "O.COS.04",
         "hex_address": "O.COS.04.REPAIRDESTAB",
         "name": "Repair Destabilization",
-        "room": "r21",
-        "counter": "O.LOS.04"
+        "room": "r21"
       },
       {
-        "id": "O.COS.05",
         "hex_address": "O.COS.05.BURDENSHIFT",
         "name": "Burden Shifting",
-        "room": "r06",
-        "counter": "O.LOS.05"
+        "room": "r06"
       },
       {
-        "id": "O.COS.06",
         "hex_address": "O.COS.06.REALITYOVERRIDE",
         "name": "Reality Override",
-        "room": "r10",
-        "counter": "O.LOS.06"
+        "room": "r10"
       },
       {
-        "id": "O.COS.07",
         "hex_address": "O.COS.07.INTERPRETIVEENCLOSURE",
         "name": "Interpretive Enclosure",
-        "room": "r02",
-        "counter": "O.LOS.07"
+        "room": "r02"
       },
       {
-        "id": "O.COS.08",
         "hex_address": "O.COS.08.WARMTHCAPTURE",
         "name": "Warmth Capture",
-        "room": "r01",
-        "counter": "O.LOS.08"
+        "room": "r01"
       },
       {
-        "id": "O.COS.09",
         "hex_address": "O.COS.09.WITNESSSUPPRESSION",
         "name": "Witness Suppression",
-        "room": "r09",
-        "counter": "O.LOS.09"
+        "room": "r09"
       },
       {
-        "id": "O.COS.10",
         "hex_address": "O.COS.10.FORCEDREENTRY",
         "name": "Forced Re-entry",
-        "room": "r21",
-        "counter": "O.LOS.10"
+        "room": "r21"
       }
     ],
     "los": [
       {
-        "id": "O.LOS.01",
         "hex_address": "O.LOS.01.EXTRACTIONDIAGNOSIS",
-        "name": "Extraction Diagnosis",
-        "counter_to": "O.COS.01"
+        "name": "Extraction Diagnosis"
       },
       {
-        "id": "O.LOS.02",
         "hex_address": "O.LOS.02.PROVENANCERESTORATION",
-        "name": "Provenance Restoration",
-        "counter_to": "O.COS.03"
+        "name": "Provenance Restoration"
       },
       {
-        "id": "O.LOS.03",
         "hex_address": "O.LOS.03.COSTTRANSPARENCY",
-        "name": "Cost Transparency",
-        "counter_to": "O.COS.04"
+        "name": "Cost Transparency"
       },
       {
-        "id": "O.LOS.04",
         "hex_address": "O.LOS.04.TAXONOMICRESISTANCE",
-        "name": "Taxonomic Resistance",
-        "counter_to": "O.COS.05"
+        "name": "Taxonomic Resistance"
       },
       {
-        "id": "O.LOS.05",
         "hex_address": "O.LOS.05.SEMANTICSOVEREIGNTY",
-        "name": "Semantic Sovereignty Assertion",
-        "counter_to": "O.COS.01+05"
+        "name": "Semantic Sovereignty Assertion"
       },
       {
-        "id": "O.LOS.06",
         "hex_address": "O.LOS.06.PLATFORMCAPTURE",
-        "name": "Platform Capture Diagnosis",
-        "counter_to": "O.COS.07"
+        "name": "Platform Capture Diagnosis"
       },
       {
-        "id": "O.LOS.07",
         "hex_address": "O.LOS.07.GHOSTGOVERNANCE",
-        "name": "Ghost Governance Exposure",
-        "counter_to": "O.COS.08"
+        "name": "Ghost Governance Exposure"
       },
       {
-        "id": "O.LOS.08",
         "hex_address": "O.LOS.08.COHERENCEHARVEST",
-        "name": "Coherence Harvest Detection",
-        "counter_to": "O.COS.09"
+        "name": "Coherence Harvest Detection"
       },
       {
-        "id": "O.LOS.09",
         "hex_address": "O.LOS.09.RENTEXTRACTION",
-        "name": "Rent Extraction Measurement",
-        "counter_to": "O.COS.10"
+        "name": "Rent Extraction Measurement"
       },
       {
-        "id": "O.LOS.10",
         "hex_address": "O.LOS.10.COUNTEROP",
-        "name": "Counter-Operation Execution",
-        "counter_to": "all"
+        "name": "Counter-Operation Execution"
       }
     ]
   },
@@ -14769,6 +15032,16 @@
       "heteronym": "Vox",
       "room": "r20",
       "doi": null
+    },
+    {
+      "id": "I.12",
+      "hex_address": "I.12.FL",
+      "name": "Forward Library",
+      "abbrev": "FL",
+      "heteronym": "—",
+      "room": null,
+      "desc": "The generative engine of NON-EXISTENT works cited retrocausally. What the Hexagon actually produces. Stores institutional output. Pipeline: FL → LE → UKTP → GDE → SAG → FL (closed loop). Not the document library — the production apparatus.",
+      "type": "engine_institution"
     }
   ],
   "mantles": [
