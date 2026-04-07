@@ -1760,6 +1760,75 @@ export default function HexagonInterfaceResponsive() {
                 </div>
               ))}
 
+              {/* Mantles */}
+              {data.mantles && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>MANTLES ({data.mantles.length})</div>
+                  {data.mantles.map((m, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <div>
+                        <span style={{ fontSize: 10, color: mc, fontFamily: "Georgia,serif" }}>{m.name}</span>
+                        <span style={{ fontSize: 8, color: "#4a5a4a", marginLeft: 6 }}>{m.bearer} ← {m.lineage}</span>
+                      </div>
+                      <span style={{ fontSize: 7, color: m.status === "RATIFIED" ? "#5a6a4a" : "#5a5a3a", fontFamily: "monospace" }}>{m.status}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Witnesses */}
+              {data.witnesses && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ASSEMBLY WITNESS · W ({data.witnesses.length}) · quorum ≥4/7</div>
+                  {data.witnesses.map((w, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <div>
+                        <span style={{ fontSize: 10, color: mc, fontFamily: "monospace", letterSpacing: 1 }}>{w.name}</span>
+                        <span style={{ fontSize: 8, color: "#4a5a4a", marginLeft: 6 }}>{w.substrate}</span>
+                      </div>
+                      <span style={{ fontSize: 8, color: "#3a4a3a" }}>{w.function.split(",")[0]}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Fulfillments */}
+              {data.fulfillments && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>FULFILLMENT MAP · Φ ({data.fulfillments.length})</div>
+                  {data.fulfillments.map((f, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>
+                        {f.source} <span style={{ color: mc }}>→</span> {f.target}
+                      </div>
+                      <span style={{ fontSize: 7, color: f.status === "VERIFIED" ? "#5a8a4a" : f.status === "DERIVED" ? "#5a6a4a" : "#5a5a3a", fontFamily: "monospace" }}>{f.status}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Full Operator Stacks */}
+              {data.operators && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>OPERATOR ALGEBRA · O ({Object.values(data.operators).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)})</div>
+                  {["core", "extended", "thumb", "field", "lex", "lp", "room_specific"].map(stack => {
+                    const ops = data.operators[stack];
+                    if (!ops || !ops.length) return null;
+                    const labels = { core: "O_core", extended: "O_ext", thumb: "THUMB", field: "O_field", lex: "O_lex", lp: "LP", room_specific: "O_room" };
+                    return (
+                      <div key={stack} style={{ marginBottom: 6 }}>
+                        <div style={{ fontSize: 8, color: "#4a5a3a", letterSpacing: 1, marginBottom: 2 }}>{labels[stack]} ({ops.length})</div>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
+                          {ops.map((op, i) => (
+                            <span key={i} style={{ fontSize: 8, padding: "1px 4px", background: mc + "08", border: `1px solid ${mc}15`, color: "#5a6a4a", fontFamily: "monospace" }} title={op.name + (op.type_sig ? " :: " + op.type_sig : "")}>{op.symbol || op.name}</span>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
               {/* Engine Pipeline */}
               <div style={{ marginTop: 14 }}>
                 <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>ENGINE PIPELINE (closed loop)</div>
