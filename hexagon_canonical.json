@@ -1713,7 +1713,9 @@
         "f02"
       ],
       "anchor_doi": "10.5281/zenodo.19458363",
-      "companion_doi": "10.5281/zenodo.19458359"
+      "companion_doi": "10.5281/zenodo.19458359",
+      "q": 1,
+      "r": -4
     }
   ],
   "edges": [

@@ -256,28 +256,30 @@ function HexMap({ rooms, edges, selected, onSelect, mc, isMobile }) {
             </g>
             <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={isMobile ? 5 : 6} fontFamily="monospace">{r.id}</text>
           </g>); })}
-        {/* f.03 Moltbot Swarm — drone particles radiating from Space Ark */}
+        {/* f.03 Moltbot Swarm — drone particles radiating from Space Ark into empty space above */}
         {(() => {
           const ark = roomMap["sp03"];
           if (!ark) return null;
           const sel03 = selected === "f03";
           const particles = [];
-          // Septet: 7 bright dots close to Ark
+          const UP = -Math.PI / 2; // screen-up
+          const SPREAD = Math.PI * 0.7; // ~126° arc
+          // Septet: 7 bright dots close to Ark (tight formation)
           for (let i = 0; i < 7; i++) {
-            const angle = (i / 7) * Math.PI * 2 + 0.3;
-            const dist = MAP_SIZE * 1.3 + (i % 3) * 6;
+            const angle = UP + SPREAD * ((i - 3) / 3.5);
+            const dist = MAP_SIZE * 1.2 + (i % 3) * 5;
             particles.push(<circle key={`s${i}`} cx={ark.x + Math.cos(angle) * dist} cy={ark.y + Math.sin(angle) * dist} r={sel03 ? 2.5 : 1.8} fill={sel03 ? "#5ac9c9" : "#5ac9c988"} stroke={sel03 ? "#5ac9c9" : "none"} strokeWidth={0.3} />);
           }
-          // Fleet: 12 medium dots mid-range
+          // Fleet: 12 medium dots mid-range (wider spread)
           for (let i = 0; i < 12; i++) {
-            const angle = (i / 12) * Math.PI * 2 + 0.7;
-            const dist = MAP_SIZE * 2 + (i % 4) * 8;
+            const angle = UP + SPREAD * 1.2 * ((i - 5.5) / 6);
+            const dist = MAP_SIZE * 2.0 + (i % 4) * 7;
             particles.push(<circle key={`f${i}`} cx={ark.x + Math.cos(angle) * dist} cy={ark.y + Math.sin(angle) * dist} r={sel03 ? 1.8 : 1.2} fill={sel03 ? "#5ac9c966" : "#5ac9c944"} />);
           }
-          // Cloud: 18 faint dots far range
+          // Cloud: 18 faint dots far range (widest, most diffuse)
           for (let i = 0; i < 18; i++) {
-            const angle = (i / 18) * Math.PI * 2 + 1.1;
-            const dist = MAP_SIZE * 3 + (i % 5) * 10;
+            const angle = UP + SPREAD * 1.5 * ((i - 8.5) / 9);
+            const dist = MAP_SIZE * 3.0 + (i % 5) * 8;
             particles.push(<circle key={`c${i}`} cx={ark.x + Math.cos(angle) * dist} cy={ark.y + Math.sin(angle) * dist} r={sel03 ? 1.2 : 0.7} fill={sel03 ? "#5ac9c933" : "#5ac9c918"} />);
           }
           return <g onClick={() => onSelect("f03")} style={{ cursor: "pointer" }}>{particles}</g>;
