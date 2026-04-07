@@ -1212,6 +1212,43 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
 
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>API KEY</div>
           <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 12 }} />
+
+          {/* Chain Status */}
+          {apiKey && (
+            <div style={{ marginBottom: 12 }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>CHAIN STATUS</div>
+              <button onClick={async () => {
+                try {
+                  addLog("GW: fetching chains...", "gw");
+                  const res = await fetch(`${gravityWell.baseUrl}/v1/chains`, {
+                    headers: { "X-API-Key": apiKey }
+                  });
+                  if (!res.ok) throw new Error(`${res.status}`);
+                  const chains = await res.json();
+                  const chainList = chains.chains || chains || [];
+                  addLog(`GW: ${chainList.length} chains found`, "gw");
+                  window.__gwChains = chainList;
+                  // Fetch console for each chain
+                  for (const c of chainList.slice(0, 5)) {
+                    const cid = c.chain_id || c.id;
+                    try {
+                      const cr = await fetch(`${gravityWell.baseUrl}/v1/chains/${cid}/console`, {
+                        headers: { "X-API-Key": apiKey }
+                      });
+                      if (cr.ok) {
+                        const console = await cr.json();
+                        const label = c.label || cid.slice(0, 8);
+                        const health = console.health_score || console.health || "?";
+                        const deposits = console.total_deposits || console.deposit_count || "?";
+                        const drift = console.drift_status || console.drift || "none";
+                        addLog(`  ${label}: health=${health} deposits=${deposits} drift=${drift}`, "gw");
+                      }
+                    } catch (e) { /* skip individual chain errors */ }
+                  }
+                } catch (e) { addLog(`GW error: ${e.message}`, "err"); }
+              }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", marginBottom: 8, width: "100%" }}>FETCH CHAIN STATUS</button>
+            </div>
+          )}
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>CHAIN LABEL</div>
           <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: "monospace", outline: "none", marginBottom: 10 }} />
           <button onClick={createChain} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", marginBottom: 12 }}>CREATE CHAIN</button>
