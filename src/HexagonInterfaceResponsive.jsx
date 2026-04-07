@@ -999,7 +999,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
     return { roomCounts, roomNames, emptyRooms, provRelations, months, sortedRooms, maxCount };
   }, [data]);
 
-  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "ZENODO", label: "ZENODO" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW" }];
+  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "ZENODO", label: "ZENODO" }, { id: "SYNC", label: "SYNC" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW" }];
 
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
@@ -1097,6 +1097,30 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
       {/* ZENODO DEPOSIT tab */}
       {dashTab === "ZENODO" && (
         <ZenodoDeposit mc={mc} addLog={addLog} isMobile={isMobile} />
+      )}
+
+      {/* SYNC tab — Zenodo live pull */}
+      {dashTab === "SYNC" && (
+        <div>
+          <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 10 }}>Fetch recent deposits from Zenodo. Shows deposits not yet in canonical JSON.</div>
+          <button onClick={async () => {
+            addLog("Fetching from Zenodo API...", "sys");
+            try {
+              const existingDois = new Set(data.documents.map(d => d.doi).filter(Boolean));
+              const r = await fetch(`https://zenodo.org/api/records/?q=creators.name:"Sharks, Lee"&size=50&sort=mostrecent`);
+              const j = await r.json();
+              const hits = j.hits?.hits || [];
+              const newDeps = hits.filter(h => !existingDois.has(h.doi));
+              const syncData = { total: j.hits?.total || 0, fetched: hits.length, new: newDeps.length, existing: hits.length - newDeps.length, deposits: newDeps };
+              window.__syncResult = syncData;
+              addLog(`Zenodo: ${syncData.total} total, ${syncData.fetched} fetched, ${syncData.new} NEW (not in JSON)`, syncData.new > 0 ? "warn" : "sys");
+              // Force re-render
+              document.getElementById("sync-results")?.setAttribute("data-count", syncData.new);
+            } catch (e) { addLog(`Zenodo fetch error: ${e.message}`, "err"); }
+          }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", letterSpacing: 1, marginBottom: 12, width: "100%" }}>FETCH RECENT DEPOSITS</button>
+          <div style={{ fontSize: 9, color: "#3a4a3a", marginBottom: 8 }}>Community total: {data.documents.length} in JSON · {data.meta?.total_deposits || "?"} claimed</div>
+          <div id="sync-results" style={{ fontSize: 8, color: "#4a5a4a" }}>Press FETCH to compare against Zenodo API. New deposits will appear below.</div>
+        </div>
       )}
 
       {/* DREAM tab */}
