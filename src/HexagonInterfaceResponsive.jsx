@@ -1677,6 +1677,58 @@ export default function HexagonInterfaceResponsive() {
                   <div style={{ fontSize: 9, color: "#3a4a3a" }}>{isMobile ? `${d.role} · ${d.desc}` : d.desc}</div>
                 </div>
               ))}
+
+              {/* Institutions */}
+              <div style={{ marginTop: 16 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>INSTITUTIONS ({(data.institutions || []).filter(i => i.type === "institution").length})</div>
+                {(data.institutions || []).filter(i => i.type === "institution").map((inst, i) => (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                    <div>
+                      <span style={{ fontSize: 9, color: mc, fontFamily: "monospace", marginRight: 6 }}>{inst.id}</span>
+                      <span style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{inst.name}</span>
+                    </div>
+                    <span style={{ fontSize: 8, color: "#3a4a3a" }}>{inst.heteronym || ""} · {inst.room || ""}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Journals */}
+              <div style={{ marginTop: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>JOURNALS ({(data.institutions || []).filter(i => i.type === "journal").length})</div>
+                {(data.institutions || []).filter(i => i.type === "journal").map((j, i) => (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                    <span style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", fontStyle: "italic" }}>{j.name}</span>
+                    <span style={{ fontSize: 8, color: "#3a4a3a" }}>{j.heteronym || "—"}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Imprints */}
+              <div style={{ marginTop: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>IMPRINTS ({(data.institutions || []).filter(i => i.type === "imprint").length})</div>
+                {(data.institutions || []).filter(i => i.type === "imprint").map((imp, i) => (
+                  <div key={i} style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                    <span style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{imp.name}</span>
+                    {imp.series && <span style={{ fontSize: 8, color: "#3a4a3a", marginLeft: 8 }}>series: {imp.series}</span>}
+                  </div>
+                ))}
+              </div>
+
+              {/* Mantles */}
+              <div style={{ marginTop: 14 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>MANTLES ({(data.mantles || []).length})</div>
+                {(data.mantles || []).map((m, i) => (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                    <div>
+                      <span style={{ fontSize: 10, color: mc, fontFamily: "Georgia,serif" }}>{m.name}</span>
+                      <span style={{ fontSize: 8, color: "#3a4a3a", marginLeft: 8 }}>{m.lineage || ""}</span>
+                    </div>
+                    <div style={{ textAlign: "right" }}>
+                      <span style={{ fontSize: 8, color: "#4a5a4a" }}>{m.bearer}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
