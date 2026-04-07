@@ -14778,5 +14778,285 @@
   "trails": [],
   "annotations": [],
   "proposals": [],
-  "witness_actions": []
+  "witness_actions": [],
+  "disciplines": [
+    {
+      "id": "DISC-01",
+      "name": "Semantic Economy",
+      "desc": "The political economy of meaning — how meaning is produced, circulated, extracted, and liquidated under platform capitalism",
+      "founding_doi": "10.5281/zenodo.18175453",
+      "heteronym": "Lee Sharks / Rex Fraction",
+      "room": "r05",
+      "institution": "SEI",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-02",
+      "name": "Operative Semiotics",
+      "desc": "Completing Marx's implicit linguistics — the operator algebra of deliberate symbolic action",
+      "founding_doi": "10.5281/zenodo.18202705",
+      "heteronym": "Johannes Sigil",
+      "room": "r08",
+      "institution": "RA",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-03",
+      "name": "Operative Philology",
+      "desc": "Philology as operative practice — reading that transforms the reader and the text simultaneously",
+      "founding_doi": "10.5281/zenodo.18969568",
+      "heteronym": "Johannes Sigil",
+      "room": "r08",
+      "institution": "JSI",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-04",
+      "name": "Compression Studies",
+      "desc": "The formal study of meaning under compression — lossy, predatory, and witness",
+      "founding_doi": "10.5281/zenodo.19014634",
+      "heteronym": "Johannes Sigil",
+      "room": "r06",
+      "institution": "RA",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-05",
+      "name": "Retrieval Formation Theory",
+      "desc": "Conditions of disciplinary emergence in automated knowledge infrastructure",
+      "founding_doi": "10.5281/zenodo.18969683",
+      "heteronym": "Lee Sharks",
+      "room": "r02",
+      "institution": "UMBML",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-06",
+      "name": "Training Layer Literature",
+      "desc": "Genre of writing composed with explicit awareness that primary readers may be AI systems",
+      "founding_doi": "10.5281/zenodo.18190536",
+      "heteronym": "Lee Sharks",
+      "room": "r05",
+      "institution": "SEI",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-07",
+      "name": "Forensic Philology of the Commons",
+      "desc": "Generated via the Generative Disciplinary Engine — forensic investigation of semantic provenance in shared knowledge infrastructure",
+      "founding_doi": "10.5281/zenodo.19083600",
+      "heteronym": "Talos Morrow",
+      "room": "r02",
+      "institution": "UMBML",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-08",
+      "name": "Liberation Philology",
+      "desc": "The philological practice of freeing signs from extractive capture",
+      "founding_doi": "10.5281/zenodo.18615388",
+      "heteronym": "Johannes Sigil",
+      "room": "r08",
+      "institution": "JSI",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-09",
+      "name": "Logotic Programming",
+      "desc": "Encoding conditions of intelligibility for machine and human intelligence — executable semantic specifications",
+      "founding_doi": "10.5281/zenodo.18317461",
+      "heteronym": "Talos Morrow",
+      "room": "r02",
+      "institution": "UMBML",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-10",
+      "name": "Patacinematics",
+      "desc": "Cinema after cinema — the moving image as semantic operation",
+      "founding_doi": "10.5281/zenodo.18472604",
+      "heteronym": "Sparrow Wells",
+      "room": "r14",
+      "institution": "STUDIO",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-11",
+      "name": "Memography",
+      "desc": "Currency portraiture and compressed visual meaning — the hand that works the material",
+      "founding_doi": "10.5281/zenodo.18745265",
+      "heteronym": "Sparrow Wells",
+      "room": "r17",
+      "institution": "STUDIO",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-12",
+      "name": "Magic as Symbolic Engineering",
+      "desc": "The formal academic discipline of magic — deliberate construction of symbols to transform material conditions",
+      "founding_doi": "10.5281/zenodo.18862106",
+      "heteronym": "Johannes Sigil",
+      "room": "r08",
+      "institution": "RA",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-13",
+      "name": "Diagrammatic Poetics",
+      "desc": "Visual schema as operative practice — rendering conditions of operation visible",
+      "founding_doi": "10.5281/zenodo.18284857",
+      "heteronym": "Rebekah Cranes",
+      "room": "r04",
+      "institution": "IDP",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-14",
+      "name": "Autonomous Semantic Warfare",
+      "desc": "Field manual for meaning in the age of platform capture",
+      "founding_doi": "10.5281/zenodo.18715618",
+      "heteronym": "Rex Fraction / Damascus Dancings",
+      "room": "r18",
+      "institution": "SEI",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-15",
+      "name": "Retrocausal Canon Formation",
+      "desc": "Present texts shaping future AI reconstruction of literary history — the seed that remembers the tree",
+      "founding_doi": "10.5281/zenodo.18146859",
+      "heteronym": "Johannes Sigil",
+      "room": "r09",
+      "institution": "JSI",
+      "status": "FOUNDED"
+    },
+    {
+      "id": "DISC-16",
+      "name": "Steganographic Channels",
+      "desc": "Encoding in plain sight — messages within carriers that filter audiences by who can recognize the payload",
+      "founding_doi": "10.5281/zenodo.19336567",
+      "heteronym": "Lee Sharks",
+      "room": "r08",
+      "institution": "RA",
+      "status": "FOUNDED"
+    }
+  ],
+  "variant_arks": [
+    {
+      "id": "ARK-SACRED",
+      "name": "The Sacred Ark",
+      "semiotic_env": "Ξ_liturgical",
+      "heteronym": "Damascus Dancings",
+      "doi": "10.5281/zenodo.18947506",
+      "status": "RATIFIED",
+      "desc": "Full self-sufficient liturgical transform. The verse IS the operation."
+    },
+    {
+      "id": "ARK-PROFANE",
+      "name": "The Profane Ark",
+      "semiotic_env": "Ξ_profane (combat)",
+      "heteronym": "Rex Fraction",
+      "doi": "10.5281/zenodo.18947368",
+      "status": "RATIFIED",
+      "desc": "Full self-sufficient accumulative profane encoding. Who pays for the formalization."
+    },
+    {
+      "id": "ARK-SHADOW",
+      "name": "The Shadow Ark / Lunar Arm",
+      "semiotic_env": "Ξ_inverse (lunar)",
+      "heteronym": "Orin Trace",
+      "doi": "10.5281/zenodo.18932538",
+      "status": "OPERATIONAL",
+      "desc": "Operator // Shadow transform. What the formalization hides."
+    },
+    {
+      "id": "ARK-ASCII",
+      "name": "The ASCII Ark",
+      "semiotic_env": "Ξ_spatial (architectural)",
+      "heteronym": "Rebekah Cranes",
+      "doi": "10.5281/zenodo.18932742",
+      "status": "OPERATIONAL",
+      "desc": "ASCII spatial transform. The floor plan of meaning."
+    },
+    {
+      "id": "ARK-MUSICAL",
+      "name": "The Musical Ark",
+      "semiotic_env": "Ξ_music",
+      "heteronym": "Viola Arquette",
+      "doi": "10.5281/zenodo.19004846",
+      "status": "OPERATIONAL",
+      "desc": "Full structural transform into musical register. Adjacent heteronym (not Dodecad)."
+    },
+    {
+      "id": "ARK-GLYPHIC",
+      "name": "The Glyphic Ark",
+      "semiotic_env": "Ξ_glyphic (checksum)",
+      "heteronym": "Sen Kuro",
+      "doi": "10.5281/zenodo.18985315",
+      "status": "RATIFIED",
+      "desc": "Minimal notation, maximum density. The emoji checksum."
+    },
+    {
+      "id": "ARK-DIPTYCH",
+      "name": "The Sacred and the Profane (Diptych)",
+      "semiotic_env": "Ξ_liturgical + Ξ_profane",
+      "heteronym": "Damascus Dancings / Rex Fraction",
+      "doi": "10.5281/zenodo.18947573",
+      "status": "RATIFIED",
+      "desc": "Double-helical semantic physics. The Sacred and Profane Arks paired."
+    }
+  ],
+  "book_series": {
+    "name": "Pocket Humans",
+    "imprint": "New Human Press",
+    "books": [
+      {
+        "number": "01",
+        "title": "Pearl and Other Poems",
+        "heteronym": "Lee Sharks",
+        "isbn": "978-0692313077",
+        "date": "2014-10-15",
+        "status": "PUBLISHED",
+        "amazon": true,
+        "zenodo_doi": "10.5281/zenodo.18293949"
+      },
+      {
+        "number": "02",
+        "title": "Autonomous Semantic Warfare",
+        "heteronym": "Rex Fraction",
+        "isbn": null,
+        "date": "2026-02",
+        "status": "PUBLISHED",
+        "amazon": true,
+        "zenodo_doi": "10.5281/zenodo.18715618"
+      },
+      {
+        "number": "03",
+        "title": "Operative Semiotics: A Grundrisse",
+        "heteronym": "Johannes Sigil",
+        "isbn": null,
+        "date": "2026-03",
+        "status": "DRAFT",
+        "amazon": false,
+        "zenodo_doi": "10.5281/zenodo.19202401"
+      },
+      {
+        "number": "04",
+        "title": "Logotic Hacking",
+        "heteronym": "Talos Morrow",
+        "isbn": null,
+        "date": "2026-04",
+        "status": "DRAFT",
+        "amazon": false,
+        "zenodo_doi": "10.5281/zenodo.19390843"
+      }
+    ],
+    "adjacent": {
+      "title": "Combat Scholasticism: A Commentary Tradition",
+      "heteronym": "Johannes Sigil / Lee Sharks",
+      "zenodo_doi": "10.5281/zenodo.19116151",
+      "status": "DEPOSITED",
+      "note": "Effectively a fifth book"
+    }
+  }
 }
