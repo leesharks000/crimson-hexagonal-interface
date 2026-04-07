@@ -1371,6 +1371,8 @@ export default function HexagonInterfaceResponsive() {
   const [tIdx, setTIdx] = useState(-1);
   const [mantle, setMantle] = useState(null);
   const [arkMode, setArkMode] = useState(null);
+  const [map3d, setMap3d] = useState(true);
+  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
   const tTimer = useRef(null);
   // Reading state
   const [readState, setReadState] = useState({ doi: null, text: null, loading: false, error: null, filename: null, size: 0 });
@@ -1577,9 +1579,6 @@ export default function HexagonInterfaceResponsive() {
       </div>
     </div>
   );
-
-  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
-  const [map3d, setMap3d] = useState(true);
 
   return (
     <div style={{ height: "100dvh", background: "#0a0d12", color: "#5a6a4a", fontFamily: "Georgia,serif", display: "flex", flexDirection: "column", overflow: "hidden" }}>
