@@ -14692,7 +14692,7 @@
     },
     {
       "id": "19455105",
-      "t": "H_core Formal Specification v1.8.0 — Complete Formal Object of the Crimson Hexagonal Archive: 9-Tuple + 8 Runtime Layers (EA-HCORE-01) — Crimson Hexagonal Archive",
+      "t": "H_core Formal Specification v2.0 — Complete Formal Object of the Crimson Hexagonal Archive: 6-Tuple with Subtuples (EA-HCORE-01)",
       "d": "2026-04-07",
       "doi": "10.5281/zenodo.19455105",
       "c": [
@@ -14701,13 +14701,13 @@
       ],
       "k": [
         "H_core",
+        "6-tuple",
         "formal specification",
         "operator algebra",
-        "status algebra",
-        "transition grammar",
-        "hex address registry"
+        "hexagonal formal object",
+        "Crimson Hexagonal Archive"
       ],
-      "e": "The complete formal specification of H_core — the invariant kernel of the Crimson Hexagonal Archive. 227 hex-addressed items across a 9-tuple (D, R, M, I, O, Φ, W, P, Ψ) plus 8 formal runtime layers (",
+      "e": "The complete formal specification of H_core. v2.0 restructures from 9-tuple to 6-tuple: H_core = ⟨D, R, O, Σ, Φ, Ψ⟩. Six faces of the Hexagon, each with subtuples. 478 documents, 1,693 relations, 82 operators, 40 atomic units.",
       "r": [
         "sp03",
         "r11",
@@ -15021,6 +15021,29 @@
       "e": "Operational specification for the Crimson Hexagonal Archive drone swarm.",
       "r": [
         "f03",
+        "sp03"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19460376",
+      "t": "H_core Formal Specification v2.0 — 6-Tuple with Subtuples (EA-HCORE-01 v2.0)",
+      "d": "2026-04-07",
+      "doi": "10.5281/zenodo.19460376",
+      "c": [
+        "Sharks, Lee",
+        "Assembly Chorus"
+      ],
+      "k": [
+        "H_core",
+        "6-tuple",
+        "formal specification",
+        "hexagonal formal object"
+      ],
+      "e": "v2.0 of the H_core spec. Restructured from 9-tuple to 6-tuple: ⟨D, R, O, Σ, Φ, Ψ⟩.",
+      "r": [
+        "r11",
+        "r08",
         "sp03"
       ],
       "s": "RATIFIED"
@@ -27237,6 +27260,13 @@
       "from": "19458363",
       "to": "19458359",
       "type": "isSupplementedBy",
+      "source": "manual"
+    },
+    {
+      "id": "Z.19460376.19455105",
+      "from": "19460376",
+      "to": "19455105",
+      "type": "isNewVersionOf",
       "source": "manual"
     }
   ],
