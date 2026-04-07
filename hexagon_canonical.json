@@ -1584,9 +1584,10 @@
       "status": "RATIFIED",
       "assignment": "reviewed",
       "r": [
+        "r02",
         "r11",
         "r15",
-        "r02"
+        "sp03"
       ]
     },
     {
@@ -1878,6 +1879,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r05",
         "sp01"
       ]
@@ -2336,8 +2338,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r05",
         "r12",
-        "r05"
+        "sp03"
       ]
     },
     {
@@ -2386,7 +2389,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "sp01"
+        "sp01",
+        "sp03"
       ]
     },
     {
@@ -2438,6 +2442,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r06",
         "r08"
       ]
     },
@@ -2490,6 +2495,7 @@
       "assignment": "heuristic",
       "r": [
         "r05",
+        "r06",
         "r08"
       ]
     },
@@ -2514,7 +2520,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "r06"
       ]
     },
     {
@@ -2594,9 +2601,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r12",
         "r05",
-        "r06"
+        "r06",
+        "r12",
+        "sp03"
       ]
     },
     {
@@ -2650,8 +2658,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r06",
         "r05",
+        "r06",
         "r08"
       ]
     },
@@ -2810,8 +2818,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r12",
         "r08",
+        "r10",
+        "r12",
         "sp03"
       ]
     },
@@ -2926,8 +2935,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r12",
         "r08",
+        "r11",
+        "r12",
         "sp03"
       ]
     },
@@ -3043,9 +3053,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r08",
         "r09",
         "r12",
-        "r08"
+        "sp03"
       ]
     },
     {
@@ -3223,8 +3234,9 @@
       "assignment": "heuristic",
       "r": [
         "r02",
-        "sp01",
-        "r05"
+        "r05",
+        "r15",
+        "sp01"
       ]
     },
     {
@@ -3281,8 +3293,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05",
         "r02",
+        "r05",
+        "r06",
         "r08"
       ]
     },
@@ -3533,9 +3546,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r12",
+        "n01",
         "r05",
-        "n01"
+        "r11",
+        "r12"
       ]
     },
     {
@@ -3666,7 +3680,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r01"
+        "r01",
+        "sp03"
       ]
     },
     {
@@ -3720,8 +3735,9 @@
       "assignment": "heuristic",
       "r": [
         "r02",
+        "r05",
         "r08",
-        "r05"
+        "sp03"
       ]
     },
     {
@@ -3746,8 +3762,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r03",
         "r06",
-        "r08"
+        "r08",
+        "sp03"
       ]
     },
     {
@@ -3909,7 +3927,8 @@
       "assignment": "heuristic",
       "r": [
         "r11",
-        "r20"
+        "r20",
+        "sp03"
       ]
     },
     {
@@ -3934,6 +3953,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r16",
         "sp03"
       ]
     },
@@ -4107,6 +4127,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r08",
         "sp03"
       ]
@@ -4129,6 +4150,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r08"
       ]
     },
@@ -4253,9 +4275,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r18",
+        "r05",
         "r11",
-        "r05"
+        "r18",
+        "sp03"
       ]
     },
     {
@@ -4406,6 +4429,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r08",
         "sp03"
       ]
@@ -4484,6 +4508,7 @@
       "assignment": "heuristic",
       "r": [
         "r06",
+        "r11",
         "sp03"
       ]
     },
@@ -4884,7 +4909,8 @@
       "assignment": "heuristic",
       "r": [
         "r05",
-        "r06"
+        "r06",
+        "r20"
       ]
     },
     {
@@ -4909,7 +4935,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "r20"
       ]
     },
     {
@@ -4935,8 +4962,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r05",
         "r09",
-        "r05"
+        "r20"
       ]
     },
     {
@@ -4960,7 +4988,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "r20"
       ]
     },
     {
@@ -4985,8 +5014,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r05",
-        "r08"
+        "r08",
+        "sp03"
       ]
     },
     {
@@ -5062,7 +5093,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "sp01"
+        "sp01",
+        "sp03"
       ]
     },
     {
@@ -5137,9 +5169,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r05",
-        "r02"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -5165,7 +5198,8 @@
       "assignment": "heuristic",
       "r": [
         "r09",
-        "sp01"
+        "sp01",
+        "sp03"
       ]
     },
     {
@@ -5242,6 +5276,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r06",
         "r08"
       ]
     },
@@ -5270,9 +5305,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r05",
         "r08",
-        "sp01",
-        "r05"
+        "r18",
+        "sp01"
       ]
     },
     {
@@ -5298,6 +5334,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r06",
         "r08"
       ]
@@ -5349,7 +5386,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "r06"
       ]
     },
     {
@@ -5454,7 +5492,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "sp03"
       ]
     },
     {
@@ -5506,6 +5545,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r13"
       ]
     },
@@ -5564,8 +5604,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r14",
         "r05",
+        "r14",
+        "r17",
         "sp01"
       ]
     },
@@ -5593,8 +5634,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r14",
         "r05",
+        "r14",
+        "r17",
         "sp01"
       ]
     },
@@ -5622,8 +5664,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r14",
         "r05",
+        "r14",
+        "r17",
         "sp01"
       ]
     },
@@ -5651,6 +5694,7 @@
       "assignment": "heuristic",
       "r": [
         "r05",
+        "r17",
         "sp01"
       ]
     },
@@ -5676,6 +5720,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r08"
       ]
     },
@@ -5778,7 +5823,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r08"
+        "r08",
+        "sp03"
       ]
     },
     {
@@ -5804,8 +5850,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r21",
-        "r09"
+        "r02",
+        "r09",
+        "r21"
       ]
     },
     {
@@ -5832,6 +5879,7 @@
       "assignment": "heuristic",
       "r": [
         "r05",
+        "r06",
         "r08"
       ]
     },
@@ -6015,6 +6063,7 @@
       "assignment": "heuristic",
       "r": [
         "r05",
+        "r06",
         "r08"
       ]
     },
@@ -6040,9 +6089,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11",
         "r05",
-        "r19"
+        "r11",
+        "r19",
+        "sp03"
       ]
     },
     {
@@ -6123,6 +6173,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r11"
       ]
     },
@@ -6200,7 +6251,9 @@
       "assignment": "heuristic",
       "r": [
         "r05",
-        "r08"
+        "r06",
+        "r08",
+        "sp03"
       ]
     },
     {
@@ -6351,6 +6404,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r08"
       ]
     },
@@ -6378,7 +6432,8 @@
       "assignment": "heuristic",
       "r": [
         "r05",
-        "r08"
+        "r08",
+        "r16"
       ]
     },
     {
@@ -6407,7 +6462,9 @@
       "r": [
         "r02",
         "r05",
-        "r08"
+        "r08",
+        "r11",
+        "r16"
       ]
     },
     {
@@ -6482,6 +6539,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r06",
         "r08"
       ]
     },
@@ -6532,7 +6590,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r08"
+        "r08",
+        "r12"
       ]
     },
     {
@@ -6658,6 +6717,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r02"
       ]
     },
@@ -6709,7 +6769,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r02"
+        "r02",
+        "r11"
       ]
     },
     {
@@ -6786,6 +6847,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
         "r08"
       ]
     },
@@ -6841,9 +6903,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r05",
-        "r08"
+        "r08",
+        "r09"
       ]
     },
     {
@@ -6951,9 +7014,11 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
         "r05",
-        "r08"
+        "r08",
+        "r09",
+        "r22",
+        "sp03"
       ]
     },
     {
@@ -6977,6 +7042,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r03",
         "r11"
       ]
     },
@@ -7003,8 +7069,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r15",
-        "r05"
+        "r01",
+        "r05",
+        "r15"
       ]
     },
     {
@@ -7032,8 +7099,8 @@
       "assignment": "heuristic",
       "r": [
         "r09",
-        "sp04",
-        "r15"
+        "r15",
+        "sp04"
       ]
     },
     {
@@ -7225,8 +7292,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r05",
         "r09",
-        "r05"
+        "r11"
       ]
     },
     {
@@ -7252,6 +7320,7 @@
       "assignment": "heuristic",
       "r": [
         "r09",
+        "r11",
         "r13"
       ]
     },
@@ -7597,7 +7666,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r21"
+        "r21",
+        "r22"
       ]
     },
     {
@@ -7621,6 +7691,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09"
       ]
     },
@@ -7646,6 +7717,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09"
       ]
     },
@@ -7670,7 +7742,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "sp03"
       ]
     },
     {
@@ -7771,9 +7844,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r21",
+        "r02",
+        "r08",
         "r09",
-        "r08"
+        "r21"
       ]
     },
     {
@@ -7849,9 +7923,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r01",
+        "r02",
         "r05",
-        "r02"
+        "r09"
       ]
     },
     {
@@ -8224,9 +8299,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r05",
-        "r02"
+        "r08",
+        "r09"
       ]
     },
     {
@@ -8347,6 +8423,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r11"
       ]
     },
@@ -8405,9 +8482,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r07",
         "r09",
-        "r18",
-        "r07"
+        "r18"
       ]
     },
     {
@@ -8435,9 +8512,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r07",
         "r09",
-        "r18",
-        "r07"
+        "r18"
       ]
     },
     {
@@ -8464,8 +8541,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
         "r07",
+        "r09",
+        "r18",
         "sp01"
       ]
     },
@@ -8494,9 +8572,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
         "r02",
-        "r07"
+        "r07",
+        "r08",
+        "r09"
       ]
     },
     {
@@ -8524,9 +8603,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r08",
-        "r02"
+        "r09"
       ]
     },
     {
@@ -8554,9 +8633,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
+        "r07",
         "r08",
-        "r02"
+        "r09"
       ]
     },
     {
@@ -8584,9 +8664,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
         "r02",
-        "r07"
+        "r07",
+        "r08",
+        "r09"
       ]
     },
     {
@@ -8614,9 +8695,11 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
         "r02",
-        "r07"
+        "r07",
+        "r08",
+        "r09",
+        "r11"
       ]
     },
     {
@@ -8667,7 +8750,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r02"
+        "r02",
+        "sp04"
       ]
     },
     {
@@ -8766,7 +8850,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -8790,7 +8875,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "sp03"
       ]
     },
     {
@@ -8814,7 +8900,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "sp03"
       ]
     },
     {
@@ -8838,8 +8925,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "sp04",
-        "sp02"
+        "sp02",
+        "sp03",
+        "sp04"
       ]
     },
     {
@@ -8863,7 +8951,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -8887,7 +8976,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -8911,7 +9001,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -8935,7 +9026,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -8959,7 +9051,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -8983,7 +9076,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -9007,7 +9101,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -9031,7 +9126,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -9055,7 +9151,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp03"
       ]
     },
     {
@@ -9081,6 +9178,7 @@
       "assignment": "heuristic",
       "r": [
         "r09",
+        "sp03",
         "sp04"
       ]
     },
@@ -9106,7 +9204,8 @@
       "assignment": "heuristic",
       "r": [
         "r09",
-        "sp02"
+        "sp02",
+        "sp03"
       ]
     },
     {
@@ -9131,6 +9230,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09"
       ]
     },
@@ -9156,6 +9256,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09",
         "sp02"
       ]
@@ -9210,9 +9311,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r08",
-        "r02"
+        "r09",
+        "r11"
       ]
     },
     {
@@ -9367,8 +9469,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r08",
+        "r09",
         "sp03"
       ]
     },
@@ -9425,9 +9528,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
+        "r08",
         "r09",
-        "r11",
-        "r08"
+        "r11"
       ]
     },
     {
@@ -9481,7 +9585,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "r13",
+        "sp03"
       ]
     },
     {
@@ -9509,9 +9615,11 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r05",
         "r08",
-        "r05"
+        "r09",
+        "r13",
+        "sp03"
       ]
     },
     {
@@ -9537,8 +9645,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r08",
+        "r09",
+        "r13",
         "sp01"
       ]
     },
@@ -9566,9 +9676,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r08",
-        "r02"
+        "r09",
+        "r13"
       ]
     },
     {
@@ -9620,6 +9731,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09"
       ]
     },
@@ -9647,9 +9759,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
+        "r05",
         "r09",
-        "r11",
-        "r05"
+        "r11"
       ]
     },
     {
@@ -9676,9 +9789,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r02",
+        "r08",
         "r09",
-        "r13",
-        "r08"
+        "r13"
       ]
     },
     {
@@ -9702,6 +9816,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09"
       ]
     },
@@ -9726,7 +9841,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "sp03"
       ]
     },
     {
@@ -9778,8 +9894,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
-        "r08"
+        "r06",
+        "r08",
+        "r09"
       ]
     },
     {
@@ -9961,6 +10078,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09",
         "r12"
       ]
@@ -10337,8 +10455,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r10",
-        "r02"
+        "r01",
+        "r02",
+        "r10"
       ]
     },
     {
@@ -10511,6 +10630,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r03",
         "r11"
       ]
     },
@@ -10537,6 +10657,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r03",
         "r09",
         "sp01"
       ]
@@ -10587,6 +10708,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r03",
         "r08"
       ]
     },
@@ -10613,7 +10735,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r02",
+        "r03",
         "r08"
       ]
     },
@@ -10635,6 +10759,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r03",
         "r11"
       ]
     },
@@ -10662,6 +10787,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r05",
         "r08",
         "sp01"
@@ -10819,7 +10945,8 @@
       "assignment": "heuristic",
       "r": [
         "r09",
-        "sp01"
+        "sp01",
+        "sp03"
       ]
     },
     {
@@ -10845,8 +10972,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
+        "r02",
         "r09",
-        "r02"
+        "sp03"
       ]
     },
     {
@@ -10950,9 +11079,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
         "r05",
-        "sp01"
+        "r09",
+        "sp01",
+        "sp03"
       ]
     },
     {
@@ -10978,8 +11108,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r05",
         "r09",
-        "r05"
+        "sp03"
       ]
     },
     {
@@ -11111,6 +11242,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r05",
         "r08"
       ]
@@ -11138,6 +11270,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r09",
         "sp01"
       ]
@@ -11189,9 +11322,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r01",
+        "r02",
         "r05",
-        "r02"
+        "r09"
       ]
     },
     {
@@ -11345,6 +11479,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r08"
       ]
     },
@@ -11659,9 +11794,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
         "r08",
-        "sp01"
+        "r09",
+        "sp01",
+        "sp03"
       ]
     },
     {
@@ -11890,6 +12026,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
+        "r03",
         "r04"
       ]
     },
@@ -11916,6 +12054,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r01",
         "r05",
         "r08"
       ]
@@ -12168,8 +12307,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r05",
         "r09",
-        "r05"
+        "r11",
+        "sp03"
       ]
     },
     {
@@ -12223,8 +12364,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r05",
+        "r09",
         "sp01"
       ]
     },
@@ -12252,9 +12394,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r03",
         "r05",
-        "r08"
+        "r08",
+        "r09"
       ]
     },
     {
@@ -12281,9 +12424,12 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r05",
-        "r08"
+        "r08",
+        "r09",
+        "r11",
+        "sp03"
       ]
     },
     {
@@ -12310,8 +12456,9 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r01",
         "r05",
+        "r09",
         "sp03"
       ]
     },
@@ -12582,7 +12729,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "r11"
       ]
     },
     {
@@ -12802,6 +12950,7 @@
       "r": [
         "r05",
         "r08",
+        "r11",
         "sp01"
       ]
     },
@@ -12949,6 +13098,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
+        "r11",
         "sp01"
       ]
     },
@@ -12998,7 +13148,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "r11"
       ]
     },
     {
@@ -13099,9 +13250,10 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09",
+        "r02",
         "r05",
-        "r08"
+        "r08",
+        "r09"
       ]
     },
     {
@@ -13177,8 +13329,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "sp04",
-        "r08"
+        "r08",
+        "sp04"
       ]
     },
     {
@@ -13392,7 +13544,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "sp03"
       ]
     },
     {
@@ -13511,9 +13664,10 @@
       ],
       "excerpt": "Da'at topology. Tree of Knowledge as TANG void. Seven garden lanes. Gravity Well as transformative curvature.",
       "r": [
-        "r28",
+        "r01",
         "r07",
-        "r01"
+        "r12",
+        "r28"
       ],
       "s": "RATIFIED"
     }
