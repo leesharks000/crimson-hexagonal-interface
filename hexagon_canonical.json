@@ -14781,7 +14781,7 @@
     },
     {
       "id": "19412140",
-      "t": "Crimson Hexagonal Interface v1.0 — Governed Operating Surface for the Crimson Hexagonal Archive (EA-HEXAGON-OS-02)",
+      "t": "Crimson Hexagonal Interface v2.0 — Governed Operating Surface (EA-HEXAGON-OS-02)",
       "d": "2026-04-04",
       "doi": "10.5281/zenodo.19412140",
       "c": [
@@ -14796,7 +14796,7 @@
         "LP traversal",
         "operative semiotics"
       ],
-      "e": "Crimson Hexagonal Interface v1.0 — the governed operating surface for the Crimson Hexagonal Archive. Four interoperable systems sharing one canonical object model: Ark Runtime (com",
+      "e": "LIVE: crimson-hexagonal-interface.vercel.app — The governed operating surface. Hex Map, Ark Runtime, Forward Library, Deposit Dashboard, Governance Shell. 478 docs, 1,694 relations, 38 rooms.",
       "r": [
         "r11"
       ],
@@ -14849,7 +14849,7 @@
     },
     {
       "id": "19380602",
-      "t": "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)",
+      "t": "Gravity Well Protocol v2.0 — Governed Continuity Engine (EA-GW-SPEC-01)",
       "d": "2026-04-01",
       "doi": "10.5281/zenodo.19380602",
       "c": [
@@ -14863,7 +14863,7 @@
         "meaning-preservation",
         "semantic-provenance"
       ],
-      "e": "Gravity Well Protocol: Governed Continuity for AI-Mediated ContentA protocol layer that makes AI-generated content trustworthy by making provenance structural, quality measurable, and",
+      "e": "LIVE: gravitywell-1.onrender.com — Provenance engine. Capture, deposit, reconstitute, drift detect, gamma score, ledger, drowning test. MCP server at /mcp/sse.",
       "r": [
         "sp01"
       ],
@@ -15045,6 +15045,50 @@
         "r11",
         "r08",
         "sp03"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19460665",
+      "t": "Crimson Hexagonal Interface v2.0 (EA-HEXAGON-OS-02 v2.0)",
+      "d": "2026-04-07",
+      "doi": "10.5281/zenodo.19460665",
+      "c": [
+        "Sharks, Lee",
+        "Assembly Chorus"
+      ],
+      "k": [
+        "Crimson Hexagonal Interface",
+        "governed operating surface",
+        "hex map",
+        "React"
+      ],
+      "e": "LIVE: crimson-hexagonal-interface.vercel.app — v2.0 of the interface. 6-tuple H_core, 38 rooms, 478 docs, 1,694 relations, drone swarm visual.",
+      "r": [
+        "r11",
+        "sp03"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19460734",
+      "t": "Gravity Well Protocol v2.0 (EA-GW-SPEC-01 v2.0)",
+      "d": "2026-04-07",
+      "doi": "10.5281/zenodo.19460734",
+      "c": [
+        "Sharks, Lee",
+        "Assembly Chorus"
+      ],
+      "k": [
+        "Gravity Well",
+        "provenance engine",
+        "continuity protocol",
+        "MCP server"
+      ],
+      "e": "LIVE: gravitywell-1.onrender.com — v2.0 of the provenance engine. Capture, deposit, reconstitute, drift detect, gamma score, Caesura, ledger.",
+      "r": [
+        "sp01",
+        "f02"
       ],
       "s": "RATIFIED"
     }
@@ -27266,6 +27310,20 @@
       "id": "Z.19460376.19455105",
       "from": "19460376",
       "to": "19455105",
+      "type": "isNewVersionOf",
+      "source": "manual"
+    },
+    {
+      "id": "Z.19460665.19412140",
+      "from": "19460665",
+      "to": "19412140",
+      "type": "isNewVersionOf",
+      "source": "manual"
+    },
+    {
+      "id": "Z.19460734.19380602",
+      "from": "19460734",
+      "to": "19380602",
       "type": "isNewVersionOf",
       "source": "manual"
     }
