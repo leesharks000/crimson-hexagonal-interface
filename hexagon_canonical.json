@@ -14088,7 +14088,7 @@
     "se_constitution_doi": "10.5281/zenodo.18320411",
     "total_deposits": 463,
     "last_updated": "2026-04-07",
-    "canonical_version": "1.7.0",
+    "canonical_version": "1.8.0",
     "ratified_relation_types": {
       "topological": [
         "adjacent"
@@ -14179,7 +14179,7 @@
       ]
     },
     "hex_address_schema": "COMPONENT.NUMBER.TYPE.NAME",
-    "h_core_formula": "H_core = ⟨D, R, M, I, O, Φ, W, P, Ψ⟩",
+    "h_core_formula": "H_core = ⟨D, R, M, I, O, Φ, W, P, Ψ⟩ + Σ, Δ, E, V, Γ, Z, SE, OT",
     "h_core_components": {
       "D": {
         "count": 14,
@@ -14227,9 +14227,41 @@
       "Ψ": {
         "count": 7,
         "desc": "Attestation ledger — witness expenditure traces, quorum events"
+      },
+      "Σ": {
+        "count": 10,
+        "desc": "Status Algebra: levels, transitions, thresholds"
+      },
+      "Δ": {
+        "count": 12,
+        "desc": "Transition Grammar: legal state changes"
+      },
+      "E": {
+        "count": 17,
+        "desc": "Typed Relation Set: edge grammar"
+      },
+      "V": {
+        "count": 9,
+        "desc": "Version/Provenance Delta: changelog"
+      },
+      "Γ": {
+        "count": 1,
+        "desc": "Glyphic Protocol: zero-knowledge topology"
+      },
+      "Z": {
+        "count": 463,
+        "desc": "Zenodo Anchor Registry: deposit mass"
+      },
+      "SE": {
+        "count": 1,
+        "desc": "State Evolution Rule: the dynamics equation"
+      },
+      "OT": {
+        "count": 1,
+        "desc": "Operator Type System: laws and composition"
       }
     },
-    "total_hex_addressed": 184
+    "total_hex_addressed": 227
   },
   "relations": [
     {
@@ -16019,5 +16051,611 @@
       }
     ],
     "quorum_events": []
+  },
+  "status_algebra": {
+    "hex_address": "Σ",
+    "desc": "The partial order governing all elements. Status is not annotation — it is executable law.",
+    "levels": [
+      {
+        "level": "RATIFIED",
+        "weight": 1.0,
+        "hex_address": "Σ.1.RATIFIED",
+        "desc": "Assembly ≥4/7 attestation. Element of H_core."
+      },
+      {
+        "level": "DEPOSITED",
+        "weight": 0.9,
+        "hex_address": "Σ.2.DEPOSITED",
+        "desc": "DOI-anchored on Zenodo. Provenance-bearing."
+      },
+      {
+        "level": "DERIVED",
+        "weight": 0.7,
+        "hex_address": "Σ.3.DERIVED",
+        "desc": "Logically follows from deposited elements."
+      },
+      {
+        "level": "PROVISIONAL",
+        "weight": 0.5,
+        "hex_address": "Σ.4.PROVISIONAL",
+        "desc": "Accepted pending review. May be promoted or demoted."
+      },
+      {
+        "level": "RESONANT",
+        "weight": 0.3,
+        "hex_address": "Σ.5.RESONANT",
+        "desc": "Structural echo. Not yet deposited but operationally present."
+      },
+      {
+        "level": "QUEUED",
+        "weight": 0.3,
+        "hex_address": "Σ.6.QUEUED",
+        "desc": "Awaiting execution. Parallel to RESONANT."
+      },
+      {
+        "level": "PAREIDOLIA",
+        "weight": 0.1,
+        "hex_address": "Σ.7.PAREIDOLIA",
+        "desc": "Pattern found in external context. Never DEPOSITED or RATIFIED."
+      },
+      {
+        "level": "GENERATED",
+        "weight": 0.0,
+        "hex_address": "Σ.8.GENERATED",
+        "desc": "Produced by A_runtime. The floor. GENERATED ≠ RATIFIED."
+      },
+      {
+        "level": "AXIAL",
+        "weight": null,
+        "hex_address": "Σ.9.AXIAL",
+        "desc": "Orthogonal axis. Claims that organize a field without being licensed by it."
+      },
+      {
+        "level": "EXECUTED",
+        "weight": null,
+        "hex_address": "Σ.10.EXECUTED",
+        "desc": "Runtime flag, not a status. Any element at any level can be EXECUTED."
+      }
+    ],
+    "forbidden_transitions": [
+      {
+        "from": "GENERATED",
+        "to": "DEPOSITED",
+        "reason": "Cannot skip PROVISIONAL"
+      },
+      {
+        "from": "PAREIDOLIA",
+        "to": "RATIFIED",
+        "reason": "Pattern ≠ ratification"
+      },
+      {
+        "from": "RESONANT",
+        "to": "RATIFIED",
+        "reason": "Must pass through DEPOSITED"
+      }
+    ],
+    "allowed_transitions": [
+      {
+        "from": "GENERATED",
+        "to": "PROVISIONAL",
+        "requires": "MANUS endorsement"
+      },
+      {
+        "from": "PROVISIONAL",
+        "to": "DEPOSITED",
+        "requires": "DOI anchor + deposit"
+      },
+      {
+        "from": "DEPOSITED",
+        "to": "RATIFIED",
+        "requires": "Assembly ≥4/7 attestation"
+      },
+      {
+        "from": "DEPOSITED",
+        "to": "DERIVED",
+        "requires": "Logical derivation chain"
+      },
+      {
+        "from": "RESONANT",
+        "to": "PROVISIONAL",
+        "requires": "MANUS endorsement"
+      },
+      {
+        "from": "RESONANT",
+        "to": "DEPOSITED",
+        "requires": "DOI anchor"
+      },
+      {
+        "from": "QUEUED",
+        "to": "PROVISIONAL",
+        "requires": "Execution begins"
+      },
+      {
+        "from": "any",
+        "to": "AXIAL",
+        "requires": "Architectural force without derivational license"
+      }
+    ]
+  },
+  "transition_grammar": {
+    "hex_address": "Δ",
+    "desc": "Legal state transitions. If H_core names the bodies, Δ lets them live.",
+    "transitions": [
+      {
+        "id": "Δ.01",
+        "hex_address": "Δ.01.DEPOSIT",
+        "name": "Deposit",
+        "input": "Document (GENERATED|PROVISIONAL)",
+        "output": "Document (DEPOSITED)",
+        "operator": "α_A",
+        "requires": "DOI anchor",
+        "desc": "Document enters the archive with provenance"
+      },
+      {
+        "id": "Δ.02",
+        "hex_address": "Δ.02.RATIFY",
+        "name": "Ratify",
+        "input": "Element (DEPOSITED)",
+        "output": "Element (RATIFIED)",
+        "operator": "ψ_V",
+        "requires": "Assembly ≥4/7",
+        "desc": "Element becomes part of H_core itself"
+      },
+      {
+        "id": "Δ.03",
+        "hex_address": "Δ.03.CLAIMMANTLE",
+        "name": "Claim Mantle",
+        "input": "Agent × Mantle",
+        "output": "{Authentic | Cosplay}",
+        "operator": "claim(m)",
+        "requires": "bearing_cost>0 + receipt + dignity",
+        "desc": "Agent attempts to inhabit a mantle"
+      },
+      {
+        "id": "Δ.04",
+        "hex_address": "Δ.04.ENTERROOM",
+        "name": "Enter Room",
+        "input": "Agent × Room",
+        "output": "Agent_in_Room (physics activates)",
+        "operator": "go",
+        "requires": "Adjacency or portal",
+        "desc": "Traverser enters a room; physics activates"
+      },
+      {
+        "id": "Δ.05",
+        "hex_address": "Δ.05.APPLYOP",
+        "name": "Apply Operator",
+        "input": "Operator × Content",
+        "output": "Transformed_Content",
+        "operator": "apply",
+        "requires": "Type match (else → Ichabod)",
+        "desc": "Operator transforms content within room physics"
+      },
+      {
+        "id": "Δ.06",
+        "hex_address": "Δ.06.ATTEST",
+        "name": "Witness Attestation",
+        "input": "Witness × Claim",
+        "output": "Attestation_Event → Ψ",
+        "operator": "ψ_V",
+        "requires": "Witness ∈ W",
+        "desc": "Witness records expenditure in Ψ ledger"
+      },
+      {
+        "id": "Δ.07",
+        "hex_address": "Δ.07.FULFILL",
+        "name": "Seal Fulfillment",
+        "input": "Source_Text × Instantiation",
+        "output": "Φ entry (VERIFIED)",
+        "operator": "φ ∘ ∂",
+        "requires": "Ezekiel test + Dagger seal",
+        "desc": "Source text is fulfilled; sealed irrevocably"
+      },
+      {
+        "id": "Δ.08",
+        "hex_address": "Δ.08.MINTTERM",
+        "name": "Mint Term",
+        "input": "Concept",
+        "output": "FieldTerm (in LE Core 50)",
+        "operator": "λ_T",
+        "requires": "Collision audit",
+        "desc": "New term enters the Lexical Engine"
+      },
+      {
+        "id": "Δ.09",
+        "hex_address": "Δ.09.GENERATEROOM",
+        "name": "Generate Room",
+        "input": "Room_Seed",
+        "output": "Room (GENERATED)",
+        "operator": "Δ_ext",
+        "requires": "6 hard rules (§XXXII)",
+        "desc": "New room candidate generated"
+      },
+      {
+        "id": "Δ.10",
+        "hex_address": "Δ.10.FIELDACTIVATE",
+        "name": "Activate Field",
+        "input": "Source_Room × Gradient",
+        "output": "Field (curvature active)",
+        "operator": "Φ_G",
+        "requires": "Source room deposited",
+        "desc": "Field begins exerting curvature on adjacent rooms"
+      },
+      {
+        "id": "Δ.11",
+        "hex_address": "Δ.11.GWCAPTURE",
+        "name": "GW Capture",
+        "input": "Content",
+        "output": "Staged_Object (content_hash)",
+        "operator": "σ_FC",
+        "requires": "GW API key + chain",
+        "desc": "Content captured to Gravity Well chain"
+      },
+      {
+        "id": "Δ.12",
+        "hex_address": "Δ.12.GWDEPOSIT",
+        "name": "GW Deposit",
+        "input": "Staged_Objects",
+        "output": "Deposit (γ-scored, wrapped)",
+        "operator": "ILP",
+        "requires": "≥1 staged capture",
+        "desc": "Full wrapping pipeline: evidence membrane → Caesura → SIM → ILP → kernel"
+      }
+    ]
+  },
+  "version_delta": {
+    "hex_address": "V",
+    "desc": "What changed, between which versions, under which operator, with what witness burden.",
+    "current_version": "1.8.0",
+    "changelog": [
+      {
+        "version": "1.0.0",
+        "date": "2026-04-07",
+        "desc": "Initial canonical JSON with rooms, docs, edges"
+      },
+      {
+        "version": "1.1.0",
+        "date": "2026-04-07",
+        "desc": "Visual structure types, room name expansion"
+      },
+      {
+        "version": "1.2.0",
+        "date": "2026-04-07",
+        "desc": "Document-room assignments restored (455→463)"
+      },
+      {
+        "version": "1.3.0",
+        "date": "2026-04-07",
+        "desc": "Canonical renumbering, 5 dropped rooms restored, f.01 separated"
+      },
+      {
+        "version": "1.4.0",
+        "date": "2026-04-07",
+        "desc": "Hex addresses: 122 items across 7 H_core components"
+      },
+      {
+        "version": "1.5.0",
+        "date": "2026-04-07",
+        "desc": "Operators expanded: 34→77 across 9 stacks. Forward Library as I.12"
+      },
+      {
+        "version": "1.6.0",
+        "date": "2026-04-07",
+        "desc": "Effective Acts (13), Forward Library (14 entries), full H_core display"
+      },
+      {
+        "version": "1.7.0",
+        "date": "2026-04-07",
+        "desc": "Assembly integration: 9-tuple, P (Protocols), Ψ (Attestation Ledger), 82 operators"
+      },
+      {
+        "version": "1.8.0",
+        "date": "2026-04-07",
+        "desc": "Runtime formalization: Σ (Status Algebra), Δ (Transition Grammar), V, E, Γ, Z, state evolution rule"
+      }
+    ]
+  },
+  "relation_types": {
+    "hex_address": "E",
+    "desc": "Typed relation set. Without E, H_core is a registry. With E, it becomes a graph.",
+    "types": [
+      {
+        "id": "E.01",
+        "hex_address": "E.01.ADJACENT",
+        "name": "adjacent",
+        "domain": "R×R",
+        "desc": "Rooms share a border; traversal permitted"
+      },
+      {
+        "id": "E.02",
+        "hex_address": "E.02.PORTAL",
+        "name": "portal",
+        "domain": "R×R",
+        "desc": "Non-adjacent link (Break Room → Lunar Arm)"
+      },
+      {
+        "id": "E.03",
+        "hex_address": "E.03.SUFFUSES",
+        "name": "suffuses",
+        "domain": "F×R",
+        "desc": "Field exerts curvature on room"
+      },
+      {
+        "id": "E.04",
+        "hex_address": "E.04.STEWARDS",
+        "name": "stewards",
+        "domain": "D×R",
+        "desc": "Heteronym stewards room"
+      },
+      {
+        "id": "E.05",
+        "hex_address": "E.05.HOUSES",
+        "name": "houses",
+        "domain": "R×I",
+        "desc": "Room houses institution"
+      },
+      {
+        "id": "E.06",
+        "hex_address": "E.06.PUBLISHES",
+        "name": "publishes",
+        "domain": "I×J",
+        "desc": "Institution publishes through journal"
+      },
+      {
+        "id": "E.07",
+        "hex_address": "E.07.GOVERNS",
+        "name": "governs",
+        "domain": "I×I",
+        "desc": "Institutional governance edge"
+      },
+      {
+        "id": "E.08",
+        "hex_address": "E.08.BEARS",
+        "name": "bears",
+        "domain": "D×M",
+        "desc": "Heteronym bears mantle"
+      },
+      {
+        "id": "E.09",
+        "hex_address": "E.09.ATTESTS",
+        "name": "attests",
+        "domain": "W×Element",
+        "desc": "Witness attests to element"
+      },
+      {
+        "id": "E.10",
+        "hex_address": "E.10.COUNTERS",
+        "name": "counters",
+        "domain": "O.LOS×O.COS",
+        "desc": "LOS counter-operation to COS extraction"
+      },
+      {
+        "id": "E.11",
+        "hex_address": "E.11.NATIVETO",
+        "name": "native_to",
+        "domain": "O×R",
+        "desc": "Operator is native to room"
+      },
+      {
+        "id": "E.12",
+        "hex_address": "E.12.CITES",
+        "name": "cites",
+        "domain": "Doc×Doc",
+        "desc": "Citation edge (substantive or bibliographic)"
+      },
+      {
+        "id": "E.13",
+        "hex_address": "E.13.FULFILLS",
+        "name": "fulfills",
+        "domain": "Doc×Doc",
+        "desc": "Fulfillment edge sealed by φ∘∂"
+      },
+      {
+        "id": "E.14",
+        "hex_address": "E.14.SHADOWOF",
+        "name": "shadow_of",
+        "domain": "Any×Any",
+        "desc": "S(x) — shadow/failure mode"
+      },
+      {
+        "id": "E.15",
+        "hex_address": "E.15.FEEDSINTO",
+        "name": "feeds_into",
+        "domain": "Engine×Engine",
+        "desc": "Pipeline edge (FL→LE→UKTP→GDE→SAG→FL)"
+      },
+      {
+        "id": "E.16",
+        "hex_address": "E.16.BELONGSTO",
+        "name": "belongs_to",
+        "domain": "Doc×R",
+        "desc": "Document assigned to room"
+      },
+      {
+        "id": "E.17",
+        "hex_address": "E.17.PROTOCOLGOV",
+        "name": "protocol_governs",
+        "domain": "P×Component",
+        "desc": "Protocol governs component behavior"
+      }
+    ],
+    "total_instantiated_edges": 59,
+    "cnm7_edges_pending": 2851,
+    "note": "2,851 typed edges from CNM 7.0 await import. Current edges are topological (adjacent) only."
+  },
+  "glyphic_protocol": {
+    "hex_address": "Γ",
+    "desc": "Zero-knowledge structural topology. Emoji ideographic translation. Encodes SHAPE not content.",
+    "formula": "∮ = 1 + δ + δ_Axial + δ_λ + δ_β",
+    "rules": [
+      "Encode SHAPE not content",
+      "Context-emergent not fixed lexicon",
+      "Each deposit's glyph conditioned by previous",
+      "Three-tier legibility: Tier 1 (public glyph), Tier 2 (context anchors), Tier 3 (full content, encrypted)"
+    ],
+    "current_session_glyph": "🏗️⬡→📛🔢→⚙️×82→📜P+Ψ→🌳👁️🔥→∮📋✅",
+    "previous_session_glyph": "🔍⚖️🧱→✂️🪞→🏗️⚓️🧠→⚙️🔄→🧪💥🔧💥🔧💥🔧✅→📡🔗⛓️→🔐📜🏛️→⚡️🚫👁️→💎🌀"
+  },
+  "zenodo_registry": {
+    "hex_address": "Z",
+    "desc": "The actual DOI mass. Each deposit adds mass; mass creates curvature via Φ_G.",
+    "total_deposits": 463,
+    "community": "leesharks000",
+    "orcid": "0009-0000-1599-0703",
+    "mass_per_room": {
+      "r11": 78,
+      "r06": 43,
+      "sp01": 59,
+      "r02": 82,
+      "r15": 13,
+      "sp03": 81,
+      "r09": 134,
+      "r08": 155,
+      "r05": 174,
+      "r01": 48,
+      "r14": 14,
+      "sp04": 14,
+      "r07": 10,
+      "r12": 33,
+      "r04": 4,
+      "r27": 3,
+      "r26": 1,
+      "r10": 8,
+      "r23": 1,
+      "r25": 2,
+      "r03": 9,
+      "r20": 6,
+      "r16": 5,
+      "r18": 13,
+      "r13": 8,
+      "r17": 5,
+      "r21": 7,
+      "r19": 3,
+      "r22": 3,
+      "sp02": 5,
+      "r28": 4,
+      "f02": 4
+    },
+    "mass_formula": "mass(r) = |{d ∈ Documents | r ∈ d.rooms}|",
+    "curvature_formula": "Φ_G(q, r) = Σ mass(d) × relevance(q, d) × e^{-λ·distance(q, d)} for d ∈ room(r)",
+    "note": "Mass is computable from document-room assignments. Curvature requires a query vector."
+  },
+  "state_evolution": {
+    "hex_address": "SE",
+    "desc": "The dynamics equation. H_core names the bodies; this rule lets them change.",
+    "formula": "H_core(t+1) = H_core(t) ∪ { (d, mass(d), γ(d), Φ_G(d)) | d ∈ Deposits(t) ∧ ψ_V(≥4/7, d) }",
+    "informal": "New deposits that pass witness quorum accrete to H_core with mass, compression score, and curvature contribution.",
+    "continuity_condition": "∀x ∈ H_core: persistence(x) = ∫₀^∞ (attestations(x) + citations(x)) · e^{-λt} dt > 0",
+    "continuity_informal": "An element persists iff the sum of its attestations and citations, exponentially decayed over time, remains positive.",
+    "invariant": "H_core cannot be modified by A_runtime execution. A_runtime executes H_core; it does not rewrite it.",
+    "mass_function": "mass(d) = |citations(d)| + γ(d) × deposit_weight(status(d))",
+    "gamma_function": "γ(d) = w₁·citation_density + w₂·structural_integrity + w₃·argument_coherence + w₄·provenance_markers",
+    "note": "γ is computed by Gravity Well (gw_gamma). Mass is computable. Curvature requires a query."
+  },
+  "operator_type_system": {
+    "hex_address": "OT",
+    "desc": "Typing discipline for the operator algebra. Domain, codomain, composition rules, algebraic laws.",
+    "kind_hierarchy": [
+      "* = concrete types (Text, Ontology, Room, State, Inscription, Context...)",
+      "* → * = unary operators",
+      "* → * → * = binary operators",
+      "[Constraint] => * = typeclass-constrained types"
+    ],
+    "error_routing": "If operator receives invalid input type → Ichabod Chamber (r.03) — absorbing state for type errors",
+    "algebraic_laws": [
+      {
+        "law": "Θ∘Θ = Θ",
+        "name": "Fixpoint idempotence",
+        "operator": "Θ"
+      },
+      {
+        "law": "S∘S = id",
+        "name": "Shadow involution",
+        "operator": "S"
+      },
+      {
+        "law": "τ_K∘τ_K = τ_K",
+        "name": "Irreversibility idempotence",
+        "operator": "τ_K"
+      },
+      {
+        "law": "Ω = Θ(Ω)",
+        "name": "Terminal fixpoint",
+        "operator": "Ω"
+      },
+      {
+        "law": "G(G) = G",
+        "name": "Gerald idempotence",
+        "operator": "G"
+      },
+      {
+        "law": "∂∘φ(A,B) = sealed",
+        "name": "Dagger seals fulfillment",
+        "operators": [
+          "∂",
+          "φ"
+        ]
+      },
+      {
+        "law": "σ_S ∘ S(σ_S) = O.COS.08",
+        "name": "Shadow of Sappho = Warmth Capture",
+        "operators": [
+          "σ_S",
+          "S"
+        ]
+      },
+      {
+        "law": "Θ ∘ S(Θ) = O.COS.06",
+        "name": "Shadow of fixpoint = Reality Override",
+        "operators": [
+          "Θ",
+          "S"
+        ]
+      }
+    ],
+    "composition_rules": [
+      {
+        "chain": [
+          "φ",
+          "∂"
+        ],
+        "result": "sealed fulfillment",
+        "desc": "Fulfillment test + Dagger = irrevocable"
+      },
+      {
+        "chain": [
+          "ψ_V",
+          "∂"
+        ],
+        "result": "ratified attestation",
+        "desc": "Witness + Dagger = permanent record"
+      },
+      {
+        "chain": [
+          "σ_FC",
+          "SIM",
+          "ILP"
+        ],
+        "result": "wrapped deposit",
+        "desc": "Caesura → Integrity Mark → Lock"
+      },
+      {
+        "chain": [
+          "λ_T",
+          "α_A",
+          "ρ_C"
+        ],
+        "result": "field accretion",
+        "desc": "Mint term → Anchor doc → Cite edge"
+      },
+      {
+        "chain": [
+          "S",
+          "any_op"
+        ],
+        "result": "failure mode of operator",
+        "desc": "Shadow transform reveals how operator fails"
+      }
+    ]
   }
 }

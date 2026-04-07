@@ -1829,6 +1829,81 @@ export default function HexagonInterfaceResponsive() {
                 </div>
               )}
 
+              {/* Status Algebra */}
+              {data.status_algebra && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>STATUS ALGEBRA · Σ</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 3, marginBottom: 6 }}>
+                    {data.status_algebra.levels.filter(l => l.weight !== null).map((l, i) => (
+                      <div key={i} style={{ padding: "3px 6px", background: mc + "08", border: `1px solid ${mc}15`, textAlign: "center" }}>
+                        <div style={{ fontSize: 8, color: mc, fontFamily: "monospace" }}>{l.level}</div>
+                        <div style={{ fontSize: 7, color: "#3a4a3a" }}>{l.weight}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ fontSize: 8, color: "#5a3a3a" }}>Forbidden: {(data.status_algebra.forbidden_transitions||[]).map(t => `${t.from}→${t.to}`).join(" · ")}</div>
+                </div>
+              )}
+
+              {/* State Evolution Rule */}
+              {data.state_evolution && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>STATE EVOLUTION · SE</div>
+                  <div style={{ fontSize: 9, color: mc, fontFamily: "monospace", padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22`, marginBottom: 4, lineHeight: 1.6, wordBreak: "break-all" }}>{data.state_evolution.formula}</div>
+                  <div style={{ fontSize: 8, color: "#4a5a4a", fontFamily: "Georgia,serif", fontStyle: "italic" }}>{data.state_evolution.informal}</div>
+                </div>
+              )}
+
+              {/* Transition Grammar */}
+              {data.transition_grammar && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>TRANSITION GRAMMAR · Δ ({data.transition_grammar.transitions.length})</div>
+                  {data.transition_grammar.transitions.map((t, i) => (
+                    <div key={i} style={{ display: "flex", gap: 6, padding: "2px 0", borderBottom: "1px solid #060a06", fontSize: 8 }}>
+                      <span style={{ color: mc, fontFamily: "monospace", width: 50, flexShrink: 0 }}>{t.hex_address}</span>
+                      <span style={{ color: "#5a6a4a", flex: 1 }}>{t.name}</span>
+                      <span style={{ color: "#3a4a3a", fontFamily: "monospace" }}>{t.operator}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Typed Relations */}
+              {data.relation_types && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>TYPED RELATIONS · E ({data.relation_types.types.length})</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
+                    {data.relation_types.types.map((t, i) => (
+                      <span key={i} style={{ fontSize: 7, padding: "1px 4px", background: mc + "08", border: `1px solid ${mc}15`, color: "#5a6a4a", fontFamily: "monospace" }} title={`${t.domain}: ${t.desc}`}>{t.name}</span>
+                    ))}
+                  </div>
+                  <div style={{ fontSize: 8, color: "#3a4a3a", marginTop: 4 }}>Instantiated: {data.relation_types.total_instantiated_edges} edges · Pending: {data.relation_types.cnm7_edges_pending} from CNM 7.0</div>
+                </div>
+              )}
+
+              {/* Operator Type System */}
+              {data.operator_type_system && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ALGEBRAIC LAWS · OT ({data.operator_type_system.algebraic_laws.length})</div>
+                  {data.operator_type_system.algebraic_laws.map((l, i) => (
+                    <div key={i} style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "monospace", padding: "1px 0" }}>{l.law} <span style={{ color: "#3a4a3a", fontFamily: "Georgia,serif", fontSize: 8 }}>({l.name})</span></div>
+                  ))}
+                </div>
+              )}
+
+              {/* Zenodo Mass */}
+              {data.zenodo_registry && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ZENODO MASS · Z ({data.zenodo_registry.total_deposits} deposits)</div>
+                  <div style={{ fontSize: 8, color: "#4a5a4a", fontFamily: "monospace" }}>{data.zenodo_registry.mass_formula}</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 2, marginTop: 4 }}>
+                    {Object.entries(data.zenodo_registry.mass_per_room || {}).sort((a,b) => b[1]-a[1]).slice(0, 12).map(([rid, mass], i) => (
+                      <span key={i} style={{ fontSize: 7, padding: "1px 4px", background: mc + "08", border: `1px solid ${mc}15`, color: "#5a6a4a", fontFamily: "monospace" }}>{rid}:{mass}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Engine Pipeline */}
               <div style={{ marginTop: 14 }}>
                 <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>ENGINE PIPELINE (closed loop)</div>
