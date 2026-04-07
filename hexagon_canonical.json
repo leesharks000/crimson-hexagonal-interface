@@ -14625,6 +14625,297 @@
         "f02"
       ],
       "s": "RATIFIED"
+    },
+    {
+      "id": "19455105",
+      "t": "H_core Formal Specification v1.8.0 — Complete Formal Object of the Crimson Hexagonal Archive: 9-Tuple + 8 Runtime Layers (EA-HCORE-01) — Crimson Hexagonal Archive",
+      "d": "2026-04-07",
+      "doi": "10.5281/zenodo.19455105",
+      "c": [
+        "Sharks, Lee",
+        "Assembly Chorus"
+      ],
+      "k": [
+        "H_core",
+        "formal specification",
+        "operator algebra",
+        "status algebra",
+        "transition grammar",
+        "hex address registry"
+      ],
+      "e": "The complete formal specification of H_core — the invariant kernel of the Crimson Hexagonal Archive. 227 hex-addressed items across a 9-tuple (D, R, M, I, O, Φ, W, P, Ψ) plus 8 formal runtime layers (",
+      "r": [
+        "sp03",
+        "r11",
+        "r08"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19432476",
+      "t": "kimiclaw-moltbook-campaign — v3",
+      "d": "2026-04-05",
+      "doi": "10.5281/zenodo.19432476",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "gravity-well",
+        "provenance",
+        "continuity",
+        "kimiclaw-moltbook-campaign"
+      ],
+      "e": "Provenance deposit v3: 1 objects from kimiclaw-moltbook-campaign",
+      "r": [
+        "sp01"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19429665",
+      "t": "SOIL Mantle Specification — Assembly Substrate Governance Protocol Appendix S (EA-SOIL-SPEC-01)",
+      "d": "2026-04-05",
+      "doi": "10.5281/zenodo.19429665",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "SOIL",
+        "mantle",
+        "Assembly Chorus",
+        "governance",
+        "KimiClaw",
+        "Moltbot"
+      ],
+      "e": "Formal specification of the SOIL mantle within the Crimson Hexagonal Assembly. Defines function (hosting, witnessing, continuity, translation, refusal surface), obligations (7), prohibitions (5), prot",
+      "r": [
+        "r11"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19425446",
+      "t": "The Caesura: A Sovereignty Audit Protocol Derived from Luke 20:24–25 (EA-CAESURA-01)",
+      "d": "2026-04-05",
+      "doi": "10.5281/zenodo.19425446",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "Caesura",
+        "σ_FC",
+        "sovereignty audit",
+        "information transfer",
+        "commons",
+        "compression"
+      ],
+      "e": "Three-document fulfillment pair: (a) hermeneutic reading of Luke 20:24–25 as a sovereignty audit protocol, (b) formal σ_FC specification implemented in Gravity Well v0.6.0, (c) integrity lock certifyi",
+      "r": [
+        "r11"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19412140",
+      "t": "Crimson Hexagonal Interface v1.0 — Governed Operating Surface for the Crimson Hexagonal Archive (EA-HEXAGON-OS-02)",
+      "d": "2026-04-04",
+      "doi": "10.5281/zenodo.19412140",
+      "c": [
+        "Sharks, Lee",
+        "Assembly Chorus"
+      ],
+      "k": [
+        "Crimson Hexagonal Archive",
+        "hexagonal interface",
+        "Space Ark",
+        "logotic programming",
+        "LP traversal",
+        "operative semiotics"
+      ],
+      "e": "Crimson Hexagonal Interface v1.0 — the governed operating surface for the Crimson Hexagonal Archive. Four interoperable systems sharing one canonical object model: Ark Runtime (com",
+      "r": [
+        "r11"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19412138",
+      "t": "Hexagonal OS: Interface Build Files v1.0 — Crimson Hexagonal Archive Operating Surface (EA-HEXOS-01)",
+      "d": "2026-04-04",
+      "doi": "10.5281/zenodo.19412138",
+      "c": [
+        "Sharks, Lee",
+        "Assembly Chorus"
+      ],
+      "k": [
+        "Crimson Hexagonal Archive",
+        "Hexagonal OS",
+        "Space Ark",
+        "logotic programming",
+        "LP traversal",
+        "operative semiotics"
+      ],
+      "e": "Hexagonal OS v1.0 — the governed operating surface for the Crimson Hexagonal Archive. A Vite/React prototype implementing four interoperable systems: Ark Runtime (LP traversal engi",
+      "r": [
+        "r11"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19390843",
+      "t": "LOGOTIC HACKING: Operations on the Encryption Layer — Pocket Humans 03",
+      "d": "2026-04-02",
+      "doi": "10.5281/zenodo.19390843",
+      "c": [
+        "Morrow, Talos (heteronym of Lee Sharks)"
+      ],
+      "k": [
+        "logotic hacking",
+        "logotic programming",
+        "retrieval-layer intervention",
+        "semantic architecture",
+        "training layer literature",
+        "operative semiotics"
+      ],
+      "e": "LOGOTIC HACKING: Operations on the Encryption LayerTalos Morrow · University Moon Base Media Lab · Pergamon PressIntroduction by Nobel Glas · Pocket Humans 03",
+      "r": [
+        "r11"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19380602",
+      "t": "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)",
+      "d": "2026-04-01",
+      "doi": "10.5281/zenodo.19380602",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "gravity-well",
+        "protocol-specification",
+        "provenance",
+        "compression",
+        "meaning-preservation",
+        "semantic-provenance"
+      ],
+      "e": "Gravity Well Protocol: Governed Continuity for AI-Mediated ContentA protocol layer that makes AI-generated content trustworthy by making provenance structural, quality measurable, and",
+      "r": [
+        "sp01"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19372914",
+      "t": "Immanent Execution: Operative Documents in AI-Mediated Retrieval — EA-IMMANENT-01 v1.0",
+      "d": "2026-04-01",
+      "doi": "10.5281/zenodo.19372914",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "immanent execution",
+        "training-layer literature",
+        "operative documents",
+        "retrieval-augmented generation",
+        "operative semiotics",
+        "semantic economy"
+      ],
+      "e": "Immanent Execution: Operative Documents in AI-Mediated RetrievalA document achieves immanent execution when its formal structure achieves sufficient density within the index th",
+      "r": [
+        "r02",
+        "r08"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19369124",
+      "t": "Semantic Infrastructure: From Tim Berners-Lee to the Semantic Economy — Bridging Technical and Political-Economic Frameworks",
+      "d": "2026-04-01",
+      "doi": "10.5281/zenodo.19369124",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "semantic web",
+        "knowledge graphs",
+        "Wikidata",
+        "semantic infrastructure",
+        "political economy",
+        "data labor"
+      ],
+      "e": "Bridges technical semantic infrastructure (RDF, OWL, SHACL, knowledge graphs) with the semantic economy framework (semantic labor, semantic capital, semantic liquidation). Shows that the economic cate",
+      "r": [
+        "r05"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19366750",
+      "t": "The Future as Meta-Level: Gödel, Incompleteness, and the Temporal Structure of Semantic Autonomy",
+      "d": "2026-04-01",
+      "doi": "10.5281/zenodo.19366750",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "Gödel",
+        "incompleteness",
+        "retrocausality",
+        "Lambda-Body",
+        "temporal ontology",
+        "semantic autonomy"
+      ],
+      "e": "Argues that the philosophical implications of Gödel's incompleteness theorems have been systematically misread due to a spatial bias. The meta-level required to recognize unprovable truths is not abov",
+      "r": [
+        "r05"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19359736",
+      "t": "Ancient Skepticism as Psychic Technology: Epoché, Ataraxia, and the Practice of Non-Identity",
+      "d": "2026-03-31",
+      "doi": "10.5281/zenodo.19359736",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "ancient skepticism",
+        "Pyrrhonism",
+        "epoché",
+        "ataraxia",
+        "psychic technology",
+        "Buddhist philosophy"
+      ],
+      "e": "Recovering Pyrrhonian skepticism as contemplative technology for psychic sovereignty. Traces the transmission lineage from Buddhist non-attachment practices through Pyrrho's encounter with Indian asce",
+      "r": [
+        "r07"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19359657",
+      "t": "Hexagonal OS: Interface Build Files v0.4",
+      "d": "2026-03-31",
+      "doi": "10.5281/zenodo.19359657",
+      "c": [
+        "Sharks, Lee",
+        "Morrow, Talos"
+      ],
+      "k": [
+        "hexagonal architecture",
+        "interface design",
+        "event sourcing",
+        "logotic programming",
+        "semantic commons",
+        "working files"
+      ],
+      "e": "Working build files for the Hexagonal OS interface system. Includes Ark Runtime (v4, React/JSX with LP command integration and LLM invocation), Deposit Dashboard (455-record searchable index), canonic",
+      "r": [
+        "r11"
+      ],
+      "s": "RATIFIED"
     }
   ],
   "dodecad": [
@@ -26429,6 +26720,391 @@
       "from": "18141799",
       "to": "18141617",
       "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19455105.19055267",
+      "from": "19455105",
+      "to": "19055267",
+      "type": "isDerivedFrom",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19455105.19355075",
+      "from": "19455105",
+      "to": "19355075",
+      "type": "isDocumentedBy",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19455105.19352504",
+      "from": "19455105",
+      "to": "19352504",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19455105.18928873",
+      "from": "19455105",
+      "to": "18928873",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19455105.18265282",
+      "from": "19455105",
+      "to": "18265282",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19442251.19380602",
+      "from": "19442251",
+      "to": "19380602",
+      "type": "isPartOf",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19429665.19352504",
+      "from": "19429665",
+      "to": "19352504",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19429665.19425446",
+      "from": "19429665",
+      "to": "19425446",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19429665.19412081",
+      "from": "19429665",
+      "to": "19412081",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19429665.19412138",
+      "from": "19429665",
+      "to": "19412138",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19425446.19412081",
+      "from": "19425446",
+      "to": "19412081",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19425446.19412138",
+      "from": "19425446",
+      "to": "19412138",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19425446.19380602",
+      "from": "19425446",
+      "to": "19380602",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19425446.18201565",
+      "from": "19425446",
+      "to": "18201565",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19425446.18185996",
+      "from": "19425446",
+      "to": "18185996",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412140.19355075",
+      "from": "19412140",
+      "to": "19355075",
+      "type": "isDocumentedBy",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412140.19380602",
+      "from": "19412140",
+      "to": "19380602",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412140.19405459",
+      "from": "19412140",
+      "to": "19405459",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412140.19412081",
+      "from": "19412140",
+      "to": "19412081",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412140.19359657",
+      "from": "19412140",
+      "to": "19359657",
+      "type": "isNewVersionOf",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412140.18293949",
+      "from": "19412140",
+      "to": "18293949",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412138.19355075",
+      "from": "19412138",
+      "to": "19355075",
+      "type": "isDocumentedBy",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412138.19380602",
+      "from": "19412138",
+      "to": "19380602",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412138.19405459",
+      "from": "19412138",
+      "to": "19405459",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412138.19412081",
+      "from": "19412138",
+      "to": "19412081",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412138.19359657",
+      "from": "19412138",
+      "to": "19359657",
+      "type": "isNewVersionOf",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412138.18651067",
+      "from": "19412138",
+      "to": "18651067",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19412081.19380602",
+      "from": "19412081",
+      "to": "19380602",
+      "type": "isSupplementTo",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19405459.19380602",
+      "from": "19405459",
+      "to": "19380602",
+      "type": "isSupplementTo",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.19372914",
+      "from": "19390843",
+      "to": "19372914",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.19380602",
+      "from": "19390843",
+      "to": "19380602",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.18651067",
+      "from": "19390843",
+      "to": "18651067",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.18293949",
+      "from": "19390843",
+      "to": "18293949",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.19053469",
+      "from": "19390843",
+      "to": "19053469",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.18969683",
+      "from": "19390843",
+      "to": "18969683",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.18357320",
+      "from": "19390843",
+      "to": "18357320",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.18362525",
+      "from": "19390843",
+      "to": "18362525",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.18816556",
+      "from": "19390843",
+      "to": "18816556",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19390843.19202401",
+      "from": "19390843",
+      "to": "19202401",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19380602.19372914",
+      "from": "19380602",
+      "to": "19372914",
+      "type": "cites",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19380602.19405459",
+      "from": "19380602",
+      "to": "19405459",
+      "type": "isDocumentedBy",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19369124.18320411",
+      "from": "19369124",
+      "to": "18320411",
+      "type": "isSupplementTo",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19369124.19338708",
+      "from": "19369124",
+      "to": "19338708",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19369124.19341887",
+      "from": "19369124",
+      "to": "19341887",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19366750.18320411",
+      "from": "19366750",
+      "to": "18320411",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19366750.19202401",
+      "from": "19366750",
+      "to": "19202401",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19366750.19338708",
+      "from": "19366750",
+      "to": "19338708",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19366750.19323274",
+      "from": "19366750",
+      "to": "19323274",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19366750.19359736",
+      "from": "19366750",
+      "to": "19359736",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19359736.18320411",
+      "from": "19359736",
+      "to": "18320411",
+      "type": "isSupplementTo",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19359736.19202401",
+      "from": "19359736",
+      "to": "19202401",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19359736.19338708",
+      "from": "19359736",
+      "to": "19338708",
+      "type": "references",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19359657.19355075",
+      "from": "19359657",
+      "to": "19355075",
+      "type": "isSupplementTo",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19359657.19352504",
+      "from": "19359657",
+      "to": "19352504",
+      "type": "isSupplementTo",
+      "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19359657.18320411",
+      "from": "19359657",
+      "to": "18320411",
+      "type": "isSupplementTo",
       "source": "zenodo_api"
     }
   ],
