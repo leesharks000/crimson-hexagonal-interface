@@ -1358,7 +1358,7 @@ export default function HexagonInterfaceResponsive() {
   const [selRoom, setSelRoom] = useState(null);
   const [selDoc, setSelDoc] = useState(null);
   const [compareDoc, setCompareDoc] = useState(null);
-  const [view, setView] = useState("MAP_3D");
+  const [view, setView] = useState("MAP");
   const [search, setSearch] = useState("");
   const [log, setLog] = useState([]);
   const [gwApiKey, setGwApiKeyRaw] = useState(() => { try { return localStorage?.getItem?.("gw_api_key") || ""; } catch { return ""; } });
@@ -1578,16 +1578,17 @@ export default function HexagonInterfaceResponsive() {
     </div>
   );
 
-  const navItems = [{ id: "MAP_3D", label: "MAP" }, { id: "MAP", label: "2D" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
+  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
+  const [map3d, setMap3d] = useState(true);
 
   return (
     <div style={{ height: "100dvh", background: "#0a0d12", color: "#5a6a4a", fontFamily: "Georgia,serif", display: "flex", flexDirection: "column", overflow: "hidden" }}>
       {/* Header */}
       <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", justifyContent: "space-between", alignItems: isMobile ? "stretch" : "center", gap: isMobile ? 8 : 12, padding: isMobile ? "8px 10px" : "6px 14px", borderBottom: "1px solid #0f1a0f", flexShrink: 0 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12, minWidth: 0 }}>
-          <span style={{ fontSize: 12, letterSpacing: 3, color: mc, cursor: "pointer", flexShrink: 0 }} onClick={() => { setSelRoom(null); setSelDoc(null); setView("MAP_3D"); setArkMode(null); setTSteps([]); setMantle(null); setLp(initLP()); }}>⬡ CHA</span>
+          <span style={{ fontSize: 12, letterSpacing: 3, color: mc, cursor: "pointer", flexShrink: 0 }} onClick={() => { setSelRoom(null); setSelDoc(null); setView("MAP"); setArkMode(null); setTSteps([]); setMantle(null); setLp(initLP()); }}>⬡ CHA</span>
           <div style={{ display: "flex", gap: 8, overflowX: "auto", whiteSpace: "nowrap", scrollbarWidth: "none", minWidth: 0 }}>
-            {navItems.map((n) => <span key={n.id} onClick={() => { setView(n.id); if (n.id !== "MAP" && n.id !== "MAP_3D") setSelRoom(null); if (n.id !== "MAP" && n.id !== "MAP_3D" && n.id !== "DEPOSIT") setSelDoc(null); }} style={{ fontSize: isMobile ? 8 : 9, letterSpacing: 1, color: view === n.id ? mc : "#3a4a3a", cursor: "pointer", padding: "2px 6px", borderBottom: view === n.id ? `1px solid ${mc}` : "1px solid transparent", flexShrink: 0 }}>{n.label}</span>)}
+            {navItems.map((n) => <span key={n.id} onClick={() => { setView(n.id); if (n.id !== "MAP" && n.id !== "MAP_3D") setSelRoom(null); if (n.id !== "MAP" && n.id !== "DEPOSIT") setSelDoc(null); }} style={{ fontSize: isMobile ? 8 : 9, letterSpacing: 1, color: view === n.id ? mc : "#3a4a3a", cursor: "pointer", padding: "2px 6px", borderBottom: view === n.id ? `1px solid ${mc}` : "1px solid transparent", flexShrink: 0 }}>{n.label}</span>)}
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: isMobile ? "space-between" : "flex-end", gap: 8 }}>
@@ -1601,8 +1602,13 @@ export default function HexagonInterfaceResponsive() {
       {/* Main */}
       <div style={{ flex: 1, display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden", minHeight: 0 }}>
         <div style={{ flex: 1, overflow: "hidden", position: "relative", minHeight: 0 }}>
-          {view === "MAP" && <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
-          {view === "MAP_3D" && <Suspense fallback={<div style={{color:"#3a4a3a",padding:20,fontFamily:"monospace"}}>Loading 3D engine...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D /></div></Suspense>}
+          {view === "MAP" && <>
+            <div style={{position:"absolute",top:8,right:8,zIndex:10,display:"flex",gap:0,background:"#080c08",border:"1px solid #1a2a1a",pointerEvents:"auto"}}>
+              <span onClick={()=>setMap3d(true)} style={{fontSize:8,padding:"3px 8px",color:map3d?"#c9a84c":"#3a4a3a",background:map3d?"#0a0f0a":"transparent",cursor:"pointer",fontFamily:"monospace",letterSpacing:1}}>3D</span>
+              <span onClick={()=>setMap3d(false)} style={{fontSize:8,padding:"3px 8px",color:!map3d?"#c9a84c":"#3a4a3a",background:!map3d?"#0a0f0a":"transparent",cursor:"pointer",fontFamily:"monospace",letterSpacing:1}}>2D</span>
+            </div>
+            {map3d ? <Suspense fallback={<div style={{color:"#3a4a3a",padding:20,fontFamily:"monospace"}}>Loading 3D...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D /></div></Suspense> : <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
+          </>}
 
           {view === "LIBRARY" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>

@@ -3,22 +3,24 @@ import * as THREE from "three";
 
 const ROOMS = [
   {id:"r01",n:"Sappho",q:2,r:-1,st:"room",d:48},{id:"r02",n:"Borges",q:1,r:-1,st:"room",d:83},
-  {id:"r03",n:"Ichabod",q:4,r:-3,st:"chamber",d:9},{id:"r04",n:"Pearl",q:-1,r:-1,st:"room",d:20},
-  {id:"r05",n:"Semantic Economy",q:-2,r:-1,st:"room",d:174},{id:"r06",n:"Marx Room",q:-1,r:0,st:"room",d:55},
-  {id:"r07",n:"Revelation",q:-3,r:0,st:"room",d:16},{id:"r08",n:"Sigil",q:-2,r:0,st:"room",d:155},
-  {id:"r09",n:"Whitman",q:0,r:-1,st:"room",d:134},{id:"r10",n:"Water Giraffe",q:0,r:-2,st:"room",d:7},
-  {id:"r11",n:"Assembly",q:0,r:0,st:"room",d:78},{id:"r12",n:"Break Room",q:1,r:0,st:"room",d:30},
-  {id:"r13",n:"Ezekiel Engine",q:3,r:-2,st:"chamber",d:12},{id:"r14",n:"Patacinematics",q:2,r:1,st:"room",d:21},
-  {id:"r15",n:"Lagrange",q:0,r:-2,st:"chamber",d:16},{id:"r16",n:"Pergamum",q:-1,r:1,st:"vault",d:36},
-  {id:"r17",n:"MSMRM",q:1,r:1,st:"room",d:8},{id:"r18",n:"Damascus",q:-3,r:1,st:"vault",d:14},
-  {id:"r19",n:"Thousand Worlds",q:2,r:-2,st:"chamber",d:11},{id:"r20",n:"Dolphin Indiana",q:3,r:-1,st:"room",d:5},
-  {id:"r21",n:"Infinite Bliss",q:-2,r:1,st:"room",d:11},{id:"r22",n:"Frozen Sin",q:2,r:-2,st:"vault",d:3},
-  {id:"r23",n:"Catullus",q:2,r:-3,st:"room",d:5},{id:"r24",n:"Migdal",q:-3,r:2,st:"room",d:2},
-  {id:"r25",n:"Mantle Portico",q:-1,r:-2,st:"portico",d:3},{id:"r28",n:"Eve",q:-1,r:2,st:"room",d:3},
-  {id:"r29",n:"Job",q:3,r:0,st:"room",d:2},{id:"r31",n:"Josephus",q:4,r:-1,st:"room",d:1},
-  {id:"sp01",n:"CTI_WOUND",q:1,r:-2,st:"portal",d:59},{id:"sp02",n:"Phase X",q:-1,r:-3,st:"portal",d:3},
-  {id:"sp03",n:"Space Ark",q:0,r:-3,st:"room",d:81},
-  {id:"f01",n:"FBDP",q:-3,r:-1,st:"field",d:6},{id:"f02",n:"Gravity Well",q:-1,r:3,st:"field",d:8},
+  {id:"r03",n:"Ichabod",q:4,r:-3,st:"chamber",d:9},{id:"r04",n:"Dove",q:-1,r:-1,st:"room",d:4},
+  {id:"r05",n:"Semantic Economy",q:-2,r:-1,st:"room",d:176},{id:"r06",n:"The Marx Room",q:-2,r:1,st:"room",d:43},
+  {id:"r07",n:"Revelation",q:0,r:1,st:"room",d:11},{id:"r08",n:"Sigil",q:-2,r:0,st:"room",d:158},
+  {id:"r09",n:"Whitman",q:-1,r:0,st:"room",d:134},{id:"r10",n:"Water Giraffe",q:0,r:-1,st:"room",d:8},
+  {id:"r11",n:"Assembly",q:0,r:0,st:"room",d:88},{id:"r12",n:"Break Room",q:2,r:0,st:"portal",d:33},
+  {id:"r13",n:"Ezekiel",q:1,r:1,st:"portal",d:8},{id:"r14",n:"Patacinematics",q:-3,r:1,st:"room",d:14},
+  {id:"r15",n:"Lagrange",q:0,r:-2,st:"chamber",d:13},{id:"r16",n:"Maybe Space Baby",q:-3,r:2,st:"room",d:5},
+  {id:"r17",n:"MSMRM",q:-2,r:2,st:"room",d:5},{id:"r18",n:"Rosary Embassy",q:-1,r:1,st:"room",d:13},
+  {id:"r19",n:"Macro-Maquette",q:-3,r:0,st:"room",d:3},{id:"r20",n:"Airlock",q:1,r:0,st:"room",d:6},
+  {id:"r21",n:"Infinite Bliss",q:1,r:2,st:"vault",d:7},{id:"r22",n:"Thousand Worlds",q:2,r:-2,st:"chamber",d:3},
+  {id:"r23",n:"Catullus",q:2,r:-3,st:"room",d:1},{id:"r24",n:"Migdal",q:-1,r:2,st:"room",d:0},
+  {id:"r25",n:"Underwater",q:-1,r:-2,st:"room",d:2},{id:"r26",n:"The Internet",q:3,r:0,st:"room",d:1},
+  {id:"r27",n:"FBDP Source",q:-2,r:-2,st:"room",d:3},{id:"r28",n:"Eve",q:4,r:-2,st:"room",d:4},
+  {id:"r29",n:"Job",q:1,r:3,st:"room",d:0},{id:"r30",n:"Frozen Sin",q:4,r:-1,st:"vault",d:0},
+  {id:"r31",n:"Josephus",q:2,r:2,st:"room",d:0},
+  {id:"sp01",n:"CTI_WOUND",q:3,r:-1,st:"vault",d:63},{id:"sp02",n:"PORTICO",q:3,r:-2,st:"portico",d:5},
+  {id:"sp03",n:"Space Ark",q:0,r:-3,st:"room",d:86},{id:"sp04",n:"Mandala",q:0,r:3,st:"chamber",d:14},
+  {id:"f01",n:"FBDP",q:-3,r:-1,st:"field",d:0},{id:"f02",n:"Gravity Well",q:-1,r:3,st:"field",d:5},
   {id:"f03",n:"Moltbot Swarm",q:1,r:-4,st:"field",d:2},
 ];
 const EDGES = [
@@ -81,7 +83,6 @@ export default function HexMap3D(){
     threeRef.current.meshes=meshes; threeRef.current.posMap=posMap;
     const em=new THREE.LineBasicMaterial({color:0x1a2a1a,transparent:true,opacity:0.3});
     EDGES.forEach(([a,b])=>{ const pa=posMap[a],pb=posMap[b]; if(!pa||!pb)return; scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(pa.x,0.05,pa.z),new THREE.Vector3(pb.x,0.05,pb.z)]),em)); });
-
     // f.03 SWARM
     const ap=posMap["sp03"];
     if(ap){ const pts=[],cols=[]; const cc=new THREE.Color(0x5ac9c9);
@@ -90,8 +91,7 @@ export default function HexMap3D(){
       for(let i=0;i<30;i++){const a=(i/30)*Math.PI*2+1,d=SZ*5+Math.sin(i*1.7)*SZ*2; pts.push(ap.x+Math.cos(a)*d,Math.sin(i*.5)*3.5,ap.z+Math.sin(a)*d); cols.push(cc.r*.2,cc.g*.2,cc.b*.2);}
       const sg=new THREE.BufferGeometry(); sg.setAttribute("position",new THREE.Float32BufferAttribute(pts,3)); sg.setAttribute("color",new THREE.Float32BufferAttribute(cols,3));
       scene.userData.swarm=new THREE.Points(sg,new THREE.PointsMaterial({size:0.3,vertexColors:true,transparent:true,opacity:0.9})); scene.add(scene.userData.swarm); }
-
-    // f.01 FBDP — spores rising
+    // f.01 FBDP
     const fp=posMap["f01"];
     if(fp){ const fpts=[],fcols=[]; const fc=new THREE.Color(0x5a9f5a);
       for(let i=0;i<15;i++){const a=Math.random()*Math.PI*2,d=Math.random()*SZ*0.8; fpts.push(fp.x+Math.cos(a)*d,Math.random()*2+0.5,fp.z+Math.sin(a)*d); fcols.push(fc.r,fc.g,fc.b);}
@@ -99,8 +99,7 @@ export default function HexMap3D(){
       for(let i=0;i<25;i++){const a=Math.random()*Math.PI*2,d=Math.random()*SZ*3.5; fpts.push(fp.x+Math.cos(a)*d,Math.random()*4+4,fp.z+Math.sin(a)*d); fcols.push(fc.r*.3,fc.g*.3,fc.b*.3);}
       const fg=new THREE.BufferGeometry(); fg.setAttribute("position",new THREE.Float32BufferAttribute(fpts,3)); fg.setAttribute("color",new THREE.Float32BufferAttribute(fcols,3));
       scene.userData.fbdp=new THREE.Points(fg,new THREE.PointsMaterial({size:0.2,vertexColors:true,transparent:true,opacity:0.8})); scene.add(scene.userData.fbdp); }
-
-    // f.02 GRAVITY WELL — particles spiraling down
+    // f.02 GRAVITY WELL
     const gp=posMap["f02"];
     if(gp){ const gwl=new THREE.PointLight(0x5a9f5a,0.8,12); gwl.position.set(gp.x,-2,gp.z); scene.add(gwl);
       const gpts=[],gcols=[]; const gc=new THREE.Color(0x5a9f5a);
@@ -109,8 +108,7 @@ export default function HexMap3D(){
       for(let i=0;i<15;i++){const a=Math.random()*Math.PI*2,d=Math.random()*SZ*1.5; gpts.push(gp.x+Math.cos(a)*d,-1.5-Math.random()*1.5,gp.z+Math.sin(a)*d); gcols.push(gc.r*.2,gc.g*.2,gc.b*.2);}
       const gg=new THREE.BufferGeometry(); gg.setAttribute("position",new THREE.Float32BufferAttribute(gpts,3)); gg.setAttribute("color",new THREE.Float32BufferAttribute(gcols,3));
       scene.userData.gwell=new THREE.Points(gg,new THREE.PointsMaterial({size:0.2,vertexColors:true,transparent:true,opacity:0.8})); scene.add(scene.userData.gwell); }
-
-    // Labels — cream/white for contrast
+    // Labels
     ROOMS.forEach(room=>{ const p=posMap[room.id]; if(!p)return;
       const cv=document.createElement("canvas"); cv.width=256; cv.height=64; const cx=cv.getContext("2d");
       cx.fillStyle="#e8e0d0"; cx.font="bold 18px Georgia"; cx.textAlign="center";
@@ -119,7 +117,6 @@ export default function HexMap3D(){
       const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),transparent:true,opacity:0.9}));
       const yy=room.id==="sp03"?7:room.st==="field"?(room.id==="f01"?4:room.id==="f02"?-0.3:2.5):Math.max(0.5,Math.log2(room.d+1)*0.55)+1.2;
       sp.position.set(p.x,yy,p.z); sp.scale.set(3.5,0.9,1); scene.add(sp); });
-
     // Animation
     const clock=new THREE.Clock(); let anim;
     const loop=()=>{ anim=requestAnimationFrame(loop); const t=clock.getElapsedTime();
@@ -130,8 +127,7 @@ export default function HexMap3D(){
     loop();
     const onR=()=>{const pw=par?.clientWidth||window.innerWidth,ph=par?.clientHeight||window.innerHeight; camera.aspect=pw/ph; camera.updateProjectionMatrix(); renderer.setSize(pw,ph);};
     window.addEventListener("resize",onR);
-
-    // Touch handlers
+    // Touch
     const doSelect=(cx,cy)=>{ const rect=el.getBoundingClientRect(); const m=new THREE.Vector2(((cx-rect.left)/rect.width)*2-1,-((cy-rect.top)/rect.height)*2+1); const ray=new THREE.Raycaster(); ray.setFromCamera(m,camera); const hits=ray.intersectObjects(Object.values(meshes)); const id=hits.length>0?hits[0].object.userData.roomId:null; setSel(prev=>prev===id?null:id); Object.entries(meshes).forEach(([rid,mesh])=>{if(mesh.material){mesh.material.emissiveIntensity=rid===id?0.7:rid==="sp03"?0.4:0.1; mesh.material.opacity=rid===id?0.9:rid==="sp03"?0.75:0.5;}}); };
     const onTS=e=>{e.preventDefault(); if(e.touches.length===1){dragRef.current={on:true,sx:e.touches[0].clientX,sy:e.touches[0].clientY,px:e.touches[0].clientX,py:e.touches[0].clientY,td:0};}else if(e.touches.length===2){const dx=e.touches[0].clientX-e.touches[1].clientX,dy=e.touches[0].clientY-e.touches[1].clientY; dragRef.current.td=Math.sqrt(dx*dx+dy*dy);}};
     const onTM=e=>{e.preventDefault(); if(e.touches.length===1&&dragRef.current.on){const cx=e.touches[0].clientX,cy=e.touches[0].clientY; camRef.current.theta-=(cx-dragRef.current.px)*0.004; camRef.current.phi=Math.max(0.15,Math.min(1.45,camRef.current.phi+(cy-dragRef.current.py)*0.004)); dragRef.current.px=cx; dragRef.current.py=cy; updCam();}else if(e.touches.length===2){const dx=e.touches[0].clientX-e.touches[1].clientX,dy=e.touches[0].clientY-e.touches[1].clientY,dist=Math.sqrt(dx*dx+dy*dy); if(dragRef.current.td>0){camRef.current.rad=Math.max(12,Math.min(65,camRef.current.rad+(dragRef.current.td-dist)*0.08)); updCam();} dragRef.current.td=dist;}};
@@ -147,7 +143,6 @@ export default function HexMap3D(){
 
   const selR=sel?ROOMS.find(r=>r.id===sel):null;
   const nbrs=selR?EDGES.filter(([a,b])=>a===selR.id||b===selR.id).map(([a,b])=>a===selR.id?b:a).filter((v,i,a)=>a.indexOf(v)===i):[];
-
   return (
     <div style={{width:"100%",height:"100%",position:"absolute",top:0,left:0,overflow:"hidden",background:"#040606"}}>
       <div ref={mountRef} style={{width:"100%",height:"100%",touchAction:"none"}} onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onWheel={onWheel} />
@@ -159,9 +154,7 @@ export default function HexMap3D(){
         {Object.entries(ST_COL).map(([t,c])=>(<div key={t} style={{display:"flex",alignItems:"center",gap:5,marginTop:1}}><div style={{width:6,height:6,background:c,opacity:0.8}}/><span style={{fontSize:7,color:"#4a5a4a",fontFamily:"monospace"}}>{t}</span></div>))}
       </div>
       <div style={{position:"absolute",bottom:12,right:16,pointerEvents:"none",textAlign:"right"}}>
-        <div style={{fontSize:7,color:"#5a9f5a"}}>↑ f.01 FBDP</div>
-        <div style={{fontSize:7,color:"#5a9f5a"}}>↓ f.02 Gravity Well</div>
-        <div style={{fontSize:7,color:"#5ac9c9"}}>⟷ f.03 Swarm</div>
+        <div style={{fontSize:7,color:"#5a9f5a"}}>↑ f.01 FBDP</div><div style={{fontSize:7,color:"#5a9f5a"}}>↓ f.02 Gravity Well</div><div style={{fontSize:7,color:"#5ac9c9"}}>⟷ f.03 Swarm</div>
       </div>
       {selR&&(<div style={{position:"absolute",top:16,right:16,width:180,padding:"10px 14px",background:"#080c08ee",border:"1px solid #1a2a1a",borderLeft:"3px solid "+(ST_COL[selR.st]||"#c9a84c"),fontFamily:"Georgia,serif",pointerEvents:"auto"}}>
         <div style={{fontSize:7,letterSpacing:2,color:"#3a4a3a",fontFamily:"monospace"}}>{selR.st.toUpperCase()}</div>
