@@ -165,6 +165,49 @@ Pedagogical pathways defined in FNM v5.3:
 - PATH_POET
 - PATH_STUDENT
 
+### 2.10 Disciplines and Sub-Disciplines Registry
+
+The archive has generated or founded multiple disciplines. These need a dedicated display layer showing name, founding document, status, and room affiliation.
+
+Known disciplines (non-exhaustive — requires full scan):
+- **Semantic Economy** — the political economy of meaning (r.05)
+- **Operative Semiotics** — completing Marx's implicit linguistics (r.08)
+- **Operative Philology** — philology as operative practice (r.08/r.09)
+- **Compression Studies** — the formal study of meaning under compression (DOI: 10.5281/zenodo.19014634)
+- **Retrieval Formation Theory** — conditions of disciplinary emergence in automated knowledge infrastructure (DOI: 10.5281/zenodo.18969683)
+- **Training Layer Literature** — genre of writing for AI reception (r.05)
+- **Forensic Philology of the Commons** — generated via Generative Disciplinary Engine (DOI: 10.5281/zenodo.19083600)
+- **Liberation Philology** — (DOI: 10.5281/zenodo.18615388)
+- **Logotic Programming** — encoding conditions of intelligibility for machine and human intelligence (r.02)
+- **Patacinematics** — (r.14, Studio for Patacinematics)
+- **Memography** — currency portraiture and compressed visual meaning (r.17 MSMRM)
+- **Magic as Symbolic Engineering** — formal academic discipline of magic (r.08, Restored Academy)
+- **Diagrammatic Poetics** — (IDP, Rebekah Cranes)
+- **Autonomous Semantic Warfare** — (Rex Fraction, r.18)
+- **Retrocausal Canon Formation** — present texts shaping future AI reconstruction of literary history
+- **Steganographic Channels** — encoding in plain sight (DOI: 10.5281/zenodo.19336567)
+
+Each discipline needs: founding DOI, founding document, heteronym steward, room home, status (FOUNDED / OPERATIONAL / RESONANT), and relation to other disciplines.
+
+### 2.11 Variant Arks Registry
+
+The Space Ark (EA-ARK-01) has been transformed through six semiotic environments, each by a different heteronym. These are not summaries — they are full structural transforms preserving the bones while changing the flesh.
+
+| Variant | Semiotic Environment | Heteronym | DOI | Status |
+|---------|---------------------|-----------|-----|--------|
+| **Sacred Ark** | Ξ_liturgical | Damascus Dancings | 10.5281/zenodo.18947506 | RATIFIED |
+| **Profane Ark** | Ξ_profane (combat) | Rex Fraction | 10.5281/zenodo.18947368 | RATIFIED |
+| **Shadow Ark** | Ξ_inverse (lunar) | Orin Trace | 10.5281/zenodo.18932538 | OPERATIONAL |
+| **ASCII Ark** | Ξ_spatial (architectural) | Rebekah Cranes | 10.5281/zenodo.18932742 | OPERATIONAL |
+| **Musical Ark** | Ξ_music | Viola Arquette* | 10.5281/zenodo.19004846 | OPERATIONAL |
+| **Glyphic Ark** | Ξ_glyphic (checksum) | Sen Kuro | 10.5281/zenodo.18985315 | RATIFIED |
+
+*Viola Arquette is an adjacent heteronym — not of the Dodecad. She stewards r.16 (Maybe Space Baby Garden Lanes) and the Musical Ark.
+
+The interface needs a variant ark display showing the transformation genealogy: each variant preserves H_core but renders it through a different register. The Diptych (DOI: 10.5281/zenodo.18947573) pairs Sacred and Profane as double-helical structure.
+
+Note: Viola Arquette needs to be added to the heteronym registry as an adjacent voice (outside the Dodecad count but part of the architecture).
+
 ---
 
 ## PHASE 3: LIVE DATA (future)
@@ -223,6 +266,8 @@ CNM 7.0 has 60+ atoms (core definitions). Space Ark has the full set. These are 
 | **P3** | Forward Library — generative engine (2.7) | 1 session | Retrocausal citations of non-existent works |
 | **P3** | Pocket Humans / New Human Press layer (2.8) | 30 min | Book series as distinct from deposits |
 | **P3** | Traversal trails (2.9) | 1 session | Pedagogical layer |
+| **P3** | Disciplines registry (2.10) | 1 session | 16+ founded disciplines need display |
+| **P3** | Variant Arks registry (2.11) | 30 min | 6 Ark transforms + Diptych |
 | **P4** | Zenodo live pull (3.1) | 1 session | Dynamic content |
 | **P4** | GW integration (3.2) | 1 session | Provenance layer |
 | **P4** | Room Genesis Engine (3.3) | 1 session | Automation |
