@@ -376,6 +376,16 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
     return documents.filter(d => d.id !== doc.id && connectedRoomIds.some(rid => (d.r || []).includes(rid))).slice(0, 8);
   }, [documents, doc.id, connectedRoomIds]);
 
+  // Document-level citation edges (from Zenodo related_identifiers import)
+  const docCitations = useMemo(() => (relations || []).filter(r => r.from === doc.id || r.to === doc.id), [relations, doc.id]);
+  const citedDocs = useMemo(() => {
+    if (!documents || !docCitations.length) return [];
+    const citedIds = new Set();
+    docCitations.forEach(r => { citedIds.add(r.from); citedIds.add(r.to); });
+    citedIds.delete(doc.id);
+    return documents.filter(d => citedIds.has(d.id)).slice(0, 15);
+  }, [documents, doc.id, docCitations]);
+
   return (
     <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
       {!hasContent && <>
@@ -459,6 +469,24 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
           <div>
             <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>CONNECTED ({connectedDocs.length})</div>
             {connectedDocs.map(d => (
+              <div key={d.id} onClick={() => onDoc && onDoc(d)} style={{ padding: "3px 0", borderBottom: "1px solid #0a0f0a", cursor: "pointer" }}>
+                <div style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{d.t.length > 55 ? d.t.slice(0, 52) + "..." : d.t}</div>
+                <div style={{ fontSize: 7, color: "#2a3a2a" }}>{(d.c?.[0] || "") + " · " + d.d}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Document-level citation graph */}
+        {docCitations.length > 0 && (
+          <div style={{ marginTop: 8 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>CITATION GRAPH ({docCitations.length} edges)</div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 2, marginBottom: 4 }}>
+              {Object.entries(docCitations.reduce((acc, r) => { acc[r.type] = (acc[r.type]||0)+1; return acc; }, {})).map(([type, count], i) => (
+                <span key={i} style={{ fontSize: 7, padding: "1px 4px", background: mc + "08", border: `1px solid ${mc}15`, color: "#5a6a4a", fontFamily: "monospace" }}>{type}:{count}</span>
+              ))}
+            </div>
+            {citedDocs.map(d => (
               <div key={d.id} onClick={() => onDoc && onDoc(d)} style={{ padding: "3px 0", borderBottom: "1px solid #0a0f0a", cursor: "pointer" }}>
                 <div style={{ fontSize: 9, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{d.t.length > 55 ? d.t.slice(0, 52) + "..." : d.t}</div>
                 <div style={{ fontSize: 7, color: "#2a3a2a" }}>{(d.c?.[0] || "") + " · " + d.d}</div>
