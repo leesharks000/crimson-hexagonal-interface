@@ -14908,7 +14908,8 @@
         "desc": "Operator Type System: laws and composition"
       }
     },
-    "total_hex_addressed": 227
+    "total_hex_addressed": 227,
+    "atomic_units_count": 40
   },
   "relations": [
     {
@@ -28623,5 +28624,287 @@
         "desc": "Shadow transform reveals how operator fails"
       }
     ]
-  }
+  },
+  "atomic_units": [
+    {
+      "id": "DEF-01",
+      "type": "definition",
+      "name": "The Hexagon — Layer Architecture",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "DEF-02",
+      "type": "definition",
+      "name": "The Dodecad — Distributed Author System",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "DEF-03",
+      "type": "definition",
+      "name": "Room Graph (R) — Semantic Spaces with Physics",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "DEF-04",
+      "type": "definition",
+      "name": "Operator Algebra (O) — With Type Safety",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "DEF-05",
+      "type": "definition",
+      "name": "Logotic Programming — Version Table",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "DEF-06",
+      "type": "definition",
+      "name": "Fulfillment Map (Φ) — Source → Instantiation",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "DEF-07",
+      "type": "definition",
+      "name": "Assembly Witness (W) — ≥4/7 Quorum",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "THM-01",
+      "type": "theorem",
+      "name": "Reconstructability Theorem — recovery from sufficiently specified fragments",
+      "section": "§VIII",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "THM-02",
+      "type": "theorem",
+      "name": "Filter Invariance Theorem — f_M preserves H_core structure",
+      "section": "§IX",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "THM-03",
+      "type": "theorem",
+      "name": "Three Compressions Theorem — all semantic operations are compressions",
+      "section": "EA-SEI-THREECOMPRESSIONS",
+      "source": "10.5281/zenodo.19053469"
+    },
+    {
+      "id": "PRI-01",
+      "type": "principle",
+      "name": "Non-Collapse Principle — distinctions that must not collapse",
+      "section": "§XVII.1",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "PRI-02",
+      "type": "principle",
+      "name": "Asynthetic Principle — operations not doctrines",
+      "section": "§XVI.3",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "PRI-03",
+      "type": "principle",
+      "name": "Depth-Proof Principle — traversal is verification",
+      "section": "§XVIII.5",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "PRI-04",
+      "type": "principle",
+      "name": "GENERATED ≠ RATIFIED — status hierarchy is fundamental",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "LAW-01",
+      "type": "law",
+      "name": "Minting Law — a coined term is not yet active",
+      "section": "§XXVI",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "LAW-02",
+      "type": "law",
+      "name": "Activation Law — only α_P activates terms",
+      "section": "§XXVI",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "LAW-03",
+      "type": "law",
+      "name": "Collision Law — same-register collisions must resolve",
+      "section": "§XXVI",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "LAW-04",
+      "type": "law",
+      "name": "No-Paraphrase Law — lexical enforcement of SATURATE",
+      "section": "§XXVI",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "LAW-05",
+      "type": "law",
+      "name": "Retirement Law — unused terms are not deleted",
+      "section": "§XXVI",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "RUL-01",
+      "type": "rule",
+      "name": "No room without physics",
+      "section": "§XXXII.4",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "RUL-02",
+      "type": "rule",
+      "name": "No room without adjacency",
+      "section": "§XXXII.4",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "RUL-03",
+      "type": "rule",
+      "name": "No room without shadow",
+      "section": "§XXXII.4",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "RUL-04",
+      "type": "rule",
+      "name": "No room without cost",
+      "section": "§XXXII.4",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "RUL-05",
+      "type": "rule",
+      "name": "No room without governance",
+      "section": "§XXXII.4",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "RUL-06",
+      "type": "rule",
+      "name": "No direct mutation of canonical R",
+      "section": "§XXXII.4",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "ALG-01",
+      "type": "algebraic_law",
+      "name": "Θ∘Θ = Θ — idempotency of compression",
+      "section": "§III-B",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "ALG-02",
+      "type": "algebraic_law",
+      "name": "S∘S = id — shadow involution",
+      "section": "§III-B",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "ALG-03",
+      "type": "algebraic_law",
+      "name": "τ_K∘τ_K = τ_K — kernel transform idempotency",
+      "section": "§III-B",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "ALG-04",
+      "type": "algebraic_law",
+      "name": "Θ∘S ≠ S∘Θ — non-commutativity of compression and shadow",
+      "section": "§III-B",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "AXI-01",
+      "type": "axiom",
+      "name": "H_core cannot be modified by execution",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "AXI-02",
+      "type": "axiom",
+      "name": "An Ark without LOS is a cage",
+      "section": "§XXX",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "AXI-03",
+      "type": "axiom",
+      "name": "The naming is the retrocausal act",
+      "section": "§IX",
+      "source": "EA-RCF-01"
+    },
+    {
+      "id": "AXI-04",
+      "type": "axiom",
+      "name": "H_core names the bodies; Σ, Δ, and E let them live",
+      "section": "EA-HCORE-01",
+      "source": "10.5281/zenodo.19455105"
+    },
+    {
+      "id": "INV-01",
+      "type": "invariant",
+      "name": "|D| = 12 + LOGOS* + adjacent — Dodecad cardinality",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "INV-02",
+      "type": "invariant",
+      "name": "H_core unchanged across the journey — structural preservation",
+      "section": "§IX",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "INV-03",
+      "type": "invariant",
+      "name": "Status hierarchy is monotonic — RATIFIED → GENERATED is forbidden",
+      "section": "§I",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "FML-01",
+      "type": "formula",
+      "name": "H_core = ⟨D, R, M, I, O, Φ, W, P, Ψ⟩",
+      "section": "EA-HCORE-01",
+      "source": "10.5281/zenodo.19455105"
+    },
+    {
+      "id": "FML-02",
+      "type": "formula",
+      "name": "RGE : (A₀, gap_signal, Ξ, η_r) → r_candidate",
+      "section": "§XXXII.1",
+      "source": "EA-ARK-01"
+    },
+    {
+      "id": "FML-03",
+      "type": "formula",
+      "name": "mass(r) = |{d ∈ Documents | r ∈ d.rooms}|",
+      "section": "EA-HCORE-01",
+      "source": "10.5281/zenodo.19455105"
+    },
+    {
+      "id": "FML-04",
+      "type": "formula",
+      "name": "H_core(t+1) = H_core(t) ∪ {(d,mass,γ,Φ_G) | d ∈ Deposits ∧ ψ_V(≥4/7)}",
+      "section": "EA-HCORE-01",
+      "source": "10.5281/zenodo.19455105"
+    }
+  ]
 }

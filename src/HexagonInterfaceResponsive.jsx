@@ -2178,6 +2178,24 @@ export default function HexagonInterfaceResponsive() {
               {/* Protocols */}
               {data.protocols && (
                 <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ATOMIC UNITS ({(data.atomic_units||[]).length})</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 2, marginBottom: 6 }}>
+                    {Object.entries((data.atomic_units||[]).reduce((acc, a) => { acc[a.type] = (acc[a.type]||0)+1; return acc; }, {})).map(([type, count], i) => (
+                      <span key={i} style={{ fontSize: 7, padding: "1px 4px", background: mc + "08", border: `1px solid ${mc}15`, color: "#5a6a4a", fontFamily: "monospace" }}>{type}:{count}</span>
+                    ))}
+                  </div>
+                  {(data.atomic_units||[]).map((a, i) => (
+                    <div key={i} style={{ padding: "2px 0", borderBottom: "1px solid #060a06", display: "flex", gap: 6 }}>
+                      <span style={{ fontSize: 7, color: mc, fontFamily: "monospace", flexShrink: 0, width: 32 }}>{a.id}</span>
+                      <span style={{ fontSize: 8, color: "#5a6a4a" }}>{a.name}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Protocols */}
+              {data.protocols && (
+                <div style={{ marginTop: 14 }}>
                   <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>PROTOCOLS · P ({data.protocols.length})</div>
                   {data.protocols.map((p, i) => (
                     <div key={i} style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
