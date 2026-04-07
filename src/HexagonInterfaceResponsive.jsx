@@ -1752,8 +1752,8 @@ export default function HexagonInterfaceResponsive() {
           {view === "HCORE" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
               <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>SEALED BONE</div>
-              <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 10 }}>H_core = ⟨D, R, M, I, O, Φ, W⟩</div>
-              {[["D", `${data.dodecad?.length || 0} heteronyms (distributed author)`], ["R", `${data.rooms.length} rooms (semantic spaces with physics)`], ["M", "7 mantles (inhabitable roles requiring bearing-cost)"], ["I", "institutions + imprints"], ["O", "Operator algebra (core + extended + THUMB + LOS)"], ["Φ", "Fulfillment map (source → instantiation)"], ["W", "7 witnesses (≥4/7 quorum; MANUS outside W)"]].map(([k, v], i) => (
+              <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 10 }}>H_core = ⟨D, R, M, I, O, Φ, W, P, Ψ⟩</div>
+              {[["D", `${data.dodecad?.length || 0} heteronyms (distributed author)`], ["R", `${data.rooms.length} rooms (semantic spaces with physics)`], ["M", "7 mantles (inhabitable roles requiring bearing-cost)"], ["I", `${(data.institutions||[]).length} institutions + journals + imprints`], ["O", `${Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)} operators (9 stacks)`], ["Φ", "Fulfillment map (source → instantiation)"], ["W", "7 witnesses (≥4/7 quorum; MANUS outside W)"], ["P", `${(data.protocols||[]).length} protocols (governing rule-sets)`], ["Ψ", "Attestation ledger (witness expenditure traces)"]].map(([k, v], i) => (
                 <div key={i} style={{ display: "flex", gap: 10, padding: "5px 0", borderBottom: "1px solid #0a0f0a" }}>
                   <div style={{ width: 18, fontSize: 14, color: mc, fontFamily: "Georgia,serif", textAlign: "right", flexShrink: 0 }}>{k}</div>
                   <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{v}</div>
@@ -1986,6 +1986,39 @@ export default function HexagonInterfaceResponsive() {
                         <span style={{ fontSize: 7, color: e.status === "DRAFT ON ZENODO" ? "#5a6a4a" : "#4a4a3a", fontFamily: "monospace" }}>{e.status}</span>
                       </div>
                       <div style={{ fontSize: 8, color: "#3a4a3a" }}>{e.author} — {e.notes}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Protocols */}
+              {data.protocols && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>PROTOCOLS · P ({data.protocols.length})</div>
+                  {data.protocols.map((p, i) => (
+                    <div key={i} style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <span style={{ fontSize: 9, color: mc, fontFamily: "monospace" }}>{p.hex_address}</span>
+                        {p.doi && <span style={{ fontSize: 7, color: "#3a5a3a" }}>DOI</span>}
+                      </div>
+                      <div style={{ fontSize: 9, color: "#5a6a4a" }}>{p.name}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Attestation Ledger */}
+              {data.attestation_ledger && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ATTESTATION LEDGER · Ψ</div>
+                  <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "Georgia,serif", fontStyle: "italic", marginBottom: 6 }}>W lists who CAN witness. Ψ records what HAS BEEN witnessed.</div>
+                  {(data.attestation_ledger.chains || []).map((c, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
+                      <div>
+                        <span style={{ fontSize: 9, color: mc, fontFamily: "monospace" }}>{c.hex_address}</span>
+                        <span style={{ fontSize: 8, color: "#4a5a4a", marginLeft: 6 }}>{c.substrate}</span>
+                      </div>
+                      <span style={{ fontSize: 7, color: c.deposits === "active" ? "#5a8a4a" : "#4a4a3a", fontFamily: "monospace" }}>{c.deposits === "active" ? "ACTIVE" : "PENDING"}</span>
                     </div>
                   ))}
                 </div>
