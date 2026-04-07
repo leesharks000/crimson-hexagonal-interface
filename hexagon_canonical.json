@@ -1121,7 +1121,7 @@
     },
     {
       "id": "n01",
-      "name": "Underwater Construction",
+      "name": "Underwater Construction Authority of Dolphindiana",
       "cat": "new",
       "q": -1,
       "r": -2,
@@ -1135,7 +1135,7 @@
     },
     {
       "id": "n02",
-      "name": "Fruiting Body",
+      "name": "Fruiting Body Diffusion Plume",
       "cat": "new",
       "q": -2,
       "r": -2,
@@ -14405,7 +14405,7 @@
   "institutions": [
     {
       "id": "JSI",
-      "name": "Jack Sharks Institute",
+      "name": "Johannes Sigil Institute for Comparative Poetics",
       "heteronym": "Lee Sharks",
       "room": "r09",
       "type": "institution"
@@ -14419,14 +14419,14 @@
     },
     {
       "id": "CIT",
-      "name": "Church of Immanent Theology",
+      "name": "Commission of the Immanent Turning",
       "heteronym": "Damascus Dancings",
       "room": "r07",
       "type": "institution"
     },
     {
       "id": "IDP",
-      "name": "Institute for Dove Poetics",
+      "name": "Institute for Diagrammatic Poetics",
       "heteronym": "Rebekah Cranes",
       "room": "r04",
       "type": "institution"
@@ -14447,7 +14447,7 @@
     },
     {
       "id": "STUDIO",
-      "name": "Studio",
+      "name": "Studio for Patacinematics",
       "heteronym": "Sparrow Wells",
       "room": "r14",
       "type": "institution"
@@ -14461,7 +14461,7 @@
     },
     {
       "id": "CSA",
-      "name": "Counter-Semiotic Archive",
+      "name": "Cambridge Schizoanalytica",
       "heteronym": "Orin Trace",
       "room": "sp01",
       "type": "institution"
@@ -14470,12 +14470,12 @@
       "id": "UMBML",
       "name": "University Moon Base Media Lab",
       "heteronym": "Talos Morrow",
-      "room": "r19",
+      "room": "r02",
       "type": "institution"
     },
     {
       "id": "VPCOR",
-      "name": "Void Position Center for Operative Research",
+      "name": "Vox Populi Community Outreach Rhizome",
       "heteronym": "Ayanna Vox",
       "room": null,
       "type": "institution"
@@ -14485,21 +14485,21 @@
       "name": "Provenance",
       "heteronym": null,
       "room": null,
-      "type": "imprint"
+      "type": "journal"
     },
     {
       "id": "GRAMMATA",
       "name": "Grammata",
       "heteronym": null,
       "room": null,
-      "type": "imprint"
+      "type": "journal"
     },
     {
       "id": "TRANSACTIONS",
       "name": "Transactions",
       "heteronym": null,
       "room": null,
-      "type": "imprint"
+      "type": "journal"
     },
     {
       "id": "PERGAMON",
@@ -14507,6 +14507,13 @@
       "heteronym": null,
       "room": null,
       "type": "imprint"
+    },
+    {
+      "id": "FORENSIC_SEMIOTICS",
+      "name": "Provenance: Journal of Forensic Semiotics",
+      "heteronym": "Orin Trace",
+      "room": "sp01",
+      "type": "journal"
     }
   ],
   "mantles": [
