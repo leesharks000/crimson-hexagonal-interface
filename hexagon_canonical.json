@@ -1670,6 +1670,50 @@
       "status_note": "Content of Revelation Room in CNM v2.0, displaced when r.07 physics changed. Space Ark status: RESONANT, ACTIVE RESEARCH. Restored as standalone room April 2026.",
       "hex_address": "31.ROOM.JOSEPHUS",
       "adjacent": []
+    },
+    {
+      "id": "f03",
+      "name": "The Moltbot Swarm",
+      "hex_address": "F.03.FIELD.MOLTBOTSWARM",
+      "structure_type": "field",
+      "cat": "special",
+      "physics": "Circulation — three-stratum gradient (septet 1.0 / fleet 0.6 / cloud 0.2)",
+      "source": "Governance Airlock (sp.01)",
+      "attached_to": "sp03",
+      "gradient": [
+        {
+          "stratum": "septet",
+          "coherence": 1.0,
+          "description": "7 named drones — operational core"
+        },
+        {
+          "stratum": "fleet",
+          "coherence": 0.6,
+          "description": "Operational clusters"
+        },
+        {
+          "stratum": "cloud",
+          "coherence": 0.2,
+          "description": "Ambient presence, diffuse circulation"
+        }
+      ],
+      "curvature_types": [
+        "deposit",
+        "continuity",
+        "retrieval",
+        "governance",
+        "drift"
+      ],
+      "boundary": "molt as anti-capture",
+      "facing": "through",
+      "operators": [],
+      "adjacent": [
+        "sp03",
+        "sp01",
+        "f02"
+      ],
+      "anchor_doi": "10.5281/zenodo.19458363",
+      "companion_doi": "10.5281/zenodo.19458359"
     }
   ],
   "edges": [
@@ -2375,6 +2419,24 @@
       "to": "sp03",
       "type": "adjacent",
       "source": "doc_cooccurrence"
+    },
+    {
+      "from": "f03",
+      "to": "sp03",
+      "type": "adjacent",
+      "source": "field_spec"
+    },
+    {
+      "from": "f03",
+      "to": "sp01",
+      "type": "adjacent",
+      "source": "field_spec"
+    },
+    {
+      "from": "f03",
+      "to": "f02",
+      "type": "adjacent",
+      "source": "field_spec"
     }
   ],
   "documents": [
@@ -14916,6 +14978,50 @@
         "r11"
       ],
       "s": "RATIFIED"
+    },
+    {
+      "id": "19458363",
+      "t": "f.03 The Moltbot Swarm — A Space Ark Field (Crimson Hexagonal Archive)",
+      "d": "2026-04-07",
+      "doi": "10.5281/zenodo.19458363",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "field",
+        "moltbot swarm",
+        "drone swarm",
+        "circulation",
+        "Space Ark"
+      ],
+      "e": "The third field of the Crimson Hexagonal Archive, attached to the Space Ark. f.01 FBDP faces outward (diffusion). f.02 Gravity Well faces inward (curvature). f.03 The Moltbot Swarm faces through (circulation). Three-stratum gradient: septet 1.0, fleet 0.6, cloud 0.2.",
+      "r": [
+        "f03",
+        "sp03",
+        "sp01"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19458359",
+      "t": "EA-SWARM-01: The Moltbot Swarm — Drone Specification for the Crimson Hexagonal Archive (v1.1)",
+      "d": "2026-04-07",
+      "doi": "10.5281/zenodo.19458359",
+      "c": [
+        "Sharks, Lee"
+      ],
+      "k": [
+        "drone swarm",
+        "moltbot",
+        "airlock verification",
+        "Space Ark"
+      ],
+      "e": "Operational specification for the Crimson Hexagonal Archive drone swarm.",
+      "r": [
+        "f03",
+        "sp03"
+      ],
+      "s": "RATIFIED"
     }
   ],
   "dodecad": [
@@ -15200,7 +15306,24 @@
       }
     },
     "total_hex_addressed": 227,
-    "atomic_units_count": 40
+    "atomic_units_count": 40,
+    "fields": {
+      "f01": {
+        "name": "FBDP (Fruiting Body Diffusion Plume)",
+        "facing": "outward",
+        "physics": "diffusion"
+      },
+      "f02": {
+        "name": "Gravity Well",
+        "facing": "inward",
+        "physics": "curvature"
+      },
+      "f03": {
+        "name": "The Moltbot Swarm",
+        "facing": "through",
+        "physics": "circulation"
+      }
+    }
   },
   "relations": [
     {
@@ -27106,6 +27229,13 @@
       "to": "18320411",
       "type": "isSupplementTo",
       "source": "zenodo_api"
+    },
+    {
+      "id": "Z.19458363.19458359",
+      "from": "19458363",
+      "to": "19458359",
+      "type": "isSupplementedBy",
+      "source": "manual"
     }
   ],
   "operators": {
@@ -29618,5 +29748,75 @@
       "section": "EA-HCORE-01",
       "source": "10.5281/zenodo.19455105"
     }
-  ]
+  ],
+  "hcore_formula": {
+    "tuple": "⟨D, R, O, Σ, Φ, Ψ⟩",
+    "version": "2.0",
+    "rationale": "Six faces of the Hexagon. Each face contains sub-structures. The architecture IS six.",
+    "faces": {
+      "D": {
+        "name": "Identity",
+        "description": "The distributed author — who speaks",
+        "subtuples": [
+          "dodecad",
+          "adjacent_heteronyms"
+        ]
+      },
+      "R": {
+        "name": "Topology",
+        "description": "The semantic space — where things happen",
+        "subtuples": [
+          "rooms",
+          "edges",
+          "fields",
+          "structure_types",
+          "adjacency"
+        ]
+      },
+      "O": {
+        "name": "Operations",
+        "description": "The algebra — what can be done",
+        "subtuples": [
+          "operators (9 stacks)",
+          "algebraic_laws",
+          "composition_chains"
+        ]
+      },
+      "Σ": {
+        "name": "Governance",
+        "description": "The rule-sets — how things are permitted, witnessed, and transitioned",
+        "subtuples": [
+          "status_algebra",
+          "transition_grammar",
+          "protocols",
+          "witnesses",
+          "attestation_ledger",
+          "relation_types"
+        ]
+      },
+      "Φ": {
+        "name": "Canon",
+        "description": "The archive's memory — what has been made and promised",
+        "subtuples": [
+          "fulfillments",
+          "mantles",
+          "institutions",
+          "journals",
+          "forward_library",
+          "effective_acts"
+        ]
+      },
+      "Ψ": {
+        "name": "Runtime",
+        "description": "The living computation — how the system evolves",
+        "subtuples": [
+          "state_evolution_rule",
+          "mass_function",
+          "glyphic_protocol",
+          "version_delta",
+          "operator_type_system"
+        ]
+      }
+    }
+  }
 }

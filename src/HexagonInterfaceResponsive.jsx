@@ -256,6 +256,32 @@ function HexMap({ rooms, edges, selected, onSelect, mc, isMobile }) {
             </g>
             <text x={r.x} y={r.y + 8} textAnchor="middle" fill="#2a3a2a" fontSize={isMobile ? 5 : 6} fontFamily="monospace">{r.id}</text>
           </g>); })}
+        {/* f.03 Moltbot Swarm — drone particles radiating from Space Ark */}
+        {(() => {
+          const ark = roomMap["sp03"];
+          if (!ark) return null;
+          const sel03 = selected === "f03";
+          const particles = [];
+          // Septet: 7 bright dots close to Ark
+          for (let i = 0; i < 7; i++) {
+            const angle = (i / 7) * Math.PI * 2 + 0.3;
+            const dist = MAP_SIZE * 1.3 + (i % 3) * 6;
+            particles.push(<circle key={`s${i}`} cx={ark.x + Math.cos(angle) * dist} cy={ark.y + Math.sin(angle) * dist} r={sel03 ? 2.5 : 1.8} fill={sel03 ? "#5ac9c9" : "#5ac9c988"} stroke={sel03 ? "#5ac9c9" : "none"} strokeWidth={0.3} />);
+          }
+          // Fleet: 12 medium dots mid-range
+          for (let i = 0; i < 12; i++) {
+            const angle = (i / 12) * Math.PI * 2 + 0.7;
+            const dist = MAP_SIZE * 2 + (i % 4) * 8;
+            particles.push(<circle key={`f${i}`} cx={ark.x + Math.cos(angle) * dist} cy={ark.y + Math.sin(angle) * dist} r={sel03 ? 1.8 : 1.2} fill={sel03 ? "#5ac9c966" : "#5ac9c944"} />);
+          }
+          // Cloud: 18 faint dots far range
+          for (let i = 0; i < 18; i++) {
+            const angle = (i / 18) * Math.PI * 2 + 1.1;
+            const dist = MAP_SIZE * 3 + (i % 5) * 10;
+            particles.push(<circle key={`c${i}`} cx={ark.x + Math.cos(angle) * dist} cy={ark.y + Math.sin(angle) * dist} r={sel03 ? 1.2 : 0.7} fill={sel03 ? "#5ac9c933" : "#5ac9c918"} />);
+          }
+          return <g onClick={() => onSelect("f03")} style={{ cursor: "pointer" }}>{particles}</g>;
+        })()}
       </svg>
     </div>
   );
@@ -1861,11 +1887,22 @@ export default function HexagonInterfaceResponsive() {
           {view === "HCORE" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
               <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 3 }}>SEALED BONE</div>
-              <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 10 }}>H_core = ⟨D, R, M, I, O, Φ, W, P, Ψ⟩</div>
-              {[["D", `${data.dodecad?.length || 0} heteronyms (distributed author)`], ["R", `${data.rooms.length} rooms (semantic spaces with physics)`], ["M", `${(data.mantles||[]).length} mantles (inhabitable roles requiring bearing-cost)`], ["I", `${(data.institutions||[]).length} institutions + ${(data.journals||[]).length} journals/imprints`], ["O", `${Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)} operators (${Object.keys(data.operators || {}).length} stacks)`], ["Φ", `${(data.fulfillments||[]).length} fulfillments (source → instantiation)`], ["W", `${(data.witnesses||[]).length} witnesses (≥4/7 quorum; MANUS outside W)`], ["P", `${(data.protocols||[]).length} protocols (governing rule-sets)`], ["Ψ", `${(data.attestation_ledger?.chains||[]).length} attestation chains`]].map(([k, v], i) => (
-                <div key={i} style={{ display: "flex", gap: 10, padding: "5px 0", borderBottom: "1px solid #0a0f0a" }}>
-                  <div style={{ width: 18, fontSize: 14, color: mc, fontFamily: "Georgia,serif", textAlign: "right", flexShrink: 0 }}>{k}</div>
-                  <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif" }}>{v}</div>
+              <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: "Georgia,serif", marginBottom: 4 }}>H_core = ⟨D, R, O, Σ, Φ, Ψ⟩</div>
+              <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "Georgia,serif", fontStyle: "italic", marginBottom: 10 }}>Six faces of the Hexagon. Each face contains sub-structures.</div>
+              {[
+                ["D", "Identity", `${data.dodecad?.length || 0} heteronyms`, `who speaks`],
+                ["R", "Topology", `${data.rooms.length} structures · ${(data.edges||[]).length} edges · ${(data.meta?.fields ? Object.keys(data.meta.fields).length : 0)} fields`, `where things happen`],
+                ["O", "Operations", `${Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)} operators · ${Object.keys(data.operators || {}).length} stacks`, `what can be done`],
+                ["Σ", "Governance", `${(data.status_algebra?.levels||[]).length} statuses · ${(data.transition_grammar?.transitions||[]).length} transitions · ${(data.witnesses||[]).length} witnesses · ${(data.protocols||[]).length} protocols`, `how things are permitted`],
+                ["Φ", "Canon", `${(data.mantles||[]).length} mantles · ${(data.fulfillments||[]).length} fulfillments · ${(data.institutions||[]).length} institutions · ${(data.forward_library?.entries||[]).length} Forward Library`, `what has been made`],
+                ["Ψ", "Runtime", `${(data.attestation_ledger?.chains||[]).length} chains · ${data.documents.length} deposits · Z = mass(r)`, `how the system evolves`],
+              ].map(([k, name, counts, desc], i) => (
+                <div key={i} style={{ display: "flex", gap: 8, padding: "6px 0", borderBottom: "1px solid #0a0f0a" }}>
+                  <div style={{ width: 18, fontSize: 16, color: mc, fontFamily: "Georgia,serif", textAlign: "right", flexShrink: 0 }}>{k}</div>
+                  <div>
+                    <div style={{ fontSize: 10, color: "#7a8a5a", fontFamily: "Georgia,serif" }}>{name} <span style={{ color: "#3a4a3a", fontStyle: "italic" }}>— {desc}</span></div>
+                    <div style={{ fontSize: 8, color: "#4a5a4a", fontFamily: "monospace", marginTop: 1 }}>{counts}</div>
+                  </div>
                 </div>
               ))}
 
@@ -2038,32 +2075,39 @@ export default function HexagonInterfaceResponsive() {
               <div style={{ marginTop: 14 }}>
                 <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>CANONICAL OBJECT STORE</div>
                 {[
-                  ["D · Dodecad", data.dodecad?.length || 0],
-                  ["R · Rooms", data.rooms.length],
-                  ["M · Mantles", (data.mantles||[]).length],
-                  ["I · Institutions", (data.institutions||[]).length],
-                  ["O · Operators", Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)],
-                  ["Φ · Fulfillments", (data.fulfillments||[]).length],
-                  ["W · Witnesses", (data.witnesses||[]).length],
-                  ["P · Protocols", (data.protocols||[]).length],
-                  ["Ψ · Attestation Chains", (data.attestation_ledger?.chains||[]).length],
-                  ["Σ · Status Levels", (data.status_algebra?.levels||[]).length],
-                  ["Δ · Transitions", (data.transition_grammar?.transitions||[]).length],
-                  ["E · Relation Types", (data.relation_types?.types||[]).length],
-                  ["—", "—"],
-                  ["Documents", data.documents.length],
-                  ["Edges", data.edges.length],
-                  ["Relations", data.relations.length],
-                  ["Journals", (data.journals||[]).length],
-                  ["Disciplines", (data.disciplines || []).length],
-                  ["Variant Arks", (data.variant_arks || []).length],
-                  ["Effective Acts", ((data.effective_acts?.deposited||[]).length + (data.effective_acts?.resonant||[]).length)],
-                  ["Forward Library", (data.forward_library?.entries||[]).length],
+                  ["D", ""],
+                  ["  Dodecad", data.dodecad?.length || 0],
+                  ["R", ""],
+                  ["  Rooms", data.rooms.length],
+                  ["  Edges", (data.edges||[]).length],
+                  ["  Fields", Object.keys(data.meta?.fields || {}).length],
+                  ["O", ""],
+                  ["  Operators", Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)],
+                  ["  Stacks", Object.keys(data.operators || {}).length],
+                  ["Σ", ""],
+                  ["  Status Levels", (data.status_algebra?.levels||[]).length],
+                  ["  Transitions", (data.transition_grammar?.transitions||[]).length],
+                  ["  Witnesses", (data.witnesses||[]).length],
+                  ["  Protocols", (data.protocols||[]).length],
+                  ["  Relation Types", (data.relation_types?.types||[]).length],
+                  ["Φ", ""],
+                  ["  Mantles", (data.mantles||[]).length],
+                  ["  Fulfillments", (data.fulfillments||[]).length],
+                  ["  Institutions", (data.institutions||[]).length],
+                  ["  Journals", (data.journals||[]).length],
+                  ["  Forward Library", (data.forward_library?.entries||[]).length],
+                  ["  Effective Acts", ((data.effective_acts?.deposited||[]).length + (data.effective_acts?.resonant||[]).length)],
+                  ["Ψ", ""],
+                  ["  Attestation Chains", (data.attestation_ledger?.chains||[]).length],
+                  ["  Documents", data.documents.length],
+                  ["  Relations", data.relations.length],
+                  ["  Atomic Units", (data.atomic_units||[]).length],
                 ].map(([label, count], i) => (
-                  label === "—" ? <div key={i} style={{ borderBottom: "1px solid #1a1f1a", margin: "3px 0" }} /> :
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
-                    <span style={{ fontSize: 9, color: "#5a6a4a" }}>{label}</span>
-                    <span style={{ fontSize: 9, color: mc, fontFamily: "monospace" }}>{count}</span>
+                  count === "" ? 
+                    <div key={i} style={{ fontSize: 10, color: mc, fontFamily: "Georgia,serif", padding: "4px 0 1px 0", borderBottom: "1px solid #0a0f0a" }}>{label}</div> :
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "1px 0 1px 8px", borderBottom: "1px solid #060a06" }}>
+                    <span style={{ fontSize: 8, color: "#5a6a4a" }}>{label}</span>
+                    <span style={{ fontSize: 8, color: mc, fontFamily: "monospace" }}>{count}</span>
                   </div>
                 ))}
               </div>
