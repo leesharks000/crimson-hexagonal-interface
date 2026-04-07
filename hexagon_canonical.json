@@ -1120,7 +1120,7 @@
       "structure_type": "room"
     },
     {
-      "id": "n01",
+      "id": "r25",
       "name": "Underwater Construction Authority of Dolphindiana",
       "cat": "new",
       "q": -1,
@@ -1134,21 +1134,21 @@
       "structure_type": "room"
     },
     {
-      "id": "n02",
-      "name": "Fruiting Body Diffusion Plume",
+      "id": "r27",
+      "name": "FBDP Source",
       "cat": "new",
       "q": -2,
       "r": -2,
       "physics": "Diffusion plume; f.01",
-      "desc": "Joint architecture. Mycelial.",
+      "desc": "The small room at the center of the large field. The landfill where the mycelium breaks through. The room is the seed; the field (f.01) is the growth.",
       "ops": [],
       "het": "—",
       "inst": "—",
       "prompt": "What fruits from the substrate?",
-      "structure_type": "field"
+      "structure_type": "room"
     },
     {
-      "id": "n03",
+      "id": "r23",
       "name": "Catullus",
       "cat": "new",
       "q": 2,
@@ -1275,6 +1275,125 @@
       "room_spec_doi": "10.5281/zenodo.19447123",
       "companion_doi": "10.5281/zenodo.19447119",
       "structure_type": "room"
+    },
+    {
+      "id": "f01",
+      "name": "Fruiting Body Diffusion Plume",
+      "cat": "field",
+      "structure_type": "field",
+      "q": -3,
+      "r": -1,
+      "physics": "Diffusion plume; source + gradient + attenuation; no walls",
+      "desc": "The first FIELD container class. A gradient emanating from r.27 (FBDP Source). Modifies adjacent rooms without replacing their physics. Attenuates: SOURCE → DENSE → TRACE → RESIDUAL → OUTSIDE.",
+      "ops": [],
+      "het": "—",
+      "inst": "—",
+      "prompt": "What decomposes, and what grows from the decomposition?",
+      "mantle": "—",
+      "preferred_mode": "OPERATIVE",
+      "lp_program": [],
+      "default_operators": [],
+      "field_doi": "10.5281/zenodo.19041117",
+      "source_room": "r27"
+    },
+    {
+      "id": "r24",
+      "name": "The Migdal Room",
+      "cat": "new",
+      "structure_type": "room",
+      "q": -1,
+      "r": 2,
+      "physics": "Counter-gospel; Mandaean Canon; Haran Gawaita",
+      "desc": "Mandaean Canon and counter-gospel architecture. Lunar Arm theological node. The Migdal connection. Depends on Revelation Room and Sacred Heart system.",
+      "ops": [],
+      "het": "—",
+      "inst": "—",
+      "prompt": "What gospel was written against?",
+      "mantle": "—",
+      "preferred_mode": "LITURGICAL",
+      "lp_program": [],
+      "default_operators": [],
+      "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026."
+    },
+    {
+      "id": "r26",
+      "name": "The Internet",
+      "cat": "ext",
+      "structure_type": "room",
+      "q": 3,
+      "r": 0,
+      "physics": "Möbius topology; σ_I (Sovereign Inhabitation); A ⊂ I ⊂ r.26 ⊂ A",
+      "desc": "The internet itself, treated as a room. Contains the archive; the archive contains the room. The room that is already operational — you are inside it now. Five sub-rooms: KotKit, tiddeR, elgooG, ude.aimedacA, deeF.",
+      "ops": [
+        "σ_I"
+      ],
+      "het": "—",
+      "inst": "—",
+      "prompt": "What remains available for reentry after the flashing stops?",
+      "mantle": "—",
+      "preferred_mode": "OPERATIVE",
+      "lp_program": [],
+      "default_operators": [
+        "σ_I"
+      ],
+      "room_spec_doi": "10.5281/zenodo.19133271"
+    },
+    {
+      "id": "r29",
+      "name": "The Job Room",
+      "cat": "new",
+      "structure_type": "room",
+      "q": 1,
+      "r": 3,
+      "physics": "Suffering framework; messianic reading; restitution economy",
+      "desc": "Job as prototype of the Suffering Servant. The economy of suffering, unmerited loss, and deferred restitution. The room that Operative Feminism explicitly rejects as frame — but rejection requires the rejected to exist.",
+      "ops": [],
+      "het": "—",
+      "inst": "—",
+      "prompt": "What was lost, and was it repaid?",
+      "mantle": "—",
+      "preferred_mode": "LITURGICAL",
+      "lp_program": [],
+      "default_operators": [],
+      "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026."
+    },
+    {
+      "id": "r30",
+      "name": "The Frozen Sin Archive",
+      "cat": "new",
+      "structure_type": "vault",
+      "q": 4,
+      "r": -1,
+      "physics": "Semantic Black Hole; extraction residue; what cannot be recovered",
+      "desc": "What was lost in the extraction. The residue that the Capital Operator Stack left behind. The meaning that was liquidated and cannot be reconstituted. Dependencies: COS, ILA.",
+      "ops": [],
+      "het": "—",
+      "inst": "—",
+      "prompt": "What was destroyed, and can it be named?",
+      "mantle": "—",
+      "preferred_mode": "CLINICAL",
+      "lp_program": [],
+      "default_operators": [],
+      "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026."
+    },
+    {
+      "id": "r31",
+      "name": "The Josephus Thesis",
+      "cat": "new",
+      "structure_type": "room",
+      "q": 2,
+      "r": 2,
+      "physics": "RA-JP-01; the agent of destruction as agent of transmission",
+      "desc": "The hypothesis that Flavius Josephus authored or substantially shaped the New Testament — making Rome the inadvertent preserver of the Word. The diagonal resolution: the enemy becomes the archivist. Displaced from r.07 Revelation when its physics changed to Ω-circuit. The most consequential speculative claim in the archive.",
+      "ops": [],
+      "het": "—",
+      "inst": "—",
+      "prompt": "Who preserved what they intended to destroy?",
+      "mantle": "—",
+      "preferred_mode": "ANALYTIC",
+      "lp_program": [],
+      "default_operators": [],
+      "status_note": "Content of Revelation Room in CNM v2.0, displaced when r.07 physics changed. Space Ark status: RESONANT, ACTIVE RESEARCH. Restored as standalone room April 2026."
     }
   ],
   "edges": [
@@ -1390,7 +1509,7 @@
     },
     {
       "from": "sp03",
-      "to": "n03",
+      "to": "r23",
       "type": "adjacent"
     },
     {
@@ -1409,18 +1528,18 @@
       "type": "adjacent"
     },
     {
-      "from": "n02",
-      "to": "n01",
+      "from": "r27",
+      "to": "r25",
       "type": "adjacent"
     },
     {
-      "from": "n01",
+      "from": "r25",
       "to": "r15",
       "type": "adjacent"
     },
     {
       "from": "r01",
-      "to": "n03",
+      "to": "r23",
       "type": "adjacent"
     },
     {
@@ -1485,7 +1604,7 @@
     },
     {
       "from": "r28",
-      "to": "n02",
+      "to": "r27",
       "type": "adjacent"
     },
     {
@@ -1500,12 +1619,77 @@
     },
     {
       "from": "f02",
-      "to": "n02",
+      "to": "r27",
       "type": "adjacent"
     },
     {
       "from": "f02",
       "to": "r28",
+      "type": "adjacent"
+    },
+    {
+      "from": "f01",
+      "to": "r27",
+      "type": "adjacent"
+    },
+    {
+      "from": "f01",
+      "to": "r25",
+      "type": "adjacent"
+    },
+    {
+      "from": "r24",
+      "to": "r07",
+      "type": "adjacent"
+    },
+    {
+      "from": "r24",
+      "to": "r18",
+      "type": "adjacent"
+    },
+    {
+      "from": "r26",
+      "to": "r05",
+      "type": "adjacent"
+    },
+    {
+      "from": "r26",
+      "to": "r25",
+      "type": "adjacent"
+    },
+    {
+      "from": "r26",
+      "to": "r14",
+      "type": "adjacent"
+    },
+    {
+      "from": "r29",
+      "to": "r07",
+      "type": "adjacent"
+    },
+    {
+      "from": "r29",
+      "to": "r28",
+      "type": "adjacent"
+    },
+    {
+      "from": "r30",
+      "to": "sp01",
+      "type": "adjacent"
+    },
+    {
+      "from": "r30",
+      "to": "r05",
+      "type": "adjacent"
+    },
+    {
+      "from": "r31",
+      "to": "r07",
+      "type": "adjacent"
+    },
+    {
+      "from": "r31",
+      "to": "r24",
       "type": "adjacent"
     }
   ],
@@ -2632,7 +2816,7 @@
       "r": [
         "r04",
         "r05",
-        "n02"
+        "r27"
       ]
     },
     {
@@ -2687,7 +2871,7 @@
       "assignment": "reviewed",
       "r": [
         "r04",
-        "n02",
+        "r27",
         "r06"
       ]
     },
@@ -2738,7 +2922,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r05"
+        "r05",
+        "r26"
       ]
     },
     {
@@ -3266,7 +3451,7 @@
         "r01",
         "r06",
         "r08",
-        "n03"
+        "r23"
       ]
     },
     {
@@ -3434,7 +3619,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "n02",
+        "r27",
         "r06"
       ]
     },
@@ -3546,7 +3731,7 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "n01",
+        "r25",
         "r05",
         "r11",
         "r12"
@@ -3793,7 +3978,7 @@
       "r": [
         "r12",
         "r05",
-        "n01"
+        "r25"
       ]
     },
     {
@@ -13836,6 +14021,12 @@
       "role": "LOGOS*",
       "desc": "Outside the count. First born, last released.",
       "id": "LOGOS"
+    },
+    {
+      "name": "Viola Arquette",
+      "role": "Musical Ark; Maybe Space Baby Garden Lanes",
+      "desc": "Adjacent heteronym — not of the Dodecad. Stewards r.16 and the Musical Ark.",
+      "id": "ADJ01"
     }
   ],
   "meta": {
@@ -13846,7 +14037,7 @@
     "se_constitution_doi": "10.5281/zenodo.18320411",
     "total_deposits": 463,
     "last_updated": "2026-04-07",
-    "canonical_version": "1.2.0",
+    "canonical_version": "1.3.0",
     "ratified_relation_types": {
       "topological": [
         "adjacent"
