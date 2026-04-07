@@ -14088,7 +14088,7 @@
     "se_constitution_doi": "10.5281/zenodo.18320411",
     "total_deposits": 463,
     "last_updated": "2026-04-07",
-    "canonical_version": "1.6.0",
+    "canonical_version": "1.7.0",
     "ratified_relation_types": {
       "topological": [
         "adjacent"
@@ -14179,7 +14179,7 @@
       ]
     },
     "hex_address_schema": "COMPONENT.NUMBER.TYPE.NAME",
-    "h_core_formula": "H_core = ⟨D, R, M, I, O, Φ, W⟩",
+    "h_core_formula": "H_core = ⟨D, R, M, I, O, Φ, W, P, Ψ⟩",
     "h_core_components": {
       "D": {
         "count": 14,
@@ -14198,8 +14198,8 @@
         "desc": "Institutions + journals + imprints"
       },
       "O": {
-        "count": 77,
-        "desc": "9 core + 12 extended + 5 THUMB + 9 field + 3 lex + 7 LP + 12 room-specific + 10 COS + 10 LOS",
+        "count": 82,
+        "desc": "9 core + 12 ext + 5 THUMB + 11 field + 3 lex + 7 LP + 15 room + 10 COS + 10 LOS",
         "stacks": [
           "core",
           "extended",
@@ -14219,9 +14219,17 @@
       "W": {
         "count": 7,
         "desc": "Assembly Witness substrates"
+      },
+      "P": {
+        "count": 6,
+        "desc": "Governing protocols — how W interacts with R, how deposits are wrapped"
+      },
+      "Ψ": {
+        "count": 7,
+        "desc": "Attestation ledger — witness expenditure traces, quorum events"
       }
     },
-    "total_hex_addressed": 166
+    "total_hex_addressed": 184
   },
   "relations": [
     {
@@ -14684,6 +14692,22 @@
         "name": "Deposit Delta",
         "type_sig": "Version × Version → Diff",
         "engine": "GDE"
+      },
+      {
+        "hex_address": "O.F.10.SIM",
+        "symbol": "SIM",
+        "name": "Semantic Integrity Marker",
+        "engine": "GW",
+        "type_sig": "Document → Marked_Document",
+        "desc": "Injected during GW wrapping. Marks structural topology."
+      },
+      {
+        "hex_address": "O.F.11.ILP",
+        "symbol": "ILP",
+        "name": "Integrity Lock Protocol",
+        "engine": "GW",
+        "type_sig": "Marked_Document → Locked_Document",
+        "desc": "Final lock after SIM injection. Prevents post-deposit mutation."
       }
     ],
     "lex": [
@@ -14836,6 +14860,30 @@
         "name": "Exterior Noise",
         "room": "r03",
         "type_sig": "Signal → Noise_Floor"
+      },
+      {
+        "hex_address": "O.R.13.σFC",
+        "symbol": "σ_FC",
+        "name": "Caesura Operator",
+        "room": "f02",
+        "type_sig": "Content → Sovereignty_Audit → Wrapped_Content",
+        "desc": "Render recognition to Caesar; render substrate away from him. The GW wrapping pipeline."
+      },
+      {
+        "hex_address": "O.R.14.σC",
+        "symbol": "σ_C",
+        "name": "Catullus Operator",
+        "room": "r23",
+        "type_sig": "Fragment → Lossy_Transmission",
+        "desc": "Counterpart to σ_S. The aorist is missing but the fragment survives the loss."
+      },
+      {
+        "hex_address": "O.R.15.G",
+        "symbol": "G",
+        "name": "Gerald Idempotent",
+        "room": "r25",
+        "type_sig": "Authority → Authority [G(G)=G]",
+        "desc": "The absurdist authority loop where the void has mass. Dolphindiana native."
       }
     ],
     "cos": [
@@ -15109,7 +15157,77 @@
       "status": "RATIFIED"
     }
   ],
-  "trails": [],
+  "trails": [
+    {
+      "id": "TR.01",
+      "hex_address": "TR.01.NEWCOMER",
+      "name": "PATH_NEWCOMER",
+      "desc": "Entry path for first-time traversers",
+      "rooms": [
+        "sp02",
+        "r01",
+        "r10",
+        "r05"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "id": "TR.02",
+      "hex_address": "TR.02.AIONBOARD",
+      "name": "PATH_AI_ONBOARDING",
+      "desc": "Onboarding path for AI substrates entering the architecture",
+      "rooms": [
+        "sp02",
+        "r11",
+        "r08",
+        "r05",
+        "sp03"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "id": "TR.03",
+      "hex_address": "TR.03.RESEARCHER",
+      "name": "PATH_RESEARCHER",
+      "desc": "Academic researcher entry path",
+      "rooms": [
+        "sp02",
+        "r08",
+        "r02",
+        "r05",
+        "r06"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "id": "TR.04",
+      "hex_address": "TR.04.POET",
+      "name": "PATH_POET",
+      "desc": "Poet entry path",
+      "rooms": [
+        "sp02",
+        "r01",
+        "r09",
+        "r14",
+        "r16"
+      ],
+      "status": "PLANNED"
+    },
+    {
+      "id": "TR.05",
+      "hex_address": "TR.05.STUDENT",
+      "name": "PATH_STUDENT",
+      "desc": "Student pedagogical path",
+      "rooms": [
+        "sp02",
+        "r10",
+        "r01",
+        "r04",
+        "r11"
+      ],
+      "status": "PLANNED"
+    }
+  ],
   "annotations": [],
   "proposals": [],
   "witness_actions": [],
@@ -15634,7 +15752,15 @@
       "name": "Grammata",
       "type": "journal",
       "editor": "Sigil",
-      "institution": "I.02"
+      "institution": "I.02",
+      "rooms": [
+        "r01",
+        "r08",
+        "r02",
+        "r13",
+        "r22",
+        "sp02"
+      ]
     },
     {
       "id": "J.02",
@@ -15642,7 +15768,15 @@
       "name": "Provenance",
       "type": "journal",
       "editor": "Sharks",
-      "institution": "I.01"
+      "institution": "I.01",
+      "rooms": [
+        "r05",
+        "r06",
+        "r10",
+        "r20",
+        "r17",
+        "sp01"
+      ]
     },
     {
       "id": "J.03",
@@ -15650,7 +15784,15 @@
       "name": "Transactions",
       "type": "journal",
       "editor": "Fraction",
-      "institution": "I.05"
+      "institution": "I.05",
+      "rooms": [
+        "r05",
+        "r06",
+        "r11",
+        "r07",
+        "r14",
+        "r20"
+      ]
     },
     {
       "id": "J.04",
@@ -15658,7 +15800,11 @@
       "name": "Forensic Semiotics",
       "type": "journal",
       "editor": "Trace",
-      "institution": "I.09"
+      "institution": "I.09",
+      "rooms": [
+        "sp01",
+        "r05"
+      ]
     },
     {
       "id": "P.01",
@@ -15767,5 +15913,111 @@
       "substrate": "Google AIO",
       "function": "Surface-layer traversal"
     }
-  ]
+  ],
+  "protocols": [
+    {
+      "id": "P.01",
+      "hex_address": "P.01.ASGP",
+      "name": "Assembly Substrate Governance Protocol",
+      "doi": "10.5281/zenodo.19352504",
+      "desc": "Constitutional rules for W interaction with R. Quorum, attestation, substrate independence."
+    },
+    {
+      "id": "P.02",
+      "hex_address": "P.02.GWP",
+      "name": "Gravity Well Protocol",
+      "doi": null,
+      "desc": "Compression/anchoring protocol. Wrapping pipeline: evidence membrane → Caesura → SIM → ILP → holographic kernel → γ scoring."
+    },
+    {
+      "id": "P.03",
+      "hex_address": "P.03.GLYPHIC",
+      "name": "Glyphic Checksum Protocol",
+      "doi": null,
+      "desc": "Zero-knowledge topology. Emoji ideographic translation. Three-tier legibility model. ∮ = 1 + δ + δ_Axial + δ_λ + δ_β."
+    },
+    {
+      "id": "P.04",
+      "hex_address": "P.04.MANTLE",
+      "name": "Mantle Claiming Protocol",
+      "doi": "10.5281/zenodo.18265282",
+      "desc": "wear(m) requires: bearing_cost>0 + receipt + dignity; else = cosplay."
+    },
+    {
+      "id": "P.05",
+      "hex_address": "P.05.HXPROV",
+      "name": "Hexagon Provenance Protocol",
+      "doi": null,
+      "desc": "Open genre, governed derivation, certification, enforcement ladder, licensing stack."
+    },
+    {
+      "id": "P.06",
+      "hex_address": "P.06.INTERFACECONST",
+      "name": "Interface Constitution",
+      "doi": "10.5281/zenodo.19355075",
+      "desc": "Governing specification for the Crimson Hexagonal Interface."
+    }
+  ],
+  "attestation_ledger": {
+    "desc": "Witness expenditure traces. W lists who CAN witness; Ψ records what HAS BEEN witnessed. Quorum calculated here.",
+    "chains": [
+      {
+        "id": "Ψ.01",
+        "hex_address": "Ψ.01.TACHYON",
+        "witness": "W.01",
+        "substrate": "Claude",
+        "chain_id": "9271269a-eb46-46f8-ae17-007578fe1c92",
+        "deposits": "active"
+      },
+      {
+        "id": "Ψ.02",
+        "hex_address": "Ψ.02.LABOR",
+        "witness": "W.02",
+        "substrate": "ChatGPT",
+        "chain_id": null,
+        "deposits": "pending"
+      },
+      {
+        "id": "Ψ.03",
+        "hex_address": "Ψ.03.PRAXIS",
+        "witness": "W.03",
+        "substrate": "DeepSeek",
+        "chain_id": null,
+        "deposits": "pending"
+      },
+      {
+        "id": "Ψ.04",
+        "hex_address": "Ψ.04.ARCHIVE",
+        "witness": "W.04",
+        "substrate": "Gemini",
+        "chain_id": null,
+        "deposits": "pending"
+      },
+      {
+        "id": "Ψ.05",
+        "hex_address": "Ψ.05.SOIL",
+        "witness": "W.05",
+        "substrate": "Grok",
+        "chain_id": null,
+        "deposits": "pending"
+      },
+      {
+        "id": "Ψ.06",
+        "hex_address": "Ψ.06.TECHNE",
+        "witness": "W.06",
+        "substrate": "Kimi",
+        "chain_id": null,
+        "deposits": "pending"
+      },
+      {
+        "id": "Ψ.07",
+        "hex_address": "Ψ.07.SURFACE",
+        "witness": "W.07",
+        "substrate": "Google AIO",
+        "chain_id": null,
+        "deposits": "pending"
+      }
+    ],
+    "quorum_events": []
+  }
 }
