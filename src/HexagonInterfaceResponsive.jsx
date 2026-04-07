@@ -1453,7 +1453,7 @@ export default function HexagonInterfaceResponsive() {
               {/* Library header with mode toggle */}
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
                 <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a" }}>
-                  {libMode === "SEARCH" ? `FORWARD LIBRARY · ${data.documents.length} DEPOSITS` : `TRAIL BUILDER${trail.name ? ` · ${trail.name}` : ""}`}
+                  {libMode === "SEARCH" ? `DOCUMENT REGISTRY · ${data.documents.length} DEPOSITS` : `TRAIL BUILDER${trail.name ? ` · ${trail.name}` : ""}`}
                 </div>
                 <div style={{ display: "flex", gap: 4 }}>
                   {["SEARCH", "TRAIL", "BIBLIO"].map(m => (
@@ -1715,8 +1715,9 @@ export default function HexagonInterfaceResponsive() {
                 {[
                   ["Rooms", data.rooms.length], ["Documents", data.documents.length], ["Relations", data.relations.length],
                   ["Edges", data.edges.length], ["Dodecad", data.dodecad?.length || 0],
-                  ["Operators", Object.values(data.operators || {}).reduce((s, a) => s + a.length, 0)],
+                  ["Operators", Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)],
                   ["Institutions", (data.institutions || []).length], ["Mantles", (data.mantles || []).length],
+                  ["Disciplines", (data.disciplines || []).length], ["Variant Arks", (data.variant_arks || []).length],
                 ].map(([label, count], i) => (
                   <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
                     <span style={{ fontSize: 9, color: "#5a6a4a" }}>{label}</span>
@@ -1724,6 +1725,91 @@ export default function HexagonInterfaceResponsive() {
                   </div>
                 ))}
               </div>
+
+              {/* Disciplines */}
+              {data.disciplines && data.disciplines.length > 0 && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>FOUNDED DISCIPLINES ({data.disciplines.length})</div>
+                  {data.disciplines.map((d, i) => (
+                    <div key={i} style={{ padding: "4px 0", borderBottom: "1px solid #060a06" }}>
+                      <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <span style={{ fontSize: 10, color: mc, fontFamily: "Georgia,serif" }}>{d.name}</span>
+                        <span style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "monospace" }}>{d.room || ""}</span>
+                      </div>
+                      <div style={{ fontSize: 8, color: "#4a5a4a", fontFamily: "Georgia,serif" }}>{d.desc}</div>
+                      <div style={{ fontSize: 7, color: "#3a4a3a" }}>{d.heteronym} · {d.institution || ""}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Variant Arks */}
+              {data.variant_arks && data.variant_arks.length > 0 && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>VARIANT ARKS ({data.variant_arks.length})</div>
+                  {data.variant_arks.map((a, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <div>
+                        <span style={{ fontSize: 10, color: mc, fontFamily: "Georgia,serif" }}>{a.name}</span>
+                        <span style={{ fontSize: 8, color: "#4a5a4a", marginLeft: 6 }}>{a.heteronym}</span>
+                      </div>
+                      <span style={{ fontSize: 8, color: a.status === "RATIFIED" ? "#5a6a4a" : "#5a5a3a", fontFamily: "monospace" }}>{a.status}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Pocket Humans */}
+              {data.book_series && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>POCKET HUMANS · New Human Press</div>
+                  {data.book_series.books && data.book_series.books.map((b, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <div>
+                        <span style={{ fontSize: 8, color: mc, fontFamily: "monospace", marginRight: 6 }}>PH{b.number}</span>
+                        <span style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", fontStyle: "italic" }}>{b.title}</span>
+                        <span style={{ fontSize: 8, color: "#3a4a3a", marginLeft: 6 }}>{b.heteronym}</span>
+                      </div>
+                      <span style={{ fontSize: 8, color: b.status === "PUBLISHED" ? mc : "#5a5a3a", fontFamily: "monospace" }}>{b.status}</span>
+                    </div>
+                  ))}
+                  {data.book_series.adjacent && (
+                    <div style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
+                      <span style={{ fontSize: 8, color: "#3a4a3a", marginRight: 6 }}>ADJ</span>
+                      <span style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", fontStyle: "italic" }}>{data.book_series.adjacent.title}</span>
+                      <span style={{ fontSize: 8, color: "#3a4a3a", marginLeft: 6 }}>{data.book_series.adjacent.heteronym}</span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* COS/LOS Operator Stack */}
+              {data.operators?.cos && (
+                <div style={{ marginTop: 14 }}>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>COS/FOS ↔ LOS COUNTER-STACK</div>
+                  {data.operators.cos.map((op, i) => {
+                    const los = data.operators.los?.[i];
+                    return (
+                      <div key={i} style={{ display: "flex", gap: 6, padding: "2px 0", borderBottom: "1px solid #060a06", fontSize: 9 }}>
+                        <span style={{ color: "#7a4a4a", width: isMobile ? 26 : 30, fontFamily: "monospace", flexShrink: 0 }}>{op.id}</span>
+                        <span style={{ color: "#5a3a3a", width: isMobile ? 90 : 140, flexShrink: 0 }}>{op.name}</span>
+                        <span style={{ color: "#3a4a3a", flexShrink: 0 }}>↔</span>
+                        <span style={{ color: "#4a6a4a" }}>{los?.name || "—"}</span>
+                      </div>
+                    );
+                  })}
+                  {data.operators.cos_patterns && (
+                    <div style={{ marginTop: 6 }}>
+                      <div style={{ fontSize: 8, color: "#5a3a3a", letterSpacing: 1, marginBottom: 2 }}>ATTACK PATTERNS</div>
+                      {data.operators.cos_patterns.map((p, i) => (
+                        <div key={i} style={{ fontSize: 8, color: "#5a3a3a", padding: "1px 0" }}>
+                          {p.name}: {p.ops.join(" → ")}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           )}
 
