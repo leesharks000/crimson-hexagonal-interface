@@ -178,7 +178,7 @@
     },
     {
       "id": "r05",
-      "name": "Sem Econ",
+      "name": "Semantic Economy",
       "cat": "core",
       "q": -2,
       "r": -1,
@@ -233,7 +233,7 @@
     },
     {
       "id": "r06",
-      "name": "Marx",
+      "name": "The Marx Room",
       "cat": "core",
       "q": -2,
       "r": 1,
@@ -603,7 +603,7 @@
     },
     {
       "id": "r14",
-      "name": "Studio",
+      "name": "Studio for Patacinematics",
       "cat": "ext",
       "q": -3,
       "r": 1,
@@ -646,7 +646,7 @@
     },
     {
       "id": "r15",
-      "name": "LO!",
+      "name": "Lagrange Observatory!",
       "cat": "ext",
       "q": 0,
       "r": -2,
@@ -687,7 +687,7 @@
     },
     {
       "id": "r16",
-      "name": "MSBGL",
+      "name": "Maybe Space Baby Garden Lanes",
       "cat": "ext",
       "q": -3,
       "r": 2,
@@ -726,7 +726,7 @@
     },
     {
       "id": "r17",
-      "name": "MSMRM",
+      "name": "Moving Statues Made of Rubies Mint",
       "cat": "ext",
       "q": -2,
       "r": 2,
@@ -3253,7 +3253,8 @@
       "r": [
         "r01",
         "r06",
-        "r08"
+        "r08",
+        "n03"
       ]
     },
     {
@@ -3533,7 +3534,8 @@
       "assignment": "heuristic",
       "r": [
         "r12",
-        "r05"
+        "r05",
+        "n01"
       ]
     },
     {
@@ -3772,7 +3774,8 @@
       "assignment": "heuristic",
       "r": [
         "r12",
-        "r05"
+        "r05",
+        "n01"
       ]
     },
     {
@@ -3881,7 +3884,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "r20"
       ]
     },
     {
@@ -3904,7 +3908,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "r20"
       ]
     },
     {
@@ -5531,7 +5536,8 @@
       "r": [
         "r05",
         "r14",
-        "sp01"
+        "sp01",
+        "r17"
       ]
     },
     {
@@ -6035,7 +6041,8 @@
       "assignment": "heuristic",
       "r": [
         "r11",
-        "r05"
+        "r05",
+        "r19"
       ]
     },
     {
@@ -6061,7 +6068,8 @@
       "assignment": "heuristic",
       "r": [
         "r11",
-        "r02"
+        "r02",
+        "r19"
       ]
     },
     {
@@ -6089,7 +6097,8 @@
       "r": [
         "r11",
         "r05",
-        "r02"
+        "r02",
+        "r19"
       ]
     },
     {
@@ -6240,7 +6249,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r08"
+        "r08",
+        "r16"
       ]
     },
     {
@@ -6265,7 +6275,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r11"
+        "r11",
+        "r16"
       ]
     },
     {
@@ -6545,7 +6556,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r08"
+        "r08",
+        "r22"
       ]
     },
     {
@@ -8826,7 +8838,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "sp04"
+        "sp04",
+        "sp02"
       ]
     },
     {
@@ -9092,7 +9105,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp02"
       ]
     },
     {
@@ -9142,7 +9156,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r09"
+        "r09",
+        "sp02"
       ]
     },
     {
@@ -9222,7 +9237,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r08"
+        "r08",
+        "sp02"
       ]
     },
     {
@@ -9247,7 +9263,8 @@
       "status": "RATIFIED",
       "assignment": "heuristic",
       "r": [
-        "r08"
+        "r08",
+        "sp02"
       ]
     },
     {
