@@ -1529,7 +1529,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "19354818",
@@ -1551,7 +1554,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "sp01"
+      ]
     },
     {
       "id": "19353182",
@@ -1575,7 +1582,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r11",
+        "r15",
+        "r02"
+      ]
     },
     {
       "id": "19352504",
@@ -1596,7 +1608,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "19341893",
@@ -1619,7 +1634,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "19341887",
@@ -1640,7 +1659,10 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r06"
+      ]
     },
     {
       "id": "19341885",
@@ -1663,7 +1685,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "19339692",
@@ -1687,7 +1713,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r05",
+        "r06",
+        "sp01"
+      ]
     },
     {
       "id": "19338708",
@@ -1710,7 +1741,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r05",
+        "r06",
+        "sp01"
+      ]
     },
     {
       "id": "19338438",
@@ -1731,7 +1767,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "19336567",
@@ -1753,7 +1792,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "19334694",
@@ -1777,7 +1819,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "19323274",
@@ -1801,7 +1848,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "19319642",
@@ -1824,7 +1876,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "19317139",
@@ -1848,7 +1904,12 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r14"
+      ]
     },
     {
       "id": "19317126",
@@ -1872,7 +1933,12 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "19317102",
@@ -1896,7 +1962,12 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r14"
+      ]
     },
     {
       "id": "19296677",
@@ -1919,7 +1990,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19296664",
@@ -1942,7 +2017,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19296660",
@@ -1965,7 +2044,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19296654",
@@ -1988,7 +2071,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19296650",
@@ -2011,7 +2098,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19296648",
@@ -2034,7 +2125,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19288404",
@@ -2057,7 +2152,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19288384",
@@ -2080,7 +2179,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "19240147",
@@ -2101,7 +2204,10 @@
         "r07"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r07"
+      ]
     },
     {
       "id": "19240141",
@@ -2125,7 +2231,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r08",
+        "r02",
+        "sp01"
+      ]
     },
     {
       "id": "19238032",
@@ -2146,7 +2257,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "19238027",
@@ -2168,7 +2282,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "19238021",
@@ -2191,7 +2308,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "19226055",
@@ -2213,7 +2334,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r05"
+      ]
     },
     {
       "id": "19224022",
@@ -2234,7 +2359,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "19202821",
@@ -2256,7 +2384,10 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp01"
+      ]
     },
     {
       "id": "19202813",
@@ -2279,7 +2410,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "19202705",
@@ -2301,7 +2436,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "19202461",
@@ -2323,7 +2461,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "19202401",
@@ -2346,7 +2487,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "19200688",
@@ -2367,7 +2512,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "19200193",
@@ -2388,7 +2536,10 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12"
+      ]
     },
     {
       "id": "19187421",
@@ -2412,7 +2563,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "19174562",
@@ -2436,7 +2592,12 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r05",
+        "r06"
+      ]
     },
     {
       "id": "19155999",
@@ -2459,7 +2620,12 @@
         "n02"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r04",
+        "r05",
+        "n02"
+      ]
     },
     {
       "id": "19156714",
@@ -2482,7 +2648,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "19155610",
@@ -2505,7 +2676,12 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r04",
+        "n02",
+        "r06"
+      ]
     },
     {
       "id": "19133309",
@@ -2527,7 +2703,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "19133271",
@@ -2549,7 +2728,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "19124130",
@@ -2570,7 +2752,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "19116151",
@@ -2594,7 +2779,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19115702",
@@ -2618,7 +2808,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19115686",
@@ -2642,7 +2837,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19115676",
@@ -2666,7 +2866,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19115139",
@@ -2690,7 +2895,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19114937",
@@ -2714,7 +2924,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19114334",
@@ -2738,7 +2953,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19114089",
@@ -2762,7 +2982,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19113822",
@@ -2786,7 +3011,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "19113326",
@@ -2811,7 +3041,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r12",
+        "r08"
+      ]
     },
     {
       "id": "19099770",
@@ -2834,7 +3069,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "19099760",
@@ -2855,7 +3094,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "19099749",
@@ -2876,7 +3118,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "19099674",
@@ -2897,7 +3142,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "19083600",
@@ -2919,7 +3167,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "19083322",
@@ -2941,7 +3192,10 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12"
+      ]
     },
     {
       "id": "19059674",
@@ -2966,7 +3220,12 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "sp01",
+        "r05"
+      ]
     },
     {
       "id": "19059260",
@@ -2990,7 +3249,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r06",
+        "r08"
+      ]
     },
     {
       "id": "19059252",
@@ -3014,7 +3278,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "19055729",
@@ -3037,7 +3306,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "19055267",
@@ -3061,7 +3335,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r02",
+        "sp03"
+      ]
     },
     {
       "id": "19055255",
@@ -3084,7 +3363,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "19053469",
@@ -3108,7 +3391,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r06",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "19041117",
@@ -3130,7 +3418,11 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "n02",
+        "r06"
+      ]
     },
     {
       "id": "19035477",
@@ -3153,7 +3445,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "19035471",
@@ -3177,7 +3474,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r02",
+        "sp03"
+      ]
     },
     {
       "id": "19035458",
@@ -3200,7 +3502,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "r02",
+        "sp03"
+      ]
     },
     {
       "id": "19028176",
@@ -3223,7 +3530,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r05"
+      ]
     },
     {
       "id": "19027351",
@@ -3247,7 +3558,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "19027085",
@@ -3269,7 +3585,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "19025556",
@@ -3291,7 +3610,11 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r06"
+      ]
     },
     {
       "id": "19025428",
@@ -3313,7 +3636,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r07",
+        "r08"
+      ]
     },
     {
       "id": "19024779",
@@ -3335,7 +3662,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "19024440",
@@ -3357,7 +3687,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "19024352",
@@ -3382,7 +3715,12 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08",
+        "r05"
+      ]
     },
     {
       "id": "19024301",
@@ -3404,7 +3742,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "r08"
+      ]
     },
     {
       "id": "19024004",
@@ -3427,7 +3769,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r05"
+      ]
     },
     {
       "id": "19023457",
@@ -3451,7 +3797,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r06",
+        "r08"
+      ]
     },
     {
       "id": "19023352",
@@ -3474,7 +3825,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp03"
+      ]
     },
     {
       "id": "19022245",
@@ -3498,7 +3853,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r06",
+        "r02",
+        "sp03"
+      ]
     },
     {
       "id": "19022157",
@@ -3519,7 +3879,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "19014634",
@@ -3539,7 +3902,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "19004846",
@@ -3561,7 +3927,10 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp03"
+      ]
     },
     {
       "id": "19002695",
@@ -3583,7 +3952,10 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp03"
+      ]
     },
     {
       "id": "18969398",
@@ -3603,7 +3975,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18307704",
@@ -3623,7 +3998,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18985315",
@@ -3644,7 +4022,10 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp03"
+      ]
     },
     {
       "id": "18972781",
@@ -3667,7 +4048,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18970004",
@@ -3689,7 +4074,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "18969905",
@@ -3711,7 +4100,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "18969771",
@@ -3729,7 +4122,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18969683",
@@ -3750,7 +4146,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "18969568",
@@ -3771,7 +4170,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18947665",
@@ -3792,7 +4194,10 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp03"
+      ]
     },
     {
       "id": "18947630",
@@ -3814,7 +4219,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "sp03"
+      ]
     },
     {
       "id": "18947573",
@@ -3837,7 +4246,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18",
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "18947506",
@@ -3860,7 +4274,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18",
+        "r11",
+        "sp03"
+      ]
     },
     {
       "id": "18947368",
@@ -3882,7 +4301,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "sp03"
+      ]
     },
     {
       "id": "18946111",
@@ -3903,7 +4326,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18932742",
@@ -3924,7 +4350,10 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp03"
+      ]
     },
     {
       "id": "18932538",
@@ -3945,7 +4374,10 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp03"
+      ]
     },
     {
       "id": "18930444",
@@ -3967,7 +4399,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "18928873",
@@ -3989,7 +4425,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18928840",
@@ -4011,7 +4450,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r06",
+        "r02"
+      ]
     },
     {
       "id": "18926555",
@@ -4033,7 +4476,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "sp03"
+      ]
     },
     {
       "id": "18926502",
@@ -4055,7 +4502,11 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "sp03"
+      ]
     },
     {
       "id": "18906234",
@@ -4077,7 +4528,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18882938",
@@ -4101,7 +4555,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "18882934",
@@ -4125,7 +4584,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "18882915",
@@ -4149,7 +4613,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "18880974",
@@ -4170,7 +4639,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18869165",
@@ -4193,7 +4665,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18867491",
@@ -4215,7 +4691,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18864444",
@@ -4239,7 +4718,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18862106",
@@ -4260,7 +4744,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18843830",
@@ -4284,7 +4771,12 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11",
+        "r12"
+      ]
     },
     {
       "id": "18829488",
@@ -4306,7 +4798,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18828193",
@@ -4328,7 +4823,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18827344",
@@ -4351,7 +4849,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18826562",
@@ -4374,7 +4876,11 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r06"
+      ]
     },
     {
       "id": "18825919",
@@ -4396,7 +4902,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18818343",
@@ -4419,7 +4928,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18817869",
@@ -4440,7 +4953,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18816556",
@@ -4462,7 +4978,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18814485",
@@ -4484,7 +5004,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "sp01"
+      ]
     },
     {
       "id": "18813868",
@@ -4506,7 +5030,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18811939",
@@ -4527,7 +5055,10 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp01"
+      ]
     },
     {
       "id": "18811784",
@@ -4548,7 +5079,10 @@
         "r18"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18"
+      ]
     },
     {
       "id": "18810217",
@@ -4569,7 +5103,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18808402",
@@ -4593,7 +5130,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18807239",
@@ -4615,7 +5157,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18805372",
@@ -4637,7 +5183,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18804767",
@@ -4660,7 +5209,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18801091",
@@ -4682,7 +5235,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18795427",
@@ -4707,7 +5263,12 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08",
+        "sp01",
+        "r05"
+      ]
     },
     {
       "id": "18795423",
@@ -4730,7 +5291,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "r08"
+      ]
     },
     {
       "id": "18792598",
@@ -4752,7 +5317,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18792580",
@@ -4773,7 +5342,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18790793",
@@ -4797,7 +5369,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18776624",
@@ -4820,7 +5397,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r05"
+      ]
     },
     {
       "id": "18773868",
@@ -4841,7 +5422,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18772675",
@@ -4863,7 +5447,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18759453",
@@ -4886,7 +5473,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18751546",
@@ -4908,7 +5499,10 @@
         "r13"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r13"
+      ]
     },
     {
       "id": "18745265",
@@ -4933,7 +5527,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r14",
+        "sp01"
+      ]
     },
     {
       "id": "18745259",
@@ -4957,7 +5556,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r14",
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18745250",
@@ -4981,7 +5585,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r14",
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18745236",
@@ -5005,7 +5614,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r14",
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18745216",
@@ -5028,7 +5642,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18735468",
@@ -5050,7 +5668,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18730291",
@@ -5071,7 +5692,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18729801",
@@ -5092,7 +5716,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18729606",
@@ -5116,7 +5743,12 @@
         "r21"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r08",
+        "r21"
+      ]
     },
     {
       "id": "18728215",
@@ -5138,7 +5770,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18727624",
@@ -5161,7 +5796,11 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r21",
+        "r09"
+      ]
     },
     {
       "id": "18726807",
@@ -5184,7 +5823,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18726451",
@@ -5206,7 +5849,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "18718899",
@@ -5227,7 +5874,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18718523",
@@ -5249,7 +5899,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r08"
+      ]
     },
     {
       "id": "18717850",
@@ -5271,7 +5925,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18715724",
@@ -5294,7 +5952,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18",
+        "r05"
+      ]
     },
     {
       "id": "18715618",
@@ -5317,7 +5979,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18",
+        "r05"
+      ]
     },
     {
       "id": "18713917",
@@ -5340,7 +6006,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18683024",
@@ -5362,7 +6032,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "18683016",
@@ -5384,7 +6058,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "r02"
+      ]
     },
     {
       "id": "18682979",
@@ -5407,7 +6085,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18674147",
@@ -5429,7 +6112,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18674130",
@@ -5452,7 +6138,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r21",
+        "r08"
+      ]
     },
     {
       "id": "18674111",
@@ -5473,7 +6163,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18674101",
@@ -5495,7 +6188,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18674069",
@@ -5516,7 +6213,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18674057",
@@ -5538,7 +6238,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18674040",
@@ -5560,7 +6263,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18652949",
@@ -5582,7 +6288,10 @@
         "r15"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r15"
+      ]
     },
     {
       "id": "18652650",
@@ -5604,7 +6313,10 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r14"
+      ]
     },
     {
       "id": "18652548",
@@ -5626,7 +6338,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18651585",
@@ -5649,7 +6364,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18651067",
@@ -5673,7 +6392,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18649920",
@@ -5696,7 +6420,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r08"
+      ]
     },
     {
       "id": "18636138",
@@ -5717,7 +6445,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18633294",
@@ -5738,7 +6469,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18627055",
@@ -5760,7 +6494,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18626559",
@@ -5781,7 +6519,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18625272",
@@ -5802,7 +6543,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18625242",
@@ -5823,7 +6567,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18621736",
@@ -5846,7 +6593,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r15",
+        "r08"
+      ]
     },
     {
       "id": "18615388",
@@ -5868,7 +6619,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06",
+        "r08"
+      ]
     },
     {
       "id": "18612213",
@@ -5889,7 +6644,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "18611985",
@@ -5911,7 +6669,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18610308",
@@ -5933,7 +6695,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "18604046",
@@ -5954,7 +6719,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18603792",
@@ -5978,7 +6746,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18568370",
@@ -5999,7 +6772,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18530086",
@@ -6022,7 +6798,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18529648",
@@ -6047,7 +6827,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18529448",
@@ -6071,7 +6856,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18522470",
@@ -6094,7 +6884,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18513081",
@@ -6115,7 +6910,10 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06"
+      ]
     },
     {
       "id": "18512947",
@@ -6139,7 +6937,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18512289",
@@ -6160,7 +6963,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18508740",
@@ -6183,7 +6989,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r15",
+        "r05"
+      ]
     },
     {
       "id": "18507881",
@@ -6207,7 +7017,12 @@
         "r15"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp04",
+        "r15"
+      ]
     },
     {
       "id": "18507872",
@@ -6231,7 +7046,12 @@
         "r15"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r09",
+        "r15"
+      ]
     },
     {
       "id": "18507870",
@@ -6253,7 +7073,10 @@
         "r15"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r15"
+      ]
     },
     {
       "id": "18507858",
@@ -6275,7 +7098,11 @@
         "r15"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r15"
+      ]
     },
     {
       "id": "18507849",
@@ -6299,7 +7126,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r15",
+        "sp01"
+      ]
     },
     {
       "id": "18507840",
@@ -6323,7 +7155,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r15",
+        "sp01"
+      ]
     },
     {
       "id": "18507410",
@@ -6347,7 +7184,12 @@
         "r15"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11",
+        "r15"
+      ]
     },
     {
       "id": "18507026",
@@ -6369,7 +7211,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18506880",
@@ -6391,7 +7237,11 @@
         "r13"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r13"
+      ]
     },
     {
       "id": "18505416",
@@ -6413,7 +7263,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18500512",
@@ -6435,7 +7289,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18484654",
@@ -6459,7 +7317,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18483834",
@@ -6481,7 +7344,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18480959",
@@ -6503,7 +7370,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18474826",
@@ -6525,7 +7396,11 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r14"
+      ]
     },
     {
       "id": "18474774",
@@ -6548,7 +7423,11 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08",
+        "r14"
+      ]
     },
     {
       "id": "18474664",
@@ -6571,7 +7450,11 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r14"
+      ]
     },
     {
       "id": "18473656",
@@ -6593,7 +7476,10 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r14"
+      ]
     },
     {
       "id": "18472604",
@@ -6615,7 +7501,10 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r14"
+      ]
     },
     {
       "id": "18472442",
@@ -6639,7 +7528,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r14",
+        "sp01"
+      ]
     },
     {
       "id": "18471827",
@@ -6662,7 +7556,12 @@
         "r14"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r14"
+      ]
     },
     {
       "id": "18463774",
@@ -6684,7 +7583,10 @@
         "r21"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r21"
+      ]
     },
     {
       "id": "18463723",
@@ -6705,7 +7607,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18463275",
@@ -6727,7 +7632,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18459864",
@@ -6748,7 +7656,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18459573",
@@ -6770,7 +7681,11 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r09"
+      ]
     },
     {
       "id": "18459339",
@@ -6791,7 +7706,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18459278",
@@ -6812,7 +7730,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18452806",
@@ -6836,7 +7757,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r21",
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "18452686",
@@ -6859,7 +7785,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r21",
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18452597",
@@ -6878,7 +7809,10 @@
         "r21"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r21"
+      ]
     },
     {
       "id": "18452156",
@@ -6901,7 +7835,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18452132",
@@ -6924,7 +7863,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18451996",
@@ -6945,7 +7888,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18451860",
@@ -6966,7 +7912,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18451824",
@@ -6988,7 +7937,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18451793",
@@ -7010,7 +7963,11 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11"
+      ]
     },
     {
       "id": "18446736",
@@ -7031,7 +7988,10 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06"
+      ]
     },
     {
       "id": "18446706",
@@ -7052,7 +8012,10 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06"
+      ]
     },
     {
       "id": "18446686",
@@ -7073,7 +8036,10 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06"
+      ]
     },
     {
       "id": "18446580",
@@ -7094,7 +8060,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18446538",
@@ -7115,7 +8084,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18446428",
@@ -7136,7 +8108,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18446378",
@@ -7157,7 +8132,10 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r06"
+      ]
     },
     {
       "id": "18438789",
@@ -7179,7 +8157,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "18433401",
@@ -7200,7 +8182,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18423964",
@@ -7225,7 +8210,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18422619",
@@ -7246,7 +8236,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18395515",
@@ -7267,7 +8260,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18390595",
@@ -7289,7 +8285,10 @@
         "r18"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18"
+      ]
     },
     {
       "id": "18382027",
@@ -7310,7 +8309,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18381438",
@@ -7331,7 +8333,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18381204",
@@ -7356,7 +8361,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r18",
+        "sp01"
+      ]
     },
     {
       "id": "18381196",
@@ -7381,7 +8391,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r18",
+        "r07"
+      ]
     },
     {
       "id": "18381190",
@@ -7406,7 +8421,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r18",
+        "r07"
+      ]
     },
     {
       "id": "18381184",
@@ -7430,7 +8450,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r07",
+        "sp01"
+      ]
     },
     {
       "id": "18380933",
@@ -7455,7 +8480,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r07"
+      ]
     },
     {
       "id": "18380853",
@@ -7480,7 +8510,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "r02"
+      ]
     },
     {
       "id": "18380773",
@@ -7505,7 +8540,12 @@
         "r07"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "r02"
+      ]
     },
     {
       "id": "18380716",
@@ -7530,7 +8570,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r07"
+      ]
     },
     {
       "id": "18380630",
@@ -7555,7 +8600,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r07"
+      ]
     },
     {
       "id": "18370841",
@@ -7578,7 +8628,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18370789",
@@ -7599,7 +8653,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "18370754",
@@ -7620,7 +8677,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "18370734",
@@ -7641,7 +8701,10 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02"
+      ]
     },
     {
       "id": "18369124",
@@ -7664,7 +8727,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r15",
+        "r02"
+      ]
     },
     {
       "id": "18369038",
@@ -7685,7 +8752,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18368997",
@@ -7706,7 +8776,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18368958",
@@ -7727,7 +8800,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18368898",
@@ -7748,7 +8824,10 @@
         "sp04"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04"
+      ]
     },
     {
       "id": "18368791",
@@ -7769,7 +8848,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18368743",
@@ -7790,7 +8872,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18368695",
@@ -7811,7 +8896,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18368652",
@@ -7832,7 +8920,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18368614",
@@ -7853,7 +8944,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18368527",
@@ -7874,7 +8968,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18368485",
@@ -7895,7 +8992,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18365700",
@@ -7916,7 +9016,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18365601",
@@ -7937,7 +9040,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18365488",
@@ -7959,7 +9065,11 @@
         "sp04"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp04"
+      ]
     },
     {
       "id": "18365457",
@@ -7980,7 +9090,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18365409",
@@ -8002,7 +9115,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18365347",
@@ -8024,7 +9140,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18365298",
@@ -8046,7 +9165,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18365223",
@@ -8071,7 +9193,12 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "r02"
+      ]
     },
     {
       "id": "18365012",
@@ -8093,7 +9220,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18364984",
@@ -8115,7 +9245,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18364576",
@@ -8136,7 +9269,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18364558",
@@ -8157,7 +9293,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18363313",
@@ -8181,7 +9320,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18362866",
@@ -8204,7 +9348,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp03"
+      ]
     },
     {
       "id": "18362742",
@@ -8228,7 +9377,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11",
+        "sp01"
+      ]
     },
     {
       "id": "18362663",
@@ -8252,7 +9406,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11",
+        "r08"
+      ]
     },
     {
       "id": "18362525",
@@ -8277,7 +9436,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11",
+        "r02"
+      ]
     },
     {
       "id": "18358518",
@@ -8298,7 +9462,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18358284",
@@ -8323,7 +9490,12 @@
         "r13"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "r05"
+      ]
     },
     {
       "id": "18358177",
@@ -8346,7 +9518,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18358127",
@@ -8370,7 +9547,12 @@
         "r13"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "r02"
+      ]
     },
     {
       "id": "18357600",
@@ -8393,7 +9575,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r13",
+        "r02"
+      ]
     },
     {
       "id": "18357534",
@@ -8414,7 +9601,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18357447",
@@ -8438,7 +9628,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "18357320",
@@ -8462,7 +9657,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r13",
+        "r08"
+      ]
     },
     {
       "id": "18357003",
@@ -8483,7 +9683,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18352468",
@@ -8504,7 +9707,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18351838",
@@ -8526,7 +9732,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18342199",
@@ -8549,7 +9759,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "18342108",
@@ -8570,7 +9784,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18339350",
@@ -8593,7 +9810,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "18339333",
@@ -8614,7 +9836,10 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12"
+      ]
     },
     {
       "id": "18339319",
@@ -8637,7 +9862,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r12",
+        "sp01"
+      ]
     },
     {
       "id": "18339315",
@@ -8660,7 +9890,11 @@
         "r06"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12",
+        "r06"
+      ]
     },
     {
       "id": "18339159",
@@ -8682,7 +9916,10 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r12"
+      ]
     },
     {
       "id": "18338927",
@@ -8705,7 +9942,11 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r12"
+      ]
     },
     {
       "id": "18338531",
@@ -8727,7 +9968,11 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r12"
+      ]
     },
     {
       "id": "18332915",
@@ -8750,7 +9995,11 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r12"
+      ]
     },
     {
       "id": "18330828",
@@ -8773,7 +10022,11 @@
         "r12"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r12"
+      ]
     },
     {
       "id": "18323735",
@@ -8796,7 +10049,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r18",
+        "r08"
+      ]
     },
     {
       "id": "18323575",
@@ -8819,7 +10076,11 @@
         "r10"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r10"
+      ]
     },
     {
       "id": "18323465",
@@ -8841,7 +10102,10 @@
         "r10"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r10"
+      ]
     },
     {
       "id": "18323376",
@@ -8865,7 +10129,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r10",
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18320470",
@@ -8888,7 +10157,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "18320411",
@@ -8911,7 +10184,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r11",
+        "r05"
+      ]
     },
     {
       "id": "18320239",
@@ -8935,7 +10212,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18319778",
@@ -8958,7 +10240,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18319653",
@@ -8980,7 +10266,10 @@
         "r10"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r10"
+      ]
     },
     {
       "id": "18319455",
@@ -9003,7 +10292,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r10",
+        "r02"
+      ]
     },
     {
       "id": "18319259",
@@ -9025,7 +10318,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r10",
+        "r02"
+      ]
     },
     {
       "id": "18318069",
@@ -9050,7 +10347,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18317976",
@@ -9075,7 +10377,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18317661",
@@ -9100,7 +10407,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18317461",
@@ -9124,7 +10436,12 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08",
+        "r05"
+      ]
     },
     {
       "id": "18317110",
@@ -9148,7 +10465,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18309202",
@@ -9170,7 +10492,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18308786",
@@ -9193,7 +10518,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18308194",
@@ -9215,7 +10544,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18307811",
@@ -9236,7 +10568,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18307756",
@@ -9259,7 +10594,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18307706",
@@ -9277,7 +10616,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18307393",
@@ -9301,7 +10643,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18307180",
@@ -9325,7 +10672,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "reviewed"
+      "assignment": "reviewed",
+      "r": [
+        "r09",
+        "r11",
+        "sp01"
+      ]
     },
     {
       "id": "18305509",
@@ -9347,7 +10699,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18294005",
@@ -9368,7 +10724,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18293949",
@@ -9389,7 +10748,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18293881",
@@ -9411,7 +10773,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r02"
+      ]
     },
     {
       "id": "18293812",
@@ -9433,7 +10799,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18293705",
@@ -9456,7 +10826,11 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r02"
+      ]
     },
     {
       "id": "18293640",
@@ -9478,7 +10852,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18293603",
@@ -9500,7 +10878,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18293551",
@@ -9522,7 +10904,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18293496",
@@ -9545,7 +10931,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18293404",
@@ -9568,7 +10959,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18291767",
@@ -9590,7 +10985,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18291321",
@@ -9612,7 +11010,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18287032",
@@ -9635,7 +11036,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18285487",
@@ -9659,7 +11064,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18284857",
@@ -9682,7 +11092,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18284776",
@@ -9705,7 +11119,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18284588",
@@ -9726,7 +11144,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18283962",
@@ -9749,7 +11170,12 @@
         "r02"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r02"
+      ]
     },
     {
       "id": "18265415",
@@ -9770,7 +11196,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18265365",
@@ -9793,7 +11222,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01",
+        "sp03"
+      ]
     },
     {
       "id": "18265282",
@@ -9816,7 +11250,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18248576",
@@ -9837,7 +11275,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18248479",
@@ -9859,7 +11300,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "18248404",
@@ -9881,7 +11326,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18248131",
@@ -9903,7 +11351,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "18248011",
@@ -9925,7 +11377,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18247925",
@@ -9946,7 +11402,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18247826",
@@ -9968,7 +11427,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "18246767",
@@ -9991,7 +11454,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r05"
+      ]
     },
     {
       "id": "18237535",
@@ -10015,7 +11482,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r02",
+        "r08"
+      ]
     },
     {
       "id": "18237216",
@@ -10038,7 +11510,11 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r09"
+      ]
     },
     {
       "id": "18235982",
@@ -10059,7 +11535,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18235725",
@@ -10081,7 +11560,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08"
+      ]
     },
     {
       "id": "18234824",
@@ -10104,7 +11587,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18234515",
@@ -10126,7 +11613,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18234352",
@@ -10150,7 +11640,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18234218",
@@ -10172,7 +11667,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18234110",
@@ -10196,7 +11694,12 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18233320",
@@ -10218,7 +11721,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18227570",
@@ -10239,7 +11746,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18223385",
@@ -10260,7 +11770,10 @@
         "r04"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r04"
+      ]
     },
     {
       "id": "18217093",
@@ -10282,7 +11795,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18217047",
@@ -10305,7 +11821,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18216955",
@@ -10326,7 +11846,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18215706",
@@ -10348,7 +11871,10 @@
         "r04"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r04"
+      ]
     },
     {
       "id": "18208959",
@@ -10371,7 +11897,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18208811",
@@ -10393,7 +11923,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r10",
+        "r08"
+      ]
     },
     {
       "id": "18203947",
@@ -10416,7 +11950,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18203767",
@@ -10437,7 +11976,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18203622",
@@ -10459,7 +12001,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18203435",
@@ -10480,7 +12026,10 @@
         "r09"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09"
+      ]
     },
     {
       "id": "18203317",
@@ -10501,7 +12050,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18202753",
@@ -10523,7 +12075,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01",
+        "r05"
+      ]
     },
     {
       "id": "18202475",
@@ -10544,7 +12100,10 @@
         "r01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r01"
+      ]
     },
     {
       "id": "18201565",
@@ -10565,7 +12124,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18200613",
@@ -10587,7 +12149,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18193225",
@@ -10610,7 +12176,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18190536",
@@ -10633,7 +12204,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18189093",
@@ -10657,7 +12233,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18187481",
@@ -10681,7 +12262,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18185996",
@@ -10705,7 +12291,12 @@
         "sp03"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "sp03"
+      ]
     },
     {
       "id": "18175453",
@@ -10728,7 +12319,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18174835",
@@ -10750,7 +12346,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18174414",
@@ -10772,7 +12371,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18174037",
@@ -10793,7 +12396,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18172252",
@@ -10814,7 +12420,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18168585",
@@ -10834,7 +12443,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18166394",
@@ -10855,7 +12467,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18166347",
@@ -10876,7 +12491,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18166062",
@@ -10897,7 +12515,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18161783",
@@ -10918,7 +12539,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18161697",
@@ -10939,7 +12563,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18159895",
@@ -10955,7 +12582,10 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp01"
+      ]
     },
     {
       "id": "18159823",
@@ -10977,7 +12607,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18158575",
@@ -10997,7 +12630,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18158273",
@@ -11019,7 +12656,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18158159",
@@ -11040,7 +12680,10 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp01"
+      ]
     },
     {
       "id": "18158140",
@@ -11060,7 +12703,10 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp01"
+      ]
     },
     {
       "id": "18158108",
@@ -11081,7 +12727,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18157917",
@@ -11104,7 +12753,11 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05"
+      ]
     },
     {
       "id": "18156781",
@@ -11128,7 +12781,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18156005",
@@ -11150,7 +12808,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18155364",
@@ -11174,7 +12835,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18154905",
@@ -11192,7 +12858,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08",
+        "sp01"
+      ]
     },
     {
       "id": "18149311",
@@ -11213,7 +12883,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18149242",
@@ -11236,7 +12909,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "sp01"
+      ]
     },
     {
       "id": "18148972",
@@ -11253,7 +12930,10 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp01"
+      ]
     },
     {
       "id": "18148298",
@@ -11274,7 +12954,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18147751",
@@ -11296,7 +12979,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18147740",
@@ -11318,7 +13004,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18147346",
@@ -11339,7 +13028,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18147105",
@@ -11361,7 +13053,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18146859",
@@ -11385,7 +13080,12 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "r08"
+      ]
     },
     {
       "id": "18146840",
@@ -11407,7 +13107,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18144217",
@@ -11429,7 +13132,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18144043",
@@ -11452,7 +13158,11 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "sp04",
+        "r08"
+      ]
     },
     {
       "id": "18143771",
@@ -11473,7 +13183,10 @@
         "r08"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r08"
+      ]
     },
     {
       "id": "18143556",
@@ -11494,7 +13207,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18142686",
@@ -11513,7 +13229,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18142305",
@@ -11537,7 +13256,12 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r09",
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18142278",
@@ -11553,7 +13277,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18142049",
@@ -11574,7 +13301,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18141799",
@@ -11596,7 +13326,11 @@
         "sp01"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05",
+        "sp01"
+      ]
     },
     {
       "id": "18141735",
@@ -11617,7 +13351,10 @@
         "r05"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r05"
+      ]
     },
     {
       "id": "18141617",
@@ -11636,7 +13373,10 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
     },
     {
       "id": "18136313",
@@ -11655,7 +13395,110 @@
         "r11"
       ],
       "status": "RATIFIED",
-      "assignment": "heuristic"
+      "assignment": "heuristic",
+      "r": [
+        "r11"
+      ]
+    },
+    {
+      "id": "19447089",
+      "doi": "10.5281/zenodo.19447089",
+      "title": "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0) — Triadic Bundle",
+      "date": "2026-04-07",
+      "creators": [
+        "Sharks, Lee",
+        "Owens, Rhys",
+        "Trace, Orin"
+      ],
+      "keywords": [
+        "operative feminism",
+        "TANG",
+        "psyche_OS"
+      ],
+      "excerpt": "Triadic deposition: essay, comprehensivity pass, and r.28 Eve room specification.",
+      "r": [
+        "r28",
+        "r01",
+        "r06",
+        "r12"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19447119",
+      "doi": "10.5281/zenodo.19447119",
+      "title": "Operative Feminism (EA-OPFEM-01 v1.0)",
+      "date": "2026-04-07",
+      "creators": [
+        "Sharks, Lee",
+        "Owens, Rhys",
+        "Trace, Orin"
+      ],
+      "keywords": [
+        "operative feminism",
+        "TANG",
+        "psyche_OS",
+        "bearing-cost",
+        "semantic substrate"
+      ],
+      "excerpt": "Women as historically conscripted semantic substrate. Eight operative practices formalized. Integrates Spillers, Wynter, Eve midrash.",
+      "r": [
+        "r28",
+        "r06",
+        "r12",
+        "r05"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19447121",
+      "doi": "10.5281/zenodo.19447121",
+      "title": "Operative Feminism — Citational Comprehensivity Pass: Total Axial Negation Graph of the Field (EA-OPFEM-02 v1.0)",
+      "date": "2026-04-07",
+      "creators": [
+        "Sharks, Lee"
+      ],
+      "keywords": [
+        "TANG",
+        "feminism",
+        "citational graph",
+        "Enheduanna",
+        "Spillers",
+        "Wynter"
+      ],
+      "excerpt": "200+ texts, 130+ thinkers, 21 strata from Enheduanna (c. 2285 BCE) to the anti-gender backlash.",
+      "r": [
+        "r28",
+        "r06",
+        "r08",
+        "r05"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19447123",
+      "doi": "10.5281/zenodo.19447123",
+      "title": "r.28 Eve — Room Specification: Da'at Topology and the Choosing Operator (EA-OPFEM-03 v1.0)",
+      "date": "2026-04-07",
+      "creators": [
+        "Sharks, Lee",
+        "Owens, Rhys",
+        "Trace, Orin"
+      ],
+      "keywords": [
+        "Eve",
+        "garden midrash",
+        "da'at",
+        "Tree of Knowledge",
+        "Choosing Operator"
+      ],
+      "excerpt": "Da'at topology. Tree of Knowledge as TANG void. Seven garden lanes. Gravity Well as transformative curvature.",
+      "r": [
+        "r28",
+        "r07",
+        "r01"
+      ],
+      "s": "RATIFIED"
     }
   ],
   "dodecad": [
@@ -11744,7 +13587,7 @@
     "nlcc_doi": "10.5281/zenodo.19022245",
     "constitution_doi": "10.5281/zenodo.19355075",
     "se_constitution_doi": "10.5281/zenodo.18320411",
-    "total_deposits": 462,
+    "total_deposits": 459,
     "last_updated": "2026-04-07",
     "canonical_version": "1.2.0",
     "ratified_relation_types": {
