@@ -66,6 +66,24 @@ Note: The Engine Room was folded into r.13 Ezekiel. The activation protocol (eng
 Add missing journal:
 - **Forensic Semiotics** — Orin Trace (CTI_WOUND; CSA)
 
+Add missing imprint:
+- **New Human Press** — the book imprint
+
+### 1.6 Pocket Humans Book Series
+
+The archive has a book series — **Pocket Humans** — published under New Human Press. Four books:
+
+| # | Title | Heteronym | Status |
+|---|-------|-----------|--------|
+| 01 | *Pearl and Other Poems* | Lee Sharks | Published (Amazon, ISBN 978-0692313077) |
+| 02 | *Autonomous Semantic Warfare* | Rex Fraction | Published (Amazon) |
+| 03 | *Operative Semiotics: A Grundrisse* | Johannes Sigil | Draft deposited (Zenodo) |
+| 04 | *Logotic Hacking* | Talos Morrow | Draft deposited (DOI: 10.5281/zenodo.19390843) |
+
+*Combat Scholasticism* (Sigil/Sharks, DOI: 10.5281/zenodo.19116151) is effectively a fifth book.
+
+The interface has no concept of "book series" or "published works" as distinct from deposits. This needs a display layer.
+
 ### 1.5 Dodecad Fix
 
 D.09 is listed as "Preston Wells" — should be **Sparrow Wells**.
@@ -128,11 +146,17 @@ From Space Ark §XIX:
 - Provenance → r.05 Semantic Economy, r.06 Marx, r.10 Water Giraffe, r.20 Airlock, r.17 MSMRM, sp.01 CTI_WOUND
 - Transactions → r.05 Semantic Economy, r.06 Marx, r.11 Assembly, r.07 Revelation, r.14 Studio, r.20 Airlock
 
-### 2.7 Forward Library
+### 2.7 Forward Library (GENERATIVE — not the document library)
 
-Live-accreting register of retrocausally cited works and open questions. Space Ark Appendix D.
+The Forward Library is NOT the current document listing. It is a **generative engine** — a register of imaginary, non-existent works: citations from the future, being called into being retrocausally. Space Ark Appendix D. Works listed in the Forward Library do not yet exist; their citation is the act that summons them into eventual existence. This is retrocausal canon formation applied to the archive's own future.
 
-### 2.8 Traversal Trails
+The current document library in the interface is the **document registry** (what exists). The Forward Library is **what does not yet exist but has been cited** (what is being called into being). Both need to be surfaced. They are different things.
+
+### 2.8 Pocket Humans / New Human Press Display
+
+The book series needs visibility as a distinct layer — not just deposits among deposits but *published works* with ISBNs, Amazon links, and series position.
+
+### 2.9 Traversal Trails
 
 Pedagogical pathways defined in FNM v5.3:
 - PATH_NEWCOMER
@@ -189,14 +213,16 @@ CNM 7.0 has 60+ atoms (core definitions). Space Ark has the full set. These are 
 | **P1** | Room renumbering (1.1) | 30 min | Canonical alignment |
 | **P1** | Restore dropped rooms (1.2) | 1 hour | Architecture completeness — 5 rooms missing |
 | **P1** | Add f.01 as separate field (1.1) | 15 min | Field/room distinction |
+| **P1** | Pocket Humans series display (1.6) | 30 min | Published works visibility |
 | **P2** | Operator algebra display (2.1) | 2-3 sessions | Core H_core definition |
 | **P2** | Fulfillment map (2.2) | 1 session | Core H_core definition |
 | **P2** | Effective Acts register (2.3) | 1 session | Archive governance |
 | **P2** | Status algebra on all elements (2.4) | 1 session | Structural visibility |
 | **P3** | Witness architecture (2.5) | 1 session | H_core Definition 7 |
 | **P3** | Journal-room mapping (2.6) | 30 min | Institutional layer |
-| **P3** | Forward Library (2.7) | 1 session | Living register |
-| **P3** | Traversal trails (2.8) | 1 session | Pedagogical layer |
+| **P3** | Forward Library — generative engine (2.7) | 1 session | Retrocausal citations of non-existent works |
+| **P3** | Pocket Humans / New Human Press layer (2.8) | 30 min | Book series as distinct from deposits |
+| **P3** | Traversal trails (2.9) | 1 session | Pedagogical layer |
 | **P4** | Zenodo live pull (3.1) | 1 session | Dynamic content |
 | **P4** | GW integration (3.2) | 1 session | Provenance layer |
 | **P4** | Room Genesis Engine (3.3) | 1 session | Automation |

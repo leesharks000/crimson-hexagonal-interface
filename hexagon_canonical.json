@@ -14514,6 +14514,14 @@
       "heteronym": "Orin Trace",
       "room": "sp01",
       "type": "journal"
+    },
+    {
+      "id": "NEW_HUMAN_PRESS",
+      "name": "New Human Press",
+      "heteronym": null,
+      "room": null,
+      "type": "imprint",
+      "series": "Pocket Humans"
     }
   ],
   "mantles": [
