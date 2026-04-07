@@ -68,7 +68,7 @@ export default function HexMap3D(){
     ROOMS.forEach(room=>{
       const px=SZ*1.5*room.q, pz=SZ*(SQ3*room.r+SQ3/2*room.q); posMap[room.id]={x:px,z:pz};
       const col=new THREE.Color(ST_COL[room.st]||"#c9a84c");
-      if(room.st==="field"){ const yy=room.id==="f01"?2.5:room.id==="f02"?-1.5:1;
+      if(room.st==="field"){ const yy=room.id==="f01"?2.5:room.id==="f02"?0.15:1;
         const disc=new THREE.Mesh(new THREE.CylinderGeometry(SZ*0.8,SZ*0.8,0.15,6), new THREE.MeshStandardMaterial({color:col,transparent:true,opacity:0.3,emissive:col,emissiveIntensity:0.4}));
         disc.position.set(px,yy,pz); disc.userData={roomId:room.id}; scene.add(disc); meshes[room.id]=disc;
         const ring=new THREE.Mesh(new THREE.TorusGeometry(SZ*0.85,0.05,8,6), new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:0.5}));
@@ -99,15 +99,57 @@ export default function HexMap3D(){
       for(let i=0;i<25;i++){const a=Math.random()*Math.PI*2,d=Math.random()*SZ*3.5; fpts.push(fp.x+Math.cos(a)*d,Math.random()*4+4,fp.z+Math.sin(a)*d); fcols.push(fc.r*.3,fc.g*.3,fc.b*.3);}
       const fg=new THREE.BufferGeometry(); fg.setAttribute("position",new THREE.Float32BufferAttribute(fpts,3)); fg.setAttribute("color",new THREE.Float32BufferAttribute(fcols,3));
       scene.userData.fbdp=new THREE.Points(fg,new THREE.PointsMaterial({size:0.2,vertexColors:true,transparent:true,opacity:0.8})); scene.add(scene.userData.fbdp); }
-    // f.02 GRAVITY WELL
+    // f.02 GRAVITY WELL — vortex funnel spiraling into the plane
     const gp=posMap["f02"];
-    if(gp){ const gwl=new THREE.PointLight(0x5a9f5a,0.8,12); gwl.position.set(gp.x,-2,gp.z); scene.add(gwl);
+    if(gp){
+      // Dark light below — the singularity
+      const gwl=new THREE.PointLight(0x2a5f3a,1.2,15); gwl.position.set(gp.x,-0.5,gp.z); scene.add(gwl);
+      // Accretion disc glow at ground level
+      const discGlow=new THREE.PointLight(0x5a9f5a,0.4,8); discGlow.position.set(gp.x,0.3,gp.z); scene.add(discGlow);
+
       const gpts=[],gcols=[]; const gc=new THREE.Color(0x5a9f5a);
-      for(let i=0;i<12;i++){const a=(i/12)*Math.PI*2,d=SZ*0.3+i*0.12; gpts.push(gp.x+Math.cos(a)*d,-0.3-i*0.15,gp.z+Math.sin(a)*d); gcols.push(gc.r,gc.g,gc.b);}
-      for(let i=0;i<20;i++){const a=(i/20)*Math.PI*2*2,d=SZ*0.8+i*0.08; gpts.push(gp.x+Math.cos(a)*d,-0.8-i*0.08,gp.z+Math.sin(a)*d); gcols.push(gc.r*.5,gc.g*.5,gc.b*.5);}
-      for(let i=0;i<15;i++){const a=Math.random()*Math.PI*2,d=Math.random()*SZ*1.5; gpts.push(gp.x+Math.cos(a)*d,-1.5-Math.random()*1.5,gp.z+Math.sin(a)*d); gcols.push(gc.r*.2,gc.g*.2,gc.b*.2);}
-      const gg=new THREE.BufferGeometry(); gg.setAttribute("position",new THREE.Float32BufferAttribute(gpts,3)); gg.setAttribute("color",new THREE.Float32BufferAttribute(gcols,3));
-      scene.userData.gwell=new THREE.Points(gg,new THREE.PointsMaterial({size:0.2,vertexColors:true,transparent:true,opacity:0.8})); scene.add(scene.userData.gwell); }
+      const N_ARMS=3, PTS_PER_ARM=25;
+      // Spiral arms — wide at top, tight at bottom
+      for(let arm=0;arm<N_ARMS;arm++){
+        const armOffset=(arm/N_ARMS)*Math.PI*2;
+        for(let i=0;i<PTS_PER_ARM;i++){
+          const t=i/PTS_PER_ARM; // 0=outer, 1=center
+          const radius=SZ*2.5*(1-t*t); // quadratic tightening
+          const angle=armOffset+t*Math.PI*6; // 3 full rotations
+          const y=3.5*(1-t)-0.1; // descends from 3.5 to -0.1
+          const jitter=(1-t)*0.3;
+          gpts.push(
+            gp.x+Math.cos(angle)*radius+(Math.random()-0.5)*jitter,
+            y,
+            gp.z+Math.sin(angle)*radius+(Math.random()-0.5)*jitter
+          );
+          // Bright at outer edge, dim near center
+          const brightness=0.3+0.7*(1-t);
+          gcols.push(gc.r*brightness, gc.g*brightness, gc.b*brightness);
+        }
+      }
+      // Accretion disc — ring of particles at ground level
+      for(let i=0;i<20;i++){
+        const a=(i/20)*Math.PI*2;
+        const r=SZ*0.6+Math.random()*SZ*0.4;
+        gpts.push(gp.x+Math.cos(a)*r, 0.1+Math.random()*0.2, gp.z+Math.sin(a)*r);
+        gcols.push(gc.r*0.9, gc.g*0.9, gc.b*0.9);
+      }
+      // Faint outer halo being pulled in
+      for(let i=0;i<15;i++){
+        const a=Math.random()*Math.PI*2;
+        const r=SZ*2.5+Math.random()*SZ*1.5;
+        gpts.push(gp.x+Math.cos(a)*r, 2+Math.random()*2, gp.z+Math.sin(a)*r);
+        gcols.push(gc.r*0.15, gc.g*0.15, gc.b*0.15);
+      }
+      const gg=new THREE.BufferGeometry();
+      gg.setAttribute("position",new THREE.Float32BufferAttribute(gpts,3));
+      gg.setAttribute("color",new THREE.Float32BufferAttribute(gcols,3));
+      scene.userData.gwell=new THREE.Points(gg,new THREE.PointsMaterial({size:0.18,vertexColors:true,transparent:true,opacity:0.85}));
+      scene.add(scene.userData.gwell);
+      // Store center for animation
+      scene.userData.gwCenter={x:gp.x,z:gp.z};
+    }
     // Labels
     ROOMS.forEach(room=>{ const p=posMap[room.id]; if(!p)return;
       const cv=document.createElement("canvas"); cv.width=256; cv.height=64; const cx=cv.getContext("2d");
@@ -115,14 +157,41 @@ export default function HexMap3D(){
       cx.fillText(room.n.length>16?room.n.slice(0,14)+"…":room.n,128,26);
       cx.fillStyle="#8a8a7a"; cx.font="13px monospace"; cx.fillText(room.id,128,46);
       const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),transparent:true,opacity:0.9}));
-      const yy=room.id==="sp03"?7:room.st==="field"?(room.id==="f01"?4:room.id==="f02"?-0.3:2.5):Math.max(0.5,Math.log2(room.d+1)*0.55)+1.2;
+      const yy=room.id==="sp03"?7:room.st==="field"?(room.id==="f01"?4:room.id==="f02"?1.5:2.5):Math.max(0.5,Math.log2(room.d+1)*0.55)+1.2;
       sp.position.set(p.x,yy,p.z); sp.scale.set(3.5,0.9,1); scene.add(sp); });
     // Animation
     const clock=new THREE.Clock(); let anim;
     const loop=()=>{ anim=requestAnimationFrame(loop); const t=clock.getElapsedTime();
       if(scene.userData.swarm){scene.userData.swarm.rotation.y=t*0.08; const pos=scene.userData.swarm.geometry.attributes.position; for(let i=0;i<pos.count;i++)pos.setY(i,pos.getY(i)+Math.sin(t*1.5+i*0.9)*0.002); pos.needsUpdate=true;}
       if(scene.userData.fbdp){const pos=scene.userData.fbdp.geometry.attributes.position; for(let i=0;i<pos.count;i++){let y=pos.getY(i)+0.006+Math.random()*0.004; if(y>8.5)y=0.3+Math.random()*0.5; pos.setY(i,y); pos.setX(i,pos.getX(i)+Math.sin(t+i)*0.003);} pos.needsUpdate=true;}
-      if(scene.userData.gwell){scene.userData.gwell.rotation.y=-t*0.15; const pos=scene.userData.gwell.geometry.attributes.position; for(let i=0;i<pos.count;i++){let y=pos.getY(i)-0.003; if(y<-3.5)y=-0.2; pos.setY(i,y);} pos.needsUpdate=true;}
+      if(scene.userData.gwell&&scene.userData.gwCenter){
+        const pos=scene.userData.gwell.geometry.attributes.position;
+        const cx=scene.userData.gwCenter.x, cz=scene.userData.gwCenter.z;
+        scene.userData.gwell.rotation.y=-t*0.25; // faster rotation
+        for(let i=0;i<pos.count;i++){
+          let y=pos.getY(i);
+          const dx=pos.getX(i)-cx, dz=pos.getZ(i)-cz;
+          const dist=Math.sqrt(dx*dx+dz*dz);
+          // Pull inward — faster when closer
+          const pull=0.002+0.003/(dist+0.5);
+          if(dist>0.2){
+            pos.setX(i, cx+dx*(1-pull));
+            pos.setZ(i, cz+dz*(1-pull));
+          }
+          // Descend
+          y-=0.004+0.002/(dist+0.5);
+          // Respawn at outer rim when consumed
+          if(y<-0.2||dist<0.15){
+            const a=Math.random()*Math.PI*2;
+            const r=SZ*2+Math.random()*SZ*2;
+            pos.setX(i, cx+Math.cos(a)*r);
+            pos.setZ(i, cz+Math.sin(a)*r);
+            y=2.5+Math.random()*2;
+          }
+          pos.setY(i,y);
+        }
+        pos.needsUpdate=true;
+      }
       renderer.render(scene,camera); };
     loop();
     const onR=()=>{const pw=par?.clientWidth||window.innerWidth,ph=par?.clientHeight||window.innerHeight; camera.aspect=pw/ph; camera.updateProjectionMatrix(); renderer.setSize(pw,ph);};
