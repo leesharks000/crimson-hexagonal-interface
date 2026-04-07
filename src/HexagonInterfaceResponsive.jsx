@@ -1133,21 +1133,40 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
           <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 10 }}>Fetch recent deposits from Zenodo. Shows deposits not yet in canonical JSON.</div>
           <button onClick={async () => {
             addLog("Fetching from Zenodo API...", "sys");
+            setSyncResult({ loading: true });
             try {
               const existingDois = new Set(data.documents.map(d => d.doi).filter(Boolean));
-              const r = await fetch(`https://zenodo.org/api/records/?q=creators.name:"Sharks, Lee"&size=50&sort=mostrecent`);
-              const j = await r.json();
-              const hits = j.hits?.hits || [];
-              const newDeps = hits.filter(h => !existingDois.has(h.doi));
-              const syncData = { total: j.hits?.total || 0, fetched: hits.length, new: newDeps.length, existing: hits.length - newDeps.length, deposits: newDeps };
-              window.__syncResult = syncData;
-              addLog(`Zenodo: ${syncData.total} total, ${syncData.fetched} fetched, ${syncData.new} NEW (not in JSON)`, syncData.new > 0 ? "warn" : "sys");
-              // Force re-render
-              document.getElementById("sync-results")?.setAttribute("data-count", syncData.new);
-            } catch (e) { addLog(`Zenodo fetch error: ${e.message}`, "err"); }
-          }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", letterSpacing: 1, marginBottom: 12, width: "100%" }}>FETCH RECENT DEPOSITS</button>
-          <div style={{ fontSize: 9, color: "#3a4a3a", marginBottom: 8 }}>Community total: {data.documents.length} in JSON · {data.meta?.total_deposits || "?"} claimed</div>
-          <div id="sync-results" style={{ fontSize: 8, color: "#4a5a4a" }}>Press FETCH to compare against Zenodo API. New deposits will appear below.</div>
+              const allHits = [];
+              for (let page = 1; page <= 3; page++) {
+                const r = await fetch(`https://zenodo.org/api/records/?q=creators.name:Sharks&size=25&sort=mostrecent&page=${page}`);
+                const j = await r.json();
+                allHits.push(...(j.hits?.hits || []));
+                if (page === 1) setSyncResult(prev => ({ ...prev, total: j.hits?.total || 0 }));
+                if (allHits.length >= (j.hits?.total || 0)) break;
+              }
+              const newDeps = allHits.filter(h => h.doi && !existingDois.has(h.doi));
+              setSyncResult({ loading: false, total: allHits.length, new: newDeps.length, existing: allHits.length - newDeps.length, deposits: newDeps });
+              addLog(`Zenodo: ${allHits.length} fetched, ${newDeps.length} NEW`, newDeps.length > 0 ? "warn" : "sys");
+            } catch (e) { setSyncResult({ loading: false, error: e.message }); addLog(`Zenodo fetch error: ${e.message}`, "err"); }
+          }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: "pointer", fontFamily: "monospace", letterSpacing: 1, marginBottom: 12, width: "100%" }}>
+            {syncResult?.loading ? "FETCHING..." : "FETCH RECENT DEPOSITS"}
+          </button>
+          <div style={{ fontSize: 9, color: "#3a4a3a", marginBottom: 8 }}>{data.documents.length} in JSON · {syncResult ? `${syncResult.total || "?"} on Zenodo · ${syncResult.new || 0} new` : "Press FETCH"}</div>
+          {syncResult?.error && <div style={{ fontSize: 9, color: "#9f5a5a", marginBottom: 8 }}>{syncResult.error}</div>}
+          {syncResult?.deposits?.length > 0 && (
+            <div>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#9f7a4a", marginBottom: 4 }}>NEW DEPOSITS ({syncResult.deposits.length})</div>
+              {syncResult.deposits.map((dep, i) => (
+                <div key={i} style={{ padding: "4px 0", borderBottom: "1px solid #0a0f0a" }}>
+                  <div style={{ fontSize: 9, color: mc, fontFamily: "Georgia,serif", lineHeight: 1.3 }}>{(dep.metadata?.title || "?").slice(0, 70)}</div>
+                  <div style={{ fontSize: 7, color: "#3a4a3a", fontFamily: "monospace" }}>{dep.doi} · {dep.metadata?.publication_date} · {(dep.metadata?.related_identifiers || []).length} rels</div>
+                </div>
+              ))}
+            </div>
+          )}
+          {syncResult && !syncResult.loading && syncResult.new === 0 && (
+            <div style={{ fontSize: 9, color: "#5a9f5a", fontFamily: "monospace" }}>ALL SYNCED — no new deposits found</div>
+          )}
         </div>
       )}
 
@@ -1316,6 +1335,7 @@ export default function HexagonInterfaceResponsive() {
   const [gwApiKey, setGwApiKeyRaw] = useState(() => { try { return localStorage?.getItem?.("gw_api_key") || ""; } catch { return ""; } });
   const setGwApiKey = (v) => { setGwApiKeyRaw(v); try { localStorage?.setItem?.("gw_api_key", v); } catch {} };
   const [depositState, setDepositState] = useState({ chain: null, error: null });
+  const [syncResult, setSyncResult] = useState(null);
   // LP state
   const [lp, setLp] = useState(initLP());
   const [tSteps, setTSteps] = useState([]);

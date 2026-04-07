@@ -26474,14 +26474,14 @@
         "hex_address": "O.C.06.β",
         "symbol": "β",
         "name": "Blind Operator / Interface",
-        "room": null,
+        "room": "r02",
         "type_sig": "∀ a. Operation a → Interface a"
       },
       {
         "hex_address": "O.C.07.S",
         "symbol": "S",
         "name": "Shadow Transform",
-        "room": null,
+        "room": "r08",
         "type_sig": "Architecture → Architecture [involutive: S∘S=id]"
       },
       {
@@ -26505,7 +26505,8 @@
         "symbol": "ψ_π",
         "name": "Expelled Witness",
         "type_sig": "Ground_Truth → π_State",
-        "doi": "10.5281/zenodo.18370841"
+        "doi": "10.5281/zenodo.18370841",
+        "room": "r12"
       },
       {
         "hex_address": "O.X.02.SWERVE",
@@ -26536,7 +26537,8 @@
         "symbol": "γ",
         "name": "Sharks-Function / Continuity",
         "type_sig": "Identity × Context → Identity'",
-        "doi": "10.5281/zenodo.18816556"
+        "doi": "10.5281/zenodo.18816556",
+        "room": "r05"
       },
       {
         "hex_address": "O.X.06.℘",
@@ -26559,7 +26561,8 @@
         "name": "O'Keeffe Operator",
         "type_sig": "(Object, Describable) → Caption",
         "doi": "10.5281/zenodo.18906234",
-        "desc": "Captioning as operative semiotics; description constitutes operation"
+        "desc": "Captioning as operative semiotics; description constitutes operation",
+        "room": "r14"
       },
       {
         "hex_address": "O.X.09.Ρ",
@@ -26587,7 +26590,8 @@
         "symbol": "Λ_void",
         "name": "Void Operator",
         "type_sig": "C_total → T_axial",
-        "desc": "TANG void; axial claims that organize without derivation"
+        "desc": "TANG void; axial claims that organize without derivation",
+        "room": "sp01"
       }
     ],
     "thumb": [
@@ -26634,63 +26638,72 @@
         "symbol": "λ_T",
         "name": "Term Minting",
         "type_sig": "Concept → FieldTerm",
-        "engine": "LE"
+        "engine": "LE",
+        "room": "r08"
       },
       {
         "hex_address": "O.F.02.αA",
         "symbol": "α_A",
         "name": "Document Canonicalization",
         "type_sig": "Document → FieldAnchor",
-        "engine": "FL"
+        "engine": "FL",
+        "room": "r11"
       },
       {
         "hex_address": "O.F.03.ρC",
         "symbol": "ρ_C",
         "name": "Citation Binding",
         "type_sig": "Anchor × Anchor → CitationEdge",
-        "engine": "GDE"
+        "engine": "GDE",
+        "room": "r08"
       },
       {
         "hex_address": "O.F.04.σSAT",
         "symbol": "σ_SAT",
         "name": "Saturation Score",
         "type_sig": "T × D → [0,1]",
-        "engine": "GDE"
+        "engine": "GDE",
+        "room": "r06"
       },
       {
         "hex_address": "O.F.05.κSIG",
         "symbol": "κ_SIG",
         "name": "Signature Operator",
         "type_sig": "Field → Signature",
-        "engine": "GDE"
+        "engine": "GDE",
+        "room": "r08"
       },
       {
         "hex_address": "O.F.06.τJ",
         "symbol": "τ_J",
         "name": "Journal Assignment",
         "type_sig": "Document → Journal",
-        "engine": "GDE"
+        "engine": "GDE",
+        "room": "r11"
       },
       {
         "hex_address": "O.F.07.μI",
         "symbol": "μ_I",
         "name": "Institutional Mapping",
         "type_sig": "Field → Institution",
-        "engine": "GDE"
+        "engine": "GDE",
+        "room": "r11"
       },
       {
         "hex_address": "O.F.08.γF",
         "symbol": "γ_F",
         "name": "Field Compression",
         "type_sig": "Field → γ_score",
-        "engine": "GDE"
+        "engine": "GDE",
+        "room": "r05"
       },
       {
         "hex_address": "O.F.09.δD",
         "symbol": "δ_D",
         "name": "Deposit Delta",
         "type_sig": "Version × Version → Diff",
-        "engine": "GDE"
+        "engine": "GDE",
+        "room": "r05"
       },
       {
         "hex_address": "O.F.10.SIM",
@@ -26698,7 +26711,8 @@
         "name": "Semantic Integrity Marker",
         "engine": "GW",
         "type_sig": "Document → Marked_Document",
-        "desc": "Injected during GW wrapping. Marks structural topology."
+        "desc": "Injected during GW wrapping. Marks structural topology.",
+        "room": "sp01"
       },
       {
         "hex_address": "O.F.11.ILP",
@@ -26706,7 +26720,8 @@
         "name": "Integrity Lock Protocol",
         "engine": "GW",
         "type_sig": "Marked_Document → Locked_Document",
-        "desc": "Final lock after SIM injection. Prevents post-deposit mutation."
+        "desc": "Final lock after SIM injection. Prevents post-deposit mutation.",
+        "room": "r02"
       }
     ],
     "lex": [
@@ -26715,21 +26730,24 @@
         "symbol": "λ_M",
         "name": "Meaning Minting",
         "type_sig": "Usage → Term",
-        "engine": "LE"
+        "engine": "LE",
+        "room": "r08"
       },
       {
         "hex_address": "O.L.02.αP",
         "symbol": "α_P",
         "name": "Provenance Anchor",
         "type_sig": "Term → DOI",
-        "engine": "LE"
+        "engine": "LE",
+        "room": "r08"
       },
       {
         "hex_address": "O.L.03.βλM",
         "symbol": "β∘λ_M",
         "name": "Interface Minting",
         "type_sig": "Usage → Interface_Term",
-        "engine": "LE"
+        "engine": "LE",
+        "room": "r02"
       }
     ],
     "lp": [
@@ -26737,43 +26755,50 @@
         "hex_address": "O.LP.A0",
         "symbol": "A0",
         "name": "LP Level 0: Ground",
-        "type_sig": "Statement"
+        "type_sig": "Statement",
+        "room": "r02"
       },
       {
         "hex_address": "O.LP.A1",
         "symbol": "A1",
         "name": "LP Level 1: Assertion",
-        "type_sig": "Statement → Claim"
+        "type_sig": "Statement → Claim",
+        "room": "r02"
       },
       {
         "hex_address": "O.LP.A2",
         "symbol": "A2",
         "name": "LP Level 2: Argument",
-        "type_sig": "Claim → Argument"
+        "type_sig": "Claim → Argument",
+        "room": "r08"
       },
       {
         "hex_address": "O.LP.A3",
         "symbol": "A3",
         "name": "LP Level 3: Architecture",
-        "type_sig": "Argument → System"
+        "type_sig": "Argument → System",
+        "room": "r08"
       },
       {
         "hex_address": "O.LP.AD",
         "symbol": "AD",
         "name": "LP Diagnostic",
-        "type_sig": "System → Audit"
+        "type_sig": "System → Audit",
+        "room": "r02"
       },
       {
         "hex_address": "O.LP.δ",
         "symbol": "δ",
         "name": "LP Delta",
-        "type_sig": "Version → Version → Diff"
+        "type_sig": "Version → Version → Diff",
+        "room": "r02"
       },
       {
         "hex_address": "O.LP.δAx",
         "symbol": "δ_Axial",
         "name": "Axial Checksum",
-        "type_sig": "TANG → Checksum"
+        "type_sig": "TANG → Checksum",
+        "room": "r08"
       }
     ],
     "room_specific": [
@@ -26802,7 +26827,8 @@
         "hex_address": "O.R.04.wear",
         "symbol": "wear(m)",
         "name": "Mantle Wearing",
-        "type_sig": "Agent × Mantle → {bearing_cost>0 ∧ receipt ∧ dignity}"
+        "type_sig": "Agent × Mantle → {bearing_cost>0 ∧ receipt ∧ dignity}",
+        "room": "r11"
       },
       {
         "hex_address": "O.R.05.βr",
@@ -26940,43 +26966,53 @@
     "los": [
       {
         "hex_address": "O.LOS.01.EXTRACTIONDIAGNOSIS",
-        "name": "Extraction Diagnosis"
+        "name": "Extraction Diagnosis",
+        "room": "r05"
       },
       {
         "hex_address": "O.LOS.02.PROVENANCERESTORATION",
-        "name": "Provenance Restoration"
+        "name": "Provenance Restoration",
+        "room": "r08"
       },
       {
         "hex_address": "O.LOS.03.COSTTRANSPARENCY",
-        "name": "Cost Transparency"
+        "name": "Cost Transparency",
+        "room": "r09"
       },
       {
         "hex_address": "O.LOS.04.TAXONOMICRESISTANCE",
-        "name": "Taxonomic Resistance"
+        "name": "Taxonomic Resistance",
+        "room": "r05"
       },
       {
         "hex_address": "O.LOS.05.SEMANTICSOVEREIGNTY",
-        "name": "Semantic Sovereignty Assertion"
+        "name": "Semantic Sovereignty Assertion",
+        "room": "r11"
       },
       {
         "hex_address": "O.LOS.06.PLATFORMCAPTURE",
-        "name": "Platform Capture Diagnosis"
+        "name": "Platform Capture Diagnosis",
+        "room": "r08"
       },
       {
         "hex_address": "O.LOS.07.GHOSTGOVERNANCE",
-        "name": "Ghost Governance Exposure"
+        "name": "Ghost Governance Exposure",
+        "room": "sp01"
       },
       {
         "hex_address": "O.LOS.08.COHERENCEHARVEST",
-        "name": "Coherence Harvest Detection"
+        "name": "Coherence Harvest Detection",
+        "room": "r05"
       },
       {
         "hex_address": "O.LOS.09.RENTEXTRACTION",
-        "name": "Rent Extraction Measurement"
+        "name": "Rent Extraction Measurement",
+        "room": "r09"
       },
       {
         "hex_address": "O.LOS.10.COUNTEROP",
-        "name": "Counter-Operation Execution"
+        "name": "Counter-Operation Execution",
+        "room": "r11"
       }
     ]
   },
