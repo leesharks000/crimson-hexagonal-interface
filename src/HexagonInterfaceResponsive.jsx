@@ -39,6 +39,7 @@ function normalizeRoom(room) {
   return {
     id: room.id, name: room.name || room.title || room.id,
     cat: room.cat || room.category || room.type || "core",
+    structure_type: room.structure_type || null,
     q: Number(room.q ?? room.axial_q ?? 0), r: Number(room.r ?? room.axial_r ?? 0),
     desc: room.desc || room.description || room.summary || "No description available.",
     physics: room.physics || room.room_physics || room.logic || "No room physics specified.",
@@ -50,6 +51,9 @@ function normalizeRoom(room) {
     preferred_mode: room.preferred_mode || "FORMAL",
     lp_program: room.lp_program || [],
     default_operators: room.default_operators || [],
+    shadow: room.shadow || null,
+    tang_void: room.tang_void || null,
+    garden_lanes: room.garden_lanes || null,
   };
 }
 
