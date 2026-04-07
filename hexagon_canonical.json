@@ -13670,6 +13670,92 @@
         "r28"
       ],
       "s": "RATIFIED"
+    },
+    {
+      "id": "19405459",
+      "doi": "10.5281/zenodo.19405459",
+      "title": "Gravity Well Protocol v0.4.1 (EA-GW-01)",
+      "date": "2026-04-03",
+      "creators": [
+        "Sharks, Lee"
+      ],
+      "keywords": [
+        "Gravity Well",
+        "provenance engine",
+        "continuity",
+        "compression"
+      ],
+      "excerpt": "Governed compression engine for semantic provenance. 15 MCP tools, four-layer reconstitution, auto-deposit.",
+      "r": [
+        "f02",
+        "r05",
+        "r11"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19412081",
+      "doi": "10.5281/zenodo.19412081",
+      "title": "Compression Arsenal v2.1 — 67 Technologies for Meaning Preservation",
+      "date": "2026-04-03",
+      "creators": [
+        "Sharks, Lee"
+      ],
+      "keywords": [
+        "compression arsenal",
+        "Sharks-Function",
+        "witness compression",
+        "Three Compressions"
+      ],
+      "excerpt": "Product specification cataloguing 67 proprietary compression technologies across 13 categories.",
+      "r": [
+        "f02",
+        "r05",
+        "r08"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19442251",
+      "doi": "10.5281/zenodo.19442251",
+      "title": "Gravity Well as Hexagonal Semantic Field: f.02 Specification — Retentive Curvature, Suffusion Physics, and the Provenance Gradient",
+      "date": "2026-04-06",
+      "creators": [
+        "Sharks, Lee"
+      ],
+      "keywords": [
+        "Gravity Well",
+        "Hexagonal field",
+        "Phi_G",
+        "retentive curvature",
+        "suffusion"
+      ],
+      "excerpt": "Specification for f.02 Gravity Well as a Hexagonal field. Defines Phi_G (retentive curvature), suffusion physics across all 29 rooms, and the provenance gradient.",
+      "r": [
+        "f02",
+        "r05"
+      ],
+      "s": "RATIFIED"
+    },
+    {
+      "id": "19442262",
+      "doi": "10.5281/zenodo.19442262",
+      "title": "Gravity Well Suffusion Map: Room-by-Room Diffusion Specifications for f.02",
+      "date": "2026-04-06",
+      "creators": [
+        "Sharks, Lee"
+      ],
+      "keywords": [
+        "suffusion map",
+        "Gravity Well",
+        "room physics",
+        "field diffusion"
+      ],
+      "excerpt": "How Gravity Well (Phi_G) diffuses through each room's physics. Per-room suffusion specifications for all 29 rooms.",
+      "r": [
+        "f02"
+      ],
+      "s": "RATIFIED"
     }
   ],
   "dodecad": [
@@ -13758,7 +13844,7 @@
     "nlcc_doi": "10.5281/zenodo.19022245",
     "constitution_doi": "10.5281/zenodo.19355075",
     "se_constitution_doi": "10.5281/zenodo.18320411",
-    "total_deposits": 459,
+    "total_deposits": 463,
     "last_updated": "2026-04-07",
     "canonical_version": "1.2.0",
     "ratified_relation_types": {
