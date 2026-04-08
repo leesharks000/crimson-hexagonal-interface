@@ -1606,7 +1606,7 @@ export default function HexagonInterfaceResponsive() {
               <span onClick={()=>setMap3d(true)} style={{fontSize:8,padding:"3px 8px",color:map3d?"#c9a84c":"#3a4a3a",background:map3d?"#0a0f0a":"transparent",cursor:"pointer",fontFamily:"monospace",letterSpacing:1}}>3D</span>
               <span onClick={()=>setMap3d(false)} style={{fontSize:8,padding:"3px 8px",color:!map3d?"#c9a84c":"#3a4a3a",background:!map3d?"#0a0f0a":"transparent",cursor:"pointer",fontFamily:"monospace",letterSpacing:1}}>2D</span>
             </div>
-            {map3d ? <Suspense fallback={<div style={{color:"#3a4a3a",padding:20,fontFamily:"monospace"}}>Loading 3D...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D /></div></Suspense> : <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
+            {map3d ? <Suspense fallback={<div style={{color:"#3a4a3a",padding:20,fontFamily:"monospace"}}>Loading 3D...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D onSelect={handleRoomSelect} /></div></Suspense> : <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
           </>}
 
           {view === "LIBRARY" && (

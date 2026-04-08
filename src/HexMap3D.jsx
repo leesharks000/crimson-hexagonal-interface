@@ -39,10 +39,12 @@ const EDGES = [
 const ST_COL={room:"#c9a84c",chamber:"#7a5ac9",vault:"#c95a5a",portal:"#5ac9c9",portico:"#9f8a5a",field:"#5a9f5a"};
 const SZ=2, SQ3=Math.sqrt(3);
 
-export default function HexMap3D(){
+export default function HexMap3D({onSelect:onSelectProp}){
   const mountRef=useRef(null), threeRef=useRef({}), dragRef=useRef({on:false,sx:0,sy:0,px:0,py:0,td:0});
   const camRef=useRef({theta:0.9,phi:0.9,rad:38});
   const [sel,setSel]=useState(null);
+  const onSelectRef=useRef(onSelectProp);
+  onSelectRef.current=onSelectProp;
   const updCam=useCallback(()=>{
     const c=camRef.current, cam=threeRef.current.camera; if(!cam)return;
     cam.position.set(c.rad*Math.sin(c.phi)*Math.cos(c.theta), c.rad*Math.cos(c.phi), c.rad*Math.sin(c.phi)*Math.sin(c.theta)-4);
@@ -152,11 +154,12 @@ export default function HexMap3D(){
     }
     // Labels
     ROOMS.forEach(room=>{ const p=posMap[room.id]; if(!p)return;
-      const cv=document.createElement("canvas"); cv.width=256; cv.height=64; const cx=cv.getContext("2d");
-      cx.fillStyle="#e8e0d0"; cx.font="bold 18px Georgia"; cx.textAlign="center";
-      cx.fillText(room.n.length>16?room.n.slice(0,14)+"…":room.n,128,26);
-      cx.fillStyle="#8a8a7a"; cx.font="13px monospace"; cx.fillText(room.id,128,46);
-      const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),transparent:true,opacity:0.9}));
+      const cv=document.createElement("canvas"); cv.width=1024; cv.height=256; const cx=cv.getContext("2d");
+      cx.fillStyle="#e8e0d0"; cx.font="bold 72px Georgia"; cx.textAlign="center";
+      cx.fillText(room.n.length>16?room.n.slice(0,14)+"…":room.n,512,100);
+      cx.fillStyle="#8a8a7a"; cx.font="52px monospace"; cx.fillText(room.id,512,180);
+      const tex=new THREE.CanvasTexture(cv); tex.minFilter=THREE.LinearFilter;
+      const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,opacity:0.9}));
       const yy=room.id==="sp03"?7:room.st==="field"?(room.id==="f01"?4:room.id==="f02"?1.5:2.5):Math.max(0.5,Math.log2(room.d+1)*0.55)+1.2;
       sp.position.set(p.x,yy,p.z); sp.scale.set(3.5,0.9,1); scene.add(sp); });
     // Animation
@@ -197,7 +200,7 @@ export default function HexMap3D(){
     const onR=()=>{const pw=par?.clientWidth||window.innerWidth,ph=par?.clientHeight||window.innerHeight; camera.aspect=pw/ph; camera.updateProjectionMatrix(); renderer.setSize(pw,ph);};
     window.addEventListener("resize",onR);
     // Touch
-    const doSelect=(cx,cy)=>{ const rect=el.getBoundingClientRect(); const m=new THREE.Vector2(((cx-rect.left)/rect.width)*2-1,-((cy-rect.top)/rect.height)*2+1); const ray=new THREE.Raycaster(); ray.setFromCamera(m,camera); const hits=ray.intersectObjects(Object.values(meshes)); const id=hits.length>0?hits[0].object.userData.roomId:null; setSel(prev=>prev===id?null:id); Object.entries(meshes).forEach(([rid,mesh])=>{if(mesh.material){mesh.material.emissiveIntensity=rid===id?0.7:rid==="sp03"?0.4:0.1; mesh.material.opacity=rid===id?0.9:rid==="sp03"?0.75:0.5;}}); };
+    const doSelect=(cx,cy)=>{ const rect=el.getBoundingClientRect(); const m=new THREE.Vector2(((cx-rect.left)/rect.width)*2-1,-((cy-rect.top)/rect.height)*2+1); const ray=new THREE.Raycaster(); ray.setFromCamera(m,camera); const hits=ray.intersectObjects(Object.values(meshes)); const id=hits.length>0?hits[0].object.userData.roomId:null; setSel(prev=>prev===id?null:id); if(id&&onSelectRef.current)onSelectRef.current(id); Object.entries(meshes).forEach(([rid,mesh])=>{if(mesh.material){mesh.material.emissiveIntensity=rid===id?0.7:rid==="sp03"?0.4:0.1; mesh.material.opacity=rid===id?0.9:rid==="sp03"?0.75:0.5;}}); };
     const onTS=e=>{e.preventDefault(); if(e.touches.length===1){dragRef.current={on:true,sx:e.touches[0].clientX,sy:e.touches[0].clientY,px:e.touches[0].clientX,py:e.touches[0].clientY,td:0};}else if(e.touches.length===2){const dx=e.touches[0].clientX-e.touches[1].clientX,dy=e.touches[0].clientY-e.touches[1].clientY; dragRef.current.td=Math.sqrt(dx*dx+dy*dy);}};
     const onTM=e=>{e.preventDefault(); if(e.touches.length===1&&dragRef.current.on){const cx=e.touches[0].clientX,cy=e.touches[0].clientY; camRef.current.theta-=(cx-dragRef.current.px)*0.004; camRef.current.phi=Math.max(0.15,Math.min(1.45,camRef.current.phi+(cy-dragRef.current.py)*0.004)); dragRef.current.px=cx; dragRef.current.py=cy; updCam();}else if(e.touches.length===2){const dx=e.touches[0].clientX-e.touches[1].clientX,dy=e.touches[0].clientY-e.touches[1].clientY,dist=Math.sqrt(dx*dx+dy*dy); if(dragRef.current.td>0){camRef.current.rad=Math.max(12,Math.min(65,camRef.current.rad+(dragRef.current.td-dist)*0.08)); updCam();} dragRef.current.td=dist;}};
     const onTE=e=>{if(e.changedTouches.length===1&&dragRef.current.on){const ct=e.changedTouches[0]; if(Math.abs(ct.clientX-dragRef.current.sx)<8&&Math.abs(ct.clientY-dragRef.current.sy)<8)doSelect(ct.clientX,ct.clientY);} dragRef.current.on=false;};
@@ -207,7 +210,7 @@ export default function HexMap3D(){
 
   const onDown=e=>{dragRef.current={on:true,sx:e.clientX,sy:e.clientY,px:e.clientX,py:e.clientY,td:0};};
   const onMove=e=>{if(!dragRef.current.on)return; camRef.current.theta-=(e.clientX-dragRef.current.px)*0.006; camRef.current.phi=Math.max(0.15,Math.min(1.45,camRef.current.phi+(e.clientY-dragRef.current.py)*0.006)); dragRef.current.px=e.clientX; dragRef.current.py=e.clientY; updCam();};
-  const onUp=e=>{const wasDrag=Math.abs(e.clientX-dragRef.current.sx)>4||Math.abs(e.clientY-dragRef.current.sy)>4; dragRef.current.on=false; if(wasDrag)return; const{camera,meshes}=threeRef.current; if(!camera)return; const rect=mountRef.current.getBoundingClientRect(); const m=new THREE.Vector2(((e.clientX-rect.left)/rect.width)*2-1,-((e.clientY-rect.top)/rect.height)*2+1); const ray=new THREE.Raycaster(); ray.setFromCamera(m,camera); const hits=ray.intersectObjects(Object.values(meshes)); const id=hits.length>0?hits[0].object.userData.roomId:null; setSel(prev=>prev===id?null:id); Object.entries(meshes).forEach(([rid,mesh])=>{if(mesh.material){mesh.material.emissiveIntensity=rid===id?0.7:rid==="sp03"?0.4:0.1; mesh.material.opacity=rid===id?0.9:rid==="sp03"?0.75:0.5;}});};
+  const onUp=e=>{const wasDrag=Math.abs(e.clientX-dragRef.current.sx)>4||Math.abs(e.clientY-dragRef.current.sy)>4; dragRef.current.on=false; if(wasDrag)return; const{camera,meshes}=threeRef.current; if(!camera)return; const rect=mountRef.current.getBoundingClientRect(); const m=new THREE.Vector2(((e.clientX-rect.left)/rect.width)*2-1,-((e.clientY-rect.top)/rect.height)*2+1); const ray=new THREE.Raycaster(); ray.setFromCamera(m,camera); const hits=ray.intersectObjects(Object.values(meshes)); const id=hits.length>0?hits[0].object.userData.roomId:null; setSel(prev=>prev===id?null:id); if(id&&onSelectRef.current)onSelectRef.current(id); Object.entries(meshes).forEach(([rid,mesh])=>{if(mesh.material){mesh.material.emissiveIntensity=rid===id?0.7:rid==="sp03"?0.4:0.1; mesh.material.opacity=rid===id?0.9:rid==="sp03"?0.75:0.5;}});};
   const onWheel=e=>{camRef.current.rad=Math.max(12,Math.min(65,camRef.current.rad+e.deltaY*0.04)); updCam();};
 
   const selR=sel?ROOMS.find(r=>r.id===sel):null;
