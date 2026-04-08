@@ -152,16 +152,13 @@ export default function HexMap3D({onSelect:onSelectProp}){
       // Store center for animation
       scene.userData.gwCenter={x:gp.x,z:gp.z};
     }
-    // Labels
-    ROOMS.forEach(room=>{ const p=posMap[room.id]; if(!p)return;
-      const cv=document.createElement("canvas"); cv.width=1024; cv.height=256; const cx=cv.getContext("2d");
-      cx.fillStyle="#e8e0d0"; cx.font="bold 72px Georgia"; cx.textAlign="center";
-      cx.fillText(room.n.length>16?room.n.slice(0,14)+"…":room.n,512,100);
-      cx.fillStyle="#8a8a7a"; cx.font="52px monospace"; cx.fillText(room.id,512,180);
-      const tex=new THREE.CanvasTexture(cv); tex.minFilter=THREE.LinearFilter;
-      const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,opacity:0.9}));
-      const yy=room.id==="sp03"?7:room.st==="field"?(room.id==="f01"?4:room.id==="f02"?1.5:2.5):Math.max(0.5,Math.log2(room.d+1)*0.55)+1.2;
-      sp.position.set(p.x,yy,p.z); sp.scale.set(3.5,0.9,1); scene.add(sp); });
+    // Labels — stored as 3D positions, projected to screen in animation loop
+    const labelData = ROOMS.map(room => {
+      const p = posMap[room.id]; if (!p) return null;
+      const yy = room.id==="sp03"?7:room.st==="field"?(room.id==="f01"?4:room.id==="f02"?1.5:2.5):Math.max(0.5,Math.log2(room.d+1)*0.55)+1.2;
+      return { id: room.id, name: room.n, st: room.st, pos: new THREE.Vector3(p.x, yy, p.z) };
+    }).filter(Boolean);
+    scene.userData.labelData = labelData;
     // Animation
     const clock=new THREE.Clock(); let anim;
     const loop=()=>{ anim=requestAnimationFrame(loop); const t=clock.getElapsedTime();
@@ -195,6 +192,21 @@ export default function HexMap3D({onSelect:onSelectProp}){
         }
         pos.needsUpdate=true;
       }
+      // Project HTML labels
+      const lblContainer = document.getElementById("hex3d-labels");
+      if (lblContainer && scene.userData.labelData) {
+        const W2 = renderer.domElement.clientWidth / 2;
+        const H2 = renderer.domElement.clientHeight / 2;
+        scene.userData.labelData.forEach(label => {
+          const el = document.getElementById("lbl-" + label.id);
+          if (!el) return;
+          const v = label.pos.clone().project(camera);
+          if (v.z > 1) { el.style.display = "none"; return; }
+          el.style.display = "block";
+          el.style.transform = `translate(-50%,-50%) translate(${(v.x*W2+W2)|0}px,${(-v.y*H2+H2)|0}px)`;
+          el.style.opacity = Math.max(0, Math.min(1, 1.2 - v.z * 0.5));
+        });
+      }
       renderer.render(scene,camera); };
     loop();
     const onR=()=>{const pw=par?.clientWidth||window.innerWidth,ph=par?.clientHeight||window.innerHeight; camera.aspect=pw/ph; camera.updateProjectionMatrix(); renderer.setSize(pw,ph);};
@@ -218,6 +230,14 @@ export default function HexMap3D({onSelect:onSelectProp}){
   return (
     <div style={{width:"100%",height:"100%",position:"absolute",top:0,left:0,overflow:"hidden",background:"#040606"}}>
       <div ref={mountRef} style={{width:"100%",height:"100%",touchAction:"none"}} onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onWheel={onWheel} />
+      <div id="hex3d-labels" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",pointerEvents:"none",overflow:"hidden"}}>
+        {ROOMS.map(room=>(
+          <div key={room.id} id={"lbl-"+room.id} style={{position:"absolute",top:0,left:0,whiteSpace:"nowrap",pointerEvents:"none",textAlign:"center"}}>
+            <div style={{fontSize:11,color:"#e8e0d0",fontFamily:"Georgia,serif",textShadow:"0 0 4px #000, 0 0 8px #000, 0 1px 2px #000"}}>{room.n.length>18?room.n.slice(0,16)+"…":room.n}</div>
+            <div style={{fontSize:8,color:"#6a6a5a",fontFamily:"monospace",textShadow:"0 0 3px #000"}}>{room.id}</div>
+          </div>
+        ))}
+      </div>
       <div style={{position:"absolute",top:12,left:16,pointerEvents:"none"}}>
         <div style={{fontSize:9,letterSpacing:3,color:"#3a4a3a",fontFamily:"monospace"}}>CRIMSON HEXAGONAL ARCHIVE</div>
         <div style={{fontSize:15,letterSpacing:3,color:"#c9a84c",fontFamily:"Georgia,serif",marginTop:2}}>⟨D, R, O, Σ, Φ, Ψ⟩</div>
