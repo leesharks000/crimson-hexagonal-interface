@@ -1749,64 +1749,74 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
             {map3d ? <Suspense fallback={<div style={{color:"#3a4a3a",padding:20,fontFamily:"monospace"}}>Loading 3D...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D onSelect={handleRoomSelect} /></div></Suspense> : <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
           </>}
 
-          {/* ORACLE — RAG interface to the archive */}
-          {view === "ORACLE" && (
+          {/* ORACLE — archive search & discovery */}
+          {view === "ORACLE" && (() => {
+            const q = oracleQuery.toLowerCase().trim();
+            const terms = q.split(/\s+/).filter(t => t.length > 1);
+            const results = terms.length > 0 ? data.documents.map(doc => {
+              let score = 0;
+              const title = (doc.t || "").toLowerCase();
+              const excerpt = (doc.e || "").toLowerCase();
+              const keywords = (doc.k || []).join(" ").toLowerCase();
+              const rooms = (doc.r || []).join(" ").toLowerCase();
+              terms.forEach(term => {
+                if (title.includes(term)) score += 4;
+                if (keywords.includes(term)) score += 3;
+                if (rooms.includes(term)) score += 2;
+                if (excerpt.includes(term)) score += 1;
+              });
+              return { ...doc, score };
+            }).filter(d => d.score > 0).sort((a, b) => b.score - a.score) : [];
+            const resultRooms = terms.length > 0 ? [...new Set(results.flatMap(d => d.r || []))].slice(0, 8) : [];
+            return (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%", display: "flex", flexDirection: "column" }}>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ORACLE · Ezekiel Engine</div>
-              <div style={{ fontSize: 8, color: "#4a5a4a", marginBottom: 10, fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.5 }}>
-                Query the archive. Retrieves relevant deposits, reads their full text from Zenodo, and answers grounded in the archive's own documents.
-              </div>
-              {/* Query input */}
-              <div style={{ display: "flex", gap: 4, marginBottom: 12 }}>
-                <input value={oracleQuery} onChange={e => setOracleQuery(e.target.value)}
-                  onKeyDown={e => { if (e.key === "Enter" && oracleQuery.trim() && !oracleLoading) runOracle(); }}
-                  placeholder="What is the Three Compressions theorem?"
-                  style={{ flex: 1, background: "#080808", border: `1px solid ${mc}33`, color: "#7a8a5a", padding: "8px 12px", fontSize: 10, fontFamily: "'Palatino Linotype','Palatino',serif", outline: "none" }} />
-                <button onClick={runOracle} disabled={oracleLoading || !oracleQuery.trim()}
-                  style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "8px 14px", fontSize: 9, cursor: oracleLoading ? "wait" : "pointer", fontFamily: "monospace", letterSpacing: 1, flexShrink: 0 }}>
-                  {oracleLoading ? "TRAVERSING…" : "INVOKE"}
-                </button>
-              </div>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ORACLE · {data.documents.length} deposits indexed</div>
+              <input value={oracleQuery} onChange={e => setOracleQuery(e.target.value)}
+                placeholder="compression, bearing-cost, Three Compressions, operator..."
+                style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: `1px solid ${mc}33`, color: "#7a8a5a", padding: "8px 12px", fontSize: 10, fontFamily: "'Palatino Linotype','Palatino',serif", outline: "none", marginBottom: 8 }} />
+              {terms.length > 0 && <div style={{ fontSize: 8, color: "#4a5a4a", marginBottom: 8, fontFamily: "monospace" }}>
+                {results.length} deposits · {resultRooms.length} rooms
+              </div>}
+              {/* Room tags for results */}
+              {resultRooms.length > 0 && (
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 3, marginBottom: 10 }}>
+                  {resultRooms.map(rid => {
+                    const rm = data.rooms.find(r => r.id === rid);
+                    return rm ? <span key={rid} onClick={() => { handleRoomSelect(rid); setView("MAP"); }}
+                      style={{ fontSize: 7, padding: "2px 5px", background: "#0a0f0a", border: `1px solid ${mc}22`, color: mc, cursor: "pointer", fontFamily: "monospace" }}>{rm.name}</span> : null;
+                  })}
+                </div>
+              )}
               {/* Results */}
               <div style={{ flex: 1, overflowY: "auto" }}>
-                {oracleHistory.slice().reverse().map((entry, i) => (
-                  <div key={i} style={{ marginBottom: 16, padding: "10px 12px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
-                    <div style={{ fontSize: 9, color: mc, fontFamily: "monospace", marginBottom: 6 }}>⬡ {entry.query}</div>
-                    {entry.sources && entry.sources.length > 0 && (
-                      <div style={{ marginBottom: 8, display: "flex", flexWrap: "wrap", gap: 3 }}>
-                        {entry.sources.map((s, j) => (
-                          <span key={j} onClick={() => { const d = data.documents.find(doc => doc.id === s.id); if (d) { setSelDoc(d); setView("MAP"); } }}
-                            style={{ fontSize: 7, padding: "1px 4px", background: mc + "08", border: `1px solid ${mc}15`, color: "#5a6a4a", cursor: "pointer", fontFamily: "monospace" }}>
-                            {s.id}: {s.title?.slice(0, 30)}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    <div style={{ fontSize: 10, color: "#7a8a6a", fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.7, whiteSpace: "pre-wrap" }}>
-                      {entry.answer}
+                {results.slice(0, 50).map(d => (
+                  <div key={d.id} onClick={() => { setSelDoc(d); setView("MAP"); }} style={{ padding: "6px 0", borderBottom: "1px solid #0a0f0a", cursor: "pointer" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                      <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.3, flex: 1 }}>{d.t.length > 70 ? d.t.slice(0, 67) + "…" : d.t}</div>
+                      <span style={{ fontSize: 7, color: mc, fontFamily: "monospace", flexShrink: 0, marginLeft: 6 }}>{d.score}</span>
                     </div>
-                    {entry.rooms && entry.rooms.length > 0 && (
-                      <div style={{ marginTop: 6, display: "flex", gap: 3, flexWrap: "wrap" }}>
-                        {entry.rooms.map(rid => {
-                          const rm = data.rooms.find(r => r.id === rid);
-                          return rm ? <span key={rid} onClick={() => { handleRoomSelect(rid); setView("MAP"); }}
-                            style={{ fontSize: 7, padding: "1px 4px", background: "#0a0f0a", border: `1px solid ${mc}22`, color: mc, cursor: "pointer", fontFamily: "monospace" }}>{rm.name}</span> : null;
-                        })}
-                      </div>
-                    )}
+                    {d.e && <div style={{ fontSize: 8, color: "#3a4a3a", fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.5, marginTop: 3 }}>{d.e.slice(0, 150)}{d.e.length > 150 ? "…" : ""}</div>}
+                    <div style={{ fontSize: 7, color: "#2a3a2a", marginTop: 2 }}>
+                      <span style={{ fontFamily: "monospace" }}>{d.id}</span> · {d.d} · {(d.r || []).map(rid => { const rm = data.rooms.find(r => r.id === rid); return rm?.name || rid; }).join(", ")}
+                    </div>
                   </div>
                 ))}
-                {!oracleLoading && oracleHistory.length === 0 && (
+                {terms.length === 0 && (
                   <div style={{ textAlign: "center", padding: 30 }}>
-                    <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.7 }}>
-                      The Ezekiel Engine traverses {data.documents.length} deposits across {data.rooms.length} rooms.<br />
-                      Ask about operators, rooms, deposits, the formal object, compression, or any concept in the archive.
+                    <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.8 }}>
+                      Search {data.documents.length} deposits across {data.rooms.length} rooms.<br />
+                      Results scored by title, keywords, room, and excerpt match.<br />
+                      Click any result to navigate to the document.
                     </div>
                   </div>
                 )}
+                {terms.length > 0 && results.length === 0 && (
+                  <div style={{ fontSize: 9, color: "#4a5a4a", padding: 20, fontFamily: "'Palatino Linotype','Palatino',serif" }}>No deposits match "{oracleQuery}"</div>
+                )}
               </div>
             </div>
-          )}
+            );
+          })()}
 
           {view === "LIBRARY" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
@@ -1825,7 +1835,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
               {/* SEARCH mode */}
               {libMode === "SEARCH" && <>
                 <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="search archive..." style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1a2a1a", color: "#7a8a5a", padding: "6px 10px", fontSize: 11, fontFamily: "Georgia,serif", outline: "none", marginBottom: 10 }} />
-                {(search ? searchResults : data.documents.slice(0, isMobile ? 24 : 40)).map((d) => {
+                {(search ? searchResults : data.documents).map((d) => {
                   const inTrail = trail.docs.some(td => td.id === d.id);
                   return (
                     <div key={d.id} style={{ display: "flex", gap: 4, padding: "4px 0", borderBottom: "1px solid #0a0f0a" }}>
@@ -1872,7 +1882,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
               {libMode === "BIBLIO" && <>
                 <div style={{ fontSize: 10, color: "#5a6a4a", fontFamily: "Georgia,serif", lineHeight: 1.6, marginBottom: 8 }}>Export citations from your trail or search results. Select a format below.</div>
                 {(() => {
-                  const docs = trail.docs.length > 0 ? trail.docs : (search ? searchResults : data.documents.slice(0, 20));
+                  const docs = trail.docs.length > 0 ? trail.docs : (search ? searchResults : data.documents);
                   const source = trail.docs.length > 0 ? `Trail: ${trail.name || "unnamed"}` : search ? `Search: "${search}"` : "Recent 20";
                   return <>
                     <div style={{ fontSize: 8, color: "#3a4a3a", marginBottom: 6, fontFamily: "monospace" }}>{source} · {docs.length} documents</div>
