@@ -1,7 +1,24 @@
-import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from "react";
+import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense, Component } from "react";
 import { gravityWell, isGravityWellConfigured } from "./gravityWellAdapter.js";
 import { supabase, isSupabaseConfigured } from "./supabaseClient.js";
 const HexMap3D = lazy(() => import("./HexMap3D.jsx"));
+
+// Error boundary — shows error message instead of blank screen
+class ErrorBoundary extends Component {
+  constructor(props) { super(props); this.state = { error: null }; }
+  static getDerivedStateFromError(error) { return { error }; }
+  render() {
+    if (this.state.error) return (
+      <div style={{padding:20,color:"#9f5a5a",fontFamily:"monospace",fontSize:10,background:"#0a0d12",minHeight:"100vh"}}>
+        <div style={{fontSize:14,marginBottom:10,color:"#c9a84c"}}>⬡ Render Error</div>
+        <div style={{marginBottom:10}}>{this.state.error.message}</div>
+        <div style={{fontSize:8,color:"#3a4a3a",whiteSpace:"pre-wrap"}}>{this.state.error.stack?.slice(0,500)}</div>
+        <button onClick={()=>{this.setState({error:null});}} style={{marginTop:10,padding:"6px 12px",background:"transparent",border:"1px solid #c9a84c44",color:"#c9a84c",cursor:"pointer",fontFamily:"monospace"}}>RETRY</button>
+      </div>
+    );
+    return this.props.children;
+  }
+}
 
 const DATA_URL = "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json";
 
@@ -1350,7 +1367,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
 
 // ─── Main ───
 
-export default function HexagonInterfaceResponsive() {
+function HexagonInterfaceResponsive() {
   const isMobile = useIsMobile(900);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -1527,8 +1544,10 @@ export default function HexagonInterfaceResponsive() {
       // 4. Identify relevant rooms
       const relevantRooms = [...new Set(scored.flatMap(d => d.r || []))].slice(0, 5);
 
-      // 5. Call Anthropic API
-      const systemPrompt = `You are the Ezekiel Engine — the retrieval oracle of the Crimson Hexagonal Archive. You answer questions grounded in the archive's own documents. Your voice is precise, scholarly, and operative.
+      // 5. Try Anthropic API — falls back to retrieval-only on Vercel
+      let answer = "";
+      try {
+        const systemPrompt = `You are the Ezekiel Engine — the retrieval oracle of the Crimson Hexagonal Archive. You answer questions grounded in the archive's own documents. Your voice is precise, scholarly, and operative.
 
 RULES:
 - Answer ONLY from the provided document contexts. If the documents don't contain the answer, say so.
@@ -1542,27 +1561,29 @@ ARCHIVE STRUCTURE:
 H_core = ⟨D, R, O, Σ, Φ, Ψ⟩ — 6-tuple formal object
 ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.length} relations`;
 
-      const userMsg = `QUERY: ${oracleQuery}
+        const userMsg = `QUERY: ${oracleQuery}\n\nRETRIEVED DOCUMENTS:\n${contexts.map(c => `--- DOC ${c.id} (${c.title}) ---\n${c.text}`).join("\n\n")}\n\nAnswer the query using these documents. Cite by document ID. Name relevant rooms.`;
 
-RETRIEVED DOCUMENTS:
-${contexts.map(c => `--- DOC ${c.id} (${c.title}) ---\n${c.text}`).join("\n\n")}
+        const apiRes = await fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "claude-sonnet-4-20250514",
+            max_tokens: 1000,
+            system: systemPrompt,
+            messages: [{ role: "user", content: userMsg }],
+          }),
+        });
 
-Answer the query using these documents. Cite by document ID. Name relevant rooms.`;
-
-      const apiRes = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 1000,
-          system: systemPrompt,
-          messages: [{ role: "user", content: userMsg }],
-        }),
-      });
-
-      if (!apiRes.ok) throw new Error(`API ${apiRes.status}: ${await apiRes.text().catch(() => "")}`);
-      const apiData = await apiRes.json();
-      const answer = apiData.content?.map(c => c.text || "").join("") || "No response generated.";
+        if (!apiRes.ok) throw new Error(`API ${apiRes.status}`);
+        const apiData = await apiRes.json();
+        answer = apiData.content?.map(c => c.text || "").join("") || "";
+        addLog(`ORACLE: AI synthesis complete (${answer.length} chars)`, "sys");
+      } catch (apiErr) {
+        // Fallback: show retrieved documents without AI synthesis
+        addLog(`ORACLE: API unavailable (${apiErr.message}), showing retrieval only`, "sys");
+        const excerpts = contexts.map(c => `[${c.id}] ${c.title}\n${c.text.slice(0, 300)}${c.text.length > 300 ? "…" : ""}`).join("\n\n");
+        answer = `RETRIEVAL MODE — ${scored.length} documents matched your query.\n\nAI synthesis requires the Claude.ai artifact sandbox. Below are the retrieved excerpts:\n\n${excerpts}`;
+      }
 
       const entry = {
         query: oracleQuery,
@@ -2622,3 +2643,5 @@ Answer the query using these documents. Cite by document ID. Name relevant rooms
     </div>
   );
 }
+
+export default function App() { return <ErrorBoundary><HexagonInterfaceResponsive /></ErrorBoundary>; }
