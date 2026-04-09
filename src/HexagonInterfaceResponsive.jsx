@@ -1031,6 +1031,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
   const [chainLabel, setChainLabel] = useState("");
   const [dashTab, setDashTab] = useState("PENDING");
   const [dreamResult, setDreamResult] = useState(null);
+  const [syncResult, setSyncResult] = useState(null);
   const suggestion = selectedDoc ? `doc-${selectedDoc.id}` : selectedRoom ? `room-${selectedRoom.id}` : "hexagon-session";
   useEffect(() => { if (!chainLabel) setChainLabel(suggestion); }, [suggestion, chainLabel]);
   const createChain = async () => {
@@ -1364,7 +1365,6 @@ export default function HexagonInterfaceResponsive() {
   const [gwApiKey, setGwApiKeyRaw] = useState(() => { try { return localStorage?.getItem?.("gw_api_key") || ""; } catch { return ""; } });
   const setGwApiKey = (v) => { setGwApiKeyRaw(v); try { localStorage?.setItem?.("gw_api_key", v); } catch {} };
   const [depositState, setDepositState] = useState({ chain: null, error: null });
-  const [syncResult, setSyncResult] = useState(null);
   // LP state
   const [lp, setLp] = useState(initLP());
   const [tSteps, setTSteps] = useState([]);
