@@ -233,14 +233,14 @@ export default function HexMap3D({onSelect:onSelectProp}){
       <div id="hex3d-labels" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",pointerEvents:"none",overflow:"hidden"}}>
         {ROOMS.map(room=>(
           <div key={room.id} id={"lbl-"+room.id} style={{position:"absolute",top:0,left:0,whiteSpace:"nowrap",pointerEvents:"none",textAlign:"center"}}>
-            <div style={{fontSize:11,color:"#e8e0d0",fontFamily:"Georgia,serif",textShadow:"0 0 4px #000, 0 0 8px #000, 0 1px 2px #000"}}>{room.n.length>18?room.n.slice(0,16)+"…":room.n}</div>
-            <div style={{fontSize:8,color:"#6a6a5a",fontFamily:"monospace",textShadow:"0 0 3px #000"}}>{room.id}</div>
+            <div style={{fontSize:10,color:"#a09880",fontFamily:"'Palatino Linotype','Palatino','Book Antiqua',serif",fontWeight:400,letterSpacing:0.5,textShadow:"0 1px 3px #000"}}>{room.n.length>18?room.n.slice(0,16)+"…":room.n}</div>
+            <div style={{fontSize:7,color:"#5a5a4a",fontFamily:"monospace",letterSpacing:1,textShadow:"0 1px 2px #000"}}>{room.id}</div>
           </div>
         ))}
       </div>
       <div style={{position:"absolute",top:12,left:16,pointerEvents:"none"}}>
         <div style={{fontSize:9,letterSpacing:3,color:"#3a4a3a",fontFamily:"monospace"}}>CRIMSON HEXAGONAL ARCHIVE</div>
-        <div style={{fontSize:15,letterSpacing:3,color:"#c9a84c",fontFamily:"Georgia,serif",marginTop:2}}>⟨D, R, O, Σ, Φ, Ψ⟩</div>
+        <div style={{fontSize:15,letterSpacing:3,color:"#c9a84c",fontFamily:"'Palatino Linotype','Palatino','Book Antiqua',serif",marginTop:2}}>⟨D, R, O, Σ, Φ, Ψ⟩</div>
       </div>
       <div style={{position:"absolute",bottom:12,left:16,pointerEvents:"none"}}>
         {Object.entries(ST_COL).map(([t,c])=>(<div key={t} style={{display:"flex",alignItems:"center",gap:5,marginTop:1}}><div style={{width:6,height:6,background:c,opacity:0.8}}/><span style={{fontSize:7,color:"#4a5a4a",fontFamily:"monospace"}}>{t}</span></div>))}
@@ -248,7 +248,7 @@ export default function HexMap3D({onSelect:onSelectProp}){
       <div style={{position:"absolute",bottom:12,right:16,pointerEvents:"none",textAlign:"right"}}>
         <div style={{fontSize:7,color:"#5a9f5a"}}>↑ f.01 FBDP</div><div style={{fontSize:7,color:"#5a9f5a"}}>↓ f.02 Gravity Well</div><div style={{fontSize:7,color:"#5ac9c9"}}>⟷ f.03 Swarm</div>
       </div>
-      {selR&&(<div style={{position:"absolute",top:16,right:16,width:180,padding:"10px 14px",background:"#080c08ee",border:"1px solid #1a2a1a",borderLeft:"3px solid "+(ST_COL[selR.st]||"#c9a84c"),fontFamily:"Georgia,serif",pointerEvents:"auto"}}>
+      {selR&&(<div style={{position:"absolute",top:16,right:16,width:180,padding:"10px 14px",background:"#080c08ee",border:"1px solid #1a2a1a",borderLeft:"3px solid "+(ST_COL[selR.st]||"#c9a84c"),fontFamily:"'Palatino Linotype','Palatino','Book Antiqua',serif",pointerEvents:"auto"}}>
         <div style={{fontSize:7,letterSpacing:2,color:"#3a4a3a",fontFamily:"monospace"}}>{selR.st.toUpperCase()}</div>
         <div style={{fontSize:13,color:"#c9a84c",marginTop:2,marginBottom:4}}>{selR.n}</div>
         <div style={{fontSize:8,color:"#4a5a4a",fontFamily:"monospace",marginBottom:6}}>{selR.id} · {selR.d} docs</div>
