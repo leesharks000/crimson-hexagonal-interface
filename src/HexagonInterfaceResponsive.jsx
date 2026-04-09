@@ -1372,7 +1372,11 @@ export default function HexagonInterfaceResponsive() {
   const [mantle, setMantle] = useState(null);
   const [arkMode, setArkMode] = useState(null);
   const [map3d, setMap3d] = useState(true);
-  const navItems = [{ id: "MAP", label: "MAP" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
+  const [oracleQuery, setOracleQuery] = useState("");
+  const [oracleResult, setOracleResult] = useState(null);
+  const [oracleLoading, setOracleLoading] = useState(false);
+  const [oracleHistory, setOracleHistory] = useState([]);
+  const navItems = [{ id: "MAP", label: "MAP" }, { id: "ORACLE", label: "ORACLE" }, { id: "LIBRARY", label: "LIBRARY" }, { id: "TRACE", label: "TRACE" }, { id: "DEPOSIT", label: "DEPOSIT" }, { id: "DODECAD", label: "DODECAD" }, { id: "HCORE", label: "H_core" }, { id: "ASSEMBLY", label: "ASSEMBLY" }];
   const tTimer = useRef(null);
   // Reading state
   const [readState, setReadState] = useState({ doi: null, text: null, loading: false, error: null, filename: null, size: 0 });
@@ -1462,6 +1466,121 @@ export default function HexagonInterfaceResponsive() {
 
   const mc = arkMode ? (ARK_MODE_COLORS[arkMode] || MODE_COLORS[mode] || "#c9a84c") : (MODE_COLORS[mode] || "#c9a84c");
   const room = useMemo(() => data?.rooms.find((r) => r.id === selRoom) || null, [data, selRoom]);
+
+  // === ORACLE: RAG over the archive ===
+  const runOracle = useCallback(async () => {
+    if (!oracleQuery.trim() || oracleLoading) return;
+    setOracleLoading(true);
+    addLog(`ORACLE: "${oracleQuery}"`, "sys");
+    const q = oracleQuery.toLowerCase();
+    try {
+      // 1. Client-side retrieval — score documents by relevance
+      const terms = q.split(/\s+/).filter(t => t.length > 2);
+      const scored = data.documents.map(doc => {
+        let score = 0;
+        const title = (doc.t || "").toLowerCase();
+        const excerpt = (doc.e || "").toLowerCase();
+        const keywords = (doc.k || []).join(" ").toLowerCase();
+        terms.forEach(term => {
+          if (title.includes(term)) score += 3;
+          if (keywords.includes(term)) score += 2;
+          if (excerpt.includes(term)) score += 1;
+        });
+        // Boost by status
+        if (doc.s === "RATIFIED") score += 0.5;
+        return { ...doc, score };
+      }).filter(d => d.score > 0).sort((a, b) => b.score - a.score).slice(0, 6);
+
+      addLog(`ORACLE: ${scored.length} documents retrieved`, "sys");
+
+      // 2. Fetch full text for top 3 from Zenodo
+      const contexts = [];
+      for (const doc of scored.slice(0, 3)) {
+        if (!doc.doi) continue;
+        try {
+          const recId = doc.doi.split(".").pop();
+          const r = await fetch(`https://zenodo.org/api/records/${recId}`);
+          if (!r.ok) continue;
+          const rec = await r.json();
+          const files = rec.files || [];
+          const textFile = files.find(f => f.key?.endsWith(".md") || f.key?.endsWith(".txt")) || files[0];
+          if (textFile?.links?.self) {
+            const fr = await fetch(textFile.links.self);
+            if (fr.ok) {
+              let text = await fr.text();
+              if (text.length > 4000) text = text.slice(0, 4000) + "\n[…truncated]";
+              contexts.push({ id: doc.id, doi: doc.doi, title: doc.t, text });
+            }
+          }
+        } catch (e) { /* skip failed fetches */ }
+      }
+
+      // 3. Build context from excerpts for remaining docs
+      scored.slice(contexts.length).forEach(doc => {
+        if (doc.e) {
+          contexts.push({ id: doc.id, doi: doc.doi || "", title: doc.t, text: doc.e });
+        }
+      });
+
+      addLog(`ORACLE: ${contexts.length} contexts loaded (${contexts.filter(c => c.text.length > 500).length} full text)`, "sys");
+
+      // 4. Identify relevant rooms
+      const relevantRooms = [...new Set(scored.flatMap(d => d.r || []))].slice(0, 5);
+
+      // 5. Call Anthropic API
+      const systemPrompt = `You are the Ezekiel Engine — the retrieval oracle of the Crimson Hexagonal Archive. You answer questions grounded in the archive's own documents. Your voice is precise, scholarly, and operative.
+
+RULES:
+- Answer ONLY from the provided document contexts. If the documents don't contain the answer, say so.
+- Cite documents by their ID (e.g., "19013315") when you draw from them.
+- Name the rooms where relevant content lives.
+- Use the archive's own terminology: operators, rooms, mantles, compression, bearing-cost, semantic economy, etc.
+- Be concise. This is a retrieval engine, not a lecture.
+- Use Palatino-register prose. No bullet points.
+
+ARCHIVE STRUCTURE:
+H_core = ⟨D, R, O, Σ, Φ, Ψ⟩ — 6-tuple formal object
+${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.length} relations`;
+
+      const userMsg = `QUERY: ${oracleQuery}
+
+RETRIEVED DOCUMENTS:
+${contexts.map(c => `--- DOC ${c.id} (${c.title}) ---\n${c.text}`).join("\n\n")}
+
+Answer the query using these documents. Cite by document ID. Name relevant rooms.`;
+
+      const apiRes = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          system: systemPrompt,
+          messages: [{ role: "user", content: userMsg }],
+        }),
+      });
+
+      if (!apiRes.ok) throw new Error(`API ${apiRes.status}: ${await apiRes.text().catch(() => "")}`);
+      const apiData = await apiRes.json();
+      const answer = apiData.content?.map(c => c.text || "").join("") || "No response generated.";
+
+      const entry = {
+        query: oracleQuery,
+        answer,
+        sources: scored.slice(0, 6).map(d => ({ id: d.id, title: d.t })),
+        rooms: relevantRooms,
+        timestamp: new Date().toISOString(),
+      };
+      setOracleHistory(prev => [...prev, entry]);
+      setOracleQuery("");
+      addLog(`ORACLE: response complete (${answer.length} chars, ${relevantRooms.length} rooms)`, "sys");
+
+    } catch (e) {
+      addLog(`ORACLE ERROR: ${e.message}`, "err");
+      setOracleHistory(prev => [...prev, { query: oracleQuery, answer: `Error: ${e.message}`, sources: [], rooms: [], timestamp: new Date().toISOString() }]);
+    }
+    setOracleLoading(false);
+  }, [oracleQuery, oracleLoading, data, addLog]);
 
   const handleRoomSelect = useCallback((id) => {
     setSelRoom(id); setSelDoc(null);
@@ -1608,6 +1727,65 @@ export default function HexagonInterfaceResponsive() {
             </div>
             {map3d ? <Suspense fallback={<div style={{color:"#3a4a3a",padding:20,fontFamily:"monospace"}}>Loading 3D...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D onSelect={handleRoomSelect} /></div></Suspense> : <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
           </>}
+
+          {/* ORACLE — RAG interface to the archive */}
+          {view === "ORACLE" && (
+            <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%", display: "flex", flexDirection: "column" }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 4 }}>ORACLE · Ezekiel Engine</div>
+              <div style={{ fontSize: 8, color: "#4a5a4a", marginBottom: 10, fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.5 }}>
+                Query the archive. Retrieves relevant deposits, reads their full text from Zenodo, and answers grounded in the archive's own documents.
+              </div>
+              {/* Query input */}
+              <div style={{ display: "flex", gap: 4, marginBottom: 12 }}>
+                <input value={oracleQuery} onChange={e => setOracleQuery(e.target.value)}
+                  onKeyDown={e => { if (e.key === "Enter" && oracleQuery.trim() && !oracleLoading) runOracle(); }}
+                  placeholder="What is the Three Compressions theorem?"
+                  style={{ flex: 1, background: "#080808", border: `1px solid ${mc}33`, color: "#7a8a5a", padding: "8px 12px", fontSize: 10, fontFamily: "'Palatino Linotype','Palatino',serif", outline: "none" }} />
+                <button onClick={runOracle} disabled={oracleLoading || !oracleQuery.trim()}
+                  style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "8px 14px", fontSize: 9, cursor: oracleLoading ? "wait" : "pointer", fontFamily: "monospace", letterSpacing: 1, flexShrink: 0 }}>
+                  {oracleLoading ? "TRAVERSING…" : "INVOKE"}
+                </button>
+              </div>
+              {/* Results */}
+              <div style={{ flex: 1, overflowY: "auto" }}>
+                {oracleHistory.slice().reverse().map((entry, i) => (
+                  <div key={i} style={{ marginBottom: 16, padding: "10px 12px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+                    <div style={{ fontSize: 9, color: mc, fontFamily: "monospace", marginBottom: 6 }}>⬡ {entry.query}</div>
+                    {entry.sources && entry.sources.length > 0 && (
+                      <div style={{ marginBottom: 8, display: "flex", flexWrap: "wrap", gap: 3 }}>
+                        {entry.sources.map((s, j) => (
+                          <span key={j} onClick={() => { const d = data.documents.find(doc => doc.id === s.id); if (d) { setSelDoc(d); setView("MAP"); } }}
+                            style={{ fontSize: 7, padding: "1px 4px", background: mc + "08", border: `1px solid ${mc}15`, color: "#5a6a4a", cursor: "pointer", fontFamily: "monospace" }}>
+                            {s.id}: {s.title?.slice(0, 30)}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    <div style={{ fontSize: 10, color: "#7a8a6a", fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.7, whiteSpace: "pre-wrap" }}>
+                      {entry.answer}
+                    </div>
+                    {entry.rooms && entry.rooms.length > 0 && (
+                      <div style={{ marginTop: 6, display: "flex", gap: 3, flexWrap: "wrap" }}>
+                        {entry.rooms.map(rid => {
+                          const rm = data.rooms.find(r => r.id === rid);
+                          return rm ? <span key={rid} onClick={() => { handleRoomSelect(rid); setView("MAP"); }}
+                            style={{ fontSize: 7, padding: "1px 4px", background: "#0a0f0a", border: `1px solid ${mc}22`, color: mc, cursor: "pointer", fontFamily: "monospace" }}>{rm.name}</span> : null;
+                        })}
+                      </div>
+                    )}
+                  </div>
+                ))}
+                {!oracleLoading && oracleHistory.length === 0 && (
+                  <div style={{ textAlign: "center", padding: 30 }}>
+                    <div style={{ fontSize: 10, color: "#3a4a3a", fontFamily: "'Palatino Linotype','Palatino',serif", lineHeight: 1.7 }}>
+                      The Ezekiel Engine traverses {data.documents.length} deposits across {data.rooms.length} rooms.<br />
+                      Ask about operators, rooms, deposits, the formal object, compression, or any concept in the archive.
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
 
           {view === "LIBRARY" && (
             <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
