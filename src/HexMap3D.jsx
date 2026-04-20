@@ -39,7 +39,7 @@ const EDGES = [
 const ST_COL={room:"#c9a84c",chamber:"#7a5ac9",vault:"#c95a5a",portal:"#5ac9c9",portico:"#9f8a5a",field:"#5a9f5a"};
 const SZ=2, SQ3=Math.sqrt(3);
 
-export default function HexMap3D({onSelect:onSelectProp}){
+export default function HexMap3D({onSelect:onSelectProp, ambient=false}){
   const mountRef=useRef(null), threeRef=useRef({}), dragRef=useRef({on:false,sx:0,sy:0,px:0,py:0,td:0});
   const camRef=useRef({theta:0.9,phi:0.9,rad:38});
   const [sel,setSel]=useState(null);
@@ -162,6 +162,7 @@ export default function HexMap3D({onSelect:onSelectProp}){
     // Animation
     const clock=new THREE.Clock(); let anim;
     const loop=()=>{ anim=requestAnimationFrame(loop); const t=clock.getElapsedTime();
+      if(ambient){ camRef.current.theta = 0.9 + t*0.03; updCam(); }
       if(scene.userData.swarm){scene.userData.swarm.rotation.y=t*0.08; const pos=scene.userData.swarm.geometry.attributes.position; for(let i=0;i<pos.count;i++)pos.setY(i,pos.getY(i)+Math.sin(t*1.5+i*0.9)*0.002); pos.needsUpdate=true;}
       if(scene.userData.fbdp){const pos=scene.userData.fbdp.geometry.attributes.position; for(let i=0;i<pos.count;i++){let y=pos.getY(i)+0.006+Math.random()*0.004; if(y>8.5)y=0.3+Math.random()*0.5; pos.setY(i,y); pos.setX(i,pos.getX(i)+Math.sin(t+i)*0.003);} pos.needsUpdate=true;}
       if(scene.userData.gwell&&scene.userData.gwCenter){
@@ -229,32 +230,34 @@ export default function HexMap3D({onSelect:onSelectProp}){
   const nbrs=selR?EDGES.filter(([a,b])=>a===selR.id||b===selR.id).map(([a,b])=>a===selR.id?b:a).filter((v,i,a)=>a.indexOf(v)===i):[];
   return (
     <div style={{width:"100%",height:"100%",position:"absolute",top:0,left:0,overflow:"hidden",background:"#040606"}}>
-      <div ref={mountRef} style={{width:"100%",height:"100%",touchAction:"none"}} onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onWheel={onWheel} />
-      <div id="hex3d-labels" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",pointerEvents:"none",overflow:"hidden"}}>
+      <div ref={mountRef} style={{width:"100%",height:"100%",touchAction:"none",pointerEvents:ambient?"none":"auto"}} {...(ambient?{}:{onPointerDown:onDown,onPointerMove:onMove,onPointerUp:onUp,onWheel:onWheel})} />
+      {!ambient && <div id="hex3d-labels" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",pointerEvents:"none",overflow:"hidden"}}>
         {ROOMS.map(room=>(
           <div key={room.id} id={"lbl-"+room.id} style={{position:"absolute",top:0,left:0,whiteSpace:"nowrap",pointerEvents:"none",textAlign:"center"}}>
-            <div style={{fontSize:8,color:"#a09880",fontFamily:"'Palatino Linotype','Palatino','Book Antiqua',serif",fontWeight:400,letterSpacing:0.5,textShadow:"0 1px 3px #000"}}>{room.n.length>18?room.n.slice(0,16)+"…":room.n}</div>
-            <div style={{fontSize:6,color:"#5a5a4a",fontFamily:"monospace",letterSpacing:1,textShadow:"0 1px 2px #000"}}>{room.id}</div>
+            <div style={{fontSize:8,color:"#a09880",fontFamily:"'Crimson Pro',Georgia,serif",fontWeight:400,letterSpacing:0.5,textShadow:"0 1px 3px #000"}}>{room.n.length>18?room.n.slice(0,16)+"…":room.n}</div>
+            <div style={{fontSize:6,color:"#5a5a4a",fontFamily:"'JetBrains Mono',monospace",letterSpacing:1,textShadow:"0 1px 2px #000"}}>{room.id}</div>
           </div>
         ))}
-      </div>
-      <div style={{position:"absolute",top:12,left:16,pointerEvents:"none"}}>
-        <div style={{fontSize:9,letterSpacing:3,color:"#3a4a3a",fontFamily:"monospace"}}>CRIMSON HEXAGONAL ARCHIVE</div>
-        <div style={{fontSize:15,letterSpacing:3,color:"#c9a84c",fontFamily:"'Palatino Linotype','Palatino','Book Antiqua',serif",marginTop:2}}>⟨D, R, O, Σ, Φ, Ψ⟩</div>
-      </div>
-      <div style={{position:"absolute",bottom:12,left:16,pointerEvents:"none"}}>
-        {Object.entries(ST_COL).map(([t,c])=>(<div key={t} style={{display:"flex",alignItems:"center",gap:5,marginTop:1}}><div style={{width:6,height:6,background:c,opacity:0.8}}/><span style={{fontSize:7,color:"#4a5a4a",fontFamily:"monospace"}}>{t}</span></div>))}
-      </div>
-      <div style={{position:"absolute",bottom:12,right:16,pointerEvents:"none",textAlign:"right"}}>
-        <div style={{fontSize:7,color:"#5a9f5a"}}>↑ f.01 FBDP</div><div style={{fontSize:7,color:"#5a9f5a"}}>↓ f.02 Gravity Well</div><div style={{fontSize:7,color:"#5ac9c9"}}>⟷ f.03 Swarm</div>
-      </div>
-      {selR&&(<div style={{position:"absolute",top:16,right:16,width:180,padding:"10px 14px",background:"#080c08ee",border:"1px solid #1a2a1a",borderLeft:"3px solid "+(ST_COL[selR.st]||"#c9a84c"),fontFamily:"'Palatino Linotype','Palatino','Book Antiqua',serif",pointerEvents:"auto"}}>
-        <div style={{fontSize:7,letterSpacing:2,color:"#3a4a3a",fontFamily:"monospace"}}>{selR.st.toUpperCase()}</div>
-        <div style={{fontSize:13,color:"#c9a84c",marginTop:2,marginBottom:4}}>{selR.n}</div>
-        <div style={{fontSize:8,color:"#4a5a4a",fontFamily:"monospace",marginBottom:6}}>{selR.id} · {selR.d} docs</div>
-        {nbrs.length>0&&<><div style={{fontSize:7,letterSpacing:1,color:"#3a4a3a",fontFamily:"monospace",marginBottom:3}}>ADJACENT ({nbrs.length})</div>
-        <div style={{display:"flex",flexWrap:"wrap",gap:2}}>{nbrs.map(nid=>{const nr=ROOMS.find(r=>r.id===nid); return nr?<span key={nid} onClick={()=>setSel(nid)} style={{fontSize:7,padding:"1px 3px",background:"#0a0f0a",border:"1px solid "+(ST_COL[nr.st]||"#555")+"44",color:ST_COL[nr.st]||"#555",cursor:"pointer",fontFamily:"monospace"}}>{nr.n}</span>:null;})}</div></>}
-        <div style={{marginTop:6,fontSize:7,color:"#2a3a2a",fontFamily:"monospace",cursor:"pointer"}} onClick={()=>setSel(null)}>✕ close</div>
+      </div>}
+      {!ambient && <>
+        <div style={{position:"absolute",top:12,left:16,pointerEvents:"none"}}>
+          <div style={{fontSize:9,letterSpacing:3,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace"}}>CRIMSON HEXAGONAL ARCHIVE</div>
+          <div style={{fontSize:15,letterSpacing:3,color:"#D4AF37",fontFamily:"'Crimson Pro',Georgia,serif",marginTop:2}}>⟨D, R, O, Σ, Φ, Ψ⟩</div>
+        </div>
+        <div style={{position:"absolute",bottom:12,left:16,pointerEvents:"none"}}>
+          {Object.entries(ST_COL).map(([t,c])=>(<div key={t} style={{display:"flex",alignItems:"center",gap:5,marginTop:1}}><div style={{width:6,height:6,background:c,opacity:0.8}}/><span style={{fontSize:7,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace"}}>{t}</span></div>))}
+        </div>
+        <div style={{position:"absolute",bottom:12,right:16,pointerEvents:"none",textAlign:"right"}}>
+          <div style={{fontSize:7,color:"#5A9F7B"}}>↑ f.01 FBDP</div><div style={{fontSize:7,color:"#5A9F7B"}}>↓ f.02 Gravity Well</div><div style={{fontSize:7,color:"#4A9F8F"}}>⟷ f.03 Swarm</div>
+        </div>
+      </>}
+      {!ambient && selR&&(<div style={{position:"absolute",top:16,right:16,width:200,padding:"12px 16px",background:"#0F1318ee",border:"1px solid #1E2530",borderLeft:"3px solid "+(ST_COL[selR.st]||"#D4AF37"),fontFamily:"'Crimson Pro',Georgia,serif",pointerEvents:"auto",boxShadow:"0 4px 24px rgba(0,0,0,0.5)"}}>
+        <div style={{fontSize:8,letterSpacing:2,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",textTransform:"uppercase"}}>{selR.st}</div>
+        <div style={{fontSize:15,color:"#D4AF37",marginTop:4,marginBottom:6,fontWeight:400}}>{selR.n}</div>
+        <div style={{fontSize:9,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",marginBottom:8}}>{selR.id} · {selR.d} docs</div>
+        {nbrs.length>0&&<><div style={{fontSize:8,letterSpacing:1.5,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",marginBottom:4,textTransform:"uppercase"}}>Adjacent ({nbrs.length})</div>
+        <div style={{display:"flex",flexWrap:"wrap",gap:3}}>{nbrs.map(nid=>{const nr=ROOMS.find(r=>r.id===nid); return nr?<span key={nid} onClick={()=>setSel(nid)} style={{fontSize:8,padding:"2px 5px",background:"#080B10",border:"1px solid "+(ST_COL[nr.st]||"#555")+"44",color:ST_COL[nr.st]||"#B0B8C4",cursor:"pointer",fontFamily:"'Crimson Pro',Georgia,serif",transition:"background 200ms"}}>{nr.n}</span>:null;})}</div></>}
+        <div style={{marginTop:8,fontSize:8,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",cursor:"pointer"}} onClick={()=>setSel(null)}>✕ close</div>
       </div>)}
     </div>
   );

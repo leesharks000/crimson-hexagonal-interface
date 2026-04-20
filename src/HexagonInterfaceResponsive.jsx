@@ -22,12 +22,68 @@ class ErrorBoundary extends Component {
 
 const DATA_URL = "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json";
 
-const CAT_COLORS = { core: "#c9a84c", ext: "#5a9f7b", special: "#9f5a7b", new: "#5a7a9f" };
-const STRUCTURE_COLORS = { room: "#c9a84c", chamber: "#7a5ac9", vault: "#c95a5a", portal: "#5ac9c9", portico: "#9f8a5a", field: "#5a9f5a" };
-const MODE_COLORS = { ANALYTIC: "#5a7a9f", OPERATIVE: "#c9a84c", AUDIT: "#9f5a7b" };
+// ═══════════════════════════════════════════════════════════════════
+// THEME — consolidated design tokens
+// ═══════════════════════════════════════════════════════════════════
+const THEME = {
+  bg:        "#080B10",  // background (deeper, bluer than old #0a0d12)
+  surface:   "#0F1318",  // panel backgrounds
+  elevated:  "#161B22",  // hover / active panels
+  border:    "#1E2530",  // subtle structure
+  borderHi:  "#2A3040",  // hovered borders
+
+  gold:      "#D4AF37",  // signature — primary
+  goldMute:  "#8B7730",  // secondary gold
+  goldGlow:  "#D4AF3722", // gold at 13% for backgrounds
+  goldSoft:  "#D4AF3744", // gold at 26%
+
+  txBright:  "#E8ECF2",  // primary text
+  tx:        "#B0B8C4",  // body text
+  txMute:    "#5A6370",  // secondary
+  txFaint:   "#2A3040",  // decorative / faint
+
+  red:       "#C45A4A",  // alerts
+  teal:      "#4A9F8F",  // links / active
+  purple:    "#7A5AC9",  // chamber / special
+  green:     "#5A9F7B",  // ratified / success
+
+  ff: {
+    serif: "'Crimson Pro', Georgia, serif",
+    mono:  "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace",
+  },
+  fs: {
+    hero:    "clamp(36px, 6vw, 56px)",
+    title:   "clamp(22px, 3.2vw, 32px)",
+    h1:      "22px",
+    h2:      "18px",
+    h3:      "15px",
+    body:    "14px",
+    small:   "12px",
+    label:   "10px",
+    micro:   "8px",
+  },
+  ls: {
+    tight:   "0em",
+    normal:  "0.03em",
+    wide:    "0.08em",
+    wider:   "0.12em",
+    widest:  "0.18em",
+  },
+  lh: {
+    tight: 1.25,
+    body:  1.6,
+    loose: 1.8,
+  },
+  easing:   "cubic-bezier(0.4, 0.0, 0.2, 1)",
+  t:        "200ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+};
+
+const CAT_COLORS = { core: "#D4AF37", ext: "#5A9F7B", special: "#9F5A7B", new: "#5A7A9F" };
+const STRUCTURE_COLORS = { room: "#D4AF37", chamber: "#7A5AC9", vault: "#C45A4A", portal: "#4A9F8F", portico: "#8B7730", field: "#5A9F7B" };
+const MODE_COLORS = { ANALYTIC: "#5A7A9F", OPERATIVE: "#D4AF37", AUDIT: "#9F5A7B" };
 const STATUS_COLORS = {
-  RATIFIED: "#5a9f5a", DEPOSITED: "#7a9f5a", PROVISIONAL: "#9f9f5a",
-  GENERATED: "#8a7a4a", ACTIVE: "#5a9f5a", CONSTRAINED: "#9f5a5a",
+  RATIFIED: "#5A9F7B", DEPOSITED: "#4A9F8F", PROVISIONAL: "#9F9F5A",
+  GENERATED: "#8B7730", ACTIVE: "#5A9F7B", CONSTRAINED: "#C45A4A",
 };
 const ARK_MODE_COLORS = {
   FORMAL: "#7a8a9f", ADVENTURE: "#9f8a5a", POETIC: "#c9a84c", CLINICAL: "#5a9f7b",
@@ -1365,6 +1421,217 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
   );
 }
 
+// ─── Nested Hexagons: splash + ambient background ───
+// Used for splash intro (phase="splash") and landing ambient (phase="ambient")
+
+function NestedHexagons({ phase = "splash", isMobile = false }) {
+  // 14 nested hexagons — denser than the GW logo's 4
+  const HEXES = Array.from({ length: 14 }, (_, i) => ({
+    radius: 28 + i * 28,                          // grows outward
+    stroke: 0.6 + (1 - i / 14) * 1.8,             // thicker at center, thinner at edge
+    offsetDeg: (i % 2) * 30,                      // alternate flat-top / point-top
+    spinDir: i % 2 === 0 ? 1 : -1,                // alternating rotation direction
+    spinSpeed: 60 + i * 12,                       // inner spins faster, outer slower (for splash zoom feel)
+    delay: i * 55,                                // stagger entrance
+    endRotation: ((i % 2 === 0 ? 1 : -1) * (180 + i * 30)),  // target rotation at lock
+  }));
+
+  const isSplash = phase === "splash";
+  const isAmbient = phase === "ambient";
+
+  // Viewbox is centered; we render in a 800x800 coordinate space and let SVG scale
+  const VB = 800;
+  const cx = VB / 2, cy = VB / 2;
+
+  const hexPoints = (r, offset = 0) => {
+    const pts = [];
+    for (let i = 0; i < 6; i++) {
+      const a = (Math.PI / 180) * (60 * i + offset - 30);
+      pts.push(`${(cx + r * Math.cos(a)).toFixed(2)},${(cy + r * Math.sin(a)).toFixed(2)}`);
+    }
+    return pts.join(" ");
+  };
+
+  // Per-hex keyframes as a CSS string (built outside JSX to avoid parser issues)
+  const splashKeyframes = isSplash ? HEXES.map((h, i) => {
+    const op25 = (0.4 + (1 - i / 14) * 0.3).toFixed(2);
+    const op55 = (0.75 + (1 - i / 14) * 0.2).toFixed(2);
+    const op100 = (0.3 + (1 - i / 14) * 0.2).toFixed(2);
+    const r25 = (h.endRotation * 0.3).toFixed(0);
+    const r55 = (h.endRotation * 0.75).toFixed(0);
+    const r72 = (h.endRotation * 0.98).toFixed(0);
+    const r80 = h.endRotation;
+    return "@keyframes splashHex" + i + " { " +
+      "0% { opacity: 0; transform: rotate(0deg) scale(0.15); } " +
+      "25% { opacity: " + op25 + "; transform: rotate(" + r25 + "deg) scale(0.5); } " +
+      "55% { opacity: " + op55 + "; transform: rotate(" + r55 + "deg) scale(0.9); } " +
+      "72% { opacity: 1; transform: rotate(" + r72 + "deg) scale(1.15); } " +
+      "80% { opacity: 1; transform: rotate(" + r80 + "deg) scale(1.22); } " +
+      "100% { opacity: " + op100 + "; transform: rotate(" + r80 + "deg) scale(1); } " +
+      "}";
+  }).join(" ") : "";
+
+  return (
+    <svg viewBox={`0 0 ${VB} ${VB}`} preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none" }}>
+      <defs>
+        <radialGradient id="hexGradient" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#D4AF37" stopOpacity="1" />
+          <stop offset="40%" stopColor="#D4AF37" stopOpacity="0.85" />
+          <stop offset="75%" stopColor="#C45A4A" stopOpacity="0.55" />
+          <stop offset="100%" stopColor="#C45A4A" stopOpacity="0.05" />
+        </radialGradient>
+        <radialGradient id="hexGradientSplash" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#FFE680" stopOpacity="1" />
+          <stop offset="30%" stopColor="#D4AF37" stopOpacity="0.95" />
+          <stop offset="65%" stopColor="#C45A4A" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#7A1A1A" stopOpacity="0.15" />
+        </radialGradient>
+        <filter id="hexGlow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="2" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <g style={{ transformOrigin: "center", transformBox: "fill-box" }}>
+        {HEXES.map((h, i) => {
+          const strokeColor = isSplash ? "url(#hexGradientSplash)" : "url(#hexGradient)";
+          const splashStyle = {
+            transformOrigin: "center",
+            transformBox: "fill-box",
+            animation: `splashHex${i} 3.8s cubic-bezier(0.2, 0.6, 0.1, 1.0) ${h.delay}ms both`,
+          };
+          const ambientStyle = {
+            transformOrigin: "center",
+            transformBox: "fill-box",
+            animation: `${h.spinDir > 0 ? "slowRotate" : "slowRotateReverse"} ${90 + i * 6}s linear infinite`,
+            transform: `rotate(${h.endRotation}deg)`,
+            opacity: 0.18 + (1 - i / 14) * 0.12,
+          };
+          return (
+            <polygon
+              key={i}
+              points={hexPoints(h.radius, h.offsetDeg)}
+              fill="none"
+              stroke={strokeColor}
+              strokeWidth={h.stroke}
+              style={isSplash ? splashStyle : ambientStyle}
+              filter={i < 3 ? "url(#hexGlow)" : undefined}
+            />
+          );
+        })}
+      </g>
+
+      {isSplash && <style dangerouslySetInnerHTML={{ __html: splashKeyframes }} />}
+    </svg>
+  );
+}
+
+// ─── Splash Intro ───
+
+function SplashIntro({ onComplete, isMobile }) {
+  const [complete, setComplete] = useState(false);
+
+  useEffect(() => {
+    // Splash total duration: 4.2s then fade out 600ms
+    const t1 = setTimeout(() => setComplete(true), 4200);
+    const t2 = setTimeout(() => {
+      try { sessionStorage?.setItem?.("cha_splash_seen", "1"); } catch {}
+      onComplete();
+    }, 4800);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
+  }, [onComplete]);
+
+  const handleSkip = () => {
+    try { sessionStorage?.setItem?.("cha_splash_seen", "1"); } catch {}
+    onComplete();
+  };
+
+  return (
+    <div
+      onClick={handleSkip}
+      onKeyDown={handleSkip}
+      tabIndex={0}
+      style={{
+        position: "fixed",
+        inset: 0,
+        background: "#080B10",
+        zIndex: 9999,
+        cursor: "pointer",
+        animation: complete ? "splashFade 600ms ease-out forwards" : undefined,
+        overflow: "hidden",
+      }}
+    >
+      {/* Nested hexagons — the main visual */}
+      <NestedHexagons phase="splash" isMobile={isMobile} />
+
+      {/* Gold flash on lock */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: "radial-gradient(circle at center, #D4AF37 0%, #D4AF3744 30%, transparent 60%)",
+          animation: "splashFlash 3.8s cubic-bezier(0.2, 0.6, 0.1, 1.0) both",
+          pointerEvents: "none",
+        }}
+      />
+
+      {/* Title that materializes post-lock */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        pointerEvents: "none",
+      }}>
+        <div style={{
+          fontFamily: "'JetBrains Mono', monospace",
+          fontSize: isMobile ? 9 : 11,
+          letterSpacing: "0.32em",
+          color: "#8B7730",
+          marginBottom: 18,
+          animation: "splashEyebrow 3.8s cubic-bezier(0.2, 0.6, 0.1, 1.0) both",
+          textTransform: "uppercase",
+        }}>
+          ⟨ D · R · O · Σ · Φ · Ψ ⟩
+        </div>
+        <h1 style={{
+          fontFamily: "'Crimson Pro', Georgia, serif",
+          fontSize: isMobile ? "28px" : "44px",
+          fontWeight: 300,
+          color: "#D4AF37",
+          letterSpacing: "0.18em",
+          textAlign: "center",
+          margin: 0,
+          animation: "splashTitle 3.8s cubic-bezier(0.2, 0.6, 0.1, 1.0) both",
+          textShadow: "0 0 32px rgba(212, 175, 55, 0.4)",
+        }}>
+          CRIMSON HEXAGONAL ARCHIVE
+        </h1>
+      </div>
+
+      {/* Skip hint */}
+      <div style={{
+        position: "absolute",
+        bottom: 24,
+        right: 24,
+        fontSize: 9,
+        letterSpacing: "0.12em",
+        color: "#5A6370",
+        fontFamily: "'JetBrains Mono', monospace",
+        opacity: 0.6,
+        textTransform: "uppercase",
+      }}>
+        click to skip
+      </div>
+    </div>
+  );
+}
+
 // ─── Main ───
 
 function HexagonInterfaceResponsive() {
@@ -1400,6 +1667,10 @@ function HexagonInterfaceResponsive() {
   // Trail state
   const [trail, setTrail] = useState({ name: "", docs: [], position: -1 });
   const [libMode, setLibMode] = useState("SEARCH"); // SEARCH | TRAIL
+  // Splash intro — plays once per session
+  const [splashPhase, setSplashPhase] = useState(() => {
+    try { return sessionStorage?.getItem?.("cha_splash_seen") === "1" ? "done" : "playing"; } catch { return "playing"; }
+  });
 
   const addLog = useCallback((msg, type = "sys") => { setLog((p) => [...p.slice(-50), { msg, type, t: new Date().toISOString().slice(11, 19) }]); }, []);
 
@@ -1682,56 +1953,213 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
     return data.documents.filter((d) => d.t.toLowerCase().includes(q) || d.k.some((k) => String(k).toLowerCase().includes(q)) || d.c.some((c) => String(c).toLowerCase().includes(q)) || String(d.e || "").toLowerCase().includes(q)).slice(0, 30);
   }, [data, search]);
 
-  if (loading) return <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Georgia,serif" }}><div style={{ textAlign: "center" }}><svg width="48" height="48" viewBox="0 0 60 60" style={{ marginBottom: 8 }}>{[28,21,14,8].map((s,i) => <polygon key={i} points={[0,1,2,3,4,5].map(a => { const ang = Math.PI/3*a - Math.PI/6; return `${30+s*Math.cos(ang)},${30+s*Math.sin(ang)}`; }).join(" ")} fill="none" stroke="#c9a84c" strokeWidth={0.6} opacity={1 - i*0.22} />)}</svg><div style={{ fontSize: 14, letterSpacing: 4, color: "#c9a84c", marginBottom: 8 }}>CRIMSON HEXAGONAL ARCHIVE</div><div style={{ fontSize: 10, color: "#3a4a3a", letterSpacing: 2 }}>loading canonical JSON…</div></div></div>;
-  if (error) return <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "monospace" }}><div style={{ color: "#9f5a5a", fontSize: 11 }}>LOAD ERROR: {error}</div></div>;
-
-  if (!mode) return (
-    <div style={{ height: "100dvh", background: "#0a0d12", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Georgia,serif", padding: 16 }}>
-      <div style={{ textAlign: "center", maxWidth: 540 }}>
-        <div style={{ fontSize: 10, letterSpacing: 3, color: "#3a4a3a", marginBottom: 4 }}>H_core · LOS · {data.meta?.total_deposits || data.documents.length} DEPOSITS</div>
-        <svg width="60" height="60" viewBox="0 0 60 60" style={{ marginBottom: 8 }}>{[28,21,14,8].map((s,i) => <polygon key={i} points={[0,1,2,3,4,5].map(a => { const ang = Math.PI/3*a - Math.PI/6; return `${30+s*Math.cos(ang)},${30+s*Math.sin(ang)}`; }).join(" ")} fill="none" stroke="#c9a84c" strokeWidth={0.6} opacity={1 - i*0.22} />)}</svg>
-        <div style={{ fontSize: isMobile ? 18 : 22, letterSpacing: 3, color: "#c9a84c", marginBottom: 6 }}>Crimson Hexagonal Archive</div>
-        <div style={{ fontSize: 10, color: "#5a6a4a", lineHeight: 1.6, marginBottom: 6, maxWidth: 420, margin: "0 auto 6px auto" }}>A governed literary architecture. {data.documents.length} DOI-anchored deposits across {data.rooms.length} rooms, each with its own physics, mantle, and operators. Machine-traversable. Provenance-bearing.</div>
-        <div style={{ fontSize: 10, color: "#3a4a3a", marginBottom: 20 }}>{data.rooms.length} rooms · {data.documents.length} indexed · {data.relations.length} relations · <a href="https://doi.org/10.5281/zenodo.19013315" target="_blank" rel="noreferrer" style={{ color: "#5a6a4a" }}>Space Ark v4.2.7</a></div>
-        <div style={{ fontSize: 9, letterSpacing: 2, color: "#3a4a3a", marginBottom: 10 }}>SELECT MODE</div>
-        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, minmax(0, 1fr))", gap: 12 }}>
-          {[["ANALYTIC", "Observe · Navigate · Trace provenance"], ["OPERATIVE", "Generate · Invoke · Transform"], ["AUDIT", "Govern · Witness · Promote"]].map(([m, desc]) => (
-            <button key={m} onClick={() => { setMode(m); addLog(`Mode: ${m}`); }} style={{ background: "transparent", border: `1px solid ${MODE_COLORS[m]}44`, color: MODE_COLORS[m], padding: "14px 18px", fontSize: 11, letterSpacing: 2, cursor: "pointer", fontFamily: "monospace", textAlign: "center" }}>
-              <div>{m}</div><div style={{ fontSize: 9, color: "#3a4a3a", marginTop: 5, lineHeight: 1.5 }}>{desc}</div>
-            </button>
-          ))}
-        </div>
-        <div style={{ marginTop: 16, padding: "10px 16px", background: "#080a0e", borderLeft: "2px solid #c9a84c22", maxWidth: 420, margin: "16px auto 0 auto" }}>
-          <div style={{ fontSize: 8, letterSpacing: 2, color: "#3a4a3a", marginBottom: 6 }}>THE PATH</div>
-          <div style={{ display: "flex", gap: 3, flexWrap: "wrap", justifyContent: "center", alignItems: "center", fontSize: 8, fontFamily: "monospace", color: "#4a5a4a" }}>
-            {["Enter Room", "→", "Invoke", "→", "Capture", "→", "Deposit", "→", "DOI", "→", "Reconstitute"].map((s, i) => (
-              s === "→" ? <span key={i} style={{ color: "#2a3a2a" }}>→</span> : <span key={i} style={{ color: "#c9a84c", padding: "1px 4px", border: "1px solid #c9a84c22" }}>{s}</span>
-            ))}
-          </div>
-        </div>
-        <div style={{ fontSize: 8, color: "#2a3a2a", marginTop: 12 }}>Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>ORCID</a> · <a href="/manifest.json" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Machine Manifest</a> · <a href="https://gravitywell-1.onrender.com" target="_blank" rel="noreferrer" style={{ color: "#3a4a3a" }}>Gravity Well</a></div>
-        <div style={{ display: "flex", gap: 8, justifyContent: "center", marginTop: 8, fontSize: 7, fontFamily: "monospace" }}>
-          <span style={{ color: "#5a9f5a" }}>● JSON</span>
-          <span style={{ color: isSupabaseConfigured() ? "#5a9f5a" : "#9f5a5a" }}>{isSupabaseConfigured() ? "●" : "○"} Supabase</span>
-          <span style={{ color: isGravityWellConfigured() ? "#5a9f5a" : "#9f5a5a" }}>{isGravityWellConfigured() ? "●" : "○"} GW</span>
-          <span style={{ color: "#5a9f5a" }}>● Zenodo</span>
-        </div>
+  if (loading) return (
+    <div style={{ height: "100dvh", background: THEME.bg, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: THEME.ff.serif }}>
+      <div style={{ textAlign: "center" }} className="fade-in">
+        <div style={{ fontSize: 72, color: THEME.gold, marginBottom: 16, animation: "gentlePulse 2s ease-in-out infinite", fontWeight: 300 }}>∮</div>
+        <div style={{ fontSize: 14, letterSpacing: THEME.ls.widest, color: THEME.gold, marginBottom: 10, fontWeight: 400 }}>CRIMSON HEXAGONAL ARCHIVE</div>
+        <div style={{ fontSize: 10, color: THEME.txMute, letterSpacing: THEME.ls.wide, fontFamily: THEME.ff.mono }}>loading canonical json…</div>
       </div>
     </div>
   );
+  if (error) return (
+    <div style={{ height: "100dvh", background: THEME.bg, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: THEME.ff.mono }}>
+      <div style={{ color: THEME.red, fontSize: 11 }}>LOAD ERROR: {error}</div>
+    </div>
+  );
 
-  return (
-    <div style={{ height: "100dvh", background: "#0a0d12", color: "#5a6a4a", fontFamily: "Georgia,serif", display: "flex", flexDirection: "column", overflow: "hidden" }}>
-      {/* Header */}
-      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", justifyContent: "space-between", alignItems: isMobile ? "stretch" : "center", gap: isMobile ? 8 : 12, padding: isMobile ? "8px 10px" : "6px 14px", borderBottom: "1px solid #0f1a0f", flexShrink: 0 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12, minWidth: 0 }}>
-          <span style={{ fontSize: 12, letterSpacing: 3, color: mc, cursor: "pointer", flexShrink: 0 }} onClick={() => { setSelRoom(null); setSelDoc(null); setView("MAP"); setArkMode(null); setTSteps([]); setMantle(null); setLp(initLP()); }}>⬡ CHA</span>
-          <div style={{ display: "flex", gap: 8, overflowX: "auto", whiteSpace: "nowrap", scrollbarWidth: "none", minWidth: 0 }}>
-            {navItems.map((n) => <span key={n.id} onClick={() => { setView(n.id); if (n.id !== "MAP" && n.id !== "MAP_3D") setSelRoom(null); if (n.id !== "MAP" && n.id !== "DEPOSIT") setSelDoc(null); }} style={{ fontSize: isMobile ? 8 : 9, letterSpacing: 1, color: view === n.id ? mc : "#3a4a3a", cursor: "pointer", padding: "2px 6px", borderBottom: view === n.id ? `1px solid ${mc}` : "1px solid transparent", flexShrink: 0 }}>{n.label}</span>)}
+  if (!mode) return (
+    <>
+      {splashPhase === "playing" && <SplashIntro onComplete={() => setSplashPhase("done")} isMobile={isMobile} />}
+      <div style={{ height: "100dvh", background: THEME.bg, fontFamily: THEME.ff.serif, position: "relative", overflow: "hidden" }}>
+        {/* Nested rotating hexagons — the CHA signature mark, at ambient pace */}
+        <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 0 }}>
+          <NestedHexagons phase="ambient" isMobile={isMobile} />
+        </div>
+        {/* Vignette to darken edges */}
+        <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse at center, transparent 0%, ${THEME.bg}cc 80%, ${THEME.bg} 100%)`, pointerEvents: "none", zIndex: 1 }} />
+
+      {/* Hero content */}
+      <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: isMobile ? "24px 20px" : "40px", overflow: "auto" }}>
+        <div style={{ textAlign: "center", maxWidth: 720, width: "100%" }}>
+
+          {/* Eyebrow */}
+          <div className="fade-in-up" style={{ fontSize: THEME.fs.micro, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 24, fontFamily: THEME.ff.mono, textTransform: "uppercase", animationDelay: "0ms" }}>
+            H_core · {data.meta?.total_deposits || data.documents.length} Deposits · CC BY 4.0
+          </div>
+
+          {/* Hero ∮ */}
+          <div className="fade-in-up" style={{ fontSize: isMobile ? 84 : 108, color: THEME.gold, fontWeight: 300, lineHeight: 1, marginBottom: 12, animationDelay: "100ms" }}>∮</div>
+
+          {/* Title */}
+          <h1 className="fade-in-up" style={{ fontSize: THEME.fs.title, letterSpacing: THEME.ls.wider, color: THEME.gold, fontWeight: 300, marginBottom: 20, lineHeight: 1.2, animationDelay: "200ms" }}>
+            Crimson Hexagonal Archive
+          </h1>
+
+          {/* Subtitle */}
+          <p className="fade-in-up" style={{ fontSize: isMobile ? 14 : 16, color: THEME.tx, lineHeight: 1.65, marginBottom: 10, fontWeight: 400, maxWidth: 560, margin: "0 auto 10px", animationDelay: "300ms" }}>
+            A governed literary architecture. {data.documents.length} DOI-anchored deposits across {data.rooms.length} rooms, each with its own physics, mantle, and operators.
+          </p>
+          <p className="fade-in-up" style={{ fontSize: isMobile ? 13 : 14, color: THEME.txMute, lineHeight: 1.65, marginBottom: 36, fontStyle: "italic", maxWidth: 560, margin: "0 auto 36px", animationDelay: "400ms" }}>
+            Machine-traversable. Provenance-bearing. Five thousand years of heteronymic practice.
+          </p>
+
+          {/* Primary action */}
+          <div className="fade-in-up" style={{ animationDelay: "500ms", marginBottom: 28 }}>
+            <button
+              onClick={() => { setMode("ANALYTIC"); setView("MAP"); addLog("Enter: ANALYTIC · MAP"); }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = THEME.goldGlow; e.currentTarget.style.boxShadow = `0 0 32px ${THEME.goldSoft}`; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.boxShadow = "none"; }}
+              style={{
+                background: "transparent",
+                border: `1px solid ${THEME.gold}`,
+                color: THEME.gold,
+                padding: "14px 36px",
+                fontSize: 13,
+                letterSpacing: THEME.ls.widest,
+                fontFamily: THEME.ff.mono,
+                cursor: "pointer",
+                textTransform: "uppercase",
+                transition: THEME.t,
+                fontWeight: 400,
+              }}
+            >
+              Enter the Archive
+            </button>
+          </div>
+
+          {/* Divider */}
+          <div className="fade-in-up" style={{ display: "flex", alignItems: "center", gap: 12, maxWidth: 360, margin: "0 auto 20px", animationDelay: "600ms" }}>
+            <div style={{ flex: 1, height: 1, background: THEME.border }} />
+            <span style={{ fontSize: 9, letterSpacing: THEME.ls.wide, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>or select mode</span>
+            <div style={{ flex: 1, height: 1, background: THEME.border }} />
+          </div>
+
+          {/* Mode cards */}
+          <div className="fade-in-up" style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)", gap: 10, marginBottom: 40, animationDelay: "700ms" }}>
+            {[
+              ["ANALYTIC", "Observe · Navigate", "Trace provenance across the graph"],
+              ["OPERATIVE", "Generate · Invoke", "Transform through room operators"],
+              ["AUDIT", "Govern · Witness", "Promote, ratify, and anchor"],
+            ].map(([m, line1, line2]) => (
+              <button
+                key={m}
+                onClick={() => { setMode(m); addLog(`Mode: ${m}`); }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = MODE_COLORS[m]; e.currentTarget.style.background = THEME.surface; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = THEME.border; e.currentTarget.style.background = "transparent"; }}
+                style={{
+                  background: "transparent",
+                  border: `1px solid ${THEME.border}`,
+                  color: MODE_COLORS[m],
+                  padding: "16px 14px",
+                  cursor: "pointer",
+                  textAlign: "left",
+                  transition: THEME.t,
+                  fontFamily: THEME.ff.serif,
+                }}
+              >
+                <div style={{ fontSize: 11, letterSpacing: THEME.ls.wide, fontFamily: THEME.ff.mono, marginBottom: 6 }}>{m}</div>
+                <div style={{ fontSize: 13, color: THEME.txBright, fontWeight: 400, marginBottom: 3, fontFamily: THEME.ff.serif }}>{line1}</div>
+                <div style={{ fontSize: 11, color: THEME.txMute, lineHeight: 1.5, fontFamily: THEME.ff.serif, fontStyle: "italic" }}>{line2}</div>
+              </button>
+            ))}
+          </div>
+
+          {/* Stat blocks */}
+          <div className="fade-in-up" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12, maxWidth: 520, margin: "0 auto 32px", animationDelay: "800ms" }}>
+            {[
+              [data.rooms.length, "rooms"],
+              [data.documents.length, "deposits"],
+              ["∮ = 1", "closed loop"],
+            ].map(([val, lbl], i) => (
+              <div key={i} style={{ textAlign: "center", padding: "10px 6px", borderTop: `1px solid ${THEME.border}` }}>
+                <div style={{ fontSize: isMobile ? 22 : 28, color: THEME.gold, fontWeight: 300, marginBottom: 4, fontFamily: THEME.ff.serif, letterSpacing: THEME.ls.tight }}>{val}</div>
+                <div style={{ fontSize: 9, color: THEME.txMute, letterSpacing: THEME.ls.wide, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>{lbl}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Footer attribution */}
+          <div className="fade-in-up" style={{ animationDelay: "900ms" }}>
+            <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.normal, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 10, alignItems: "center" }}>
+              <span>Lee Sharks</span>
+              <span style={{ color: THEME.txFaint }}>·</span>
+              <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>ORCID</a>
+              <span style={{ color: THEME.txFaint }}>·</span>
+              <a href="https://doi.org/10.5281/zenodo.19013315" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>Space Ark v4.2</a>
+              <span style={{ color: THEME.txFaint }}>·</span>
+              <a href="https://pessoagraph.org" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>PKG</a>
+              <span style={{ color: THEME.txFaint }}>·</span>
+              <a href="https://spxi.dev" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>SPXI</a>
+              <span style={{ color: THEME.txFaint }}>·</span>
+              <a href="https://semanticeconomy.org" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>SEI</a>
+              <span style={{ color: THEME.txFaint }}>·</span>
+              <a href="https://gw.crimsonhexagonal.org" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>Gravity Well</a>
+            </div>
+            <div style={{ marginTop: 10, display: "flex", gap: 10, justifyContent: "center", fontSize: 8, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide }}>
+              <span style={{ color: THEME.green }}>● Canonical</span>
+              <span style={{ color: isSupabaseConfigured() ? THEME.green : THEME.txFaint }}>{isSupabaseConfigured() ? "●" : "○"} Supabase</span>
+              <span style={{ color: isGravityWellConfigured() ? THEME.green : THEME.txFaint }}>{isGravityWellConfigured() ? "●" : "○"} GW</span>
+              <span style={{ color: THEME.green }}>● Zenodo</span>
+            </div>
           </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: isMobile ? "space-between" : "flex-end", gap: 8 }}>
-          <span style={{ fontSize: 9, padding: "2px 6px", background: mc + "11", border: `1px solid ${mc}33`, color: mc, fontFamily: "monospace", cursor: "pointer" }} onClick={() => setMode(null)}>{mode}</span>
+      </div>
+    </div>
+    </>
+  );
+
+  return (
+    <div style={{ height: "100dvh", background: THEME.bg, color: THEME.tx, fontFamily: THEME.ff.serif, display: "flex", flexDirection: "column", overflow: "hidden" }}>
+      {/* Header */}
+      <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", justifyContent: "space-between", alignItems: isMobile ? "stretch" : "center", gap: isMobile ? 8 : 16, padding: isMobile ? "10px 14px" : "0 20px", background: THEME.surface, borderBottom: `1px solid ${THEME.border}`, flexShrink: 0, minHeight: isMobile ? "auto" : 48 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 20, minWidth: 0 }}>
+          <div
+            onClick={() => { setSelRoom(null); setSelDoc(null); setView("MAP"); setArkMode(null); setTSteps([]); setMantle(null); setLp(initLP()); setMode(null); }}
+            onMouseEnter={e => { e.currentTarget.style.color = THEME.gold; }}
+            onMouseLeave={e => { e.currentTarget.style.color = THEME.gold; }}
+            style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer", flexShrink: 0, transition: THEME.t }}
+          >
+            <span style={{ fontSize: 20, color: THEME.gold, fontWeight: 300, lineHeight: 1 }}>∮</span>
+            <span style={{ fontSize: 12, letterSpacing: THEME.ls.wider, color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 400 }}>Crimson Hexagonal Archive</span>
+          </div>
+          <div style={{ display: "flex", gap: 2, overflowX: "auto", whiteSpace: "nowrap", scrollbarWidth: "none", minWidth: 0 }}>
+            {navItems.map((n) => {
+              const active = view === n.id;
+              return (
+                <span
+                  key={n.id}
+                  onClick={() => { setView(n.id); if (n.id !== "MAP" && n.id !== "MAP_3D") setSelRoom(null); if (n.id !== "MAP" && n.id !== "DEPOSIT") setSelDoc(null); }}
+                  onMouseEnter={e => { if (!active) e.currentTarget.style.color = THEME.tx; }}
+                  onMouseLeave={e => { if (!active) e.currentTarget.style.color = THEME.txMute; }}
+                  style={{
+                    fontSize: 10,
+                    letterSpacing: THEME.ls.wide,
+                    color: active ? THEME.gold : THEME.txMute,
+                    cursor: "pointer",
+                    padding: isMobile ? "6px 8px" : "14px 12px",
+                    borderBottom: active ? `2px solid ${THEME.gold}` : "2px solid transparent",
+                    flexShrink: 0,
+                    fontFamily: THEME.ff.mono,
+                    transition: THEME.t,
+                    textShadow: active ? `0 0 12px ${THEME.goldSoft}` : "none",
+                  }}
+                >
+                  {n.label}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: isMobile ? "flex-end" : "flex-end", gap: 8 }}>
+          <span
+            onClick={() => setMode(null)}
+            onMouseEnter={e => { e.currentTarget.style.background = mc + "22"; }}
+            onMouseLeave={e => { e.currentTarget.style.background = mc + "11"; }}
+            style={{ fontSize: 9, padding: "4px 10px", background: mc + "11", border: `1px solid ${mc}44`, color: mc, fontFamily: THEME.ff.mono, cursor: "pointer", letterSpacing: THEME.ls.wide, transition: THEME.t }}
+          >
+            {mode}
+          </span>
         </div>
       </div>
 

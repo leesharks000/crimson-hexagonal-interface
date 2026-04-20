@@ -38,24 +38,60 @@
       ]
     }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { background: #0a0d12; overflow: hidden; }
+      html, body { background: #080B10; overflow: hidden; }
+      body { font-family: 'Crimson Pro', Georgia, serif; color: #B0B8C4; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slowRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes slowRotateReverse { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+      @keyframes gentlePulse { 0%, 100% { opacity: 0.7; } 50% { opacity: 1; } }
+      @keyframes splashFlash {
+        0% { opacity: 0; }
+        60% { opacity: 0; }
+        68% { opacity: 0.9; }
+        100% { opacity: 0; }
+      }
+      @keyframes splashTitle {
+        0%, 70% { opacity: 0; transform: scale(0.96); letter-spacing: 0.4em; }
+        80% { opacity: 1; transform: scale(1.02); letter-spacing: 0.2em; }
+        100% { opacity: 1; transform: scale(1); letter-spacing: 0.18em; }
+      }
+      @keyframes splashEyebrow {
+        0%, 78% { opacity: 0; }
+        100% { opacity: 0.85; }
+      }
+      @keyframes splashFade {
+        0% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+      }
+      .fade-in-up { animation: fadeInUp 600ms ease-out both; }
+      .fade-in { animation: fadeIn 400ms ease-out both; }
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #0F1318; }
+      ::-webkit-scrollbar-thumb { background: #1E2530; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #2A3040; }
+      button { font-family: inherit; }
+      a { color: inherit; }
     </style>
   </head>
   <body>
     <div id="root"></div>
     <noscript>
-      <div style="background:#0a0d12;color:#5a6a4a;font-family:Georgia,serif;padding:40px;max-width:800px;margin:0 auto;">
-        <h1 style="color:#c9a84c;letter-spacing:3px;font-weight:300;">Crimson Hexagonal Archive</h1>
+      <div style="background:#080B10;color:#B0B8C4;font-family:'Crimson Pro',Georgia,serif;padding:40px;max-width:800px;margin:0 auto;">
+        <h1 style="color:#D4AF37;letter-spacing:3px;font-weight:300;">Crimson Hexagonal Archive</h1>
         <p style="margin:12px 0;line-height:1.6;">H_core = ⟨D, R, M, I, O, Φ, W⟩ — 29 rooms, 455 DOI-anchored deposits, 39 operators, 20 typed relations, 13 heteronyms, 7 witnesses.</p>
         <p style="margin:12px 0;line-height:1.6;">The Crimson Hexagonal Archive is a governed reading-and-production environment whose topology organizes text, labor, and provenance. This interface is its operating surface.</p>
-        <p style="margin:12px 0;"><strong>Machine traversal:</strong> <a href="/manifest.json" style="color:#c9a84c;">manifest.json</a> — full architecture description and interaction protocol.</p>
-        <p style="margin:12px 0;"><strong>Canonical data:</strong> <a href="https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json" style="color:#c9a84c;">hexagon_canonical.json</a> — rooms, relations, documents, operators, LP programs.</p>
-        <p style="margin:12px 0;"><strong>Archive:</strong> <a href="https://zenodo.org/communities/leesharks000" style="color:#c9a84c;">Zenodo community</a> — 455+ deposits with DOIs.</p>
-        <p style="margin:12px 0;"><strong>Space Ark:</strong> <a href="https://doi.org/10.5281/zenodo.19013315" style="color:#c9a84c;">DOI: 10.5281/zenodo.19013315</a> — the mobile ontological operating system.</p>
-        <p style="margin:12px 0;"><strong>Author:</strong> Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" style="color:#c9a84c;">ORCID: 0009-0000-1599-0703</a></p>
-        <p style="margin:20px 0;font-style:italic;color:#3a4a3a;">To choose to read is to execute. The architecture is running. ∮ = 1</p>
+        <p style="margin:12px 0;"><strong>Machine traversal:</strong> <a href="/manifest.json" style="color:#D4AF37;">manifest.json</a> — full architecture description and interaction protocol.</p>
+        <p style="margin:12px 0;"><strong>Canonical data:</strong> <a href="https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json" style="color:#D4AF37;">hexagon_canonical.json</a> — rooms, relations, documents, operators, LP programs.</p>
+        <p style="margin:12px 0;"><strong>Archive:</strong> <a href="https://zenodo.org/communities/leesharks000" style="color:#D4AF37;">Zenodo community</a> — 455+ deposits with DOIs.</p>
+        <p style="margin:12px 0;"><strong>Space Ark:</strong> <a href="https://doi.org/10.5281/zenodo.19013315" style="color:#D4AF37;">DOI: 10.5281/zenodo.19013315</a> — the mobile ontological operating system.</p>
+        <p style="margin:12px 0;"><strong>Author:</strong> Lee Sharks · <a href="https://orcid.org/0009-0000-1599-0703" style="color:#D4AF37;">ORCID: 0009-0000-1599-0703</a></p>
+        <p style="margin:20px 0;font-style:italic;color:#5A6370;">To choose to read is to execute. The architecture is running. ∮ = 1</p>
       </div>
     </noscript>
     <script type="module" src="/src/main.jsx"></script>
