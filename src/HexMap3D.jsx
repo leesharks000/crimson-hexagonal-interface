@@ -36,7 +36,7 @@ const EDGES = [
   ["f03","sp03"],["f03","sp01"],["f01","r05"],["f02","r05"],
   ["r03","r08"],["r03","r11"],["r21","r08"],["r21","r09"],
 ];
-const ST_COL={room:"#c9a84c",chamber:"#7a5ac9",vault:"#c95a5a",portal:"#5ac9c9",portico:"#9f8a5a",field:"#5a9f5a"};
+const ST_COL={room:"#D4AF37",chamber:"#7a5ac9",vault:"#c95a5a",portal:"#4A9F8F",portico:"#9f8a5a",field:"#5A9F7B"};
 const SZ=2, SQ3=Math.sqrt(3);
 
 export default function HexMap3D({onSelect:onSelectProp, ambient=false}){
@@ -54,36 +54,40 @@ export default function HexMap3D({onSelect:onSelectProp, ambient=false}){
   useEffect(()=>{
     const el=mountRef.current; if(!el)return;
     const par=el.parentElement, W=par?.clientWidth||window.innerWidth, H=par?.clientHeight||window.innerHeight;
-    const scene=new THREE.Scene(); scene.background=new THREE.Color(0x040606); scene.fog=new THREE.FogExp2(0x040606,0.009);
+    const scene=new THREE.Scene(); scene.background=new THREE.Color(0x050710); scene.fog=new THREE.FogExp2(0x050710,0.009);
     const camera=new THREE.PerspectiveCamera(50,W/H,0.1,200);
     const renderer=new THREE.WebGLRenderer({antialias:true}); renderer.setSize(W,H); renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
     el.appendChild(renderer.domElement);
     threeRef.current={scene,camera,renderer,meshes:{},posMap:{}};
     updCam();
-    scene.add(new THREE.AmbientLight(0x1a2a1a,0.7));
-    const dir=new THREE.DirectionalLight(0xc9a84c,0.5); dir.position.set(8,18,6); scene.add(dir);
-    const ptL=new THREE.PointLight(0xc9a84c,0.4,50); ptL.position.set(0,10,-8); scene.add(ptL);
-    const gnd=new THREE.Mesh(new THREE.PlaneGeometry(100,100), new THREE.MeshStandardMaterial({color:0x060906,transparent:true,opacity:0.4}));
+    scene.add(new THREE.AmbientLight(0x0F1318,0.6));
+    const dir=new THREE.DirectionalLight(0xD4AF37,0.55); dir.position.set(8,18,6); scene.add(dir);
+    const dir2=new THREE.DirectionalLight(0x5A7A9F,0.22); dir2.position.set(-10,12,-8); scene.add(dir2);
+    const ptL=new THREE.PointLight(0xD4AF37,0.5,60); ptL.position.set(0,12,-8); scene.add(ptL);
+    const ptL2=new THREE.PointLight(0xC45A4A,0.25,40); ptL2.position.set(-14,4,10); scene.add(ptL2);
+    const gnd=new THREE.Mesh(new THREE.PlaneGeometry(100,100), new THREE.MeshStandardMaterial({color:0x080B10,transparent:true,opacity:0.55,roughness:0.95,metalness:0.1}));
     gnd.rotation.x=-Math.PI/2; gnd.position.y=-0.1; scene.add(gnd);
     const posMap={}, meshes={};
-    const mkHex=(rad,h)=>{ const s=new THREE.Shape(); for(let i=0;i<6;i++){const a=(Math.PI/3)*i-Math.PI/6; i===0?s.moveTo(rad*Math.cos(a),rad*Math.sin(a)):s.lineTo(rad*Math.cos(a),rad*Math.sin(a));} s.closePath(); const g=new THREE.ExtrudeGeometry(s,{depth:h,bevelEnabled:false}); g.rotateX(-Math.PI/2); return g; };
+    const mkHex=(rad,h)=>{ const s=new THREE.Shape(); for(let i=0;i<6;i++){const a=(Math.PI/3)*i-Math.PI/6; i===0?s.moveTo(rad*Math.cos(a),rad*Math.sin(a)):s.lineTo(rad*Math.cos(a),rad*Math.sin(a));} s.closePath(); const g=new THREE.ExtrudeGeometry(s,{depth:h,bevelEnabled:true,bevelThickness:0.04,bevelSize:0.04,bevelSegments:2}); g.rotateX(-Math.PI/2); return g; };
     ROOMS.forEach(room=>{
       const px=SZ*1.5*room.q, pz=SZ*(SQ3*room.r+SQ3/2*room.q); posMap[room.id]={x:px,z:pz};
-      const col=new THREE.Color(ST_COL[room.st]||"#c9a84c");
+      const col=new THREE.Color(ST_COL[room.st]||"#D4AF37");
       if(room.st==="field"){ const yy=room.id==="f01"?2.5:room.id==="f02"?0.15:1;
-        const disc=new THREE.Mesh(new THREE.CylinderGeometry(SZ*0.8,SZ*0.8,0.15,6), new THREE.MeshStandardMaterial({color:col,transparent:true,opacity:0.3,emissive:col,emissiveIntensity:0.4}));
+        const disc=new THREE.Mesh(new THREE.CylinderGeometry(SZ*0.8,SZ*0.8,0.15,6), new THREE.MeshStandardMaterial({color:col,transparent:true,opacity:0.35,emissive:col,emissiveIntensity:0.5,metalness:0.4,roughness:0.6}));
         disc.position.set(px,yy,pz); disc.userData={roomId:room.id}; scene.add(disc); meshes[room.id]=disc;
-        const ring=new THREE.Mesh(new THREE.TorusGeometry(SZ*0.85,0.05,8,6), new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:0.5}));
+        const ring=new THREE.Mesh(new THREE.TorusGeometry(SZ*0.85,0.06,12,6), new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:0.7}));
         ring.rotation.x=Math.PI/2; ring.position.set(px,yy,pz); scene.add(ring); return; }
       const h=room.id==="sp03"?5.5:Math.max(0.5,Math.log2(room.d+1)*0.55);
-      const mesh=new THREE.Mesh(mkHex(SZ*0.82,h), new THREE.MeshStandardMaterial({color:col,transparent:true,opacity:room.id==="sp03"?0.75:0.5,emissive:col,emissiveIntensity:room.id==="sp03"?0.4:0.1,metalness:0.2,roughness:0.8}));
+      const mesh=new THREE.Mesh(mkHex(SZ*0.82,h), new THREE.MeshStandardMaterial({color:col,transparent:true,opacity:room.id==="sp03"?0.78:0.55,emissive:col,emissiveIntensity:room.id==="sp03"?0.45:0.14,metalness:0.45,roughness:0.55}));
       mesh.position.set(px,0,pz); mesh.userData={roomId:room.id}; scene.add(mesh); meshes[room.id]=mesh;
-      const tp=[]; for(let i=0;i<=6;i++){const a=(Math.PI/3)*(i%6)-Math.PI/6; tp.push(new THREE.Vector3(px+SZ*0.84*Math.cos(a),h,pz+SZ*0.84*Math.sin(a)));}
-      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(tp), new THREE.LineBasicMaterial({color:col,transparent:true,opacity:0.7})));
-      if(room.id==="sp03"){ [0.5,0.25].forEach(sc=>{const inner=new THREE.Mesh(mkHex(SZ*sc,h*0.65),new THREE.MeshStandardMaterial({color:0xc9a84c,transparent:true,opacity:0.35,emissive:0xc9a84c,emissiveIntensity:0.6})); inner.position.set(px,0.05,pz); scene.add(inner);}); const beacon=new THREE.PointLight(0xc9a84c,1,18); beacon.position.set(px,h+1,pz); scene.add(beacon); }
+      // Top edge — gold tint blended with room color for a signature cap
+      const topCol=new THREE.Color(0xD4AF37).lerp(col,0.35);
+      const tp=[]; for(let i=0;i<=6;i++){const a=(Math.PI/3)*(i%6)-Math.PI/6; tp.push(new THREE.Vector3(px+SZ*0.84*Math.cos(a),h+0.02,pz+SZ*0.84*Math.sin(a)));}
+      scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(tp), new THREE.LineBasicMaterial({color:topCol,transparent:true,opacity:0.85})));
+      if(room.id==="sp03"){ [0.5,0.25].forEach(sc=>{const inner=new THREE.Mesh(mkHex(SZ*sc,h*0.65),new THREE.MeshStandardMaterial({color:0xD4AF37,transparent:true,opacity:0.4,emissive:0xD4AF37,emissiveIntensity:0.7,metalness:0.6,roughness:0.3})); inner.position.set(px,0.05,pz); scene.add(inner);}); const beacon=new THREE.PointLight(0xD4AF37,1.2,22); beacon.position.set(px,h+1,pz); scene.add(beacon); }
     });
     threeRef.current.meshes=meshes; threeRef.current.posMap=posMap;
-    const em=new THREE.LineBasicMaterial({color:0x1a2a1a,transparent:true,opacity:0.3});
+    const em=new THREE.LineBasicMaterial({color:0x2A3040,transparent:true,opacity:0.5});
     EDGES.forEach(([a,b])=>{ const pa=posMap[a],pb=posMap[b]; if(!pa||!pb)return; scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(pa.x,0.05,pa.z),new THREE.Vector3(pb.x,0.05,pb.z)]),em)); });
     // f.03 SWARM
     const ap=posMap["sp03"];
@@ -229,35 +233,39 @@ export default function HexMap3D({onSelect:onSelectProp, ambient=false}){
   const selR=sel?ROOMS.find(r=>r.id===sel):null;
   const nbrs=selR?EDGES.filter(([a,b])=>a===selR.id||b===selR.id).map(([a,b])=>a===selR.id?b:a).filter((v,i,a)=>a.indexOf(v)===i):[];
   return (
-    <div style={{width:"100%",height:"100%",position:"absolute",top:0,left:0,overflow:"hidden",background:"#040606"}}>
+    <div style={{width:"100%",height:"100%",position:"absolute",top:0,left:0,overflow:"hidden",background:"#050710"}}>
       <div ref={mountRef} style={{width:"100%",height:"100%",touchAction:"none",pointerEvents:ambient?"none":"auto"}} {...(ambient?{}:{onPointerDown:onDown,onPointerMove:onMove,onPointerUp:onUp,onWheel:onWheel})} />
       {!ambient && <div id="hex3d-labels" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%",pointerEvents:"none",overflow:"hidden"}}>
         {ROOMS.map(room=>(
           <div key={room.id} id={"lbl-"+room.id} style={{position:"absolute",top:0,left:0,whiteSpace:"nowrap",pointerEvents:"none",textAlign:"center"}}>
-            <div style={{fontSize:8,color:"#a09880",fontFamily:"'Crimson Pro',Georgia,serif",fontWeight:400,letterSpacing:0.5,textShadow:"0 1px 3px #000"}}>{room.n.length>18?room.n.slice(0,16)+"…":room.n}</div>
-            <div style={{fontSize:6,color:"#5a5a4a",fontFamily:"'JetBrains Mono',monospace",letterSpacing:1,textShadow:"0 1px 2px #000"}}>{room.id}</div>
+            <div style={{fontSize:11,color:"#E8ECF2",fontFamily:"'Crimson Pro',Georgia,serif",fontWeight:400,letterSpacing:"0.02em",textShadow:"0 0 8px rgba(0,0,0,0.9), 0 1px 2px rgba(0,0,0,0.8)",marginBottom:1}}>{room.n.length>22?room.n.slice(0,20)+"…":room.n}</div>
+            <div style={{fontSize:8,color:"#D4AF37",fontFamily:"'JetBrains Mono',monospace",letterSpacing:"0.14em",textShadow:"0 0 6px rgba(0,0,0,0.9)",opacity:0.75,textTransform:"uppercase"}}>{room.id}</div>
           </div>
         ))}
       </div>}
       {!ambient && <>
-        <div style={{position:"absolute",top:12,left:16,pointerEvents:"none"}}>
-          <div style={{fontSize:9,letterSpacing:3,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace"}}>CRIMSON HEXAGONAL ARCHIVE</div>
-          <div style={{fontSize:15,letterSpacing:3,color:"#D4AF37",fontFamily:"'Crimson Pro',Georgia,serif",marginTop:2}}>⟨D, R, O, Σ, Φ, Ψ⟩</div>
+        <div style={{position:"absolute",top:14,left:18,pointerEvents:"none"}}>
+          <div style={{fontSize:9,letterSpacing:"0.24em",color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",textTransform:"uppercase"}}>Crimson Hexagonal Archive</div>
+          <div style={{fontSize:17,letterSpacing:"0.12em",color:"#D4AF37",fontFamily:"'Crimson Pro',Georgia,serif",marginTop:3,fontWeight:300,textShadow:"0 0 18px rgba(212,175,55,0.3)"}}>⟨D · R · O · Σ · Φ · Ψ⟩</div>
         </div>
-        <div style={{position:"absolute",bottom:12,left:16,pointerEvents:"none"}}>
-          {Object.entries(ST_COL).map(([t,c])=>(<div key={t} style={{display:"flex",alignItems:"center",gap:5,marginTop:1}}><div style={{width:6,height:6,background:c,opacity:0.8}}/><span style={{fontSize:7,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace"}}>{t}</span></div>))}
+        <div style={{position:"absolute",bottom:16,left:18,pointerEvents:"none"}}>
+          <div style={{fontSize:8,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",letterSpacing:"0.18em",marginBottom:6,textTransform:"uppercase"}}>Structure</div>
+          {Object.entries(ST_COL).map(([t,c])=>(<div key={t} style={{display:"flex",alignItems:"center",gap:7,marginTop:3}}><div style={{width:8,height:8,background:c,opacity:0.9,boxShadow:`0 0 6px ${c}66`}}/><span style={{fontSize:9,color:"#B0B8C4",fontFamily:"'Crimson Pro',Georgia,serif",letterSpacing:"0.05em"}}>{t}</span></div>))}
         </div>
-        <div style={{position:"absolute",bottom:12,right:16,pointerEvents:"none",textAlign:"right"}}>
-          <div style={{fontSize:7,color:"#5A9F7B"}}>↑ f.01 FBDP</div><div style={{fontSize:7,color:"#5A9F7B"}}>↓ f.02 Gravity Well</div><div style={{fontSize:7,color:"#4A9F8F"}}>⟷ f.03 Swarm</div>
+        <div style={{position:"absolute",bottom:16,right:18,pointerEvents:"none",textAlign:"right"}}>
+          <div style={{fontSize:8,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",letterSpacing:"0.18em",marginBottom:6,textTransform:"uppercase"}}>Fields</div>
+          <div style={{fontSize:9,color:"#5A9F7B",fontFamily:"'Crimson Pro',Georgia,serif",marginTop:3}}>↑ f.01 &nbsp;Fruiting Body</div>
+          <div style={{fontSize:9,color:"#D4AF37",fontFamily:"'Crimson Pro',Georgia,serif",marginTop:3}}>↓ f.02 &nbsp;Gravity Well</div>
+          <div style={{fontSize:9,color:"#4A9F8F",fontFamily:"'Crimson Pro',Georgia,serif",marginTop:3}}>⟷ f.03 &nbsp;Moltbot Swarm</div>
         </div>
       </>}
-      {!ambient && selR&&(<div style={{position:"absolute",top:16,right:16,width:200,padding:"12px 16px",background:"#0F1318ee",border:"1px solid #1E2530",borderLeft:"3px solid "+(ST_COL[selR.st]||"#D4AF37"),fontFamily:"'Crimson Pro',Georgia,serif",pointerEvents:"auto",boxShadow:"0 4px 24px rgba(0,0,0,0.5)"}}>
-        <div style={{fontSize:8,letterSpacing:2,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",textTransform:"uppercase"}}>{selR.st}</div>
-        <div style={{fontSize:15,color:"#D4AF37",marginTop:4,marginBottom:6,fontWeight:400}}>{selR.n}</div>
-        <div style={{fontSize:9,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",marginBottom:8}}>{selR.id} · {selR.d} docs</div>
-        {nbrs.length>0&&<><div style={{fontSize:8,letterSpacing:1.5,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",marginBottom:4,textTransform:"uppercase"}}>Adjacent ({nbrs.length})</div>
-        <div style={{display:"flex",flexWrap:"wrap",gap:3}}>{nbrs.map(nid=>{const nr=ROOMS.find(r=>r.id===nid); return nr?<span key={nid} onClick={()=>setSel(nid)} style={{fontSize:8,padding:"2px 5px",background:"#080B10",border:"1px solid "+(ST_COL[nr.st]||"#555")+"44",color:ST_COL[nr.st]||"#B0B8C4",cursor:"pointer",fontFamily:"'Crimson Pro',Georgia,serif",transition:"background 200ms"}}>{nr.n}</span>:null;})}</div></>}
-        <div style={{marginTop:8,fontSize:8,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",cursor:"pointer"}} onClick={()=>setSel(null)}>✕ close</div>
+      {!ambient && selR&&(<div style={{position:"absolute",top:20,right:20,width:240,padding:"16px 18px",background:"rgba(15,19,24,0.92)",backdropFilter:"blur(12px)",WebkitBackdropFilter:"blur(12px)",border:"1px solid #2A3040",borderLeft:"3px solid "+(ST_COL[selR.st]||"#D4AF37"),fontFamily:"'Crimson Pro',Georgia,serif",pointerEvents:"auto",boxShadow:"0 8px 40px rgba(0,0,0,0.6), 0 0 40px rgba(212,175,55,0.08)"}}>
+        <div style={{fontSize:9,letterSpacing:"0.22em",color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",textTransform:"uppercase",marginBottom:4}}>{selR.st}</div>
+        <div style={{fontSize:18,color:"#D4AF37",marginTop:2,marginBottom:8,fontWeight:300,lineHeight:1.2,letterSpacing:"0.02em"}}>{selR.n}</div>
+        <div style={{fontSize:10,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",marginBottom:12,letterSpacing:"0.08em"}}>{selR.id} · {selR.d} docs</div>
+        {nbrs.length>0&&<><div style={{fontSize:8,letterSpacing:"0.2em",color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",marginBottom:6,textTransform:"uppercase"}}>Adjacent · {nbrs.length}</div>
+        <div style={{display:"flex",flexWrap:"wrap",gap:4}}>{nbrs.map(nid=>{const nr=ROOMS.find(r=>r.id===nid); return nr?<span key={nid} onClick={()=>setSel(nid)} onMouseEnter={e=>{e.currentTarget.style.background=(ST_COL[nr.st]||"#D4AF37")+"22"}} onMouseLeave={e=>{e.currentTarget.style.background="#080B10"}} style={{fontSize:10,padding:"3px 8px",background:"#080B10",border:"1px solid "+(ST_COL[nr.st]||"#555")+"44",color:ST_COL[nr.st]||"#B0B8C4",cursor:"pointer",fontFamily:"'Crimson Pro',Georgia,serif",transition:"background 200ms"}}>{nr.n}</span>:null;})}</div></>}
+        <div style={{marginTop:12,fontSize:9,color:"#5A6370",fontFamily:"'JetBrains Mono',monospace",cursor:"pointer",letterSpacing:"0.1em",transition:"color 200ms"}} onMouseEnter={e=>e.currentTarget.style.color="#D4AF37"} onMouseLeave={e=>e.currentTarget.style.color="#5A6370"} onClick={()=>setSel(null)}>✕ close</div>
       </div>)}
     </div>
   );
