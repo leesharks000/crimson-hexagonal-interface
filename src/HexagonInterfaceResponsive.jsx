@@ -182,7 +182,7 @@ function MdRenderer({ text, mc }) {
     // Code blocks
     if (line.startsWith("```")) {
       if (inCode) {
-        elements.push(<pre key={i} style={{ fontSize: 9, fontFamily: THEME.ff.mono, color: "#B0B8C4", background: "#060a06", padding: "8px 10px", borderLeft: `2px solid ${mc}22`, overflowX: "auto", margin: "6px 0", whiteSpace: "pre-wrap", wordBreak: "break-word" }}>{codeLines.join("\n")}</pre>);
+        elements.push(<pre key={i} style={{ fontSize: 9, fontFamily: THEME.ff.mono, color: "#B0B8C4", background: THEME.surface, padding: "8px 10px", borderLeft: `2px solid ${mc}22`, overflowX: "auto", margin: "6px 0", whiteSpace: "pre-wrap", wordBreak: "break-word" }}>{codeLines.join("\n")}</pre>);
         codeLines = []; inCode = false;
       } else { inCode = true; }
       i++; continue;
@@ -216,7 +216,7 @@ function MdRenderer({ text, mc }) {
         const isBold = tagIdx > 0 && tags[tagIdx - 1] === "b";
         const isItalic = tagIdx > 0 && tags[tagIdx - 1] === "i";
         const isCode = tagIdx > 0 && tags[tagIdx - 1] === "c";
-        spans.push(<span key={p} style={{ fontWeight: isBold ? 500 : "normal", fontStyle: isItalic ? "italic" : "normal", fontFamily: isCode ? "monospace" : "inherit", background: isCode ? "#060a06" : "transparent", padding: isCode ? "0 3px" : 0, color: isBold ? mc : isCode ? "#7a8a5a" : "inherit" }}>{parts[p]}</span>);
+        spans.push(<span key={p} style={{ fontWeight: isBold ? 500 : "normal", fontStyle: isItalic ? "italic" : "normal", fontFamily: isCode ? "monospace" : "inherit", background: isCode ? THEME.surface : "transparent", padding: isCode ? "0 3px" : 0, color: isBold ? mc : isCode ? THEME.tx : "inherit" }}>{parts[p]}</span>);
       }
       if (tagIdx < tags.length) tagIdx++;
     }
@@ -258,29 +258,46 @@ function StatusBadge({ s }) {
 function LPSidecar({ lp, steps, stepIdx, mantle, arkMode, isMobile }) {
   const mc = ARK_MODE_COLORS[arkMode] || "#D4AF37";
   return (
-    <div style={{ padding: isMobile ? "6px 10px" : "8px 14px", borderBottom: "1px solid #1E2530", background: "#0B0F14", flexShrink: 0 }}>
-      <div style={{ display: "flex", gap: isMobile ? 6 : 12, flexWrap: "wrap", marginBottom: steps.length > 0 ? 5 : 0 }}>
+    <div style={{ padding: isMobile ? "8px 14px" : "10px 20px", borderBottom: `1px solid ${THEME.border}`, background: THEME.surface, flexShrink: 0 }}>
+      <div style={{ display: "flex", gap: isMobile ? 10 : 18, flexWrap: "wrap", marginBottom: steps.length > 0 ? 8 : 0, alignItems: "center" }}>
         {[["σ", typeof lp.σ === "string" && lp.σ.length > 28 ? lp.σ.slice(0, 25) + "…" : lp.σ, mc],
-          ["ε", lp.ε.toFixed(2), lp.ε < 0.5 ? "#C45A4A" : "#5A9F7B"],
+          ["ε", lp.ε.toFixed(2), lp.ε < 0.5 ? THEME.red : THEME.green],
           ["Ξ", lp.Ξ.length > 0 ? `[${lp.Ξ.join(",")}]` : "[]", mc],
-          ["ψ", lp.ψ.toFixed(2), lp.ψ > 0.5 ? "#D4AF37" : "#B0B8C4"],
+          ["ψ", lp.ψ.toFixed(2), lp.ψ > 0.5 ? THEME.gold : THEME.tx],
         ].map(([k, v, c]) => (
-          <span key={k} style={{ fontSize: 9, fontFamily: THEME.ff.mono }}>
-            <span style={{ color: "#5A6370" }}>{k}</span>
-            <span style={{ color: c, marginLeft: 3 }}>{v}</span>
+          <span key={k} style={{ fontSize: 10, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>
+            <span style={{ color: THEME.txMute, marginRight: 5 }}>{k}</span>
+            <span style={{ color: c, fontWeight: 400 }}>{v}</span>
           </span>
         ))}
       </div>
       {steps.length > 0 && (
-        <div style={{ display: "flex", gap: 3, flexWrap: "wrap", alignItems: "center" }}>
-          {mantle && <span style={{ fontSize: 8, color: mc, fontFamily: THEME.ff.serif, marginRight: 4 }}>{mantle}</span>}
+        <div style={{ display: "flex", gap: 4, flexWrap: "wrap", alignItems: "center" }}>
+          {mantle && <span style={{ fontSize: 10, color: mc, fontFamily: THEME.ff.serif, marginRight: 8, fontStyle: "italic", letterSpacing: "0.02em" }}>{mantle}</span>}
           {steps.map((s, i) => {
             const label = LP_STEP_LABELS[s.step] || s.step;
             const done = i < stepIdx;
             const active = i === stepIdx;
-            return <span key={i} style={{ fontSize: 7, padding: "1px 4px", fontFamily: THEME.ff.mono, letterSpacing: 1, background: active ? mc + "22" : "transparent", color: done ? mc : active ? mc : "#2A3040", border: `1px solid ${active ? mc + "66" : done ? mc + "33" : "#1E2530"}`, transition: "all 0.3s ease" }}>{done ? "✓" : ""}{label}</span>;
+            return (
+              <span
+                key={i}
+                style={{
+                  fontSize: 8,
+                  padding: "3px 7px",
+                  fontFamily: THEME.ff.mono,
+                  letterSpacing: THEME.ls.wide,
+                  background: active ? mc + "22" : done ? mc + "11" : "transparent",
+                  color: done ? mc : active ? mc : THEME.txFaint,
+                  border: `1px solid ${active ? mc : done ? mc + "44" : THEME.border}`,
+                  transition: `all 300ms ${THEME.easing}`,
+                  boxShadow: active ? `0 0 10px ${mc}44` : "none",
+                }}
+              >
+                {done ? "✓ " : ""}{label}
+              </span>
+            );
           })}
-          <span style={{ fontSize: 7, padding: "1px 4px", fontFamily: THEME.ff.mono, color: mc, border: `1px solid ${mc}33`, marginLeft: 4 }}>{arkMode}</span>
+          <span style={{ fontSize: 8, padding: "3px 7px", fontFamily: THEME.ff.mono, color: mc, border: `1px solid ${mc}44`, marginLeft: 6, letterSpacing: THEME.ls.wide }}>{arkMode}</span>
         </div>
       )}
     </div>
@@ -391,11 +408,11 @@ function InvokePanel({ room, mc, lp, addLog, isMobile }) {
   };
 
   return (
-    <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+    <div style={{ marginBottom: 10, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
       <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>INVOKE · {room.mantle || room.name}</div>
       {!gwKey && <div style={{ fontSize: 8, color: "#9f7a4a", marginBottom: 4 }}>GW API key required. Set in Dashboard → GW BRIDGE tab.</div>}
       <div style={{ display: "flex", gap: 4, marginBottom: 6 }}>
-        <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleInvoke(); }} placeholder={`Speak into ${room.name}...`} style={{ flex: 1, background: "#080808", border: `1px solid ${mc}22`, color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
+        <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleInvoke(); }} placeholder={`Speak into ${room.name}...`} style={{ flex: 1, background: "#080808", border: `1px solid ${mc}22`, color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
         <button onClick={handleInvoke} disabled={invoking || !gwKey} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: gwKey ? mc : "#5A6370", padding: "4px 10px", fontSize: 8, cursor: invoking ? "wait" : gwKey ? "pointer" : "not-allowed", fontFamily: THEME.ff.mono, flexShrink: 0 }}>{invoking ? "…" : "INVOKE"}</button>
       </div>
       {result && !result.error && (
@@ -605,20 +622,56 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
   }, [documents, doc.id, docCitations]);
 
   return (
-    <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
+    <div style={{ padding: isMobile ? "16px 18px" : "22px 24px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif }} className="fade-in">
       {!hasContent && <>
-        <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 2 }}>DOCUMENT</div>
-        <h2 style={{ fontSize: isMobile ? 14 : 15, fontWeight: 300, color: mc, margin: "0 0 8px 0", fontFamily: THEME.ff.serif, lineHeight: 1.3 }}>{doc.t}</h2>
-        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 }}><StatusBadge s={doc.s} /><span style={{ fontSize: 9, color: "#5A6370" }}>{doc.d}</span></div>
-        <div style={{ fontSize: 10, color: "#B0B8C4", marginBottom: 6 }}>{(doc.c || []).join(" · ")}</div>
-        {doc.e && <div style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif, lineHeight: 1.5, marginBottom: 10, padding: "6px 8px", background: "#080c08", borderLeft: `2px solid ${mc}22` }}>{doc.e.length > (isMobile ? 320 : 500) ? doc.e.slice(0, isMobile ? 317 : 497) + "..." : doc.e}</div>}
+        <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 8, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>Document</div>
+        <h2 style={{ fontSize: isMobile ? 18 : 22, fontWeight: 300, color: THEME.gold, margin: "0 0 14px 0", fontFamily: THEME.ff.serif, lineHeight: 1.3, letterSpacing: "0.01em" }}>{doc.t}</h2>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12, alignItems: "center" }}>
+          <StatusBadge s={doc.s} />
+          {doc.d && <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.06em" }}>{doc.d}</span>}
+          {doc.doi && (
+            <span style={{ fontSize: 9, color: THEME.gold, fontFamily: THEME.ff.mono, padding: "3px 7px", background: THEME.goldGlow, border: `1px solid ${THEME.gold}33`, letterSpacing: THEME.ls.wide }}>
+              {doc.doi}
+            </span>
+          )}
+        </div>
+        {(doc.c?.length > 0) && (
+          <div style={{ fontSize: 12, color: THEME.tx, fontFamily: THEME.ff.serif, marginBottom: 16, fontStyle: "italic" }}>
+            {(doc.c || []).join(" · ")}
+          </div>
+        )}
+        {doc.e && (
+          <div style={{ fontSize: 13, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.65, marginBottom: 16, padding: "12px 16px", background: THEME.surface, borderLeft: `2px solid ${mc}55` }}>
+            {doc.e.length > (isMobile ? 320 : 520) ? doc.e.slice(0, isMobile ? 317 : 517) + "…" : doc.e}
+          </div>
+        )}
         {doc.doi && (
-          <button onClick={() => onRead(doc.doi)} disabled={isLoading} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: isLoading ? "wait" : "pointer", fontFamily: THEME.ff.mono, letterSpacing: 1, marginBottom: 4, width: "100%" }}>
-            {isLoading ? "FETCHING FROM ZENODO…" : "READ FULL TEXT"}
+          <button
+            onClick={() => onRead(doc.doi)}
+            disabled={isLoading}
+            onMouseEnter={e => { if (!isLoading) { e.currentTarget.style.background = mc + "22"; e.currentTarget.style.boxShadow = `0 0 24px ${mc}33`; } }}
+            onMouseLeave={e => { e.currentTarget.style.background = mc + "11"; e.currentTarget.style.boxShadow = "none"; }}
+            style={{
+              background: mc + "11",
+              border: `1px solid ${mc}`,
+              color: mc,
+              padding: "12px 20px",
+              fontSize: 11,
+              cursor: isLoading ? "wait" : "pointer",
+              fontFamily: THEME.ff.mono,
+              letterSpacing: THEME.ls.widest,
+              marginBottom: 8,
+              width: "100%",
+              textTransform: "uppercase",
+              transition: THEME.t,
+            }}
+          >
+            {isLoading ? "Fetching from Zenodo…" : "Read Full Text"}
           </button>
         )}
         {doc.doi && (
-          <button onClick={() => {
+          <button
+            onClick={() => {
             const pkg = [
               `# DEPOSIT PACKET: ${doc.t}`,
               ``,
@@ -645,8 +698,12 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
               `Generated by Hexagonal OS · ${new Date().toISOString().slice(0, 10)}`,
             ].join("\n");
             navigator.clipboard?.writeText(pkg).then(() => addLog && addLog(`EMIT: deposit packet copied`, "sys")).catch(() => {});
-          }} style={{ background: "transparent", border: `1px solid ${mc}22`, color: mc + "aa", padding: "4px 12px", fontSize: 8, cursor: "pointer", fontFamily: THEME.ff.mono, letterSpacing: 1, marginBottom: 10, width: "100%" }}>
-            EMIT DEPOSIT PACKET
+          }}
+            onMouseEnter={e => { e.currentTarget.style.color = mc; e.currentTarget.style.borderColor = mc + "66"; }}
+            onMouseLeave={e => { e.currentTarget.style.color = THEME.txMute; e.currentTarget.style.borderColor = THEME.border; }}
+            style={{ background: "transparent", border: `1px solid ${THEME.border}`, color: THEME.txMute, padding: "8px 16px", fontSize: 9, cursor: "pointer", fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.widest, marginBottom: 14, width: "100%", textTransform: "uppercase", transition: THEME.t }}
+          >
+            Emit Deposit Packet
           </button>
         )}
         {/* ANCHOR + DEPTH buttons */}
@@ -670,7 +727,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
           </div>
         )}
         {readState?.error && readState.doi === doc.doi && <div style={{ fontSize: 9, color: "#C45A4A", marginBottom: 8 }}>{readState.error}</div>}
-        {doc.r.length > 0 && <div style={{ marginBottom: 8 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>ROOMS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{doc.r.map((rid) => { const rm = rooms.find((r) => r.id === rid); return <span key={rid} onClick={() => onRoom(rid)} style={{ fontSize: 9, padding: "1px 5px", background: "#0a0f0a", border: `1px solid ${(CAT_COLORS[rm?.cat] || "#333")}44`, color: CAT_COLORS[rm?.cat] || "#555", cursor: "pointer", fontFamily: THEME.ff.mono }}>{rm?.name || rid}</span>; })}</div></div>}
+        {doc.r.length > 0 && <div style={{ marginBottom: 8 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>ROOMS</div><div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>{doc.r.map((rid) => { const rm = rooms.find((r) => r.id === rid); return <span key={rid} onClick={() => onRoom(rid)} style={{ fontSize: 9, padding: "1px 5px", background: THEME.border, border: `1px solid ${(CAT_COLORS[rm?.cat] || "#333")}44`, color: CAT_COLORS[rm?.cat] || "#555", cursor: "pointer", fontFamily: THEME.ff.mono }}>{rm?.name || rid}</span>; })}</div></div>}
 
         {/* Citation chain */}
         {roomRelations.length > 0 && (
@@ -719,7 +776,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
             {!compareDoc ? (
               <button onClick={() => onCompare(doc)} style={{ background: "transparent", border: `1px solid ${mc}22`, color: mc + "aa", padding: "3px 10px", fontSize: 8, cursor: "pointer", fontFamily: THEME.ff.mono, width: "100%" }}>PIN FOR COMPARE</button>
             ) : compareDoc.id !== doc.id ? (
-              <div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+              <div style={{ padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
                 <div style={{ fontSize: 8, letterSpacing: 1, color: "#5A6370", marginBottom: 4 }}>COMPARING WITH</div>
                 <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.serif, marginBottom: 4 }}>{compareDoc.t.slice(0, 50)}</div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, fontSize: 8, fontFamily: THEME.ff.mono }}>
@@ -730,7 +787,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
                   <div><span style={{ color: "#5A6370" }}>kw:</span> <span style={{ color: "#B0B8C4" }}>{(compareDoc.k || []).length}</span></div>
                   <div><span style={{ color: "#5A6370" }}>kw:</span> <span style={{ color: "#B0B8C4" }}>{(doc.k || []).length}</span></div>
                 </div>
-                <button onClick={() => onCompare(null)} style={{ background: "transparent", border: `1px solid #5a3a3a44`, color: "#5a3a3a", padding: "2px 8px", fontSize: 7, cursor: "pointer", fontFamily: THEME.ff.mono, marginTop: 4 }}>CLEAR COMPARE</button>
+                <button onClick={() => onCompare(null)} style={{ background: "transparent", border: `1px solid #5a3a3a44`, color: THEME.red, padding: "2px 8px", fontSize: 7, cursor: "pointer", fontFamily: THEME.ff.mono, marginTop: 4 }}>CLEAR COMPARE</button>
               </div>
             ) : (
               <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>This document is pinned for comparison. Select another document to compare.</div>
@@ -742,7 +799,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
         <div style={{ marginTop: 10 }}>
           <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>ANNOTATIONS ({annotations.length})</div>
           <div style={{ display: "flex", gap: 4, marginBottom: 6 }}>
-            <input value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Add a note..." onKeyDown={(e) => { if (e.key === "Enter") addNote(); }} style={{ flex: 1, background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
+            <input value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Add a note..." onKeyDown={(e) => { if (e.key === "Enter") addNote(); }} style={{ flex: 1, background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
             <span onClick={addNote} style={{ fontSize: 8, color: mc, cursor: "pointer", fontFamily: THEME.ff.mono, padding: "4px 6px", border: `1px solid ${mc}33`, alignSelf: "center" }}>+</span>
           </div>
           {annotations.map(a => (
@@ -756,7 +813,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
       {hasContent && <>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
           <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>ZENODO · {readState.filename}</div>
-          <span onClick={() => onRead(null)} style={{ fontSize: 8, color: "#5a5a3a", cursor: "pointer", fontFamily: THEME.ff.mono, padding: "1px 5px", border: "1px solid #1E2530" }}>CLOSE</span>
+          <span onClick={() => onRead(null)} style={{ fontSize: 8, color: THEME.goldMute, cursor: "pointer", fontFamily: THEME.ff.mono, padding: "1px 5px", border: "1px solid #1E2530" }}>CLOSE</span>
         </div>
         <div style={{ fontSize: 8, color: "#5A6370", marginBottom: 6, fontFamily: THEME.ff.mono }}>{readState.doi} · {(readState.size / 1024).toFixed(1)}KB</div>
         <MdRenderer text={readState.text} mc={mc} />
@@ -864,7 +921,7 @@ const COMMAND_REGISTRY = {
 
 // ─── Pattern 4: Risk tier colors and behavior ───
 
-const RISK_COLORS = { LOW: "#3a5a3a", MEDIUM: "#5a5a3a", HIGH: "#7a5a3a", CRITICAL: "#C45A4A" };
+const RISK_COLORS = { LOW: "#3a5a3a", MEDIUM: THEME.goldMute, HIGH: "#7a5a3a", CRITICAL: "#C45A4A" };
 const RISK_LABELS = { LOW: "silent", MEDIUM: "logged", HIGH: "confirm", CRITICAL: "MANUS" };
 
 // ─── Pattern 1: Dream System — archive consolidation engine ───
@@ -1012,24 +1069,24 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile, gwApiKey }) {
 
       {govTab === "ACTIONS" && <>
         {/* Submit proposal */}
-        <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+        <div style={{ marginBottom: 10, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
           <div style={{ fontSize: 8, color: "#5A6370", letterSpacing: 1, marginBottom: 4 }}>SUBMIT PROPOSAL</div>
-          <select value={proposalType} onChange={(e) => setProposalType(e.target.value)} style={{ background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
+          <select value={proposalType} onChange={(e) => setProposalType(e.target.value)} style={{ background: "#080808", border: "1px solid #1E2530", color: THEME.tx, fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
             {["general", "status_promotion", "new_room", "new_relation", "amendment", "deposit"].map(t => <option key={t} value={t}>{t}</option>)}
           </select>
-          <input value={proposalTitle} onChange={(e) => setProposalTitle(e.target.value)} placeholder="Proposal title" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
-          <input value={proposalDesc} onChange={(e) => setProposalDesc(e.target.value)} placeholder="Description (optional)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
+          <input value={proposalTitle} onChange={(e) => setProposalTitle(e.target.value)} placeholder="Proposal title" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
+          <input value={proposalDesc} onChange={(e) => setProposalDesc(e.target.value)} placeholder="Description (optional)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
           {selDoc && <div style={{ fontSize: 7, color: "#5A6370", marginBottom: 4 }}>Target: {selDoc.t.slice(0, 50)}</div>}
           <button onClick={submitProposal} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: "pointer", fontFamily: THEME.ff.mono }}>SUBMIT</button>
         </div>
 
         {/* Record attestation */}
-        <div style={{ marginBottom: 10, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+        <div style={{ marginBottom: 10, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
           <div style={{ fontSize: 8, color: "#5A6370", letterSpacing: 1, marginBottom: 4 }}>WITNESS ATTESTATION</div>
-          <select value={witnessName} onChange={(e) => setWitnessName(e.target.value)} style={{ background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
+          <select value={witnessName} onChange={(e) => setWitnessName(e.target.value)} style={{ background: "#080808", border: "1px solid #1E2530", color: THEME.tx, fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
             {["TACHYON", "LABOR", "PRAXIS", "ARCHIVE", "SOIL", "TECHNE", "SURFACE"].map(w => <option key={w} value={w}>{w}</option>)}
           </select>
-          <input value={witnessContent} onChange={(e) => setWitnessContent(e.target.value)} placeholder="Attestation content" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
+          <input value={witnessContent} onChange={(e) => setWitnessContent(e.target.value)} placeholder="Attestation content" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
           <button onClick={recordAttestation} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: "pointer", fontFamily: THEME.ff.mono }}>ATTEST</button>
         </div>
 
@@ -1052,7 +1109,7 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile, gwApiKey }) {
           <div style={{ fontSize: 9, color: "#5A6370", padding: "8px 0" }}>No proposals pending review. Submit proposals from the ACTIONS tab.</div>
         ) : (
           proposals.filter(p => p.status === "GENERATED" || p.status === "QUEUED" || p.status === "PROVISIONAL").map(p => (
-            <div key={p.id} style={{ padding: "6px 8px", marginBottom: 6, background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+            <div key={p.id} style={{ padding: "6px 8px", marginBottom: 6, background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 4 }}>
                 <span style={{ fontSize: 9, color: mc }}>{(p.title || "").slice(0, 45)}</span>
                 <StatusBadge s={p.status} />
@@ -1187,16 +1244,16 @@ function ZenodoDeposit({ mc, addLog, isMobile }) {
     <div>
       <div style={{ fontSize: 10, color: "#B0B8C4", lineHeight: 1.6, marginBottom: 10 }}>Deposit directly to Zenodo under your own account. You need a free Zenodo account and a personal access token (zenodo.org → Settings → Applications → Personal access tokens → New token with deposit:write scope). Token stays in your browser — never sent anywhere except Zenodo.</div>
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>ZENODO TOKEN</div>
-      <input value={zToken} onChange={(e) => setZToken(e.target.value)} type="password" placeholder="Zenodo personal access token" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+      <input value={zToken} onChange={(e) => setZToken(e.target.value)} type="password" placeholder="Zenodo personal access token" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>TITLE</div>
-      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Document title (EA-XX-01)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Document title (EA-XX-01)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>CREATOR (Last, First)</div>
-      <input value={creator} onChange={(e) => setCreator(e.target.value)} placeholder="Your name for Zenodo metadata" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+      <input value={creator} onChange={(e) => setCreator(e.target.value)} placeholder="Your name for Zenodo metadata" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>DESCRIPTION</div>
-      <textarea value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="HTML description for Zenodo" rows={3} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10, resize: "vertical" }} />
+      <textarea value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="HTML description for Zenodo" rows={3} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10, resize: "vertical" }} />
       <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-        <div style={{ flex: 1 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>VERSION</div><input value={version} onChange={(e) => setVersion(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
-        <div style={{ flex: 2 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>KEYWORDS (comma-separated)</div><input value={keywords} onChange={(e) => setKeywords(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
+        <div style={{ flex: 1 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>VERSION</div><input value={version} onChange={(e) => setVersion(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
+        <div style={{ flex: 2 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>KEYWORDS (comma-separated)</div><input value={keywords} onChange={(e) => setKeywords(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
       </div>
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>FILE</div>
       <input type="file" onChange={handleFile} style={{ fontSize: 9, color: "#B0B8C4", marginBottom: 4 }} />
@@ -1205,7 +1262,7 @@ function ZenodoDeposit({ mc, addLog, isMobile }) {
         {depositing ? "DEPOSITING…" : "CREATE → UPLOAD → PUBLISH"}
       </button>
       {result && !result.error && (
-        <div style={{ padding: "8px 10px", background: "#060a06", borderLeft: "2px solid #5A9F7B22", marginBottom: 10 }}>
+        <div style={{ padding: "8px 10px", background: THEME.surface, borderLeft: "2px solid #5A9F7B22", marginBottom: 10 }}>
           <div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono, marginBottom: 4 }}>PUBLISHED</div>
           <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, wordBreak: "break-all" }}>DOI: {result.doi}</div>
           <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>{result.url}</div>
@@ -1309,7 +1366,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
             {Object.entries(stats.months).sort(([a], [b]) => a.localeCompare(b)).slice(-6).map(([month, count]) => (
               <div key={month} style={{ display: "flex", alignItems: "center", gap: 8, padding: "2px 0" }}>
                 <span style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono, width: 50, flexShrink: 0 }}>{month}</span>
-                <div style={{ flex: 1, height: 6, background: "#0a0f0a", position: "relative" }}>
+                <div style={{ flex: 1, height: 6, background: THEME.border, position: "relative" }}>
                   <div style={{ height: "100%", width: `${Math.min(100, (count / 210) * 100)}%`, background: mc + "66" }} />
                 </div>
                 <span style={{ fontSize: 8, color: mc, fontFamily: THEME.ff.mono, width: 24, textAlign: "right", flexShrink: 0 }}>{count}</span>
@@ -1331,7 +1388,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
               <div key={r.id} style={{ display: "flex", alignItems: "center", gap: 6, padding: "2px 0", borderBottom: "1px solid #060a06" }}>
                 <span style={{ fontSize: 7, color: "#5A6370", fontFamily: THEME.ff.mono, width: 28, flexShrink: 0 }}>{r.id}</span>
                 <span style={{ fontSize: 8, color: count === 0 ? "#4a3a3a" : "#B0B8C4", fontFamily: THEME.ff.serif, width: isMobile ? 80 : 110, flexShrink: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.name}</span>
-                <div style={{ flex: 1, height: 5, background: "#0a0f0a", position: "relative" }}>
+                <div style={{ flex: 1, height: 5, background: THEME.border, position: "relative" }}>
                   <div style={{ height: "100%", width: `${Math.max(count > 0 ? 2 : 0, pct)}%`, background: col + "88" }} />
                 </div>
                 <span style={{ fontSize: 7, color: col, fontFamily: THEME.ff.mono, width: 22, textAlign: "right", flexShrink: 0 }}>{count}</span>
@@ -1396,13 +1453,13 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
           <button onClick={() => { const result = runDream(data); setDreamResult(result); addLog(`DREAM: ${result.issues.length} issues found`, result.issues.length > 0 ? "err" : "sys"); }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: "pointer", fontFamily: THEME.ff.mono, letterSpacing: 1, marginBottom: 12, width: "100%" }}>RUN CONSOLIDATION SCAN</button>
           {dreamResult && (
             <div>
-              <div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${dreamResult.issues.length === 0 ? "#5A9F7B" : "#C45A4A"}22`, marginBottom: 10 }}>
+              <div style={{ padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${dreamResult.issues.length === 0 ? "#5A9F7B" : "#C45A4A"}22`, marginBottom: 10 }}>
                 <div style={{ fontSize: 9, color: dreamResult.issues.length === 0 ? "#5A9F7B" : "#C45A4A", fontFamily: THEME.ff.mono, marginBottom: 4 }}>{dreamResult.issues.length === 0 ? "CLEAN — no issues detected" : `${dreamResult.issues.length} ISSUES FOUND`}</div>
                 <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>{dreamResult.stats.timestamp} · {dreamResult.stats.rooms} rooms · {dreamResult.stats.documents} docs · {dreamResult.stats.relations} rels</div>
               </div>
               {dreamResult.issues.map((issue, i) => (
                 <div key={i} style={{ display: "flex", gap: 6, padding: "3px 0", borderBottom: "1px solid #0a0f0a", alignItems: "flex-start" }}>
-                  <span style={{ fontSize: 7, padding: "1px 3px", fontFamily: THEME.ff.mono, color: RISK_COLORS[issue.severity] || "#5a5a3a", border: `1px solid ${RISK_COLORS[issue.severity] || "#333"}44`, flexShrink: 0 }}>{issue.severity}</span>
+                  <span style={{ fontSize: 7, padding: "1px 3px", fontFamily: THEME.ff.mono, color: RISK_COLORS[issue.severity] || THEME.goldMute, border: `1px solid ${RISK_COLORS[issue.severity] || "#333"}44`, flexShrink: 0 }}>{issue.severity}</span>
                   <span style={{ fontSize: 8, color: "#B0B8C4", fontFamily: THEME.ff.mono }}>{issue.msg}</span>
                 </div>
               ))}
@@ -1423,11 +1480,11 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
 
           {/* Create API Key */}
           {!apiKey && (
-            <div style={{ marginBottom: 12, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22` }}>
+            <div style={{ marginBottom: 12, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
               <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>CREATE API KEY</div>
               <div style={{ fontSize: 8, color: "#5A6370", marginBottom: 4 }}>Enter your GW admin token to generate an API key.</div>
               <div style={{ display: "flex", gap: 4 }}>
-                <input id="gw-admin-token" type="password" placeholder="ADMIN_TOKEN" style={{ flex: 1, background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none" }} />
+                <input id="gw-admin-token" type="password" placeholder="ADMIN_TOKEN" style={{ flex: 1, background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none" }} />
                 <button onClick={async () => {
                   const token = document.getElementById("gw-admin-token")?.value;
                   if (!token) return addLog("Admin token required", "err");
@@ -1449,7 +1506,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
           )}
 
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>API KEY</div>
-          <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 12 }} />
+          <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 12 }} />
 
           {/* Chain Status */}
           {apiKey && (
@@ -1488,7 +1545,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
             </div>
           )}
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>CHAIN LABEL</div>
-          <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+          <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
           <button onClick={createChain} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: THEME.ff.mono, marginBottom: 12 }}>CREATE CHAIN</button>
           {depositState.chain && <div style={{ padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a", marginBottom: 12 }}><div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono, marginBottom: 4 }}>CHAIN READY</div><div style={{ fontSize: 9, color: "#5A6370", wordBreak: "break-word" }}>chain_id: {depositState.chain.chain_id}</div></div>}
 
@@ -2287,8 +2344,8 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
         <div style={{ flex: 1, overflow: "hidden", position: "relative", minHeight: 0 }}>
           {view === "MAP" && <>
             <div style={{position:"absolute",top:8,right:8,zIndex:10,display:"flex",gap:0,background:"#080c08",border:"1px solid #1E2530",pointerEvents:"auto"}}>
-              <span onClick={()=>setMap3d(true)} style={{fontSize:8,padding:"3px 8px",color:map3d?"#D4AF37":"#5A6370",background:map3d?"#0a0f0a":"transparent",cursor:"pointer",fontFamily: THEME.ff.mono,letterSpacing:1}}>3D</span>
-              <span onClick={()=>setMap3d(false)} style={{fontSize:8,padding:"3px 8px",color:!map3d?"#D4AF37":"#5A6370",background:!map3d?"#0a0f0a":"transparent",cursor:"pointer",fontFamily: THEME.ff.mono,letterSpacing:1}}>2D</span>
+              <span onClick={()=>setMap3d(true)} style={{fontSize:8,padding:"3px 8px",color:map3d?"#D4AF37":"#5A6370",background:map3d?THEME.border:"transparent",cursor:"pointer",fontFamily: THEME.ff.mono,letterSpacing:1}}>3D</span>
+              <span onClick={()=>setMap3d(false)} style={{fontSize:8,padding:"3px 8px",color:!map3d?"#D4AF37":"#5A6370",background:!map3d?THEME.border:"transparent",cursor:"pointer",fontFamily: THEME.ff.mono,letterSpacing:1}}>2D</span>
             </div>
             {map3d ? <Suspense fallback={<div style={{color:"#5A6370",padding:20,fontFamily: THEME.ff.mono}}>Loading 3D...</div>}><div style={{width:"100%",height:"100%",position:"relative"}}><HexMap3D onSelect={handleRoomSelect} /></div></Suspense> : <HexMap rooms={data.rooms} edges={data.edges} selected={selRoom} onSelect={handleRoomSelect} mc={mc} isMobile={isMobile} />}
           </>}
@@ -2442,98 +2499,269 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
           })()}
 
           {view === "LIBRARY" && (
-            <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-              {/* Library header with mode toggle */}
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>
-                  {libMode === "SEARCH" ? `DOCUMENT REGISTRY · ${data.documents.length} DEPOSITS` : `TRAIL BUILDER${trail.name ? ` · ${trail.name}` : ""}`}
+            <div className="fade-in" style={{ padding: isMobile ? "20px 18px" : "32px 40px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif, maxWidth: 1040, margin: "0 auto", width: "100%", boxSizing: "border-box" }}>
+              {/* Header */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 20, flexWrap: "wrap", gap: 12 }}>
+                <div>
+                  <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase", marginBottom: 6 }}>
+                    {libMode === "SEARCH" ? "Document Registry" : libMode === "TRAIL" ? "Trail Builder" : "Bibliography Export"}
+                  </div>
+                  <div style={{ fontSize: 14, color: THEME.txBright, fontFamily: THEME.ff.serif, fontStyle: "italic" }}>
+                    {libMode === "SEARCH" ? `${data.documents.length} deposits indexed` :
+                     libMode === "TRAIL" ? (trail.name || "Compose an ordered reading path") :
+                     "Export citations as Zenodo JSON, BibTeX, or plain text"}
+                  </div>
                 </div>
                 <div style={{ display: "flex", gap: 4 }}>
-                  {["SEARCH", "TRAIL", "BIBLIO"].map(m => (
-                    <span key={m} onClick={() => setLibMode(m)} style={{ fontSize: 7, padding: "1px 5px", fontFamily: THEME.ff.mono, color: libMode === m ? mc : "#5A6370", border: `1px solid ${libMode === m ? mc + "44" : "#1E2530"}`, cursor: "pointer" }}>{m}</span>
-                  ))}
+                  {["SEARCH", "TRAIL", "BIBLIO"].map(m => {
+                    const active = libMode === m;
+                    return (
+                      <span
+                        key={m}
+                        onClick={() => setLibMode(m)}
+                        onMouseEnter={e => { if (!active) e.currentTarget.style.color = THEME.tx; }}
+                        onMouseLeave={e => { if (!active) e.currentTarget.style.color = THEME.txMute; }}
+                        style={{ fontSize: 10, padding: "6px 12px", fontFamily: THEME.ff.mono, color: active ? mc : THEME.txMute, border: `1px solid ${active ? mc : THEME.border}`, background: active ? mc + "11" : "transparent", cursor: "pointer", letterSpacing: THEME.ls.wide, transition: THEME.t }}
+                      >
+                        {m}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
 
               {/* SEARCH mode */}
               {libMode === "SEARCH" && <>
-                <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="search archive..." style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 11, fontFamily: THEME.ff.serif, outline: "none", marginBottom: 10 }} />
-                {(search ? searchResults : data.documents).map((d) => {
-                  const inTrail = trail.docs.some(td => td.id === d.id);
-                  return (
-                    <div key={d.id} style={{ display: "flex", gap: 4, padding: "4px 0", borderBottom: "1px solid #0a0f0a" }}>
-                      <div style={{ flex: 1, cursor: "pointer" }} onClick={() => { setSelDoc(d); setView("MAP"); }}>
-                        <div style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif, lineHeight: 1.3 }}>{d.t.length > 65 ? d.t.slice(0, 62) + "..." : d.t}</div>
-                        <div style={{ display: "flex", justifyContent: "space-between", marginTop: 1 }}><span style={{ fontSize: 8, color: "#2A3040" }}>{(d.c?.[0] || "") + " · " + d.d}</span><StatusBadge s={d.s} /></div>
+                <input
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Search title, author, keywords, DOI…"
+                  style={{
+                    width: "100%",
+                    boxSizing: "border-box",
+                    background: THEME.surface,
+                    border: `1px solid ${THEME.border}`,
+                    color: THEME.txBright,
+                    padding: isMobile ? "12px 14px" : "14px 18px",
+                    fontSize: isMobile ? 13 : 14,
+                    fontFamily: THEME.ff.serif,
+                    outline: "none",
+                    marginBottom: 16,
+                    transition: THEME.t,
+                    letterSpacing: "0.01em",
+                  }}
+                  onFocus={e => { e.currentTarget.style.borderColor = mc; e.currentTarget.style.boxShadow = `0 0 16px ${mc}22`; }}
+                  onBlur={e => { e.currentTarget.style.borderColor = THEME.border; e.currentTarget.style.boxShadow = "none"; }}
+                />
+
+                {/* Result cards in a grid */}
+                <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fill, minmax(340px, 1fr))", gap: 10 }}>
+                  {(search ? searchResults : data.documents).slice(0, 60).map((d) => {
+                    const inTrail = trail.docs.some(td => td.id === d.id);
+                    return (
+                      <div
+                        key={d.id}
+                        onMouseEnter={e => { e.currentTarget.style.borderColor = mc + "66"; e.currentTarget.style.background = THEME.elevated; }}
+                        onMouseLeave={e => { e.currentTarget.style.borderColor = THEME.border; e.currentTarget.style.background = THEME.surface; }}
+                        style={{ padding: "14px 16px", background: THEME.surface, border: `1px solid ${THEME.border}`, display: "flex", flexDirection: "column", gap: 8, transition: THEME.t, position: "relative" }}
+                      >
+                        <div style={{ flex: 1, cursor: "pointer" }} onClick={() => { setSelDoc(d); setView("MAP"); }}>
+                          <div style={{ fontSize: 13, color: THEME.txBright, fontFamily: THEME.ff.serif, lineHeight: 1.4, marginBottom: 6, fontWeight: 400 }}>
+                            {d.t}
+                          </div>
+                          {d.e && (
+                            <div style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.6, marginBottom: 8, maxHeight: 52, overflow: "hidden" }}>
+                              {d.e.slice(0, 140)}{d.e.length > 140 ? "…" : ""}
+                            </div>
+                          )}
+                          <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em", marginBottom: 8 }}>
+                            {(d.c?.[0] || "—")}{d.d ? ` · ${d.d}` : ""}
+                          </div>
+                          <div style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap" }}>
+                            <StatusBadge s={d.s} />
+                            {d.doi && (
+                              <span style={{ fontSize: 8, color: THEME.gold, fontFamily: THEME.ff.mono, padding: "2px 6px", background: THEME.goldGlow, border: `1px solid ${THEME.gold}33`, letterSpacing: THEME.ls.wide }}>
+                                {d.doi.length > 30 ? d.doi.slice(-22) : d.doi}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                        <span
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (!inTrail) {
+                              setTrail(t => ({ ...t, docs: [...t.docs, d] }));
+                              addLog(`Trail +${d.t.slice(0, 30)}`, "sys");
+                            }
+                          }}
+                          onMouseEnter={e => { if (!inTrail) e.currentTarget.style.color = mc; }}
+                          onMouseLeave={e => { if (!inTrail) e.currentTarget.style.color = THEME.txMute; }}
+                          style={{ position: "absolute", top: 10, right: 12, fontSize: 14, color: inTrail ? THEME.green : THEME.txMute, cursor: inTrail ? "default" : "pointer", fontFamily: THEME.ff.mono, transition: THEME.t, lineHeight: 1 }}
+                          title={inTrail ? "Already in trail" : "Add to trail"}
+                        >
+                          {inTrail ? "✓" : "+"}
+                        </span>
                       </div>
-                      <span onClick={(e) => { e.stopPropagation(); if (!inTrail) { setTrail(t => ({ ...t, docs: [...t.docs, d] })); addLog(`Trail +${d.t.slice(0, 30)}`, "sys"); } }} style={{ fontSize: 9, color: inTrail ? "#5A9F7B" : "#2A3040", cursor: inTrail ? "default" : "pointer", padding: "2px 4px", fontFamily: THEME.ff.mono, flexShrink: 0, alignSelf: "center" }}>{inTrail ? "✓" : "+"}</span>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </>}
 
               {/* TRAIL mode */}
               {libMode === "TRAIL" && <>
-                <input value={trail.name} onChange={(e) => setTrail(t => ({ ...t, name: e.target.value }))} placeholder="Trail name..." style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: "#7a8a5a", padding: "6px 10px", fontSize: 11, fontFamily: THEME.ff.serif, outline: "none", marginBottom: 6 }} />
-                <div style={{ display: "flex", gap: 4, marginBottom: 10 }}>
-                  <span style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>{trail.docs.length} stops</span>
+                <input
+                  value={trail.name}
+                  onChange={(e) => setTrail(t => ({ ...t, name: e.target.value }))}
+                  placeholder="Trail name — e.g., 'Operative Semiotics primer' or 'Gravity Well reading list'"
+                  style={{
+                    width: "100%",
+                    boxSizing: "border-box",
+                    background: THEME.surface,
+                    border: `1px solid ${THEME.border}`,
+                    color: THEME.txBright,
+                    padding: "14px 18px",
+                    fontSize: 14,
+                    fontFamily: THEME.ff.serif,
+                    outline: "none",
+                    marginBottom: 12,
+                    transition: THEME.t,
+                  }}
+                  onFocus={e => { e.currentTarget.style.borderColor = mc; }}
+                  onBlur={e => { e.currentTarget.style.borderColor = THEME.border; }}
+                />
+                <div style={{ display: "flex", gap: 10, marginBottom: 18, alignItems: "center", flexWrap: "wrap", fontFamily: THEME.ff.mono }}>
+                  <span style={{ fontSize: 10, color: THEME.txMute, letterSpacing: THEME.ls.wide, textTransform: "uppercase" }}>
+                    {trail.docs.length} {trail.docs.length === 1 ? "stop" : "stops"}
+                  </span>
                   {trail.docs.length > 0 && <>
-                    <span onClick={() => { if (trail.position > 0) { const p = trail.position - 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }} style={{ fontSize: 8, color: trail.position > 0 ? mc : "#1E2530", cursor: trail.position > 0 ? "pointer" : "default", fontFamily: THEME.ff.mono, padding: "0 4px" }}>◀ PREV</span>
-                    <span style={{ fontSize: 8, color: mc, fontFamily: THEME.ff.mono }}>{trail.position >= 0 ? trail.position + 1 : "—"}/{trail.docs.length}</span>
-                    <span onClick={() => { if (trail.position < trail.docs.length - 1) { const p = trail.position + 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }} style={{ fontSize: 8, color: trail.position < trail.docs.length - 1 ? mc : "#1E2530", cursor: trail.position < trail.docs.length - 1 ? "pointer" : "default", fontFamily: THEME.ff.mono, padding: "0 4px" }}>NEXT ▶</span>
-                    {isSupabaseConfigured() && trail.name && <span onClick={async () => { try { await supabase.saveTrail(trail); setTrail(t => ({ ...t, saved: true })); addLog(`Trail saved: ${trail.name}`, "sys"); } catch (e) { setTrail(t => ({ ...t, saveError: e.message })); addLog(`Trail save error: ${e.message}`, "err"); } }} style={{ fontSize: 8, color: trail.saved ? "#5A9F7B" : trail.saveError ? "#C45A4A" : "#5A9F7B", cursor: "pointer", fontFamily: THEME.ff.mono, padding: "0 4px" }}>{trail.saved ? "✓ SAVED" : trail.saveError ? "✗ ERROR" : "SAVE"}</span>}
-                    <span onClick={() => setTrail({ name: "", docs: [], position: -1 })} style={{ fontSize: 8, color: "#5a3a3a", cursor: "pointer", fontFamily: THEME.ff.mono, marginLeft: "auto", padding: "0 4px" }}>CLEAR</span>
+                    <span
+                      onClick={() => { if (trail.position > 0) { const p = trail.position - 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }}
+                      style={{ fontSize: 10, color: trail.position > 0 ? mc : THEME.txFaint, cursor: trail.position > 0 ? "pointer" : "default", padding: "4px 8px", letterSpacing: THEME.ls.wide, border: `1px solid ${trail.position > 0 ? mc + "44" : "transparent"}`, transition: THEME.t }}
+                    >◀ PREV</span>
+                    <span style={{ fontSize: 10, color: mc, letterSpacing: THEME.ls.wide }}>{trail.position >= 0 ? trail.position + 1 : "—"} / {trail.docs.length}</span>
+                    <span
+                      onClick={() => { if (trail.position < trail.docs.length - 1) { const p = trail.position + 1; setTrail(t => ({ ...t, position: p })); setSelDoc(trail.docs[p]); setView("MAP"); } }}
+                      style={{ fontSize: 10, color: trail.position < trail.docs.length - 1 ? mc : THEME.txFaint, cursor: trail.position < trail.docs.length - 1 ? "pointer" : "default", padding: "4px 8px", letterSpacing: THEME.ls.wide, border: `1px solid ${trail.position < trail.docs.length - 1 ? mc + "44" : "transparent"}`, transition: THEME.t }}
+                    >NEXT ▶</span>
+                    {isSupabaseConfigured() && trail.name && (
+                      <span
+                        onClick={async () => { try { await supabase.saveTrail(trail); setTrail(t => ({ ...t, saved: true })); addLog(`Trail saved: ${trail.name}`, "sys"); } catch (e) { setTrail(t => ({ ...t, saveError: e.message })); addLog(`Trail save error: ${e.message}`, "err"); } }}
+                        style={{ fontSize: 10, color: trail.saved ? THEME.green : trail.saveError ? THEME.red : THEME.green, cursor: "pointer", padding: "4px 10px", border: `1px solid ${(trail.saved ? THEME.green : trail.saveError ? THEME.red : THEME.green) + "44"}`, letterSpacing: THEME.ls.wide }}
+                      >
+                        {trail.saved ? "✓ SAVED" : trail.saveError ? "✗ ERROR" : "SAVE"}
+                      </span>
+                    )}
+                    <span
+                      onClick={() => setTrail({ name: "", docs: [], position: -1 })}
+                      style={{ fontSize: 10, color: THEME.txMute, cursor: "pointer", padding: "4px 8px", marginLeft: "auto", letterSpacing: THEME.ls.wide, transition: THEME.t }}
+                      onMouseEnter={e => e.currentTarget.style.color = THEME.red}
+                      onMouseLeave={e => e.currentTarget.style.color = THEME.txMute}
+                    >CLEAR</span>
                   </>}
                 </div>
+
                 {trail.docs.length === 0 ? (
-                  <div style={{ fontSize: 10, color: "#5A6370", fontFamily: THEME.ff.serif, lineHeight: 1.6 }}>Switch to SEARCH, find documents, and click + to add them to a trail. Trails are ordered reading paths through the archive.</div>
-                ) : (
-                  trail.docs.map((d, i) => (
-                    <div key={`${d.id}-${i}`} style={{ display: "flex", gap: 6, padding: "4px 0", borderBottom: "1px solid #0a0f0a", background: i === trail.position ? mc + "08" : "transparent" }}>
-                      <span style={{ fontSize: 8, color: i === trail.position ? mc : "#2A3040", fontFamily: THEME.ff.mono, width: 16, flexShrink: 0, textAlign: "right" }}>{i + 1}</span>
-                      <div style={{ flex: 1, cursor: "pointer" }} onClick={() => { setTrail(t => ({ ...t, position: i })); setSelDoc(d); setView("MAP"); }}>
-                        <div style={{ fontSize: 10, color: i === trail.position ? mc : "#B0B8C4", fontFamily: THEME.ff.serif, lineHeight: 1.3 }}>{d.t.length > 60 ? d.t.slice(0, 57) + "..." : d.t}</div>
-                        <div style={{ fontSize: 8, color: "#2A3040" }}>{(d.c?.[0] || "") + " · " + d.d}</div>
-                      </div>
-                      <span onClick={() => setTrail(t => ({ ...t, docs: t.docs.filter((_, j) => j !== i), position: Math.min(t.position, t.docs.length - 2) }))} style={{ fontSize: 8, color: "#4a3a3a", cursor: "pointer", fontFamily: THEME.ff.mono, padding: "0 3px", alignSelf: "center" }}>×</span>
+                  <div style={{ padding: "40px 20px", textAlign: "center" }}>
+                    <div style={{ fontSize: 13, color: THEME.txMute, fontFamily: THEME.ff.serif, lineHeight: 1.8, fontStyle: "italic", maxWidth: 520, margin: "0 auto" }}>
+                      Switch to SEARCH, find documents, and click + to add them to a trail. Trails are ordered reading paths through the archive — persistent, shareable, and navigable via PREV/NEXT.
                     </div>
-                  ))
+                  </div>
+                ) : (
+                  <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                    {trail.docs.map((d, i) => {
+                      const active = i === trail.position;
+                      return (
+                        <div
+                          key={`${d.id}-${i}`}
+                          style={{
+                            display: "flex",
+                            gap: 12,
+                            padding: "12px 16px",
+                            background: active ? mc + "14" : THEME.surface,
+                            border: `1px solid ${active ? mc + "66" : THEME.border}`,
+                            borderLeft: active ? `3px solid ${mc}` : `1px solid ${THEME.border}`,
+                            alignItems: "center",
+                            transition: THEME.t,
+                          }}
+                        >
+                          <span style={{ fontSize: 14, color: active ? mc : THEME.txMute, fontFamily: THEME.ff.mono, width: 24, flexShrink: 0, textAlign: "center", fontWeight: 300 }}>
+                            {i + 1}
+                          </span>
+                          <div style={{ flex: 1, cursor: "pointer" }} onClick={() => { setTrail(t => ({ ...t, position: i })); setSelDoc(d); setView("MAP"); }}>
+                            <div style={{ fontSize: 13, color: active ? THEME.gold : THEME.txBright, fontFamily: THEME.ff.serif, lineHeight: 1.4, marginBottom: 3 }}>
+                              {d.t.length > 80 ? d.t.slice(0, 77) + "…" : d.t}
+                            </div>
+                            <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>
+                              {(d.c?.[0] || "—")}{d.d ? ` · ${d.d}` : ""}
+                            </div>
+                          </div>
+                          <span
+                            onClick={() => setTrail(t => ({ ...t, docs: t.docs.filter((_, j) => j !== i), position: Math.min(t.position, t.docs.length - 2) }))}
+                            onMouseEnter={e => e.currentTarget.style.color = THEME.red}
+                            onMouseLeave={e => e.currentTarget.style.color = THEME.txMute}
+                            style={{ fontSize: 14, color: THEME.txMute, cursor: "pointer", fontFamily: THEME.ff.mono, padding: "0 6px", transition: THEME.t, flexShrink: 0 }}
+                            title="Remove from trail"
+                          >
+                            ×
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
                 )}
               </>}
 
               {/* BIBLIO mode */}
               {libMode === "BIBLIO" && <>
-                <div style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif, lineHeight: 1.6, marginBottom: 8 }}>Export citations from your trail or search results. Select a format below.</div>
+                <div style={{ fontSize: 13, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.7, marginBottom: 20, fontStyle: "italic", maxWidth: 640 }}>
+                  Export citations from your trail or search results. Click a format to copy all to clipboard.
+                </div>
                 {(() => {
                   const docs = trail.docs.length > 0 ? trail.docs : (search ? searchResults : data.documents);
-                  const source = trail.docs.length > 0 ? `Trail: ${trail.name || "unnamed"}` : search ? `Search: "${search}"` : "Recent 20";
+                  const source = trail.docs.length > 0 ? `Trail: ${trail.name || "unnamed"}` : search ? `Search: "${search}"` : `Recent ${Math.min(20, docs.length)}`;
                   return <>
-                    <div style={{ fontSize: 8, color: "#5A6370", marginBottom: 6, fontFamily: THEME.ff.mono }}>{source} · {docs.length} documents</div>
-                    <div style={{ display: "flex", gap: 4, marginBottom: 10 }}>
+                    <div style={{ fontSize: 10, color: THEME.txMute, marginBottom: 12, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide, textTransform: "uppercase" }}>
+                      {source} · {docs.length} documents
+                    </div>
+                    <div style={{ display: "flex", gap: 6, marginBottom: 24 }}>
                       {["Zenodo", "BibTeX", "Plain"].map(fmt => (
-                        <span key={fmt} onClick={() => {
-                          let output = "";
-                          if (fmt === "Zenodo") {
-                            output = docs.filter(d => d.doi).map(d => `{"identifier": "${d.doi}", "relation": "cites", "resource_type": "publication-technicalnote"}`).join(",\n");
-                            output = `[\n${output}\n]`;
-                          } else if (fmt === "BibTeX") {
-                            output = docs.filter(d => d.doi).map(d => {
-                              const key = (d.c?.[0] || "anon").replace(/[^a-zA-Z]/g, "") + (d.d || "").slice(0, 4);
-                              return `@misc{${key},\n  title = {${d.t}},\n  author = {${(d.c || []).join(" and ")}},\n  year = {${(d.d || "").slice(0, 4)}},\n  doi = {${d.doi}},\n  url = {https://doi.org/${d.doi}}\n}`;
-                            }).join("\n\n");
-                          } else {
-                            output = docs.map((d, i) => `${i + 1}. ${(d.c || []).join(", ")}. "${d.t}." ${d.d || ""}. DOI: ${d.doi || "n/a"}`).join("\n");
-                          }
-                          navigator.clipboard?.writeText(output).then(() => addLog(`${fmt}: ${docs.length} citations copied`, "sys")).catch(() => addLog(`${fmt}: clipboard unavailable`, "err"));
-                        }} style={{ fontSize: 8, padding: "3px 8px", fontFamily: THEME.ff.mono, color: mc, border: `1px solid ${mc}44`, background: mc + "11", cursor: "pointer" }}>{fmt}</span>
+                        <span
+                          key={fmt}
+                          onClick={() => {
+                            let output = "";
+                            if (fmt === "Zenodo") {
+                              output = docs.filter(d => d.doi).map(d => `{"identifier": "${d.doi}", "relation": "cites", "resource_type": "publication-technicalnote"}`).join(",\n");
+                              output = `[\n${output}\n]`;
+                            } else if (fmt === "BibTeX") {
+                              output = docs.filter(d => d.doi).map(d => {
+                                const key = (d.c?.[0] || "anon").replace(/[^a-zA-Z]/g, "") + (d.d || "").slice(0, 4);
+                                return `@misc{${key},\n  title = {${d.t}},\n  author = {${(d.c || []).join(" and ")}},\n  year = {${(d.d || "").slice(0, 4)}},\n  doi = {${d.doi}},\n  url = {https://doi.org/${d.doi}}\n}`;
+                              }).join("\n\n");
+                            } else {
+                              output = docs.map((d, i) => `${i + 1}. ${(d.c || []).join(", ")}. "${d.t}." ${d.d || ""}. DOI: ${d.doi || "n/a"}`).join("\n");
+                            }
+                            navigator.clipboard?.writeText(output).then(() => addLog(`${fmt}: ${docs.length} citations copied`, "sys")).catch(() => addLog(`${fmt}: clipboard unavailable`, "err"));
+                          }}
+                          onMouseEnter={e => { e.currentTarget.style.background = mc + "22"; e.currentTarget.style.borderColor = mc; }}
+                          onMouseLeave={e => { e.currentTarget.style.background = mc + "11"; e.currentTarget.style.borderColor = mc + "44"; }}
+                          style={{ fontSize: 11, padding: "8px 16px", fontFamily: THEME.ff.mono, color: mc, border: `1px solid ${mc}44`, background: mc + "11", cursor: "pointer", letterSpacing: THEME.ls.wide, transition: THEME.t }}
+                        >
+                          {fmt}
+                        </span>
                       ))}
                     </div>
-                    {docs.slice(0, 15).map((d, i) => (
-                      <div key={d.id} style={{ padding: "2px 0", borderBottom: "1px solid #060a06" }}>
-                        <div style={{ fontSize: 9, color: "#B0B8C4", fontFamily: THEME.ff.serif }}>{i + 1}. {d.t.length > 60 ? d.t.slice(0, 57) + "..." : d.t}</div>
-                        <div style={{ fontSize: 7, color: "#5A6370", fontFamily: THEME.ff.mono }}>{d.doi || "no DOI"}</div>
-                      </div>
-                    ))}
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      {docs.slice(0, 20).map((d, i) => (
+                        <div key={d.id} style={{ padding: "10px 0", borderBottom: `1px solid ${THEME.border}` }}>
+                          <div style={{ fontSize: 12, color: THEME.txBright, fontFamily: THEME.ff.serif, lineHeight: 1.4, marginBottom: 3 }}>
+                            {i + 1}. {d.t}
+                          </div>
+                          <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>
+                            {d.doi || "no DOI"} {d.d ? `· ${d.d}` : ""}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </>;
                 })()}
               </>}
@@ -2556,7 +2784,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 const passCount = allGates.filter(([, v]) => v).length;
                 return <>
                   {/* DOI + status */}
-                  <div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22`, marginBottom: 10 }}>
+                  <div style={{ padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22`, marginBottom: 10 }}>
                     <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, wordBreak: "break-all" }}>{selDoc.doi || "no DOI"}</div>
                     <div style={{ display: "flex", gap: 8, marginTop: 4 }}>
                       <StatusBadge s={selDoc.s} />
@@ -2609,7 +2837,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                     <div style={{ marginBottom: 10 }}>
                       <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>KEYWORDS</div>
                       <div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>
-                        {selDoc.k.map((k, i) => <span key={i} style={{ fontSize: 8, padding: "1px 4px", background: "#0a0f0a", border: "1px solid #1E2530", color: "#B0B8C4", fontFamily: THEME.ff.mono }}>{k}</span>)}
+                        {selDoc.k.map((k, i) => <span key={i} style={{ fontSize: 8, padding: "1px 4px", background: THEME.border, border: "1px solid #1E2530", color: "#B0B8C4", fontFamily: THEME.ff.mono }}>{k}</span>)}
                       </div>
                     </div>
                   )}
@@ -2620,7 +2848,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 const roomRels = data.relations.filter(r => r.from === room.id || r.to === room.id);
                 const roomDocs = data.documents.filter(d => (d.r || []).includes(room.id));
                 return <>
-                  <div style={{ padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22`, marginBottom: 10 }}>
+                  <div style={{ padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22`, marginBottom: 10 }}>
                     <div style={{ fontSize: 9, color: "#B0B8C4", fontFamily: THEME.ff.mono }}>{room.id} · {room.cat} · {room.preferred_mode}</div>
                     <div style={{ fontSize: 9, color: "#B0B8C4", fontFamily: THEME.ff.serif, marginTop: 4 }}>{room.physics}</div>
                   </div>
@@ -2741,7 +2969,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 <div key={i} style={{ display: "flex", gap: 8, padding: "6px 0", borderBottom: "1px solid #0a0f0a" }}>
                   <div style={{ width: 18, fontSize: 16, color: mc, fontFamily: THEME.ff.serif, textAlign: "right", flexShrink: 0 }}>{k}</div>
                   <div>
-                    <div style={{ fontSize: 10, color: "#7a8a5a", fontFamily: THEME.ff.serif }}>{name} <span style={{ color: "#5A6370", fontStyle: "italic" }}>— {desc}</span></div>
+                    <div style={{ fontSize: 10, color: THEME.tx, fontFamily: THEME.ff.serif }}>{name} <span style={{ color: "#5A6370", fontStyle: "italic" }}>— {desc}</span></div>
                     <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono, marginTop: 1 }}>{counts}</div>
                   </div>
                 </div>
@@ -2757,7 +2985,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                         <span style={{ fontSize: 10, color: mc, fontFamily: THEME.ff.serif }}>{m.name}</span>
                         <span style={{ fontSize: 8, color: "#5A6370", marginLeft: 6 }}>{m.bearer} ← {m.lineage}</span>
                       </div>
-                      <span style={{ fontSize: 7, color: m.status === "RATIFIED" ? "#B0B8C4" : "#5a5a3a", fontFamily: THEME.ff.mono }}>{m.status}</span>
+                      <span style={{ fontSize: 7, color: m.status === "RATIFIED" ? "#B0B8C4" : THEME.goldMute, fontFamily: THEME.ff.mono }}>{m.status}</span>
                     </div>
                   ))}
                 </div>
@@ -2788,7 +3016,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                       <div style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif }}>
                         {f.source} <span style={{ color: mc }}>→</span> {f.target}
                       </div>
-                      <span style={{ fontSize: 7, color: f.status === "VERIFIED" ? "#5a8a4a" : f.status === "DERIVED" ? "#B0B8C4" : "#5a5a3a", fontFamily: THEME.ff.mono }}>{f.status}</span>
+                      <span style={{ fontSize: 7, color: f.status === "VERIFIED" ? "#5a8a4a" : f.status === "DERIVED" ? "#B0B8C4" : THEME.goldMute, fontFamily: THEME.ff.mono }}>{f.status}</span>
                     </div>
                   ))}
                 </div>
@@ -2828,7 +3056,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                       </div>
                     ))}
                   </div>
-                  <div style={{ fontSize: 8, color: "#5a3a3a" }}>Forbidden: {(data.status_algebra.forbidden_transitions||[]).map(t => `${t.from}→${t.to}`).join(" · ")}</div>
+                  <div style={{ fontSize: 8, color: THEME.red }}>Forbidden: {(data.status_algebra.forbidden_transitions||[]).map(t => `${t.from}→${t.to}`).join(" · ")}</div>
                 </div>
               )}
 
@@ -2836,7 +3064,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
               {data.state_evolution && (
                 <div style={{ marginTop: 14 }}>
                   <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>STATE EVOLUTION · SE</div>
-                  <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${mc}22`, marginBottom: 4, lineHeight: 1.6, wordBreak: "break-all" }}>{data.state_evolution.formula}</div>
+                  <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22`, marginBottom: 4, lineHeight: 1.6, wordBreak: "break-all" }}>{data.state_evolution.formula}</div>
                   <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.serif, fontStyle: "italic" }}>{data.state_evolution.informal}</div>
                 </div>
               )}
@@ -2980,7 +3208,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                         <span style={{ fontSize: 10, color: mc, fontFamily: THEME.ff.serif }}>{a.name}</span>
                         <span style={{ fontSize: 8, color: "#5A6370", marginLeft: 6 }}>{a.heteronym}</span>
                       </div>
-                      <span style={{ fontSize: 8, color: a.status === "RATIFIED" ? "#B0B8C4" : "#5a5a3a", fontFamily: THEME.ff.mono }}>{a.status}</span>
+                      <span style={{ fontSize: 8, color: a.status === "RATIFIED" ? "#B0B8C4" : THEME.goldMute, fontFamily: THEME.ff.mono }}>{a.status}</span>
                     </div>
                   ))}
                 </div>
@@ -2997,7 +3225,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                         <span style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif, fontStyle: "italic" }}>{b.title}</span>
                         <span style={{ fontSize: 8, color: "#5A6370", marginLeft: 6 }}>{b.heteronym}</span>
                       </div>
-                      <span style={{ fontSize: 8, color: b.status === "PUBLISHED" ? mc : "#5a5a3a", fontFamily: THEME.ff.mono }}>{b.status}</span>
+                      <span style={{ fontSize: 8, color: b.status === "PUBLISHED" ? mc : THEME.goldMute, fontFamily: THEME.ff.mono }}>{b.status}</span>
                     </div>
                   ))}
                   {data.book_series.adjacent && (
@@ -3019,7 +3247,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                     return (
                       <div key={i} style={{ display: "flex", gap: 6, padding: "2px 0", borderBottom: "1px solid #060a06", fontSize: 9 }}>
                         <span style={{ color: "#7a4a4a", width: isMobile ? 26 : 30, fontFamily: THEME.ff.mono, flexShrink: 0 }}>{op.id}</span>
-                        <span style={{ color: "#5a3a3a", width: isMobile ? 90 : 140, flexShrink: 0 }}>{op.name}</span>
+                        <span style={{ color: THEME.red, width: isMobile ? 90 : 140, flexShrink: 0 }}>{op.name}</span>
                         <span style={{ color: "#5A6370", flexShrink: 0 }}>↔</span>
                         <span style={{ color: "#4a6a4a" }}>{los?.name || "—"}</span>
                       </div>
@@ -3027,9 +3255,9 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                   })}
                   {data.operators.cos_patterns && (
                     <div style={{ marginTop: 6 }}>
-                      <div style={{ fontSize: 8, color: "#5a3a3a", letterSpacing: 1, marginBottom: 2 }}>ATTACK PATTERNS</div>
+                      <div style={{ fontSize: 8, color: THEME.red, letterSpacing: 1, marginBottom: 2 }}>ATTACK PATTERNS</div>
                       {data.operators.cos_patterns.map((p, i) => (
-                        <div key={i} style={{ fontSize: 8, color: "#5a3a3a", padding: "1px 0" }}>
+                        <div key={i} style={{ fontSize: 8, color: THEME.red, padding: "1px 0" }}>
                           {p.name}: {p.ops.join(" → ")}
                         </div>
                       ))}
@@ -3051,13 +3279,13 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                   {(data.effective_acts.resonant || []).map((ea, i) => (
                     <div key={`r${i}`} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
                       <span style={{ fontSize: 9, color: "#5A6370", fontFamily: THEME.ff.serif }}>{ea.name}</span>
-                      <span style={{ fontSize: 7, color: "#5a5a3a", fontFamily: THEME.ff.mono }}>RESONANT</span>
+                      <span style={{ fontSize: 7, color: THEME.goldMute, fontFamily: THEME.ff.mono }}>RESONANT</span>
                     </div>
                   ))}
                   {(data.effective_acts.undeposited || []).map((ea, i) => (
                     <div key={`u${i}`} style={{ display: "flex", justifyContent: "space-between", padding: "2px 0", borderBottom: "1px solid #060a06" }}>
                       <span style={{ fontSize: 9, color: "#5A6370", fontFamily: THEME.ff.serif }}>{ea.name}</span>
-                      <span style={{ fontSize: 7, color: "#4a3a3a", fontFamily: THEME.ff.mono }}>UNDEPOSITED</span>
+                      <span style={{ fontSize: 7, color: THEME.txMute, fontFamily: THEME.ff.mono }}>UNDEPOSITED</span>
                     </div>
                   ))}
                 </div>
@@ -3158,7 +3386,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 const quorum = 4;
                 const met = active >= quorum;
                 return (
-                  <div style={{ marginBottom: 14, padding: "6px 8px", background: "#060a06", borderLeft: `2px solid ${met ? "#5A9F7B" : "#C45A4A"}22` }}>
+                  <div style={{ marginBottom: 14, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${met ? "#5A9F7B" : "#C45A4A"}22` }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                       <span style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>QUORUM</span>
                       <span style={{ fontSize: 10, fontFamily: THEME.ff.mono, color: met ? "#5A9F7B" : "#C45A4A" }}>{active}/{total} active · {quorum} required · {met ? "QUORUM MET" : "NO QUORUM"}</span>
@@ -3213,7 +3441,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                       return (
                         <div key={key} style={{ display: "flex", gap: 6, padding: "2px 0", alignItems: "center" }}>
                           <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: mc, width: 26 }}>{key}</span>
-                          <div style={{ flex: 1, height: 5, background: "#0a0f0a" }}>
+                          <div style={{ flex: 1, height: 5, background: THEME.border }}>
                             <div style={{ height: "100%", width: `${Math.min(100, val * 100)}%`, background: pass ? "#5A9F7B88" : "#C45A4A88" }} />
                           </div>
                           <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: pass ? "#5A9F7B" : "#C45A4A", width: 30 }}>{val}</span>
@@ -3268,9 +3496,12 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
       </div>
 
       {/* Log */}
-      <div style={{ height: isMobile ? 52 : 60, borderTop: "1px solid #1E2530", padding: isMobile ? "4px 10px" : "4px 14px", overflowY: "auto", flexShrink: 0, background: "#0B0F14" }}>
-        {log.slice(-5).map((l, i) => (
-          <div key={i} style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: l.type === "err" ? "#C45A4A" : l.type === "gw" ? "#5A7A9F" : l.type === "lp" ? (ARK_MODE_COLORS[arkMode] || "#5A7A9F") : "#2A3040", lineHeight: 1.4 }}><span style={{ color: "#1E2530" }}>{l.t}</span> {l.msg}</div>
+      <div style={{ height: isMobile ? 44 : 52, borderTop: `1px solid ${THEME.border}`, padding: isMobile ? "6px 14px" : "8px 20px", overflowY: "auto", flexShrink: 0, background: THEME.surface }}>
+        {log.slice(-4).map((l, i) => (
+          <div key={i} style={{ fontSize: 9, fontFamily: THEME.ff.mono, color: l.type === "err" ? THEME.red : l.type === "gw" ? THEME.teal : l.type === "lp" ? (ARK_MODE_COLORS[arkMode] || THEME.tx) : THEME.txMute, lineHeight: 1.5, letterSpacing: "0.02em" }}>
+            <span style={{ color: THEME.txFaint, marginRight: 8 }}>{l.t}</span>
+            {l.msg}
+          </div>
         ))}
       </div>
     </div>
