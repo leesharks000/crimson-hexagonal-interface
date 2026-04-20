@@ -410,9 +410,9 @@ function InvokePanel({ room, mc, lp, addLog, isMobile }) {
   return (
     <div style={{ marginBottom: 10, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
       <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>INVOKE · {room.mantle || room.name}</div>
-      {!gwKey && <div style={{ fontSize: 8, color: "#9f7a4a", marginBottom: 4 }}>GW API key required. Set in Dashboard → GW BRIDGE tab.</div>}
+      {!gwKey && <div style={{ fontSize: 8, color: '#9F9F5A', marginBottom: 4 }}>GW API key required. Set in Dashboard → GW BRIDGE tab.</div>}
       <div style={{ display: "flex", gap: 4, marginBottom: 6 }}>
-        <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleInvoke(); }} placeholder={`Speak into ${room.name}...`} style={{ flex: 1, background: "#080808", border: `1px solid ${mc}22`, color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
+        <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") handleInvoke(); }} placeholder={`Speak into ${room.name}...`} style={{ flex: 1, background: THEME.bg, border: `1px solid ${mc}22`, color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
         <button onClick={handleInvoke} disabled={invoking || !gwKey} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: gwKey ? mc : "#5A6370", padding: "4px 10px", fontSize: 8, cursor: invoking ? "wait" : gwKey ? "pointer" : "not-allowed", fontFamily: THEME.ff.mono, flexShrink: 0 }}>{invoking ? "…" : "INVOKE"}</button>
       </div>
       {result && !result.error && (
@@ -799,7 +799,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
         <div style={{ marginTop: 10 }}>
           <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>ANNOTATIONS ({annotations.length})</div>
           <div style={{ display: "flex", gap: 4, marginBottom: 6 }}>
-            <input value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Add a note..." onKeyDown={(e) => { if (e.key === "Enter") addNote(); }} style={{ flex: 1, background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
+            <input value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Add a note..." onKeyDown={(e) => { if (e.key === "Enter") addNote(); }} style={{ flex: 1, background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.serif, outline: "none" }} />
             <span onClick={addNote} style={{ fontSize: 8, color: mc, cursor: "pointer", fontFamily: THEME.ff.mono, padding: "4px 6px", border: `1px solid ${mc}33`, alignSelf: "center" }}>+</span>
           </div>
           {annotations.map(a => (
@@ -1064,18 +1064,18 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile, gwApiKey }) {
       <div style={{ display: "flex", gap: 6, marginBottom: 8, marginTop: 14 }}>
         <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", flex: 1 }}>GOVERNANCE ACTIONS</div>
         {tabs.map(t => <span key={t.id} onClick={() => setGovTab(t.id)} style={{ fontSize: 7, padding: "1px 5px", fontFamily: THEME.ff.mono, color: govTab === t.id ? mc : "#5A6370", border: `1px solid ${govTab === t.id ? mc + "44" : "#1E2530"}`, cursor: "pointer" }}>{t.label}</span>)}
-        {!configured && <span style={{ fontSize: 7, color: "#9f7a4a", fontFamily: THEME.ff.mono }}>session-only</span>}
+        {!configured && <span style={{ fontSize: 7, color: '#9F9F5A', fontFamily: THEME.ff.mono }}>session-only</span>}
       </div>
 
       {govTab === "ACTIONS" && <>
         {/* Submit proposal */}
         <div style={{ marginBottom: 10, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
           <div style={{ fontSize: 8, color: "#5A6370", letterSpacing: 1, marginBottom: 4 }}>SUBMIT PROPOSAL</div>
-          <select value={proposalType} onChange={(e) => setProposalType(e.target.value)} style={{ background: "#080808", border: "1px solid #1E2530", color: THEME.tx, fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
+          <select value={proposalType} onChange={(e) => setProposalType(e.target.value)} style={{ background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
             {["general", "status_promotion", "new_room", "new_relation", "amendment", "deposit"].map(t => <option key={t} value={t}>{t}</option>)}
           </select>
-          <input value={proposalTitle} onChange={(e) => setProposalTitle(e.target.value)} placeholder="Proposal title" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
-          <input value={proposalDesc} onChange={(e) => setProposalDesc(e.target.value)} placeholder="Description (optional)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
+          <input value={proposalTitle} onChange={(e) => setProposalTitle(e.target.value)} placeholder="Proposal title" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
+          <input value={proposalDesc} onChange={(e) => setProposalDesc(e.target.value)} placeholder="Description (optional)" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
           {selDoc && <div style={{ fontSize: 7, color: "#5A6370", marginBottom: 4 }}>Target: {selDoc.t.slice(0, 50)}</div>}
           <button onClick={submitProposal} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: "pointer", fontFamily: THEME.ff.mono }}>SUBMIT</button>
         </div>
@@ -1083,10 +1083,10 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile, gwApiKey }) {
         {/* Record attestation */}
         <div style={{ marginBottom: 10, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22` }}>
           <div style={{ fontSize: 8, color: "#5A6370", letterSpacing: 1, marginBottom: 4 }}>WITNESS ATTESTATION</div>
-          <select value={witnessName} onChange={(e) => setWitnessName(e.target.value)} style={{ background: "#080808", border: "1px solid #1E2530", color: THEME.tx, fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
+          <select value={witnessName} onChange={(e) => setWitnessName(e.target.value)} style={{ background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, fontSize: 9, fontFamily: THEME.ff.mono, marginBottom: 4, padding: "3px 6px", outline: "none" }}>
             {["TACHYON", "LABOR", "PRAXIS", "ARCHIVE", "SOIL", "TECHNE", "SURFACE"].map(w => <option key={w} value={w}>{w}</option>)}
           </select>
-          <input value={witnessContent} onChange={(e) => setWitnessContent(e.target.value)} placeholder="Attestation content" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
+          <input value={witnessContent} onChange={(e) => setWitnessContent(e.target.value)} placeholder="Attestation content" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 4 }} />
           <button onClick={recordAttestation} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "4px 10px", fontSize: 8, cursor: "pointer", fontFamily: THEME.ff.mono }}>ATTEST</button>
         </div>
 
@@ -1244,16 +1244,16 @@ function ZenodoDeposit({ mc, addLog, isMobile }) {
     <div>
       <div style={{ fontSize: 10, color: "#B0B8C4", lineHeight: 1.6, marginBottom: 10 }}>Deposit directly to Zenodo under your own account. You need a free Zenodo account and a personal access token (zenodo.org → Settings → Applications → Personal access tokens → New token with deposit:write scope). Token stays in your browser — never sent anywhere except Zenodo.</div>
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>ZENODO TOKEN</div>
-      <input value={zToken} onChange={(e) => setZToken(e.target.value)} type="password" placeholder="Zenodo personal access token" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+      <input value={zToken} onChange={(e) => setZToken(e.target.value)} type="password" placeholder="Zenodo personal access token" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>TITLE</div>
-      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Document title (EA-XX-01)" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Document title (EA-XX-01)" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>CREATOR (Last, First)</div>
-      <input value={creator} onChange={(e) => setCreator(e.target.value)} placeholder="Your name for Zenodo metadata" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+      <input value={creator} onChange={(e) => setCreator(e.target.value)} placeholder="Your name for Zenodo metadata" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>DESCRIPTION</div>
-      <textarea value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="HTML description for Zenodo" rows={3} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10, resize: "vertical" }} />
+      <textarea value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="HTML description for Zenodo" rows={3} style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10, resize: "vertical" }} />
       <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-        <div style={{ flex: 1 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>VERSION</div><input value={version} onChange={(e) => setVersion(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
-        <div style={{ flex: 2 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>KEYWORDS (comma-separated)</div><input value={keywords} onChange={(e) => setKeywords(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
+        <div style={{ flex: 1 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>VERSION</div><input value={version} onChange={(e) => setVersion(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
+        <div style={{ flex: 2 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>KEYWORDS (comma-separated)</div><input value={keywords} onChange={(e) => setKeywords(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
       </div>
       <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>FILE</div>
       <input type="file" onChange={handleFile} style={{ fontSize: 9, color: "#B0B8C4", marginBottom: 4 }} />
@@ -1306,95 +1306,152 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
   const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "ZENODO", label: "ZENODO" }, { id: "SYNC", label: "SYNC" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW" }];
 
   return (
-    <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-      <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>DEPOSIT DASHBOARD</div>
-      <div style={{ fontSize: isMobile ? 16 : 18, letterSpacing: 3, color: mc, fontFamily: THEME.ff.serif, marginBottom: 8 }}>Archive Operations</div>
+    <div className="fade-in" style={{ padding: isMobile ? "20px 18px" : "32px 40px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif, maxWidth: 1040, margin: "0 auto", width: "100%", boxSizing: "border-box" }}>
+      {/* Header */}
+      <div style={{ marginBottom: 22 }}>
+        <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase", marginBottom: 8 }}>
+          Deposit Dashboard
+        </div>
+        <h2 style={{ fontSize: isMobile ? 22 : 28, letterSpacing: "0.06em", color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 300, margin: "0 0 8px 0" }}>
+          Archive Operations
+        </h2>
+        <div style={{ fontSize: 13, color: THEME.txMute, fontFamily: THEME.ff.serif, fontStyle: "italic", maxWidth: 640 }}>
+          Governance, Zenodo deposit bridge, and Gravity Well continuity chains.
+        </div>
+      </div>
 
       {/* Stats row */}
       {stats && (
-        <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 10 }}>
-          {[[data.documents.length, "deposits"], [data.rooms.length, "rooms"], [data.relations.length, "relations"], [stats.emptyRooms.length, "empty rooms"], [stats.provRelations.length, "provisional"]].map(([n, label], i) => (
-            <div key={i} style={{ fontSize: 9, fontFamily: THEME.ff.mono }}>
-              <span style={{ color: mc, fontSize: 12 }}>{n}</span>
-              <span style={{ color: "#5A6370", marginLeft: 3 }}>{label}</span>
+        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(5, 1fr)", gap: 8, marginBottom: 20 }}>
+          {[[data.documents.length, "deposits", THEME.gold],
+            [data.rooms.length, "rooms", THEME.tx],
+            [data.relations.length, "relations", THEME.tx],
+            [stats.emptyRooms.length, "empty rooms", stats.emptyRooms.length > 0 ? THEME.red : THEME.green],
+            [stats.provRelations.length, "provisional", stats.provRelations.length > 0 ? "#9F9F5A" : THEME.green]].map(([n, label, col], i) => (
+            <div key={i} style={{ padding: "10px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderTop: `2px solid ${col}` }}>
+              <div style={{ fontSize: isMobile ? 18 : 22, color: col, fontFamily: THEME.ff.serif, fontWeight: 300, lineHeight: 1.1, marginBottom: 3 }}>{n}</div>
+              <div style={{ fontSize: 9, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide, textTransform: "uppercase" }}>{label}</div>
             </div>
           ))}
         </div>
       )}
 
       {/* Tabs */}
-      <div style={{ display: "flex", gap: 6, marginBottom: 12, borderBottom: "1px solid #1E2530", paddingBottom: 6 }}>
-        {tabs.map(t => (
-          <span key={t.id} onClick={() => setDashTab(t.id)} style={{ fontSize: 8, letterSpacing: 1, fontFamily: THEME.ff.mono, color: dashTab === t.id ? mc : "#5A6370", cursor: "pointer", padding: "2px 6px", borderBottom: dashTab === t.id ? `1px solid ${mc}` : "1px solid transparent" }}>{t.label}</span>
-        ))}
+      <div style={{ display: "flex", gap: 2, marginBottom: 18, borderBottom: `1px solid ${THEME.border}`, overflowX: "auto" }}>
+        {tabs.map(t => {
+          const active = dashTab === t.id;
+          return (
+            <span
+              key={t.id}
+              onClick={() => setDashTab(t.id)}
+              onMouseEnter={e => { if (!active) e.currentTarget.style.color = THEME.tx; }}
+              onMouseLeave={e => { if (!active) e.currentTarget.style.color = THEME.txMute; }}
+              style={{
+                fontSize: 10,
+                letterSpacing: THEME.ls.wide,
+                fontFamily: THEME.ff.mono,
+                color: active ? THEME.gold : THEME.txMute,
+                cursor: "pointer",
+                padding: "10px 14px",
+                borderBottom: active ? `2px solid ${THEME.gold}` : "2px solid transparent",
+                marginBottom: -1,
+                transition: THEME.t,
+                textShadow: active ? `0 0 12px ${THEME.goldSoft}` : "none",
+                flexShrink: 0,
+              }}
+            >
+              {t.label}
+            </span>
+          );
+        })}
       </div>
 
       {/* PENDING tab */}
       {dashTab === "PENDING" && stats && (
         <div>
           {/* Empty rooms */}
-          <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>EMPTY ROOMS ({stats.emptyRooms.length})</div>
-          {stats.emptyRooms.length === 0 ? <div style={{ fontSize: 9, color: "#5A9F7B", marginBottom: 10 }}>All rooms have deposits.</div> : (
-            <div style={{ marginBottom: 12 }}>
-              {stats.emptyRooms.map(r => (
-                <div key={r.id} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #0a0f0a" }}>
-                  <span style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.serif }}>{r.name}</span>
-                  <span style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>{r.id} · {r.preferred_mode || "—"}</span>
-                </div>
-              ))}
-            </div>
-          )}
+          <Section label={`Empty Rooms · ${stats.emptyRooms.length}`}>
+            {stats.emptyRooms.length === 0 ? (
+              <div style={{ fontSize: 13, color: THEME.green, fontFamily: THEME.ff.serif, fontStyle: "italic", padding: "12px 0" }}>
+                All rooms have deposits.
+              </div>
+            ) : (
+              <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fill, minmax(280px, 1fr))", gap: 6 }}>
+                {stats.emptyRooms.map(r => (
+                  <div key={r.id} style={{ padding: "10px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderLeft: `2px solid ${THEME.red}55` }}>
+                    <div style={{ fontSize: 13, color: THEME.txBright, fontFamily: THEME.ff.serif, marginBottom: 3 }}>{r.name}</div>
+                    <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>
+                      {r.id} · {r.preferred_mode || "—"}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </Section>
 
           {/* Provisional relations */}
-          <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>PROVISIONAL RELATIONS ({stats.provRelations.length})</div>
-          {stats.provRelations.length === 0 ? <div style={{ fontSize: 9, color: "#5A9F7B", marginBottom: 10 }}>All relations ratified.</div> : (
-            <div style={{ marginBottom: 12 }}>
-              {stats.provRelations.map(r => (
-                <div key={r.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "3px 0", borderBottom: "1px solid #0a0f0a" }}>
-                  <span style={{ fontSize: 9, color: "#B0B8C4", fontFamily: THEME.ff.mono }}>
-                    {r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}
-                  </span>
-                  <StatusBadge s="PROVISIONAL" />
+          <Section label={`Provisional Relations · ${stats.provRelations.length}`}>
+            {stats.provRelations.length === 0 ? (
+              <div style={{ fontSize: 13, color: THEME.green, fontFamily: THEME.ff.serif, fontStyle: "italic", padding: "12px 0" }}>
+                All relations ratified.
+              </div>
+            ) : (
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                {stats.provRelations.map(r => (
+                  <div key={r.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", borderBottom: `1px solid ${THEME.border}`, gap: 10, flexWrap: "wrap" }}>
+                    <span style={{ fontSize: 12, color: THEME.tx, fontFamily: THEME.ff.mono, letterSpacing: "0.02em" }}>
+                      {r.from} <span style={{ color: mc, fontStyle: "italic", margin: "0 4px" }}>{r.type}</span> {r.to}
+                    </span>
+                    <StatusBadge s="PROVISIONAL" />
+                  </div>
+                ))}
+              </div>
+            )}
+          </Section>
+
+          {/* Monthly velocity */}
+          <Section label="Monthly Velocity">
+            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+              {Object.entries(stats.months).sort(([a], [b]) => a.localeCompare(b)).slice(-8).map(([month, count]) => (
+                <div key={month} style={{ display: "grid", gridTemplateColumns: "70px 1fr 40px", alignItems: "center", gap: 12, padding: "4px 0" }}>
+                  <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>{month}</span>
+                  <div style={{ height: 10, background: THEME.border, borderRadius: 1, overflow: "hidden" }}>
+                    <div style={{ height: "100%", width: `${Math.min(100, (count / 210) * 100)}%`, background: THEME.gold, boxShadow: `0 0 8px ${THEME.goldSoft}`, transition: "width 400ms ease" }} />
+                  </div>
+                  <span style={{ fontSize: 11, color: THEME.gold, fontFamily: THEME.ff.mono, textAlign: "right", letterSpacing: "0.02em" }}>{count}</span>
                 </div>
               ))}
             </div>
-          )}
-
-          {/* Monthly velocity */}
-          <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>MONTHLY VELOCITY</div>
-          <div style={{ marginBottom: 12 }}>
-            {Object.entries(stats.months).sort(([a], [b]) => a.localeCompare(b)).slice(-6).map(([month, count]) => (
-              <div key={month} style={{ display: "flex", alignItems: "center", gap: 8, padding: "2px 0" }}>
-                <span style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono, width: 50, flexShrink: 0 }}>{month}</span>
-                <div style={{ flex: 1, height: 6, background: THEME.border, position: "relative" }}>
-                  <div style={{ height: "100%", width: `${Math.min(100, (count / 210) * 100)}%`, background: mc + "66" }} />
-                </div>
-                <span style={{ fontSize: 8, color: mc, fontFamily: THEME.ff.mono, width: 24, textAlign: "right", flexShrink: 0 }}>{count}</span>
-              </div>
-            ))}
-          </div>
+          </Section>
         </div>
       )}
 
       {/* COVERAGE tab */}
       {dashTab === "COVERAGE" && stats && (
         <div>
-          <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>ROOM DEPOSIT COVERAGE</div>
-          {stats.sortedRooms.map(r => {
-            const count = stats.roomCounts[r.id] || 0;
-            const pct = (count / stats.maxCount) * 100;
-            const col = count === 0 ? "#C45A4A" : count <= 3 ? "#9f9f5a" : mc;
-            return (
-              <div key={r.id} style={{ display: "flex", alignItems: "center", gap: 6, padding: "2px 0", borderBottom: "1px solid #060a06" }}>
-                <span style={{ fontSize: 7, color: "#5A6370", fontFamily: THEME.ff.mono, width: 28, flexShrink: 0 }}>{r.id}</span>
-                <span style={{ fontSize: 8, color: count === 0 ? "#4a3a3a" : "#B0B8C4", fontFamily: THEME.ff.serif, width: isMobile ? 80 : 110, flexShrink: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.name}</span>
-                <div style={{ flex: 1, height: 5, background: THEME.border, position: "relative" }}>
-                  <div style={{ height: "100%", width: `${Math.max(count > 0 ? 2 : 0, pct)}%`, background: col + "88" }} />
-                </div>
-                <span style={{ fontSize: 7, color: col, fontFamily: THEME.ff.mono, width: 22, textAlign: "right", flexShrink: 0 }}>{count}</span>
-              </div>
-            );
-          })}
+          <Section label="Room Deposit Coverage · sorted by volume">
+            <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+              {stats.sortedRooms.map(r => {
+                const count = stats.roomCounts[r.id] || 0;
+                const pct = (count / stats.maxCount) * 100;
+                const col = count === 0 ? THEME.red : count <= 3 ? "#9F9F5A" : THEME.gold;
+                return (
+                  <div key={r.id} style={{ display: "grid", gridTemplateColumns: isMobile ? "48px 1fr 32px" : "56px 1fr 40px", alignItems: "center", gap: 12, padding: "6px 0" }}>
+                    <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>{r.id}</span>
+                    <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "minmax(120px, 180px) 1fr", alignItems: "center", gap: 10 }}>
+                      <span style={{ fontSize: 11, color: count === 0 ? THEME.txFaint : THEME.tx, fontFamily: THEME.ff.serif, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{r.name}</span>
+                      {!isMobile && (
+                        <div style={{ height: 8, background: THEME.border, borderRadius: 1, overflow: "hidden" }}>
+                          <div style={{ height: "100%", width: `${Math.max(count > 0 ? 2 : 0, pct)}%`, background: col, boxShadow: count > 3 ? `0 0 6px ${col}66` : "none", transition: "width 400ms ease" }} />
+                        </div>
+                      )}
+                    </div>
+                    <span style={{ fontSize: 11, color: col, fontFamily: THEME.ff.mono, textAlign: "right", letterSpacing: "0.02em" }}>{count}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </Section>
         </div>
       )}
 
@@ -1406,8 +1463,11 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
       {/* SYNC tab — Zenodo live pull */}
       {dashTab === "SYNC" && (
         <div>
-          <div style={{ fontSize: 10, color: "#B0B8C4", lineHeight: 1.6, marginBottom: 10 }}>Fetch recent deposits from Zenodo. Shows deposits not yet in canonical JSON.</div>
-          <button onClick={async () => {
+          <div style={{ fontSize: 13, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.65, marginBottom: 18, fontStyle: "italic", maxWidth: 640 }}>
+            Fetch recent deposits from Zenodo. Shows deposits not yet in the canonical JSON — useful for detecting drift between the archive and the interface.
+          </div>
+          <button
+            onClick={async () => {
             addLog("Fetching from Zenodo API...", "sys");
             setSyncResult({ loading: true });
             try {
@@ -1424,24 +1484,49 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
               setSyncResult({ loading: false, total: allHits.length, new: newDeps.length, existing: allHits.length - newDeps.length, deposits: newDeps });
               addLog(`Zenodo: ${allHits.length} fetched, ${newDeps.length} NEW`, newDeps.length > 0 ? "warn" : "sys");
             } catch (e) { setSyncResult({ loading: false, error: e.message }); addLog(`Zenodo fetch error: ${e.message}`, "err"); }
-          }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 12px", fontSize: 9, cursor: "pointer", fontFamily: THEME.ff.mono, letterSpacing: 1, marginBottom: 12, width: "100%" }}>
-            {syncResult?.loading ? "FETCHING..." : "FETCH RECENT DEPOSITS"}
+          }}
+            onMouseEnter={e => { e.currentTarget.style.background = mc + "22"; e.currentTarget.style.boxShadow = `0 0 24px ${mc}33`; }}
+            onMouseLeave={e => { e.currentTarget.style.background = mc + "11"; e.currentTarget.style.boxShadow = "none"; }}
+            style={{ background: mc + "11", border: `1px solid ${mc}`, color: mc, padding: "12px 20px", fontSize: 11, cursor: "pointer", fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.widest, marginBottom: 16, width: "100%", textTransform: "uppercase", transition: THEME.t }}
+          >
+            {syncResult?.loading ? "Fetching…" : "Fetch Recent Deposits"}
           </button>
-          <div style={{ fontSize: 9, color: "#5A6370", marginBottom: 8 }}>{data.documents.length} in JSON · {syncResult ? `${syncResult.total || "?"} on Zenodo · ${syncResult.new || 0} new` : "Press FETCH"}</div>
-          {syncResult?.error && <div style={{ fontSize: 9, color: "#C45A4A", marginBottom: 8 }}>{syncResult.error}</div>}
-          {syncResult?.deposits?.length > 0 && (
-            <div>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#9f7a4a", marginBottom: 4 }}>NEW DEPOSITS ({syncResult.deposits.length})</div>
-              {syncResult.deposits.map((dep, i) => (
-                <div key={i} style={{ padding: "4px 0", borderBottom: "1px solid #0a0f0a" }}>
-                  <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.serif, lineHeight: 1.3 }}>{(dep.metadata?.title || "?").slice(0, 70)}</div>
-                  <div style={{ fontSize: 7, color: "#5A6370", fontFamily: THEME.ff.mono }}>{dep.doi} · {dep.metadata?.publication_date} · {(dep.metadata?.related_identifiers || []).length} rels</div>
-                </div>
-              ))}
-            </div>
+
+          <div style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.mono, marginBottom: 16, letterSpacing: "0.03em", padding: "10px 14px", background: THEME.surface, border: `1px solid ${THEME.border}` }}>
+            <span style={{ color: THEME.txMute }}>{data.documents.length}</span> in JSON
+            {syncResult && <>
+              <span style={{ color: THEME.txFaint, margin: "0 8px" }}>·</span>
+              <span style={{ color: THEME.txMute }}>{syncResult.total || "?"}</span> on Zenodo
+              <span style={{ color: THEME.txFaint, margin: "0 8px" }}>·</span>
+              <span style={{ color: syncResult.new > 0 ? "#9F9F5A" : THEME.green }}>{syncResult.new || 0}</span> new
+            </>}
+          </div>
+
+          {syncResult?.error && (
+            <div style={{ fontSize: 11, color: THEME.red, marginBottom: 16, padding: "10px 14px", background: THEME.red + "08", border: `1px solid ${THEME.red}44`, fontFamily: THEME.ff.mono }}>{syncResult.error}</div>
           )}
+
+          {syncResult?.deposits?.length > 0 && (
+            <Section label={`New Deposits · ${syncResult.deposits.length}`}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                {syncResult.deposits.map((dep, i) => (
+                  <div key={i} style={{ padding: "10px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderLeft: `2px solid #9F9F5A` }}>
+                    <div style={{ fontSize: 12, color: THEME.txBright, fontFamily: THEME.ff.serif, lineHeight: 1.4, marginBottom: 4 }}>
+                      {(dep.metadata?.title || "—").slice(0, 80)}
+                    </div>
+                    <div style={{ fontSize: 9, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>
+                      {dep.doi} · {dep.metadata?.publication_date} · {(dep.metadata?.related_identifiers || []).length} rels
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
+
           {syncResult && !syncResult.loading && syncResult.new === 0 && (
-            <div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono }}>ALL SYNCED — no new deposits found</div>
+            <div style={{ fontSize: 12, color: THEME.green, fontFamily: THEME.ff.mono, padding: "12px 16px", background: THEME.green + "08", border: `1px solid ${THEME.green}44`, letterSpacing: THEME.ls.wide, textTransform: "uppercase" }}>
+              All synced — no new deposits
+            </div>
           )}
         </div>
       )}
@@ -1473,8 +1558,8 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
         <div>
           <div style={{ fontSize: isMobile ? 14 : 16, letterSpacing: 3, color: mc, fontFamily: THEME.ff.serif, marginBottom: 8 }}>Gravity Well Bridge</div>
           <div style={{ fontSize: 10, color: "#B0B8C4", lineHeight: 1.6, marginBottom: 12 }}>Provenance engine. Create API keys, chains, invoke rooms, route governance.</div>
-          <div style={{ marginBottom: 12, padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a" }}>
-            <div style={{ fontSize: 9, color: configured ? "#5A9F7B" : "#9f7a4a", marginBottom: 4, fontFamily: THEME.ff.mono, wordBreak: "break-word" }}>{configured ? `GW URL: ${gravityWell.baseUrl}` : "VITE_GRAVITY_WELL_URL not set"}</div>
+          <div style={{ marginBottom: 12, padding: "8px 10px", background: THEME.surface, borderLeft: "2px solid #1a3a1a" }}>
+            <div style={{ fontSize: 9, color: configured ? "#5A9F7B" : '#9F9F5A', marginBottom: 4, fontFamily: THEME.ff.mono, wordBreak: "break-word" }}>{configured ? `GW URL: ${gravityWell.baseUrl}` : "VITE_GRAVITY_WELL_URL not set"}</div>
             <div style={{ fontSize: 9, color: "#5A6370" }}>Source: {selectedDoc ? `doc ${selectedDoc.id}` : selectedRoom ? `room ${selectedRoom.id}` : "none"}</div>
           </div>
 
@@ -1484,7 +1569,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
               <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>CREATE API KEY</div>
               <div style={{ fontSize: 8, color: "#5A6370", marginBottom: 4 }}>Enter your GW admin token to generate an API key.</div>
               <div style={{ display: "flex", gap: 4 }}>
-                <input id="gw-admin-token" type="password" placeholder="ADMIN_TOKEN" style={{ flex: 1, background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none" }} />
+                <input id="gw-admin-token" type="password" placeholder="ADMIN_TOKEN" style={{ flex: 1, background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "4px 8px", fontSize: 9, fontFamily: THEME.ff.mono, outline: "none" }} />
                 <button onClick={async () => {
                   const token = document.getElementById("gw-admin-token")?.value;
                   if (!token) return addLog("Admin token required", "err");
@@ -1506,7 +1591,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
           )}
 
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>API KEY</div>
-          <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 12 }} />
+          <input value={apiKey} onChange={(e) => setApiKey(e.target.value)} placeholder="Gravity Well API key" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 12 }} />
 
           {/* Chain Status */}
           {apiKey && (
@@ -1545,9 +1630,9 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
             </div>
           )}
           <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>CHAIN LABEL</div>
-          <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: "#080808", border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
+          <input value={chainLabel} onChange={(e) => setChainLabel(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
           <button onClick={createChain} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: THEME.ff.mono, marginBottom: 12 }}>CREATE CHAIN</button>
-          {depositState.chain && <div style={{ padding: "8px 10px", background: "#080c08", borderLeft: "2px solid #1a3a1a", marginBottom: 12 }}><div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono, marginBottom: 4 }}>CHAIN READY</div><div style={{ fontSize: 9, color: "#5A6370", wordBreak: "break-word" }}>chain_id: {depositState.chain.chain_id}</div></div>}
+          {depositState.chain && <div style={{ padding: "8px 10px", background: THEME.surface, borderLeft: "2px solid #1a3a1a", marginBottom: 12 }}><div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono, marginBottom: 4 }}>CHAIN READY</div><div style={{ fontSize: 9, color: "#5A6370", wordBreak: "break-word" }}>chain_id: {depositState.chain.chain_id}</div></div>}
 
           {/* Deep deposit: capture + deposit via GW */}
           {depositState.chain && (
@@ -1580,7 +1665,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
                   }} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "6px 10px", fontSize: 9, cursor: "pointer", fontFamily: THEME.ff.mono, width: "100%" }}>
                     CAPTURE + DEPOSIT VIA GRAVITY WELL
                   </button>
-                  {depositState.lastDeposit?.doi && <div style={{ padding: "6px 8px", marginTop: 6, background: "#080c08", borderLeft: "2px solid #1a3a1a" }}><div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono }}>DOI: {depositState.lastDeposit.doi}</div></div>}
+                  {depositState.lastDeposit?.doi && <div style={{ padding: "6px 8px", marginTop: 6, background: THEME.surface, borderLeft: "2px solid #1a3a1a" }}><div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono }}>DOI: {depositState.lastDeposit.doi}</div></div>}
                 </div>
               ) : (
                 <div style={{ fontSize: 9, color: "#5A6370" }}>Select a document from the hex map to deep-deposit via GW.</div>
@@ -2343,7 +2428,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
       <div style={{ flex: 1, display: "flex", flexDirection: isMobile ? "column" : "row", overflow: "hidden", minHeight: 0 }}>
         <div style={{ flex: 1, overflow: "hidden", position: "relative", minHeight: 0 }}>
           {view === "MAP" && <>
-            <div style={{position:"absolute",top:8,right:8,zIndex:10,display:"flex",gap:0,background:"#080c08",border:"1px solid #1E2530",pointerEvents:"auto"}}>
+            <div style={{position:"absolute",top:8,right:8,zIndex:10,display:"flex",gap:0,background:THEME.surface,border:"1px solid #1E2530",pointerEvents:"auto"}}>
               <span onClick={()=>setMap3d(true)} style={{fontSize:8,padding:"3px 8px",color:map3d?"#D4AF37":"#5A6370",background:map3d?THEME.border:"transparent",cursor:"pointer",fontFamily: THEME.ff.mono,letterSpacing:1}}>3D</span>
               <span onClick={()=>setMap3d(false)} style={{fontSize:8,padding:"3px 8px",color:!map3d?"#D4AF37":"#5A6370",background:!map3d?THEME.border:"transparent",cursor:"pointer",fontFamily: THEME.ff.mono,letterSpacing:1}}>2D</span>
             </div>
@@ -3167,7 +3252,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                       <div style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif }}>
                         {f.source} <span style={{ color: mc }}>→</span> {f.target}
                       </div>
-                      <span style={{ fontSize: 7, color: f.status === "VERIFIED" ? "#5a8a4a" : f.status === "DERIVED" ? "#B0B8C4" : THEME.goldMute, fontFamily: THEME.ff.mono }}>{f.status}</span>
+                      <span style={{ fontSize: 7, color: f.status === "VERIFIED" ? THEME.green : f.status === "DERIVED" ? "#B0B8C4" : THEME.goldMute, fontFamily: THEME.ff.mono }}>{f.status}</span>
                     </div>
                   ))}
                 </div>
@@ -3504,7 +3589,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                         <span style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono }}>{c.hex_address}</span>
                         <span style={{ fontSize: 8, color: "#5A6370", marginLeft: 6 }}>{c.substrate}</span>
                       </div>
-                      <span style={{ fontSize: 7, color: c.deposits === "active" ? "#5a8a4a" : "#4a4a3a", fontFamily: THEME.ff.mono }}>{c.deposits === "active" ? "ACTIVE" : "PENDING"}</span>
+                      <span style={{ fontSize: 7, color: c.deposits === "active" ? THEME.green : "#4a4a3a", fontFamily: THEME.ff.mono }}>{c.deposits === "active" ? "ACTIVE" : "PENDING"}</span>
                     </div>
                   ))}
                 </div>
@@ -3670,21 +3755,52 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
         </div>
 
         {/* Detail panel */}
-        <div style={{ width: isMobile ? "100%" : 340, minWidth: 0, height: isMobile ? "34dvh" : "100%", minHeight: isMobile ? 220 : 0, maxHeight: isMobile ? "42dvh" : "none", borderLeft: isMobile ? "none" : "1px solid #1E2530", borderTop: isMobile ? "1px solid #1E2530" : "none", overflow: "hidden", flexShrink: 0, background: "#080B10" }}>
-          {selDoc ? <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} relations={data.relations} documents={data.documents} onDoc={(d) => setSelDoc(d)} compareDoc={compareDoc} onCompare={setCompareDoc} /> : room ? <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={loadDocument} isMobile={isMobile} mc={mc} onApplyOp={applyOperator} mode={mode} lp={lp} addLog={addLog} /> : <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 6 }}>{view === "DEPOSIT" ? "DEPOSIT BRIDGE" : `${mode} COMMANDS`}</div>
-            {view === "DEPOSIT" ? <div style={{ fontSize: 10, color: "#5A6370", fontFamily: THEME.ff.serif, lineHeight: 1.6 }}>Use the left panel for archive operations.</div> : <>
-              <div style={{ fontSize: 10, color: "#5A6370", fontFamily: THEME.ff.serif, lineHeight: 1.6, marginBottom: 10 }}>{isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon to execute its LP traversal grammar."}</div>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>AVAILABLE ({(COMMAND_REGISTRY[mode] || []).length})</div>
-              {(COMMAND_REGISTRY[mode] || []).map((c, i) => (
-                <div key={i} style={{ display: "flex", alignItems: "center", gap: 6, padding: "3px 0", borderBottom: "1px solid #060a06" }}>
-                  <span style={{ fontSize: 7, padding: "1px 3px", fontFamily: THEME.ff.mono, color: RISK_COLORS[c.risk], border: `1px solid ${RISK_COLORS[c.risk]}44`, flexShrink: 0, minWidth: 14, textAlign: "center" }}>{c.risk[0]}</span>
-                  <span style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, width: 56, flexShrink: 0 }}>{c.cmd}</span>
-                  <span style={{ fontSize: 8, color: "#5A6370" }}>{c.desc}</span>
+        <div style={{ width: isMobile ? "100%" : 360, minWidth: 0, height: isMobile ? "38dvh" : "100%", minHeight: isMobile ? 240 : 0, maxHeight: isMobile ? "48dvh" : "none", borderLeft: isMobile ? "none" : `1px solid ${THEME.border}`, borderTop: isMobile ? `1px solid ${THEME.border}` : "none", overflow: "hidden", flexShrink: 0, background: THEME.bg }}>
+          {selDoc ? (
+            <DocPanel doc={selDoc} rooms={data.rooms} onRoom={(id) => { handleRoomSelect(id); setSelDoc(null); setView("MAP"); }} mc={mc} isMobile={isMobile} readState={readState} onRead={handleRead} relations={data.relations} documents={data.documents} onDoc={(d) => setSelDoc(d)} compareDoc={compareDoc} onCompare={setCompareDoc} />
+          ) : room ? (
+            <RoomPanel room={room} docs={data.documents} relations={data.relations} onDoc={loadDocument} isMobile={isMobile} mc={mc} onApplyOp={applyOperator} mode={mode} lp={lp} addLog={addLog} />
+          ) : (
+            <div className="fade-in" style={{ padding: isMobile ? "16px 18px" : "22px 24px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif }}>
+              <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 14, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                {view === "DEPOSIT" ? "Deposit Bridge" : `${mode} Commands`}
+              </div>
+
+              {view === "DEPOSIT" ? (
+                <div style={{ fontSize: 13, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.65, fontStyle: "italic" }}>
+                  Use the left panel for archive operations.
                 </div>
-              ))}
-              <div style={{ fontSize: 8, color: "#2A3040", fontFamily: THEME.ff.mono, marginTop: 8 }}>L=silent · M=logged · H=confirm · C=MANUS</div>
-            </>}
-          </div>}
+              ) : (
+                <>
+                  <div style={{ fontSize: 13, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.65, marginBottom: 20, fontStyle: "italic" }}>
+                    {isMobile ? "Tap a hexagon to execute its LP program." : "Click a hexagon to execute its LP traversal grammar."}
+                  </div>
+
+                  <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 10, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                    Available · {(COMMAND_REGISTRY[mode] || []).length}
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column" }}>
+                    {(COMMAND_REGISTRY[mode] || []).map((c, i) => (
+                      <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, padding: "8px 0", borderBottom: `1px solid ${THEME.border}` }}>
+                        <span style={{ fontSize: 9, padding: "2px 6px", fontFamily: THEME.ff.mono, color: RISK_COLORS[c.risk], border: `1px solid ${RISK_COLORS[c.risk]}55`, flexShrink: 0, minWidth: 18, textAlign: "center", letterSpacing: THEME.ls.wide }}>
+                          {c.risk[0]}
+                        </span>
+                        <span style={{ fontSize: 11, color: mc, fontFamily: THEME.ff.mono, width: 72, flexShrink: 0, letterSpacing: "0.02em" }}>
+                          {c.cmd}
+                        </span>
+                        <span style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.4 }}>
+                          {c.desc}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ fontSize: 9, color: THEME.txFaint, fontFamily: THEME.ff.mono, marginTop: 14, letterSpacing: THEME.ls.wide, textTransform: "uppercase" }}>
+                    L=silent · M=logged · H=confirm · C=MANUS
+                  </div>
+                </>
+              )}
+            </div>
+          )}
         </div>
       </div>
 
