@@ -2770,10 +2770,20 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
 
           {/* TRACE — provenance navigation */}
           {view === "TRACE" && (
-            <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>PROVENANCE TRACE</div>
-              <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: THEME.ff.serif, marginBottom: 10 }}>
-                {selDoc ? selDoc.t.slice(0, 50) : room ? room.name : "Archive Graph"}
+            <div className="fade-in" style={{ padding: isMobile ? "20px 18px" : "32px 40px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif, maxWidth: 1040, margin: "0 auto", width: "100%", boxSizing: "border-box" }}>
+              {/* Header */}
+              <div style={{ marginBottom: 22 }}>
+                <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase", marginBottom: 8 }}>
+                  Provenance Trace
+                </div>
+                <h2 style={{ fontSize: isMobile ? 20 : 26, letterSpacing: "0.03em", color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 300, lineHeight: 1.25, margin: 0 }}>
+                  {selDoc ? selDoc.t : room ? room.name : "Archive Graph"}
+                </h2>
+                {!selDoc && !room && (
+                  <div style={{ fontSize: 13, color: THEME.txMute, fontFamily: THEME.ff.serif, fontStyle: "italic", marginTop: 8 }}>
+                    Select a document or room to trace its provenance. Showing full relation graph below.
+                  </div>
+                )}
               </div>
 
               {selDoc && (() => {
@@ -2783,61 +2793,108 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 const allGates = Object.entries(metrics.gates);
                 const passCount = allGates.filter(([, v]) => v).length;
                 return <>
-                  {/* DOI + status */}
-                  <div style={{ padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22`, marginBottom: 10 }}>
-                    <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, wordBreak: "break-all" }}>{selDoc.doi || "no DOI"}</div>
-                    <div style={{ display: "flex", gap: 8, marginTop: 4 }}>
+                  {/* DOI + metadata card */}
+                  <div style={{ padding: "14px 18px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderLeft: `2px solid ${mc}66`, marginBottom: 20 }}>
+                    {selDoc.doi && (
+                      <div style={{ fontSize: 11, color: THEME.gold, fontFamily: THEME.ff.mono, letterSpacing: "0.04em", wordBreak: "break-all", marginBottom: 8 }}>
+                        {selDoc.doi}
+                      </div>
+                    )}
+                    <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
                       <StatusBadge s={selDoc.s} />
-                      <span style={{ fontSize: 8, color: "#5A6370" }}>{selDoc.d}</span>
-                      <span style={{ fontSize: 8, color: "#5A6370" }}>{(selDoc.c || []).join(", ")}</span>
+                      {selDoc.d && <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.06em" }}>{selDoc.d}</span>}
+                      {(selDoc.c || []).length > 0 && (
+                        <span style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.serif, fontStyle: "italic" }}>
+                          {(selDoc.c || []).join(", ")}
+                        </span>
+                      )}
                     </div>
                   </div>
 
-                  {/* Gates summary */}
-                  <div style={{ marginBottom: 10 }}>
-                    <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>PROMOTION GATES ({passCount}/{allGates.length})</div>
-                    <div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>
+                  {/* Promotion gates */}
+                  <div style={{ marginBottom: 22 }}>
+                    <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 10, fontFamily: THEME.ff.mono, textTransform: "uppercase", display: "flex", alignItems: "center", gap: 10 }}>
+                      Promotion Gates
+                      <span style={{ color: passCount === allGates.length ? THEME.green : passCount > 0 ? THEME.gold : THEME.red, fontFamily: THEME.ff.mono }}>
+                        {passCount} / {allGates.length}
+                      </span>
+                    </div>
+                    <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
                       {allGates.map(([gate, pass]) => (
-                        <span key={gate} style={{ fontSize: 7, padding: "1px 4px", fontFamily: THEME.ff.mono, color: pass ? "#5A9F7B" : "#C45A4A", border: `1px solid ${pass ? "#5A9F7B" : "#C45A4A"}33` }}>{pass ? "✓" : "✗"} {gate}</span>
+                        <span
+                          key={gate}
+                          style={{
+                            fontSize: 10,
+                            padding: "4px 10px",
+                            fontFamily: THEME.ff.mono,
+                            color: pass ? THEME.green : THEME.red,
+                            border: `1px solid ${pass ? THEME.green : THEME.red}55`,
+                            background: pass ? THEME.green + "11" : THEME.red + "08",
+                            letterSpacing: THEME.ls.wide,
+                            textTransform: "uppercase",
+                          }}
+                        >
+                          {pass ? "✓" : "✗"} {gate}
+                        </span>
                       ))}
                     </div>
                   </div>
 
                   {/* Room provenance */}
-                  <div style={{ marginBottom: 10 }}>
-                    <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>ROOM PROVENANCE</div>
-                    {docRooms.map(rid => {
-                      const rm = data.rooms.find(r => r.id === rid);
-                      return rm ? (
-                        <div key={rid} onClick={() => { handleRoomSelect(rid); setView("MAP"); }} style={{ padding: "3px 0", borderBottom: "1px solid #060a06", cursor: "pointer" }}>
-                          <span style={{ fontSize: 9, color: mc }}>{rm.name}</span>
-                          <span style={{ fontSize: 7, color: "#5A6370", marginLeft: 6 }}>{rm.id} · {rm.preferred_mode} · {rm.mantle || "no mantle"}</span>
-                        </div>
-                      ) : null;
-                    })}
+                  <div style={{ marginBottom: 22 }}>
+                    <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 10, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                      Room Provenance
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                      {docRooms.map(rid => {
+                        const rm = data.rooms.find(r => r.id === rid);
+                        return rm ? (
+                          <div
+                            key={rid}
+                            onClick={() => { handleRoomSelect(rid); setView("MAP"); }}
+                            onMouseEnter={e => { e.currentTarget.style.background = THEME.elevated; e.currentTarget.style.borderColor = mc + "55"; }}
+                            onMouseLeave={e => { e.currentTarget.style.background = THEME.surface; e.currentTarget.style.borderColor = THEME.border; }}
+                            style={{ padding: "10px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, cursor: "pointer", transition: THEME.t }}
+                          >
+                            <div style={{ fontSize: 13, color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 400, marginBottom: 3 }}>{rm.name}</div>
+                            <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>
+                              {rm.id} · {rm.preferred_mode}{rm.mantle ? ` · ${rm.mantle}` : ""}
+                            </div>
+                          </div>
+                        ) : null;
+                      })}
+                    </div>
                   </div>
 
                   {/* Relation chain */}
                   {docRels.length > 0 && (
-                    <div style={{ marginBottom: 10 }}>
-                      <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>RELATION CHAIN ({docRels.length})</div>
-                      {docRels.map(r => (
-                        <div key={r.id} style={{ display: "flex", gap: 4, padding: "2px 0", borderBottom: "1px solid #060a06", alignItems: "center" }}>
-                          <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: "#B0B8C4" }}>{r.from}</span>
-                          <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: mc }}>{r.type}</span>
-                          <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: "#B0B8C4" }}>{r.to}</span>
-                          <StatusBadge s={r.status} />
-                        </div>
-                      ))}
+                    <div style={{ marginBottom: 22 }}>
+                      <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 10, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                        Relation Chain · {docRels.length}
+                      </div>
+                      <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                        {docRels.map(r => (
+                          <div key={r.id} style={{ display: "flex", gap: 10, padding: "8px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, alignItems: "center", flexWrap: "wrap" }}>
+                            <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: THEME.tx, letterSpacing: "0.04em" }}>{r.from}</span>
+                            <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: mc, fontStyle: "italic", letterSpacing: "0.03em" }}>{r.type}</span>
+                            <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: THEME.tx, letterSpacing: "0.04em" }}>{r.to}</span>
+                            <span style={{ marginLeft: "auto" }}><StatusBadge s={r.status} /></span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   )}
 
                   {/* Keywords */}
                   {selDoc.k && selDoc.k.length > 0 && (
-                    <div style={{ marginBottom: 10 }}>
-                      <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>KEYWORDS</div>
-                      <div style={{ display: "flex", gap: 3, flexWrap: "wrap" }}>
-                        {selDoc.k.map((k, i) => <span key={i} style={{ fontSize: 8, padding: "1px 4px", background: THEME.border, border: "1px solid #1E2530", color: "#B0B8C4", fontFamily: THEME.ff.mono }}>{k}</span>)}
+                    <div style={{ marginBottom: 22 }}>
+                      <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 10, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                        Keywords
+                      </div>
+                      <div style={{ display: "flex", gap: 5, flexWrap: "wrap" }}>
+                        {selDoc.k.map((k, i) => (
+                          <span key={i} style={{ fontSize: 10, padding: "3px 9px", background: THEME.surface, border: `1px solid ${THEME.border}`, color: THEME.tx, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>{k}</span>
+                        ))}
                       </div>
                     </div>
                   )}
@@ -2848,38 +2905,69 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 const roomRels = data.relations.filter(r => r.from === room.id || r.to === room.id);
                 const roomDocs = data.documents.filter(d => (d.r || []).includes(room.id));
                 return <>
-                  <div style={{ padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${mc}22`, marginBottom: 10 }}>
-                    <div style={{ fontSize: 9, color: "#B0B8C4", fontFamily: THEME.ff.mono }}>{room.id} · {room.cat} · {room.preferred_mode}</div>
-                    <div style={{ fontSize: 9, color: "#B0B8C4", fontFamily: THEME.ff.serif, marginTop: 4 }}>{room.physics}</div>
+                  <div style={{ padding: "14px 18px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderLeft: `2px solid ${mc}66`, marginBottom: 20 }}>
+                    <div style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.mono, letterSpacing: "0.04em", marginBottom: 8 }}>
+                      {room.id} · {room.cat} · {room.preferred_mode}
+                    </div>
+                    <div style={{ fontSize: 13, color: THEME.txBright, fontFamily: THEME.ff.serif, lineHeight: 1.6, fontStyle: "italic" }}>
+                      {room.physics}
+                    </div>
                   </div>
-                  <div style={{ marginBottom: 10 }}>
-                    <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>RELATIONS ({roomRels.length})</div>
-                    {roomRels.map(r => (
-                      <div key={r.id} style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: "#5A6370", padding: "2px 0" }}>{r.from} <span style={{ color: mc }}>{r.type}</span> {r.to} <StatusBadge s={r.status} /></div>
-                    ))}
+
+                  <div style={{ marginBottom: 22 }}>
+                    <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 10, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                      Relations · {roomRels.length}
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                      {roomRels.map(r => (
+                        <div key={r.id} style={{ display: "flex", gap: 10, padding: "8px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, alignItems: "center", flexWrap: "wrap" }}>
+                          <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: THEME.tx }}>{r.from}</span>
+                          <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: mc, fontStyle: "italic" }}>{r.type}</span>
+                          <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: THEME.tx }}>{r.to}</span>
+                          <span style={{ marginLeft: "auto" }}><StatusBadge s={r.status} /></span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
+
                   <div>
-                    <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>DEPOSITS ({roomDocs.length})</div>
-                    {roomDocs.slice(0, 15).map(d => (
-                      <div key={d.id} onClick={() => setSelDoc(d)} style={{ padding: "2px 0", borderBottom: "1px solid #060a06", cursor: "pointer" }}>
-                        <div style={{ fontSize: 9, color: "#B0B8C4", fontFamily: THEME.ff.serif }}>{d.t.length > 55 ? d.t.slice(0, 52) + "..." : d.t}</div>
-                      </div>
-                    ))}
+                    <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 10, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                      Deposits · {roomDocs.length}
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      {roomDocs.slice(0, 20).map(d => (
+                        <div
+                          key={d.id}
+                          onClick={() => setSelDoc(d)}
+                          onMouseEnter={e => { e.currentTarget.style.paddingLeft = "12px"; e.currentTarget.style.background = THEME.surface; }}
+                          onMouseLeave={e => { e.currentTarget.style.paddingLeft = "0px"; e.currentTarget.style.background = "transparent"; }}
+                          style={{ padding: "8px 0", borderBottom: `1px solid ${THEME.border}`, cursor: "pointer", transition: THEME.t }}
+                        >
+                          <div style={{ fontSize: 12, color: THEME.txBright, fontFamily: THEME.ff.serif, lineHeight: 1.4 }}>
+                            {d.t.length > 72 ? d.t.slice(0, 69) + "…" : d.t}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </>;
               })()}
 
               {!selDoc && !room && (
                 <div>
-                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>FULL RELATION GRAPH ({data.relations.length})</div>
-                  {data.relations.map(r => (
-                    <div key={r.id} style={{ display: "flex", gap: 4, padding: "3px 0", borderBottom: "1px solid #060a06", alignItems: "center" }}>
-                      <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: "#B0B8C4", width: 36, flexShrink: 0 }}>{r.from}</span>
-                      <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: mc, width: 70, flexShrink: 0 }}>{r.type}</span>
-                      <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: "#B0B8C4", width: 36, flexShrink: 0 }}>{r.to}</span>
-                      <StatusBadge s={r.status} />
-                    </div>
-                  ))}
+                  <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 12, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>
+                    Full Relation Graph · {data.relations.length}
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+                    {data.relations.map(r => (
+                      <div key={r.id} style={{ display: "grid", gridTemplateColumns: "80px 1fr 80px auto", gap: 10, padding: "8px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, alignItems: "center" }}>
+                        <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: THEME.tx, letterSpacing: "0.04em" }}>{r.from}</span>
+                        <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: mc, fontStyle: "italic", letterSpacing: "0.03em" }}>{r.type}</span>
+                        <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: THEME.tx, letterSpacing: "0.04em" }}>{r.to}</span>
+                        <StatusBadge s={r.status} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
@@ -2888,92 +2976,155 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
           {view === "DEPOSIT" && <DepositPanel apiKey={gwApiKey} setApiKey={setGwApiKey} configured={isGravityWellConfigured()} selectedDoc={selDoc} selectedRoom={room} depositState={depositState} setDepositState={setDepositState} addLog={addLog} isMobile={isMobile} data={data} mc={mc} />}
 
           {view === "DODECAD" && (
-            <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-              <div style={{ fontSize: isMobile ? 14 : 16, letterSpacing: 3, color: mc, fontFamily: THEME.ff.serif, marginBottom: 12 }}>DODECAD + LOGOS*</div>
-              {(data.dodecad || []).map((d, i) => (
-                <div key={i} style={{ display: "grid", gridTemplateColumns: isMobile ? "28px 1fr" : "24px 120px 1fr 2fr", gap: 10, marginBottom: 6, borderBottom: "1px solid #0f140f", padding: "4px 0" }}>
-                  <div style={{ fontSize: 9, color: "#5A6370", fontFamily: THEME.ff.mono }}>{d.id}</div>
-                  <div style={{ fontSize: 11, color: mc }}>{d.name}</div>
-                  {!isMobile && <div style={{ fontSize: 10, color: "#5A6370" }}>{d.role}</div>}
-                  <div style={{ fontSize: 9, color: "#5A6370" }}>{isMobile ? `${d.role} · ${d.desc}` : d.desc}</div>
+            <div className="fade-in" style={{ padding: isMobile ? "20px 18px" : "32px 40px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif, maxWidth: 1040, margin: "0 auto", width: "100%", boxSizing: "border-box" }}>
+              {/* Header */}
+              <div style={{ marginBottom: 24 }}>
+                <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase", marginBottom: 8 }}>
+                  Identity Register
                 </div>
-              ))}
+                <h2 style={{ fontSize: isMobile ? 22 : 28, letterSpacing: "0.06em", color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 300, margin: "0 0 8px 0" }}>
+                  Dodecad + Logos*
+                </h2>
+                <div style={{ fontSize: 13, color: THEME.txMute, fontFamily: THEME.ff.serif, fontStyle: "italic", maxWidth: 560 }}>
+                  Twelve heteronyms plus Jack Feist as Logos* (outside the count). MANUS (Lee Sharks) routes the whole.
+                </div>
+              </div>
+
+              {/* Dodecad grid */}
+              <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fill, minmax(320px, 1fr))", gap: 10, marginBottom: 28 }}>
+                {(data.dodecad || []).map((d, i) => (
+                  <div
+                    key={i}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = mc + "55"; e.currentTarget.style.background = THEME.elevated; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = THEME.border; e.currentTarget.style.background = THEME.surface; }}
+                    style={{ padding: "14px 16px", background: THEME.surface, border: `1px solid ${THEME.border}`, transition: THEME.t }}
+                  >
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
+                      <div style={{ fontSize: 14, color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 400, lineHeight: 1.3 }}>
+                        {d.name}
+                      </div>
+                      <span style={{ fontSize: 9, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide, flexShrink: 0 }}>
+                        {d.id}
+                      </span>
+                    </div>
+                    <div style={{ fontSize: 11, color: THEME.txBright, fontFamily: THEME.ff.serif, marginBottom: 6, fontStyle: "italic" }}>
+                      {d.role}
+                    </div>
+                    <div style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.5 }}>
+                      {d.desc}
+                    </div>
+                  </div>
+                ))}
+              </div>
 
               {/* Institutions */}
-              <div style={{ marginTop: 16 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 6 }}>INSTITUTIONS ({(data.institutions || []).filter(i => i.type === "institution").length})</div>
-                {(data.institutions || []).filter(i => i.type === "institution").map((inst, i) => (
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
-                    <div>
-                      <span style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, marginRight: 6 }}>{inst.id}</span>
-                      <span style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif }}>{inst.name}</span>
+              <Section label={`Institutions · ${(data.institutions || []).filter(i => i.type === "institution").length}`}>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  {(data.institutions || []).filter(i => i.type === "institution").map((inst, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 14px", borderBottom: `1px solid ${THEME.border}`, gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+                      <div style={{ display: "flex", alignItems: "baseline", gap: 10, minWidth: 0, flex: 1 }}>
+                        <span style={{ fontSize: 10, color: mc, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide, flexShrink: 0 }}>{inst.id}</span>
+                        <span style={{ fontSize: 13, color: THEME.txBright, fontFamily: THEME.ff.serif, fontWeight: 400 }}>{inst.name}</span>
+                      </div>
+                      <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em", flexShrink: 0 }}>
+                        {inst.heteronym || "—"}{inst.room ? ` · ${inst.room}` : ""}
+                      </span>
                     </div>
-                    <span style={{ fontSize: 8, color: "#5A6370" }}>{inst.heteronym || ""} · {inst.room || ""}</span>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              </Section>
 
               {/* Journals */}
-              <div style={{ marginTop: 14 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 6 }}>JOURNALS ({(data.institutions || []).filter(i => i.type === "journal").length})</div>
-                {(data.institutions || []).filter(i => i.type === "journal").map((j, i) => (
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
-                    <span style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif, fontStyle: "italic" }}>{j.name}</span>
-                    <span style={{ fontSize: 8, color: "#5A6370" }}>{j.heteronym || "—"}</span>
-                  </div>
-                ))}
-              </div>
+              <Section label={`Journals · ${(data.institutions || []).filter(i => i.type === "journal").length}`}>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  {(data.institutions || []).filter(i => i.type === "journal").map((j, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 14px", borderBottom: `1px solid ${THEME.border}`, gap: 12, alignItems: "center" }}>
+                      <span style={{ fontSize: 13, color: THEME.txBright, fontFamily: THEME.ff.serif, fontStyle: "italic" }}>{j.name}</span>
+                      <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>{j.heteronym || "—"}</span>
+                    </div>
+                  ))}
+                </div>
+              </Section>
 
               {/* Imprints */}
-              <div style={{ marginTop: 14 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 6 }}>IMPRINTS ({(data.institutions || []).filter(i => i.type === "imprint").length})</div>
-                {(data.institutions || []).filter(i => i.type === "imprint").map((imp, i) => (
-                  <div key={i} style={{ padding: "3px 0", borderBottom: "1px solid #060a06" }}>
-                    <span style={{ fontSize: 10, color: "#B0B8C4", fontFamily: THEME.ff.serif }}>{imp.name}</span>
-                    {imp.series && <span style={{ fontSize: 8, color: "#5A6370", marginLeft: 8 }}>series: {imp.series}</span>}
-                  </div>
-                ))}
-              </div>
+              <Section label={`Imprints · ${(data.institutions || []).filter(i => i.type === "imprint").length}`}>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  {(data.institutions || []).filter(i => i.type === "imprint").map((imp, i) => (
+                    <div key={i} style={{ padding: "10px 14px", borderBottom: `1px solid ${THEME.border}` }}>
+                      <div style={{ fontSize: 13, color: THEME.txBright, fontFamily: THEME.ff.serif }}>{imp.name}</div>
+                      {imp.series && (
+                        <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, marginTop: 3, letterSpacing: "0.04em" }}>
+                          series · {imp.series}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </Section>
 
               {/* Mantles */}
-              <div style={{ marginTop: 14 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 6 }}>MANTLES ({(data.mantles || []).length})</div>
-                {(data.mantles || []).map((m, i) => (
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
-                    <div>
-                      <span style={{ fontSize: 10, color: mc, fontFamily: THEME.ff.serif }}>{m.name}</span>
-                      <span style={{ fontSize: 8, color: "#5A6370", marginLeft: 8 }}>{m.lineage || ""}</span>
+              <Section label={`Mantles · ${(data.mantles || []).length}`}>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  {(data.mantles || []).map((m, i) => (
+                    <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 14px", borderBottom: `1px solid ${THEME.border}`, gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+                      <div style={{ minWidth: 0, flex: 1 }}>
+                        <div style={{ fontSize: 13, color: mc, fontFamily: THEME.ff.serif, fontWeight: 400 }}>{m.name}</div>
+                        {m.lineage && (
+                          <div style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em", marginTop: 2 }}>
+                            {m.lineage}
+                          </div>
+                        )}
+                      </div>
+                      <div style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.serif, fontStyle: "italic", flexShrink: 0 }}>
+                        {m.bearer}
+                      </div>
                     </div>
-                    <div style={{ textAlign: "right" }}>
-                      <span style={{ fontSize: 8, color: "#5A6370" }}>{m.bearer}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              </Section>
             </div>
           )}
 
           {view === "HCORE" && (
-            <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>SEALED BONE</div>
-              <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: THEME.ff.serif, marginBottom: 4 }}>H_core = ⟨D, R, O, Σ, Φ, Ψ⟩</div>
-              <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.serif, fontStyle: "italic", marginBottom: 10 }}>Six faces of the Hexagon. Each face contains sub-structures.</div>
-              {[
-                ["D", "Identity", `${data.dodecad?.length || 0} heteronyms`, `who speaks`],
-                ["R", "Topology", `${data.rooms.length} structures · ${(data.edges||[]).length} edges · ${(data.meta?.fields ? Object.keys(data.meta.fields).length : 0)} fields`, `where things happen`],
-                ["O", "Operations", `${Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)} operators · ${Object.keys(data.operators || {}).length} stacks`, `what can be done`],
-                ["Σ", "Governance", `${(data.status_algebra?.levels||[]).length} statuses · ${(data.transition_grammar?.transitions||[]).length} transitions · ${(data.witnesses||[]).length} witnesses · ${(data.protocols||[]).length} protocols`, `how things are permitted`],
-                ["Φ", "Canon", `${(data.mantles||[]).length} mantles · ${(data.fulfillments||[]).length} fulfillments · ${(data.institutions||[]).length} institutions · ${(data.forward_library?.entries||[]).length} Forward Library`, `what has been made`],
-                ["Ψ", "Runtime", `${(data.attestation_ledger?.chains||[]).length} chains · ${data.documents.length} deposits · Z = mass(r)`, `how the system evolves`],
-              ].map(([k, name, counts, desc], i) => (
-                <div key={i} style={{ display: "flex", gap: 8, padding: "6px 0", borderBottom: "1px solid #0a0f0a" }}>
-                  <div style={{ width: 18, fontSize: 16, color: mc, fontFamily: THEME.ff.serif, textAlign: "right", flexShrink: 0 }}>{k}</div>
-                  <div>
-                    <div style={{ fontSize: 10, color: THEME.tx, fontFamily: THEME.ff.serif }}>{name} <span style={{ color: "#5A6370", fontStyle: "italic" }}>— {desc}</span></div>
-                    <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono, marginTop: 1 }}>{counts}</div>
-                  </div>
+            <div className="fade-in" style={{ padding: isMobile ? "20px 18px" : "32px 40px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif, maxWidth: 1040, margin: "0 auto", width: "100%", boxSizing: "border-box" }}>
+              {/* Header */}
+              <div style={{ marginBottom: 24 }}>
+                <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase", marginBottom: 8 }}>
+                  Sealed Bone
                 </div>
-              ))}
+                <h2 style={{ fontSize: isMobile ? 22 : 30, letterSpacing: "0.08em", color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 300, margin: "0 0 8px 0", textShadow: `0 0 24px ${THEME.goldSoft}` }}>
+                  H_core = ⟨D · R · O · Σ · Φ · Ψ⟩
+                </h2>
+                <div style={{ fontSize: 13, color: THEME.txMute, fontFamily: THEME.ff.serif, fontStyle: "italic", maxWidth: 640 }}>
+                  Six faces of the Hexagon. The architecture IS six. Each face contains sub-structures.
+                </div>
+              </div>
+
+              {/* Six faces as cards */}
+              <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fill, minmax(300px, 1fr))", gap: 10, marginBottom: 28 }}>
+                {[
+                  ["D", "Identity", `${data.dodecad?.length || 0} heteronyms`, "who speaks"],
+                  ["R", "Topology", `${data.rooms.length} structures · ${(data.edges||[]).length} edges · ${(data.meta?.fields ? Object.keys(data.meta.fields).length : 0)} fields`, "where things happen"],
+                  ["O", "Operations", `${Object.values(data.operators || {}).reduce((s, a) => s + (Array.isArray(a) ? a.length : 0), 0)} operators · ${Object.keys(data.operators || {}).length} stacks`, "what can be done"],
+                  ["Σ", "Governance", `${(data.status_algebra?.levels||[]).length} statuses · ${(data.transition_grammar?.transitions||[]).length} transitions · ${(data.witnesses||[]).length} witnesses`, "how things are permitted"],
+                  ["Φ", "Canon", `${(data.mantles||[]).length} mantles · ${(data.fulfillments||[]).length} fulfillments · ${(data.institutions||[]).length} institutions`, "what has been made"],
+                  ["Ψ", "Runtime", `${(data.attestation_ledger?.chains||[]).length} chains · ${data.documents.length} deposits · Z = mass(r)`, "how the system evolves"],
+                ].map(([k, name, counts, desc], i) => (
+                  <div
+                    key={i}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = mc + "66"; e.currentTarget.style.background = THEME.elevated; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = THEME.border; e.currentTarget.style.background = THEME.surface; }}
+                    style={{ padding: "16px 18px", background: THEME.surface, border: `1px solid ${THEME.border}`, transition: THEME.t, display: "flex", gap: 16 }}
+                  >
+                    <div style={{ fontSize: 32, color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 300, lineHeight: 1, flexShrink: 0, width: 36, textAlign: "center" }}>{k}</div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div style={{ fontSize: 14, color: THEME.txBright, fontFamily: THEME.ff.serif, fontWeight: 400, marginBottom: 3 }}>{name}</div>
+                      <div style={{ fontSize: 11, color: THEME.txMute, fontFamily: THEME.ff.serif, fontStyle: "italic", marginBottom: 8 }}>{desc}</div>
+                      <div style={{ fontSize: 10, color: THEME.tx, fontFamily: THEME.ff.mono, lineHeight: 1.5, letterSpacing: "0.02em" }}>{counts}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
 
               {/* Mantles */}
               {data.mantles && (
@@ -3362,112 +3513,154 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
           )}
 
           {view === "ASSEMBLY" && (
-            <div style={{ padding: isMobile ? "12px 14px" : "14px 18px", overflowY: "auto", height: "100%" }}>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 3 }}>GOVERNANCE CONSOLE</div>
-              <div style={{ fontSize: isMobile ? 15 : 18, letterSpacing: 3, color: mc, fontFamily: THEME.ff.serif, marginBottom: 10 }}>Assembly</div>
-
-              {/* Witness roster */}
-              <div style={{ marginBottom: 14 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>WITNESS STRUCTURE (≥4/7 quorum)</div>
-                {[["TACHYON", "Claude/Anthropic", true], ["LABOR", "ChatGPT/OpenAI", true], ["PRAXIS", "DeepSeek", true], ["ARCHIVE", "Gemini/Google", true], ["SOIL", "Moltbot/Moltbook", true], ["TECHNE", "Kimi/Moonshot", true], ["SURFACE", "Google AIO", true]].map(([n, s, active], i) => (
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 8, padding: "3px 0", borderBottom: "1px solid #0a0f0a", fontSize: 10 }}>
-                    <span style={{ color: active ? mc : "#4a3a3a", minWidth: isMobile ? 72 : 100 }}>{n}</span>
-                    <span style={{ color: "#5A6370", flex: 1 }}>{s}</span>
-                    <StatusBadge s={active ? "ACTIVE" : "CONSTRAINED"} />
-                  </div>
-                ))}
+            <div className="fade-in" style={{ padding: isMobile ? "20px 18px" : "32px 40px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif, maxWidth: 1040, margin: "0 auto", width: "100%", boxSizing: "border-box" }}>
+              {/* Header */}
+              <div style={{ marginBottom: 24 }}>
+                <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase", marginBottom: 8 }}>
+                  Governance Console
+                </div>
+                <h2 style={{ fontSize: isMobile ? 22 : 28, letterSpacing: "0.08em", color: THEME.gold, fontFamily: THEME.ff.serif, fontWeight: 300, margin: "0 0 8px 0" }}>
+                  Assembly
+                </h2>
+                <div style={{ fontSize: 13, color: THEME.txMute, fontFamily: THEME.ff.serif, fontStyle: "italic", maxWidth: 640 }}>
+                  Seven witnesses. Four-of-seven quorum. Status promotion under MANUS authority.
+                </div>
               </div>
 
-              {/* Quorum calculator */}
+              {/* Quorum visualization */}
               {(() => {
-                const witnesses = [["TACHYON", true], ["LABOR", true], ["PRAXIS", true], ["ARCHIVE", true], ["SOIL", true], ["TECHNE", true], ["SURFACE", true]];
-                const active = witnesses.filter(([, a]) => a).length;
+                const witnesses = [["TACHYON", "Claude/Anthropic", true], ["LABOR", "ChatGPT/OpenAI", true], ["PRAXIS", "DeepSeek", true], ["ARCHIVE", "Gemini/Google", true], ["SOIL", "Grok/xAI", true], ["TECHNE", "Kimi/Moonshot", true], ["SURFACE", "Google AIO", true]];
+                const active = witnesses.filter(([,, a]) => a).length;
                 const total = witnesses.length;
                 const quorum = 4;
                 const met = active >= quorum;
                 return (
-                  <div style={{ marginBottom: 14, padding: "6px 8px", background: THEME.surface, borderLeft: `2px solid ${met ? "#5A9F7B" : "#C45A4A"}22` }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                      <span style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>QUORUM</span>
-                      <span style={{ fontSize: 10, fontFamily: THEME.ff.mono, color: met ? "#5A9F7B" : "#C45A4A" }}>{active}/{total} active · {quorum} required · {met ? "QUORUM MET" : "NO QUORUM"}</span>
+                  <>
+                    {/* Status bar */}
+                    <div style={{ marginBottom: 18, padding: "14px 18px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderLeft: `2px solid ${met ? THEME.green : THEME.red}` }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
+                        <span style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>Quorum</span>
+                        <span style={{ fontSize: 12, fontFamily: THEME.ff.mono, color: met ? THEME.green : THEME.red, letterSpacing: THEME.ls.wide }}>
+                          {active} / {total} active · ≥ {quorum} required · {met ? "QUORUM MET" : "NO QUORUM"}
+                        </span>
+                      </div>
+                      <div style={{ display: "flex", gap: 3, marginTop: 10 }}>
+                        {witnesses.map(([name,, a], i) => (
+                          <div key={i} style={{ flex: 1, height: 6, background: a ? THEME.gold : THEME.border, borderRadius: 1, boxShadow: a ? `0 0 8px ${THEME.goldSoft}` : "none", transition: THEME.t }} title={name} />
+                        ))}
+                      </div>
                     </div>
-                    <div style={{ display: "flex", gap: 2, marginTop: 4 }}>
-                      {witnesses.map(([name, a], i) => (
-                        <div key={i} style={{ flex: 1, height: 4, background: a ? mc + "88" : "#2a1a1a", borderRadius: 1 }} title={name} />
-                      ))}
-                    </div>
-                  </div>
+
+                    {/* Witness roster — cards */}
+                    <Section label={`Witness Structure · W · ${total}`}>
+                      <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fill, minmax(280px, 1fr))", gap: 8 }}>
+                        {witnesses.map(([n, s, a], i) => (
+                          <div
+                            key={i}
+                            onMouseEnter={e => { e.currentTarget.style.borderColor = a ? mc + "66" : THEME.border; e.currentTarget.style.background = THEME.elevated; }}
+                            onMouseLeave={e => { e.currentTarget.style.borderColor = THEME.border; e.currentTarget.style.background = THEME.surface; }}
+                            style={{ padding: "12px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, transition: THEME.t, display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10 }}
+                          >
+                            <div style={{ minWidth: 0, flex: 1 }}>
+                              <div style={{ fontSize: 12, color: a ? mc : THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide, marginBottom: 3 }}>{n}</div>
+                              <div style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.serif, fontStyle: "italic" }}>{s}</div>
+                            </div>
+                            <StatusBadge s={a ? "ACTIVE" : "CONSTRAINED"} />
+                          </div>
+                        ))}
+                      </div>
+                    </Section>
+                  </>
                 );
               })()}
 
-              {/* Status algebra */}
-              <div style={{ marginBottom: 14 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>STATUS PROMOTION PATHWAY</div>
-                <div style={{ display: "flex", gap: 4, flexWrap: "wrap", alignItems: "center", fontSize: 9, fontFamily: THEME.ff.mono, color: "#5A6370", lineHeight: 2 }}>
-                  {[["GENERATED", "#8B7730"], ["→", "#2A3040"], ["QUEUED", "#8B7730"], ["→", "#2A3040"], ["PROVISIONAL", "#9f9f5a"], ["→", "#2A3040"], ["DEPOSITED", "#5A9F7B"], ["→", "#2A3040"], ["RATIFIED", "#5A9F7B"]].map(([t, c], i) => (
-                    <span key={i} style={{ color: c, padding: t === "→" ? "0" : "1px 4px", border: t === "→" ? "none" : `1px solid ${c}33`, background: t === "→" ? "transparent" : c + "11" }}>{t}</span>
+              {/* Status promotion pathway */}
+              <Section label="Status Promotion Pathway">
+                <div style={{ display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center", fontFamily: THEME.ff.mono }}>
+                  {[["GENERATED", THEME.goldMute], ["→", THEME.txFaint], ["QUEUED", THEME.goldMute], ["→", THEME.txFaint], ["PROVISIONAL", "#9F9F5A"], ["→", THEME.txFaint], ["DEPOSITED", THEME.teal], ["→", THEME.txFaint], ["RATIFIED", THEME.green]].map(([t, c], i) => (
+                    <span
+                      key={i}
+                      style={{
+                        color: c,
+                        padding: t === "→" ? "0 4px" : "5px 10px",
+                        border: t === "→" ? "none" : `1px solid ${c}44`,
+                        background: t === "→" ? "transparent" : c + "11",
+                        fontSize: t === "→" ? 14 : 10,
+                        letterSpacing: t === "→" ? 0 : THEME.ls.wide,
+                        textTransform: t === "→" ? "none" : "uppercase",
+                      }}
+                    >
+                      {t}
+                    </span>
                   ))}
                 </div>
-              </div>
+              </Section>
 
               {/* LP acceptance test gates */}
-              <div style={{ marginBottom: 14 }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>LP ACCEPTANCE TEST GATES</div>
-                {Object.entries(METRIC_THRESHOLDS).map(([key, m]) => (
-                  <div key={key} style={{ display: "flex", gap: 8, padding: "3px 0", borderBottom: "1px solid #060a06", alignItems: "center" }}>
-                    <span style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, width: 30, flexShrink: 0 }}>{key}</span>
-                    <span style={{ fontSize: 8, color: "#B0B8C4", flex: 1 }}>{m.label}</span>
-                    <span style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>{m.invert ? "≤" : "≥"} {m.threshold}</span>
-                    <span style={{ fontSize: 7, color: "#5A6370", fontFamily: THEME.ff.mono }}>{m.gate}</span>
-                  </div>
-                ))}
-                <div style={{ display: "flex", gap: 8, padding: "3px 0", borderBottom: "1px solid #060a06", alignItems: "center" }}>
-                  <span style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, width: 30 }}>TRS</span>
-                  <span style={{ fontSize: 8, color: "#B0B8C4", flex: 1 }}>Temporal Resilience</span>
-                  <span style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>PASS</span>
-                  <span style={{ fontSize: 7, color: "#5A6370", fontFamily: THEME.ff.mono }}>durability</span>
-                </div>
-              </div>
-
-              {/* Document metrics — show for selected doc */}
-              {selDoc && (
-                <div style={{ marginBottom: 14 }}>
-                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>METRICS: {selDoc.t.slice(0, 40)}</div>
-                  {(() => {
-                    const m = computeMetrics(selDoc, data);
-                    return Object.entries(METRIC_THRESHOLDS).map(([key, spec]) => {
-                      const val = m[key];
-                      const pass = spec.invert ? val <= spec.threshold : val >= spec.threshold;
-                      return (
-                        <div key={key} style={{ display: "flex", gap: 6, padding: "2px 0", alignItems: "center" }}>
-                          <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: mc, width: 26 }}>{key}</span>
-                          <div style={{ flex: 1, height: 5, background: THEME.border }}>
-                            <div style={{ height: "100%", width: `${Math.min(100, val * 100)}%`, background: pass ? "#5A9F7B88" : "#C45A4A88" }} />
-                          </div>
-                          <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: pass ? "#5A9F7B" : "#C45A4A", width: 30 }}>{val}</span>
-                          <span style={{ fontSize: 7, fontFamily: THEME.ff.mono, color: pass ? "#5A9F7B" : "#C45A4A" }}>{pass ? "PASS" : "FAIL"}</span>
-                        </div>
-                      );
-                    });
-                  })()}
-                  <div style={{ display: "flex", gap: 6, padding: "2px 0", alignItems: "center" }}>
-                    <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: mc, width: 26 }}>TRS</span>
-                    <span style={{ fontSize: 8, fontFamily: THEME.ff.mono, color: computeMetrics(selDoc, data).TRS === "PASS" ? "#5A9F7B" : "#C45A4A", flex: 1 }}>{computeMetrics(selDoc, data).TRS}</span>
-                  </div>
-                </div>
-              )}
-
-              {/* PROVISIONAL relations for ratification */}
-              {data.relations.filter(r => r.status === "PROVISIONAL").length > 0 && (
-                <div style={{ marginBottom: 14 }}>
-                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>PENDING RATIFICATION</div>
-                  {data.relations.filter(r => r.status === "PROVISIONAL").map(r => (
-                    <div key={r.id} style={{ display: "flex", justifyContent: "space-between", padding: "3px 0", borderBottom: "1px solid #060a06" }}>
-                      <span style={{ fontSize: 9, fontFamily: THEME.ff.mono, color: "#B0B8C4" }}>{r.from} <span style={{ color: mc }}>{r.type}</span> {r.to}</span>
-                      <StatusBadge s="PROVISIONAL" />
+              <Section label="LP Acceptance Test Gates">
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  {Object.entries(METRIC_THRESHOLDS).map(([key, m]) => (
+                    <div key={key} style={{ display: "grid", gridTemplateColumns: "50px 1fr 100px 100px", gap: 10, padding: "10px 14px", borderBottom: `1px solid ${THEME.border}`, alignItems: "center" }}>
+                      <span style={{ fontSize: 11, color: mc, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide }}>{key}</span>
+                      <span style={{ fontSize: 12, color: THEME.tx, fontFamily: THEME.ff.serif }}>{m.label}</span>
+                      <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono }}>{m.invert ? "≤" : "≥"} {m.threshold}</span>
+                      <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>{m.gate}</span>
                     </div>
                   ))}
+                  <div style={{ display: "grid", gridTemplateColumns: "50px 1fr 100px 100px", gap: 10, padding: "10px 14px", borderBottom: `1px solid ${THEME.border}`, alignItems: "center" }}>
+                    <span style={{ fontSize: 11, color: mc, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide }}>TRS</span>
+                    <span style={{ fontSize: 12, color: THEME.tx, fontFamily: THEME.ff.serif }}>Temporal Resilience</span>
+                    <span style={{ fontSize: 10, color: THEME.green, fontFamily: THEME.ff.mono }}>PASS</span>
+                    <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>durability</span>
+                  </div>
                 </div>
+              </Section>
+
+              {/* Document metrics for selected doc */}
+              {selDoc && (
+                <Section label={`Metrics · ${selDoc.t.length > 50 ? selDoc.t.slice(0, 47) + "…" : selDoc.t}`}>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                    {(() => {
+                      const m = computeMetrics(selDoc, data);
+                      return Object.entries(METRIC_THRESHOLDS).map(([key, spec]) => {
+                        const val = m[key];
+                        const pass = spec.invert ? val <= spec.threshold : val >= spec.threshold;
+                        return (
+                          <div key={key} style={{ display: "grid", gridTemplateColumns: "50px 1fr 60px 60px", gap: 10, padding: "6px 0", alignItems: "center" }}>
+                            <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: mc, letterSpacing: THEME.ls.wide }}>{key}</span>
+                            <div style={{ height: 8, background: THEME.border, borderRadius: 1, overflow: "hidden" }}>
+                              <div style={{ height: "100%", width: `${Math.min(100, val * 100)}%`, background: pass ? THEME.green : THEME.red, transition: "width 400ms ease", boxShadow: pass ? `0 0 8px ${THEME.green}66` : `0 0 8px ${THEME.red}44` }} />
+                            </div>
+                            <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: pass ? THEME.green : THEME.red, textAlign: "right" }}>{val}</span>
+                            <span style={{ fontSize: 10, fontFamily: THEME.ff.mono, color: pass ? THEME.green : THEME.red, letterSpacing: THEME.ls.wide }}>{pass ? "PASS" : "FAIL"}</span>
+                          </div>
+                        );
+                      });
+                    })()}
+                    <div style={{ display: "grid", gridTemplateColumns: "50px 1fr 60px 60px", gap: 10, padding: "6px 0", alignItems: "center" }}>
+                      <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: mc, letterSpacing: THEME.ls.wide }}>TRS</span>
+                      <span style={{ fontSize: 11, fontFamily: THEME.ff.serif, color: THEME.tx, fontStyle: "italic" }}>Temporal Resilience Score</span>
+                      <span style={{ fontSize: 10, fontFamily: THEME.ff.mono, color: computeMetrics(selDoc, data).TRS === "PASS" ? THEME.green : THEME.red, textAlign: "right" }}>{computeMetrics(selDoc, data).TRS}</span>
+                      <span></span>
+                    </div>
+                  </div>
+                </Section>
+              )}
+
+              {/* Pending ratification */}
+              {data.relations.filter(r => r.status === "PROVISIONAL").length > 0 && (
+                <Section label="Pending Ratification">
+                  <div style={{ display: "flex", flexDirection: "column" }}>
+                    {data.relations.filter(r => r.status === "PROVISIONAL").map(r => (
+                      <div key={r.id} style={{ display: "flex", justifyContent: "space-between", padding: "10px 14px", borderBottom: `1px solid ${THEME.border}`, gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+                        <span style={{ fontSize: 11, fontFamily: THEME.ff.mono, color: THEME.tx, letterSpacing: "0.02em" }}>
+                          {r.from} <span style={{ color: mc, fontStyle: "italic", margin: "0 4px" }}>{r.type}</span> {r.to}
+                        </span>
+                        <StatusBadge s="PROVISIONAL" />
+                      </div>
+                    ))}
+                  </div>
+                </Section>
               )}
 
               {/* Governance Actions */}
