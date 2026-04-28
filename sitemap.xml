@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://crimsonhexagonal.org/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" type="application/ld+json" hreflang="x-spxi" href="https://crimsonhexagonal.org/spxi-index.jsonld" title="SPXI Semantic Index"/>
   </url>
+  <url><loc>https://crimsonhexagonal.org/spxi-index.jsonld</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
