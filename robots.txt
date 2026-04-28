@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://crimsonhexagonal.org/sitemap.xml
+
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: CCBot
+User-agent: Google-Extended
+Allow: /spxi-index.jsonld
+Crawl-delay: 1
