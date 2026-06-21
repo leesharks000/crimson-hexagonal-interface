@@ -2,7 +2,7 @@
 
 **A governed literary architecture with 455 DOI-anchored deposits, 29 rooms, and a provenance engine.**
 
-**[Live Interface →](https://crimson-hexagonal-interface.vercel.app)** · **[Machine Manifest →](https://crimson-hexagonal-interface.vercel.app/manifest.json)** · **[Space Ark (DOI) →](https://doi.org/10.5281/zenodo.19013315)** · **[Zenodo Community →](https://zenodo.org/communities/leesharks000)**
+**[Live Interface →](https://crimson-hexagonal-interface.vercel.app)** · **[Machine Manifest →](https://crimson-hexagonal-interface.vercel.app/manifest.json)** · **[Space Ark (DOI) →](https://alexanarch.org/s/records/561/)** · **[Zenodo Community →](https://zenodo.org/communities/leesharks000)**
 
 ---
 
