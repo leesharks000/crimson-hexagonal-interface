@@ -1,0 +1,10 @@
+{
+ "axn_resolution": {
+  "canonical_index": "https://alexanarch.org/data/doi-resolution-index.json",
+  "machine_map": "https://alexanarch.org/api/doi-axn-map.json",
+  "note": "Zenodo DOIs for the Crimson Hexagonal Archive were purged 2026-06-19. The sovereign successor identifier is the AXN; its six-emoji glyph is the content-checksum (first six bytes of the deposit hash). Resolve any dead DOI via the machine map.",
+  "resolvable_dois": 1029,
+  "archive": "https://alexanarch.org",
+  "updated": "2026-07-03"
+ }
+}
