@@ -12,7 +12,7 @@ Two massive sessions spanning ~18 hours of build time. The interface went from a
 | DOI | Title | Type |
 |-----|-------|------|
 | 10.5281/zenodo.19447089 | Operative Feminism: A Total Axial Negation Graph (TANG) | Formal |
-| 10.5281/zenodo.19447118 | Operative Feminism (EA-OPFEM-01 v1.0) | Formal |
+| 10.5281/zenodo.19447119 | Operative Feminism (EA-OPFEM-01 v1.0) | Formal |
 | 10.5281/zenodo.19447121 | Operative Feminism — Citational Comprehensivity Pass | Formal |
 | 10.5281/zenodo.19447123 | r.28 Eve — Room Specification | Formal |
 | 10.5281/zenodo.19455105 | H_core Formal Specification v1.8.0 (EA-HCORE-01) | Formal |
