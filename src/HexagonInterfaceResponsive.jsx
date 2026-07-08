@@ -2344,7 +2344,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
               <span style={{ color: THEME.txFaint }}>·</span>
               <a href="https://orcid.org/0009-0000-1599-0703" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>ORCID</a>
               <span style={{ color: THEME.txFaint }}>·</span>
-              <a href="https://doi.org/10.5281/zenodo.19013315" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>Space Ark v4.2</a>
+              <a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.19013315" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>Space Ark v4.2</a>
               <span style={{ color: THEME.txFaint }}>·</span>
               <a href="https://pessoagraph.org" target="_blank" rel="noreferrer" style={{ color: THEME.txMute, textDecoration: "none", transition: THEME.t }} onMouseEnter={e=>e.currentTarget.style.color=THEME.gold} onMouseLeave={e=>e.currentTarget.style.color=THEME.txMute}>PKG</a>
               <span style={{ color: THEME.txFaint }}>·</span>
