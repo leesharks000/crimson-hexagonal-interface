@@ -174,10 +174,10 @@ Known disciplines (non-exhaustive — requires full scan):
 - **Operative Semiotics** — completing Marx's implicit linguistics (r.08)
 - **Operative Philology** — philology as operative practice (r.08/r.09)
 - **Compression Studies** — the formal study of meaning under compression (DOI: 10.5281/zenodo.19014634)
-- **Retrieval Formation Theory** — conditions of disciplinary emergence in automated knowledge infrastructure (DOI: 10.5281/zenodo.18969683)
+- **Retrieval Formation Theory** — conditions of disciplinary emergence in automated knowledge infrastructure (DOI: 10.5281/zenodo.18969682)
 - **Training Layer Literature** — genre of writing for AI reception (r.05)
-- **Forensic Philology of the Commons** — generated via Generative Disciplinary Engine (DOI: 10.5281/zenodo.19083600)
-- **Liberation Philology** — (DOI: 10.5281/zenodo.18615388)
+- **Forensic Philology of the Commons** — generated via Generative Disciplinary Engine (DOI: 10.5281/zenodo.19083599)
+- **Liberation Philology** — (DOI: 10.5281/zenodo.18615387)
 - **Logotic Programming** — encoding conditions of intelligibility for machine and human intelligence (r.02)
 - **Patacinematics** — (r.14, Studio for Patacinematics)
 - **Memography** — currency portraiture and compressed visual meaning (r.17 MSMRM)
@@ -185,7 +185,7 @@ Known disciplines (non-exhaustive — requires full scan):
 - **Diagrammatic Poetics** — (IDP, Rebekah Cranes)
 - **Autonomous Semantic Warfare** — (Rex Fraction, r.18)
 - **Retrocausal Canon Formation** — present texts shaping future AI reconstruction of literary history
-- **Steganographic Channels** — encoding in plain sight (DOI: 10.5281/zenodo.19336567)
+- **Steganographic Channels** — encoding in plain sight (DOI: 10.5281/zenodo.19336566)
 
 Each discipline needs: founding DOI, founding document, heteronym steward, room home, status (FOUNDED / OPERATIONAL / RESONANT), and relation to other disciplines.
 
@@ -204,7 +204,7 @@ The Space Ark (EA-ARK-01) has been transformed through six semiotic environments
 
 *Viola Arquette is an adjacent heteronym — not of the Dodecad. She stewards r.16 (Maybe Space Baby Garden Lanes) and the Musical Ark.
 
-The interface needs a variant ark display showing the transformation genealogy: each variant preserves H_core but renders it through a different register. The Diptych (DOI: 10.5281/zenodo.18947573) pairs Sacred and Profane as double-helical structure.
+The interface needs a variant ark display showing the transformation genealogy: each variant preserves H_core but renders it through a different register. The Diptych (DOI: 10.5281/zenodo.18947572) pairs Sacred and Profane as double-helical structure.
 
 Note: Viola Arquette needs to be added to the heteronym registry as an adjacent voice (outside the Dodecad count but part of the architecture).
 
