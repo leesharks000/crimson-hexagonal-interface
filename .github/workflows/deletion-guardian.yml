@@ -1,0 +1,109 @@
+name: Deletion Guardian
+
+# Runs on every push to any branch. If any commit in the push deletes
+# more than a threshold number of files (excluding known automation bots),
+# creates a critical issue tagged for immediate review.
+#
+# History: installed 2026-07-22 following the a01e316 (2026-07-21) incident
+# in which a session's `git add -A` from a scratch working tree resulted in
+# deletion of the entire homepage + 81 other files. Full recovery required
+# operator intervention. This guardian ensures no similar incident can
+# happen silently again.
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+
+      - name: Analyze push for catastrophic deletion
+        id: analyze
+        env:
+          GH_TOKEN: ${{ github.token }}
+          THRESHOLD: 10
+        run: |
+          set -euo pipefail
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.event.after }}"
+          PUSHER="${{ github.event.pusher.name }}"
+
+          # Zero SHA = branch creation, nothing to compare
+          if [[ "$BEFORE" == "0000000000000000000000000000000000000000" ]]; then
+            echo "branch creation, skipping"
+            exit 0
+          fi
+
+          # Allow known-safe bot pushers that only touch specific files
+          case "$PUSHER" in
+            axn-mirror|github-actions*|dependabot*)
+              echo "trusted bot pusher: $PUSHER"
+              exit 0
+              ;;
+          esac
+
+          # Count deletions across the push range
+          DELETED=$(git diff --name-only --diff-filter=D "$BEFORE" "$AFTER" | wc -l | tr -d ' ')
+          ADDED=$(git diff --name-only --diff-filter=A "$BEFORE" "$AFTER" | wc -l | tr -d ' ')
+          MODIFIED=$(git diff --name-only --diff-filter=M "$BEFORE" "$AFTER" | wc -l | tr -d ' ')
+
+          echo "push range: $BEFORE → $AFTER"
+          echo "deleted: $DELETED · added: $ADDED · modified: $MODIFIED"
+          echo "deleted=$DELETED" >> "$GITHUB_OUTPUT"
+          echo "added=$ADDED" >> "$GITHUB_OUTPUT"
+          echo "modified=$MODIFIED" >> "$GITHUB_OUTPUT"
+
+          if [[ "$DELETED" -gt "$THRESHOLD" ]]; then
+            echo "::error::CATASTROPHIC DELETION DETECTED — $DELETED files removed"
+            git diff --name-only --diff-filter=D "$BEFORE" "$AFTER" > /tmp/deleted-files.txt
+            head -50 /tmp/deleted-files.txt
+            echo "trigger_issue=true" >> "$GITHUB_OUTPUT"
+
+            # Prepare issue body
+            {
+              echo "## Deletion Guardian: catastrophic deletion detected"
+              echo ""
+              echo "**Push range:** \`$BEFORE\` → \`$AFTER\`"
+              echo "**Pusher:** $PUSHER"
+              echo "**Deleted:** $DELETED files"
+              echo "**Added:** $ADDED files"
+              echo "**Modified:** $MODIFIED files"
+              echo ""
+              echo "This exceeds the safety threshold of $THRESHOLD deletions per push."
+              echo ""
+              echo "### Files deleted (first 100):"
+              echo ""
+              echo '```'
+              head -100 /tmp/deleted-files.txt
+              echo '```'
+              echo ""
+              echo "### Recovery"
+              echo ""
+              echo "The last known-good commit is \`$BEFORE\`."
+              echo "To recover: \`git checkout $BEFORE -- <path>\` for each destroyed file, or"
+              echo "revert the push commit(s) between \`$BEFORE\` and \`$AFTER\`."
+              echo ""
+              echo "### History"
+              echo ""
+              echo "This guardian was installed 2026-07-22 following the a01e316 incident"
+              echo "in machinemediation-org, in which a session's \`git add -A\` from a"
+              echo "scratch working tree silently deleted the entire homepage plus 81"
+              echo "other files. Full recovery required manual reconstruction from the"
+              echo "prior good commit."
+            } > /tmp/issue-body.md
+
+            gh issue create \
+              --title "[URGENT] Catastrophic deletion in push $AFTER — $DELETED files removed" \
+              --body-file /tmp/issue-body.md \
+              --label "urgent,data-loss"
+          fi
