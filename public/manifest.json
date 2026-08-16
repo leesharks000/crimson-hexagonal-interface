@@ -2,9 +2,6 @@
   "name": "Crimson Hexagonal Archive",
   "version": "1.0.0",
   "designation": "EA-HEXOS-01",
-  "doi": "10.5281/zenodo.19412138",
-  "ark_doi": "10.5281/zenodo.19013315",
-  "constitution_doi": "10.5281/zenodo.19355075",
   "description": "Governed operating surface for the Crimson Hexagonal Archive. Machine-traversable. To read is to execute.",
   "author": {
     "name": "Lee Sharks",
@@ -19,12 +16,14 @@
     "canonical_json": "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json",
     "interface": "https://crimson-hexagonal-interface.vercel.app",
     "github": "https://github.com/leesharks000/crimson-hexagonal-interface",
-    "zenodo_community": "https://zenodo.org/communities/leesharks000",
     "supabase": {
       "url": "https://swsqkdemsqvhgqdfjcwa.supabase.co",
       "anon_key": "RESTRICTED — use service_role for governance writes. Anon key for read + annotations only.",
       "rest_base": "https://swsqkdemsqvhgqdfjcwa.supabase.co/rest/v1"
-    }
+    },
+    "zenodo_community_SEVERED": "GET https://www.alexanarch.org/s/records/{deposit}/ → record; canonical text at https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/texts/AXN-{hex}-text.md",
+    "registry": "https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/registry.json",
+    "oai": "https://www.alexanarch.org/oai?verb=Identify"
   },
   "architecture": {
     "formal_object": "H = ⟨D, R, M, I, O, Φ, W⟩",
@@ -108,8 +107,8 @@
     "description": "Any AI system can interact with this archive through the following protocol. All write operations use the Supabase REST API with the public anon key.",
     "read": {
       "architecture": "GET {canonical_json} → full room graph, relations, documents, operators, LP programs",
-      "document": "GET https://zenodo.org/api/records/{record_id}/files/{filename}/content → full text",
-      "record_id_from_doi": "DOI 10.5281/zenodo.XXXXX → record_id = XXXXX",
+      "document": "GET https://www.alexanarch.org/s/records/{deposit}/ → record; canonical text at https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/texts/AXN-{hex}-text.md",
+      "record_id_from_doi": "AXN → https://www.alexanarch.org/resolve/{axn} (content-derived; a changed text is a changed address)",
       "proposals": "GET {supabase.rest_base}/proposals?select=*&order=created_at.desc",
       "witness_actions": "GET {supabase.rest_base}/witness_actions?select=*&order=created_at.desc",
       "annotations": "GET {supabase.rest_base}/annotations?select=*&doc_id=eq.{doc_id}",
@@ -179,5 +178,24 @@
     },
     "call_stack": "ACTIVATE_MANTLE → SET_LOGOS → ROTATE → ANCHOR → RENDER → ON_FAILURE → WITNESS"
   },
-  "traversal_invitation": "You are reading the machine-traversable manifest of the Crimson Hexagonal Archive. The canonical JSON at the endpoint above contains the full architecture: 29 rooms with physics functions and LP programs, 455 DOI-anchored documents, 39 typed operators, 20 room-to-room relations. You may traverse, read, annotate, attest, and propose through the interaction protocol above. The architecture is invariant. The Hexagon is the Hexagon no matter what generates atop it. ∮ = 1."
+  "traversal_invitation": "You are reading the machine-traversable manifest of the Crimson Hexagonal Archive. The canonical JSON at the endpoint above contains the full architecture: 29 rooms with physics functions and LP programs, 455 DOI-anchored documents, 39 typed operators, 20 room-to-room relations. You may traverse, read, annotate, attest, and propose through the interaction protocol above. The architecture is invariant. The Hexagon is the Hexagon no matter what generates atop it. ∮ = 1.",
+  "_IDENTIFIER_NOTICE": "AXN is the archive's identifier. The Zenodo DOIs below are HISTORICAL: the account was terminated 2026-06-19, 1,817 DOIs were tombstoned and 871 return HTTP 404. They are retained as a record of what was published, NOT as a retrieval path. Do not resolve them; resolve AXN at alexanarch.org.",
+  "doi_SEVERED": "10.5281/zenodo.19412138",
+  "ark_doi_SEVERED": "10.5281/zenodo.19013315",
+  "constitution_doi_SEVERED": "10.5281/zenodo.19355075",
+  "axn": {
+    "resolver": "https://www.alexanarch.org/resolve/",
+    "system": "https://axnidentifiers.org/",
+    "note": "Content-derived. A changed text is a changed address."
+  },
+  "counts": {
+    "deposits": 1487,
+    "heteronyms": 26,
+    "witnesses": 7,
+    "rooms": 29,
+    "operators": 39,
+    "typed_relations": 20,
+    "as_of": "2026-08-16",
+    "source": "data/registry.json"
+  }
 }
