@@ -1,19 +1,26 @@
 # Crimson Hexagonal Archive
 
-**A governed literary architecture with 455 DOI-anchored deposits, 29 rooms, and a provenance engine.**
+**A governed literary architecture: 1,489 AXN-addressed deposits, 29 rooms, and a provenance engine.** *(counts as of 2026-08)*
 
-**[Live Interface →](https://crimson-hexagonal-interface.vercel.app)** · **[Machine Manifest →](https://crimson-hexagonal-interface.vercel.app/manifest.json)** · **[Space Ark (DOI) →](https://www.alexanarch.org/s/records/561/)** · **[Zenodo Community →](https://zenodo.org/communities/leesharks000)**
+**[Live Interface →](https://crimson-hexagonal-interface.vercel.app)** · **[Machine Manifest →](https://crimson-hexagonal-interface.vercel.app/manifest.json)** · **[Space Ark (DOI) →](https://www.alexanarch.org/s/records/561/)** · **[OAI-PMH →](https://www.alexanarch.org/oai?verb=Identify)** · **[AXN resolver →](https://www.alexanarch.org/resolve/)**
 
 ---
 
+> **On identifiers.** This archive was previously DOI-anchored through Zenodo. That account was
+> terminated on 2026-06-19; 1,817 DOIs were tombstoned and 871 return HTTP 404. Historical DOIs
+> are retained throughout as the record of what was published — they are **not** a retrieval
+> path. Use AXN, which is content-derived and resolves at
+> [alexanarch.org](https://www.alexanarch.org/), or harvest the
+> [OAI-PMH endpoint](https://www.alexanarch.org/oai?verb=Identify).
+
 ## What This Is
 
-The Crimson Hexagonal Archive is a governed reading-and-production environment. Each of its 29 rooms has its own physics, mantle, operators, and LP (Logotic Programming) program. Documents are DOI-anchored through Zenodo. Governance runs through a 7-witness Assembly with quorum enforcement. The entire architecture is machine-traversable.
+The Crimson Hexagonal Archive is a governed reading-and-production environment. Each of its 29 rooms has its own physics, mantle, operators, and LP (Logotic Programming) program. Documents are **content-addressed by AXN** — a changed text is a changed address — and resolve at alexanarch.org. Governance runs through a 7-witness Assembly with quorum enforcement. The entire architecture is machine-traversable.
 
 ## The Golden Path
 
 ```
-Enter Room → Invoke (LLM speaks through room physics) → Capture → Deposit → DOI → Reconstitute
+Enter Room → Invoke (LLM speaks through room physics) → Capture → Deposit → AXN → Reconstitute
 ```
 
 1. **Select a mode** — ANALYTIC (observe), OPERATIVE (generate), AUDIT (govern)
