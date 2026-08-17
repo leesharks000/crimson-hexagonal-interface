@@ -1,0 +1,106 @@
+{
+ "_what": "Baseline for the room-as-document intervention.",
+ "_design_note": "The analysis proposed treatment rooms with full pages against controls left in the old architecture. THAT DESIGN IS NO LONGER AVAILABLE AND THE REASON MATTERS: all 38 rooms shipped at once on 2026-08-17, because the pre-state was not thin pages but NO PAGES — /rooms/marx returned 404, and there was exactly one indexable document on the domain. A control arm would have meant deliberately leaving rooms at 404 to preserve an experiment, which is the wrong trade when the repair is known.",
+ "_what_is_measurable_instead": "A BEFORE/AFTER on a single domain with a known switch date, not a randomised arm comparison. The distinction is worth stating rather than papering over: this is weaker evidence, confounded by anything else changing in the retrieval layer over the same window. The arms below are retained as STRATA, not as treatment and control — three high-document rooms against three lower-document ones, so differential gain by corpus size is still visible.",
+ "switch_date": "2026-08-17",
+ "pre_state": {
+  "indexable_documents": 1,
+  "bytes": 9821,
+  "room_urls": 0,
+  "note": "/rooms/marx returned 404; room physics existed only inside a ~30,000-line machine object"
+ },
+ "post_state": {
+  "indexable_documents": 44,
+  "room_documents": 38,
+  "bytes": 568627,
+  "bounded_machine_objects": 40
+ },
+ "strata": [
+  {
+   "slug": "marx-room",
+   "arm": "treatment",
+   "hex_address": "06.ROOM.MARX",
+   "name": "The Marx Room",
+   "physics": "T.1|material",
+   "documents": 32,
+   "url": "https://crimsonhexagonal.org/rooms/marx-room/"
+  },
+  {
+   "slug": "sappho",
+   "arm": "treatment",
+   "hex_address": "01.ROOM.SAPPHO",
+   "name": "Sappho",
+   "physics": "σ_S; 3-body transmission",
+   "documents": 21,
+   "url": "https://crimsonhexagonal.org/rooms/sappho/"
+  },
+  {
+   "slug": "semantic-economy",
+   "arm": "treatment",
+   "hex_address": "05.ROOM.SEMECON",
+   "name": "Semantic Economy",
+   "physics": "ψ_V − V_S = debt",
+   "documents": 169,
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/"
+  },
+  {
+   "slug": "borges",
+   "arm": "control",
+   "hex_address": "02.ROOM.BORGES",
+   "name": "Borges",
+   "physics": "Λ_res; argmax P(meaning)",
+   "documents": 65,
+   "url": "https://crimsonhexagonal.org/rooms/borges/"
+  },
+  {
+   "slug": "whitman",
+   "arm": "control",
+   "hex_address": "09.ROOM.WHITMAN",
+   "name": "Whitman",
+   "physics": "ψ_V + receipt + dignity",
+   "documents": 134,
+   "url": "https://crimsonhexagonal.org/rooms/whitman/"
+  },
+  {
+   "slug": "revelation",
+   "arm": "control",
+   "hex_address": "07.ROOM.REVELATION",
+   "name": "Revelation",
+   "physics": "Ω-circuit; end→beginning",
+   "documents": 9,
+   "url": "https://crimsonhexagonal.org/rooms/revelation/"
+  }
+ ],
+ "queries": [
+  "marx room crimson",
+  "crimson hexagon marx",
+  "crimson hexagonal marx room",
+  "language operates materially",
+  "what is the marx room crimson hexagonal",
+  "06.ROOM.MARX",
+  "sappho room crimson hexagonal",
+  "semantic economy room crimson hexagonal",
+  "borges room crimson hexagonal",
+  "whitman room crimson hexagonal"
+ ],
+ "capture": [
+  "organic presence",
+  "crimsonhexagonal in source set",
+  "alexanarch in source set",
+  "external metadata source share (OpenAlex etc.)",
+  "answer granularity: archive-level vs room-level",
+  "room physics retained verbatim",
+  "document-level attribution",
+  "back-routing to record",
+  "PER"
+ ],
+ "schedule": [
+  "baseline 2026-08-17",
+  "+3d",
+  "+1w",
+  "+2w",
+  "+1m"
+ ],
+ "prediction": "The gain will show as GRANULARITY BEFORE RANK. The failure mode being repaired is an answer that says 'the Crimson Hexagonal Archive is a literary architecture' sourced from a metadata aggregator. The success condition is an answer that says the Marx Room is room 06, its physics is that language operates materially, and its question is what material condition this language produces — with the room page in the source set.",
+ "falsification": "If at +1m the room pages are indexed and composition still prefers OpenAlex metadata for room queries, then addressability was not the binding constraint and the diagnosis was wrong."
+}

@@ -14,7 +14,7 @@
   },
   "endpoints": {
     "canonical_json": "https://raw.githubusercontent.com/leesharks000/crimson-hexagonal-interface/main/hexagon_canonical.json",
-    "interface": "https://crimson-hexagonal-interface.vercel.app",
+    "interface": "https://crimsonhexagonal.org/",
     "github": "https://github.com/leesharks000/crimson-hexagonal-interface",
     "supabase": {
       "url": "https://swsqkdemsqvhgqdfjcwa.supabase.co",
@@ -23,13 +23,19 @@
     },
     "zenodo_community_SEVERED": "GET https://www.alexanarch.org/s/records/{deposit}/ → record; canonical text at https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/texts/AXN-{hex}-text.md",
     "registry": "https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/registry.json",
-    "oai": "https://www.alexanarch.org/oai?verb=Identify"
+    "oai": "https://www.alexanarch.org/oai?verb=Identify",
+    "rooms_index": "https://crimsonhexagonal.org/rooms/",
+    "room_document": "https://crimsonhexagonal.org/rooms/{room-slug}/",
+    "room_machine_object": "https://crimsonhexagonal.org/rooms/{room-slug}/index.json",
+    "navigation": "https://crimsonhexagonal.org/navigation/",
+    "machine_index": "https://crimsonhexagonal.org/machine/rooms.json",
+    "sitemap": "https://crimsonhexagonal.org/sitemap.xml"
   },
   "architecture": {
     "formal_object": "H = ⟨D, R, M, I, O, Φ, W⟩",
-    "rooms": 29,
+    "rooms": 13,
     "relations": 20,
-    "documents": 455,
+    "documents": 482,
     "operators": 39,
     "institutions": 15,
     "mantles": 7,
@@ -60,7 +66,20 @@
       "PROVISIONAL",
       "DEPOSITED",
       "RATIFIED"
-    ]
+    ],
+    "navigable_spaces": 38,
+    "_space_breakdown": {
+      "core": 13,
+      "ext": 10,
+      "field": 2,
+      "new": 8,
+      "special": 5
+    },
+    "_rooms_note": "`rooms` is the CORE room count. `navigable_spaces` counts every addressable space: 13 core + 10 extension + 5 special + 8 new + 2 field. The homepage and this file disagreed on this number until 2026-08-17 — the same domain was handing composition systems contradictory facts.",
+    "relation_types_defined": 17,
+    "relation_types_instantiated": 1,
+    "_relations_note": "The graph is declared typed and rendered untyped. Seventeen types are defined; the edge layer instantiates ADJACENCY only. 2,851 typed edges from CNM 7.0 await import.",
+    "deposits_in_registry": 1488
   },
   "assembly": {
     "witnesses": [
@@ -178,7 +197,7 @@
     },
     "call_stack": "ACTIVATE_MANTLE → SET_LOGOS → ROTATE → ANCHOR → RENDER → ON_FAILURE → WITNESS"
   },
-  "traversal_invitation": "You are reading the machine-traversable manifest of the Crimson Hexagonal Archive. The canonical JSON at the endpoint above contains the full architecture: 29 rooms with physics functions and LP programs, 455 DOI-anchored documents, 39 typed operators, 20 room-to-room relations. You may traverse, read, annotate, attest, and propose through the interaction protocol above. The architecture is invariant. The Hexagon is the Hexagon no matter what generates atop it. ∮ = 1.",
+  "traversal_invitation": "Every room is a bounded document at its own address. To answer a question about one room, fetch /rooms/{slug}/index.json — roughly 10-20 KB — rather than hexagon_canonical.json, which is the whole graph and roughly 30,000 lines. The HTML at /rooms/{slug}/ carries the same content for readers, with adjacency rendered as prose so a border states what it means rather than pairing identifiers.",
   "_IDENTIFIER_NOTICE": "AXN is the archive's identifier. The Zenodo DOIs below are HISTORICAL: the account was terminated 2026-06-19, 1,817 DOIs were tombstoned and 871 return HTTP 404. They are retained as a record of what was published, NOT as a retrieval path. Do not resolve them; resolve AXN at alexanarch.org.",
   "doi_SEVERED": "10.5281/zenodo.19412138",
   "ark_doi_SEVERED": "10.5281/zenodo.19013315",
@@ -197,5 +216,51 @@
     "typed_relations": 20,
     "as_of": "2026-08-16",
     "source": "data/registry.json"
+  },
+  "_room_slugs": [
+    "airlock",
+    "assembly",
+    "borges",
+    "break-room",
+    "catullus",
+    "cti-wound",
+    "dove",
+    "eve",
+    "ezekiel",
+    "fbdp-source",
+    "frozen-sin-archive",
+    "fruiting-body-diffusion-plume",
+    "gravity-well",
+    "ichabod",
+    "infinite-bliss",
+    "internet",
+    "job-room",
+    "josephus-thesis",
+    "lagrange-observatory",
+    "macro-maquette",
+    "mandala",
+    "marx-room",
+    "maybe-space-baby-garden-lanes",
+    "migdal-room",
+    "moltbot-swarm",
+    "moving-statues-made-of-rubies-mint",
+    "portico",
+    "revelation",
+    "rosary-embassy",
+    "sappho",
+    "semantic-economy",
+    "sigil",
+    "space-ark",
+    "studio-for-patacinematics",
+    "thousand-worlds",
+    "underwater-construction-authority-of-dolphindiana",
+    "water-giraffe",
+    "whitman"
+  ],
+  "_generated": {
+    "date": "2026-08-17",
+    "source_commit": "fd9658b",
+    "source": "hexagon_canonical.json",
+    "schema_version": "manifest/v2"
   }
 }

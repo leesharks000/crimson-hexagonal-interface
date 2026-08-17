@@ -1,0 +1,848 @@
+{
+ "_what": "Relation types defined by H_core, and the honest count of what the edge layer instantiates.",
+ "generated": "2026-08-17",
+ "source_commit": "fd9658b",
+ "types_defined": [
+  {
+   "id": "E.01",
+   "hex_address": "E.01.ADJACENT",
+   "name": "adjacent",
+   "domain": "R×R",
+   "desc": "Rooms share a border; traversal permitted"
+  },
+  {
+   "id": "E.02",
+   "hex_address": "E.02.PORTAL",
+   "name": "portal",
+   "domain": "R×R",
+   "desc": "Non-adjacent link (Break Room → Lunar Arm)"
+  },
+  {
+   "id": "E.03",
+   "hex_address": "E.03.SUFFUSES",
+   "name": "suffuses",
+   "domain": "F×R",
+   "desc": "Field exerts curvature on room"
+  },
+  {
+   "id": "E.04",
+   "hex_address": "E.04.STEWARDS",
+   "name": "stewards",
+   "domain": "D×R",
+   "desc": "Heteronym stewards room"
+  },
+  {
+   "id": "E.05",
+   "hex_address": "E.05.HOUSES",
+   "name": "houses",
+   "domain": "R×I",
+   "desc": "Room houses institution"
+  },
+  {
+   "id": "E.06",
+   "hex_address": "E.06.PUBLISHES",
+   "name": "publishes",
+   "domain": "I×J",
+   "desc": "Institution publishes through journal"
+  },
+  {
+   "id": "E.07",
+   "hex_address": "E.07.GOVERNS",
+   "name": "governs",
+   "domain": "I×I",
+   "desc": "Institutional governance edge"
+  },
+  {
+   "id": "E.08",
+   "hex_address": "E.08.BEARS",
+   "name": "bears",
+   "domain": "D×M",
+   "desc": "Heteronym bears mantle"
+  },
+  {
+   "id": "E.09",
+   "hex_address": "E.09.ATTESTS",
+   "name": "attests",
+   "domain": "W×Element",
+   "desc": "Witness attests to element"
+  },
+  {
+   "id": "E.10",
+   "hex_address": "E.10.COUNTERS",
+   "name": "counters",
+   "domain": "O.LOS×O.COS",
+   "desc": "LOS counter-operation to COS extraction"
+  },
+  {
+   "id": "E.11",
+   "hex_address": "E.11.NATIVETO",
+   "name": "native_to",
+   "domain": "O×R",
+   "desc": "Operator is native to room"
+  },
+  {
+   "id": "E.12",
+   "hex_address": "E.12.CITES",
+   "name": "cites",
+   "domain": "Doc×Doc",
+   "desc": "Citation edge (substantive or bibliographic)"
+  },
+  {
+   "id": "E.13",
+   "hex_address": "E.13.FULFILLS",
+   "name": "fulfills",
+   "domain": "Doc×Doc",
+   "desc": "Fulfillment edge sealed by φ∘∂"
+  },
+  {
+   "id": "E.14",
+   "hex_address": "E.14.SHADOWOF",
+   "name": "shadow_of",
+   "domain": "Any×Any",
+   "desc": "S(x) — shadow/failure mode"
+  },
+  {
+   "id": "E.15",
+   "hex_address": "E.15.FEEDSINTO",
+   "name": "feeds_into",
+   "domain": "Engine×Engine",
+   "desc": "Pipeline edge (FL→LE→UKTP→GDE→SAG→FL)"
+  },
+  {
+   "id": "E.16",
+   "hex_address": "E.16.BELONGSTO",
+   "name": "belongs_to",
+   "domain": "Doc×R",
+   "desc": "Document assigned to room"
+  },
+  {
+   "id": "E.17",
+   "hex_address": "E.17.PROTOCOLGOV",
+   "name": "protocol_governs",
+   "domain": "P×Component",
+   "desc": "Protocol governs component behavior"
+  }
+ ],
+ "instantiated": [
+  "adjacent"
+ ],
+ "_gap": "2,851 typed edges from CNM 7.0 await import. Until that lands the map routes by borders rather than by meaning, and any consumer should treat adjacency as topological, not semantic.",
+ "adjacency": [
+  {
+   "from": "r01",
+   "to": "r02"
+  },
+  {
+   "from": "r01",
+   "to": "r05"
+  },
+  {
+   "from": "r01",
+   "to": "r06"
+  },
+  {
+   "from": "r01",
+   "to": "r08"
+  },
+  {
+   "from": "r01",
+   "to": "r09"
+  },
+  {
+   "from": "r01",
+   "to": "r12"
+  },
+  {
+   "from": "r01",
+   "to": "r13"
+  },
+  {
+   "from": "r01",
+   "to": "sp01"
+  },
+  {
+   "from": "r01",
+   "to": "sp03"
+  },
+  {
+   "from": "r02",
+   "to": "r01"
+  },
+  {
+   "from": "r02",
+   "to": "r05"
+  },
+  {
+   "from": "r02",
+   "to": "r06"
+  },
+  {
+   "from": "r02",
+   "to": "r07"
+  },
+  {
+   "from": "r02",
+   "to": "r08"
+  },
+  {
+   "from": "r02",
+   "to": "r09"
+  },
+  {
+   "from": "r02",
+   "to": "r11"
+  },
+  {
+   "from": "r02",
+   "to": "r13"
+  },
+  {
+   "from": "r02",
+   "to": "r15"
+  },
+  {
+   "from": "r02",
+   "to": "r19"
+  },
+  {
+   "from": "r02",
+   "to": "sp01"
+  },
+  {
+   "from": "r02",
+   "to": "sp03"
+  },
+  {
+   "from": "r03",
+   "to": "r08"
+  },
+  {
+   "from": "r03",
+   "to": "r11"
+  },
+  {
+   "from": "r04",
+   "to": "r05"
+  },
+  {
+   "from": "r05",
+   "to": "f02"
+  },
+  {
+   "from": "r05",
+   "to": "r01"
+  },
+  {
+   "from": "r05",
+   "to": "r02"
+  },
+  {
+   "from": "r05",
+   "to": "r04"
+  },
+  {
+   "from": "r05",
+   "to": "r06"
+  },
+  {
+   "from": "r05",
+   "to": "r08"
+  },
+  {
+   "from": "r05",
+   "to": "r09"
+  },
+  {
+   "from": "r05",
+   "to": "r11"
+  },
+  {
+   "from": "r05",
+   "to": "r12"
+  },
+  {
+   "from": "r05",
+   "to": "r14"
+  },
+  {
+   "from": "r05",
+   "to": "r15"
+  },
+  {
+   "from": "r05",
+   "to": "r17"
+  },
+  {
+   "from": "r05",
+   "to": "r18"
+  },
+  {
+   "from": "r05",
+   "to": "r20"
+  },
+  {
+   "from": "r05",
+   "to": "sp01"
+  },
+  {
+   "from": "r05",
+   "to": "sp03"
+  },
+  {
+   "from": "r06",
+   "to": "r01"
+  },
+  {
+   "from": "r06",
+   "to": "r02"
+  },
+  {
+   "from": "r06",
+   "to": "r05"
+  },
+  {
+   "from": "r06",
+   "to": "r08"
+  },
+  {
+   "from": "r06",
+   "to": "r12"
+  },
+  {
+   "from": "r06",
+   "to": "r28"
+  },
+  {
+   "from": "r06",
+   "to": "sp01"
+  },
+  {
+   "from": "r06",
+   "to": "sp03"
+  },
+  {
+   "from": "r07",
+   "to": "r02"
+  },
+  {
+   "from": "r07",
+   "to": "r08"
+  },
+  {
+   "from": "r07",
+   "to": "r09"
+  },
+  {
+   "from": "r07",
+   "to": "r13"
+  },
+  {
+   "from": "r07",
+   "to": "r18"
+  },
+  {
+   "from": "r07",
+   "to": "sp04"
+  },
+  {
+   "from": "r08",
+   "to": "r01"
+  },
+  {
+   "from": "r08",
+   "to": "r02"
+  },
+  {
+   "from": "r08",
+   "to": "r03"
+  },
+  {
+   "from": "r08",
+   "to": "r05"
+  },
+  {
+   "from": "r08",
+   "to": "r06"
+  },
+  {
+   "from": "r08",
+   "to": "r07"
+  },
+  {
+   "from": "r08",
+   "to": "r09"
+  },
+  {
+   "from": "r08",
+   "to": "r11"
+  },
+  {
+   "from": "r08",
+   "to": "r12"
+  },
+  {
+   "from": "r08",
+   "to": "r13"
+  },
+  {
+   "from": "r08",
+   "to": "r16"
+  },
+  {
+   "from": "r08",
+   "to": "r18"
+  },
+  {
+   "from": "r08",
+   "to": "r19"
+  },
+  {
+   "from": "r08",
+   "to": "r21"
+  },
+  {
+   "from": "r08",
+   "to": "sp01"
+  },
+  {
+   "from": "r08",
+   "to": "sp03"
+  },
+  {
+   "from": "r08",
+   "to": "sp04"
+  },
+  {
+   "from": "r09",
+   "to": "r01"
+  },
+  {
+   "from": "r09",
+   "to": "r02"
+  },
+  {
+   "from": "r09",
+   "to": "r05"
+  },
+  {
+   "from": "r09",
+   "to": "r07"
+  },
+  {
+   "from": "r09",
+   "to": "r08"
+  },
+  {
+   "from": "r09",
+   "to": "r11"
+  },
+  {
+   "from": "r09",
+   "to": "r12"
+  },
+  {
+   "from": "r09",
+   "to": "r13"
+  },
+  {
+   "from": "r09",
+   "to": "r14"
+  },
+  {
+   "from": "r09",
+   "to": "r15"
+  },
+  {
+   "from": "r09",
+   "to": "r18"
+  },
+  {
+   "from": "r09",
+   "to": "r21"
+  },
+  {
+   "from": "r09",
+   "to": "sp01"
+  },
+  {
+   "from": "r09",
+   "to": "sp03"
+  },
+  {
+   "from": "r11",
+   "to": "r02"
+  },
+  {
+   "from": "r11",
+   "to": "r03"
+  },
+  {
+   "from": "r11",
+   "to": "r05"
+  },
+  {
+   "from": "r11",
+   "to": "r08"
+  },
+  {
+   "from": "r11",
+   "to": "r09"
+  },
+  {
+   "from": "r11",
+   "to": "r12"
+  },
+  {
+   "from": "r11",
+   "to": "r18"
+  },
+  {
+   "from": "r11",
+   "to": "r19"
+  },
+  {
+   "from": "r11",
+   "to": "r20"
+  },
+  {
+   "from": "r11",
+   "to": "sp01"
+  },
+  {
+   "from": "r11",
+   "to": "sp03"
+  },
+  {
+   "from": "r11",
+   "to": "sp04"
+  },
+  {
+   "from": "r12",
+   "to": "r01"
+  },
+  {
+   "from": "r12",
+   "to": "r05"
+  },
+  {
+   "from": "r12",
+   "to": "r06"
+  },
+  {
+   "from": "r12",
+   "to": "r08"
+  },
+  {
+   "from": "r12",
+   "to": "r09"
+  },
+  {
+   "from": "r12",
+   "to": "r11"
+  },
+  {
+   "from": "r12",
+   "to": "r28"
+  },
+  {
+   "from": "r12",
+   "to": "sp01"
+  },
+  {
+   "from": "r12",
+   "to": "sp03"
+  },
+  {
+   "from": "r13",
+   "to": "r01"
+  },
+  {
+   "from": "r13",
+   "to": "r02"
+  },
+  {
+   "from": "r13",
+   "to": "r07"
+  },
+  {
+   "from": "r13",
+   "to": "r08"
+  },
+  {
+   "from": "r13",
+   "to": "r09"
+  },
+  {
+   "from": "r13",
+   "to": "r22"
+  },
+  {
+   "from": "r14",
+   "to": "r05"
+  },
+  {
+   "from": "r14",
+   "to": "r09"
+  },
+  {
+   "from": "r14",
+   "to": "r15"
+  },
+  {
+   "from": "r14",
+   "to": "r16"
+  },
+  {
+   "from": "r14",
+   "to": "r17"
+  },
+  {
+   "from": "r14",
+   "to": "sp01"
+  },
+  {
+   "from": "r15",
+   "to": "r02"
+  },
+  {
+   "from": "r15",
+   "to": "r05"
+  },
+  {
+   "from": "r15",
+   "to": "r09"
+  },
+  {
+   "from": "r15",
+   "to": "r14"
+  },
+  {
+   "from": "r15",
+   "to": "sp01"
+  },
+  {
+   "from": "r16",
+   "to": "r08"
+  },
+  {
+   "from": "r16",
+   "to": "r14"
+  },
+  {
+   "from": "r16",
+   "to": "r19"
+  },
+  {
+   "from": "r17",
+   "to": "r05"
+  },
+  {
+   "from": "r17",
+   "to": "r14"
+  },
+  {
+   "from": "r17",
+   "to": "r19"
+  },
+  {
+   "from": "r17",
+   "to": "sp01"
+  },
+  {
+   "from": "r18",
+   "to": "r05"
+  },
+  {
+   "from": "r18",
+   "to": "r07"
+  },
+  {
+   "from": "r18",
+   "to": "r08"
+  },
+  {
+   "from": "r18",
+   "to": "r09"
+  },
+  {
+   "from": "r18",
+   "to": "r11"
+  },
+  {
+   "from": "r18",
+   "to": "sp01"
+  },
+  {
+   "from": "r19",
+   "to": "r02"
+  },
+  {
+   "from": "r19",
+   "to": "r08"
+  },
+  {
+   "from": "r19",
+   "to": "r11"
+  },
+  {
+   "from": "r19",
+   "to": "r16"
+  },
+  {
+   "from": "r19",
+   "to": "r17"
+  },
+  {
+   "from": "r19",
+   "to": "sp01"
+  },
+  {
+   "from": "r20",
+   "to": "r05"
+  },
+  {
+   "from": "r20",
+   "to": "r11"
+  },
+  {
+   "from": "r21",
+   "to": "r08"
+  },
+  {
+   "from": "r21",
+   "to": "r09"
+  },
+  {
+   "from": "r22",
+   "to": "r13"
+  },
+  {
+   "from": "sp01",
+   "to": "r01"
+  },
+  {
+   "from": "sp01",
+   "to": "r02"
+  },
+  {
+   "from": "sp01",
+   "to": "r05"
+  },
+  {
+   "from": "sp01",
+   "to": "r06"
+  },
+  {
+   "from": "sp01",
+   "to": "r08"
+  },
+  {
+   "from": "sp01",
+   "to": "r09"
+  },
+  {
+   "from": "sp01",
+   "to": "r11"
+  },
+  {
+   "from": "sp01",
+   "to": "r12"
+  },
+  {
+   "from": "sp01",
+   "to": "r14"
+  },
+  {
+   "from": "sp01",
+   "to": "r15"
+  },
+  {
+   "from": "sp01",
+   "to": "r17"
+  },
+  {
+   "from": "sp01",
+   "to": "r18"
+  },
+  {
+   "from": "sp01",
+   "to": "r19"
+  },
+  {
+   "from": "sp01",
+   "to": "sp03"
+  },
+  {
+   "from": "sp03",
+   "to": "r01"
+  },
+  {
+   "from": "sp03",
+   "to": "r02"
+  },
+  {
+   "from": "sp03",
+   "to": "r05"
+  },
+  {
+   "from": "sp03",
+   "to": "r06"
+  },
+  {
+   "from": "sp03",
+   "to": "r08"
+  },
+  {
+   "from": "sp03",
+   "to": "r09"
+  },
+  {
+   "from": "sp03",
+   "to": "r11"
+  },
+  {
+   "from": "sp03",
+   "to": "r12"
+  },
+  {
+   "from": "sp03",
+   "to": "sp01"
+  },
+  {
+   "from": "sp04",
+   "to": "r07"
+  },
+  {
+   "from": "sp04",
+   "to": "r08"
+  },
+  {
+   "from": "sp04",
+   "to": "r11"
+  },
+  {
+   "from": "f02",
+   "to": "r05"
+  },
+  {
+   "from": "r28",
+   "to": "r06"
+  },
+  {
+   "from": "r28",
+   "to": "r12"
+  },
+  {
+   "from": "f03",
+   "to": "sp03"
+  },
+  {
+   "from": "f03",
+   "to": "sp01"
+  },
+  {
+   "from": "f03",
+   "to": "f02"
+  }
+ ]
+}
