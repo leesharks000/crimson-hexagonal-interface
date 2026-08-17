@@ -27,8 +27,12 @@ import re
 import html
 import datetime
 
-ROOT = pathlib.Path(__file__).resolve().parents[1]
-CANON = json.loads((ROOT / "hexagon_canonical.json").read_text())
+REPO = pathlib.Path(__file__).resolve().parents[1]
+# vite copies ONLY public/ into dist/. Pages generated at repo root never ship —
+# they were pushed, committed, and 404ed on every request.
+ROOT = REPO / "public"
+ROOT.mkdir(exist_ok=True)
+CANON = json.loads((REPO / "hexagon_canonical.json").read_text())
 TODAY = datetime.date.today().isoformat()
 
 ROOMS = CANON["rooms"]
