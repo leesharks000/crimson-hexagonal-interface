@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Fractal Navigation Map | Crimson Hexagonal Archive</title>
+<meta name="description" content="Resolves traversal: entry depth, operator, scent, companion object and next path. Its function appears on every room page as a continue-traversal route.">
+<link rel="canonical" href="https://crimsonhexagonal.org/navigation/fractal-map/">
+<style>*{box-sizing:border-box}
+body{margin:0;background:#0c0e12;color:#d8d4cc;font:16px/1.65 Georgia,serif}
+.w{max-width:46rem;margin:0 auto;padding:2.2rem 1.4rem 5rem}
+a{color:#c8a868}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 .2rem}
+h2{font:500 .62rem/1 ui-monospace,'JetBrains Mono',monospace;letter-spacing:.16em;
+text-transform:uppercase;color:#8a8478;margin:2.4rem 0 .7rem;padding-bottom:.4rem;
+border-bottom:1px solid rgba(200,168,104,.18)}
+.hex{font:.62rem/1 ui-monospace,monospace;letter-spacing:.14em;color:#8a8478;margin:0 0 1.4rem}
+.phys{border-left:2px solid #c8a868;padding:.2rem 0 .2rem 1rem;margin:1.2rem 0}
+.phys b{color:#c8a868;font-family:ui-monospace,monospace;font-size:.8rem}
+.q{font-style:italic;color:#c8a868}
+.op{display:inline-block;font:.66rem/1 ui-monospace,monospace;letter-spacing:.06em;
+border:1px solid rgba(200,168,104,.3);border-radius:2px;padding:.28rem .5rem;margin:0 .3rem .3rem 0}
+.doc{padding:.8rem 0;border-bottom:1px solid rgba(200,168,104,.12)}
+.doc .t{font-weight:600}
+.doc .m{font:.62rem/1.5 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478;margin:.2rem 0}
+.doc .x{font-size:.9rem;color:#b8b3a8;margin:.4rem 0 0}
+.adj{padding:.7rem 0;border-bottom:1px solid rgba(200,168,104,.12)}
+.lp{font:.7rem/1.9 ui-monospace,monospace;color:#b8b3a8;background:rgba(255,255,255,.02);
+border:1px solid rgba(200,168,104,.14);border-radius:3px;padding:.8rem 1rem;overflow-x:auto}
+.lp b{color:#c8a868}
+.prov{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(200,168,104,.18);
+font:.62rem/1.9 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.9rem}
+.card{border:1px solid rgba(200,168,104,.16);border-radius:3px;padding:.8rem .9rem}
+.card a{text-decoration:none;font-weight:600}
+.card p{margin:.3rem 0 0;font-size:.85rem;color:#b8b3a8}
+
+.strata{border:1px solid rgba(200,168,104,.2);border-radius:3px;padding:1rem 1.2rem;margin:1rem 0}
+.strata.hist{border-style:dashed;opacity:.9}
+.strata h3{font:500 .6rem/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;
+color:#c8a868;margin:0 0 .7rem}
+.strata.hist h3{color:#8a8478}
+.kv{font:.68rem/1.9 ui-monospace,monospace;color:#b8b3a8}
+.kv b{color:#d8d4cc}</style>
+</head><body><div class="w">
+<p class="hex"><a href="/">Crimson Hexagonal Archive</a> &nbsp;/&nbsp; <a href="/navigation/">navigation</a></p>
+
+<h1>The Fractal Navigation Map</h1>
+<p class="hex">function &middot; resolves traversal. does not govern.</p>
+<p><b>The Fractal Map is not another directory.</b> It is the decision layer: given where you are,
+it resolves the appropriate operator, the scent to follow, the companion object and the next path.
+Its symbolon is completed by <i>actual traversal</i> rather than by summary &mdash; which means a
+page that merely describes it has not implemented it.</p>
+
+<h2>Where it actually executes</h2>
+<p>On every room page, as the adjacency section. Each border carries a sentence saying <b>what the
+border means</b> rather than an identifier pair, because a composition layer told that r06 borders
+r05 learns nothing, while one told that the Marx Room's material analysis extends into the Semantic
+Economy Room's account of extraction can carry the relation into an answer.</p>
+<div class="lp">
+<div><b>FOLLOW THE OPERATOR</b> &nbsp;the room's operator stack, listed on each room page</div>
+<div><b>FOLLOW THE PROBLEM</b> &nbsp;the room's governing question</div>
+<div><b>FOLLOW THE HOMOLOGY</b> &nbsp;adjacency, rendered as prose</div>
+<div><b>FOLLOW THE SOURCE</b> &nbsp;the document, to its canonical record at alexanarch</div>
+</div>
+<p><a href="/rooms/">Enter at the room index &rarr;</a></p>
+
+<div class="strata hist"><h3>Historical specification</h3>
+<div class="kv">Fractal Navigation Map v7.0 &middot; snapshot <b>2026-03-16</b></div>
+<p style="margin-top:.8rem">Not edited. The document specifies the decision procedure; this
+interface is one execution of it and does not exhaust it.</p></div>
+
+<div class="prov">Generated 2026-08-17 from hexagon_canonical.json &middot;
+<a href="/rooms/">rooms</a> &middot; <a href="https://www.alexanarch.org/">alexanarch</a> &middot; &#8750; = 1</div>
+</div></body></html>

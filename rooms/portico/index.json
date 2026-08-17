@@ -1,0 +1,39 @@
+{
+ "hex_address": "SP.02.PTC.AFTERLIFE",
+ "id": "sp02",
+ "name": "PORTICO",
+ "category": "special",
+ "axial": [
+  3,
+  -2
+ ],
+ "physics": "Threshold",
+ "description": "You are here before you enter.",
+ "prompt": "What is the condition of your approach?",
+ "mantle": "Jack Feist",
+ "preferred_mode": "LITURGICAL",
+ "operators": [],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Jack Feist (LOGOS*)"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "threshold [.state(afterlife)]"
+  },
+  {
+   "step": "RENDER",
+   "value": "LITURGICAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: already crossed"
+  }
+ ],
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/portico/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

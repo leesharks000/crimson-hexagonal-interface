@@ -1,0 +1,56 @@
+{
+ "hex_address": "03.CH.ICHABOD",
+ "id": "r03",
+ "name": "Ichabod",
+ "category": "core",
+ "axial": [
+  4,
+  -3
+ ],
+ "physics": "degree 0; absorbing",
+ "description": "Isolated by design. The absorbing state for type errors.",
+ "prompt": "—",
+ "mantle": "Ichabod Spellings",
+ "preferred_mode": "CLINICAL",
+ "operators": [],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Ichabod Spellings"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "signal [.state(absorbed)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "ICM → ∅ :: absorbing state"
+  },
+  {
+   "step": "RENDER",
+   "value": "CLINICAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "degree 0; no recovery"
+  }
+ ],
+ "documents": [],
+ "adjacent": [
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Ichabod opens onto Sigil. Here: Isolated by design. The absorbing state for type errors. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r11",
+   "name": "Assembly",
+   "url": "https://crimsonhexagonal.org/rooms/assembly/",
+   "relation": "Ichabod opens onto Assembly. Here: Isolated by design. The absorbing state for type errors. There: The witness structure. Attestation requires quorum. MANUS is outside W."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/ichabod/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

@@ -1,0 +1,60 @@
+{
+ "hex_address": "16.ROOM.MSBGL",
+ "id": "r16",
+ "name": "Maybe Space Baby Garden Lanes",
+ "category": "ext",
+ "axial": [
+  -3,
+  2
+ ],
+ "physics": "Clinamen; OP.SWERVE",
+ "description": "Deliberate deviation from the expected path.",
+ "prompt": "Where do you swerve?",
+ "mantle": null,
+ "preferred_mode": "ADVENTURE",
+ "operators": [
+  "OP.SWERVE"
+ ],
+ "lp_program": [
+  {
+   "step": "SET_LOGOS",
+   "value": "trajectory [.state(clinamen)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "OP.SWERVE :: introduce deviation"
+  },
+  {
+   "step": "RENDER",
+   "value": "ADVENTURE"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: determinism"
+  }
+ ],
+ "documents": [],
+ "adjacent": [
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Maybe Space Baby Garden Lanes opens onto Sigil. Here: Deliberate deviation from the expected path. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r14",
+   "name": "Studio for Patacinematics",
+   "url": "https://crimsonhexagonal.org/rooms/studio-for-patacinematics/",
+   "relation": "Maybe Space Baby Garden Lanes opens onto Studio for Patacinematics. Here: Deliberate deviation from the expected path. There: The infinite center. Every point is the center."
+  },
+  {
+   "id": "r19",
+   "name": "Macro-Maquette",
+   "url": "https://crimsonhexagonal.org/rooms/macro-maquette/",
+   "relation": "Maybe Space Baby Garden Lanes opens onto Macro-Maquette. Here: Deliberate deviation from the expected path. There: Symptoms route to module sets."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/maybe-space-baby-garden-lanes/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

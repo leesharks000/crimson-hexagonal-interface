@@ -1,0 +1,25 @@
+{
+ "hex_address": "23.ROOM.CATULLUS",
+ "id": "r23",
+ "name": "Catullus",
+ "category": "new",
+ "axial": [
+  2,
+  -3
+ ],
+ "physics": "Lyric invective",
+ "description": "Direct address. Tenderness and invective from the same mouth.",
+ "prompt": "Whom do you address, and with what force?",
+ "mantle": null,
+ "preferred_mode": null,
+ "operators": [
+  "σ_S",
+  "κ_O"
+ ],
+ "lp_program": null,
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/catullus/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

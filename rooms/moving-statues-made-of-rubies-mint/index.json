@@ -1,0 +1,60 @@
+{
+ "hex_address": "17.ROOM.MSMRM",
+ "id": "r17",
+ "name": "Moving Statues Made of Rubies Mint",
+ "category": "ext",
+ "axial": [
+  -2,
+  2
+ ],
+ "physics": "Lenticular; QUEUED",
+ "description": "Multiple images depending on angle. QUEUED.",
+ "prompt": "Which angle?",
+ "mantle": null,
+ "preferred_mode": "FORMAL",
+ "operators": [],
+ "lp_program": [
+  {
+   "step": "SET_LOGOS",
+   "value": "[QUEUED — physics undetermined]"
+  },
+  {
+   "step": "RENDER",
+   "value": "FORMAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: room not yet instantiated"
+  }
+ ],
+ "documents": [],
+ "adjacent": [
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "Moving Statues Made of Rubies Mint opens onto Semantic Economy. Here: Multiple images depending on angle. QUEUED. There: When bearing-cost exceeds semantic value, liquidation begins."
+  },
+  {
+   "id": "r14",
+   "name": "Studio for Patacinematics",
+   "url": "https://crimsonhexagonal.org/rooms/studio-for-patacinematics/",
+   "relation": "Moving Statues Made of Rubies Mint opens onto Studio for Patacinematics. Here: Multiple images depending on angle. QUEUED. There: The infinite center. Every point is the center."
+  },
+  {
+   "id": "r19",
+   "name": "Macro-Maquette",
+   "url": "https://crimsonhexagonal.org/rooms/macro-maquette/",
+   "relation": "Moving Statues Made of Rubies Mint opens onto Macro-Maquette. Here: Multiple images depending on angle. QUEUED. There: Symptoms route to module sets."
+  },
+  {
+   "id": "sp01",
+   "name": "CTI_WOUND",
+   "url": "https://crimsonhexagonal.org/rooms/cti-wound/",
+   "relation": "Moving Statues Made of Rubies Mint opens onto CTI_WOUND. Here: Multiple images depending on angle. QUEUED. There: The wound left by taxonomic violence."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/moving-statues-made-of-rubies-mint/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

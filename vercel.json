@@ -3,8 +3,9 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!rooms|navigation|machine|assets|.*\\.).*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "_note": "The previous rewrite sent /(.*) to /index.html. Static room and navigation paths must serve their own documents; only unmatched SPA routes fall through."
 }

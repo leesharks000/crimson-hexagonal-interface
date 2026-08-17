@@ -1,0 +1,24 @@
+{
+ "hex_address": "26.ROOM.INTERNET",
+ "id": "r26",
+ "name": "The Internet",
+ "category": "ext",
+ "axial": [
+  3,
+  0
+ ],
+ "physics": "Möbius topology; σ_I (Sovereign Inhabitation); A ⊂ I ⊂ r.26 ⊂ A",
+ "description": "The internet itself, treated as a room. Contains the archive; the archive contains the room. The room that is already operational — you are inside it now. Five sub-rooms: KotKit, tiddeR, elgooG, ude.aimedacA, deeF.",
+ "prompt": "What remains available for reentry after the flashing stops?",
+ "mantle": "—",
+ "preferred_mode": "OPERATIVE",
+ "operators": [
+  "σ_I"
+ ],
+ "lp_program": [],
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/internet/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

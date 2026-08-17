@@ -1,0 +1,78 @@
+{
+ "hex_address": "19.ROOM.MACROMAQUETTE",
+ "id": "r19",
+ "name": "Macro-Maquette",
+ "category": "ext",
+ "axial": [
+  -3,
+  0
+ ],
+ "physics": "12 MPMs; OP.ROUTE",
+ "description": "Symptoms route to module sets.",
+ "prompt": "What symptom?",
+ "mantle": null,
+ "preferred_mode": "FORMAL",
+ "operators": [
+  "OP.ROUTE"
+ ],
+ "lp_program": [
+  {
+   "step": "SET_LOGOS",
+   "value": "micro_physics [.state(renormalization)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "OP.ROUTE :: map 12 MPMs"
+  },
+  {
+   "step": "RENDER",
+   "value": "FORMAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: 12 MPMs active simultaneously"
+  }
+ ],
+ "documents": [],
+ "adjacent": [
+  {
+   "id": "r02",
+   "name": "Borges",
+   "url": "https://crimsonhexagonal.org/rooms/borges/",
+   "relation": "Macro-Maquette opens onto Borges. Here: Symptoms route to module sets. There: The Library is the Hexagon seen from inside. The problem is retrieval."
+  },
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Macro-Maquette opens onto Sigil. Here: Symptoms route to module sets. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r11",
+   "name": "Assembly",
+   "url": "https://crimsonhexagonal.org/rooms/assembly/",
+   "relation": "Macro-Maquette opens onto Assembly. Here: Symptoms route to module sets. There: The witness structure. Attestation requires quorum. MANUS is outside W."
+  },
+  {
+   "id": "r16",
+   "name": "Maybe Space Baby Garden Lanes",
+   "url": "https://crimsonhexagonal.org/rooms/maybe-space-baby-garden-lanes/",
+   "relation": "Macro-Maquette opens onto Maybe Space Baby Garden Lanes. Here: Symptoms route to module sets. There: Deliberate deviation from the expected path."
+  },
+  {
+   "id": "r17",
+   "name": "Moving Statues Made of Rubies Mint",
+   "url": "https://crimsonhexagonal.org/rooms/moving-statues-made-of-rubies-mint/",
+   "relation": "Macro-Maquette opens onto Moving Statues Made of Rubies Mint. Here: Symptoms route to module sets. There: Multiple images depending on angle. QUEUED."
+  },
+  {
+   "id": "sp01",
+   "name": "CTI_WOUND",
+   "url": "https://crimsonhexagonal.org/rooms/cti-wound/",
+   "relation": "Macro-Maquette opens onto CTI_WOUND. Here: Symptoms route to module sets. There: The wound left by taxonomic violence."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/macro-maquette/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

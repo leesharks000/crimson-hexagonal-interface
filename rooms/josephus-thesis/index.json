@@ -1,0 +1,22 @@
+{
+ "hex_address": "31.ROOM.JOSEPHUS",
+ "id": "r31",
+ "name": "The Josephus Thesis",
+ "category": "new",
+ "axial": [
+  2,
+  2
+ ],
+ "physics": "RA-JP-01; the agent of destruction as agent of transmission",
+ "description": "The hypothesis that Flavius Josephus authored or substantially shaped the New Testament — making Rome the inadvertent preserver of the Word. The diagonal resolution: the enemy becomes the archivist. Displaced from r.07 Revelation when its physics changed to Ω-circuit. The most consequential speculative claim in the archive.",
+ "prompt": "Who preserved what they intended to destroy?",
+ "mantle": "—",
+ "preferred_mode": "ANALYTIC",
+ "operators": [],
+ "lp_program": [],
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/josephus-thesis/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}
