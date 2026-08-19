@@ -1,0 +1,10 @@
+{
+ "locative_key": "R:r.30",
+ "hex_address": "30.ROOM.RUBYMOOT",
+ "name": "Ruby Moot",
+ "structure_type": "ROOM/COURT",
+ "standing": "DEVELOPED",
+ "current_surface_seat": "r.30",
+ "canonical": "https://crimsonhexagonal.org/rooms/ruby-moot/",
+ "generated": "2026-08-19"
+}

@@ -1,0 +1,11 @@
+{
+ "locative_key": "X:LUNAR-ARM",
+ "hex_address": "X.SHADOW.LUNARARM",
+ "name": "Lunar Arm",
+ "structure_type": "SHADOW/INVERSE SPACE",
+ "standing": "DEVELOPED SPECIAL ARCHITECTURE",
+ "current_surface_seat": "shadow",
+ "access": "portal from X:BREAK-ROOM",
+ "canonical": "https://crimsonhexagonal.org/rooms/lunar-arm/",
+ "generated": "2026-08-19"
+}

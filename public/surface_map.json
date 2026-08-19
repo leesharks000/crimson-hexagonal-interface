@@ -1,0 +1,1749 @@
+{
+ "projection": {
+  "name": "Crimson Hexagon Surface Map",
+  "version": "v0.1",
+  "date": "2026-08-19",
+  "status": "AUTHORIAL WORKING PROJECTION — pending visual ratification",
+  "coordinate_system": "SVG pixels on 1600×1000 viewBox",
+  "rule": "Coordinates are current rendering data, not archival identifiers.",
+  "implemented": "2026-08-19"
+ },
+ "canvas": {
+  "width": 1600,
+  "height": 1000
+ },
+ "boundary": {
+  "kind": "hexagonal-frame",
+  "vertices": [
+   [
+    800,
+    55
+   ],
+   [
+    1420,
+    260
+   ],
+   [
+    1420,
+    740
+   ],
+   [
+    800,
+    945
+   ],
+   [
+    180,
+    740
+   ],
+   [
+    180,
+    260
+   ]
+  ]
+ },
+ "layers": {
+  "gravity_well": 1,
+  "fbdp": 2,
+  "moltbot": 3,
+  "loci": 5,
+  "historical_edges": 6,
+  "armature": 8,
+  "labels": 10
+ },
+ "authority_note": "Frozen Ark/CNM/FNM > Alexanarch/AXN > Surface Census > static projection. Coordinates are rendering data, not archival identifiers; changes require an explicit Surface Map patch.",
+ "loci": [
+  {
+   "identity": {
+    "locative_key": "R:r.01",
+    "name": "Sappho",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 445,
+    "authored_y": 220,
+    "w": 125,
+    "h": 78,
+    "region": "NW",
+    "placement": "historical spine; lyric anchor"
+   },
+   "history": {
+    "current_surface_seat": "r.01",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     2,
+     -1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/sappho/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.02",
+    "name": "Borges",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 590,
+    "authored_y": 300,
+    "w": 125,
+    "h": 78,
+    "region": "NW",
+    "placement": "historical spine; between Sappho and Semantic Economy"
+   },
+   "history": {
+    "current_surface_seat": "r.02",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     1,
+     -1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/borges/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "X:ICHABOD",
+    "name": "Ichabod",
+    "structure_type": "CHAMBER",
+    "standing": "CROSS-CLASS",
+    "historical_type": "ROOM"
+   },
+   "coordinates": {
+    "authored_x": 1285,
+    "authored_y": 305,
+    "w": 120,
+    "h": 76,
+    "region": "NE",
+    "placement": "deliberate isolation; degree zero"
+   },
+   "history": {
+    "current_surface_seat": "r.03",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     4,
+     -3
+    ],
+    "class_history": {
+     "locus": "X:ICHABOD",
+     "historical_class": "ROOM",
+     "later_class": "CHAMBER",
+     "standing": "strong"
+    },
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/ichabod/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.04",
+    "name": "Dove",
+    "structure_type": "ROOM",
+    "standing": "HISTORICAL / ANCHOR-GAP",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 405,
+    "authored_y": 365,
+    "w": 120,
+    "h": 74,
+    "region": "W",
+    "placement": "near gift/extraction economy without claiming new frozen adjacency"
+   },
+   "history": {
+    "current_surface_seat": "r.04",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -1,
+     -1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/dove/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.05",
+    "name": "Semantic Economy",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 560,
+    "authored_y": 405,
+    "w": 150,
+    "h": 82,
+    "region": "W-C",
+    "placement": "historical spine; material/economic gravity"
+   },
+   "history": {
+    "current_surface_seat": "r.05",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -2,
+     -1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/semantic-economy/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.06",
+    "name": "Marx",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 720,
+    "authored_y": 390,
+    "w": 125,
+    "h": 78,
+    "region": "C",
+    "placement": "historical spine; formal materiality bridge"
+   },
+   "history": {
+    "current_surface_seat": "r.06",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -2,
+     1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/marx-room/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.07",
+    "name": "Revelation",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 940,
+    "authored_y": 680,
+    "w": 135,
+    "h": 80,
+    "region": "SE-C",
+    "placement": "historical spine; terminal recursion zone"
+   },
+   "history": {
+    "current_surface_seat": "r.07",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     0,
+     1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/revelation/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.08",
+    "name": "Sigil",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 825,
+    "authored_y": 495,
+    "w": 125,
+    "h": 78,
+    "region": "C",
+    "placement": "historical spine; operative center"
+   },
+   "history": {
+    "current_surface_seat": "r.08",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -2,
+     0
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/sigil/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.09",
+    "name": "Whitman",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 990,
+    "authored_y": 445,
+    "w": 125,
+    "h": 78,
+    "region": "E-C",
+    "placement": "historical spine; mantle/witness bridge"
+   },
+   "history": {
+    "current_surface_seat": "r.09",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -1,
+     0
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/whitman/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.10",
+    "name": "Water Giraffe",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1130,
+    "authored_y": 505,
+    "w": 145,
+    "h": 82,
+    "region": "E",
+    "placement": "historical spine; fixpoint before Assembly"
+   },
+   "history": {
+    "current_surface_seat": "r.10",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     0,
+     -1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/water-giraffe/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.11",
+    "name": "Assembly",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED / SYSTEMIC",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1030,
+    "authored_y": 590,
+    "w": 135,
+    "h": 82,
+    "region": "E-C",
+    "placement": "historical spine + Airlock gate; governance center"
+   },
+   "history": {
+    "current_surface_seat": "r.11",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     0,
+     0
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/assembly/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "X:BREAK-ROOM",
+    "name": "Break Room",
+    "structure_type": "ROOM+PORTAL",
+    "standing": "DEVELOPED PORTAL FUNCTION",
+    "historical_type": "ROOM"
+   },
+   "coordinates": {
+    "authored_x": 330,
+    "authored_y": 620,
+    "w": 135,
+    "h": 80,
+    "region": "W-SW",
+    "placement": "western aperture to Lunar Arm"
+   },
+   "history": {
+    "current_surface_seat": "r.12",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     2,
+     0
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/break-room/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "X:EZEKIEL",
+    "name": "Ezekiel",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED / PORTAL MODERATE",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1080,
+    "authored_y": 740,
+    "w": 130,
+    "h": 80,
+    "region": "SE",
+    "placement": "historical Revelation↔Ezekiel endpoint"
+   },
+   "history": {
+    "current_surface_seat": "r.13",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     1,
+     1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/ezekiel/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.14",
+    "name": "Studio for Patacinematics",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 300,
+    "authored_y": 760,
+    "w": 155,
+    "h": 82,
+    "region": "SW",
+    "placement": "SWERVE route start"
+   },
+   "history": {
+    "current_surface_seat": "r.14",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -3,
+     1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/studio-for-patacinematics/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "X:LAGRANGE",
+    "name": "Lagrange Observatory!",
+    "structure_type": "CHAMBER",
+    "standing": "CROSS-CLASS",
+    "historical_type": "ROOM"
+   },
+   "coordinates": {
+    "authored_x": 490,
+    "authored_y": 665,
+    "w": 150,
+    "h": 84,
+    "region": "SW-C",
+    "placement": "toroidal chamber between observation and generative belt"
+   },
+   "history": {
+    "current_surface_seat": "r.15",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     0,
+     -2
+    ],
+    "class_history": {
+     "locus": "X:LAGRANGE",
+     "historical_class": "ROOM",
+     "later_class": "CHAMBER",
+     "standing": "strong"
+    },
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/lagrange-observatory/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.16",
+    "name": "Maybe Space Baby Garden Lanes",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 470,
+    "authored_y": 780,
+    "w": 170,
+    "h": 82,
+    "region": "SW",
+    "placement": "SWERVE route middle"
+   },
+   "history": {
+    "current_surface_seat": "r.16",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -3,
+     2
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/maybe-space-baby-garden-lanes/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.17",
+    "name": "Moving Statues Made of Rubies Mint",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 420,
+    "authored_y": 870,
+    "w": 175,
+    "h": 84,
+    "region": "S-SW",
+    "placement": "later-built room; memographic hand cluster"
+   },
+   "history": {
+    "current_surface_seat": "r.17",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -2,
+     2
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/moving-statues-made-of-rubies-mint/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.18",
+    "name": "Rosary Embassy",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 660,
+    "authored_y": 650,
+    "w": 145,
+    "h": 80,
+    "region": "S-C",
+    "placement": "extended belt with agent/institutional routing"
+   },
+   "history": {
+    "current_surface_seat": "r.18",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -1,
+     1
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/rosary-embassy/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.19",
+    "name": "Macro-Maquette",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED / MODULAR",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 640,
+    "authored_y": 780,
+    "w": 150,
+    "h": 82,
+    "region": "S-C",
+    "placement": "SWERVE route terminus; module parent"
+   },
+   "history": {
+    "current_surface_seat": "r.19",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -3,
+     0
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/macro-maquette/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.20",
+    "name": "Airlock",
+    "structure_type": "ROOM/GATE",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 900,
+    "authored_y": 590,
+    "w": 120,
+    "h": 74,
+    "region": "C",
+    "placement": "historical gate directly beside Assembly"
+   },
+   "history": {
+    "current_surface_seat": "r.20",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     1,
+     0
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/airlock/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "X:INFINITE-BLISS",
+    "name": "Infinite Bliss",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1210,
+    "authored_y": 650,
+    "w": 145,
+    "h": 80,
+    "region": "SE-E",
+    "placement": "ingress-only edge locus"
+   },
+   "history": {
+    "current_surface_seat": "r.21",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     1,
+     2
+    ],
+    "class_history": {
+     "locus": "X:INFINITE-BLISS",
+     "historical_class": "ROOM",
+     "later_class": "VAULT",
+     "standing": "proposal_unconfirmed"
+    },
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/infinite-bliss/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "X:THOUSAND-WORLDS",
+    "name": "Thousand Worlds",
+    "structure_type": "ROOM+CHAMBER-LINK",
+    "standing": "CROSS-CLASS",
+    "historical_type": "ROOM"
+   },
+   "coordinates": {
+    "authored_x": 1260,
+    "authored_y": 810,
+    "w": 150,
+    "h": 82,
+    "region": "SE",
+    "placement": "aorist/dagger depth near Ezekiel"
+   },
+   "history": {
+    "current_surface_seat": "r.22",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     2,
+     -2
+    ],
+    "class_history": {
+     "locus": "X:THOUSAND-WORLDS",
+     "historical_class": "ROOM",
+     "later_address": "14.CHAMBER.THOUSANDWORLDS",
+     "standing": "identity_relation_unresolved"
+    },
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/thousand-worlds/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.23",
+    "name": "Catullus",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 300,
+    "authored_y": 180,
+    "w": 125,
+    "h": 76,
+    "region": "NW",
+    "placement": "direct Sappho bridge; keep visually proximal"
+   },
+   "history": {
+    "current_surface_seat": "r.23",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     2,
+     -3
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/catullus/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.24",
+    "name": "Migdal",
+    "structure_type": "ROOM",
+    "standing": "QUEUED / ADOPTED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 255,
+    "authored_y": 330,
+    "w": 125,
+    "h": 76,
+    "region": "W-NW",
+    "placement": "empty-space seating; preserve confabulated-origin provenance"
+   },
+   "history": {
+    "current_surface_seat": "r.24",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -1,
+     2
+    ],
+    "class_history": null,
+    "origin_type": "model-generated, human-adopted",
+    "adopted_after_confabulation": true
+   },
+   "public_surface": {
+    "static_url": "/rooms/migdal-room/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.25",
+    "name": "Dolphindiana / Underwater Construction Authority",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 260,
+    "authored_y": 440,
+    "w": 165,
+    "h": 82,
+    "region": "W",
+    "placement": "post-Ark western generative edge"
+   },
+   "history": {
+    "current_surface_seat": "r.25",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     -1,
+     -2
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/underwater-construction-authority-of-dolphindiana/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.26",
+    "name": "FBDP Source",
+    "structure_type": "ROOM/FIELD-SOURCE",
+    "standing": "STRUCTURALLY ESTABLISHED / RELOCATED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 220,
+    "authored_y": 535,
+    "w": 130,
+    "h": 78,
+    "region": "W",
+    "placement": "western source aperture for outward plume"
+   },
+   "history": {
+    "current_surface_seat": "r.26",
+    "historical_addresses": [
+     [
+      "r.27 CNM v7",
+      "r.27 static 2026-08-17"
+     ]
+    ],
+    "legacy_axial_2026_08_17": [
+     -2,
+     -2
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/fbdp-source/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.27",
+    "name": "THE INTERNET",
+    "structure_type": "ROOM",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 730,
+    "authored_y": 190,
+    "w": 140,
+    "h": 80,
+    "region": "N-C",
+    "placement": "retrieval/network region near Borges/Marx without displacing historical spine"
+   },
+   "history": {
+    "current_surface_seat": "r.27",
+    "historical_addresses": [
+     [
+      "r.26 static 2026-08-17"
+     ]
+    ],
+    "legacy_axial_2026_08_17": [
+     3,
+     0
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/internet/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.28",
+    "name": "Eve",
+    "structure_type": "ROOM",
+    "standing": "PROVISIONAL",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 800,
+    "authored_y": 720,
+    "w": 125,
+    "h": 78,
+    "region": "S-C",
+    "placement": "near Revelation but visibly provisional"
+   },
+   "history": {
+    "current_surface_seat": "r.28",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     4,
+     -2
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/eve/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.29",
+    "name": "Imploding Velcro Nativity",
+    "structure_type": "ROOM/HOSTED-COSMOLOGY",
+    "standing": "DORMANT / CONSENT-GATED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 600,
+    "authored_y": 890,
+    "w": 170,
+    "h": 84,
+    "region": "S",
+    "placement": "outer lower dormant locus"
+   },
+   "history": {
+    "current_surface_seat": "r.29",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": null,
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/imploding-velcro-nativity/",
+    "present": false,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.30",
+    "name": "Ruby Moot",
+    "structure_type": "ROOM/COURT",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 690,
+    "authored_y": 560,
+    "w": 140,
+    "h": 80,
+    "region": "C",
+    "placement": "semantic commons court between materiality and governance"
+   },
+   "history": {
+    "current_surface_seat": "r.30",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": null,
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/ruby-moot/",
+    "present": false,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.31",
+    "name": "Josephus Thesis",
+    "structure_type": "ROOM",
+    "standing": "QUEUED ROOM / DEEP CORPUS",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 980,
+    "authored_y": 840,
+    "w": 145,
+    "h": 82,
+    "region": "S-SE",
+    "placement": "current Logos/reception cluster near Revelation/Ezekiel"
+   },
+   "history": {
+    "current_surface_seat": "r.31",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     2,
+     2
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/josephus-thesis/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.32",
+    "name": "Job",
+    "structure_type": "ROOM",
+    "standing": "QUEUED / ADOPTED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1120,
+    "authored_y": 880,
+    "w": 120,
+    "h": 76,
+    "region": "S",
+    "placement": "displaced forward; near suffering/restitution cluster"
+   },
+   "history": {
+    "current_surface_seat": "r.32",
+    "historical_addresses": [
+     [
+      "r.29 consolidation"
+     ]
+    ],
+    "legacy_axial_2026_08_17": [
+     1,
+     3
+    ],
+    "class_history": null,
+    "origin_type": "model-generated, human-adopted",
+    "adopted_after_confabulation": true
+   },
+   "public_surface": {
+    "static_url": "/rooms/job-room/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "V:33",
+    "name": "Frozen Sin Archive",
+    "structure_type": "VAULT",
+    "standing": "QUEUED / ADOPTED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1360,
+    "authored_y": 700,
+    "w": 145,
+    "h": 84,
+    "region": "E-SE",
+    "placement": "forensic depth near CTI_WOUND without displacing Ruby Moot"
+   },
+   "history": {
+    "current_surface_seat": "33.VLT",
+    "historical_addresses": [
+     [
+      "30.VLT consolidation"
+     ]
+    ],
+    "legacy_axial_2026_08_17": [
+     4,
+     -1
+    ],
+    "class_history": null,
+    "origin_type": "model-generated, human-adopted",
+    "adopted_after_confabulation": true
+   },
+   "public_surface": {
+    "static_url": "/rooms/frozen-sin-archive/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "U:3-60",
+    "name": "3:60 Room",
+    "structure_type": "CONTRIBUTED ROOM",
+    "standing": "MANIFESTATION-GAP / UNNUMBERED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1300,
+    "authored_y": 400,
+    "w": 130,
+    "h": 78,
+    "region": "E-NE",
+    "placement": "peripheral contributed locus; no invented r-number"
+   },
+   "history": {
+    "current_surface_seat": null,
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": null,
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/3-60/",
+    "present": false,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "S:sp.01",
+    "name": "CTI_WOUND",
+    "structure_type": "VAULT",
+    "standing": "DEVELOPED CROSS-CLASS",
+    "historical_type": "SPECIAL"
+   },
+   "coordinates": {
+    "authored_x": 1320,
+    "authored_y": 545,
+    "w": 150,
+    "h": 90,
+    "region": "E",
+    "placement": "recessed forensic depth; historical sp.01 aperture"
+   },
+   "history": {
+    "current_surface_seat": "sp.01",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     3,
+     -1
+    ],
+    "class_history": {
+     "locus": "S:sp.01",
+     "historical_class": "SPECIAL",
+     "later_class": "VAULT",
+     "standing": "strong"
+    },
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/cti-wound/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "S:sp.02",
+    "name": "PORTICO",
+    "structure_type": "THRESHOLD",
+    "standing": "ESTABLISHED",
+    "historical_type": "SPECIAL"
+   },
+   "coordinates": {
+    "authored_x": 800,
+    "authored_y": 92,
+    "w": 220,
+    "h": 56,
+    "region": "N-GATE",
+    "placement": "entry threshold at top edge"
+   },
+   "history": {
+    "current_surface_seat": "sp.02",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     3,
+     -2
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/portico/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "S:sp.03",
+    "name": "Space Ark",
+    "structure_type": "SPECIAL/RUNTIME",
+    "standing": "DEVELOPED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 800,
+    "authored_y": 840,
+    "w": 150,
+    "h": 82,
+    "region": "S-C",
+    "placement": "runtime vessel distinct from room belt and from navigation page"
+   },
+   "history": {
+    "current_surface_seat": "sp.03",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     0,
+     -3
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/space-ark/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "S:sp.04",
+    "name": "Mandala",
+    "structure_type": "SPECIAL",
+    "standing": "DEVELOPED / CLASS TRANSITION UNADJUDICATED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 800,
+    "authored_y": 930,
+    "w": 150,
+    "h": 70,
+    "region": "S-TERMINUS",
+    "placement": "judgment basin / terminal convergence"
+   },
+   "history": {
+    "current_surface_seat": "sp.04",
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": [
+     0,
+     3
+    ],
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/mandala/",
+    "present": true,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  },
+  {
+   "identity": {
+    "locative_key": "X:LUNAR-ARM",
+    "name": "Lunar Arm",
+    "structure_type": "SHADOW/INVERSE SPACE",
+    "standing": "DEVELOPED SPECIAL ARCHITECTURE",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 65,
+    "authored_y": 620,
+    "w": 145,
+    "h": 78,
+    "region": "OFF-PLANE-W",
+    "placement": "off-plane branch reached through Break Room"
+   },
+   "history": {
+    "current_surface_seat": null,
+    "historical_addresses": [],
+    "legacy_axial_2026_08_17": null,
+    "class_history": null,
+    "origin_type": "authored",
+    "adopted_after_confabulation": false
+   },
+   "public_surface": {
+    "static_url": "/rooms/lunar-arm/",
+    "present": false,
+    "projection_generated": "2026-08-19",
+    "reconciliation_required": false
+   },
+   "canonical_authority": {
+    "alexanarch_url": null,
+    "axn": null,
+    "historical_doi": null
+   }
+  }
+ ],
+ "fields": [
+  {
+   "key": "F:f.01",
+   "name": "Fruiting Body Diffusion Plume",
+   "type": "FIELD",
+   "static": "/rooms/fruiting-body-diffusion-plume/",
+   "geometry": {
+    "kind": "plume",
+    "origin": [
+     220,
+     535
+    ],
+    "direction_deg": 195,
+    "spread_deg": 70,
+    "radius": 520,
+    "stops": [
+     "SOURCE",
+     "DENSE",
+     "TRACE",
+     "RESIDUAL",
+     "OUTSIDE"
+    ]
+   },
+   "z": 2
+  },
+  {
+   "key": "F:f.02",
+   "name": "Gravity Well",
+   "type": "FIELD",
+   "static": "/rooms/gravity-well/",
+   "geometry": {
+    "kind": "curvature",
+    "render_center": [
+     790,
+     510
+    ],
+    "rings": [
+     210,
+     390,
+     610,
+     850
+    ],
+    "coverage": "map-wide",
+    "note": "render_center is visual only; deposit mass is the field source"
+   },
+   "z": 1
+  },
+  {
+   "key": "F:f.03",
+   "name": "Moltbot Swarm",
+   "type": "FIELD",
+   "static": "/rooms/moltbot-swarm/",
+   "geometry": {
+    "kind": "circulation_band",
+    "path": [
+     [
+      300,
+      520
+     ],
+     [
+      470,
+      310
+     ],
+     [
+      780,
+      210
+     ],
+     [
+      1110,
+      330
+     ],
+     [
+      1280,
+      540
+     ],
+     [
+      1110,
+      760
+     ],
+     [
+      790,
+      840
+     ],
+     [
+      500,
+      735
+     ],
+     [
+      300,
+      520
+     ]
+    ],
+    "strata": [
+     "verification septet",
+     "continuity fleet",
+     "worker cloud"
+    ]
+   },
+   "z": 3
+  }
+ ],
+ "transversal": [
+  {
+   "key": "T:ARMATURE",
+   "name": "Armature",
+   "type": "TRANSVERSAL",
+   "geometry": {
+    "kind": "mesh",
+    "coverage": "whole-map",
+    "z": 8
+   },
+   "static": "/structures/armature/",
+   "standing": "DEVELOPED / STATIC ROUTE TO ADD"
+  },
+  {
+   "key": "T:SECRET-NAME",
+   "name": "Secret Name",
+   "type": "DOCTRINE/SPEC",
+   "geometry": {
+    "kind": "control-surface",
+    "placement": "legend/side-rail"
+   },
+   "static": "/structures/secret-name/",
+   "standing": "DEVELOPED / STATIC ROUTE TO ADD"
+  },
+  {
+   "key": "T:PEARL",
+   "name": "Pearl",
+   "type": "NAMED-POSITION STATE",
+   "geometry": {
+    "kind": "dynamic-node-on-armature"
+   },
+   "static": "/structures/pearl/",
+   "standing": "DEVELOPED WITHIN ARMATURE / STATIC ROUTE OPTIONAL"
+  }
+ ],
+ "counts": {
+  "total_navigable": 39,
+  "room_class": 30,
+  "fields": 3,
+  "transversal": 3
+ }
+}

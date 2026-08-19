@@ -1,0 +1,67 @@
+{
+ "generated": "2026-08-19",
+ "rule": "Never erase the historical address when applying the current seat; slugs are stable, metadata moves.",
+ "lineage": [
+  {
+   "locus": "R:r.26",
+   "historical": [
+    "r.27 CNM v7",
+    "r.27 static 2026-08-17"
+   ],
+   "current": "r.26"
+  },
+  {
+   "locus": "R:r.27",
+   "historical": [
+    "r.26 static 2026-08-17"
+   ],
+   "current": "r.27"
+  },
+  {
+   "locus": "R:r.32",
+   "historical": [
+    "r.29 consolidation"
+   ],
+   "current": "r.32"
+  },
+  {
+   "locus": "V:33",
+   "historical": [
+    "30.VLT consolidation"
+   ],
+   "current": "33.VLT"
+  }
+ ],
+ "class_history": [
+  {
+   "locus": "X:ICHABOD",
+   "historical_class": "ROOM",
+   "later_class": "CHAMBER",
+   "standing": "strong"
+  },
+  {
+   "locus": "X:LAGRANGE",
+   "historical_class": "ROOM",
+   "later_class": "CHAMBER",
+   "standing": "strong"
+  },
+  {
+   "locus": "S:sp.01",
+   "historical_class": "SPECIAL",
+   "later_class": "VAULT",
+   "standing": "strong"
+  },
+  {
+   "locus": "X:INFINITE-BLISS",
+   "historical_class": "ROOM",
+   "later_class": "VAULT",
+   "standing": "proposal_unconfirmed"
+  },
+  {
+   "locus": "X:THOUSAND-WORLDS",
+   "historical_class": "ROOM",
+   "later_address": "14.CHAMBER.THOUSANDWORLDS",
+   "standing": "identity_relation_unresolved"
+  }
+ ]
+}

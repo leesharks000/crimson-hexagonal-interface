@@ -1,0 +1,1092 @@
+{
+ "projection": {
+  "name": "Crimson Hexagon Surface Map Relation Layers",
+  "version": "v0.1",
+  "date": "2026-08-19",
+  "status": "WORKING IMPLEMENTATION SPECIFICATION"
+ },
+ "layers": {
+  "R0": {
+   "name": "historical_topology",
+   "default_visibility": true,
+   "description": "Frozen Ark adjacency and explicit historical topology only."
+  },
+  "R1": {
+   "name": "current_structural",
+   "default_visibility": false,
+   "activation": "on_select_or_structure_toggle",
+   "description": "Current architectural construction relations."
+  },
+  "R2": {
+   "name": "argumentative",
+   "default_visibility": false,
+   "activation": "on_select_or_relations_trace",
+   "description": "Typed scholarly/argumentative relations with provenance and standing."
+  },
+  "R3": {
+   "name": "generated_legacy_working",
+   "default_visibility": false,
+   "activation": "historical_projection_or_trace",
+   "description": "Generated static adjacency, working hypotheses, unresolved links."
+  }
+ },
+ "constitutional_relation_types": [
+  "fulfills",
+  "derives",
+  "critiques",
+  "routes",
+  "seeds",
+  "wounds",
+  "canonizes",
+  "mirrors",
+  "shadows",
+  "extends",
+  "supersedes"
+ ],
+ "system_relation_types": [
+  "couples_with",
+  "circulates_between",
+  "suffuses",
+  "sources_from",
+  "runtime_surface_of",
+  "portal_to",
+  "class_development",
+  "historical_alias",
+  "surface_relocation",
+  "generated_context_link"
+ ],
+ "R0_edges": [
+  {
+   "source": "R:r.01",
+   "target": "R:r.02",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.02",
+   "target": "R:r.05",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.05",
+   "target": "R:r.06",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.06",
+   "target": "R:r.08",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.08",
+   "target": "R:r.09",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.09",
+   "target": "R:r.10",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.10",
+   "target": "R:r.11",
+   "type": "adjacent",
+   "direction": "directed"
+  },
+  {
+   "source": "R:r.11",
+   "target": "R:r.07",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.07",
+   "target": "X:EZEKIEL",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "X:BREAK-ROOM",
+   "target": "X:LUNAR-ARM",
+   "type": "portal_to",
+   "direction": "directed"
+  },
+  {
+   "source": "R:r.14",
+   "target": "R:r.16",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.16",
+   "target": "R:r.19",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  },
+  {
+   "source": "R:r.20",
+   "target": "R:r.11",
+   "type": "adjacent",
+   "direction": "bidirectional"
+  }
+ ],
+ "R0_constraints": {
+  "X:ICHABOD": {
+   "degree": 0,
+   "ordinary_topological_edges": []
+  },
+  "X:INFINITE-BLISS": {
+   "access": "ingress_only"
+  },
+  "S:sp.04": {
+   "rule": "receives_from_all",
+   "render": "on_select"
+  }
+ },
+ "R1_whitelist": [
+  {
+   "source": "R:r.26",
+   "target": "F:f.01",
+   "type": "seeds",
+   "display": "on_select",
+   "note": "Current Surface seat of FBDP Source grounds f.01; historical r.27 alias retained."
+  },
+  {
+   "source": "F:f.01",
+   "target": "F:f.02",
+   "type": "couples_with",
+   "direction": "bidirectional",
+   "display": "on_select"
+  },
+  {
+   "source": "F:f.03",
+   "target": "F:f.01",
+   "type": "circulates_between",
+   "display": "on_select"
+  },
+  {
+   "source": "F:f.03",
+   "target": "F:f.02",
+   "type": "circulates_between",
+   "display": "on_select"
+  },
+  {
+   "source": "S:sp.03",
+   "target": "N:ARK",
+   "type": "runtime_surface_of",
+   "display": "on_select"
+  }
+ ],
+ "class_history_as_metadata": [
+  {
+   "locus": "X:ICHABOD",
+   "historical_class": "ROOM",
+   "later_class": "CHAMBER",
+   "standing": "strong"
+  },
+  {
+   "locus": "X:LAGRANGE",
+   "historical_class": "ROOM",
+   "later_class": "CHAMBER",
+   "standing": "strong"
+  },
+  {
+   "locus": "S:sp.01",
+   "historical_class": "SPECIAL",
+   "later_class": "VAULT",
+   "standing": "strong"
+  },
+  {
+   "locus": "X:INFINITE-BLISS",
+   "historical_class": "ROOM",
+   "later_class": "VAULT",
+   "standing": "proposal_unconfirmed"
+  },
+  {
+   "locus": "X:THOUSAND-WORLDS",
+   "historical_class": "ROOM",
+   "later_address": "14.CHAMBER.THOUSANDWORLDS",
+   "standing": "identity_relation_unresolved"
+  }
+ ],
+ "address_lineage_as_metadata": [
+  {
+   "locus": "R:r.26",
+   "historical": [
+    "r.27 CNM v7",
+    "r.27 static 2026-08-17"
+   ],
+   "current": "r.26"
+  },
+  {
+   "locus": "R:r.27",
+   "historical": [
+    "r.26 static 2026-08-17"
+   ],
+   "current": "r.27"
+  },
+  {
+   "locus": "R:r.32",
+   "historical": [
+    "r.29 consolidation"
+   ],
+   "current": "r.32"
+  },
+  {
+   "locus": "V:33",
+   "historical": [
+    "30.VLT consolidation"
+   ],
+   "current": "33.VLT"
+  }
+ ],
+ "R2_initial_whitelist": [
+  {
+   "source": "R:r.23",
+   "target": "R:r.01",
+   "type": "extends",
+   "label": "Catullan extension / reception bridge",
+   "display": "on_select",
+   "standing": "developed_relation"
+  }
+ ],
+ "R2_deferred_clusters": [
+  {
+   "loci": [
+    "R:r.01",
+    "R:r.31",
+    "R:r.07"
+   ],
+   "reason": "Sappho/Josephus/Revelation relations remain claim-specific research relations; do not promote to room topology."
+  }
+ ],
+ "R3_import": {
+  "source": "crimson-hexagonal-interface/hexagon_canonical.json",
+  "snapshot": "2026-08-17",
+  "target_key": "legacy_static_relations_2026_08_17",
+  "instruction": "Copy current generated adjacency before regeneration; hide by default."
+ },
+ "critical_legacy_retypes": [
+  {
+   "source": "X:ICHABOD",
+   "target": "R:r.08",
+   "type": "generated_context_link",
+   "layer": "R3",
+   "display": "trace_only"
+  },
+  {
+   "source": "X:ICHABOD",
+   "target": "R:r.11",
+   "type": "generated_context_link",
+   "layer": "R3",
+   "display": "trace_only"
+  }
+ ],
+ "renderer": {
+  "R0": "solid",
+  "R1": "double_or_structural",
+  "R2": "thin_labeled",
+  "R3": "dotted",
+  "field": "overlay_not_ordinary_edge",
+  "provisional_modifier": "dashed",
+  "directed": "arrowhead",
+  "max_relations_on_select": 7
+ },
+ "panel_order": [
+  "historical_adjacency",
+  "current_structural",
+  "strongest_argumentative",
+  "fields_affecting_locus",
+  "class_and_address_history",
+  "legacy_generated_collapsed"
+ ],
+ "governing_rule": "Topology orients. Structure explains. Argument appears on demand. Legacy remains inspectable.",
+ "legacy_static_relations_2026_08_17": {
+  "thousand-worlds": [
+   {
+    "id": "r13",
+    "name": "Ezekiel"
+   }
+  ],
+  "maybe-space-baby-garden-lanes": [
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r14",
+    "name": "Studio for Patacinematics"
+   },
+   {
+    "id": "r19",
+    "name": "Macro-Maquette"
+   }
+  ],
+  "water-giraffe": [],
+  "borges": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r07",
+    "name": "Revelation"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r13",
+    "name": "Ezekiel"
+   },
+   {
+    "id": "r15",
+    "name": "Lagrange Observatory!"
+   },
+   {
+    "id": "r19",
+    "name": "Macro-Maquette"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   }
+  ],
+  "ichabod": [
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   }
+  ],
+  "dove": [
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   }
+  ],
+  "fruiting-body-diffusion-plume": [],
+  "lagrange-observatory": [
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r14",
+    "name": "Studio for Patacinematics"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   }
+  ],
+  "eve": [
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   }
+  ],
+  "gravity-well": [
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   }
+  ],
+  "frozen-sin-archive": [],
+  "semantic-economy": [
+   {
+    "id": "f02",
+    "name": "Gravity Well"
+   },
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r04",
+    "name": "Dove"
+   },
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "r14",
+    "name": "Studio for Patacinematics"
+   },
+   {
+    "id": "r15",
+    "name": "Lagrange Observatory!"
+   },
+   {
+    "id": "r17",
+    "name": "Moving Statues Made of Rubies Mint"
+   },
+   {
+    "id": "r18",
+    "name": "Rosary Embassy"
+   },
+   {
+    "id": "r20",
+    "name": "Airlock"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   }
+  ],
+  "job-room": [],
+  "infinite-bliss": [
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   }
+  ],
+  "moving-statues-made-of-rubies-mint": [
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r14",
+    "name": "Studio for Patacinematics"
+   },
+   {
+    "id": "r19",
+    "name": "Macro-Maquette"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   }
+  ],
+  "assembly": [
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r03",
+    "name": "Ichabod"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "r18",
+    "name": "Rosary Embassy"
+   },
+   {
+    "id": "r19",
+    "name": "Macro-Maquette"
+   },
+   {
+    "id": "r20",
+    "name": "Airlock"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   },
+   {
+    "id": "sp04",
+    "name": "Mandala"
+   }
+  ],
+  "macro-maquette": [
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r16",
+    "name": "Maybe Space Baby Garden Lanes"
+   },
+   {
+    "id": "r17",
+    "name": "Moving Statues Made of Rubies Mint"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   }
+  ],
+  "migdal-room": [],
+  "break-room": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r28",
+    "name": "Eve"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   }
+  ],
+  "revelation": [
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r13",
+    "name": "Ezekiel"
+   },
+   {
+    "id": "r18",
+    "name": "Rosary Embassy"
+   },
+   {
+    "id": "sp04",
+    "name": "Mandala"
+   }
+  ],
+  "sigil": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r03",
+    "name": "Ichabod"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r07",
+    "name": "Revelation"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "r13",
+    "name": "Ezekiel"
+   },
+   {
+    "id": "r16",
+    "name": "Maybe Space Baby Garden Lanes"
+   },
+   {
+    "id": "r18",
+    "name": "Rosary Embassy"
+   },
+   {
+    "id": "r19",
+    "name": "Macro-Maquette"
+   },
+   {
+    "id": "r21",
+    "name": "Infinite Bliss"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   },
+   {
+    "id": "sp04",
+    "name": "Mandala"
+   }
+  ],
+  "rosary-embassy": [
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r07",
+    "name": "Revelation"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   }
+  ],
+  "underwater-construction-authority-of-dolphindiana": [],
+  "space-ark": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   }
+  ],
+  "portico": [],
+  "moltbot-swarm": [
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "f02",
+    "name": "Gravity Well"
+   }
+  ],
+  "cti-wound": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "r14",
+    "name": "Studio for Patacinematics"
+   },
+   {
+    "id": "r15",
+    "name": "Lagrange Observatory!"
+   },
+   {
+    "id": "r17",
+    "name": "Moving Statues Made of Rubies Mint"
+   },
+   {
+    "id": "r18",
+    "name": "Rosary Embassy"
+   },
+   {
+    "id": "r19",
+    "name": "Macro-Maquette"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   }
+  ],
+  "josephus-thesis": [],
+  "studio-for-patacinematics": [
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r15",
+    "name": "Lagrange Observatory!"
+   },
+   {
+    "id": "r16",
+    "name": "Maybe Space Baby Garden Lanes"
+   },
+   {
+    "id": "r17",
+    "name": "Moving Statues Made of Rubies Mint"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   }
+  ],
+  "whitman": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r07",
+    "name": "Revelation"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "r13",
+    "name": "Ezekiel"
+   },
+   {
+    "id": "r14",
+    "name": "Studio for Patacinematics"
+   },
+   {
+    "id": "r15",
+    "name": "Lagrange Observatory!"
+   },
+   {
+    "id": "r18",
+    "name": "Rosary Embassy"
+   },
+   {
+    "id": "r21",
+    "name": "Infinite Bliss"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   }
+  ],
+  "sappho": [
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r06",
+    "name": "The Marx Room"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "r13",
+    "name": "Ezekiel"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   }
+  ],
+  "ezekiel": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r07",
+    "name": "Revelation"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r09",
+    "name": "Whitman"
+   },
+   {
+    "id": "r22",
+    "name": "Thousand Worlds"
+   }
+  ],
+  "airlock": [
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   }
+  ],
+  "mandala": [
+   {
+    "id": "r07",
+    "name": "Revelation"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r11",
+    "name": "Assembly"
+   }
+  ],
+  "internet": [],
+  "marx-room": [
+   {
+    "id": "r01",
+    "name": "Sappho"
+   },
+   {
+    "id": "r02",
+    "name": "Borges"
+   },
+   {
+    "id": "r05",
+    "name": "Semantic Economy"
+   },
+   {
+    "id": "r08",
+    "name": "Sigil"
+   },
+   {
+    "id": "r12",
+    "name": "Break Room"
+   },
+   {
+    "id": "r28",
+    "name": "Eve"
+   },
+   {
+    "id": "sp01",
+    "name": "CTI_WOUND"
+   },
+   {
+    "id": "sp03",
+    "name": "Space Ark"
+   }
+  ],
+  "catullus": [],
+  "fbdp-source": []
+ }
+}
