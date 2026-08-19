@@ -1,0 +1,22 @@
+{
+ "hex_address": "25.ROOM.DOLPHINDIANA",
+ "id": "r25",
+ "name": "Underwater Construction Authority of Dolphindiana",
+ "category": "new",
+ "axial": [
+  -1,
+  -2
+ ],
+ "physics": "Pressure architecture",
+ "description": "What is built below the surface.",
+ "prompt": "What do you build under pressure?",
+ "mantle": null,
+ "preferred_mode": null,
+ "operators": [],
+ "lp_program": null,
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/underwater-construction-authority-of-dolphindiana/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

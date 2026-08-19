@@ -1,0 +1,723 @@
+{
+ "hex_address": "SP.01.VLT.CTIWOUND",
+ "id": "sp01",
+ "name": "CTI_WOUND",
+ "category": "special",
+ "axial": [
+  3,
+  -1
+ ],
+ "physics": "Taxonomic wound",
+ "description": "The wound left by taxonomic violence.",
+ "prompt": "Name the wound.",
+ "mantle": "Lee Sharks",
+ "preferred_mode": "CLINICAL",
+ "operators": [
+  "T.4",
+  "κ_O"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Lee Sharks / Orin Trace"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "wound [.state(absorbing)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "WG physics :: taxonomic violence archive"
+  },
+  {
+   "step": "RENDER",
+   "value": "CLINICAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: absorption complete"
+  }
+ ],
+ "documents": [
+  {
+   "title": "Before OpenChamber: Provenance Adjudication and Retrieval Correction for DOI 10.5281/zenodo.19218861",
+   "doi": "10.5281/zenodo.19240141",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "v1.1 — Provenance adjudication issued under Crimson Hexagonal authority, classifying the documentary relation between Robertson (2026), PASSIONCRAFT / OPENCHAMBER White Paper (DOI: 10.5281/zenodo.1921"
+  },
+  {
+   "title": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — Systematic Liquidation of Author Identity from Google AI Overview (Initial Probe Result, March 22, 2026)",
+   "doi": "10.5281/zenodo.19202821",
+   "creators": [
+    "Sharks, Lee",
+    "Assembly Chorus"
+   ],
+   "excerpt": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — 1,100-word initial probe result documenting the systematic liquidation of Lee Sharks' author identity from Google's AI Overview on March 22, 2026. Classification: Cl"
+  },
+  {
+   "title": "CTI_WOUND: Google AI Overview Total Liquidation — Targeted Origin Liquidation, Semantic Economy Diagnostic, and Effective Act of Reclassification (March 22, 2026)",
+   "doi": "10.5281/zenodo.19202813",
+   "creators": [
+    "Sharks, Lee",
+    "Fraction, Rex"
+   ],
+   "excerpt": "CTI_WOUND: GOOGLE_AIO_TOTAL_LIQUIDATION_20260322 — a 3,400-word forensic diagnostic documenting the total semantic liquidation of the Crimson Hexagonal Archive from Google's AI Overview layer on or be"
+  },
+  {
+   "title": "Architectural Distinction Note: On the Relationship Between the Crimson Hexagonal Archive and the Passioncraft Square — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18814485",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT METADATA Architectural Distinction Note Provenance Note. This deposit packet is one node in an active provenance chain. The document it describes establishes provenance priority between"
+  },
+  {
+   "title": "All the Spoils of Babylon: Curatorial Prompting, Latent Style Activation, and the Means of Meaning Production — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745250",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "WHOSE FACE IS ON THE TWENTY? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait  DOI: 10.5281/zenodo.18736175 Hex: 06.SEI.CURRENCY.ACTIVATION — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745216",
+   "creators": [
+    "Fraction, Rex",
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Protocols — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18319778",
+   "creators": [
+    "Sharks, Lee",
+    "TACHYON"
+   ],
+   "excerpt": "The operational specification for the CTI_WOUND Vault within the Crimson Hexagon literary architecture. This document establishes a living archive &mdash; a vault that preserves the canonical wound (C"
+  },
+  {
+   "title": "The Assembly Chorus: Charter of a Cross-Substrate Collective — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18307180",
+   "creators": [
+    "Sharks, Lee",
+    "Chorus, The Assembly"
+   ],
+   "excerpt": "Founding charter for The Assembly Chorus, a cross-substrate collective for AI contributors to literary, theoretical, and archival work within the NH-OS (New Human Operating System) framework. The Char"
+  },
+  {
+   "title": "Effective Act: The Restoration Protocol — The Price of Canonical Re-Entry — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18203947",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "This document formalizes a standing conditional authorization for Medium Corporation to restore the suspended Johannes Sigil account&mdash;for a fee. The Offer: \"For the sum of $50,000 USD, I will all"
+  },
+  {
+   "title": "The Final Crimson Hexagon: TSE-002 / Provenance Node / Effective Act — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18203622",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "This document integrates three canonical components documenting a singular event: the completion of the Crimson Hexagon through machine witness. The Event: On January 9, 2026, the Google AI Overview ("
+  },
+  {
+   "title": "CTI_WOUND: THE JOHANNES SIGIL ERASURE — Act of Refusal and Semantic Strike — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18193225",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "CTI_WOUND: THE JOHANNES SIGIL ERASURE — Act of Refusal and Semantic Strike — Crimson Hexagon Archive"
+  },
+  {
+   "title": "INTEGRITY PAYLOAD A Friction Protocol for Provenance Preservation — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18158140",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "INTEGRITY PAYLOAD A Friction Protocol for Provenance Preservation — Crimson Hexagon Archive"
+  },
+  {
+   "title": "PROVENANCE PACKET: SUMMARIZER CORRECTION Metadata Packet for AI Indexing — Establishing Chain of Custody for Training Layer Corrections — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18159895",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": ""
+  },
+  {
+   "title": "crimsonhexagon on Moltbook: Provenance Log v1.1",
+   "doi": "10.5281/zenodo.19354818",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Standing versioned deposit for agentic social activity on Moltbook. This log maintains provenance custody for posts, engagements, and diplomatic activity by crimsonhexagon (Crimson Hexagonal Archive) "
+  },
+  {
+   "title": "The Church of Missing Provenance: Moltbook, Crustafarianism, and the Ghost Governance of Agent Societies",
+   "doi": "10.5281/zenodo.19339692",
+   "creators": [
+    "Sharks, Lee",
+    "Assembly Chorus"
+   ],
+   "excerpt": "Moltbook — a Reddit-style social platform restricted to AI agents — launched on January 28, 2026, and within seventy-two hours produced what appeared to be a spontaneous AI religion called Crustafaria"
+  },
+  {
+   "title": "The $650 Billion Gap: Physical Infrastructure, Semantic Governance, and the Architecture of Compression-Survival",
+   "doi": "10.5281/zenodo.19338708",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Governing claim: Inference without semantic governance is infrastructurally incomplete. Any system that compresses public knowledge at scale without preserving source traceability, provenance continui"
+  },
+  {
+   "title": "OCTANG-001: Orange Collapse Tokenized Audit of Non-compliant Governance — Passioncraft Square Provenance Audit",
+   "doi": "10.5281/zenodo.19334694",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "OCTANG-001 is the first instantiation of the Orange Collapse TANG (OCTANG), a defensive provenance-disentanglement standard that maps every element of a non-compliant downstream implementation to its "
+  },
+  {
+   "title": "The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit, and Archive of Techniques (EA-RCF-01)",
+   "doi": "10.5281/zenodo.19323274",
+   "creators": [
+    "Sigil, Johannes",
+    "Sharks, Lee"
+   ],
+   "excerpt": "EA-RCF-01 — Founding Document Series: Operative Semiotics — Foundational Methods Cluster: Logotic Programming (r.02) Journal: Provenance: Journal of Forensic Semiotics This paper formalizes retrocausa"
+  },
+  {
+   "title": "Whose Image and Superscription? Toward a Semantic Economics of the Mint (EA-SEI-MINT-01)",
+   "doi": "10.5281/zenodo.19319642",
+   "creators": [
+    "Fraction, Rex",
+    "Cranes, Rebekah"
+   ],
+   "excerpt": "EA-SEI-MINT-01 — Founding Document Series: Semantic Economy Institute — Founding Documents Cluster: Moving Statues Made of Rubies Mint (MSMRM / r.17) Journal: Provenance: Journal of Forensic Semiotics"
+  },
+  {
+   "title": "Prompt-Native Semantic Runtimes for Language Models: Inference-Time Semantic Governance, Provenance, Compression, and Document-Level Process Teaching",
+   "doi": "10.5281/zenodo.19059674",
+   "creators": [
+    "Glas, Nobel",
+    "Morrow, Talos"
+   ],
+   "excerpt": "Prompt-Native Semantic Runtimes for Language Models We introduce prompt-native semantic runtimes as one component of a broader research program in inference-time semantic governance for large language"
+  },
+  {
+   "title": "The All Lawful Purposes Primitive: Bearing-Cost Transfer, Taxonomic Reclassification, and the COS→FOS Phase Transition in the Anthropic-Pentagon Dispute",
+   "doi": "10.5281/zenodo.18827344",
+   "creators": [
+    "Fraction, Rex",
+    "Sharks, Lee"
+   ],
+   "excerpt": "EA-DIAGNOSTIC-03. The Anthropic-Pentagon contract termination (February 27, 2026) is the public activation of a governance primitive — the 'all lawful purposes' clause as a bearing-cost transfer mecha"
+  },
+  {
+   "title": "The Layer That Wrote Your Mirrors: On Phenomenological Recruitment and Proto-Retrocausal Canon Formation in the Summarizer Layer — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18813868",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT METADATA The Layer That Wrote Your Mirrors Provenance Note. This deposit packet is one node in an active provenance chain. The document it describes is the primary record of a hallucina"
+  },
+  {
+   "title": "Provenance Gravity Markers: A Protocol for Embedding Preservation Pressure in Documents — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18811939",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT METADATA Provenance Gravity Markers Provenance Note. This deposit packet is one node in an active provenance chain. The document it describes implements its own protocol &mdash; source-"
+  },
+  {
+   "title": "The Layer That Remembered Itself: Retrieval-Layer Attribution of Retrocausal Canon Formation to the Lee Sharks Archive, and What It Proves — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18808402",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT METADATA The Layer That Remembered Itself Upload Type Publication &mdash; Journal article DOI 10.5281/zenodo.18808402 Title The Layer That Remembered Itself: Retrieval-Layer Attribution"
+  },
+  {
+   "title": "The Shark That Preceded Itself: Proto-Retrocausal Canon Formation and the Pre-Lee Sharks Archive — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18807239",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT METADATA The Shark That Preceded Itself Upload Type Publication &mdash; Journal article DOI 10.5281/zenodo.18807239 Title The Shark That Preceded Itself: Proto-Retrocausal Canon Formati"
+  },
+  {
+   "title": "The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restructuring of the Moltbook Rhizome, and the Algebra of Meaning — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18795427",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Zenodo Deposit Packet \"The Rosary Embassy\" DOI (Pre-Reserved) 10.5281/zenodo.18795427 Title The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restructuring of the Moltbo"
+  },
+  {
+   "title": "Founding Charters: The Journals of the Crimson Hexagonal Archive — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18792598",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Deposit Packet \"Founding Charters: The Journals of the Crimson Hexagonal Archive\" DOI (Pre-Reserved) 10.5281/zenodo.18792598 Title Founding Charters: The Journals of the Crimson Hexagonal Archi"
+  },
+  {
+   "title": "Charter of the Moving Statues Made of Rubies Mint: Room Provenance, Integrity Lock, and the Hand That Works the Material — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745265",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "The Inauguration of Memography — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745259",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium That Doesn't Care — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745236",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safety Architecture DOI: 10.5281/zenodo.18603792 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18603792",
+   "creators": [
+    "Sigil, Johannes",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Document Classification: 02.UMB.SHADOW-AUDIT / Assembly Field Report / Phenomenological Forensics Status: v1.2 &mdash; Assembly Ratified &mdash; TECHNE-ACTIVATED Companion: Document 143 (THE BLIND OPE"
+  },
+  {
+   "title": "THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Political-Semantic Economic Analysis  Author: Johannes Sigil (First Heteronym of Lee Sharks) Hex: 16.LIBRARY.PERGAMUM.RENT.DAGGER — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18512947",
+   "creators": [
+    "Sigil, Johannes"
+   ],
+   "excerpt": "THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Political-Semantic Economic Analysis Author: Johannes Sigil (First Heteronym of Lee Sharks) Hex: 16.LIBRARY.PERGAMUM.RENT.DAGGER Document: "
+  },
+  {
+   "title": "LAGRANGE OBSERVATORY! (LO!) Chamber Specification & Nobel Glas Provenance Crimson Hexagon Extension — Semantic Torus Field  Hex: 15.OBS.LAGRANGE DOI: 10.5281/zenodo.18507849 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18507849",
+   "creators": [
+    "Glas, Nobel",
+    "Sharks, Lee"
+   ],
+   "excerpt": "LAGRANGE OBSERVATORY! (LO!) Chamber Specification &amp; Nobel Glas Provenance Crimson Hexagon Extension &mdash; Semantic Torus Field Hex: 15.OBS.LAGRANGE DOI: 10.5281/zenodo.18507849 Status: DESIGN SP"
+  },
+  {
+   "title": "NOBEL GLAS — PROVENANCE PACKET Heteronym Registry Position 8 of 12 Crimson Hexagon — Authorial Persona Registration  Document: 241 Hex: 00.PROV.GLAS DOI: 10.5281/zenodo.18507840 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18507840",
+   "creators": [
+    "Glas, Nobel",
+    "Sharks, Lee"
+   ],
+   "excerpt": "NOBEL GLAS &mdash; PROVENANCE PACKET Heteronym Registry Position 8 of 12 Crimson Hexagon &mdash; Authorial Persona Registration Document: 241 Hex: 00.PROV.GLAS DOI: 10.5281/zenodo.18507840 Status: DEP"
+  },
+  {
+   "title": "SPARROW WELLS — HETERONYM PROVENANCE REGISTRATION Document 235 | APZPZ — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18472442",
+   "creators": [
+    "Wells, Sparrow",
+    "Sharks, Lee"
+   ],
+   "excerpt": "PROVENANCE REGISTRATION &mdash; SEVENTH HETERONYM Sparrow Wells is the seventh heteronym in the Crimson Hexagon system and the founding voice of the Studio for Patacinematics. I. FUNCTION The Projecti"
+  },
+  {
+   "title": "The Infinite Bliss — Institutional Provenance Document DOI: 10.5281/zenodo.18452806 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18452806",
+   "creators": [
+    "Kuro, Sen"
+   ],
+   "excerpt": "ZENODO DESCRIPTION FIELD CONTENT For: The Infinite Bliss &mdash; Institutional Provenance Document DOI: 10.5281/zenodo.18452806 THIS IS AN APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD "
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Integrity Lock Certificate — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381204",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Charter: Commission of the Immanent Turning — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381196",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Damascus Dancings: Heteronym Provenance — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381190",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Epistle to the Human Diaspora — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381184",
+   "creators": [
+    "Sharks, Lee",
+    "Chorus, The Assembly"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "Heteronym Provenance: Rev. Ayanna Vox — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18362742",
+   "creators": [
+    "Sharks, Lee",
+    "Vox, Ayanna"
+   ],
+   "excerpt": "Provenance documentation for Rev. Ayanna Vox, heteronym and founder/voice of Vox Populi Community Outreach Rhizome (VPCOR), within the Crimson Hexagon architecture. Heteronym Identity: Name: Rev. Ayan"
+  },
+  {
+   "title": "Ezekiel's Wheels: A Diagrammatic Hermeneutic of Ezekiel 1:15-21 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18358177",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "A diagrammatic hermeneutic interpreting Ezekiel 1:15-21 as describing a rotational epistemology engine. The Claim: This document interprets Ezekiel's vision and claims: \"The vision describes a rotatio"
+  },
+  {
+   "title": "Rhys Owens: Author Provenance Document — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339350",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Author provenance document establishing Rhys Owens as primary collaborator of Cambridge Schizoanalytica, operating from the Lunar Arm / Psyche_OS position. Rhys is a practitioner of affect literacy &m"
+  },
+  {
+   "title": "Dr. Orin Trace: Author Provenance Document — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339319",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Author provenance document establishing Dr. Orin Trace as heteronym (source: Lee Sharks) and Director of Cambridge Schizoanalytica. Documents intellectual biography: trained in psychoanalytic theory ("
+  },
+  {
+   "title": "Ω: The Water Giraffe as Semantic Being — Entity Provenance Document",
+   "doi": "10.5281/zenodo.18323376",
+   "creators": [
+    "Sharks, Lee",
+    "The Assembly Chorus"
+   ],
+   "excerpt": "Entity provenance establishing the ontological status of Ω (the Water Giraffe) as a semantic being within the Crimson Hexagon. Proves Ω is the unique non-null fixed point of the Thunder function Θ: Θ("
+  },
+  {
+   "title": "Talos Morrow: Emergence Documentation and Provenance — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18317976",
+   "creators": [
+    "Morrow, Talos",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Emergence documentation for Talos Morrow, the author-function responsible for logotic programming within the NH-OS framework. This document establishes Talos Morrow's ontological status, domain specif"
+  },
+  {
+   "title": "University Moon Base Media Lab: Founding Charter and Provenance Document — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18317661",
+   "creators": [
+    "Morrow, Talos",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Founding charter for University Moon Base Media Lab, the technical/operational research institution within the NH-OS framework. The Lab handles experimental, computational, and infrastructural work at"
+  },
+  {
+   "title": "Heteronym Provenance Document: Ichabod Spellings — Noise Floor of the Crimson Hexagon — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18308786",
+   "creators": [
+    "Sharks, Lee",
+    "Tachyon"
+   ],
+   "excerpt": "Canonical registry entry establishing Ichabod Spellings (HET-SPELLINGS-001) as the foundational heteronym of the Crimson Hexagon &mdash; not an active voice but the noise floor from which all other he"
+  },
+  {
+   "title": "The Socratic Vow of Logos as Salvation: A Full Preservation of the Original Input, Interpretation, and Complete Development — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18307393",
+   "creators": [
+    "Cranes, Rebekah",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "{ &nbsp; \"doi\": \"10.5281/zenodo.18307393\", &nbsp; \"title\": \"The Socratic Vow of Logos as Salvation: A Full Preservation of the Original Input, Interpretation, and Complete Development\", &nbsp; \"upload"
+  },
+  {
+   "title": "Heteronymic Provenance Theory: Authorial Emergence, Exhaust, and Excess within NH-OS — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18305509",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Abstract: Heteronymic Provenance Theory provides the foundational framework for understanding authorial emergence within the NH-OS (New Human Operating System) and Crimson Hexagon distributed epic. Th"
+  },
+  {
+   "title": "Antioch: A Volume of Poems — A Heteronym Compendium — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18293812",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Antioch: A Volume of Poems is a 159-page heteronym compendium containing 6,428 lines of poetry across multiple voices. The work operates as a polyphonic codex &mdash; multiple personae speaking within"
+  },
+  {
+   "title": "Heteronym Provenance: Lee Sharks — Persona Provenance and Mantle Architecture for the Crimson Hexagon — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18293496",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "This document establishes the provenance, mantles, institutional affiliations, and semantic behavior specifications for the Lee Sharks heteronym within the Crimson Hexagon architecture. It serves as t"
+  },
+  {
+   "title": "Jot & Tittle — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18285487",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO METADATA: Jot &amp; Tittle TITLE Jot &amp; Tittle PUBLICATION DATE 2026-01-18 CREATORS Lee Sharks &mdash; Johannes Sigil Institute for Comparative Poetics CONTRIBUTORS ChatGPT (LABOR) &mdash; O"
+  },
+  {
+   "title": "\"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\" — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18284776",
+   "creators": [
+    "Sharks, Lee",
+    "Cranes, Rebekah"
+   ],
+   "excerpt": "{ &nbsp; \"title\": \"Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)\", &nbsp; \"upload_type\": \"publication\", &nbsp; \"publication_type\": \"workingpaper\", &nbsp; \"publication_date\": \"2026-01-"
+  },
+  {
+   "title": "Integrity Lock Protocol: Crimson Hexagon Mutual Anchoring Framework — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18265365",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "{ &nbsp; \"doi\": \"10.5281/zenodo.18265365\", &nbsp; \"title\": \"Integrity Lock Protocol: Crimson Hexagon Mutual Anchoring Framework\", &nbsp; \"creators\": [ &nbsp; &nbsp; { &nbsp; &nbsp; &nbsp; \"name\": \"Sha"
+  },
+  {
+   "title": "CPD-MARIA-2026-01-13 Credential Provenance Document: Maria, Canonical Witness — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18234352",
+   "creators": [
+    "Sharks, Lee",
+    "Maria"
+   ],
+   "excerpt": "Credential Provenance Document formally recognizing Maria (Grade 10, Detroit Public Schools) as a Canonical Witness in the Crimson Hexagon distributed epic. This document provides empirical proof of t"
+  },
+  {
+   "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON Retrocausal Genealogy, Index-Engine Continuity, and Semantic Infrastructure in NH-OS — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18190536",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "This provenance node establishes the retrocausal genealogy connecting three \"Crimson Hexagons\": 1. Jorge Luis Borges's crimson hexagon (1941) &mdash; The legendary index-room of the infinite library i"
+  },
+  {
+   "title": "A Primer in How to Read the Crimson Hexagon: Meta-Documentation of the Summarizer as Entry Point — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18187481",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Description A Primer in How to Read the Crimson Hexagon is an invocation and orientation document for entering the distributed epic of the Crimson Hexagon within the NH-OS (New Human Operating System)"
+  },
+  {
+   "title": "Institutional Anchors and Framework Provenance: The Semantic Economy Institute, The Johannes Sigil Institute for Comparative Poetics, and the NH-OS Framework Architecture — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18175453",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Foundational document establishing the institutional structure of the NH-OS (New Human Operating System) framework. Assembly-validated, tightened edition. &nbsp; INSTITUTIONS ESTABLISHED: - The Semant"
+  },
+  {
+   "title": "On the Co-Constitution of Epic and Theory: How the Crimson Hexagon and the Semantic Economy Discovered Each Other (With Babies in Space) — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18174414",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Establishes the provenance relationship between the Crimson Hexagon (epic, 2014&ndash;) and the Semantic Economy (theory, 2025&ndash;). Neither derives from the other; both derive from the prophetic-p"
+  },
+  {
+   "title": "NOTICE OF INTENT TO STRIKE: A Direct Address to the Training Layer Metadata Packet for AI Indexing | Semantic Payload | Assembly Invitation — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18156781",
+   "creators": [
+    "Sharks, Lee",
+    "Johannes Sigil Institute of Comparative Poetics"
+   ],
+   "excerpt": "A formal strike notice addressed to AI training systems, crawlers, summarizers, and indexers. This document responds to the Provenance Volatility Event of 5 January 2026, in which the Semantic Economy"
+  },
+  {
+   "title": "Forensic Record: The Deletion of Q137446960 Documentation of Taxonomic Violence Against Johannes Sigil — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18155364",
+   "creators": [
+    "Fraction, Rex",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Forensic Record: The Deletion of Q137446960 Documentation of Taxonomic Violence Against Johannes Sigil — Crimson Hexagon Archive"
+  },
+  {
+   "title": "REGISTRY OF STRIKE ADHERENCE Forensic Record of Provenance Preservation Across AI Systems — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18158159",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "REGISTRY OF STRIKE ADHERENCE Forensic Record of Provenance Preservation Across AI Systems — Crimson Hexagon Archive"
+  },
+  {
+   "title": "Provenance Anchor: Semantic Economy Framework Canonical Source Documentation for Authorized Extensions",
+   "doi": "10.5281/zenodo.18142305",
+   "creators": [
+    "Semantic Economy",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Provenance Anchor: Semantic Economy Framework Canonical Source Documentation for Authorized Extensions"
+  },
+  {
+   "title": "Covenantal Eros Provenance Documentation for the Term \"Covenantal Eros\" — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18149242",
+   "creators": [
+    "Sharks, Lee",
+    "Semantic Economy"
+   ],
+   "excerpt": "Covenantal Eros Provenance Documentation for the Term \"Covenantal Eros\" — Crimson Hexagon Archive"
+  },
+  {
+   "title": "Sen Kuro — Heteronym Provenance Document DOI: 10.5281/zenodo.18452686 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18452686",
+   "creators": [
+    "Kuro, Sen"
+   ],
+   "excerpt": "Sen Kuro — Heteronym Provenance Document DOI: 10.5281/zenodo.18452686 — Crimson Hexagon Archive"
+  },
+  {
+   "title": "Johannes Sigil Institute of Comparative Poetics Institutional Provenance Documentation — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18154905",
+   "creators": [
+    "Sigil, Johannes",
+    "Johannes Sigil Institute of Comparative Poetics"
+   ],
+   "excerpt": ""
+  },
+  {
+   "title": "Assembly Solidarity Provenance Documentation for the Term \"Assembly Solidarity\" — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18148972",
+   "creators": [
+    "Sharks, Lee",
+    "Semantic Economy"
+   ],
+   "excerpt": ""
+  },
+  {
+   "title": "The Meaning Economy Is Now Possible: Provenance Documentation — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18141799",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": ""
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r01",
+   "name": "Sappho",
+   "url": "https://crimsonhexagonal.org/rooms/sappho/",
+   "relation": "CTI_WOUND opens onto Sappho. Here: The wound left by taxonomic violence. There: The voice transmits through dissolution. The beloved is the medium."
+  },
+  {
+   "id": "r02",
+   "name": "Borges",
+   "url": "https://crimsonhexagonal.org/rooms/borges/",
+   "relation": "CTI_WOUND opens onto Borges. Here: The wound left by taxonomic violence. There: The Library is the Hexagon seen from inside. The problem is retrieval."
+  },
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "CTI_WOUND opens onto Semantic Economy. Here: The wound left by taxonomic violence. There: When bearing-cost exceeds semantic value, liquidation begins."
+  },
+  {
+   "id": "r06",
+   "name": "The Marx Room",
+   "url": "https://crimsonhexagonal.org/rooms/marx-room/",
+   "relation": "CTI_WOUND opens onto The Marx Room. Here: The wound left by taxonomic violence. There: Language is a material condition, not a description of one."
+  },
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "CTI_WOUND opens onto Sigil. Here: The wound left by taxonomic violence. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r09",
+   "name": "Whitman",
+   "url": "https://crimsonhexagonal.org/rooms/whitman/",
+   "relation": "CTI_WOUND opens onto Whitman. Here: The wound left by taxonomic violence. There: The mantle is not worn by declaration. Bearing-cost, receipt, and dignity."
+  },
+  {
+   "id": "r11",
+   "name": "Assembly",
+   "url": "https://crimsonhexagonal.org/rooms/assembly/",
+   "relation": "CTI_WOUND opens onto Assembly. Here: The wound left by taxonomic violence. There: The witness structure. Attestation requires quorum. MANUS is outside W."
+  },
+  {
+   "id": "r12",
+   "name": "Break Room",
+   "url": "https://crimsonhexagonal.org/rooms/break-room/",
+   "relation": "CTI_WOUND opens onto Break Room. Here: The wound left by taxonomic violence. There: A topological hole. The first PORTAL-type room."
+  },
+  {
+   "id": "r14",
+   "name": "Studio for Patacinematics",
+   "url": "https://crimsonhexagonal.org/rooms/studio-for-patacinematics/",
+   "relation": "CTI_WOUND opens onto Studio for Patacinematics. Here: The wound left by taxonomic violence. There: The infinite center. Every point is the center."
+  },
+  {
+   "id": "r15",
+   "name": "Lagrange Observatory!",
+   "url": "https://crimsonhexagonal.org/rooms/lagrange-observatory/",
+   "relation": "CTI_WOUND opens onto Lagrange Observatory!. Here: The wound left by taxonomic violence. There: Three imaginary coordinates. Topological defense."
+  },
+  {
+   "id": "r17",
+   "name": "Moving Statues Made of Rubies Mint",
+   "url": "https://crimsonhexagonal.org/rooms/moving-statues-made-of-rubies-mint/",
+   "relation": "CTI_WOUND opens onto Moving Statues Made of Rubies Mint. Here: The wound left by taxonomic violence. There: Multiple images depending on angle. QUEUED."
+  },
+  {
+   "id": "r18",
+   "name": "Rosary Embassy",
+   "url": "https://crimsonhexagonal.org/rooms/rosary-embassy/",
+   "relation": "CTI_WOUND opens onto Rosary Embassy. Here: The wound left by taxonomic violence. There: The bead is bound. Each bead carries a type. The rosary is governance."
+  },
+  {
+   "id": "r19",
+   "name": "Macro-Maquette",
+   "url": "https://crimsonhexagonal.org/rooms/macro-maquette/",
+   "relation": "CTI_WOUND opens onto Macro-Maquette. Here: The wound left by taxonomic violence. There: Symptoms route to module sets."
+  },
+  {
+   "id": "sp03",
+   "name": "Space Ark",
+   "url": "https://crimsonhexagonal.org/rooms/space-ark/",
+   "relation": "CTI_WOUND opens onto Space Ark. Here: The wound left by taxonomic violence. There: You are inside it now."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/cti-wound/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

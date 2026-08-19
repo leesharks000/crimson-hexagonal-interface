@@ -1,0 +1,22 @@
+{
+ "hex_address": "29.ROOM.JOB",
+ "id": "r29",
+ "name": "The Job Room",
+ "category": "new",
+ "axial": [
+  1,
+  3
+ ],
+ "physics": "Suffering framework; messianic reading; restitution economy",
+ "description": "Job as prototype of the Suffering Servant. The economy of suffering, unmerited loss, and deferred restitution. The room that Operative Feminism explicitly rejects as frame — but rejection requires the rejected to exist.",
+ "prompt": "What was lost, and was it repaid?",
+ "mantle": "—",
+ "preferred_mode": "LITURGICAL",
+ "operators": [],
+ "lp_program": [],
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/job-room/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

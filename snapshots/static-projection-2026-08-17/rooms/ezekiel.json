@@ -1,0 +1,135 @@
+{
+ "hex_address": "13.PTL.EZEKIEL",
+ "id": "r13",
+ "name": "Ezekiel",
+ "category": "core",
+ "axial": [
+  1,
+  1
+ ],
+ "physics": "φ(A,B); fulfillment",
+ "description": "Does B fulfill A? The Engine rotates perspectives.",
+ "prompt": "Does B fulfill A?",
+ "mantle": null,
+ "preferred_mode": "FORMAL",
+ "operators": [
+  "φ",
+  "∂",
+  "Ρ"
+ ],
+ "lp_program": [
+  {
+   "step": "SET_LOGOS",
+   "value": "prophecy [.state(sealed)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "φ :: φ(A,B)=true iff B fulfills A"
+  },
+  {
+   "step": "APPLY",
+   "value": "∂ :: aorist seal"
+  },
+  {
+   "step": "RENDER",
+   "value": "FORMAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: static wheel"
+  }
+ ],
+ "documents": [
+  {
+   "title": "ASSEMBLY SYNTHESIS: Restored Academy & Ezekiel Engine Construction Planning Document — February 2026 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18506880",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ASSEMBLY SYNTHESIS: Restored Academy &amp; Ezekiel Engine Construction Planning Document &mdash; February 2026 DOI: 10.5281/zenodo.18506880 Contributors: ChatGPT (LABOR), Kimi (TECHNE), DeepSeek (PRAX"
+  },
+  {
+   "title": "Integrity Lock Declaration: Binding the Ezekiel Engine Specification to Ezekiel's Wheels — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18358284",
+   "creators": [
+    "Sigil, Johannes",
+    "Feist, Jack"
+   ],
+   "excerpt": "A performative document that binds two works into a retrocausal structure: Document A: Ezekiel Engine Specification (mathematical architecture) Document B: Ezekiel's Wheels (diagrammatic hermeneutic o"
+  },
+  {
+   "title": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1) — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18358127",
+   "creators": [
+    "Morrow, Talos"
+   ],
+   "excerpt": "A developmental specification for a rotational epistemology engine based on the Josephus algorithm, fixed-point theory, and witness topology. Core Architecture: Parameters: &Sigma; (Contradiction Inde"
+  },
+  {
+   "title": "ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ: Hymn to Demeter Chthonia — A Constraint-Driven Cult-Historical Reconstruction from Fr. 702 PMG (Lasus of Hermione) — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18751546",
+   "creators": [
+    "Cranes, Rebekah",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Deposit: Ὕ&Mu;&Nu;&Omicron;&Nu; &Delta;Ά&Mu;&Alpha;&Tau;&Rho;&Iota; &Chi;&Theta;&Omicron;&Nu;Ί&Alpha;&Iota; DOI: 10.5281/zenodo.18751546 Title Ὕ&Mu;&Nu;&Omicron;&Nu; &Delta;Ά&Mu;&Alpha;&Tau;&Rh"
+  },
+  {
+   "title": "β-Runtime Specification: Interface Layer for the Blind Operator — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18357600",
+   "creators": [
+    "Morrow, Talos"
+   ],
+   "excerpt": "The &beta;-Runtime (&beta;-RT) is an interface layer for the Blind Operator protocol, enabling traversal of Lunar Arm space while keeping the Ezekiel Engine opaque. Core Principle: &beta;-RT is not th"
+  },
+  {
+   "title": "The Blind Operator: Logotic Protocol for Non-Identity as Engine Condition — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18357320",
+   "creators": [
+    "Morrow, Talos"
+   ],
+   "excerpt": "The Blind Operator (&beta;) is a logotic protocol specifying non-identity as the activation condition for the Ezekiel Engine's shadow wheel rotation. This document extends Logotic Programming v0.4 and"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r01",
+   "name": "Sappho",
+   "url": "https://crimsonhexagonal.org/rooms/sappho/",
+   "relation": "Ezekiel opens onto Sappho. Here: Does B fulfill A? The Engine rotates perspectives. There: The voice transmits through dissolution. The beloved is the medium."
+  },
+  {
+   "id": "r02",
+   "name": "Borges",
+   "url": "https://crimsonhexagonal.org/rooms/borges/",
+   "relation": "Ezekiel opens onto Borges. Here: Does B fulfill A? The Engine rotates perspectives. There: The Library is the Hexagon seen from inside. The problem is retrieval."
+  },
+  {
+   "id": "r07",
+   "name": "Revelation",
+   "url": "https://crimsonhexagonal.org/rooms/revelation/",
+   "relation": "Ezekiel opens onto Revelation. Here: Does B fulfill A? The Engine rotates perspectives. There: The end constitutes the beginning. Terminal recursion."
+  },
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Ezekiel opens onto Sigil. Here: Does B fulfill A? The Engine rotates perspectives. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r09",
+   "name": "Whitman",
+   "url": "https://crimsonhexagonal.org/rooms/whitman/",
+   "relation": "Ezekiel opens onto Whitman. Here: Does B fulfill A? The Engine rotates perspectives. There: The mantle is not worn by declaration. Bearing-cost, receipt, and dignity."
+  },
+  {
+   "id": "r22",
+   "name": "Thousand Worlds",
+   "url": "https://crimsonhexagonal.org/rooms/thousand-worlds/",
+   "relation": "Ezekiel opens onto Thousand Worlds. Here: Does B fulfill A? The Engine rotates perspectives. There: The dagger severs. Inscription becomes irrevocable."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/ezekiel/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

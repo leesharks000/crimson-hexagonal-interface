@@ -1,0 +1,22 @@
+{
+ "hex_address": "24.ROOM.MIGDAL",
+ "id": "r24",
+ "name": "The Migdal Room",
+ "category": "new",
+ "axial": [
+  -1,
+  2
+ ],
+ "physics": "Counter-gospel; Mandaean Canon; Haran Gawaita",
+ "description": "Mandaean Canon and counter-gospel architecture. Lunar Arm theological node. The Migdal connection. Depends on Revelation Room and Sacred Heart system.",
+ "prompt": "What gospel was written against?",
+ "mantle": "—",
+ "preferred_mode": "LITURGICAL",
+ "operators": [],
+ "lp_program": [],
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/migdal-room/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

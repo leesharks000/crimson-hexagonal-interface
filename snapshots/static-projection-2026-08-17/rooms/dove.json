@@ -1,0 +1,87 @@
+{
+ "hex_address": "04.ROOM.DOVE",
+ "id": "r04",
+ "name": "Dove",
+ "category": "core",
+ "axial": [
+  -1,
+  -1
+ ],
+ "physics": "gift preserves; extract=∅",
+ "description": "Transfer preserves. Extraction yields nothing.",
+ "prompt": "What is given without extraction?",
+ "mantle": "Rebekah Cranes",
+ "preferred_mode": "POETIC",
+ "operators": [
+  "T.3",
+  "ψ_V"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Rebekah Cranes / Ichabod Spellings"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "offering [.state(gift)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "transfer(gift) :: preserves; extract=∅"
+  },
+  {
+   "step": "RENDER",
+   "value": "POETIC"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "EMIT: extraction_detected"
+  }
+ ],
+ "documents": [
+  {
+   "title": "Computational Audial Criticism: An Applied Analysis of the Acanthian Dove Track — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18223385",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "This document demonstrates Computational Audial Criticism (CAC) &mdash; a method for interpreting audio recordings as primary literary documents &mdash; by applying it to the Acanthian Dove track, an "
+  },
+  {
+   "title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18215706",
+   "creators": [
+    "Spellings, Ichabod",
+    "Cranes, Rebekah"
+   ],
+   "excerpt": "\"The spell calls for an Acanthian dove &mdash; the blood of. How can you expect the spell to work when you use a dove that's not Acanthian?\" This document traces the survival and embodiment of a magic"
+  },
+  {
+   "title": "THE BOTANICAL EFFECTIVE ACT: Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence",
+   "doi": "10.5281/zenodo.19155999",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata for THE BOTANICAL EFFECTIVE ACT Publication Information DOI: 10.5281/zenodo.19155999 Version: v1.0 Publication Date: 2026-03-21 Language: English Publication Type: Working Paper / Theo"
+  },
+  {
+   "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
+   "doi": "10.5281/zenodo.19155610",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata for f.01 THE FRUITING BODY DIFFUSION PLUME v1.2 Publication Information DOI: 10.5281/zenodo.19155610 Version: v1.2 Publication Date: 2026-03-21 Language: English Publication Type: Work"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "Dove opens onto Semantic Economy. Here: Transfer preserves. Extraction yields nothing. There: When bearing-cost exceeds semantic value, liquidation begins."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/dove/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

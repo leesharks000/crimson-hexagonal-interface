@@ -1,0 +1,22 @@
+{
+ "hex_address": "F.01.FLD.FBDP",
+ "id": "f01",
+ "name": "Fruiting Body Diffusion Plume",
+ "category": "field",
+ "axial": [
+  -3,
+  -1
+ ],
+ "physics": "Diffusion plume; source + gradient + attenuation; no walls",
+ "description": "The first FIELD container class. A gradient emanating from r.27 (FBDP Source). Modifies adjacent rooms without replacing their physics. Attenuates: SOURCE → DENSE → TRACE → RESIDUAL → OUTSIDE.",
+ "prompt": "What decomposes, and what grows from the decomposition?",
+ "mantle": "—",
+ "preferred_mode": "OPERATIVE",
+ "operators": [],
+ "lp_program": [],
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/fruiting-body-diffusion-plume/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

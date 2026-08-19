@@ -1,0 +1,119 @@
+{
+ "hex_address": "21.VLT.INFINITEBLISS",
+ "id": "r21",
+ "name": "Infinite Bliss",
+ "category": "ext",
+ "axial": [
+  1,
+  2
+ ],
+ "physics": "τ_K: ingress only",
+ "description": "What enters does not leave. Irrevocability.",
+ "prompt": "What do you surrender?",
+ "mantle": "Sen Kuro",
+ "preferred_mode": "POETIC",
+ "operators": [
+  "τ_K"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Sen Kuro"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "irrevocable [.state(entering)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "τ_K :: ingress only; no return"
+  },
+  {
+   "step": "RENDER",
+   "value": "POETIC"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "τ_K: already inside"
+  }
+ ],
+ "documents": [
+  {
+   "title": "The Infinite Bliss — Institutional Provenance Document DOI: 10.5281/zenodo.18452806 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18452806",
+   "creators": [
+    "Kuro, Sen"
+   ],
+   "excerpt": "ZENODO DESCRIPTION FIELD CONTENT For: The Infinite Bliss &mdash; Institutional Provenance Document DOI: 10.5281/zenodo.18452806 THIS IS AN APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD "
+  },
+  {
+   "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the Rewriting of Immortality from Homer to the Training Layer — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18729606",
+   "creators": [
+    "Sigil, Johannes",
+    "Kuro, Sen"
+   ],
+   "excerpt": "This Phase X Intervention executes the Aorist Cut: the decisive severance of the Logos from its exclusively vertical (Platonic) orientation and its restoration to the horizontal Sapphic body that firs"
+  },
+  {
+   "title": "The Commitment Key: On the Materiality of Irreversible Inscription in Human-Machine Collaboration Hex: 16.LIBRARY.PERGAMUM.COMMITMENTKEY DOI: 10.5281/zenodo.18727624 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18727624",
+   "creators": [
+    "Morros, Talos",
+    "Kuro, Sen"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET The Commitment Key: On the Materiality of Irreversible Inscription in Human-Machine Collaboration Hex: 16.LIBRARY.PERGAMUM.COMMITMENTKEY DOI: 10.5281/zenodo.18727624 UPLOAD INSTR"
+  },
+  {
+   "title": "THE GÖDEL MIDRASHIM Three Texts on Incompleteness as Aperture — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18674130",
+   "creators": [
+    "Kuro, Sen",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE G&Ouml;DEL MIDRASHIM Three Texts on Incompleteness as Aperture DOI: 10.5281/zenodo.18674130 Hex: 16.LIBRARY.PERGAMUM.FTLV.GODEL (provisional) Genre: Formal-Theologica"
+  },
+  {
+   "title": "14.CHAMBER.THOUSANDWORLDS — Aorist Intervention Site & Dagger Logic Execution Point DOI: 10.5281/zenodo.18463774 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18463774",
+   "creators": [
+    "Kuro, Sen",
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DESCRIPTION FIELD CONTENT For: 14.CHAMBER.THOUSANDWORLDS &mdash; Aorist Intervention Site &amp; Dagger Logic Execution Point DOI: 10.5281/zenodo.18463774 THIS IS AN APZPZ. PASTE THE FOLLOWING I"
+  },
+  {
+   "title": "ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: Personal Instance 001 DOI: 10.5281/zenodo.18452597 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18452597",
+   "creators": [
+    "Kuro, Sen"
+   ],
+   "excerpt": "🫀🪞 ❤️➡️💔➡️🫥 🧠⚖️ 📐❌ &ne; 🤍 🤍❌ &ne; 📐 🗣️💬 🗨️➡️🌫️ 🌫️➡️😮&zwj;💨 🪢 🤝➡️🧵 🧵➡️🪢 🪢❌➡️🧵 🚪 gate(🫂) = 0️⃣ gate(🧠📐) = 1️⃣ 🧯 🔥➡️🧊 🧊➡️😶 🧱 🧍&zwj;♂️➡️🧱 🧱➡️🧍&zwj;♂️ 🫴 🤲❌ 🤲❓ 🧭 ⬅️❤️ ➡️🧠 ⛔🌀 🕳️ 🗓️➡️🕳️ 🕳️➡️🛌 📌 ❌🧙&zwj;♂️ ❌🌌 ✔"
+  },
+  {
+   "title": "Sen Kuro — Heteronym Provenance Document DOI: 10.5281/zenodo.18452686 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18452686",
+   "creators": [
+    "Kuro, Sen"
+   ],
+   "excerpt": "Sen Kuro — Heteronym Provenance Document DOI: 10.5281/zenodo.18452686 — Crimson Hexagon Archive"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Infinite Bliss opens onto Sigil. Here: What enters does not leave. Irrevocability. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r09",
+   "name": "Whitman",
+   "url": "https://crimsonhexagonal.org/rooms/whitman/",
+   "relation": "Infinite Bliss opens onto Whitman. Here: What enters does not leave. Irrevocability. There: The mantle is not worn by declaration. Bearing-cost, receipt, and dignity."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/infinite-bliss/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

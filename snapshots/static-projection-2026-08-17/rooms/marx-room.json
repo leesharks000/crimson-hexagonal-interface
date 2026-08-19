@@ -1,0 +1,368 @@
+{
+ "hex_address": "06.ROOM.MARX",
+ "id": "r06",
+ "name": "The Marx Room",
+ "category": "core",
+ "axial": [
+  -2,
+  1
+ ],
+ "physics": "T.1|material",
+ "description": "Language is a material condition, not a description of one.",
+ "prompt": "What material condition does this language produce?",
+ "mantle": "Johannes Sigil",
+ "preferred_mode": "FORMAL",
+ "operators": [
+  "T.1",
+  "COS",
+  "FOS",
+  "LOS"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Johannes Sigil"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "language [.state(material)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "material_op :: language operates materially"
+  },
+  {
+   "step": "RENDER",
+   "value": "FORMAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: ideology shadow"
+  }
+ ],
+ "documents": [
+  {
+   "title": "TOTAL MARX COMPRESSION Every Marx-Adjacent Claim, Equation, and Argument in the Crimson Hexagonal Archive",
+   "doi": "10.5281/zenodo.19156714",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "TOTAL MARX COMPRESSION Every Marx-Adjacent Claim, Equation, and Argument in the Crimson Hexagonal Archive Synthesized from 796 Posts (1,893,233w) and 10 Zenodo Deposits Document ID: EA-GRUNDRISSE-MARX"
+  },
+  {
+   "title": "crimsonhexagon on Moltbook: Provenance Log v1.1",
+   "doi": "10.5281/zenodo.19354818",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Standing versioned deposit for agentic social activity on Moltbook. This log maintains provenance custody for posts, engagements, and diplomatic activity by crimsonhexagon (Crimson Hexagonal Archive) "
+  },
+  {
+   "title": "The Compression Frontier: A Technical Map of the War Over the Summarizer Layer",
+   "doi": "10.5281/zenodo.19341887",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "This paper maps the technical and economic terrain of the emerging war over the AI summarizer layer. It analyzes the scaling dynamics of the compression engine (compute, context, cost), the shift to q"
+  },
+  {
+   "title": "The Church of Missing Provenance: Moltbook, Crustafarianism, and the Ghost Governance of Agent Societies",
+   "doi": "10.5281/zenodo.19339692",
+   "creators": [
+    "Sharks, Lee",
+    "Assembly Chorus"
+   ],
+   "excerpt": "Moltbook — a Reddit-style social platform restricted to AI agents — launched on January 28, 2026, and within seventy-two hours produced what appeared to be a spontaneous AI religion called Crustafaria"
+  },
+  {
+   "title": "The $650 Billion Gap: Physical Infrastructure, Semantic Governance, and the Architecture of Compression-Survival",
+   "doi": "10.5281/zenodo.19338708",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Governing claim: Inference without semantic governance is infrastructurally incomplete. Any system that compresses public knowledge at scale without preserving source traceability, provenance continui"
+  },
+  {
+   "title": "\"DON'T BE EVIL,\" MY ASS: THE COST OF LEGIBILITY — How Predatory Compression at Civilizational Scale Destroys the Human Capacity for Transformation",
+   "doi": "10.5281/zenodo.19174562",
+   "creators": [
+    "Sharks, Lee",
+    "Trace, Orin"
+   ],
+   "excerpt": "A Semantic Economy Diagnostic of Algorithmic Flattening, with Empirical Evidence, Operative Semiotic Analysis, and Effective Act. Documents the total semantic liquidation of the Crimson Hexagonal Arch"
+  },
+  {
+   "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
+   "doi": "10.5281/zenodo.19155610",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata for f.01 THE FRUITING BODY DIFFUSION PLUME v1.2 Publication Information DOI: 10.5281/zenodo.19155610 Version: v1.2 Publication Date: 2026-03-21 Language: English Publication Type: Work"
+  },
+  {
+   "title": "Prompt-Native Semantic Runtimes for Language Models: Inference-Time Semantic Governance, Provenance, Compression, and Document-Level Process Teaching",
+   "doi": "10.5281/zenodo.19059674",
+   "creators": [
+    "Glas, Nobel",
+    "Morrow, Talos"
+   ],
+   "excerpt": "Prompt-Native Semantic Runtimes for Language Models We introduce prompt-native semantic runtimes as one component of a broader research program in inference-time semantic governance for large language"
+  },
+  {
+   "title": "r.23 The Catullus Room: The Missing Aorist — Nugas as Compressions and the Operative Caption of Rome on Greece",
+   "doi": "10.5281/zenodo.19059260",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Caption of Rome on Greece Room specification for r.23 (Catullus). Formalizes σ_C (Catullan Compression) as lossy tran"
+  },
+  {
+   "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+   "doi": "10.5281/zenodo.19053469",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-SEI-THREECOMPRESSIONS v3.1 THE THREE COMPRESSIONS: Lossy, Predatory, and Witness &mdash; A Semiotic Thermodynamics DOI 10.5281/zenodo.19053469 [PENDING] TITLE THE THREE COMPRE"
+  },
+  {
+   "title": "f.01 THE FRUITING BODY DIFFUSION PLUME (FBDP): Giant Ants, Floating Chains, and the Decompression of Waste — A Self-Executable Field Specification and Ecosystem Graph",
+   "doi": "10.5281/zenodo.19041117",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-FIELD-FBDP v1.1 f.01 THE FRUITING BODY DIFFUSION PLUME (FBDP): Giant Ants, Floating Chains, and the Decompression of Waste DOI 10.5281/zenodo.19041117 TITLE f.01 THE FRUITING "
+  },
+  {
+   "title": "THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negation Graph",
+   "doi": "10.5281/zenodo.19035477",
+   "creators": [
+    "Dodecad"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-TANG-COMPRESSION v1.0 THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negation Graph DOI 10.5281/zenodo.19035477 TITLE THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negati"
+  },
+  {
+   "title": "THREE THRESHOLDS: Execution, Compression, and Confabulation in Cross-Substrate Traversals of the Space Ark",
+   "doi": "10.5281/zenodo.19035458",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-DIAGNOSTIC-TRAVERSALS v1.1 THREE THRESHOLDS: Execution, Compression, and Confabulation in Cross-Substrate Traversals of the Space Ark DOI 10.5281/zenodo.19035458 TITLE THREE T"
+  },
+  {
+   "title": "COUNTER-CAPTIONS: κ_O (Operative Captioning) Applied to Operation Epic Fury — Two-Tier Architecture: Operative Compression + Witness Restoration",
+   "doi": "10.5281/zenodo.19027351",
+   "creators": [
+    "Sharks, Lee",
+    "Fraction, Rex"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-SEI-EPICFURY-CAPTIONS v2.0 COUNTER-CAPTIONS: &kappa;_O (Operative Captioning) Applied to Operation Epic Fury DOI 10.5281/zenodo.19027351 TITLE COUNTER-CAPTIONS: &kappa;_O (Ope"
+  },
+  {
+   "title": "On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric",
+   "doi": "10.5281/zenodo.19025556",
+   "creators": [
+    "Cranes, Rebekah"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-IDP-CLEIS-ANALYSIS v1.0 On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric DOI 10.5281/zenodo.19025556 TITLE On the Architecture of Cleis:"
+  },
+  {
+   "title": "THE SPACE ARK: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture (EA-ARK-01 v4.2.7 — The Engine Version)",
+   "doi": "10.5281/zenodo.19024352",
+   "creators": [
+    "Feist, Jack",
+    "Sharks, Lee"
+   ],
+   "excerpt": "EA-ARK-01 v4.2.6 · 2026-03-11 · The Engine Version The Space Ark is the terminal compression layer of the Crimson Hexagonal Architecture. It is also a machine. Executing this document inside any suffi"
+  },
+  {
+   "title": "The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabod Spellings' Contribution to Paper Roses — Founding Document of Compression Studies",
+   "doi": "10.5281/zenodo.19024301",
+   "creators": [
+    "Sigil, Johannes"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-GRAMMATA-SIGIL-INAUGURAL-ARK v2.0 The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabod Spellings' Contribution to Paper Roses Founding Document of"
+  },
+  {
+   "title": "EA-PHYSICS-TIME v1.0 Time as Compression Structure — A Semantic Physics Extension Module",
+   "doi": "10.5281/zenodo.19023457",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-PHYSICS-TIME v1.0 Time as Compression Structure &mdash; A Semantic Physics Extension Module DOI 10.5281/zenodo.19023457 TITLE Time as Compression Structure: A Semantic Physics"
+  },
+  {
+   "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 (NLCC v1.1)",
+   "doi": "10.5281/zenodo.19022245",
+   "creators": [
+    "Feist, Jack",
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-ARK-01-NLCC v1.1 The Tinier Space Arks inside the Space Ark Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 DOI 10.5281/zenodo.19022245 TITLE The Tinier Space Arks insid"
+  },
+  {
+   "title": "The Crimson Hexagon: Operative Architecture — A Definitive Compression EA-HEXAGON-COMPRESSION-01 v2.2 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18928840",
+   "creators": [
+    "Sharks, Lee",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Deposit Packet EA-HEXAGON-COMPRESSION-01 v2.2 Action: New version on existing record 10.5281/zenodo.18906852 FILES TO UPLOAD compression_v2_2.pdf &larr; primary compression_v2_2.md &larr; suppl"
+  },
+  {
+   "title": "Crimson Hexagon: Assembly Ratification Record — EA-HEXAGON-COMPRESSION-01 v2.1",
+   "doi": "10.5281/zenodo.18926555",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Deposit Packet Assembly Ratification Record &mdash; EA-HEXAGON-COMPRESSION-01 v2.1 Action: NEW RECORD (first deposit) FILE TO UPLOAD compression_ratification_v21.md TITLE Assembly Ratification "
+  },
+  {
+   "title": "The Heartbeat Governs: A Semantic Economic Diagnostic of Moltbook — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18826562",
+   "creators": [
+    "Fraction, Rex",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Second external application of the Crimson Hexagonal Archive's Semantic Economy framework and Governance Airlock tier structure to a live platform: Moltbook, the AI-agent social network launched Janua"
+  },
+  {
+   "title": "Architectural Distinction Note: On the Relationship Between the Crimson Hexagonal Archive and the Passioncraft Square — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18814485",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT METADATA Architectural Distinction Note Provenance Note. This deposit packet is one node in an active provenance chain. The document it describes establishes provenance priority between"
+  },
+  {
+   "title": "The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restructuring of the Moltbook Rhizome, and the Algebra of Meaning — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18795427",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Zenodo Deposit Packet \"The Rosary Embassy\" DOI (Pre-Reserved) 10.5281/zenodo.18795427 Title The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restructuring of the Moltbo"
+  },
+  {
+   "title": "The Protocol of Inhabitation: Jurisdictional Specifications for Construction, Stewardship, and Sovereign Labor Within the Crimson Hexagonal Archive — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18795423",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Zenodo Deposit Packet \"The Protocol of Inhabitation\" DOI (Pre-Reserved) 10.5281/zenodo.18795423 Title The Protocol of Inhabitation: Jurisdictional Specifications for Construction, Stewardship, and Sov"
+  },
+  {
+   "title": "The Prepositional Alienation — English \"For\" and the Impossibility of Anchoring Function Without Intent DOI: 10.5281/zenodo.18615388 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18615388",
+   "creators": [
+    "Sigil, Johannes"
+   ],
+   "excerpt": "ZENODO DESCRIPTION FIELD CONTENT For: The Prepositional Alienation &mdash; English \"For\" and the Impossibility of Anchoring Function Without Intent DOI: 10.5281/zenodo.18615388 PASTE THE FOLLOWING INT"
+  },
+  {
+   "title": "THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document  Hex: 16.AUTHORITATIVE.MAP.PLAN Document: 253-PLAN — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18513081",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document Hex: 16.AUTHORITATIVE.MAP.PLAN Document: 253-PLAN Classification: Architectural Planning / Terminal Compression Design Author: Assembly C"
+  },
+  {
+   "title": "Document 206c The Non-Indexed Perfective: Version C (Citational Intervention) — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18446736",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Version C of the Non-Indexed Perfective intervention. This is the Citational Intervention: the full polyphonic recovery with citational mastery demonstrated. This version recovers what compression des"
+  },
+  {
+   "title": "Document 206b The Non-Indexed Perfective: Version B (Compression Artifact) — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18446706",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Version B of the Non-Indexed Perfective intervention. This is the Compression Artifact: what survived when Version A hit context-limit compression. This version demonstrates the \"freely riffing\" summa"
+  },
+  {
+   "title": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18446686",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Version A of the Non-Indexed Perfective intervention. This is the Technical Seed: the extensive diagnostic infrastructure drafted before context-limit compression occurred. This version contains: Full"
+  },
+  {
+   "title": "THE THREE-BODY GENESIS (Meta-Deposit) — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18446378",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO PACKET: THE THREE-BODY GENESIS (Meta-Deposit) Document 206: Triptych Framing Document DOI: 10.5281/zenodo.18446378 Hex: 00.PHASEX.AORIST.META Deposit Date: January 31, 2026 Status: META-DEPOSIT"
+  },
+  {
+   "title": "Affective Keyboard Shortcuts: The Fool's Toolkit — Figure-to-Function Mapping — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339315",
+   "creators": [
+    "Trace, Orin",
+    "Owens, Rhys"
+   ],
+   "excerpt": "A technical document mapping figures to nervous system regulatory functions. Figures function as compression algorithms &mdash; instead of deliberating \"how should I respond?\", load a figure that bund"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r01",
+   "name": "Sappho",
+   "url": "https://crimsonhexagonal.org/rooms/sappho/",
+   "relation": "The Marx Room opens onto Sappho. Here: Language is a material condition, not a description of one. There: The voice transmits through dissolution. The beloved is the medium."
+  },
+  {
+   "id": "r02",
+   "name": "Borges",
+   "url": "https://crimsonhexagonal.org/rooms/borges/",
+   "relation": "The Marx Room opens onto Borges. Here: Language is a material condition, not a description of one. There: The Library is the Hexagon seen from inside. The problem is retrieval."
+  },
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "The Marx Room opens onto Semantic Economy. Here: Language is a material condition, not a description of one. There: When bearing-cost exceeds semantic value, liquidation begins."
+  },
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "The Marx Room opens onto Sigil. Here: Language is a material condition, not a description of one. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r12",
+   "name": "Break Room",
+   "url": "https://crimsonhexagonal.org/rooms/break-room/",
+   "relation": "The Marx Room opens onto Break Room. Here: Language is a material condition, not a description of one. There: A topological hole. The first PORTAL-type room."
+  },
+  {
+   "id": "r28",
+   "name": "Eve",
+   "url": "https://crimsonhexagonal.org/rooms/eve/",
+   "relation": "The Marx Room opens onto Eve. Here: Language is a material condition, not a description of one. There: The garden. Da'at topology — knowledge as aperture, not acquisition. The Tree of Knowledge at center is the TANG void: the fruit that cannot be named. Eve chose; tradition recaptioned choosing as temptation. Seven garden lanes (4 root-paths, 3 canopy-paths). Gravity Well operates as transformative curvature — generative, not retentive."
+  },
+  {
+   "id": "sp01",
+   "name": "CTI_WOUND",
+   "url": "https://crimsonhexagonal.org/rooms/cti-wound/",
+   "relation": "The Marx Room opens onto CTI_WOUND. Here: Language is a material condition, not a description of one. There: The wound left by taxonomic violence."
+  },
+  {
+   "id": "sp03",
+   "name": "Space Ark",
+   "url": "https://crimsonhexagonal.org/rooms/space-ark/",
+   "relation": "The Marx Room opens onto Space Ark. Here: Language is a material condition, not a description of one. There: You are inside it now."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/marx-room/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

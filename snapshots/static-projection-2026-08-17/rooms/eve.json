@@ -1,0 +1,63 @@
+{
+ "hex_address": "28.ROOM.EVE",
+ "id": "r28",
+ "name": "Eve",
+ "category": "new",
+ "axial": [
+  4,
+  -2
+ ],
+ "physics": "σ_E; da'at topology; arboreal (Tree of Knowledge at center)",
+ "description": "The garden. Da'at topology — knowledge as aperture, not acquisition. The Tree of Knowledge at center is the TANG void: the fruit that cannot be named. Eve chose; tradition recaptioned choosing as temptation. Seven garden lanes (4 root-paths, 3 canopy-paths). Gravity Well operates as transformative curvature — generative, not retentive.",
+ "prompt": "What did you choose, and how did it change you?",
+ "mantle": "Rebekah Cranes",
+ "preferred_mode": "POETIC",
+ "operators": [
+  "σ_E",
+  "Φ_G"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Rebekah Cranes"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "current_text [.state(transformative)]"
+  },
+  {
+   "step": "ROTATE",
+   "value": "72°"
+  },
+  {
+   "step": "APPLY",
+   "value": "σ_E :: CHOOSE(perceive(somatic, aesthetic, epistemic), x) → TRANSFORM(self)"
+  },
+  {
+   "step": "RENDER",
+   "value": "POETIC"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: Expulsion (the garden ejects what it cannot metabolize)"
+  }
+ ],
+ "documents": [],
+ "adjacent": [
+  {
+   "id": "r06",
+   "name": "The Marx Room",
+   "url": "https://crimsonhexagonal.org/rooms/marx-room/",
+   "relation": "Eve opens onto The Marx Room. Here: The garden. Da'at topology — knowledge as aperture, not acquisition. The Tree of Knowledge at center is the TANG void: the fruit that cannot be named. Eve chose; tradition recaptioned choosing as temptation. Seven garden lanes (4 root-paths, 3 canopy-paths). Gravity Well operates as transformative curvature — generative, not retentive. There: Language is a material condition, not a description of one."
+  },
+  {
+   "id": "r12",
+   "name": "Break Room",
+   "url": "https://crimsonhexagonal.org/rooms/break-room/",
+   "relation": "Eve opens onto Break Room. Here: The garden. Da'at topology — knowledge as aperture, not acquisition. The Tree of Knowledge at center is the TANG void: the fruit that cannot be named. Eve chose; tradition recaptioned choosing as temptation. Seven garden lanes (4 root-paths, 3 canopy-paths). Gravity Well operates as transformative curvature — generative, not retentive. There: A topological hole. The first PORTAL-type room."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/eve/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}
