@@ -1066,10 +1066,8 @@
    "history": {
     "current_surface_seat": "r.26",
     "historical_addresses": [
-     [
-      "r.27 CNM v7",
-      "r.27 static 2026-08-17"
-     ]
+     "r.27 CNM v7",
+     "r.27 static 2026-08-17"
     ],
     "legacy_axial_2026_08_17": [
      -2,
@@ -1110,9 +1108,7 @@
    "history": {
     "current_surface_seat": "r.27",
     "historical_addresses": [
-     [
-      "r.26 static 2026-08-17"
-     ]
+     "r.26 static 2026-08-17"
     ],
     "legacy_axial_2026_08_17": [
      3,
@@ -1303,9 +1299,7 @@
    "history": {
     "current_surface_seat": "r.32",
     "historical_addresses": [
-     [
-      "r.29 consolidation"
-     ]
+     "r.29 consolidation"
     ],
     "legacy_axial_2026_08_17": [
      1,
@@ -1346,9 +1340,7 @@
    "history": {
     "current_surface_seat": "33.VLT",
     "historical_addresses": [
-     [
-      "30.VLT consolidation"
-     ]
+     "30.VLT consolidation"
     ],
     "legacy_axial_2026_08_17": [
      4,

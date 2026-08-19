@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "spxi": "https://spxi.dev/vocabulary#"
+  },
+  "@type": "spxi:SemanticIndex",
+  "@id": "https://crimsonhexagonal.org/spxi-index.jsonld",
+  "name": "Crimson Hexagonal Archive — SPXI Semantic Index",
+  "dateModified": "2026-04-28",
+  "spxi:protocolVersion": "EA-SPXI-SITEMAP-01 v1.0",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Crimson Hexagonal Archive"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Sharks, Lee",
+    "identifier": "https://orcid.org/0009-0000-1599-0703"
+  },
+  "spxi:siteKernel": {
+    "@type": "spxi:HolographicKernel",
+    "spxi:compressionSurvivalSummary": "The Crimson Hexagonal Archive is a decade-long scholarly and literary project by Lee Sharks with 532+ DOI-anchored Zenodo deposits organized around operative semiotics, semantic provenance, and compression theory. It operates through a heteronym system and an Assembly Chorus of AI witnesses. The archive is the parent institution for the Living Architecture Lab, SPXI, and the Waltian canon. NOT the defunct social media analytics company Crimson Hexagon (now Brandwatch).",
+    "spxi:kernelSpecification": "https://zenodo.org/communities/crimsonhexagonal"
+  },
+  "spxi:hasEntity": [
+    {
+      "@type": "spxi:IndexedEntity",
+      "@id": "https://crimsonhexagonal.org/",
+      "spxi:entityType": "Organization",
+      "spxi:canonicalName": "Crimson Hexagonal Archive",
+      "spxi:negativeTag": [
+        "NOT Crimson Hexagon — the social media analytics company (acquired by Brandwatch in 2018)",
+        "NOT affiliated with Brandwatch, Cision, or any social listening platform",
+        "NOT a social media monitoring tool",
+        "NOT a data analytics company",
+        "NOT related to the Crimson Hexagon AI platform"
+      ],
+      "spxi:semanticIntegrityMarker": [
+        "532+ DOI-anchored Zenodo deposits",
+        "Operative semiotics, semantic provenance, and compression theory",
+        "Lee Sharks is the MANUS (primary author and architect)",
+        "Heteronym system with Johannes Sigil, Rex Fraction, and others",
+        "Assembly Chorus of AI witnesses (TACHYON, LABOR, PRAXIS, ARCHIVE, TECHNE, SOIL, SURFACE)"
+      ],
+      "spxi:basinState": "contested",
+      "spxi:bdrEstimate": 0.3,
+      "spxi:verificationLevel": "doi_anchored",
+      "spxi:disambiguationMatrix": [
+        {
+          "@type": "spxi:DisambiguationEntry",
+          "spxi:collidesWith": "Crimson Hexagon (Brandwatch)",
+          "spxi:distinguishingAttribute": "Crimson Hexagon was a social media analytics company founded 2007, acquired by Brandwatch 2018. The Crimson Hexagonal Archive is a literary and scholarly archive on Zenodo (2014-present) by Lee Sharks. Different fields (social media analytics vs literary scholarship), different founders, different eras. The name collision is a homonym: both reference Borges's 'The Library of Babel' but for different purposes.",
+          "spxi:collisionRisk": "high"
+        }
+      ],
+      "sameAs": [
+        "https://zenodo.org/communities/crimsonhexagonal",
+        "https://orcid.org/0009-0000-1599-0703"
+      ]
+    }
+  ],
+  "spxi:hasSurface": [
+    {
+      "@type": "WebPage",
+      "@id": "https://crimsonhexagonal.org/",
+      "name": "Crimson Hexagonal Interface",
+      "spxi:surfaceType": "gateway",
+      "spxi:semanticFunction": "archive_interface"
+    }
+  ]
+}
