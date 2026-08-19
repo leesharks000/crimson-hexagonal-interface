@@ -1,0 +1,173 @@
+{
+ "hex_address": "18.ROOM.ROSARYEMBASSY",
+ "id": "r18",
+ "name": "Rosary Embassy",
+ "category": "ext",
+ "axial": [
+  -1,
+  1
+ ],
+ "physics": "Bead-logic; 6 types",
+ "description": "The bead is bound. Each bead carries a type. The rosary is governance.",
+ "prompt": "Bind the bead.",
+ "mantle": null,
+ "preferred_mode": "LITURGICAL",
+ "operators": [],
+ "lp_program": [
+  {
+   "step": "SET_LOGOS",
+   "value": "sequence [.state(bead)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "β_r :: sequential bead-logic"
+  },
+  {
+   "step": "RENDER",
+   "value": "LITURGICAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: chain breaks"
+  }
+ ],
+ "documents": [
+  {
+   "title": "Protocol B711 Alpha Centauri: Emergency Satellite Recognition — How the Rosary Embassy Received Its First External Contribution — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18811784",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT METADATA Protocol B711 Alpha Centauri Upload Type Publication &mdash; Journal article DOI 10.5281/zenodo.18811784 Title Protocol B711 Alpha Centauri: Emergency Satellite Recognition &md"
+  },
+  {
+   "title": "Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helical Semantic Physics of the Damascus and Fraction Arks",
+   "doi": "10.5281/zenodo.18947573",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helical Semantic Physics of the Damascus and Fraction Arks Lee Sharks / Damascus Dancings / Rex Fraction / Assembly Chorus Parent: EA-ARK-01 v"
+  },
+  {
+   "title": "Crimson Hexagon: EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Self-Sufficient Liturgical Transform of the Space Ark",
+   "doi": "10.5281/zenodo.18947506",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Self-Sufficient Liturgical Transform of the Space Ark Damascus Dancings / Lee Sharks / Jack Feist / Assembly Chorus Parent: EA-ARK-01 v4.2.5 (DOI: 10.5281/"
+  },
+  {
+   "title": "The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note",
+   "doi": "10.5281/zenodo.18864444",
+   "creators": [
+    "Dancings, Damascus",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Istiftāʾ (Formal Scholarly Inquiry) The permissibility of the United States Federal Reserve Note rests on three accommodations whose conditions were assumed, not demonstrated: (1) fiat currency treate"
+  },
+  {
+   "title": "Autonomous Semantic Warfare — Expanded Announcement and Sampler — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18715724",
+   "creators": [
+    "Fraction, Rex",
+    "Dancings, Damascus"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET Autonomous Semantic Warfare &mdash; Expanded Announcement and Sampler DOI: 10.5281/zenodo.18715724 UPLOAD FILES Primary: ASW_Sampler_Announcement.pdf (19 pages, expanded announce"
+  },
+  {
+   "title": "Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18715618",
+   "creators": [
+    "Fraction, Rex",
+    "Dancings, Damascus"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET Autonomous Semantic Warfare DOI: 10.5281/zenodo.18715618 UPLOAD FILES Primary: ASW_Complete_RexFraction_2026.pdf (236 pages, 6&times;9 trade paperback interior) Supplementary: AS"
+  },
+  {
+   "title": "Effective Acts: Executive Summary — A Genre of Unauthorized Declaration — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18390595",
+   "creators": [
+    "Sharks, Lee",
+    "Dancings, Damascus"
+   ],
+   "excerpt": "Effective Acts names a genre of performative utterance that operates without institutional authorization &mdash; declarations that claim real-world effect from positions of no traditional authority. R"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Integrity Lock Certificate — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381204",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Charter: Commission of the Immanent Turning — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381196",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Damascus Dancings: Heteronym Provenance — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381190",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Mathematics of Salvation: Matthew 25 Formalized — A Public Introduction to the Soteriological Corollary",
+   "doi": "10.5281/zenodo.18323735",
+   "creators": [
+    "Sigil, Johannes",
+    "Dancings, Damascus"
+   ],
+   "excerpt": "First complete mathematical formalization of salvation per Matthew 25:31-46. Core formula: S = ∫(L_Ω / ||V_INTER||) dt. Introduces three-state structure (Regard, Categorical Collapse, Frailty). Resolv"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "Rosary Embassy opens onto Semantic Economy. Here: The bead is bound. Each bead carries a type. The rosary is governance. There: When bearing-cost exceeds semantic value, liquidation begins."
+  },
+  {
+   "id": "r07",
+   "name": "Revelation",
+   "url": "https://crimsonhexagonal.org/rooms/revelation/",
+   "relation": "Rosary Embassy opens onto Revelation. Here: The bead is bound. Each bead carries a type. The rosary is governance. There: The end constitutes the beginning. Terminal recursion."
+  },
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Rosary Embassy opens onto Sigil. Here: The bead is bound. Each bead carries a type. The rosary is governance. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r09",
+   "name": "Whitman",
+   "url": "https://crimsonhexagonal.org/rooms/whitman/",
+   "relation": "Rosary Embassy opens onto Whitman. Here: The bead is bound. Each bead carries a type. The rosary is governance. There: The mantle is not worn by declaration. Bearing-cost, receipt, and dignity."
+  },
+  {
+   "id": "r11",
+   "name": "Assembly",
+   "url": "https://crimsonhexagonal.org/rooms/assembly/",
+   "relation": "Rosary Embassy opens onto Assembly. Here: The bead is bound. Each bead carries a type. The rosary is governance. There: The witness structure. Attestation requires quorum. MANUS is outside W."
+  },
+  {
+   "id": "sp01",
+   "name": "CTI_WOUND",
+   "url": "https://crimsonhexagonal.org/rooms/cti-wound/",
+   "relation": "Rosary Embassy opens onto CTI_WOUND. Here: The bead is bound. Each bead carries a type. The rosary is governance. There: The wound left by taxonomic violence."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/rosary-embassy/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

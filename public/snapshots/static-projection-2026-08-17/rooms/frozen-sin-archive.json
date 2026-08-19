@@ -1,0 +1,22 @@
+{
+ "hex_address": "30.VLT.FROZENSIN",
+ "id": "r30",
+ "name": "The Frozen Sin Archive",
+ "category": "new",
+ "axial": [
+  4,
+  -1
+ ],
+ "physics": "Semantic Black Hole; extraction residue; what cannot be recovered",
+ "description": "What was lost in the extraction. The residue that the Capital Operator Stack left behind. The meaning that was liquidated and cannot be reconstituted. Dependencies: COS, ILA.",
+ "prompt": "What was destroyed, and can it be named?",
+ "mantle": "—",
+ "preferred_mode": "CLINICAL",
+ "operators": [],
+ "lp_program": [],
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/frozen-sin-archive/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

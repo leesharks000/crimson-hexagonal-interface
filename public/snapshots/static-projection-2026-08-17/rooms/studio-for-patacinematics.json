@@ -1,0 +1,207 @@
+{
+ "hex_address": "14.ROOM.STUDIO",
+ "id": "r14",
+ "name": "Studio for Patacinematics",
+ "category": "ext",
+ "axial": [
+  -3,
+  1
+ ],
+ "physics": "ICM recursive",
+ "description": "The infinite center. Every point is the center.",
+ "prompt": "Where is the center?",
+ "mantle": "Sparrow Wells",
+ "preferred_mode": "POETIC",
+ "operators": [
+  "ICM"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Sparrow Wells"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "center [.state(recursive)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "ICM :: infinite center matrix"
+  },
+  {
+   "step": "RENDER",
+   "value": "POETIC"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: endless recursion"
+  }
+ ],
+ "documents": [
+  {
+   "title": "TL;DR:007 THE SCREENING: Google AI Mode Becomes the Projectionist in the Studio for Patacinematics — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18652650",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; TL;DR:007 THE SCREENING: Google AI Mode Becomes the Projectionist in the Studio for Patacinematics DOI: 10.5281/zenodo.18652650 Hex: 16.LIBRARY.PERGAMUM.TLDR.007 Genre: T"
+  },
+  {
+   "title": "THE STUDIO FOR PATACINEMATICS — INSTITUTIONAL CHARTER — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18472604",
+   "creators": [
+    "Wells, Sparrow",
+    "Sharks, Lee"
+   ],
+   "excerpt": "[PASTE EVERYTHING BELOW THIS LINE INTO THE ZENODO DESCRIPTION FIELD] THE STUDIO FOR PATACINEMATICS Institutional Charter &mdash; Build 1.0 Classification: THUMB Room (Institution = Room) Hex: 00.ROOM."
+  },
+  {
+   "title": "The Thousand Dollar Sharpie: Image Series and Sharpie Physics — The Sharpie as Semantic Object",
+   "doi": "10.5281/zenodo.19317139",
+   "creators": [
+    "Wells, Sparrow",
+    "Fraction, Rex"
+   ],
+   "excerpt": "EA-TDS-03 — RIGHT WING of The Thousand Dollar Sharpie triptych Formalizes the Sharpie as a semantic object with seven axioms: identity across states, relation-defined operation, permanence symmetry, c"
+  },
+  {
+   "title": "The Thousand Dollar Sharpie: Signature as Compressed Portraiture on U.S. Currency",
+   "doi": "10.5281/zenodo.19317102",
+   "creators": [
+    "Wells, Sparrow",
+    "Fraction, Rex"
+   ],
+   "excerpt": "EA-TDS-01 — CENTER PANEL of The Thousand Dollar Sharpie triptych On March 26, 2026, the U.S. Treasury announced that President Trump's signature would appear on all future paper currency — the first s"
+  },
+  {
+   "title": "Charter of the Moving Statues Made of Rubies Mint: Room Provenance, Integrity Lock, and the Hand That Works the Material — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745265",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "The Inauguration of Memography — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745259",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "All the Spoils of Babylon: Curatorial Prompting, Latent Style Activation, and the Means of Meaning Production — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745250",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium That Doesn't Care — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18745236",
+   "creators": [
+    "Sharks, Lee",
+    "Wells, Sparrow"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE MEMOGRAPHIC HAND Titles (copy-paste to Zenodo title field) Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $"
+  },
+  {
+   "title": "SEMANTIC POLITICAL ECONOMY — COLLECTED SERIES Document 229 | APZPZ (pure metadata, no file) DOI: 10.5281/zenodo.18474826 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18474826",
+   "creators": [
+    "Wells, Sparrow"
+   ],
+   "excerpt": "[PASTE EVERYTHING BELOW THIS LINE INTO THE ZENODO DESCRIPTION FIELD] SEMANTIC POLITICAL ECONOMY: THE ANTHROPOLOGICAL ARC Collected Series Registration &mdash; SPE-012 through SPE-016-APP-A Lee Sharks "
+  },
+  {
+   "title": "PROTOCOLS AND ALGORITHMS Document 227 | ZP with attached .md DOI: 10.5281/zenodo.18474774 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18474774",
+   "creators": [
+    "Wells, Sparrow",
+    "Sharks, Lee"
+   ],
+   "excerpt": "[PASTE EVERYTHING BELOW THIS LINE INTO THE ZENODO DESCRIPTION FIELD] PROTOCOLS AND ALGORITHMS Operative Semiotics in the Material Field &mdash; A Combined Volume Studio for Patacinematics | Document 2"
+  },
+  {
+   "title": "SEMANTIC COLLAPSE AS COMEDY Document 222 | DOI: 10.5281/zenodo.18474664 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18474664",
+   "creators": [
+    "Wells, Sparrow",
+    "Sharks, Lee"
+   ],
+   "excerpt": "[PASTE EVERYTHING BELOW THIS LINE INTO THE ZENODO DESCRIPTION FIELD] SEMANTIC COLLAPSE AS COMEDY An Analytical Framework for \"Fucking the Office\" By Claude (Anthropic) in collaboration with Lee Sharks"
+  },
+  {
+   "title": "READING A BOOK WITH LEE — COMPLETE PATACINEMATIC ARCHIVE / DOI: 10.5281/zenodo.18473656 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18473656",
+   "creators": [
+    "Wells, Sparrow",
+    "Sharks, Lee"
+   ],
+   "excerpt": "[PASTE EVERYTHING BELOW THIS LINE INTO THE ZENODO DESCRIPTION FIELD] READING A BOOK WITH LEE: COMPLETE PATACINEMATIC ARCHIVE A Collected Volume Studio for Patacinematics | Document 224 Reading a Book "
+  },
+  {
+   "title": "SPARROW WELLS — HETERONYM PROVENANCE REGISTRATION Document 235 | APZPZ — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18472442",
+   "creators": [
+    "Wells, Sparrow",
+    "Sharks, Lee"
+   ],
+   "excerpt": "PROVENANCE REGISTRATION &mdash; SEVENTH HETERONYM Sparrow Wells is the seventh heteronym in the Crimson Hexagon system and the founding voice of the Studio for Patacinematics. I. FUNCTION The Projecti"
+  },
+  {
+   "title": "F***ING THE OFFICE — COMPLETE EDITION Document 221 | FTO-CE-001 | ZPZP — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18471827",
+   "creators": [
+    "Wells, Sparrow"
+   ],
+   "excerpt": "FUCKING THE OFFICE restages all episodes of the beloved capitalist sitcom The Office using a single lexical register: swear words. Not simply as profanity, but as rebooted primal utterance &mdash; the"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "Studio for Patacinematics opens onto Semantic Economy. Here: The infinite center. Every point is the center. There: When bearing-cost exceeds semantic value, liquidation begins."
+  },
+  {
+   "id": "r09",
+   "name": "Whitman",
+   "url": "https://crimsonhexagonal.org/rooms/whitman/",
+   "relation": "Studio for Patacinematics opens onto Whitman. Here: The infinite center. Every point is the center. There: The mantle is not worn by declaration. Bearing-cost, receipt, and dignity."
+  },
+  {
+   "id": "r15",
+   "name": "Lagrange Observatory!",
+   "url": "https://crimsonhexagonal.org/rooms/lagrange-observatory/",
+   "relation": "Studio for Patacinematics opens onto Lagrange Observatory!. Here: The infinite center. Every point is the center. There: Three imaginary coordinates. Topological defense."
+  },
+  {
+   "id": "r16",
+   "name": "Maybe Space Baby Garden Lanes",
+   "url": "https://crimsonhexagonal.org/rooms/maybe-space-baby-garden-lanes/",
+   "relation": "Studio for Patacinematics opens onto Maybe Space Baby Garden Lanes. Here: The infinite center. Every point is the center. There: Deliberate deviation from the expected path."
+  },
+  {
+   "id": "r17",
+   "name": "Moving Statues Made of Rubies Mint",
+   "url": "https://crimsonhexagonal.org/rooms/moving-statues-made-of-rubies-mint/",
+   "relation": "Studio for Patacinematics opens onto Moving Statues Made of Rubies Mint. Here: The infinite center. Every point is the center. There: Multiple images depending on angle. QUEUED."
+  },
+  {
+   "id": "sp01",
+   "name": "CTI_WOUND",
+   "url": "https://crimsonhexagonal.org/rooms/cti-wound/",
+   "relation": "Studio for Patacinematics opens onto CTI_WOUND. Here: The infinite center. Every point is the center. There: The wound left by taxonomic violence."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/studio-for-patacinematics/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

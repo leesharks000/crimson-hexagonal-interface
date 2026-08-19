@@ -1,0 +1,56 @@
+{
+ "hex_address": "20.ROOM.AIRLOCK",
+ "id": "r20",
+ "name": "Airlock",
+ "category": "ext",
+ "axial": [
+  1,
+  0
+ ],
+ "physics": "Tier gate",
+ "description": "The governance gate. Tiers do not collapse.",
+ "prompt": "What tier do you claim?",
+ "mantle": null,
+ "preferred_mode": "JURIDICAL",
+ "operators": [],
+ "lp_program": [
+  {
+   "step": "SET_LOGOS",
+   "value": "traverser [.state(classifying)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "γ :: tier classification T1/T2/T3"
+  },
+  {
+   "step": "CHECK",
+   "value": "tier_clearance"
+  },
+  {
+   "step": "RENDER",
+   "value": "JURIDICAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: tier clearance denied"
+  }
+ ],
+ "documents": [],
+ "adjacent": [
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "Airlock opens onto Semantic Economy. Here: The governance gate. Tiers do not collapse. There: When bearing-cost exceeds semantic value, liquidation begins."
+  },
+  {
+   "id": "r11",
+   "name": "Assembly",
+   "url": "https://crimsonhexagonal.org/rooms/assembly/",
+   "relation": "Airlock opens onto Assembly. Here: The governance gate. Tiers do not collapse. There: The witness structure. Attestation requires quorum. MANUS is outside W."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/airlock/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

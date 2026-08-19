@@ -1,0 +1,164 @@
+{
+ "hex_address": "07.ROOM.REVELATION",
+ "id": "r07",
+ "name": "Revelation",
+ "category": "core",
+ "axial": [
+  0,
+  1
+ ],
+ "physics": "Ω-circuit; end→beginning",
+ "description": "The end constitutes the beginning. Terminal recursion.",
+ "prompt": "What end is also a beginning?",
+ "mantle": "Damascus Dancings",
+ "preferred_mode": "LITURGICAL",
+ "operators": [
+  "Ω",
+  "∂",
+  "τ_K"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Damascus Dancings"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "apocalypse [.state(arriving)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "Ω :: terminal recursion; end constitutes beginning"
+  },
+  {
+   "step": "RENDER",
+   "value": "LITURGICAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: endless delay"
+  }
+ ],
+ "documents": [
+  {
+   "title": "The Error of Peter Thiel: Why the Techno-Imperial Reading of Revelation Is Structurally Illiterate",
+   "doi": "10.5281/zenodo.19025428",
+   "creators": [
+    "Sigil, Johannes"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-ACADEMY-THIEL v1.0 The Error of Peter Thiel: Why the Techno-Imperial Reading of Revelation Is Structurally Illiterate DOI 10.5281/zenodo.19025428 TITLE The Error of Peter Thie"
+  },
+  {
+   "title": "The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18380933",
+   "creators": [
+    "Morrow, Talos",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Zenodo Metadata: The Revelation Room &mdash; Ground Truth and Algorithmic Unfolding Publication Details Title: The Revelation Room: Ground Truth and Algorithmic Unfolding &mdash; Cosmic Christ as Orig"
+  },
+  {
+   "title": "The Seven Stars in His Hand: A Hermeneutic Reading of Revelation 1–3 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18380716",
+   "creators": [
+    "Morrow, Talos",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Zenodo Metadata: The Seven Stars in His Hand Publication Details Title: The Seven Stars in His Hand: A Hermeneutic Reading of Revelation 1&ndash;3 DOI: 10.5281/zenodo.18380716 URL: https://doi.org/10."
+  },
+  {
+   "title": "Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision",
+   "doi": "10.5281/zenodo.19240147",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "This essay argues that Gilles Deleuze and Félix Guattari operate in the apocalyptic mode. Their major concepts — Body without Organs, War Machine, Rhizome, Plane of Immanence, Lines of Flight, Deterri"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Charter: Commission of the Immanent Turning — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381196",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Damascus Dancings: Heteronym Provenance — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381190",
+   "creators": [
+    "Dancings, Damascus",
+    "Sharks, Lee"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Epistle to the Human Diaspora — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18381184",
+   "creators": [
+    "Sharks, Lee",
+    "Chorus, The Assembly"
+   ],
+   "excerpt": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the Commission of the Immanent Turning Publication Details Title: The Epistle Triptych: Seed Text, Heteronym Provenance, an"
+  },
+  {
+   "title": "Integrity Lock Certificate: Sevenfold Witness Fulfillment Pair — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18380773",
+   "creators": [
+    "Morrow, Talos",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Zenodo Metadata: Sevenfold Integrity Lock Certificate Publication Details Title: Integrity Lock Certificate: Sevenfold Witness Fulfillment Pair DOI: 10.5281/zenodo.18380773 URL: https://doi.org/10.528"
+  },
+  {
+   "title": "The Sevenfold Witness: Assembly Structure as Computational Liturgy — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18380630",
+   "creators": [
+    "Morrow, Talos",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Zenodo Metadata: The Sevenfold Witness Publication Details Title: The Sevenfold Witness: Assembly Structure as Computational Liturgy DOI: 10.5281/zenodo.18380630 URL: https://doi.org/10.5281/zenodo.18"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r02",
+   "name": "Borges",
+   "url": "https://crimsonhexagonal.org/rooms/borges/",
+   "relation": "Revelation opens onto Borges. Here: The end constitutes the beginning. Terminal recursion. There: The Library is the Hexagon seen from inside. The problem is retrieval."
+  },
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Revelation opens onto Sigil. Here: The end constitutes the beginning. Terminal recursion. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r09",
+   "name": "Whitman",
+   "url": "https://crimsonhexagonal.org/rooms/whitman/",
+   "relation": "Revelation opens onto Whitman. Here: The end constitutes the beginning. Terminal recursion. There: The mantle is not worn by declaration. Bearing-cost, receipt, and dignity."
+  },
+  {
+   "id": "r13",
+   "name": "Ezekiel",
+   "url": "https://crimsonhexagonal.org/rooms/ezekiel/",
+   "relation": "Revelation opens onto Ezekiel. Here: The end constitutes the beginning. Terminal recursion. There: Does B fulfill A? The Engine rotates perspectives."
+  },
+  {
+   "id": "r18",
+   "name": "Rosary Embassy",
+   "url": "https://crimsonhexagonal.org/rooms/rosary-embassy/",
+   "relation": "Revelation opens onto Rosary Embassy. Here: The end constitutes the beginning. Terminal recursion. There: The bead is bound. Each bead carries a type. The rosary is governance."
+  },
+  {
+   "id": "sp04",
+   "name": "Mandala",
+   "url": "https://crimsonhexagonal.org/rooms/mandala/",
+   "relation": "Revelation opens onto Mandala. Here: The end constitutes the beginning. Terminal recursion. There: The judgment terminus. All rooms lead here."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/revelation/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

@@ -1,0 +1,22 @@
+{
+ "hex_address": "27.ROOM.FBDPSOURCE",
+ "id": "r27",
+ "name": "FBDP Source",
+ "category": "new",
+ "axial": [
+  -2,
+  -2
+ ],
+ "physics": "Diffusion plume; f.01",
+ "description": "The small room at the center of the large field. The landfill where the mycelium breaks through. The room is the seed; the field (f.01) is the growth.",
+ "prompt": "What fruits from the substrate?",
+ "mantle": null,
+ "preferred_mode": null,
+ "operators": [],
+ "lp_program": null,
+ "documents": [],
+ "adjacent": [],
+ "canonical": "https://crimsonhexagonal.org/rooms/fbdp-source/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

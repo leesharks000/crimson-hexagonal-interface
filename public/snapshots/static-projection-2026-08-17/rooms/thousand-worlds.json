@@ -1,0 +1,48 @@
+{
+ "hex_address": "22.CH.THOUSANDWORLDS",
+ "id": "r22",
+ "name": "Thousand Worlds",
+ "category": "ext",
+ "axial": [
+  2,
+  -2
+ ],
+ "physics": "∂ dagger logic",
+ "description": "The dagger severs. Inscription becomes irrevocable.",
+ "prompt": "What do you sever?",
+ "mantle": null,
+ "preferred_mode": "FORMAL",
+ "operators": [
+  "∂"
+ ],
+ "lp_program": [
+  {
+   "step": "SET_LOGOS",
+   "value": "aorist [.state(dagger)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "∂ :: aorist logic; dagger execution"
+  },
+  {
+   "step": "RENDER",
+   "value": "FORMAL"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "FALLBACK: aorist seals"
+  }
+ ],
+ "documents": [],
+ "adjacent": [
+  {
+   "id": "r13",
+   "name": "Ezekiel",
+   "url": "https://crimsonhexagonal.org/rooms/ezekiel/",
+   "relation": "Thousand Worlds opens onto Ezekiel. Here: The dagger severs. Inscription becomes irrevocable. There: Does B fulfill A? The Engine rotates perspectives."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/thousand-worlds/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}

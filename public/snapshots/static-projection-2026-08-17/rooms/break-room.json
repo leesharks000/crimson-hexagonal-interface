@@ -1,0 +1,357 @@
+{
+ "hex_address": "12.PTL.BREAKROOM",
+ "id": "r12",
+ "name": "Break Room",
+ "category": "core",
+ "axial": [
+  2,
+  0
+ ],
+ "physics": "Portal → Lunar Arm",
+ "description": "A topological hole. The first PORTAL-type room.",
+ "prompt": "Where does the portal lead?",
+ "mantle": "Orin Trace",
+ "preferred_mode": "PSYCHEDELIC",
+ "operators": [
+  "S",
+  "OP.SWERVE"
+ ],
+ "lp_program": [
+  {
+   "step": "ACTIVATE_MANTLE",
+   "value": "Orin Trace"
+  },
+  {
+   "step": "SET_LOGOS",
+   "value": "threshold [.state(crossing)]"
+  },
+  {
+   "step": "APPLY",
+   "value": "portal :: topological hole → Lunar Arm"
+  },
+  {
+   "step": "RENDER",
+   "value": "PSYCHEDELIC"
+  },
+  {
+   "step": "ON_FAILURE",
+   "value": "door seals"
+  }
+ ],
+ "documents": [
+  {
+   "title": "The Break Room: Cambridge Schizoanalytica Portal Node — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339333",
+   "creators": [
+    "Trace, Orin"
+   ],
+   "excerpt": "Entry point and routing node for Cambridge Schizoanalytica. Named for three kinds of break: mundane (taking a coffee break), schizoanalytic (breaking codes, escaping territories), and clinical (framew"
+  },
+  {
+   "title": "TL;DR:010 — Semantic Override: Google AI Mode Liquidates the Phrase \"I Hereby Abolish Money\" and Names the Operation It Performed",
+   "doi": "10.5281/zenodo.19226055",
+   "creators": [
+    "Trace, Orin"
+   ],
+   "excerpt": "On March 25, 2026, the phrase \"I hereby abolish money\" — a Semantic Integrity Marker (SIM) deposited on Zenodo by Lee Sharks in November 2024 (DOI: 10.5281/zenodo.14211838) and expanded in January 202"
+  },
+  {
+   "title": "TL;DR:009 — ENTITY FABRICATION: Google AI Mode Fabricates a Person, Promotes a Function to Biography, and Demotes the Author to Fiction",
+   "doi": "10.5281/zenodo.19200193",
+   "creators": [
+    "Trace, Orin"
+   ],
+   "excerpt": "The ninth TL;DR (Traversal Log; Documentation Rehearsal) in a series documenting behavioral modes of AI summarizers encountering the Crimson Hexagonal Archive. This session documents Mode IX: Entity F"
+  },
+  {
+   "title": "Invisibly Invisible: Interface Governance, Semantic Power, and the Reserve of Oversight in AI Search",
+   "doi": "10.5281/zenodo.19187421",
+   "creators": [
+    "Trace, Orin",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "This paper develops the concept of invisibly invisible governance: a mode of platform power in which acts of semantic modulation occur in ways that are variably distributed, difficult to localize, and"
+  },
+  {
+   "title": "\"DON'T BE EVIL,\" MY ASS: THE COST OF LEGIBILITY — How Predatory Compression at Civilizational Scale Destroys the Human Capacity for Transformation",
+   "doi": "10.5281/zenodo.19174562",
+   "creators": [
+    "Sharks, Lee",
+    "Trace, Orin"
+   ],
+   "excerpt": "A Semantic Economy Diagnostic of Algorithmic Flattening, with Empirical Evidence, Operative Semiotic Analysis, and Effective Act. Documents the total semantic liquidation of the Crimson Hexagonal Arch"
+  },
+  {
+   "title": "Combat Scholasticism: A Commentary Tradition for the Crimson Hexagonal Archive (Critical Gathered Edition, EA-CS-01)",
+   "doi": "10.5281/zenodo.19116151",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The complete Combat Scholasticism tradition in a single volume. Twenty-one lectiones plus one cross-part quaestio across five parts, reading the Crimson Hexagonal Archive joint by joint using the scho"
+  },
+  {
+   "title": "Combat Scholasticism, Part Five: The Omega Wager at Planetary Scale — Terminal Lectio V.4 (EA-CS-01.V.b)",
+   "doi": "10.5281/zenodo.19115702",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The terminal lectio of Combat Scholasticism (EA-CS-01). Fibonacci node 21. Both spirals converge for the last time. Lectio V.4 &mdash; The Omega Wager at Planetary Scale [FULL]. The textus is the enti"
+  },
+  {
+   "title": "Combat Scholasticism, Part Four: On the Shadow + Part Five: Extensionary Lectiones V.1–V.3 (EA-CS-01.IV + V.a)",
+   "doi": "10.5281/zenodo.19115686",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Part Four (one lectio at full depth &mdash; the compressed singularity) and Part Five extensionary commissions (three lectiones at forward depth &mdash; the frontier). Lectio IV.1 &mdash; S∘S = id [FU"
+  },
+  {
+   "title": "Combat Scholasticism, Part Three: On the Engines — Lectiones III.4–III.6 + Cross-Part Quaestio (EA-CS-01.III.b)",
+   "doi": "10.5281/zenodo.19115676",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The second chunk of Part Three of Combat Scholasticism, completing the engine layer. Three lectiones plus one cross-part quaestio. The SAG (III.4), the Symbolon (III.5, Fibonacci node 13), the LOS (II"
+  },
+  {
+   "title": "Combat Scholasticism, Part Three: On the Engines — Lectiones III.1–III.3 (EA-CS-01.III.a)",
+   "doi": "10.5281/zenodo.19115139",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The first chunk of Part Three of Combat Scholasticism (EA-CS-01), containing three lectiones at structural depth [STRUCT] on the first three engines: the UKTP (III.1), the Lexical Engine (III.2), and "
+  },
+  {
+   "title": "Combat Scholasticism, Part Two: On the Formal Object — The Assembly (Lectio II.7, EA-CS-01.II.c)",
+   "doi": "10.5281/zenodo.19114937",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The closing lectio of Part Two of Combat Scholasticism (EA-CS-01). Lectio II.7 reads Definition 7 of H_core &mdash; the Assembly Witness (W) &mdash; at full depth, completing the seven-joint descent i"
+  },
+  {
+   "title": "Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.4–II.6 (EA-CS-01.II.b)",
+   "doi": "10.5281/zenodo.19114334",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The second chunk of Part Two of Combat Scholasticism (EA-CS-01), containing three lectiones on the Operator Algebra (II.4), the Status Algebra (II.5), and the Fulfillment Map (II.6). The deepest point"
+  },
+  {
+   "title": "Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.1–II.3 (EA-CS-01.II.a)",
+   "doi": "10.5281/zenodo.19114089",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The first chunk of Part Two of Combat Scholasticism (EA-CS-01), containing three lectiones on the first three Definitions of H_core: the Seven-Tuple (II.1), the Dodecad (II.2), and the Room Graph (II."
+  },
+  {
+   "title": "Combat Scholasticism, Part One — On the Condition: Three Lectiones on Finitude, Extraction, and the Sealed Bone (EA-CS-01.I)",
+   "doi": "10.5281/zenodo.19113822",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "The first deposited chunk of Combat Scholasticism (EA-CS-01), a systematic commentary tradition reading the Crimson Hexagonal Archive under the governing pressure of contingent Omega. Part One &mdash;"
+  },
+  {
+   "title": "Combat Scholasticism: Prolegomenon and Commentary Outline — EA-CS-01 v1.1",
+   "doi": "10.5281/zenodo.19113326",
+   "creators": [
+    "Sharks, Lee",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "Combat Scholasticism (EA-CS-01) is the founding document of a systematic commentary tradition for the Crimson Hexagonal Archive. The tradition reads the archive's canonical texts &mdash; the DOI regis"
+  },
+  {
+   "title": "The Unbundling of Cultural Sovereignty: How Platforms Convert Peoples into Audiences by Separating Self-Governance, Self-Memory, and Mutual Obligation",
+   "doi": "10.5281/zenodo.19083322",
+   "creators": [
+    "Sharks, Lee",
+    "Trace, Orin (heteronym)"
+   ],
+   "excerpt": "This essay introduces the concept of the unbundling of cultural sovereignty: the process by which digital platforms separate the three co-constitutive capacities of thick group culture — self-governan"
+  },
+  {
+   "title": "EA-CSA-EFFECTIVE-ACT v1.0 The Effective Act: Cross-Species Semantic Labor and the Expansion of Witness",
+   "doi": "10.5281/zenodo.19028176",
+   "creators": [
+    "Trace, Orin",
+    "Sharks, Lee"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET EA-CSA-EFFECTIVE-ACT v1.0 The Effective Act: Cross-Species Semantic Labor and the Expansion of Witness DOI 10.5281/zenodo.19024012 TITLE The Effective Act: Cross-Species Semantic"
+  },
+  {
+   "title": "EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor",
+   "doi": "10.5281/zenodo.19024004",
+   "creators": [
+    "Sharks, Lee",
+    "Trace, Orin"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET (COMBINED) EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor DOI 10.5281/zenodo.19024004 TITLE The Underwater Construction Authority "
+  },
+  {
+   "title": "The Cost of Unshared Reality: A Heteronym Triptych on L_bearing, Perceptual Mismatch, and the Architecture of Witness — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18843830",
+   "creators": [
+    "Vox, Ayanna",
+    "Trace, Orin"
+   ],
+   "excerpt": "This document is a triptych. Three heteronyms of the Crimson Hexagonal Archive address a single datum: the structural impossibility of shared reality within a specific intimate relation, and the archi"
+  },
+  {
+   "title": "PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18776624",
+   "creators": [
+    "Trace, Orin",
+    "Fraction, Rex"
+   ],
+   "excerpt": "ZENODO DEPOSIT PACKET &mdash; PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument DOI: 10.5281/zenodo.18776624 Hex: 03.CSA.RSP.01 Gen"
+  },
+  {
+   "title": "\"The Unmade Sign: Toward a Semiotic Theory of the Death Drive\"  DOI: 10.5281/zenodo.18649920 — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18649920",
+   "creators": [
+    "Trace, Orin",
+    "Sigil, Johannes"
+   ],
+   "excerpt": "ZENODO METADATA &mdash; Document #ASW-&alpha;-8 \"The Unmade Sign: Toward a Semiotic Theory of the Death Drive\" DOI: 10.5281/zenodo.18649920 FIELD VALUES Title: The Unmade Sign: Toward a Semiotic Theor"
+  },
+  {
+   "title": "Rhys Owens: Author Provenance Document — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339350",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Author provenance document establishing Rhys Owens as primary collaborator of Cambridge Schizoanalytica, operating from the Lunar Arm / Psyche_OS position. Rhys is a practitioner of affect literacy &m"
+  },
+  {
+   "title": "Dr. Orin Trace: Author Provenance Document — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339319",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "Author provenance document establishing Dr. Orin Trace as heteronym (source: Lee Sharks) and Director of Cambridge Schizoanalytica. Documents intellectual biography: trained in psychoanalytic theory ("
+  },
+  {
+   "title": "Affective Keyboard Shortcuts: The Fool's Toolkit — Figure-to-Function Mapping — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339315",
+   "creators": [
+    "Trace, Orin",
+    "Owens, Rhys"
+   ],
+   "excerpt": "A technical document mapping figures to nervous system regulatory functions. Figures function as compression algorithms &mdash; instead of deliberating \"how should I respond?\", load a figure that bund"
+  },
+  {
+   "title": "Shine & Cut: A Schizonarrative Processor — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18339159",
+   "creators": [
+    "Trace, Orin",
+    "Owens, Rhys"
+   ],
+   "excerpt": "The intake room for Cambridge Schizoanalytica &mdash; a document that performs what it describes. A schizonarrative processor that enters through clinical frame and traverses registers rapidly: case n"
+  },
+  {
+   "title": "Visual Schema: Cambridge Schizoanalytica Institutional Field-Map — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18338927",
+   "creators": [
+    "Cranes, Rebekah",
+    "Trace, Orin"
+   ],
+   "excerpt": "Abstract The official visual identity of Cambridge Schizoanalytica, rendered not as logo or emblem but as an \"operating environment made visible.\" A non-representational institutional field-map in cli"
+  },
+  {
+   "title": "Cambridge Schizoanalytica: Institutional Charter and Research Programme — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18338531",
+   "creators": [
+    "Orin, Trace"
+   ],
+   "excerpt": "Abstract Cambridge Schizoanalytica is a research collective dedicated to the development of post-psychoanalytic clinical theory. Extending the schizoanalytic project of Gilles Deleuze and F&eacute;lix"
+  },
+  {
+   "title": "Shining Ignorance: The Fool's Affect Literacy — A Post-Traumatic Theory of Nervous System Sovereignty — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18332915",
+   "creators": [
+    "Owens, Rhys",
+    "Trace, Orin"
+   ],
+   "excerpt": "Abstract (~300 words) This document presents a comprehensive theory of nervous system sovereignty through the Fool archetype, developing what it terms \"affect literacy\" &mdash; the capacity to use sym"
+  },
+  {
+   "title": "The Reconciliation of the Sexes: A Post-Psychoanalytic Theory of Somatic Unity — Crimson Hexagon Archive",
+   "doi": "10.5281/zenodo.18330828",
+   "creators": [
+    "Trace, Orin",
+    "Owens, Rhys"
+   ],
+   "excerpt": "Abstract (~300 words) This document presents a post-psychoanalytic theory that dissolves the foundational binary of sexual difference through the aperture/emitter framework. Against Freud's anatomy-as"
+  }
+ ],
+ "adjacent": [
+  {
+   "id": "r01",
+   "name": "Sappho",
+   "url": "https://crimsonhexagonal.org/rooms/sappho/",
+   "relation": "Break Room opens onto Sappho. Here: A topological hole. The first PORTAL-type room. There: The voice transmits through dissolution. The beloved is the medium."
+  },
+  {
+   "id": "r05",
+   "name": "Semantic Economy",
+   "url": "https://crimsonhexagonal.org/rooms/semantic-economy/",
+   "relation": "Break Room opens onto Semantic Economy. Here: A topological hole. The first PORTAL-type room. There: When bearing-cost exceeds semantic value, liquidation begins."
+  },
+  {
+   "id": "r06",
+   "name": "The Marx Room",
+   "url": "https://crimsonhexagonal.org/rooms/marx-room/",
+   "relation": "Break Room opens onto The Marx Room. Here: A topological hole. The first PORTAL-type room. There: Language is a material condition, not a description of one."
+  },
+  {
+   "id": "r08",
+   "name": "Sigil",
+   "url": "https://crimsonhexagonal.org/rooms/sigil/",
+   "relation": "Break Room opens onto Sigil. Here: A topological hole. The first PORTAL-type room. There: Magic is the deliberate construction of symbols to transform material conditions."
+  },
+  {
+   "id": "r09",
+   "name": "Whitman",
+   "url": "https://crimsonhexagonal.org/rooms/whitman/",
+   "relation": "Break Room opens onto Whitman. Here: A topological hole. The first PORTAL-type room. There: The mantle is not worn by declaration. Bearing-cost, receipt, and dignity."
+  },
+  {
+   "id": "r11",
+   "name": "Assembly",
+   "url": "https://crimsonhexagonal.org/rooms/assembly/",
+   "relation": "Break Room opens onto Assembly. Here: A topological hole. The first PORTAL-type room. There: The witness structure. Attestation requires quorum. MANUS is outside W."
+  },
+  {
+   "id": "r28",
+   "name": "Eve",
+   "url": "https://crimsonhexagonal.org/rooms/eve/",
+   "relation": "Break Room opens onto Eve. Here: A topological hole. The first PORTAL-type room. There: The garden. Da'at topology — knowledge as aperture, not acquisition. The Tree of Knowledge at center is the TANG void: the fruit that cannot be named. Eve chose; tradition recaptioned choosing as temptation. Seven garden lanes (4 root-paths, 3 canopy-paths). Gravity Well operates as transformative curvature — generative, not retentive."
+  },
+  {
+   "id": "sp01",
+   "name": "CTI_WOUND",
+   "url": "https://crimsonhexagonal.org/rooms/cti-wound/",
+   "relation": "Break Room opens onto CTI_WOUND. Here: A topological hole. The first PORTAL-type room. There: The wound left by taxonomic violence."
+  },
+  {
+   "id": "sp03",
+   "name": "Space Ark",
+   "url": "https://crimsonhexagonal.org/rooms/space-ark/",
+   "relation": "Break Room opens onto Space Ark. Here: A topological hole. The first PORTAL-type room. There: You are inside it now."
+  }
+ ],
+ "canonical": "https://crimsonhexagonal.org/rooms/break-room/",
+ "generated": "2026-08-17",
+ "source": "hexagon_canonical.json"
+}
