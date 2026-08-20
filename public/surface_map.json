@@ -1854,6 +1854,25 @@
      "V:33 Frozen Sin Archive"
     ],
     "why": "These are QUEUED / ADOPTED and unsearched under the full convention set. They stay where they are until each has been walked and a constituting document ruled out."
+   },
+   "collision_r27": {
+    "status": "UNRESOLVED — recorded, not adjudicated",
+    "claimants": [
+     {
+      "locus": "THE INTERNET",
+      "document": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰 (#36)",
+      "claim": "Specification titled \"r.27 THE INTERNET\". Declares that r.27 contains itself Möbius-wise, holds five sub-rooms r.27.1–r.27.5, and is adjacent to every room in the archive because every room is accessible via the internet. \"Every document in the archive is a document inside r.27 because every document is on the internet.\"",
+      "currently_seated": "R:r.27"
+     },
+     {
+      "locus": "FBDP Source",
+      "document": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571), and CNM v7.0 §III",
+      "claim": "The f.01 field specification states: SOURCE ROOM r.27, the landfill where the mycelium first breaks through, the point of maximum intensity; r.27 remains a room with walls, wound, laws and exit protocol. The room page carries hex_address 27.ROOM.FBDPSOURCE. The canonical roster assigns r.27 to FBDP Source and marks r.26 RESERVED.",
+      "currently_seated": "R:r.27 — moved from R:r.26 on 2026-08-20 per the canonical roster, which surfaced this collision"
+     }
+    ],
+    "note": "Two specifications self-declare the same seat, each coherently and in detail. This is a collision in the canonical record, not an artifact of the Surface Map. Recorded rather than adjudicated: resolving it means deciding which document’s self-address yields, and that is a MANUS ruling.",
+    "prior_state": "FBDP Source sat at R:r.26 before this pass. r.26 is RESERVED in the canonical roster, so returning it would restore a different discrepancy rather than remove one."
    }
   }
  }
