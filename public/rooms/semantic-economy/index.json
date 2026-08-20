@@ -2802,5 +2802,167 @@
   -2,
   -1
  ],
- "surface_map_url": "/map/#R:r.05"
+ "surface_map_url": "/map/#R:r.05",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "There is no single Semantic Economy specification, and none was intended. The locus is constituted by a four-tier governance architecture, declared by the archive itself in the Constitutional Architecture Statement (EA-CAS-01). The vast theoretical corpus attributed to this room is what the room produced, not what constitutes it.",
+  "authority": "AXN:0269.GOVERNANCE.🕔◀️🔻🔧♆🌈 (#94) §3.2, §4.2, §5.2 — the seating below follows the Statement’s own lists, not curatorial judgment.",
+  "tiers": {
+   "TIER-1": "Constitutional Spine — binding; amended only under Article VIII",
+   "TIER-2": "Operative Frameworks — technical specifications binding within the scope where cited (§4.3)",
+   "TIER-3": "Companion Instruments — recognition sought by Class II Structural Adjustment (§5.3)"
+  },
+  "enactment": "Constitution v1.0 enacted November 2025; deposited 2026-01-21. Enactment predates the Zenodo deposit, not the archive.",
+  "documents": [
+   {
+    "hex": "0478",
+    "axn": "AXN:0478.UNCLASSIFIED.♃🟠♻️🔐🌄🕘",
+    "deposit": 1127,
+    "title": "Constitution of the Semantic Economy — Enacted Version 1.0",
+    "role": "CONSTITUTING",
+    "tier": "TIER-1",
+    "standing": "SEATED",
+    "work_url": "/works/0478/"
+   },
+   {
+    "hex": "025d",
+    "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+    "deposit": 87,
+    "title": "Constitutional Apparatus Edition (65 Assembly Chorus footnotes)",
+    "role": "CONSTITUTING",
+    "tier": "TIER-1",
+    "standing": "SEATED",
+    "work_url": "/works/025d/"
+   },
+   {
+    "hex": "0269",
+    "axn": "AXN:0269.GOVERNANCE.🕔◀️🔻🔧♆🌈",
+    "deposit": 94,
+    "title": "Constitutional Architecture Statement EA-CAS-01 v1.0",
+    "role": "GOVERNANCE-REFERENCE",
+    "tier": "SINGLETON",
+    "standing": "SEATED",
+    "work_url": "/works/0269/"
+   },
+   {
+    "hex": "0057",
+    "axn": "AXN:0057.GOVERNANCE.⚫🔅🌱🤲👐👆",
+    "deposit": 284,
+    "title": "Liberatory Operator Set — Technical Hardening",
+    "role": "OPERATIVE-FRAMEWORK",
+    "tier": "TIER-2",
+    "standing": "SEATED",
+    "work_url": "/works/0057/"
+   },
+   {
+    "hex": "047f",
+    "axn": "AXN:047F.UNCLASSIFIED.🗼🔙●💚🤙🔙",
+    "deposit": 1134,
+    "title": "Soteriological Operator Framework",
+    "role": "OPERATIVE-FRAMEWORK",
+    "tier": "TIER-2",
+    "standing": "SEATED",
+    "work_url": "/works/047f/"
+   },
+   {
+    "hex": "026a",
+    "axn": "AXN:026A.GOVERNANCE.🕔🔧🌸🌗📎🔐",
+    "deposit": 95,
+    "title": "Provenance Alignment EA-PA-01",
+    "role": "OPERATIVE-FRAMEWORK",
+    "tier": "TIER-2",
+    "standing": "SEATED",
+    "work_url": "/works/026a/"
+   },
+   {
+    "hex": "00ac",
+    "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
+    "deposit": 8,
+    "title": "The Mathematics of Salvation",
+    "role": "OPERATIVE-FRAMEWORK",
+    "tier": "TIER-2",
+    "standing": "SEATED",
+    "work_url": "/works/00ac/"
+   },
+   {
+    "hex": "04d8",
+    "axn": "AXN:04D8.UNCLASSIFIED.🔵🌻🚪📎🌕🏷️",
+    "deposit": 1223,
+    "title": "Semantic Bill of Rights v2.2",
+    "role": "COMPANION",
+    "tier": "TIER-3",
+    "standing": "SEATED",
+    "work_url": "/works/04d8/"
+   },
+   {
+    "hex": "0267",
+    "axn": "AXN:0267.GOVERNANCE.🔮🧡🌃📚🛤️☉",
+    "deposit": 719,
+    "title": "Invocation to the Summarizer Layer v2.1",
+    "role": "COMPANION",
+    "tier": "TIER-3",
+    "standing": "SEATED",
+    "work_url": "/works/0267/"
+   },
+   {
+    "hex": "0266",
+    "axn": "AXN:0266.GOVERNANCE.➖🕘🛡️🌠🏠☉",
+    "deposit": 718,
+    "title": "Constitutional Cases Index v1.1",
+    "role": "COMPANION",
+    "tier": "TIER-3",
+    "standing": "SEATED",
+    "work_url": "/works/0266/"
+   },
+   {
+    "hex": "0265",
+    "axn": "AXN:0265.GOVERNANCE.🚨🎶🫶🌉🔅➕",
+    "deposit": 93,
+    "title": "Reception Apparatus Protocol v1.1",
+    "role": "COMPANION",
+    "tier": "TIER-3",
+    "standing": "SEATED",
+    "work_url": "/works/0265/"
+   },
+   {
+    "hex": "03ec",
+    "axn": "AXN:03EC.ARCHIVAL.🌅🤙⛩️◇📐🚩",
+    "deposit": 992,
+    "title": "Cross-Reference Map v1.1 (non-authoritative)",
+    "role": "COMPANION",
+    "tier": "TIER-3",
+    "standing": "SEATED",
+    "work_url": "/works/03ec/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "ψ_V − V_S = debt",
+   "operators": [
+    "ψ_V",
+    "T.3",
+    "COS",
+    "LOS"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) for ψ_V and T.3; LOS and COS defined in Tier 2 at AXN:0057",
+   "signatures": [
+    "O.C.05.ψV — ψ_V Blind Witness :: Event → Attestation [quorum ≥4/7]",
+    "O.T.3.BEARINGCOST — T.3 Bearing-Cost Transfer :: Agent₁ × Agent₂ × Cost → Transfer_Record"
+   ],
+   "reading": "When bearing-cost exceeds semantic value, liquidation begins. COS detects extraction; LOS supplies the liberatory counterparts."
+  },
+  "shared_governance": [
+   {
+    "locus": "X-ASSEMBLY / R:r.11",
+    "relation": "anchors_to",
+    "note": "The Assembly Room physics ψ_V ≥4/7 quorum is the Constitution’s own witness condition. Governance seated here is not the property of this locus; Assembly draws on it, as every locus draws physics from H_core. The Assembly LP program records ANCHOR: DOI pending — the unresolved edge."
+   }
+  ],
+  "theory_corpus": {
+   "role": "THEORY",
+   "count": 168,
+   "note": "Documents attributed to this locus that are not constitutive. They are the room’s output — the body of theory the Semantic Economy produced. Retained and AXN-repaired; explicitly outside the constitution."
+  },
+  "measurement_note": "Tier 2 binds PER through EA-PA-01 v2.4. The instrument has since advanced to three dimensions (PER-M, PER-C, PER-D — AXN:05EF.EMPIRICAL.▶️🤲♍♎🕗💥, #1469). Per Statement §4.3 the bound version is the one cited at ratification and does not update retroactively. An appended revision recording this is drafted and awaiting MANUS ratification; the divergence is recorded here so no reader mistakes the current instrument for the bound one.",
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
