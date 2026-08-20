@@ -400,6 +400,126 @@
     "standing": "SEATED",
     "work_url": "/works/028a/",
     "primary": false
+   },
+   {
+    "hex": "028b",
+    "axn": "AXN:028B.GOVERNANCE.♣️🌃🌕🏰🗝️🔓",
+    "deposit": 109,
+    "title": "The Semantic Deviation Principle (v0.2 Final): A Measurement Primitive for Semantic Physics",
+    "role": "PROGRAM",
+    "multiplicity": "VERSION",
+    "note": "The Semantic Deviation Principle v0.2 Final — the measurement primitive. Operational v2.0 at AXN:056E.UNCLASSIFIED.🔀🏴🛸🔥🌗🪸 (#1373).",
+    "standing": "SEATED",
+    "work_url": "/works/028b/",
+    "primary": false
+   },
+   {
+    "hex": "0286",
+    "axn": "AXN:0286.GOVERNANCE.⚙️🕒💫🗺️✏️📎",
+    "deposit": 107,
+    "title": "Audited Claims for the Semantic Deviation Research Program — The Glas Function: An External-Format Restatement",
+    "role": "PROGRAM",
+    "multiplicity": "SINGLETON",
+    "note": "Audited Claims for the Semantic Deviation Research Program — the Glas Function, with claims separated by evidentiary tier.",
+    "standing": "SEATED",
+    "work_url": "/works/0286/",
+    "primary": false
+   },
+   {
+    "hex": "028f",
+    "axn": "AXN:028F.GOVERNANCE.👁️‍🗨️🀄🗼📦🌠🌹",
+    "deposit": 110,
+    "title": "Measuring Semantic Deviation: Operationalizations, Experiments, and Falsification Conditions for a Theory of Meaning as Field Deformation",
+    "role": "PROGRAM",
+    "multiplicity": "SINGLETON",
+    "note": "Measuring Semantic Deviation: operationalizations, experiments and falsification conditions for a theory of meaning as field deformation.",
+    "standing": "SEATED",
+    "work_url": "/works/028f/",
+    "primary": false
+   },
+   {
+    "hex": "0288",
+    "axn": "AXN:0288.GOVERNANCE.🌺♋🌲∮🖊️♄",
+    "deposit": 736,
+    "title": "Measuring Meaning in Retrieval Basins: A 90-Day Winding-Number Protocol from Lagrange Observatory! (EA-SEI-MM-02 v2.0, Framework 15 Paper 03)",
+    "role": "PROTOCOL",
+    "multiplicity": "SINGLETON",
+    "note": "Measuring Meaning in Retrieval Basins — a 90-day winding-number protocol from the Observatory. The torus condition applied as measurement.",
+    "standing": "SEATED",
+    "work_url": "/works/0288/",
+    "primary": false
+   },
+   {
+    "hex": "0289",
+    "axn": "AXN:0289.GOVERNANCE.🌌📜♊🫶🕗🎶",
+    "deposit": 737,
+    "title": "The AI System as Closed-System Test Bed: Operations from Lagrange Observatory! on the Inference-Time Forward Pass (EA-SEI-MM-AI-01 v2.0, Framework 15 Paper 02)",
+    "role": "PROTOCOL",
+    "multiplicity": "SINGLETON",
+    "note": "The AI System as Closed-System Test Bed.",
+    "standing": "SEATED",
+    "work_url": "/works/0289/",
+    "primary": false
+   },
+   {
+    "hex": "0287",
+    "axn": "AXN:0287.GOVERNANCE.♊🗝️🎺🟣🕊️△",
+    "deposit": 735,
+    "title": "The Deviation-Optimized Language Model: A Pre-Registered Adversarial Intervention from Lagrange Observatory! (EA-SEI-MM-AI-02 v2.0, Framework 15 Paper 04)",
+    "role": "EXPERIMENT",
+    "multiplicity": "SINGLETON",
+    "note": "The Deviation-Optimized Language Model — a pre-registered adversarial intervention.",
+    "standing": "SEATED",
+    "work_url": "/works/0287/",
+    "primary": false
+   },
+   {
+    "hex": "028d",
+    "axn": "AXN:028D.EMPIRICAL.⏰🌕💙🌈🌻⏹️",
+    "deposit": 739,
+    "title": "Narrative-Field Semantic Deviation: Experimental Design for a Bounded Literary Test Bed",
+    "role": "EXPERIMENT",
+    "multiplicity": "VERSION",
+    "note": "Narrative-Field Semantic Deviation: experimental design for a bounded literary test bed. Companion at AXN:04FC.UNCLASSIFIED.🝊📚🪦♍🌾🔺 (#1259).",
+    "standing": "SEATED",
+    "work_url": "/works/028d/",
+    "primary": false
+   },
+   {
+    "hex": "05df",
+    "axn": "AXN:05DF.OPERATIVE.📐🔍✖️📏💡🗿",
+    "deposit": 1454,
+    "title": "Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "role": "METROLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "EA-SEI-ACRB-01 — Assimilation Across Accelerator Classifier Architectures: a cross-family metrology of directional failure in real-time learned selection. Nobel Glas as Director of the Observatory.",
+    "standing": "SEATED",
+    "work_url": "/works/05df/",
+    "primary": false
+   },
+   {
+    "hex": "05de",
+    "axn": "AXN:05DE.OPERATIVE.🕒✊☁️🌋🟡🔄",
+    "deposit": 1453,
+    "title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v1.0)",
+    "role": "METROLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "EA-SEI-BCA-01 — Baseline Capture Architecture for Learned Scientific Triggers: a control plane for measuring selection before irreversible data loss.",
+    "standing": "SEATED",
+    "work_url": "/works/05de/",
+    "primary": false
+   },
+   {
+    "hex": "05dd",
+    "axn": "AXN:05DD.GENERATIVE.☽⚪🔝⏬☉🛤️",
+    "deposit": 1452,
+    "title": "The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "role": "METROLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "The Irreversibility Frontier — comparative architectures. Where selection loss becomes unrecoverable.",
+    "standing": "SEATED",
+    "work_url": "/works/05dd/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -530,7 +650,32 @@
    "profile": "Adversarial Topologist. Explosive heritage, noble gas, transparent medium.",
    "boundary": "Glas is heteronym 8/12, not an Assembly member. Assembly witnesses; heteronyms author. Declared in septad position 1."
   },
-  "alert_protocol": "The \"!\" in LO! is operational, not decorative: §4.4 specifies the ALERT protocol as the operationalisation of the exclamation."
+  "alert_protocol": "The \"!\" in LO! is operational, not decorative: §4.4 specifies the ALERT protocol as the operationalisation of the exclamation.",
+  "framework_15": {
+   "name": "Framework 15 — Measurement of Meaning",
+   "anchor": "AXN:028A.GOVERNANCE.👈🤙🐚🌖🔓🟡 (#108)",
+   "director": "Nobel Glas, Director of the Lagrange Observatory, whose declared function is the Measurement of Meaning. The heteronym is adopted for the measurement programme to signal that the empirical protocols are designed for independent replication.",
+   "note": "A research programme run out of a room. The Observatory is not only a locus in the architecture — it is the institution under which these protocols are issued, and the torus condition that governs the room governs the measurements.",
+   "strands": [
+    {
+     "s": "Principle",
+     "d": "The Semantic Deviation Principle — a measurement primitive for meaning as field deformation, with audited claims separated by evidentiary tier and explicit falsification conditions."
+    },
+    {
+     "s": "Protocol",
+     "d": "A 90-day winding-number protocol for retrieval basins, and the AI system treated as a closed-system test bed."
+    },
+    {
+     "s": "Experiment",
+     "d": "The deviation-optimized language model as pre-registered adversarial intervention; a bounded literary test bed for narrative-field deviation."
+    },
+    {
+     "s": "Metrology",
+     "d": "Accelerator classifier architectures: cross-family measurement of directional failure in real-time learned selection, baseline capture before irreversible data loss, and the irreversibility frontier."
+    }
+   ],
+   "accelerator_note": "The accelerator-classifier strand measures the same thing the archive suffers: a learned selector deciding in real time what is kept and what is discarded, where the discard is unrecoverable. EA-SEI-BCA-01 names the requirement exactly — a control plane for measuring selection before irreversible data loss. It is the Observatory’s instrument turned on the physical sciences, and it converges with V:r.32, which archives what has crossed the restoration threshold."
+  }
  },
  "locative_key_history": [
   {
