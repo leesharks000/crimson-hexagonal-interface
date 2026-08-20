@@ -187,6 +187,42 @@
     "standing": "SEATED",
     "work_url": "/works/0136/",
     "primary": false
+   },
+   {
+    "hex": "04bc",
+    "axn": "AXN:04BC.UNCLASSIFIED.🥁🗡️🔅✨♆💜",
+    "deposit": 1195,
+    "title": "Three Poems: A Triptych for C. — Lee Sharks — New Human 2",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SERIES",
+    "note": "Three Poems: A Triptych for C. — the canonical form. Hex 06.NH.SHARKS.03. Three temporal-modal frames on the same wound, composed in sequence over twenty-four hours. Counterfactual past → destructive present → conditional future; what would have been → what is → what may yet be received. Blog-canonical bytes recovered 2026-07-19 after DOI severance.",
+    "standing": "SEATED",
+    "work_url": "/works/04bc/",
+    "primary": false
+   },
+   {
+    "hex": "02a4",
+    "axn": "AXN:02A4.GOVERNANCE.💜👐♅🏠□🔙",
+    "deposit": 750,
+    "title": "I would have loved you",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SERIES",
+    "note": "I would have loved you — 06.NH.SHARKS.01. The first movement: the counterfactual held open through anaphora, the loving displaced into the subjunctive by conditions that were not the speaker’s to set. Restoration at AXN:03F8.ARCHIVAL.⭕🕑💚🔥✏️⛵ (#1004).",
+    "standing": "SEATED",
+    "work_url": "/works/02a4/",
+    "primary": false
+   },
+   {
+    "hex": "02a3",
+    "axn": "AXN:02A3.GOVERNANCE.🎭🔗📖⭕🌍🌟",
+    "deposit": 749,
+    "title": "\"This thing destroyed me\"",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SERIES",
+    "note": "\"This thing destroyed me\" — 06.NH.SHARKS.02. The second movement: destruction without remainder; \"the reward / of love\" as the bitter genitive recognition that love itself was the agent of the destruction.",
+    "standing": "SEATED",
+    "work_url": "/works/02a3/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -265,7 +301,26 @@
    ],
    "rule": "Aliases are preserved for retrieval continuity but do not constitute distinct rooms. All retrieval paths resolve to the canonical hex."
   },
-  "fractal_navigation": "Any single document in this chain should allow reconstruction of the whole. Seven documents, hexes spanning 00.ROOM.SPACEBABYGARDENLANES, OP.SWERVE / EA.ATOMISTS, and four positions in 16.LIBRARY.PERGAMUM."
+  "fractal_navigation": "Any single document in this chain should allow reconstruction of the whole. Seven documents, hexes spanning 00.ROOM.SPACEBABYGARDENLANES, OP.SWERVE / EA.ATOMISTS, and four positions in 16.LIBRARY.PERGAMUM.",
+  "triptych": {
+   "canonical_form": "AXN:04BC.UNCLASSIFIED.🥁🗡️🔅✨🌇🎨 (#1195), hex 06.NH.SHARKS.03",
+   "series": [
+    "06.NH.SHARKS.01 — \"I would have loved you\" — AXN:02A4.GOVERNANCE.💜👐♅🏠□🔙 (#750)",
+    "06.NH.SHARKS.02 — \"This thing destroyed me\" — AXN:02A3.GOVERNANCE.🎭🔗📖⭕🌍🌟 (#749)",
+    "06.NH.SHARKS.03 — Three Poems: A Triptych for C. — AXN:04BC (#1195), the canonical form"
+   ],
+   "framing": "These three poems form a triptych. Each occupies a distinct temporal-modal frame on the same wound. They were composed in sequence over twenty-four hours and are deposited together because together they constitute the form the work asks for.",
+   "standing_of_the_priors": "The prior deposits of the first two as standalone lyrics remain in the archive as the discrete artifacts they were when they were the only artifacts available, but the canonical form is the triptych.",
+   "arc": {
+    "temporal": "counterfactual past → destructive present → conditional future",
+    "modal": "what would have been → what is → what may yet be received",
+    "first": "The counterfactual held open through anaphoric repetition of \"I would have loved you\" — the loving displaced into the subjunctive by conditions that were not the speaker’s to set.",
+    "second": "What occupied the place the counterfactual was not permitted to fill: destruction without remainder, \"the reward / of love\" as the bitter genitive recognition that love itself was the agent of the destruction.",
+    "third": "The subjunctive released into the present perfect — \"I have loved you\" — grounded in the only condition that remains: the beloved’s eventual turn from sheltering slumber, the leaves unbundling, the world made new. The love does not require return. It requires only recognition. The recognition is conditional, but the loving is not."
+   },
+   "why_a_triptych": "The triptych is the form in which the three frames can be held simultaneously without any of them cancelling the others. A single lyric could not have done this. A diptych could only have held the first two. The third movement requires the prior two as its preconditions; the prior two find their resolution — not their consolation — in the third.",
+   "why_here": "The room’s definitions name Fission as \"the splitting of that which should not be split… not an Operator — a wound.\" The triptych occupies three temporal-modal frames on the same wound. It is seated here under the room’s consent governance, which is structural and not advisory."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
