@@ -40,5 +40,29 @@
   ]
  },
  "surface_map_url": "/map/#F:f.01",
- "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators"
+ "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Fruiting Body Diffusion Plume is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "documents": [
+   {
+    "hex": "0193",
+    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+    "deposit": 571,
+    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Field specification: Giant Ants, Floating Chains. A field, not a room — source, gradient and attenuation, no walls.",
+    "standing": "SEATED",
+    "work_url": "/works/0193/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Diffusion plume; source + gradient + attenuation; no walls",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+ }
 }

@@ -606,5 +606,34 @@
   -2,
   1
  ],
- "surface_map_url": "/map/#R:r.06"
+ "surface_map_url": "/map/#R:r.06",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Marx Room is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "documents": [
+   {
+    "hex": "0199",
+    "axn": "AXN:0199.GENERATIVE.🌅🔎🔎💧🔵📌",
+    "deposit": 577,
+    "title": "r.06 THE MARX ROOM: BUILT FROM LINEN Operative Semiotics and the Value-Form as Operator Derivation",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "THE MARX ROOM: BUILT FROM LINEN — room specification. Composed 2026-03-16, a month after the corpus it constitutes: the room was written into existence by labour already performed in it.",
+    "standing": "SEATED",
+    "work_url": "/works/0199/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "T.1|material",
+   "operators": [
+    "T.1",
+    "COS",
+    "FOS",
+    "LOS"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+ }
 }

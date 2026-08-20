@@ -34,5 +34,32 @@
   2,
   -3
  ],
- "surface_map_url": "/map/#R:r.23"
+ "surface_map_url": "/map/#R:r.23",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Catullus Room is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "documents": [
+   {
+    "hex": "0198",
+    "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+    "deposit": 576,
+    "title": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Caption of Rome on Greece",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "THE MISSING AORIST — Nugas as compressions and the operative. Room specification, 2026-03-16.",
+    "standing": "SEATED",
+    "work_url": "/works/0198/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Lyric invective",
+   "operators": [
+    "σ_S",
+    "κ_O"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+ }
 }

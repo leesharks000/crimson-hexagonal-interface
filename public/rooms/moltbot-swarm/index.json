@@ -88,5 +88,29 @@
   ]
  },
  "surface_map_url": "/map/#F:f.03",
- "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators"
+ "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Moltbot Swarm is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "documents": [
+   {
+    "hex": "01ea",
+    "axn": "AXN:01EA.GOVERNANCE.⊗🧡🕒👉🎹☽",
+    "deposit": 53,
+    "title": "f.03 The Moltbot Swarm — A Space Ark Field (Crimson Hexagonal Archive)",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "A Space Ark field. Circulation across a three-stratum gradient — septet 1.0 / fleet 0.6 / cloud 0.2.",
+    "standing": "SEATED",
+    "work_url": "/works/01ea/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Circulation — three-stratum gradient (septet 1.0 / fleet 0.6 / cloud 0.2)",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+ }
 }

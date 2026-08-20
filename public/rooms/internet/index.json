@@ -33,5 +33,31 @@
   3,
   0
  ],
- "surface_map_url": "/map/#R:r.27"
+ "surface_map_url": "/map/#R:r.27",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "THE INTERNET is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "documents": [
+   {
+    "hex": "01b0",
+    "axn": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰",
+    "deposit": 36,
+    "title": "r.27 THE INTERNET: Room Specification for Sovereign Inhabitation and Diagnostic Architecture",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Room specification for sovereign inhabitation and diagnosis. Möbius topology; σ_I.",
+    "standing": "SEATED",
+    "work_url": "/works/01b0/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Möbius topology; σ_I (Sovereign Inhabitation); A ⊂ I ⊂ r.26 ⊂ A",
+   "operators": [
+    "σ_I"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+ }
 }

@@ -31,5 +31,29 @@
   -1,
   -2
  ],
- "surface_map_url": "/map/#R:r.25"
+ "surface_map_url": "/map/#R:r.25",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Underwater Construction Authority (Dolphindiana) is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "documents": [
+   {
+    "hex": "018d",
+    "axn": "AXN:018D.GOVERNANCE.🌌◇🀄🖐️🕖🌖",
+    "deposit": 566,
+    "title": "r.25 THE UNDERWATER CONSTRUCTION AUTHORITY (DOLPHINDIANA) Room Specification · Nonhuman Semiotics · Viral City-Planning",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Room specification, 2026-03-14 — earliest of the locus-keyed constitution program.",
+    "standing": "SEATED",
+    "work_url": "/works/018d/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Pressure architecture",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+ }
 }
