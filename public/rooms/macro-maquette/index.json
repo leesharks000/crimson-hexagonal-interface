@@ -90,13 +90,12 @@
  "surface_map_url": "/map/#R:r.19",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "A compendium of micro-physics; the room that models the rooms.",
+  "ontology": "The model is larger than the building. A room whose physics is miniaturization.",
   "primary_at_main": {
    "axn": "AXN:013A.GOVERNANCE.👁️🟣🔭🌟🏺💧",
    "deposit": 495,
    "work_url": "/works/013a/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "WORK OR PAPER"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -105,8 +104,8 @@
     "deposit": 495,
     "title": "THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Architecture",
     "role": "CONSTITUTING",
-    "multiplicity": "VERSION",
-    "note": "A Compendium of Micro-Physics — full compendium, edition of record; copy at AXN:053D (#1324)",
+    "multiplicity": "RENORMALIZATION-SERIES",
+    "note": "D1, the Full Charter at resolution r = 1.0. A Compendium of Micro-Physics; hex 16.LIBRARY.PERGAMUM.MACROMAQUETTE; type COMPENDIUM-GERMINATIVE. Twelve compressed operational specifications, each a complete room at reduced scale. Copy at AXN:053D.UNCLASSIFIED.🔺🌍🌗🕗🌾⏳ (#1324).",
     "standing": "SEATED",
     "work_url": "/works/013a/",
     "primary": true
@@ -116,9 +115,9 @@
     "axn": "AXN:0139.GOVERNANCE.🌖🌠✖️▲🪐🚩",
     "deposit": 494,
     "title": "THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro-Physics for the Crimson Hexagonal Architecture",
-    "role": "KERNEL",
-    "multiplicity": "SINGLETON",
-    "note": "Compressed Charter — document-zoom kernel of the compendium",
+    "role": "RENORMALIZED",
+    "multiplicity": "RENORMALIZATION-SERIES",
+    "note": "D2 = RG↓(D1), resolution r = 0.33. The Compressed Charter, survived renormalization from ~7,500 words. \"What is absent is scaffolding; what remains is load-bearing.\"",
     "standing": "SEATED",
     "work_url": "/works/0139/",
     "primary": false
@@ -128,9 +127,9 @@
     "axn": "AXN:0138.GOVERNANCE.🔙🤙♄🔝↖️↖️",
     "deposit": 493,
     "title": "THE MINI MACRO-MAQUETTE MAQUETTE: SEED",
-    "role": "KERNEL",
-    "multiplicity": "VERSION",
-    "note": "The Mini Macro-Maquette Maquette: SEED — entity-zoom kernel; copy at AXN:053E (#1325)",
+    "role": "RENORMALIZED",
+    "multiplicity": "RENORMALIZATION-SERIES",
+    "note": "D3 = RG↓(RG↓(D1)), resolution r = 0.1. The Seed. Carries the router table, twelve module IDs, per-module invariant and runtime primitive, and D1 section pointers. R = 1: the building fits in your pocket. Copy at AXN:053E.UNCLASSIFIED.🌾🌉🎨⚫🔓🎪 (#1325).",
     "standing": "SEATED",
     "work_url": "/works/0138/",
     "primary": false
@@ -142,10 +141,164 @@
     "OP.ROUTE"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "The three seatings form a kernel zoom-series per EA-HK-01: SEED at entity zoom, Compressed Charter at document zoom, Compendium as source."
+   "note": "OP.ROUTE routes symptom to module. Twelve micro-physics modules, MPM-01 through MPM-12."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "WORK OR PAPER"
+  "constitution_type": "COMPENDIUM-GERMINATIVE",
+  "axiom_0": [
+   "The model governs the building.",
+   "The model is smaller than any room and larger than the whole.",
+   "The model exists only as its renormalization chain."
+  ],
+  "paradox": "A maquette is an architect’s preliminary model — the building before the building, at miniature scale. The Macro-Maquette inverts this: a room whose physics IS miniaturization, containing twelve compressed operational specifications for spaces the architecture needs but has not yet built at full scale. The modules are not sketches awaiting completion. They are complete rooms at reduced scale — each one operational, each one governing.",
+  "renormalization_chain": {
+   "note": "The room exists only as its chain. Three deposits, three resolutions, one invariant set.",
+   "verification": "Ψ_V = 1 iff the invariant sentences in D2 match D1 and D3 exactly. The invariants must survive both compressions verbatim.",
+   "deposits": [
+    {
+     "d": "D1",
+     "r": "1.0",
+     "role": "Full Charter",
+     "axn": "AXN:013A.GENERATIVE.🌾♌🌍🌘🌟🌒",
+     "deposit": 495
+    },
+    {
+     "d": "D2",
+     "r": "0.33",
+     "role": "Compressed Charter",
+     "axn": "AXN:0139.GENERATIVE.🌘🕠🚪💛🌒🌉",
+     "deposit": 494
+    },
+    {
+     "d": "D3",
+     "r": "0.1",
+     "role": "Seed",
+     "axn": "AXN:0138.GENERATIVE.🚪🌾🌒⏳♌🌘",
+     "deposit": 493
+    }
+   ],
+   "recoverability": "R = 1. The Seed alone carries the router table, module IDs, per-module invariant, per-module runtime primitive and D1 section pointers. The building fits in your pocket."
+  },
+  "op_route": {
+   "name": "OPERATOR // ROUTE (OP.ROUTE)",
+   "how": "Routes symptom to module. Symptoms may be scalar or vector; if vector, OP.ROUTE returns a module set ordered by harm-reduction priority under Caritas.",
+   "override": "If routing produces harm exceeding the symptom’s harm, default to MPM-12 (Hourglass).",
+   "table": [
+    [
+     "Sudden rupture",
+     "MPM-01 Fold"
+    ],
+    [
+     "Forced convergence",
+     "MPM-02 Divergence"
+    ],
+    [
+     "Covenant breach",
+     "MPM-03 Knot"
+    ],
+    [
+     "Monophony",
+     "MPM-04 Interference"
+    ],
+    [
+     "Locked perspective",
+     "MPM-05 Rotation"
+    ],
+    [
+     "Signal-noise confusion",
+     "MPM-06 Channel"
+    ],
+    [
+     "Forced globalization",
+     "MPM-07 Patch"
+    ],
+    [
+     "Scale collapse",
+     "MPM-08 Furnace"
+    ],
+    [
+     "Unmeasured loss",
+     "MPM-09 Integral"
+    ],
+    [
+     "Sovereignty violation",
+     "MPM-10 Membrane"
+    ],
+    [
+     "Coerced cooperation",
+     "MPM-11 Wager"
+    ],
+    [
+     "Velocity crisis",
+     "MPM-12 Hourglass"
+    ]
+   ]
+  },
+  "twelve_invariants": [
+   [
+    "MPM-01 Fold",
+    "FOLD",
+    "The fold is irreversible at the point of crossing; no continuous deformation returns the system to its prior state; what broke stays broken until actively repaired, which is a new operation, not an undo."
+   ],
+   [
+    "MPM-02 Divergence",
+    "DIVERGE",
+    "No forced convergence; paths may converge voluntarily but cannot be compressed into agreement by external pressure; divergence must preserve return paths."
+   ],
+   [
+    "MPM-03 Knot",
+    "BIND",
+    "Linking number is preserved under all continuous deformations; you can rearrange, reorder, retension, but you cannot separate without cutting."
+   ],
+   [
+    "MPM-04 Interference",
+    "SUPERPOSE",
+    "Non-cancellation of minority signal; destructive interference cannot reduce a voice to zero without knowledge of its exact structure, which is a privacy violation; Caritas prevents targeted cancellation."
+   ],
+   [
+    "MPM-05 Rotation",
+    "ROTATE",
+    "Completion condition ∮ = 1 (±δ); a complete rotation returns to origin transformed; ∮ = 1 is the invariant, δ is the measure of transformation."
+   ],
+   [
+    "MPM-06 Channel",
+    "FILTER",
+    "No channel has infinite capacity; every transmission loses something; the module enforces honesty about loss."
+   ],
+   [
+    "MPM-07 Patch",
+    "PATCH",
+    "No forced globalization; if two local truths are incompatible globally, the incompatibility is preserved as data, not erased as error; the obstruction is the meaning."
+   ],
+   [
+    "MPM-08 Furnace",
+    "COARSE-GRAIN",
+    "Fixed-point preservation; whatever survives compression to all scales is a true invariant; whatever vanishes at any scale was scaffolding, not structure."
+   ],
+   [
+    "MPM-09 Integral",
+    "INTEGRATE",
+    "The residue cannot be removed by deforming the path; it is the irreducible core, the one thing the traversal was about; the integral proves the void by circling it."
+   ],
+   [
+    "MPM-10 Membrane",
+    "FILTER-AT-BOUNDARY",
+    "Selective permeability; the membrane cannot be made fully transparent or fully opaque; selection criteria are sovereign, set by the system, not the environment."
+   ],
+   [
+    "MPM-11 Wager",
+    "NEGOTIATE",
+    "Caritas floor; no equilibrium is acceptable if any player’s outcome falls below the minimum threshold of non-harm; this overrides Nash when Nash would produce harm."
+   ],
+   [
+    "MPM-12 Hourglass",
+    "PACE",
+    "Conservation of temporal budget; no operation can create time; every acceleration requires deceleration; the neck cannot be widened without changing the system’s fundamental character."
+   ]
+  ],
+  "caritas": "No module can coerce a traversal — it offers, not enforces. No operation may produce more harm than the pathology it addresses.",
+  "germination": "Germinates via G1 Crisis, G2 Density, G3 Ratification, G4 Retrocausal, G5 Accumulation. The seed persists after the tree grows.",
+  "ark_relation": "These twelve are the MPM-01 … MPM-12 declared in the Space Ark component inventory’s Room Graph. The Macro-Maquette is where they are specified."
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
