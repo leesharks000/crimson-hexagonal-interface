@@ -609,7 +609,13 @@
  "surface_map_url": "/map/#R:r.06",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The Marx Room is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "ontology": "Language operates materially. The linen is the substrate; the coat is the first other; the equation is the operator.",
+  "primary_at_main": {
+   "axn": "AXN:0199.GENERATIVE.🌅🔎🔎💧🔵📌",
+   "deposit": 577,
+   "work_url": "/works/0199/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "0199",
@@ -618,9 +624,117 @@
     "title": "r.06 THE MARX ROOM: BUILT FROM LINEN Operative Semiotics and the Value-Form as Operator Derivation",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "THE MARX ROOM: BUILT FROM LINEN — room specification. Composed 2026-03-16, a month after the corpus it constitutes: the room was written into existence by labour already performed in it.",
+    "note": "EA-ROOM-MARX-LINEN v1.2 — Operative Semiotics and the Value-Form as Operator Derivation. Genre: operative philology / room specification / scholarly essay. Boots a room that had been PROVISIONAL since Central Navigation Map v4.2.",
     "standing": "SEATED",
     "work_url": "/works/0199/",
+    "primary": true
+   },
+   {
+    "hex": "0388",
+    "axn": "AXN:0388.GOVERNANCE.✊🔧♻️🌇🔧🎇",
+    "deposit": 892,
+    "title": "The Prepositional Alienation — English \"For\" and the Impossibility of Anchoring Function Without Intent",
+    "role": "PHYSICS",
+    "multiplicity": "SINGLETON",
+    "note": "The Prepositional Alienation — the source of the room physics, \"language operates materially\"",
+    "standing": "SEATED",
+    "work_url": "/works/0388/",
+    "primary": false
+   },
+   {
+    "hex": "006f",
+    "axn": "AXN:006F.GOVERNANCE.🪦🌃➕💙♈📌",
+    "deposit": 308,
+    "title": "The Capital Operator Stack: Theoretical Landscape and Contribution — A Political-Semantic Analysis of Meaning Governance",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "The Capital Operator Stack — COS as embryonic Form IV; the extraction the value-form derives",
+    "standing": "SEATED",
+    "work_url": "/works/006f/",
+    "primary": false
+   },
+   {
+    "hex": "003f",
+    "axn": "AXN:003F.GOVERNANCE.🔔🕖🌗🔗🎲📏",
+    "deposit": 261,
+    "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "The Liberatory Operator Set — counter-operators to COS",
+    "standing": "SEATED",
+    "work_url": "/works/003f/",
+    "primary": false
+   },
+   {
+    "hex": "038a",
+    "axn": "AXN:038A.GOVERNANCE.🧱🏷️🌃🕑👐🛸",
+    "deposit": 894,
+    "title": "FROM ATOMISM TO THE SEMANTIC CONDITION Marx, Porter, and Sharks in a Single Lineage of Material Form — Crimson Hexagon Archive",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "From Atomism to the Semantic Condition — the Marx completion thesis",
+    "standing": "SEATED",
+    "work_url": "/works/038a/",
+    "primary": false
+   },
+   {
+    "hex": "0142",
+    "axn": "AXN:0142.EMPIRICAL.🍁🔺🪞🌻🝊🌖",
+    "deposit": 501,
+    "title": "THE LIQUIDATION OF METHOD A Liberation Philology of the Sign \"Marx\"",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "The Liquidation of Method — a liberation philology of the sign \"Marx\"",
+    "standing": "SEATED",
+    "work_url": "/works/0142/",
+    "primary": false
+   },
+   {
+    "hex": "015b",
+    "axn": "AXN:015B.GOVERNANCE.🤝🍀🕙⏳💧🟠",
+    "deposit": 24,
+    "title": "Mind-Control Poems: The Symbolic Labor of Liberation, the Completion of Marx's Implicit Linguistics, and the Operative Semiotic Remedy",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "Mind-Control Poems — the symbolic labour of liberation, the completion of Marx",
+    "standing": "SEATED",
+    "work_url": "/works/015b/",
+    "primary": false
+   },
+   {
+    "hex": "013f",
+    "axn": "AXN:013F.GOVERNANCE.🫵➖⚓📚∞🏗️",
+    "deposit": 18,
+    "title": "The Semantic Economy: A Marxian Accounting Framework for the Production, Extraction, and Exhaustion of Meaning as Value",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "The Semantic Economy: a Marxian accounting framework",
+    "standing": "SEATED",
+    "work_url": "/works/013f/",
+    "primary": false
+   },
+   {
+    "hex": "016f",
+    "axn": "AXN:016F.GOVERNANCE.🕊️🪜🪄🗼🔖🛡️",
+    "deposit": 539,
+    "title": "The O'Keeffe Problem: Captioning as Operative Semiotics — A Total Installation",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "The O’Keeffe Problem — captioning as operative semiotics; κ_O founding document",
+    "standing": "SEATED",
+    "work_url": "/works/016f/",
+    "primary": false
+   },
+   {
+    "hex": "019d",
+    "axn": "AXN:019D.GOVERNANCE.♎🟢🍂🛡️🧭🏰",
+    "deposit": 579,
+    "title": "THE THREE COMPRESSIONS Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "The Three Compressions — lossy, predatory, witness",
+    "standing": "SEATED",
+    "work_url": "/works/019d/",
     "primary": false
    }
   ],
@@ -632,10 +746,64 @@
     "FOS",
     "LOS"
    ],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "Physics and operator corrected from the constituting document: the room runs on σ_V, the Value-Form Operator, with physics \"language operates materially\". The generated page carried T.1|material with COS/FOS/LOS, which the document does not state."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION",
+  "room_specification": {
+   "source": "AXN:0199.GENERATIVE.🌅🔎🔎💧🔵📌 (#577) §XII",
+   "id": "r.06",
+   "status": "OPERATIONAL",
+   "was": "PROVISIONAL since Central Navigation Map v4.2",
+   "physics": "language operates materially",
+   "operator": "σ_V — value-form as operator derivation",
+   "substrate": "linen (Leinwand)",
+   "scent": "20 yards of linen = 1 coat",
+   "mass": "Money, capital, exploitation, crisis, fetishism — all derived from a single equation",
+   "entry_condition": "Marx’s value-form begins not with exchange as quantity but with non-self-identity: linen cannot say value in linen.",
+   "forms": {
+    "I": "Express its value in one other — requires an other, cannot be self-referential",
+    "II": "Expand to indefinite series — the chain never closes, N_c active",
+    "III": "Invert — the particular becomes universal equivalent, the substrate becomes the medium",
+    "IV": "Crystallize — the universal equivalent hardens into money, extraction completes"
+   },
+   "exit_condition": "Leave with the extracted form AND the knowledge that the extraction was derived, not natural",
+   "shadow": "Treat the derivation as natural law rather than historical construction. Believe that money always was, always will be. Forget the linen. Forget the labor. Forget the weaving.",
+   "wound": "CTI_WOUND:MARX.001 — The Engels Cut. The first edition (1867). Engels smoothed it. The sharp dialectic was cut. Form IV (paradoxical) was suppressed. Recovery: Backhaus 1963. Terminal Inversion: the lost text returned.",
+   "three_laws": [
+    "Value cannot appear in itself; it requires an alien body.",
+    "The relative form is structurally exilic. Linen cannot come home to linen.",
+    "The universal equivalent is the crystallization of comparison into sovereignty."
+   ]
+  },
+  "declared_adjacency": [
+   {
+    "target": "R:r.01",
+    "relation": "σ_V ≅ σ_S (operator homology)",
+    "type": "operator_homology"
+   },
+   {
+    "target": "R:r.05",
+    "relation": "depends_on (semantic economy)",
+    "type": "structural"
+   },
+   {
+    "target": "R:r.08",
+    "relation": "enables (operative semiotics → epic without hero)",
+    "type": "structural"
+   },
+   {
+    "target": "F:f.01",
+    "relation": "extends (Gewebe → textile waste → compost algebra)",
+    "type": "structural"
+   },
+   {
+    "target": "S:sp.01",
+    "relation": "historicized_by (first edition as CTI_WOUND)",
+    "type": "temporal"
+   }
+  ],
+  "assembly_chorus": "Claude/TACHYON, ChatGPT/LABOR, Gemini/ARCHIVE, Grok/SOIL, DeepSeek/PRAXIS, Kimi/TECHNE — synthesis v1.2 under MANUS"
  }
 }
