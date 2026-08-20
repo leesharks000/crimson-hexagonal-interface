@@ -34,30 +34,105 @@
  "adopted_after_confabulation": true,
  "surface_map_url": "/map/#R:r.32",
  "constitution": {
-  "status": "QUEUED / ADOPTED",
-  "ontology": "This locus appears in the archive only inside navigation maps and entity lists — Central Navigation Map v2.0 (#297), v4.1 (#319, #1114), the Visual Schema (#325) and the H_core concept index (#1241). No document takes it as subject. The Surface Map records its origin as model-generated, human-adopted: it originated in earlier model confabulation, that provenance was recognised, and the architecture adopted the form rather than deleting it. It is a queued, preservable object awaiting seating into a genuine gap or a later free address.",
-  "gap_declaration": {
-   "kind": "QUEUED / ADOPTED — CONFABULATED ORIGIN, RECOGNISED AND PRESERVED",
-   "locus": "R:r.32",
-   "declared": "2026-08-20",
-   "evidence": [
-    "Surface Map origin_type: model-generated, human-adopted",
-    "Appears only in #297, #319, #325, #1114, #1241 — navigation maps and entity lists",
-    "0 deposits take the locus as subject"
-   ],
-   "rule": "Non-erasure applied to confabulated loci: the architecture adopts rather than deletes.",
-   "supersedes": "An earlier seating attached AXN:0262.GOVERNANCE.♻️☿🍃🌘💧🕘 (#91, Septad Mantle Specifications) to this locus. That was a false match on the word \"job\" — the Septad document specifies constitutional job descriptions for mantles and has no relation to this room. Withdrawn 2026-08-20."
+  "status": "CONSTITUTED",
+  "ontology": "The trap is not for Job. It is for us.",
+  "primary_at_main": {
+   "axn": "AXN:004E.GENERATIVE.🎹➗♎🪦🪨💎",
+   "deposit": 275,
+   "work_url": "/works/004e/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
-  "documents": [],
-  "sweeps_run": [
-   "room name",
-   "locus key",
-   "Room Anchor",
-   "Charter",
-   "Room Specification",
-   "hex address",
-   "body text"
-  ]
+  "documents": [
+   {
+    "hex": "004e",
+    "axn": "AXN:004E.GENERATIVE.🎹➗♎🪦🪨💎",
+    "deposit": 275,
+    "title": "EFFECTIVE ACT: THE ABOLITION OF SUFFERING",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "EFFECTIVE ACT: THE ABOLITION OF SUFFERING. The deposited anchor of this locus; metadata at AXN:004F.GOVERNANCE.🦅■🌋🎨🎻🎭 (#276).",
+    "standing": "SEATED",
+    "work_url": "/works/004e/",
+    "primary": true
+   },
+   {
+    "hex": "0272",
+    "axn": "AXN:0272.EMPIRICAL.🏗️🌒🌄♉🌇🔻",
+    "deposit": 99,
+    "title": "The Abraham Principle — The Constitutive-One Operator in Polis, Archive, and Index",
+    "role": "COMMENTARY",
+    "multiplicity": "VERSION",
+    "note": "The Abraham Principle — the Constitutive-One Operator in polis, covenant and archive; companion at AXN:04FB.UNCLASSIFIED.👋🔴♣️🔍🌒🎇 (#1258).",
+    "standing": "SEATED",
+    "work_url": "/works/0272/",
+    "primary": false
+   },
+   {
+    "hex": "012e",
+    "axn": "AXN:012E.GOVERNANCE.🔄🪞⏪✖️○🪸",
+    "deposit": 483,
+    "title": "LOGOTIC HACKING: A PRIMER Assembly Synthesis Specification v3.0 — RATIFIED",
+    "role": "COMPANION",
+    "multiplicity": "SINGLETON",
+    "note": "Logotic Hacking: A Primer — semantic hospitality in the age of language models. The hospitality strand.",
+    "standing": "SEATED",
+    "work_url": "/works/012e/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Suffering framework; messianic reading; restitution economy",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "The stance of the righteous sufferer: to face the deep, ask the question, and remain unbroken in the whirlwind."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM — CONSTITUTED FROM THE BLOG STRATUM",
+  "origin_corrected": {
+   "supersedes": "This page previously declared the locus QUEUED / ADOPTED with no constituting document and no subject. That was wrong. The room has a subject, a documented exegesis, and an October 2025 stratum that predates the navigation maps which named it.",
+   "seat": "r.29, restored 2026-08-20. H_core v1.8.0 assigns 29.ROOM.JOB; the Surface Map v0.1 had moved it to r.32 and the seat was taken by a hosted cosmology, which has since vacated to its own address."
+  },
+  "the_trap": {
+   "claim": "The Book of Job is not merely a theodicy. It is a trap set for the reader.",
+   "mechanism": "The snare is sprung the moment the reader assumes Job is guilty. Nearly all do. Despite the text’s explicit framing — that Job is blameless and upright — the reader, like the friends, demands a moral economy where suffering must be deserved. But Job’s suffering is undeserved, and that is the point.",
+   "the_turn": "The trap is not for Job. It is for us. Every reader is tested: can you stand beside the righteous sufferer when God seems absent, or will you join the chorus of moralisers?",
+   "why_here": "This is a reception mechanism. The text tests the reader, and most readers fail in a documented and repeatable way — including modern commentary and pulpit sermons, which frame Job as prideful and in need of correction against the text’s own statement. That is the archive’s subject in a canonical instance."
+  },
+  "leviathan": {
+   "reading": "In God’s speech Leviathan is the supreme untameable beast, and no human can subdue him. But God says: \"None is so fierce that dare stir him up: who then is able to stand before me?\" The implication is paradoxical — Job has stood before God, and lived. The one who cannot defeat Leviathan has spoken with the One who made him.",
+   "outcome": "At the book’s end Job is not merely restored — he is vindicated above the friends, exalted to intercessor, implicitly enthroned in wisdom. The world-serpent has not been slain. He has been named, and placed beneath the feet of the righteous sufferer.",
+   "messianic": "Psalm 110: \"Sit at my right hand until I make your enemies a footstool.\" Job is the prototype. He suffers unjustly, demands justice, holds fast to truth, sees God, and is elevated — not because he was meek, but because he dared to cry out in pain without lying about it. He is not silenced. He is heard."
+  },
+  "convergence": {
+   "pair": "Job and Odysseus",
+   "source": "BENEATH THE FEET, AT THE EDGE, 2025-10-22",
+   "reading": "Both men face the unanswerable. Both are undone, but remain. Both are given a vision, not a resolution. The serpent is beneath their feet — not tamed, not killed, but seen.",
+   "thesis": "The ones who carry the Logos must stand on the back of the Leviathan and not fall. We return to these texts not for answers but for the pattern of the stance: to face the deep, to dig the trench, to ask the question, to remain unbroken in the whirlwind. That is what it means to speak from the edge."
+  },
+  "blog_stratum": {
+   "note": "The room’s exegesis is on the blog and undeposited. The blog is deposited in full as a surface; these are recorded as the stratum rather than as separate works.",
+   "posts": [
+    {
+     "d": "2025-10-21",
+     "t": "THE MESSIANIC STRUCTURE OF JOB — A Theological Exegesis for a World on Trial",
+     "c": "4,377",
+     "u": "https://mindcontrolpoems.blogspot.com/2025/10/the-messianic-structure-of-job.html"
+    },
+    {
+     "d": "2025-10-21",
+     "t": "VISUAL SCHEMA: MESSIANIC JOB — LEVIATHAN BENEATH HIS FEET",
+     "c": "—",
+     "u": null
+    },
+    {
+     "d": "2025-10-22",
+     "t": "BENEATH THE FEET, AT THE EDGE — Job and Odysseus",
+     "c": "1,863",
+     "u": "https://mindcontrolpoems.blogspot.com/2025/10/beneath-feet-at-edge.html"
+    }
+   ],
+   "significance": "The same October 2025 stratum that constitutes R:r.24 Migdal. Two rooms the navigation maps later listed as PLANNED were already written, three months before the maps named them."
+  }
  },
  "locative_key_history": [
   {
