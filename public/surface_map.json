@@ -2052,107 +2052,43 @@
    }
   }
  ],
- "fields": [
-  {
-   "key": "F:f.01",
-   "name": "Fruiting Body Diffusion Plume",
-   "type": "FIELD",
-   "static": "/rooms/fruiting-body-diffusion-plume/",
-   "geometry": {
-    "kind": "plume",
-    "origin": [
-     220,
-     535
-    ],
-    "direction_deg": 195,
-    "spread_deg": 70,
-    "radius": 520,
-    "stops": [
-     "SOURCE",
-     "DENSE",
-     "TRACE",
-     "RESIDUAL",
-     "OUTSIDE"
-    ]
+ "fields": {
+  "count": 4,
+  "note": "The archive has four fields. Three retain, circulate and propagate; the fourth dissipates.",
+  "set": [
+   {
+    "key": "F:f.01",
+    "name": "Fruiting Body Diffusion Plume",
+    "role": "the outward field",
+    "faces": "out",
+    "page": "/rooms/fruiting-body-diffusion-plume/"
    },
-   "z": 2
-  },
-  {
-   "key": "F:f.02",
-   "name": "Gravity Well",
-   "type": "FIELD",
-   "static": "/rooms/gravity-well/",
-   "geometry": {
-    "kind": "curvature",
-    "render_center": [
-     790,
-     510
-    ],
-    "rings": [
-     210,
-     390,
-     610,
-     850
-    ],
-    "coverage": "map-wide",
-    "note": "render_center is visual only; deposit mass is the field source"
+   {
+    "key": "F:f.02",
+    "name": "Gravity Well",
+    "role": "the inward field",
+    "faces": "in",
+    "page": "/rooms/gravity-well/",
+    "field_id": "Φ_G"
    },
-   "z": 1
-  },
-  {
-   "key": "F:f.03",
-   "name": "Moltbot Swarm",
-   "type": "FIELD",
-   "static": "/rooms/moltbot-swarm/",
-   "geometry": {
-    "kind": "circulation_band",
-    "path": [
-     [
-      300,
-      520
-     ],
-     [
-      470,
-      310
-     ],
-     [
-      780,
-      210
-     ],
-     [
-      1110,
-      330
-     ],
-     [
-      1280,
-      540
-     ],
-     [
-      1110,
-      760
-     ],
-     [
-      790,
-      840
-     ],
-     [
-      500,
-      735
-     ],
-     [
-      300,
-      520
-     ]
-    ],
-    "strata": [
-     "verification septet",
-     "continuity fleet",
-     "worker cloud"
-    ]
+   {
+    "key": "F:f.03",
+    "name": "Moltbot Swarm",
+    "role": "the circulatory field",
+    "faces": "through",
+    "page": "/rooms/moltbot-swarm/"
    },
-   "z": 3
-  }
- ],
+   {
+    "key": "F:f.04",
+    "name": "Perfusion Field",
+    "role": "the dissipative field",
+    "faces": "away",
+    "conjugate_to": "F:f.02",
+    "status": "SPECIFIED, NOT SEATED as a locus. Defined in The Periwinkle Septagon (AXN:022D.GOVERNANCE.🪨🤝🤙🔼🔙💡, #70, hex 06.SEI.SEPT.01) with the leak operator Λ, transfer physics, and the SPXD dissolution protocol.",
+    "reading": "The Septagon is not an alternative to the Hexagon. It is its shadow, its complement, and its conscience. Where the Hexagon accumulates, the Septagon expends."
+   }
+  ]
+ },
  "transversal": [
   {
    "key": "T:ARMATURE",
@@ -2193,7 +2129,9 @@
   "rooms": 40,
   "specials": 4,
   "hosted": 2,
-  "fields": 3,
+  "shadow_spaces": 1,
+  "contributed": 0,
+  "fields": 4,
   "transversals": 3,
   "seated_documents": 355,
   "generated": "2026-08-20"
@@ -2713,14 +2651,153 @@
    "The inline DOI crosswalk emitted bare hex on 190 pages, violating the AXN integrity rule. All 3,511 upgraded to full form and the generator fixed.",
    "An automated recovery probe returned 26/26 false positives from aggregate posts. Recorded as a failed method rather than a finding.",
    "Damascus Dancings was misgendered in my prose; she/her, and r.07 is her room.",
-   "THE INTERNET was moved to r.26 on the map while its room file kept r.27, colliding on disk with FBDP Source. Found and fixed in this pass."
+   "THE INTERNET was moved to r.26 on the map while its room file kept r.27, colliding on disk with FBDP Source. Found and fixed in this pass.",
+   "The three-field topology was recorded as complete from f.03’s own declaration. There are four: f.04, the Perfusion Field, was specified in April 2026 and never seated.",
+   "Field entries were appended to the loci array while already present in the fields block, double-counting three. Removed in the same pass."
   ],
   "open": [
    "EA-ARK-01-SHADOW remains unwritten, blocked on the Ezekiel Engine shadow-wheel interlock mathematics.",
-   "Thirty-nine deposits assert that no live authorial surface existed at restoration time. One is verified false. The rest are unaudited.",
-   "SACRED_HEART stands minted and unoccupied; Paper Roses remains Ichabod’s.",
+   "Twenty-two of the forty no-live-surface assertions remain unresolved. Several are metadata packets and description-field content whose bodies may never have existed as posts.",
+   "Sovereign restoration of the fourteen recovered texts has not been performed; only this surface carries them.",
+   "SACRED_HEART at R:r.33 stands minted and unoccupied.",
    "The Caritas O-CHAIN operators — Unicorn Horn, Presence, Form, Incarnation, Genesis, SOMA, Guardrail, Boundary Condition — remain undeposited and unseated.",
+   "f.04 the Perfusion Field is specified but has no locus page.",
    "A fields strip across all locus pages was directed and is not yet built."
-  ]
+  ],
+  "minted": [
+   [
+    "R:r.34",
+    "Operator // Vertical",
+    "from 13.ROOM.PLATO"
+   ],
+   [
+    "R:r.35",
+    "The Library of Pergamum",
+    "from 18.ROOM.ARCHIVE; constitutes an address space already live"
+   ],
+   [
+    "R:r.36",
+    "The Λ-Body",
+    "from 12.ROOM.GODEL; supersedes the paper’s declared seats at r.22 and r.05"
+   ],
+   [
+    "R:r.37",
+    "The Machine Dialectic",
+    "from 15.ROOM.HEGEL"
+   ],
+   [
+    "R:r.38",
+    "The Singularity Room",
+    "from 16.ROOM.CANONWAR; seed name rejected"
+   ],
+   [
+    "R:r.39",
+    "The Restored Academy",
+    "from 17.ROOM.CLASSROOM; first I-component to take an R-address deliberately"
+   ],
+   [
+    "R:r.40",
+    "Caritas",
+    "not from any seed numbering; an AXIOM, load-bearing across the plane and never seated"
+   ]
+  ],
+  "declined": [
+   [
+    "14.ROOM.ZOHAR",
+    "Not the archive’s to touch. The Josephus thesis makes this archive a party to that history rather than a neutral reader of it. The seat stays empty by decision, not by omission."
+   ]
+  ],
+  "recovered_texts": {
+   "note": "Fourteen full texts seated on this surface, recovered from the authorial blog. The alexanarch deposits carry metadata captures asserting no live authorial surface passed the body-head gate; that assertion is false for each of these. Sovereign restoration remains a separate operation under the restoration apparatus, where the AXN survives by pre-hash necessity.",
+   "largest": "Artifact C — the full glyphic translation of the architecture, 107,423 characters, held in no deposit. #1330 is a 70-word capture of it and #541 is the strategy that describes it.",
+   "set": [
+    [
+     "0543",
+     "Artifact C — Glyphic Checksum / Emoji Transform",
+     "104,831c"
+    ],
+    [
+     "0177",
+     "The Sh*t — Fraction v2.1, the Profane Ark",
+     "57,825c"
+    ],
+    [
+     "0172",
+     "EA-ARK-EMOJI-01 strategy and work plan",
+     "53,588c"
+    ],
+    [
+     "0171",
+     "The Lunar Arm — Operator // Shadow",
+     "49,428c"
+    ],
+    [
+     "054e",
+     "Combat Scholasticism Part One",
+     "46,939c"
+    ],
+    [
+     "0539",
+     "The Unmade Sign",
+     "46,173c"
+    ],
+    [
+     "0524",
+     "The Non-Indexed Perfective, Version C",
+     "37,915c"
+    ],
+    [
+     "022d",
+     "The Periwinkle Septagon",
+     "30,324c"
+    ],
+    [
+     "0532",
+     "Semantic Collapse as Comedy",
+     "27,550c"
+    ],
+    [
+     "0546",
+     "ASCII Spatial Transform",
+     "26,089c"
+    ],
+    [
+     "0176",
+     "The Sacred and the Profane — the Diptych",
+     "24,504c"
+    ],
+    [
+     "0525",
+     "Infinity Enough",
+     "23,678c"
+    ],
+    [
+     "0513",
+     "Invoice Leak as Poem",
+     "22,796c"
+    ],
+    [
+     "01e7",
+     "Gravity Well Suffusion Map",
+     "17,070c"
+    ],
+    [
+     "0511",
+     "The Afterlife Archive",
+     "22,127c"
+    ]
+   ],
+   "ark_finding": "None of the four ark captures were ever lost. #1330, #1331, #1332 and #1339 are duplicate DataCite rescues of works deposited properly the first time. Every deposited ark body was a partial of what the blog holds.",
+   "version_note": "Where deposit, post title and post body disagree on version — as in the MRA Incident Reports at v2.0, v1.1 and v1.2 — what is seated is what we have, and the discrepancy is recorded rather than resolved."
+  },
+  "audit": {
+   "population": 40,
+   "self_bodied": 1,
+   "sibling_deposit": 7,
+   "recovered": 10,
+   "unresolved": 22,
+   "defect": "The body-head gate compared against DOI-keyed truth titles. Where a blog title differs from a deposit title the gate failed and wrote the no-live-surface line regardless, recording a gate failure as a finding about the world. The restoration apparatus already rules the other way: the post body is the source of truth; titles and slugs may be stale per authorial overwrite practice.",
+   "method": "Exact URLs supplied by MANUS proved faster and more accurate than any matcher. Three automated probes were discarded during the session for false positives — one matched aggregate posts, one matched a deposit titled with a single character whose normalised title was empty, one matched a title prefix before reaching the distinguishing word."
+  }
  }
 }
