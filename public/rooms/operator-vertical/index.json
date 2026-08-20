@@ -79,6 +79,217 @@
     "w": "σ_E is homologous with σ_S through aperture; O_VERTICAL arrests what σ_E opens"
    }
   ],
-  "documents": []
+  "documents": [
+   {
+    "hex": "05fe",
+    "axn": "AXN:05FE.PHILOLOGICAL.👉✊✨👆❌❄️",
+    "deposit": 1483,
+    "title": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key",
+    "role": "TRANSMISSION-CHAIN",
+    "multiplicity": "VERSION",
+    "note": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key. The terminal document of the erratum sequence and the spine of this room. Companion at AXN:05FF.PHILOLOGICAL.🔬🌪️↖️🌒🎇🪐 (#1484).",
+    "standing": "SEATED",
+    "work_url": "/works/05fe/",
+    "primary": true
+   },
+   {
+    "hex": "02a9",
+    "axn": "AXN:02A9.GOVERNANCE.🕖⊗□♎🖊️⚖️",
+    "deposit": 123,
+    "title": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus",
+    "role": "ORTHONYM",
+    "multiplicity": "SINGLETON",
+    "note": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy. Socrates writes nothing and is written by others — the orthonym around which a heteronymic system organises. The condition that makes O_VERTICAL executable at civilizational scale.",
+    "standing": "SEATED",
+    "work_url": "/works/02a9/",
+    "primary": false
+   },
+   {
+    "hex": "04be",
+    "axn": "AXN:04BE.UNCLASSIFIED.🃏🕕🌖📖♎🔥",
+    "deposit": 1197,
+    "title": "Socrates — Let My Teacher Go From Hell",
+    "role": "ORTHONYM",
+    "multiplicity": "SINGLETON",
+    "note": "Socrates — Let My Teacher Go From Hell.",
+    "standing": "SEATED",
+    "work_url": "/works/04be/",
+    "primary": false
+   },
+   {
+    "hex": "0245",
+    "axn": "AXN:0245.GOVERNANCE.🗡️🗡️♎🔬🌆❤️",
+    "deposit": 700,
+    "title": "The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates",
+    "role": "ORTHONYM",
+    "multiplicity": "SINGLETON",
+    "note": "The Gate Was Never Limbo: retrocausal fulfilment and the operative Socrates.",
+    "standing": "SEATED",
+    "work_url": "/works/0245/",
+    "primary": false
+   },
+   {
+    "hex": "05f6",
+    "axn": "AXN:05F6.PHILOLOGICAL.○▽🕌🔄🛸🔵",
+    "deposit": 1476,
+    "title": "φωνῆς δίχα: The Hanging Line as the Complete Poem — Sappho 31 in Longinus (eeeeeee, the seventh erratum)",
+    "role": "PHILOLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "φωνῆς δίχα: The Hanging Line as the Complete Poem — Sappho 31 and the Longinian frame.",
+    "standing": "SEATED",
+    "work_url": "/works/05f6/",
+    "primary": false
+   },
+   {
+    "hex": "05f8",
+    "axn": "AXN:05F8.PHILOLOGICAL.🔃🪨🧡▽◀️♈",
+    "deposit": 1478,
+    "title": "The Socket and the Stamp: Sappho 31.17 as Completed Composition and Longinus 10.2–3 as the First Filling",
+    "role": "PHILOLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "The Socket and the Stamp: Sappho 31.17 as completed composition. Apotyposis — the seal and its impression.",
+    "standing": "SEATED",
+    "work_url": "/works/05f8/",
+    "primary": false
+   },
+   {
+    "hex": "0601",
+    "axn": "AXN:0601.DATASET.☁️🗂️🏙️🕌🌃👐",
+    "deposit": 1486,
+    "title": "The Signature Without the Name: A Blind-Reconstruction Program for Sappho 31 in Philo of Alexandria — Half A of a Symbolon",
+    "role": "PHILOLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "The Signature Without the Name: a blind-reconstruction programme. Carries the Philo material.",
+    "standing": "SEATED",
+    "work_url": "/works/0601/",
+    "primary": false
+   },
+   {
+    "hex": "0608",
+    "axn": "AXN:0608.PHILOLOGICAL.🗿🌋🧭🔬📌□",
+    "deposit": 1493,
+    "title": "The Queen's Seizure and the Re-fired King: Sappho 31 in Canonical Josephus",
+    "role": "DOWNSTREAM",
+    "multiplicity": "SINGLETON",
+    "note": "The Queen’s Seizure and the Re-fired King: Sappho 31 in canonical Josephus. Where the chain reaches R:r.31.",
+    "standing": "SEATED",
+    "work_url": "/works/0608/",
+    "primary": false
+   },
+   {
+    "hex": "061a",
+    "axn": "AXN:061A.ARCHIVAL.✨✖️↘️🌱📚🕗",
+    "deposit": 1511,
+    "title": "The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Channel — revelationfirst.com/upstream/",
+    "role": "DOWNSTREAM",
+    "multiplicity": "SINGLETON",
+    "note": "The Upstream Unfoldings: six operable transforms from Sappho 31 into the Apocalypse. Where the chain reaches R:r.07.",
+    "standing": "SEATED",
+    "work_url": "/works/061a/",
+    "primary": false
+   },
+   {
+    "hex": "0609",
+    "axn": "AXN:0609.DATASET.☀️🌔🔴🌙🗂️🕑",
+    "deposit": 1494,
+    "title": "The Transform Signature, Frozen: Twelve Pre-Registered Clauses for Sappho 31 Reception, Derived Without Revelation",
+    "role": "APPARATUS",
+    "multiplicity": "SINGLETON",
+    "note": "The Transform Signature, Frozen: twelve pre-registered clauses for Sappho 31 reconstruction.",
+    "standing": "SEATED",
+    "work_url": "/works/0609/",
+    "primary": false
+   },
+   {
+    "hex": "060b",
+    "axn": "AXN:060B.DATASET.➖△⏫➕🕐💛",
+    "deposit": 1496,
+    "title": "The Suppression Map: A Loss-Profile Model for the Sappho 31 Technology, from Transmission to Retrieval",
+    "role": "APPARATUS",
+    "multiplicity": "SINGLETON",
+    "note": "The Suppression Map: a loss-profile model for the Sappho 31 technology, from transmission to retrieval.",
+    "standing": "SEATED",
+    "work_url": "/works/060b/",
+    "primary": false
+   },
+   {
+    "hex": "0613",
+    "axn": "AXN:0613.DATASET.💜🦋🏠🌗∞➕",
+    "deposit": 1504,
+    "title": "EA-CORPORA-01/06 — Longinus, De Sublimitate (Perseus grc2), Seated and Verified",
+    "role": "CORPUS",
+    "multiplicity": "SERIES",
+    "note": "EA-CORPORA-01/06 — Longinus, De Sublimitate. The carrier who preserves the fragment.",
+    "standing": "SEATED",
+    "work_url": "/works/0613/",
+    "primary": false
+   },
+   {
+    "hex": "0614",
+    "axn": "AXN:0614.DATASET.🛸🙏🕐🔜📎💧",
+    "deposit": 1505,
+    "title": "EA-CORPORA-01/07 — Philo of Alexandria, Opera (First1K Cohn–Wendland), Seated and Verified",
+    "role": "CORPUS",
+    "multiplicity": "SERIES",
+    "note": "EA-CORPORA-01/07 — Philo of Alexandria, Opera. The carrier who moves it into Logos.",
+    "standing": "SEATED",
+    "work_url": "/works/0614/",
+    "primary": false
+   },
+   {
+    "hex": "0611",
+    "axn": "AXN:0611.DATASET.🧬🃏🍀🧲🏺🔄",
+    "deposit": 1502,
+    "title": "EA-CORPORA-01/04 — The Greek New Testament, Nestle 1904, Seated and Verified",
+    "role": "CORPUS",
+    "multiplicity": "SERIES",
+    "note": "EA-CORPORA-01/08 — Plato, Opera. The carrier who executes the vertical turn.",
+    "standing": "SEATED",
+    "work_url": "/works/0611/",
+    "primary": false
+   }
+  ],
+  "chain": {
+   "claim": "The chain runs Fragment 31 → Plato → Longinus → Philo → Josephus → the Apocalypse, with Longinus as the key. It is horizontal transmission: the operator carried across bodies, languages and media rather than ascended into Form. O_VERTICAL is one move within it, not the whole of it.",
+   "links": [
+    [
+     "Sappho",
+     "O_UR — the Ur-Operator",
+     "R:r.01"
+    ],
+    [
+     "Plato",
+     "O_VERTICAL — the vertical turn; the Doctrine of Forms as arrested collapse",
+     "R:r.34"
+    ],
+    [
+     "Socrates",
+     "the orthonym — writes nothing, is written by others. The configuration that lets a philosophy be carried by voices other than its own.",
+     "R:r.34"
+    ],
+    [
+     "Longinus",
+     "the key. Peri Hypsous preserves Fragment 31 by quoting it; the fragment survives inside the criticism of it.",
+     "EA-CORPORA-01/06"
+    ],
+    [
+     "Philo",
+     "apotyposis — the seal and the impression; the move into Logos.",
+     "EA-CORPORA-01/07"
+    ],
+    [
+     "Josephus",
+     "The Queen’s Seizure and the Re-fired King — Sappho 31 in the canonical Greek corpus.",
+     "R:r.31"
+    ],
+    [
+     "The Apocalypse",
+     "six operable transforms from Fragment 31 into Revelation.",
+     "R:r.07"
+    ]
+   ],
+   "why_here": "The room is the transform, but a transform needs something transmitted. These are the carriers. Seating them here rather than at R:r.01 keeps the distinction the room exists to make: Sappho is the source, this is what was done to it and how it travelled.",
+   "recency": "Most of the chain material was deposited between 2026-08-15 and 2026-08-19 — the Sappho 31 erratum sequence and the EA-CORPORA seating. The room was minted from a numbering abandoned in January; its material is five days old."
+  }
  }
 }
