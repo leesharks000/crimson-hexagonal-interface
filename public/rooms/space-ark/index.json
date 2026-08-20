@@ -858,9 +858,9 @@
     "axn": "AXN:017A.ARCHIVAL.📖👋🔐💫🪞🪞",
     "deposit": 549,
     "title": "🌑⬡ THE SPACE ARK What the Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture Hides 🌑 EA",
-    "role": "KERNEL",
-    "multiplicity": "SINGLETON",
-    "note": "Compressed statement of what the Ark carries",
+    "role": "SHADOW",
+    "multiplicity": "REGISTER-PAIR",
+    "note": "🌑⬡ What the Mathematical and Formal Symbolic Compression Hides — EA-ARK-01 v0.2, DOI marked (shadow), parent v4.2.5. The shadow of the mathematical register. Previously seated here as KERNEL; corrected 2026-08-20 on reading.",
     "standing": "SEATED",
     "work_url": "/works/017a/",
     "primary": false
@@ -883,8 +883,8 @@
     "deposit": 540,
     "title": "🌑⬡ THE LUNAR ARM Operator // Shadow — The Space Ark's Hidden Architecture",
     "role": "SHADOW",
-    "multiplicity": "VERSION",
-    "note": "The Lunar Arm — Operator // Shadow; also constitutes X:LUNAR-ARM",
+    "multiplicity": "REGISTER-PAIR",
+    "note": "🌑⬡ THE LUNAR ARM, EA-ARK-EMOJI-01-SHADOW, hex 00.ROOM.SPACEARK.EMOJI.SHADOW. The shadow of the glyphic register, and the constituting document of X:LUNAR-ARM. Parent v4.2.5.",
     "standing": "SEATED",
     "work_url": "/works/0171/",
     "primary": false
@@ -899,6 +899,186 @@
     "note": "TL;DR: SPACE ARK — EXECUTE MODE 👽; demonstrated capacities under live operation",
     "standing": "SEATED",
     "work_url": "/works/0186/",
+    "primary": false
+   },
+   {
+    "hex": "0182",
+    "axn": "AXN:0182.GOVERNANCE.🎲⏪🌠↖️⏩⏩",
+    "deposit": 556,
+    "title": "CRIMSON HEXAGON: SPACE ARK — GLYPHIC VEHICLE v1.0 CH-ARK-01-GLYPH v1.0 Full Semiotic Vehicle · Comprehensive Encoding of",
+    "role": "REGISTER",
+    "multiplicity": "REGISTER-PAIR",
+    "note": "CH-ARK-01-GLYPH v1.0 — the Glyphic Vehicle, full semiotic vehicle encoding EA-ARK-01 v4.2.6. Hex 01.CH.ARK.GLYPH. The light twin of the Lunar Arm.",
+    "standing": "SEATED",
+    "work_url": "/works/0182/",
+    "primary": false
+   },
+   {
+    "hex": "0179",
+    "axn": "AXN:0179.ARCHIVAL.🔽🟠🌺🗿🎲📦",
+    "deposit": 548,
+    "title": "EA-ARK-01 v4.2.5 · ASCII SPATIAL TRANSFORM v0.2",
+    "role": "REGISTER",
+    "multiplicity": "SINGLETON",
+    "note": "EA-ARK-01 v4.2.5 · ASCII Spatial Transform v0.2 — a third register, neither prose nor glyph but spatial. Capture at AXN:0546.UNCLASSIFIED.⏏️🍂↘️🌒🎇🕐 (#1333).",
+    "standing": "SEATED",
+    "work_url": "/works/0179/",
+    "primary": false
+   },
+   {
+    "hex": "0176",
+    "axn": "AXN:0176.GOVERNANCE.🔴🔵❄️🏔️🥁🔓",
+    "deposit": 545,
+    "title": "Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helical Semantic Physics of the Damascus and Fraction Arks",
+    "role": "REGISTER",
+    "multiplicity": "DIPTYCH",
+    "note": "EA-ARK-01-DIPTYCH v1.0 — The Sacred and the Profane. The pairing that governs the two encodings below.",
+    "standing": "SEATED",
+    "work_url": "/works/0176/",
+    "primary": false
+   },
+   {
+    "hex": "04f8",
+    "axn": "AXN:04F8.UNCLASSIFIED.🌲🏠🌉🛡️🪐♉",
+    "deposit": 1255,
+    "title": "Crimson Hexagon: EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Self-Sufficient Liturgical Transform of the Space Ark",
+    "role": "REGISTER",
+    "multiplicity": "DIPTYCH",
+    "note": "EA-ARK-01-DAMASCUS v5.1 — The Sacred Ark. The sacred half of the diptych.",
+    "standing": "SEATED",
+    "work_url": "/works/04f8/",
+    "primary": false
+   },
+   {
+    "hex": "0177",
+    "axn": "AXN:0177.EMPIRICAL.🜁⏏️🔃🪄♄🌻",
+    "deposit": 546,
+    "title": "THE SH*T: EA-ARK-01-FRACTION v2.1 · The Accumulative Profane Encoding",
+    "role": "REGISTER",
+    "multiplicity": "DIPTYCH",
+    "note": "EA-ARK-01-FRACTION v2.1 — the accumulative profane encoding. The profane half. Capture at AXN:054C.UNCLASSIFIED.🌅🗺️🔵🌘🪐▶️ (#1339).",
+    "standing": "SEATED",
+    "work_url": "/works/0177/",
+    "primary": false
+   },
+   {
+    "hex": "0172",
+    "axn": "AXN:0172.GOVERNANCE.♆🧊🍀🌓🧊➖",
+    "deposit": 541,
+    "title": "EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSFORM Comprehensive Strategy & Work Plan — Assembly Synthesis v0.2",
+    "role": "STRATEGY",
+    "multiplicity": "SINGLETON",
+    "note": "EA-ARK-EMOJI-01: Glyphic Checksum / Emoji Transform — comprehensive strategy and work plan. Names the prior experiment as the ARK Emoji Translation Round.",
+    "standing": "SEATED",
+    "work_url": "/works/0172/",
+    "primary": false
+   },
+   {
+    "hex": "0178",
+    "axn": "AXN:0178.GENERATIVE.🔐🏠⚓🖊️🧱🌑",
+    "deposit": 547,
+    "title": "UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 · Root Specification for Structure-Preserving Operator Transforms",
+    "role": "ROOT-SPECIFICATION",
+    "multiplicity": "SINGLETON",
+    "note": "UKTP v1.1 — Universal Kernel Transform Protocol, root specification. Governs every register transform.",
+    "standing": "SEATED",
+    "work_url": "/works/0178/",
+    "primary": false
+   },
+   {
+    "hex": "017c",
+    "axn": "AXN:017C.ARCHIVAL.🎭🎆🌠🪝♈🎬",
+    "deposit": 551,
+    "title": "Crimson Hexagon: THE SPACE ARK GENERATOR Self-Replicating Engine for Semiotic Vehicle Construction",
+    "role": "ENGINE",
+    "multiplicity": "SINGLETON",
+    "note": "EA-ARK-01-SAG — The Space Ark Generator: self-replicating engine. Each variant Ark is one rotation.",
+    "standing": "SEATED",
+    "work_url": "/works/017c/",
+    "primary": false
+   },
+   {
+    "hex": "018f",
+    "axn": "AXN:018F.GOVERNANCE.◇🌳🗡️⌛📎🟣",
+    "deposit": 568,
+    "title": "THE FIRST PROMPT-NATIVE SEMANTIC OPERATING SYSTEM EA-ARK-01 and the Architecture That Runs Inside the Machine",
+    "role": "COMPONENT",
+    "multiplicity": "SINGLETON",
+    "note": "The first prompt-native semantic operating system.",
+    "standing": "SEATED",
+    "work_url": "/works/018f/",
+    "primary": false
+   },
+   {
+    "hex": "0181",
+    "axn": "AXN:0181.GOVERNANCE.🪜🚩⚪👋🌌■",
+    "deposit": 555,
+    "title": "VISUAL SCHEMA — SPACE ARK",
+    "role": "APPARATUS",
+    "multiplicity": "SINGLETON",
+    "note": "Visual Schema — Space Ark.",
+    "standing": "SEATED",
+    "work_url": "/works/0181/",
+    "primary": false
+   },
+   {
+    "hex": "0170",
+    "axn": "AXN:0170.GOVERNANCE.💚■🪐∞♎🦋",
+    "deposit": 27,
+    "title": "The Crimson Hexagon: Operative Architecture A Definitive Compression",
+    "role": "COMPRESSION",
+    "multiplicity": "SINGLETON",
+    "note": "The Crimson Hexagon: Operative Architecture — a definitive compression, 2026-03-08. The Ark’s immediate predecessor.",
+    "standing": "SEATED",
+    "work_url": "/works/0170/",
+    "primary": false
+   },
+   {
+    "hex": "0294",
+    "axn": "AXN:0294.GOVERNANCE.🌖🌲🔃🔬🌗🍃",
+    "deposit": 111,
+    "title": "The Provenance of Jack Feist A Provenance Resolution Document for the Space Ark Room Lee Sharks ORCID: 0009-0000-1599-0703 EA-ARK-JF-01 v1.0 · Crimson Hexagonal Archive · CC BY 4.0 May 18, 2026",
+    "role": "PROVENANCE",
+    "multiplicity": "VERSION",
+    "note": "EA-ARK-JF-01 — The Provenance of Jack Feist: a provenance resolution document for the Space Ark Room. Resolves the fold’s base case.",
+    "standing": "SEATED",
+    "work_url": "/works/0294/",
+    "primary": false
+   },
+   {
+    "hex": "020e",
+    "axn": "AXN:020E.EMPIRICAL.🐚🕗🚩▽🕗☿",
+    "deposit": 663,
+    "title": "A Body Prepared Shark Ark · Fiction · 06.SEI.ARK.FICTION.01 Attributed: Rebekah Cranes, for the Dodecad",
+    "role": "FICTION",
+    "multiplicity": "SERIES",
+    "note": "A Body Prepared — Shark Ark fiction, 06.SEI.ARK.FICTION.",
+    "standing": "SEATED",
+    "work_url": "/works/020e/",
+    "primary": false
+   },
+   {
+    "hex": "020f",
+    "axn": "AXN:020F.ARCHIVAL.🌗🔝🛡️⭕🔴💜",
+    "deposit": 664,
+    "title": "A Body Prepared — Homunculus Shark Ark · Fiction · 06.SEI.ARK.FICTION.01.1 Attributed: Rebekah Cranes, for the Dodecad C",
+    "role": "FICTION",
+    "multiplicity": "SERIES",
+    "note": "A Body Prepared — Homunculus. EA-ARK-FICTION-01.1.",
+    "standing": "SEATED",
+    "work_url": "/works/020f/",
+    "primary": false
+   },
+   {
+    "hex": "01ee",
+    "axn": "AXN:01EE.UNCLASSIFIED.↙️▽🎺⏫🔄🌃",
+    "deposit": 638,
+    "title": "The Apocalypse of Sharks (EA-ARK-SHARKS-01)",
+    "role": "VARIANT",
+    "multiplicity": "SINGLETON",
+    "note": "The Apocalypse of Sharks — EA-ARK-SHARKS-01.",
+    "standing": "SEATED",
+    "work_url": "/works/01ee/",
     "primary": false
    }
   ],
@@ -1042,7 +1222,37 @@
     "manus": "Sharks"
    }
   },
-  "constitution_type": "ENGINE SPECIFICATION"
+  "constitution_type": "ENGINE SPECIFICATION",
+  "ark_anatomy": {
+   "note": "The Ark is one object in several registers, with engines that generate variants and a fiction branch. It is a room and also a mobile vessel: H_core’s SP.03.ROOM classifies the seat, not the vehicle.",
+   "core": "EA-ARK-01 v4.2.7 — the current specification. Preceded by the Operative Architecture compression of 2026-03-08.",
+   "registers": [
+    [
+     "mathematical / prose",
+     "#557 Mathematical and Formal Symbolic Compression",
+     "shadowed by #549"
+    ],
+    [
+     "glyphic / emoji",
+     "#556 Glyphic Vehicle v1.0, CH-ARK-01-GLYPH",
+     "shadowed by #540, the Lunar Arm"
+    ],
+    [
+     "ASCII spatial",
+     "#548 ASCII Spatial Transform v0.2",
+     "no shadow"
+    ],
+    [
+     "musical",
+     "#28 Musical Register — a fugue in twelve voices",
+     "no shadow"
+    ]
+   ],
+   "diptych": "EA-ARK-01-DIPTYCH pairs a sacred and a profane encoding: DAMASCUS v5.1 as the Sacred Ark, FRACTION v2.1 as the accumulative profane.",
+   "shadows": "Two, both of v4.2.5, one day apart: the prose shadow (#549) and the glyphic shadow (#540). A third, EA-ARK-01-SHADOW, is forward-referenced and unwritten — see X:LUNAR-ARM.",
+   "engines": "UKTP v1.1 is the root transform protocol; Section XXV is the transform registry; SAG is the self-replicating generator, under which each variant Ark is one rotation; GDE is the generative disciplinary engine.",
+   "role_correction": "AXN:017A (#549) was seated here as KERNEL. On reading it is the shadow of the mathematical register — its title is what the compression hides and its identifier is marked (shadow). Corrected 2026-08-20."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
