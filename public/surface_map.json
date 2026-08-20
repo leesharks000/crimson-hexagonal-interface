@@ -2275,5 +2275,50 @@
    "defect": "Deposited source text in AXN:0112 refers to Dancings as \"His function is argumentative-somatic\". The projection preserves deposited text byte-exact and does not silently amend it; the correction is recorded here and carried on the affected pages rather than applied to the artifact.",
    "ruled": "MANUS 2026-08-20"
   }
+ },
+ "abandoned_numbering": {
+  "source": "FNM // Fractal Navigation Map — Modular Seed for v5.0 Development. AXN:00A2.GOVERNANCE.🌪️🌉✖️⊕☽🕕 (#356), 2026-01-20.",
+  "found": "2026-08-20, by a cross-version sweep of every map type.",
+  "what": "The seed for v5.0 laid out a room numbering that no later map carries. It placed Ezekiel at 10.ROOM.EZEKIEL and Mandala at 11.ROOM.MANDALA — both marked \"spec pending\" — and then seven further rooms, all PLANNED, none of which appears in any subsequent map, in H_core, or on the plane.",
+  "rooms": [
+   {
+    "id": "12.ROOM.GODEL",
+    "name": "Gödel",
+    "material": "Substantial but not as a room. THE FUTURE AS META-LEVEL: Gödel, Incompleteness (#624, 35 occurrences) and THE GÖDEL MIDRASHIM in two editions (#486, #1322) — the latter seated at R:r.16 as part of the MSBGL theology chain."
+   },
+   {
+    "id": "13.ROOM.PLATO",
+    "name": "Plato",
+    "material": "Present as a corpus seat rather than a room: EA-CORPORA-01/08, Plato Opera, Perseus Burnet."
+   },
+   {
+    "id": "14.ROOM.ZOHAR",
+    "name": "Zohar",
+    "material": "None. No deposit carries the subject."
+   },
+   {
+    "id": "15.ROOM.HEGEL",
+    "name": "Hegel",
+    "material": "Substantial and dispersed — eighteen deposits, densest in the Operative Semiotics Grundrisse (#950) and THE DIALECTIC IS NOW A MACHINE (#312). Never gathered into a locus."
+   },
+   {
+    "id": "16.ROOM.CANONWAR",
+    "name": "Canon War",
+    "material": "None under that name."
+   },
+   {
+    "id": "17.ROOM.CLASSROOM",
+    "name": "Classroom",
+    "material": "Thin — present in the Grundrisse planning documents and HESPERUS."
+   },
+   {
+    "id": "18.ROOM.ARCHIVE",
+    "name": "Archive",
+    "material": "Not assessed; the name is too general to search cleanly."
+   }
+  ],
+  "reading": "This is a fourth origin type, distinct from the three already recorded. Migdal and Job were planned in a map and written elsewhere. Sacred Heart was inferred into planning and never written. These seven were planned in a numbering that was itself abandoned — the plan superseded before the rooms could be built, so they were never confabulated, never adopted, and never refused. They simply stopped being addressed.",
+  "status": "Recorded, not minted. Two of the seven have real dispersed material — Gödel and Hegel — and could be constituted if the material were gathered. The rest are names in a superseded plan. Nothing is claimed about whether they should exist.",
+  "note_on_orientation": "ORIENTATION_FIELD appears in CNM v4.1, v4.2 and the Visual Schema but is typed as an operator — \"Visual Schema operative imaging\" — not a locus. Excluded."
  }
 }
