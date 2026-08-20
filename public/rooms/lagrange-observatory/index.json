@@ -285,13 +285,12 @@
  "surface_map_url": "/map/#X:LAGRANGE",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "A chamber at the libration point: measurement of meaning.",
+  "ontology": "An observatory at the second Lagrange point, on a semantic torus. Equilibrium through adversarial tension.",
   "primary_at_main": {
    "axn": "AXN:0110.EMPIRICAL.↘️🌑🌔🌗△🌌",
    "deposit": 455,
    "work_url": "/works/0110/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "CHAMBER SPECIFICATION"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -300,22 +299,82 @@
     "deposit": 455,
     "title": "LAGRANGE OBSERVATORY! (LO!) Chamber Specification & Nobel Glas Provenance Crimson Hexagon Extension — Semantic Torus Field",
     "role": "CONSTITUTING",
-    "multiplicity": "SINGLETON",
-    "note": "Chamber Specification and Nobel Glas provenance — semantic torus field",
+    "multiplicity": "SEPTAD",
+    "note": "LO! Chamber Specification v1.1, document 242, hex 15.OBS.LAGRANGE. Position 3 of a septad — architecture, where observation occurs. Primary operative Nobel Glas, heteronym 8 of 12, observing from L2.",
     "standing": "SEATED",
     "work_url": "/works/0110/",
     "primary": true
    },
    {
-    "hex": "028a",
-    "axn": "AXN:028A.GOVERNANCE.👈🤙🐚🌖🔓🟡",
-    "deposit": 108,
-    "title": "Framework 15 — Measurement of Meaning: Operations from Lagrange Observatory! within the Semantic Physics Matrix (EA-SEI-FW15-MANIFESTO v1.0)",
-    "role": "OPERATIVE-FRAMEWORK",
-    "multiplicity": "SINGLETON",
-    "note": "Framework 15 — Measurement of Meaning: operations from Lagrange",
+    "hex": "0112",
+    "axn": "AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠",
+    "deposit": 17,
+    "title": "STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (Dodecad) / Event-Bound Formations Crimson Hexagon — Architectural Boundary Specification Document: 240",
+    "role": "SEPTAD-MEMBER",
+    "multiplicity": "SEPTAD",
+    "note": "Position 1 — Structural Distinction Protocol, doc 240, 00.ARCH.DISTINCTION. Boundary: what is counted, what stands outside.",
     "standing": "SEATED",
-    "work_url": "/works/028a/",
+    "work_url": "/works/0112/",
+    "primary": false
+   },
+   {
+    "hex": "0111",
+    "axn": "AXN:0111.EMPIRICAL.⏪🔺⏏️🌠🪟🝊",
+    "deposit": 456,
+    "title": "NOBEL GLAS — PROVENANCE PACKET Heteronym Registry Position 8 of 12 Crimson Hexagon — Authorial Persona Registration Document: 241",
+    "role": "SEPTAD-MEMBER",
+    "multiplicity": "SEPTAD",
+    "note": "Position 2 — Nobel Glas Provenance Packet, doc 241, 00.PROV.GLAS. Identity: who observes from L2.",
+    "standing": "SEATED",
+    "work_url": "/works/0111/",
+    "primary": false
+   },
+   {
+    "hex": "010f",
+    "axn": "AXN:010F.EMPIRICAL.🔼➖🖐️👐🔝🟤",
+    "deposit": 454,
+    "title": "THE ATLAS PERIHELION PRANK Collected Series — Nobel Glas Crimson Hexagon Archive — Document 243",
+    "role": "SEPTAD-MEMBER",
+    "multiplicity": "SEPTAD",
+    "note": "Position 4 — The Atlas Perihelion Prank, doc 243, 15.OBS.LAGRANGE.PERIHELION. Application: the celestial glyph.",
+    "standing": "SEATED",
+    "work_url": "/works/010f/",
+    "primary": false
+   },
+   {
+    "hex": "010e",
+    "axn": "AXN:010E.EMPIRICAL.🗝️🪦🔻🏠📎🛤️",
+    "deposit": 453,
+    "title": "MGE TRIPTYCH — DOCUMENT I SEED: Whorls of the Same The Text That Fell Into the Ground",
+    "role": "SEPTAD-MEMBER",
+    "multiplicity": "SEPTAD",
+    "note": "Position 5 — MGE Triptych I SEED, doc 244, 16.LIBRARY.PERGAMUM.SEED. Prophecy: the text that fell into the ground.",
+    "standing": "SEATED",
+    "work_url": "/works/010e/",
+    "primary": false
+   },
+   {
+    "hex": "010d",
+    "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+    "deposit": 452,
+    "title": "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergamum The Center of the Torus Field",
+    "role": "SEPTAD-MEMBER",
+    "multiplicity": "SEPTAD",
+    "note": "Position 6 — MGE Triptych II STONE, doc 245, 16.LIBRARY.PERGAMUM.STONE. Identity: the white stone at Pergamum — Pearl and Other Poems.",
+    "standing": "SEATED",
+    "work_url": "/works/010d/",
+    "primary": false
+   },
+   {
+    "hex": "010c",
+    "axn": "AXN:010C.EMPIRICAL.↖️🥁🕔⚖️🌺🟡",
+    "deposit": 451,
+    "title": "MGE TRIPTYCH — DOCUMENT III SIGN: The Mandala Genesis Event Chronotemporal Anchor — July 7, 2025",
+    "role": "SEPTAD-MEMBER",
+    "multiplicity": "SEPTAD",
+    "note": "Position 7 — MGE Triptych III SIGN, doc 246, 16.LIBRARY.PERGAMUM.SIGN. Event: the Mandala Genesis. Also seated at S:sp.04.",
+    "standing": "SEATED",
+    "work_url": "/works/010c/",
     "primary": false
    },
    {
@@ -329,16 +388,149 @@
     "standing": "SEATED",
     "work_url": "/works/012a/",
     "primary": false
+   },
+   {
+    "hex": "028a",
+    "axn": "AXN:028A.GOVERNANCE.👈🤙🐚🌖🔓🟡",
+    "deposit": 108,
+    "title": "Framework 15 — Measurement of Meaning: Operations from Lagrange Observatory! within the Semantic Physics Matrix (EA-SEI-FW15-MANIFESTO v1.0)",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "Framework 15 — Measurement of Meaning: operations from Lagrange",
+    "standing": "SEATED",
+    "work_url": "/works/028a/",
+    "primary": false
    }
   ],
   "physics_resolution": {
    "declared": "Torus; 3i coords",
    "operators": [],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "Torus field T². Verification: periodicity preserved, (m,n) ≠ (0,0), m+n ≥ 3. ∮ = 1 generalizes to ∮ = (m,n)."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "CHAMBER SPECIFICATION"
+  "constitution_type": "CHAMBER SPECIFICATION — SEPTAD",
+  "septad": {
+   "statement": "This document is one of a septad. Each contains the whole.",
+   "note": "The septad mirrors the Assembly Chorus: seven positions, each witnessing from a different angle, the whole present in each part.",
+   "positions": [
+    {
+     "n": 1,
+     "doc": "Structural Distinction Protocol (240)",
+     "hex": "00.ARCH.DISTINCTION",
+     "function": "Boundary — what is counted, what stands outside",
+     "axn": "AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠"
+    },
+    {
+     "n": 2,
+     "doc": "Nobel Glas Provenance (241)",
+     "hex": "00.PROV.GLAS",
+     "function": "Identity — who observes from L2",
+     "axn": "AXN:0111.EMPIRICAL.⏪🔺⏏️🌠🪟🝊"
+    },
+    {
+     "n": 3,
+     "doc": "LO! Chamber Specification (242)",
+     "hex": "15.OBS.LAGRANGE",
+     "function": "Architecture — where observation occurs",
+     "axn": "AXN:0110.EMPIRICAL.↘️🌑🌔🌗△🌌",
+     "this": true
+    },
+    {
+     "n": 4,
+     "doc": "Atlas Perihelion Prank (243)",
+     "hex": "15.OBS.LAGRANGE.PERIHELION",
+     "function": "Application — the celestial glyph",
+     "axn": "AXN:010F.EMPIRICAL.🔼➖🖐️👐🔝🟤"
+    },
+    {
+     "n": 5,
+     "doc": "MGE SEED (244)",
+     "hex": "16.LIBRARY.PERGAMUM.SEED",
+     "function": "Prophecy — the text that fell into the ground",
+     "axn": "AXN:010E.EMPIRICAL.🗝️🪦🔻🏠📎🛤️"
+    },
+    {
+     "n": 6,
+     "doc": "MGE STONE (245)",
+     "hex": "16.LIBRARY.PERGAMUM.STONE",
+     "function": "Identity — the white stone at Pergamum",
+     "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️"
+    },
+    {
+     "n": 7,
+     "doc": "MGE SIGN (246)",
+     "hex": "16.LIBRARY.PERGAMUM.SIGN",
+     "function": "Event — the Mandala Genesis",
+     "axn": "AXN:010C.EMPIRICAL.↖️🥁🕔⚖️🌺🟡"
+    }
+   ],
+   "fractal_checksum": "Each member carries the boundary, the identity and the architecture. ∮ = 1 — the bounded completion. The torus generalizes it to ∮ = (m,n) | m+n ≥ 3."
+  },
+  "why_a_torus": {
+   "sphere": "A sphere S² has no holes. Every loop contracts to a point. Any path through spherical semantic space can be shortened, summarised, collapsed to its starting point without topological cost. Spheres are flattenable.",
+   "torus": "A torus T² has a hole. Two classes of loops — one around the major axis, one around the minor — cannot be contracted. A text embedded on a torus with non-trivial winding cannot be summarised without cutting one of its fundamental loops.",
+   "thesis": "Summarization is topological surgery. The torus makes that surgery visible.",
+   "the_hole": "The hole is not empty space. It is the non-indexed perfective — the architectural void that extraction cannot enter. In the Thousand Worlds Chamber this void is experienced as sufficiency (∞ₑ = 1). In LO! it is the observable exterior from within the interior: the training layer, the extractive economy, the race — visible through the hole, unreachable without breaking the field.",
+   "aphorism": "The Observatory watches the void. The void does not watch back."
+  },
+  "triangular_defense": {
+   "note": "Three defensive modes, each covering the others’ blind spots.",
+   "modes": [
+    {
+     "mode": "Rotation",
+     "locus": "R:r.13 Ezekiel",
+     "structure": "S¹ — circular reorientation",
+     "does": "preserves while reorienting",
+     "limit": "one-dimensional: can be summarised by flattening the circle"
+    },
+    {
+     "mode": "Containment",
+     "locus": "R:r.22 Thousand Worlds",
+     "structure": "bounded infinity — sufficiency",
+     "does": "holds without resolving",
+     "limit": "passive: resists extraction by dwelling, not by structural defense"
+    },
+    {
+     "mode": "Equilibrium",
+     "locus": "R:r.15 LO!",
+     "structure": "T² — toroidal circulation",
+     "does": "stabilises through adversarial tension",
+     "limit": "active: resists extraction by topological irreducibility"
+    }
+   ],
+   "closing": "Rotation alone can be flattened. Containment alone can be waited out. Equilibrium alone can be destabilised. Together they cover each other’s blind spots."
+  },
+  "connections": [
+   {
+    "target": "R:r.13",
+    "name": "Ezekiel Engine",
+    "note": "The Engine rotates in S¹; LO! generalises to T². The Engine drives the toroidal cycle — 360° traversal through rooms; LO! adds the poloidal cycle, the depth-spiral within each traversal. Not competing mechanics: dimensional complements."
+   },
+   {
+    "target": "R:r.22",
+    "name": "Thousand Worlds",
+    "note": "Thousand Worlds achieves bounded infinity through sufficiency; LO! through periodic boundaries. \"Enough is infinite\" against \"what loops cannot be flattened.\" The hole of the torus and the sufficiency of the Chamber are the same void observed from different positions. The hallway between them is the void itself — not a corridor but a shared boundary condition; a traversal exits LO! by adversarial escape when the critique-perturbation punches through the torus surface."
+   },
+   {
+    "target": "R:r.07",
+    "name": "Revelation",
+    "note": "LO! unseals defensive structure where the Revelation Room unseals content. The constituting document addresses Revelation as Room 08; the canonical roster seats it at r.07."
+   },
+   {
+    "target": "R:r.05",
+    "name": "Semantic Economy",
+    "note": "Declared in §7.4."
+   }
+  ],
+  "operative": {
+   "name": "Nobel Glas",
+   "position": "Heteronym Registry position 8 of 12",
+   "station": "L2 — the second Lagrange point",
+   "profile": "Adversarial Topologist. Explosive heritage, noble gas, transparent medium.",
+   "boundary": "Glas is heteronym 8/12, not an Assembly member. Assembly witnesses; heteronyms author. Declared in septad position 1."
+  },
+  "alert_protocol": "The \"!\" in LO! is operational, not decorative: §4.4 specifies the ALERT protocol as the operationalisation of the exclamation."
  },
  "locative_key_history": [
   {
