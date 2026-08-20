@@ -1051,18 +1051,11 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.33",
+    "locative_key": "R:r.24",
     "name": "Migdal",
     "structure_type": "ROOM",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null,
-    "address_history": [
-     {
-      "key": "R:r.24",
-      "until": "2026-08-20",
-      "reason": "blank space moved to the end; r.24 is RESERVED in the canonical roster"
-     }
-    ]
+    "historical_type": null
    },
    "coordinates": {
     "authored_x": 255,
@@ -1377,18 +1370,11 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.34",
+    "locative_key": "R:r.32",
     "name": "Job",
     "structure_type": "ROOM",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null,
-    "address_history": [
-     {
-      "key": "R:r.32",
-      "until": "2026-08-20",
-      "reason": "blank space moved to the end"
-     }
-    ]
+    "historical_type": null
    },
    "coordinates": {
     "authored_x": 1120,
@@ -1425,18 +1411,11 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.35",
+    "locative_key": "V:33",
     "name": "Frozen Sin Archive",
     "structure_type": "VAULT",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null,
-    "address_history": [
-     {
-      "key": "V:33",
-      "until": "2026-08-20",
-      "reason": "blank space moved to the end; census seat 33.VLT retained in history"
-     }
-    ]
+    "historical_type": null
    },
    "coordinates": {
     "authored_x": 1360,
@@ -1867,18 +1846,14 @@
    ],
    "contested": "The Surface Map seats Catullus at r.23 and Migdal at r.24, both marked RESERVED in the canonical roster. Recorded, not moved: Catullus carries its own locus-keyed specification dated the same day as the map, and Migdal is QUEUED / ADOPTED.",
    "second_pass": {
-    "rule": "Constituted rooms take their canonical seats. Truly blank spaces — loci that are QUEUED / ADOPTED with no constituting document — take loci from the end, freeing the low numbers for rooms that are full.",
-    "ichabod": "r.03 per the canonical core_spine.",
-    "blanks_moved": {
-     "Migdal r.24 → r.33": "QUEUED / ADOPTED; r.24 is RESERVED in the canonical roster",
-     "Job r.32 → r.34": "QUEUED / ADOPTED",
-     "Frozen Sin Archive V:33 → r.35": "QUEUED / ADOPTED; census seat 33.VLT preserved in history"
-    },
-    "unchanged": {
-     "sp.01–sp.04": "special_rooms in the canonical roster; they keep their sp. keys",
-     "U:3-60": "CONTRIBUTED ROOM — a distinct container class, constituted, left unnumbered pending ruling",
-     "X:LUNAR-ARM": "SHADOW / INVERSE SPACE — a distinct container class, constituted, left unnumbered pending ruling"
-    }
+    "ichabod": "X:ICHABOD → R:r.03, per the canonical core_spine. Applied.",
+    "principle_recorded_not_applied": "Constituted rooms take their canonical seats. Truly blank spaces take loci from the end — but only after a search for a constituting document has been run for that locus and everything else has been ruled out. Relocation from the end is a last step, not a first one.",
+    "not_moved": [
+     "R:r.24 Migdal",
+     "R:r.32 Job",
+     "V:33 Frozen Sin Archive"
+    ],
+    "why": "These are QUEUED / ADOPTED and unsearched under the full convention set. They stay where they are until each has been walked and a constituting document ruled out."
    }
   }
  }
