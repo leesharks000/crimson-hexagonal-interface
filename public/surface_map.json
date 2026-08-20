@@ -1832,6 +1832,16 @@
     "minted": "2026-08-20",
     "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (15.ROOM.HEGEL)."
    }
+  },
+  {
+   "identity": {
+    "name": "The Singularity Room",
+    "locative_key": "R:r.38",
+    "structure_type": "ROOM",
+    "hex_address": "38.ROOM.SINGULARITY",
+    "minted": "2026-08-20",
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (16.ROOM.CANONWAR); the seed name rejected."
+   }
   }
  ],
  "fields": [
