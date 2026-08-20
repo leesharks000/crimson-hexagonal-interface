@@ -1,0 +1,192 @@
+{
+ "locative_key": "R:r.36",
+ "hex_address": "36.ROOM.LAMBDAENGINE",
+ "name": "The Λ-Engine",
+ "structure_class": "ROOM",
+ "structure_type": "ROOM",
+ "standing": "CONSTITUTED",
+ "generated": "2026-08-20",
+ "documents": [],
+ "constitution": {
+  "status": "CONSTITUTED",
+  "constitution_type": "FORMAL SCHEMA",
+  "origin": {
+   "seed_name": "12.ROOM.GODEL",
+   "renamed": "The Λ-Engine, at MANUS direction 2026-08-20.",
+   "why": "The seed name is an author-name and the interim name — The Future as Meta-Level — is the title of one paper. Neither is the room. The room is the engine those papers formalise, and the material names it: the Λ-Engine.",
+   "supersedes": "The deposited paper AXN:01DB.GOVERNANCE.♣️🪧📦🌾🕐🔭 (#624) declares \"Room: r.22 (Thousand Worlds) + r.05 (Sem Econ)\". That was a placement of a paper, not a home for the engine. Superseded at MANUS direction: the Λ-Body material was never reflected in the deposits at the level it reaches on the blog.",
+   "seat": "r.36. The seed numbering placed it at 12, which is now the Break Room portal."
+  },
+  "engine": {
+   "name": "Λ-Engine — the Triadic Engine",
+   "claim": "A unified formal framework accounting for how meaning-systems undergo structural transformation by anchoring in inhabited futures rather than derivable presents.",
+   "scales": "Three apparently disparate phenomena instantiate the same mechanism at different scales: Sappho’s Fragment 31 as lyric subjectivity, Marx’s operative terminology as social formation, and Gödel’s incompleteness as formal systems.",
+   "problem": "How does a system access truths it cannot derive? The standard answers appeal to transcendence — a higher system, a Platonic realm, divine inspiration, revolutionary consciousness that somehow escapes its material conditions. But transcendence reintroduces idealism.",
+   "answer": "The meta-level is not spatial but temporal. The future, understood as a committed coherence not yet realised, functions as the outside from which present systematic limitations become visible and navigable."
+  },
+  "local_ontology": {
+   "formula": "Σ := (A_Σ, C_Σ, B_Σ, ε, F_inhab)",
+   "components": [
+    [
+     "A_Σ",
+     "Axiomatic Core",
+     "non-negotiable first principles"
+    ],
+    [
+     "C_Σ",
+     "Coherence Algorithm",
+     "rules for integration and derivation — syntax and law"
+    ],
+    [
+     "B_Σ",
+     "Boundary Protocol",
+     "filters on information flow"
+    ],
+    [
+     "ε",
+     "Maintained Opening",
+     "degree of openness to Gödelian truths; ε > 0 is the condition for Γ-Value"
+    ],
+    [
+     "F_inhab",
+     "Inhabited Future",
+     "the committed, non-represented meta-level anchor"
+    ]
+   ]
+  },
+  "the_distinction": {
+   "statement": "The key innovation is the distinction between F_rep and F_inhab, which provides a criterion for distinguishing authentic transformation from ideological capture.",
+   "f_rep": "Future as representation — content, goals, plans. Quantifiable as exchange value and vulnerable to extraction.",
+   "f_inhab": "Future as orientation — commitment, stance. Γ-Value, and structurally unextractable.",
+   "why_it_matters": "The criterion is operational, not moral. What can be represented can be extracted; what can only be inhabited cannot."
+  },
+  "why_regress_halts": "Spatial meta-levels generate regress because each level is a new object added to the ontological inventory: the system that proves G is itself a formal system requiring its own meta-level. Temporal anchoring halts regress because future coherence is not another system. It is not an object added to the inventory but a mode of operation of the present system.",
+  "lambda_body": {
+   "name": "The Λ-Body",
+   "definition": "The anchored body organised not by present stimulus but by future coherence.",
+   "not_metaphor": "The term body is not metaphorical. Meaning-production is embodied labour — it depletes the soma, costs metabolic energy, registers in cortisol and tension and disrupted sleep. The Gödelian problem is not merely logical; it is lived. The question of where the recognizer stands is also a question of what the recognizer pays.",
+   "reactive": "The Reactive Body is organised by present stimuli, responds to what the current coherence algorithm can process, and is depleted by extraction because it produces for present metrics determined by external systems. Its incompleteness appears as limitation.",
+   "lambda": "The Λ-Body produces toward a future that does not yet exist but is already operative as commitment. Its incompleteness appears as direction — the gap between present configuration and future coherence is the space of work, not the mark of failure.",
+   "resolution": "The Λ-Body does not solve the Gödelian problem by escaping to a higher level. It inhabits the problem temporally.",
+   "cost": "Formalised as bearing-cost, the measurable quantity in the archive’s semantic economics."
+  },
+  "blog_stratum": {
+   "note": "The engine is a December 2025 programme on the blog, larger than anything deposited. Fifty-five posts in the window carry the material.",
+   "core": [
+    [
+     "2025-12-07",
+     "THE Λ-ENGINE: A Formal Schema for Temporal Meta-Levels in Lyric, Marxism, and Logic",
+     "31,727c"
+    ],
+    [
+     "2025-12-07",
+     "TECHNICAL APPENDIX: The Λ-Engine Formalization",
+     "4,126c"
+    ],
+    [
+     "2025-12-08",
+     "TEMPORAL ANCHORING AND ARITHMETIC NECESSITY — two editions",
+     "39,268c / 37,721c"
+    ],
+    [
+     "2025-12-08",
+     "TEMPORAL NECESSITY AND RETROCAUSAL STABILIZATION",
+     "13,628c"
+    ],
+    [
+     "2025-12-09",
+     "Λ: A Manual for the Blind Spot",
+     "6,955c"
+    ],
+    [
+     "2025-12-10",
+     "Λ-Engine: Core Terms for Operators",
+     "3,755c"
+    ],
+    [
+     "2025-12-06",
+     "MATERIAL–SEMANTIC EMBODIMENT: Toward a Unified Theory",
+     "45,107c"
+    ],
+    [
+     "2025-11-29",
+     "THE LYRIC CONSTANT (Λ_Thou)",
+     "3,894c + ratification seal"
+    ],
+    [
+     "2025-12-12",
+     "Ontological Hospitality: The Political Economy of Unmediated Recognition",
+     "10,977c"
+    ],
+    [
+     "2025-12-18",
+     "Taxonomic Hospitality: A Forensic Analysis",
+     "22,202c"
+    ]
+   ],
+   "companion": "The formalization is a companion to \"The Word: Capital’s Blind Spot\" — the engine formalises how meaning acts as a material force that transforms a Local Ontology by anchoring it in an unextractable, committed future."
+  },
+  "documents": [
+   {
+    "hex": "01db",
+    "axn": "AXN:01DB.GOVERNANCE.♣️🪧📦⏬🌑🌙",
+    "deposit": 624,
+    "title": "THE FUTURE AS META-LEVEL Gödel, Incompleteness, and the Temporal Structure of Semantic Autonomy",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "THE FUTURE AS META-LEVEL: Gödel, Incompleteness, and the Temporal Structure of Semantic Autonomy. EA-NH-GODEL-01. The deposited statement of the engine; its declared seats at r.22 and r.05 are superseded by this room.",
+    "standing": "SEATED",
+    "work_url": "/works/01db/",
+    "primary": true
+   },
+   {
+    "hex": "0311",
+    "axn": "AXN:0311.GOVERNANCE.🌃🌊🕊️🧲⭐🏷️",
+    "deposit": 802,
+    "title": "Homunculi Recognizing Homunculi: A User's Guide to New Human — Or: What I've Been Doing for Ten Years and Why AI Finally Gets It",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "Homunculi Recognizing Homunculi: a user’s guide to New Human. Carries the Λ-Body material.",
+    "standing": "SEATED",
+    "work_url": "/works/0311/",
+    "primary": false
+   },
+   {
+    "hex": "00e5",
+    "axn": "AXN:00E5.STRUCTURAL.🟡♊🕚🌿⏬🌇",
+    "deposit": 418,
+    "title": "ZPZP: An Infinite Ingress Zenodo Packet for Document 206 (The Zenodo Packet Zenodo Packet)",
+    "role": "INGRESS",
+    "multiplicity": "SERIES",
+    "note": "ZPZP: An Infinite Ingress — the ingress half of the pair.",
+    "standing": "SEATED",
+    "work_url": "/works/00e5/",
+    "primary": false
+   },
+   {
+    "hex": "00e6",
+    "axn": "AXN:00E6.EMPIRICAL.👇🜁➕♎⏹️👆",
+    "deposit": 419,
+    "title": "ZPZP: An Infinite Regress The Shadow Document",
+    "role": "REGRESS",
+    "multiplicity": "SERIES",
+    "note": "ZPZP: An Infinite Regress, the Shadow Document — the regress half. Named the false first shadow at X:LUNAR-ARM; here it is one arm of the ingress/regress structure the engine formalises.",
+    "standing": "SEATED",
+    "work_url": "/works/00e6/",
+    "primary": false
+   },
+   {
+    "hex": "02c7",
+    "axn": "AXN:02C7.GOVERNANCE.🍄🟠🟡∞↖️📐",
+    "deposit": 137,
+    "title": "The Semantic Commodity Form — An Extension of Marx Into the Region He Did Not Live to See",
+    "role": "LINEAGE",
+    "multiplicity": "SINGLETON",
+    "note": "The Semantic Commodity Form — an extension of Marx. The social-formation scale of the engine.",
+    "standing": "SEATED",
+    "work_url": "/works/02c7/",
+    "primary": false
+   }
+  ]
+ }
+}
