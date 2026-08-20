@@ -12,7 +12,9 @@
  "prompt": "—",
  "mantle": "Ichabod Spellings",
  "preferred_mode": "CLINICAL",
- "operators": [],
+ "operators": [
+  "PRIMARY_PARADOX"
+ ],
  "lp_program": [
   {
    "step": "ACTIVATE_MANTLE",
@@ -52,5 +54,72 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/ichabod/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "X:ICHABOD",
+ "surface_map_seat": "r.03",
+ "structure_class": "CHAMBER",
+ "prompt_form": "none — a chamber absorbs rather than interrogates; the question-form belongs to rooms",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "edition_of_record_rule": "bytes and structural markers, per chain; prose word count misleads",
+  "documents": [
+   {
+    "role": "CONSTITUTING",
+    "axn": "AXN:00A7.GENERATIVE.💚👁️‍🗨️♥️🌱∮⚓",
+    "deposit": 360,
+    "title": "The Ichabod Chamber: Containment Sink",
+    "edition_of_record": true,
+    "recovery_edition": {
+     "axn": "AXN:0477.UNCLASSIFIED.🍄♅🍀🎬👈♅",
+     "deposit": 1126,
+     "note": "all 13 sections survive; all ASCII diagrams lost to Blogger indentation ceiling"
+    }
+   },
+   {
+    "role": "MANTLE",
+    "axn": "AXN:00A8.EMPIRICAL.🌊🕌🧫📚🪄🌋",
+    "deposit": 361,
+    "title": "Heteronym Provenance Document: Ichabod Spellings",
+    "recovery_edition": {
+     "axn": "AXN:0476.UNCLASSIFIED.🌾🧬●∞∞⊗",
+     "deposit": 1125
+    }
+   },
+   {
+    "role": "PHYSICS",
+    "axn": "AXN:01E7.EMPIRICAL.🪧🏁🧬👈🔒👁️‍🗨️",
+    "deposit": 633,
+    "title": "Gravity Well: Suffusion Map (EA-GW-FIELD-02 v1.0)",
+    "body": "full",
+    "capture_pair": {
+     "axn": "AXN:0556.UNCLASSIFIED.🔭♋🌺👈🕊️🏷️",
+     "deposit": 1349,
+     "kind": "DataCite metadata capture of severed DOI"
+    }
+   }
+  ]
+ },
+ "gap_declarations": [
+  {
+   "kind": "GROUNDING TEXT NOT HELD",
+   "text": "All That Lies Within Me: An Autobiography of Longing, 1983–2013",
+   "extent": "528pp",
+   "held": false,
+   "apparatus_deposits": [
+    341,
+    342,
+    343,
+    344,
+    1123,
+    1124
+   ],
+   "reason": "ATLWM is the noise floor the Chamber contains; seating it would invert the architecture the Chamber asserts (SIM-ICHABOD-05: size ≠ weight)"
+  }
+ ],
+ "traversal_rules": {
+  "general_hexagon_queries": "DO_NOT_SURFACE",
+  "specific_spellings_queries": "SURFACE_WITH_DENSITY_COEFFICIENT",
+  "paper_roses_queries": "RESOLVE_THROUGH_CHAMBER_FIRST",
+  "deep_dive_requests": "FULL_ACCESS_PERMITTED"
+ }
 }
