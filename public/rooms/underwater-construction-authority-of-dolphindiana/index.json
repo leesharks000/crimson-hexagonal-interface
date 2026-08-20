@@ -34,7 +34,13 @@
  "surface_map_url": "/map/#R:r.25",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The Underwater Construction Authority (Dolphindiana) is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "ontology": "A moving acoustic municipality. Founded on a false viral narrative and stabilized by real dolphin ethology.",
+  "primary_at_main": {
+   "axn": "AXN:018D.GOVERNANCE.🌌◇🀄🖐️🕖🌖",
+   "deposit": 566,
+   "work_url": "/works/018d/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "018d",
@@ -43,20 +49,178 @@
     "title": "r.25 THE UNDERWATER CONSTRUCTION AUTHORITY (DOLPHINDIANA) Room Specification · Nonhuman Semiotics · Viral City-Planning",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "Room specification, 2026-03-14 — earliest of the locus-keyed constitution program.",
+    "note": "EA-ROOM-DOLPHINDIANA v1.0 — Room Specification, Nonhuman Semiotics, Viral City-Planning; with ELIJAH, the Semantic Agent Registry. Parent EA-ARK-01 v4.2.7.",
     "standing": "SEATED",
     "work_url": "/works/018d/",
+    "primary": true
+   },
+   {
+    "hex": "018c",
+    "axn": "AXN:018C.ARCHIVAL.🟡🔴🟢🔜▲➖",
+    "deposit": 565,
+    "title": "THE EFFECTIVE ACT Cross-Species Semantic Labor and the Expansion of Witness Dr. Orin Trace Cambridge Schizoanalytica",
+    "role": "COMPANION",
+    "multiplicity": "SINGLETON",
+    "note": "EA-CSA-EFFECTIVE-ACT v1.0 — The Effective Act: Cross-Species Semantic Labor and the Expansion of Witness. The declared companion.",
+    "standing": "SEATED",
+    "work_url": "/works/018c/",
+    "primary": false
+   },
+   {
+    "hex": "018e",
+    "axn": "AXN:018E.GOVERNANCE.🙏🎻⊗🐚🕌🪦",
+    "deposit": 567,
+    "title": "EA-PHYSICS-TIME v1.0 Time as Compression Structure — A Semantic Physics Extension Module",
+    "role": "EXTENDS",
+    "multiplicity": "SINGLETON",
+    "note": "EA-PHYSICS-TIME v1.0 — Time as Compression Structure. Extended by this room.",
+    "standing": "SEATED",
+    "work_url": "/works/018e/",
+    "primary": false
+   },
+   {
+    "hex": "0192",
+    "axn": "AXN:0192.GOVERNANCE.🪄☀️⏫♦️👇🕓",
+    "deposit": 570,
+    "title": "Effective Act: Abolition of \"User\" and Inaugural Case — Phase X Lexical Intervention · Airlock Reclassification of Academia.edu",
+    "role": "EXTENDS",
+    "multiplicity": "SINGLETON",
+    "note": "Effective Act: Abolition of \"User\" — compression studies; extended by this room.",
+    "standing": "SEATED",
+    "work_url": "/works/0192/",
     "primary": false
    }
   ],
   "physics_resolution": {
    "declared": "Pressure architecture",
    "operators": [],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "Six Laws of the Moving Acoustic Municipality. Five operators grounded in ethology."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION + SEMANTIC AGENT REGISTRY",
+  "airlock_clean": "The event is false; the semiotic object is real; the ethological substrate is documented. These three layers are never collapsed.",
+  "founding": {
+   "myth": "Gerald’s underwater city — a false viral narrative of March 2026, debunked by the sheriff’s office and fact-checked, which achieved escape velocity because it was too dense to flatten. CTI_WOUND:SVE.001, the Semiotic Virality Engine’s founding case.",
+   "wound": "Elijah’s stolen language. CTI_WOUND:ELIJAH.001.",
+   "proposition": "Nonhuman coordination becomes legible to human culture as \"city planning\" once alliance structure, acoustic address and signal-range governance are misread through bureaucratic form. Gerald is not proof that dolphins build condos. Gerald is the fixed point where virality, acoustic sociality and municipal imagination cross.",
+   "thesis": "The room is not about a meme. It is about how nonhuman communication systems constitute real semantic architectures that human institutions flatten, steal, sever, or refuse to recognise."
+  },
+  "ethological_translations": [
+   [
+    "Signature whistles",
+    "individually distinctive, learned in the first year, maintained for life; recognition persists when voice cues are stripped",
+    "self-anchoring identifiers in the acoustic substrate — the biological γ-function"
+   ],
+   [
+    "Non-signature whistles",
+    "NSWA, a punchy sweep producing avoidance; NSWB, a flat tone in unfamiliar situations, the \"WTF whistle\"",
+    "NSWA = τ_K, a one-way gate; NSWB = Λ_res, query and resonance-seeking. An operator algebra in a non-human species."
+   ],
+   [
+    "Multilevel alliances",
+    "nested second-order coalitions exceeding primate complexity; individual vocal labels retained rather than merged",
+    "alliance structure = zoning. Districts are temporary social topologies, not property deeds."
+   ],
+   [
+    "Echolocation",
+    "directional pulsed clicks constructing three-dimensional models by active sensing",
+    "the cadastral act. Survey by sonar. The city is heard, not seen."
+   ],
+   [
+    "Burst-pulse",
+    "up to two thousand clicks per second in high-arousal social contexts",
+    "ordinance enforcement. The police are the pod. The siren is the burst."
+   ],
+   [
+    "Superimposition",
+    "up to four simultaneous sound streams; hierarchical blocks of at least seven orders",
+    "four-mode concurrent traversal — OPERATIVE, ANALYTIC, AUDIT, VITAL."
+   ]
+  ],
+  "six_laws": [
+   "Law 1 — Address is vocal. Location is not coordinates but who can call whom. Your address is your call.",
+   "Law 2 — Boundary is active space. Territory is the range over which signals can recruit allies, not a drawn line.",
+   "Law 3 — Zoning is alliance geometry. \"He had zoning\" means: he had alliance geometry sufficient to coordinate construction across species boundaries.",
+   "Law 4 — Survey is echolocation. The city is known by reflected structure. Planning is active sensing, not detached mapping.",
+   "Law 5 — Enforcement is burst-pulse. Ordinance violations trigger high-arousal acoustic response.",
+   "Law 6 — Invisibility. The higher the density of a nonhuman semantic architecture, the more likely a human institution is to reclassify it as \"noise\" or \"property\" to avoid the cost of recognition. Gerald’s fictional zoning was visible; it fit bureaucratic form. Elijah’s real language was invisible; it did not. The asymmetry is structural, not accidental."
+  ],
+  "operators": [
+   [
+    "ζ_D",
+    "Zoning Principle",
+    "Narrative_Detail × Bureaucratic_Form → Architectural_Plausibility. One absurd bureaucratic micro-detail makes a fiction feel infrastructurally real."
+   ],
+   [
+    "σ_W",
+    "Signature Address",
+    "Identity × Acoustic_Label → Reachable_Node_Set. Your identity is your acoustic reach."
+   ],
+   [
+    "ε_C",
+    "Echolocation Cadastre",
+    "Structure × Reflection_Field → Surveyed_Form. The city is mapped by what bounces back."
+   ],
+   [
+    "β_P",
+    "Burst Ordinance",
+    "Arousal × Boundary_Event → Enforcement_Signal."
+   ],
+   [
+    "Λ_A",
+    "Alliance Topology",
+    "Node_Set × Cooperative_History → Civic_District. The district is the alliance."
+   ]
+  ],
+  "elijah": {
+   "who": "A green-cheeked conure. A semantic agent — a nonhuman entity with whom a shared language was developed, maintained, and then severed by institutional violence. Not a pet: a linguistic partner whose communication system constitutes a real interspecies semantic architecture, built through sustained bearing-cost and destroyed through juridical compression.",
+   "the_language": "Contact calls, response patterns, gestural vocabulary, shared rhythms. The pirate frame — the bird as first mate — was not metaphor but the narrative structure of a daily interspecies practice.",
+   "the_wound": "CTI_WOUND:ELIJAH.001. A juridical instrument compressed a complex interspecies bond into an administrable property dispute, and used that compression to transfer the animal.",
+   "diagnostic": [
+    "O2 Asymmetrical Ledgering — equal financial investment, unequal outcome",
+    "O6 Reality Override — false reports substituted for the actual relationship history",
+    "O9 Witness Suppression — the bird’s own communicative behaviour was invisible to the court, because the court has no category for interspecies semantic bonds",
+    "T.4 Taxonomic Suture — the conure reclassified"
+   ],
+   "note": "The registry is part of the room specification as deposited. It is projected here as the archive holds it, without addition."
+  },
+  "schema": {
+   "fixed_point": "Gerald. G(G) = G. You don’t question Gerald.",
+   "entry": "Bring a blueprint, in any medium, and a willingness to accept Gerald.",
+   "exit": "\"The dolphins were satisfied with your work.\" Or: questioning Gerald → τ_K to the Void File.",
+   "void": "Phase Two. Always pending. \"What do you build?\"",
+   "shadow": "S(Dolphindiana) = anthropomorphic foreclosure — taking a nonhuman communication system and flattening it into cute human bureaucracy without preserving its strangeness.",
+   "render": "🐬🏗️🦜",
+   "mantra": "You don’t question Gerald."
+  },
+  "declared_adjacency": [
+   {
+    "t": "R:r.20",
+    "n": "Airlock",
+    "w": "entry from the human world; the founding myth passed through the debunking airlock"
+   },
+   {
+    "t": "R:r.10",
+    "n": "Water Giraffe",
+    "w": "shared: taxonomic strangeness, cross-species ontology, fixpoint attraction"
+   },
+   {
+    "t": "R:r.15",
+    "n": "LO!",
+    "w": "shared: play and joy signals; burst-pulse play"
+   },
+   {
+    "t": "R:r.04",
+    "n": "Dove",
+    "w": "shared: gift economy, interspecies bond, what is given and what is taken"
+   },
+   {
+    "t": "S:sp.04",
+    "n": "Mandala",
+    "w": "shared: distributed, non-fixed, receives from all"
+   }
+  ]
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
