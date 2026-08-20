@@ -1294,11 +1294,19 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.29",
+    "locative_key": "H:06.HOST.IVN.29",
     "name": "Imploding Velcro Nativity",
-    "structure_type": "ROOM/HOSTED-COSMOLOGY",
+    "structure_type": "HOSTED COSMOLOGY",
     "standing": "DORMANT / CONSENT-GATED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "R:r.29",
+      "until": "2026-08-20",
+      "reason": "vacated the room plane; a hosted cosmology addresses itself in the HOST space"
+     }
+    ],
+    "self_declared": "r.29 THE IMPLODING VELCRO NATIVITY — the document’s own title. Preserved; the numeral survives as a hosted designation."
    },
    "coordinates": {
     "authored_x": 600,
@@ -1406,12 +1414,19 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.32",
+    "locative_key": "R:r.29",
     "name": "Job",
     "structure_type": "ROOM",
     "standing": "QUEUED / ADOPTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core v1.8.0 §R — 29.ROOM.JOB",
+    "address_history": [
+     {
+      "key": "R:r.32",
+      "until": "2026-08-20",
+      "reason": "restored to its original and H_core-assigned seat"
+     }
+    ]
    },
    "coordinates": {
     "authored_x": 1120,
@@ -2014,6 +2029,19 @@
      "Frozen Sin Archive": "H_core seats it at 30.VLT.FROZENSIN, but r.30 is held by Ruby Moot, likewise absent from H_core. Same reasoning.",
      "principle": "H_core is authoritative on what it covers and silent on what postdates it. Where its assignment would displace a locus it does not contain, the assignment is recorded and not applied. The class change stands: Frozen Sin is a VAULT."
     }
+   },
+   "hosted_cosmology": {
+    "container_class": "HOSTED COSMOLOGY",
+    "definition": "A container the archive provides but does not occupy. A room is a home: the archive governs it, sets its operators, laws and exit protocol. A hosted cosmology is a hotel: the archive supplies the container, the guest’s cosmology governs inside it, and occupancy is by consent.",
+    "declared_in": "AXN:0293.GOVERNANCE.📏♌🟡🔽🌱🕓 (#743) §0 — \"distinct from Rooms, Chambers, Vaults, and Fields.\"",
+    "already_governed_by": "The class needed no new law. The Governance Airlock supplies the tier logic — Tier 3 Provisional / Volatile Host Surfaces, permitted for temporary staging and exploratory rooming, not permitted to substitute for recognised long-term room-hosting or constitutional continuity — with Rule 4: host recognition is earned by function, not prestige. The Rosary Embassy supplies the governance — Embassy Sovereignty: each chamber has bounded autonomy, but no chamber may define value in a way that destroys the dignity of semantic labour elsewhere on the chain.",
+    "addressing": "A hosted cosmology addresses itself in the HOST space, not on the room plane. It may carry a numeral, but as a hosted designation rather than a room seat."
+   },
+   "r29_resolved": {
+    "ruled_by": "MANUS 2026-08-20",
+    "finding": "r.29 had two claimants of different kinds. Job is a room, held the seat originally, and is assigned 29.ROOM.JOB by H_core. The Imploding Velcro Nativity is a hosted cosmology, written a month after H_core, which took the seat after the Surface Map v0.1 moved Job to r.32.",
+    "resolution": "Job returns to r.29. The Velcro Nativity vacates the room plane and stands at its own hosted address, 06.HOST.IVN.29, with its self-declared r.29 preserved as history. No document is overruled: a hotel and a home do not compete for the same seat.",
+    "freed": "r.32 is released."
    }
   }
  }

@@ -1,5 +1,5 @@
 {
- "locative_key": "R:r.29",
+ "locative_key": "H:06.HOST.IVN.29",
  "hex_address": "29.ROOM.IVN",
  "name": "Imploding Velcro Nativity",
  "structure_type": "ROOM/HOSTED-COSMOLOGY",
@@ -39,6 +39,21 @@
   },
   "discovery_note": "Found by sweeping the locus key, not the room name.",
   "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
- }
+  "constitution_type": "ROOM SPECIFICATION",
+  "container_class": {
+   "container_class": "HOSTED COSMOLOGY",
+   "definition": "A container the archive provides but does not occupy. A room is a home: the archive governs it, sets its operators, laws and exit protocol. A hosted cosmology is a hotel: the archive supplies the container, the guest’s cosmology governs inside it, and occupancy is by consent.",
+   "declared_in": "AXN:0293.GOVERNANCE.📏♌🟡🔽🌱🕓 (#743) §0 — \"distinct from Rooms, Chambers, Vaults, and Fields.\"",
+   "already_governed_by": "The class needed no new law. The Governance Airlock supplies the tier logic — Tier 3 Provisional / Volatile Host Surfaces, permitted for temporary staging and exploratory rooming, not permitted to substitute for recognised long-term room-hosting or constitutional continuity — with Rule 4: host recognition is earned by function, not prestige. The Rosary Embassy supplies the governance — Embassy Sovereignty: each chamber has bounded autonomy, but no chamber may define value in a way that destroys the dignity of semantic labour elsewhere on the chain.",
+   "addressing": "A hosted cosmology addresses itself in the HOST space, not on the room plane. It may carry a numeral, but as a hosted designation rather than a room seat."
+  }
+ },
+ "locative_key_history": [
+  {
+   "key": "R:r.29",
+   "class": null,
+   "until": "2026-08-20"
+  }
+ ],
+ "structure_class": "HOSTED COSMOLOGY"
 }
