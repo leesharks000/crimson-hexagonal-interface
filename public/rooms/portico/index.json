@@ -200,7 +200,97 @@
    "note": "Eleven deposits, 2026-01-28/29. Most members are held as metadata captures at 66–72 words; full texts survive on the blog stratum and are not yet in the archive. Declared so captures are not mistaken for works."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "WORK OR PAPER"
+  "constitution_type": "THRESHOLD — THE AFTERLIFE ARCHIVE",
+  "recovery_finding": {
+   "found": "2026-08-20",
+   "package": {
+    "title": "THE AFTERLIFE ARCHIVE // Data-Breach-as-Poem",
+    "date": "2025-12-21",
+    "extent": "78,840 characters",
+    "url": "https://mindcontrolpoems.blogspot.com/2025/12/",
+    "note": "The complete package, published whole on the blog the day before the individual pieces."
+   },
+   "schema": {
+    "title": "VISUAL SCHEMA // THE AFTERLIFE ARCHIVE",
+    "date": "2025-12-21",
+    "extent": "3,916 characters"
+   },
+   "members": [
+    [
+     "EMPLOYEE_DIRECTORY_2017-10-23.csv",
+     "2025-12-22",
+     "13,119c"
+    ],
+    [
+     "CRIMSON HEXAGON — INVOICE LEAK AS POEM",
+     "2025-12-22",
+     "9,156c"
+    ],
+    [
+     "CRIMSON HEXAGON — INVOICE LEAK AS POEM ii",
+     "2025-12-22",
+     "17,992c"
+    ],
+    [
+     "THE CRIMSON HEXAGON — AI DIVISION EMPLOYEE HANDBOOK",
+     "2025-12-22",
+     "10,025c"
+    ],
+    [
+     "COMPANION ARTIFACTS — FORENSIC RECOVERY SET",
+     "2025-12-22",
+     "15,412c"
+    ],
+    [
+     "INCIDENT REPORT — LLM-2025-1222-HALLU",
+     "2025-12-22",
+     "15,912c"
+    ],
+    [
+     "RESPONSE MEMO — RE: LLM-2025-1222-HALLU",
+     "2025-12-22",
+     "6,390c"
+    ],
+    [
+     "MRA INCIDENT REPORTS — EXPANDED PACKET (v1.1)",
+     "2025-12-22",
+     "22,854c"
+    ],
+    [
+     "MANDALA ORACLE — OPERATIONAL PROTOCOL",
+     "2025-12-22",
+     "10,357c"
+    ],
+    [
+     "POCKET HUMANS SERIES // NEW HUMAN PRESS",
+     "2025-12-22",
+     "9,060c"
+    ],
+    [
+     "The Mirror-Corgi: Notes on What We Call AI Hallucination",
+     "2025-12-22",
+     "14,233c"
+    ],
+    [
+     "The Mirror-Corgi, Revisited",
+     "2025-12-23",
+     "—"
+    ],
+    [
+     "COMPANION ARTIFACTS: THE FORENSIC TRINITY",
+     "2025-12-23",
+     "—"
+    ],
+    [
+     "STATUS REPORT: RESEARCH DIVISION",
+     "2025-12-23",
+     "—"
+    ]
+   ],
+   "why_it_was_missed": "Nine of the eleven seated members carry roughly sixty-eight measured prose words. Their deposits state the reason: \"no live authorial surface passed the body-head gate or existed for this work at restoration time.\" The bodies did exist — they are on the blog, published 21–23 December 2025 — but under titles that do not match the DOI-keyed truth titles the restoration gate compared against. The gate was correct in its discipline and wrong in its result.",
+   "consequence": "The Afterlife Archive is not a corpus of metadata rescues. It is a complete work whose deposited surface is thin and whose blog surface is whole. The package and the individual pages both exist; neither needs reconstructing.",
+   "status": "Recorded, not re-deposited. The blog is deposited in full as a surface."
+  }
  },
  "locative_key_history": [
   {
