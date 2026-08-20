@@ -1512,11 +1512,18 @@
   },
   {
    "identity": {
-    "locative_key": "U:3-60",
+    "locative_key": "H:U.3-60",
     "name": "3:60 Room",
-    "structure_type": "CONTRIBUTED ROOM",
+    "structure_type": "HOSTED COSMOLOGY",
     "standing": "MANIFESTATION-GAP / UNNUMBERED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "U:3-60",
+      "until": "2026-08-20",
+      "reason": "reclassified from CONTRIBUTED ROOM to HOSTED COSMOLOGY at MANUS direction"
+     }
+    ]
    },
    "coordinates": {
     "authored_x": 1300,

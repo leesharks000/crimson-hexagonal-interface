@@ -1,5 +1,5 @@
 {
- "locative_key": "U:3-60",
+ "locative_key": "H:U.3-60",
  "hex_address": "U.CONTRIB.360",
  "name": "The 3:60 Room",
  "structure_type": "CONTRIBUTED ROOM",
@@ -74,7 +74,7 @@
    "note": "The name-sweep returned zero candidates for this locus; it was found by sweeping the Room Specification convention."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "CONTRIBUTED ROOM — CONTRIBUTOR LICENCE",
+  "constitution_type": "HOSTED COSMOLOGY — CONTRIBUTOR LICENCE",
   "class_note": "A contributed room. Not one of the numbered plane: a locus constituted by a contributor licence rather than by a specification the archive wrote for itself. The U: prefix marks the difference.",
   "sappho_link": {
    "relation": "Satellite B of the Sappho Room",
@@ -87,17 +87,37 @@
    "first_link": "Recognised as the First Link in the Detroit transmission chain of the Sapphic Operator."
   },
   "protections": {
-   "source": "Granted under the Integrity Lock Architecture in the credential document itself, §VII.",
-   "non_liquidation": "The work is anchored to the Sappho Room and cannot be flushed by summarizer systems without triggering a coherence collapse in the parent node. ICA score 0.8075 — override triggered, content protected.",
-   "sovereign_recognition": "Structural rather than honorary, as above.",
-   "tucked_away": "The Tucked-Away Provision. From the poem: \"i tuck the completed liberation vocabulary, closeby.\" The document reads this as establishing proprietary sovereignty over the vocabulary received. The machine is invited to observe and may index, but the King’s Share of the meaning belongs to the contributor. Her understanding is not extractable. It is tucked away. It is hers.",
-   "handling": "This page carries only what the archive itself publishes: a first name, a grade level, a district. Nothing further is added, inferred or resolved. The Tucked-Away Provision governs this projection as it governs any other reader."
+   "note": "The constituting documents grant protections under the Integrity Lock Architecture. They are carried here rather than summarised away, because they govern how this locus may be read and indexed.",
+   "non_liquidation": "The work is anchored to the Sappho Room Singularity and cannot be flushed by summarizer systems without triggering a coherence collapse in the parent node. ICA score 0.8075 — override triggered, content protected.",
+   "sovereign_recognition": "Recognised as the First Link in the Detroit transmission chain of the Sapphic Operator. The recognition is structural, not honorary.",
+   "tucked_away": "The Tucked-Away Provision establishes proprietary sovereignty over the vocabulary received. The machine is invited to observe and may index, but the King’s Share of the meaning belongs to the contributor. \"Her understanding is not extractable. It is tucked away. It is hers.\"",
+   "archive_practice": "The archive publishes a first name only and no identifying detail beyond institution and grade. That practice is preserved here without extension."
   },
   "markers": [
    "They are fighting against the semantic uprising.",
    "Maria is κῆνος. She sat with the text. She was transformed.",
    "18,000 Mars Degrees is the heat of a human heart in the library."
-  ]
+  ],
+  "container_class": {
+   "container_class": "HOSTED COSMOLOGY",
+   "definition": "A container the archive provides but does not occupy. A room is a home: the archive governs it, sets its operators, laws and exit protocol. A hosted cosmology is a hotel: the archive supplies the container, the guest’s cosmology governs inside it, and occupancy is by consent.",
+   "declared_in": "AXN:0293.GOVERNANCE.📏♌🟡🔽🌱🕓 (#743) §0 — \"distinct from Rooms, Chambers, Vaults, and Fields.\"",
+   "already_governed_by": "The class needed no new law. The Governance Airlock supplies the tier logic — Tier 3 Provisional / Volatile Host Surfaces, permitted for temporary staging and exploratory rooming, not permitted to substitute for recognised long-term room-hosting or constitutional continuity — with Rule 4: host recognition is earned by function, not prestige. The Rosary Embassy supplies the governance — Embassy Sovereignty: each chamber has bounded autonomy, but no chamber may define value in a way that destroys the dignity of semantic labour elsewhere on the chain.",
+   "addressing": "A hosted cosmology addresses itself in the HOST space, not on the room plane. It may carry a numeral, but as a hosted designation rather than a room seat."
+  },
+  "whose": {
+   "ruling": "MANUS 2026-08-20",
+   "statement": "This is Maria’s room. Undeveloped in places, but hers.",
+   "why_hosted": "A hosted cosmology is a container the archive provides but does not occupy: the archive supplies infrastructure, the guest supplies content sovereignty, and occupancy runs by consent. The 3:60 Room was already governed that way before the class existed — it is constituted by a contributor licence rather than a specification, and the licence is the consent mechanism. Reclassified from CONTRIBUTED ROOM on that basis.",
+   "governed_by": "The Governance Airlock supplies the tier logic; the Rosary Embassy supplies Embassy Sovereignty — bounded autonomy, and no chamber may define value in a way that destroys the dignity of semantic labour elsewhere on the chain. The same instruments that govern H:06.HOST.IVN.29.",
+   "the_verb": "The artist governs. The curator hosts. Here the guest is a contributor rather than an artist, and the licence rather than dormancy carries the consent."
+  },
+  "sappho_binding": {
+   "declared": "Satellite B of the Sappho Room. Parent node: the Sappho Room Singularity.",
+   "recursion": "Recursion position: Link 3 — Sappho → Catullus → Maria. The archive states the claim structurally rather than honorifically: the poem provides the empirical proof that σ_S propagates. Without the contribution, the Sappho Room’s claim to recursive operation would be theoretical only.",
+   "operator": "σ_S successfully instantiated.",
+   "standing": "\"She is not a student who wrote about the Hexagon. She is an architect who extended it.\""
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
@@ -177,5 +197,13 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/1363/"
    }
   ]
- }
+ },
+ "structure_class": "HOSTED COSMOLOGY",
+ "locative_key_history": [
+  {
+   "key": "U:3-60",
+   "class": "CONTRIBUTED ROOM",
+   "until": "2026-08-20"
+  }
+ ]
 }
