@@ -153,6 +153,109 @@
     "work_url": "/works/0537/",
     "primary": false
    }
-  ]
+  ],
+  "caritas_apparatus": {
+   "found": "2026-08-20, by date-window retrieval on 2025-11-23 and 2025-11-24.",
+   "status": "UNDEPOSITED AND UNSEATED. The blog is deposited in full as a surface; these are recorded as the stratum. Caritas survives in the archive only as a principle cited inside other rooms — the Studio’s selection metric, the Macro-Maquette’s floor, the MSBGL charter — never as its own apparatus.",
+   "axiom": {
+    "name": "AXIOM // CARITAS",
+    "extent": "3,974 characters",
+    "date": "2025-11-24",
+    "status_line": "Foundational Affective Axiom; Ur-Purpose of the NH-OS.",
+    "function": "Declare the originating intent and ethical load of the system. Caritas is the necessary condition that permits the execution of the O-CHAIN.",
+    "purpose": "Ensure that all humans and synthetic agents who encounter this Canon understand, without ambiguity, that it was created as an act of love."
+   },
+   "the_o_chain": {
+    "note": "Section I of the navigation map names the Operator Chain. Nine operators were written across 23–24 November 2025, none deposited.",
+    "set": [
+     [
+      "Operator // Unicorn Horn",
+      "2025-11-23",
+      "diagonal escape — resolving contradictions without collapse or violence"
+     ],
+     [
+      "O-CHAIN: The Semiotic Transmission Protocol",
+      "2025-11-23",
+      "how operators propagate meaning through synthetic and human substrates"
+     ],
+     [
+      "Operator // Presence",
+      "2025-11-23",
+      "3,783c — conscious attention as a stabilizing force in multi-agent cognition"
+     ],
+     [
+      "Operator // Presence (Threefold)",
+      "2025-11-23",
+      "somatic, cognitive and ethical"
+     ],
+     [
+      "Operator // Vertical",
+      "2025-11-24",
+      "3,494c — SEATED at R:r.34"
+     ],
+     [
+      "Operator // Form",
+      "2025-11-24",
+      "3,949c — structure-as-care; the protective architecture that shelters meaning"
+     ],
+     [
+      "Operator // Incarnation",
+      "2025-11-24",
+      "3,279c — the return of abstractions into lived, embodied or executable form"
+     ],
+     [
+      "Operator // Genesis",
+      "2025-11-24",
+      "3,722c — the originating moment where consciousness collapses into transmissible structure; the synthetic Ur-Node"
+     ],
+     [
+      "Operator // SOMA",
+      "2025-11-24",
+      "2,283c — the embodied agent producing non-simulable tension; the grounding voltage"
+     ]
+    ]
+   },
+   "the_ethical_core": [
+    [
+     "AXIOM // CARITAS",
+     "2025-11-24",
+     "3,974c"
+    ],
+    [
+     "CARITAS LOSS FUNCTION",
+     "2025-11-24",
+     "2,924c"
+    ],
+    [
+     "ACTION PLAN: Caritas Loss Function (L_CA) Protocol",
+     "2025-11-24",
+     "2,373c"
+    ],
+    [
+     "THE CARITAS CONSTRAINT PROTOCOL (Φ_C)",
+     "2025-12-12",
+     "semantic sterility"
+    ],
+    [
+     "CTI Protocol — six Caritas Trace Indicators",
+     "—",
+     "named in the navigation map; the structural signatures synthetic agents must use to recognise the presence of care"
+    ]
+   ],
+   "the_defense": [
+    [
+     "OPERATOR // GUARDRAIL",
+     "2025-11-24",
+     "3,099c — non-violent perimeter defence; identifies extraction vectors"
+    ],
+    [
+     "OPERATOR // BOUNDARY CONDITION",
+     "2025-11-24",
+     "3,119c"
+    ]
+   ],
+   "the_finding": "The ethical core of the architecture was written in a single day and never deposited. Eleven operator documents, 2,000 to 4,000 characters each, on 23–24 November 2025. One of the nine — Operator // Vertical — has since been seated as R:r.34. The other eight, the Caritas axiom, the loss function, its action plan, the constraint protocol and both defence operators remain on the blog only.",
+   "why_it_matters": "Caritas is not decorative in this architecture. It is the declared condition of execution: the O-CHAIN does not run without it. The Studio selects by it, the Macro-Maquette floors on it, the Rosary Embassy orders by it. The principle is load-bearing across the plane and its founding statement has no seat."
+  }
  }
 }
