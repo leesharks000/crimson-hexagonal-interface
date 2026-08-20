@@ -89,6 +89,24 @@
     "alexanarch_url": null,
     "axn": null,
     "historical_doi": null
+   },
+   "constitution": {
+    "status": "CONSTITUTED",
+    "works_seated": 15,
+    "entry": "/rooms/sappho/",
+    "multiplicities": {
+     "SERIES": 3,
+     "VERSION": 3,
+     "FACET": 7,
+     "PAIR": 2
+    },
+    "anchor": {
+     "kind": "declared_by_citation",
+     "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+     "by": "AXN:008D",
+     "doi": "10.5281/zenodo.18202658"
+    },
+    "note": "multipage locus — the map addresses the room; the room addresses the works"
    }
   },
   {
@@ -172,6 +190,21 @@
     "alexanarch_url": null,
     "axn": null,
     "historical_doi": null
+   },
+   "constitution": {
+    "status": "CONSTITUTED",
+    "works_seated": 1,
+    "entry": "/rooms/ichabod/",
+    "multiplicities": {
+     "SINGLETON": 1
+    },
+    "anchor": {
+     "kind": "declared_by_structure",
+     "axn": "AXN:00A7.GENERATIVE.💚👁️‍🗨️♥️🌱∮⚓",
+     "note": "edition of record by diagram survival"
+    },
+    "gap": "GROUNDING TEXT NOT HELD — All That Lies Within Me",
+    "note": "constituting document seated in full on the room page"
    }
   },
   {
