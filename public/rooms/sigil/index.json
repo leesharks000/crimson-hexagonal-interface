@@ -2593,5 +2593,64 @@
   -2,
   0
  ],
- "surface_map_url": "/map/#R:r.08"
+ "surface_map_url": "/map/#R:r.08",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "Magic is the deliberate construction of symbols to transform material conditions.",
+  "primary_at_main": {
+   "axn": "AXN:0465.UNCLASSIFIED.🔬🦅🤝■📦🕔",
+   "deposit": 1108,
+   "work_url": "/works/0465/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0465",
+    "axn": "AXN:0465.UNCLASSIFIED.🔬🦅🤝■📦🕔",
+    "deposit": 1108,
+    "title": "Johannes Sigil Institute of Comparative Poetics Institutional Provenance Documentation",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Johannes Sigil Institute of Comparative Poetics — institutional provenance; the room is the heteronym’s institution",
+    "standing": "SEATED",
+    "work_url": "/works/0465/",
+    "primary": true
+   },
+   {
+    "hex": "01c3",
+    "axn": "AXN:01C3.GOVERNANCE.🔴🃏🚩🔺💥❄️",
+    "deposit": 42,
+    "title": "The Seal Before the Name: Four Works of Johannes Sigil (1711–2026) — Sigillographic Foundations of Operative Semiotics",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "The Seal Before the Name: Four Works of Johannes Sigil (1711–2026)",
+    "standing": "SEATED",
+    "work_url": "/works/01c3/",
+    "primary": false
+   },
+   {
+    "hex": "0604",
+    "axn": "AXN:0604.UNCLASSIFIED.🕑👉🧫🤝🕕🔼",
+    "deposit": 1489,
+    "title": "Operative Semiotics: A Grundrisse — Johannes Sigil's Great Work (Complete, Nine Notebooks)",
+    "role": "GREAT-WORK",
+    "multiplicity": "SINGLETON",
+    "note": "Operative Semiotics: A Grundrisse — Johannes Sigil’s Great Work",
+    "standing": "SEATED",
+    "work_url": "/works/0604/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "μ-space; symbolic engineering",
+   "operators": [
+    "μ",
+    "Σ_LP",
+    "β"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

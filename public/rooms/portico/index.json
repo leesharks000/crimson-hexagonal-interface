@@ -48,5 +48,27 @@
   3,
   -2
  ],
- "surface_map_url": "/map/#S:sp.02"
+ "surface_map_url": "/map/#S:sp.02",
+ "constitution": {
+  "status": "UNCONSTITUTED — DECLARED",
+  "ontology": "Forty-four deposits mention this locus in body text; none takes it as subject. As a threshold rather than a room, it may be constituted by the act of crossing rather than by a specification — but no document states that, and the archive does not supply the reasoning on the locus’s behalf. Declared unspecified pending either a specification or a ruling that thresholds are constituted differently from rooms.",
+  "gap_declaration": {
+   "kind": "THRESHOLD, UNSPECIFIED",
+   "locus": "S:sp.02",
+   "declared": "2026-08-20",
+   "evidence": [
+    "44 body mentions, 0 by title"
+   ],
+   "rule": "Declared absence is inert; undeclared absence gets filled in. This locus carries no constituting document and the archive says so rather than allowing a retrieval system to supply one."
+  },
+  "documents": [],
+  "sweeps_run": [
+   "room name",
+   "locus key (r.NN)",
+   "Room Anchor",
+   "Charter",
+   "Room Specification",
+   "body text"
+  ]
+ }
 }

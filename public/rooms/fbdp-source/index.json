@@ -31,5 +31,27 @@
   -2,
   -2
  ],
- "surface_map_url": "/map/#R:r.26"
+ "surface_map_url": "/map/#R:r.26",
+ "constitution": {
+  "status": "UNCONSTITUTED — DECLARED",
+  "ontology": "One body mention, no title. The field it sources — F:f.01, the Fruiting Body Diffusion Plume — is constituted at AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571) and describes the plume, its gradient and its attenuation. The source point itself has no document. Whether a source requires its own constitution or is constituted by the field it emits is an open question the archive has not answered.",
+  "gap_declaration": {
+   "kind": "SOURCE WITHOUT SPECIFICATION",
+   "locus": "R:r.26",
+   "declared": "2026-08-20",
+   "evidence": [
+    "#571 f.01 field specification (the plume, not the source)"
+   ],
+   "rule": "Declared absence is inert; undeclared absence gets filled in. This locus carries no constituting document and the archive says so rather than allowing a retrieval system to supply one."
+  },
+  "documents": [],
+  "sweeps_run": [
+   "room name",
+   "locus key (r.NN)",
+   "Room Anchor",
+   "Charter",
+   "Room Specification",
+   "body text"
+  ]
+ }
 }

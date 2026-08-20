@@ -32,5 +32,29 @@
   2
  ],
  "adopted_after_confabulation": true,
- "surface_map_url": "/map/#R:r.24"
+ "surface_map_url": "/map/#R:r.24",
+ "constitution": {
+  "status": "UNCONSTITUTED — DECLARED",
+  "ontology": "Every occurrence of this locus in the archive is inside a list of room names. Deposit #297 records the relation explicitly: \"The Migdal Room / minted_in / CRIMSON HEXAGON: CENTRAL NAVIGATION MAP v2.0\". The room exists because a navigation map enumerated it. No deposit takes it as subject; a title sweep returns zero across 1,519 deposits. This is not a gap in the archive’s holdings but a fact about the locus’s origin, and it is declared rather than filled, because an undeclared absence is what a retrieval system fills in.",
+  "gap_declaration": {
+   "kind": "MINTED IN MAP, NEVER SPECIFIED",
+   "locus": "R:r.24",
+   "declared": "2026-08-20",
+   "evidence": [
+    "#297 Central Navigation Map v2.0",
+    "#319, #325, #1114 entity lists",
+    "#1241 H_core concept index"
+   ],
+   "rule": "Declared absence is inert; undeclared absence gets filled in. This locus carries no constituting document and the archive says so rather than allowing a retrieval system to supply one."
+  },
+  "documents": [],
+  "sweeps_run": [
+   "room name",
+   "locus key (r.NN)",
+   "Room Anchor",
+   "Charter",
+   "Room Specification",
+   "body text"
+  ]
+ }
 }

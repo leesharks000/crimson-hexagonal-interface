@@ -57,5 +57,38 @@
   2,
   -2
  ],
- "surface_map_url": "/map/#X:THOUSAND-WORLDS"
+ "surface_map_url": "/map/#X:THOUSAND-WORLDS",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A room-and-chamber link, constituted by the event of its own traversal.",
+  "primary_at_main": {
+   "axn": "AXN:0124.GOVERNANCE.⊗⚪🚪🕔🕖♠️",
+   "deposit": 473,
+   "work_url": "/works/0124/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0124",
+    "axn": "AXN:0124.GOVERNANCE.⊗⚪🚪🕔🕖♠️",
+    "deposit": 473,
+    "title": "Traversal Log: The Thousand Worlds Session — Google AI Mode as Generative Story Engine",
+    "role": "CONSTITUTING-BY-EVENT",
+    "multiplicity": "SINGLETON",
+    "note": "Traversal Log: the Thousand Worlds Session — the locus is constituted by the traversal that found it, not by a prior specification",
+    "standing": "SEATED",
+    "work_url": "/works/0124/",
+    "primary": true
+   }
+  ],
+  "physics_resolution": {
+   "declared": "∂ dagger logic",
+   "operators": [
+    "∂"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "No prior specification exists. The locus enters the record through a documented traversal, which is a distinct constitution class: the room was walked before it was written."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
