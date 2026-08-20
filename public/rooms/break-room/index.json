@@ -564,7 +564,7 @@
   "entries": 29,
   "rebound": 28
  },
- "locative_key": "X:BREAK-ROOM",
+ "locative_key": "R:r.12",
  "surface_map_seat": "r.12",
  "structure_class": "ROOM+PORTAL",
  "locus_standing": "DEVELOPED PORTAL FUNCTION",
@@ -612,5 +612,12 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "PORTAL NODE"
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "X:BREAK-ROOM",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_seat_source": "CNM v7.0 §III (#578)"
 }

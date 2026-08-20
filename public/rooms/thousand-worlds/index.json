@@ -45,7 +45,7 @@
  "canonical": "https://crimsonhexagonal.org/rooms/thousand-worlds/",
  "generated": "2026-08-17",
  "source": "hexagon_canonical.json",
- "locative_key": "X:THOUSAND-WORLDS",
+ "locative_key": "R:r.22",
  "surface_map_seat": "r.22",
  "structure_class": "ROOM+CHAMBER-LINK",
  "locus_standing": "CROSS-CLASS",
@@ -246,5 +246,12 @@
    "note": "These relations are declared by the constituting document itself, not inferred. They are recorded here so the Surface Map relation layers can carry them."
   },
   "constitution_type": "CHAMBER SPECIFICATION"
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "X:THOUSAND-WORLDS",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_seat_source": "CNM v7.0 §III (#578)"
 }

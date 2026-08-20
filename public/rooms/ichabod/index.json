@@ -55,7 +55,7 @@
  "canonical": "https://crimsonhexagonal.org/rooms/ichabod/",
  "generated": "2026-08-17",
  "source": "hexagon_canonical.json",
- "locative_key": "X:ICHABOD",
+ "locative_key": "R:r.03",
  "surface_map_seat": "r.03",
  "structure_class": "CHAMBER",
  "prompt_form": "none — a chamber absorbs rather than interrogates; the question-form belongs to rooms",
@@ -131,5 +131,11 @@
   "specific_spellings_queries": "SURFACE_WITH_DENSITY_COEFFICIENT",
   "paper_roses_queries": "RESOLVE_THROUGH_CHAMBER_FIRST",
   "deep_dive_requests": "FULL_ACCESS_PERMITTED"
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "X:ICHABOD",
+   "until": "2026-08-20"
+  }
+ ]
 }

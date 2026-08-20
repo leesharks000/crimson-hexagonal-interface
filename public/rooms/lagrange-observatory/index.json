@@ -270,7 +270,7 @@
   "entries": 12,
   "rebound": 10
  },
- "locative_key": "X:LAGRANGE",
+ "locative_key": "R:r.15",
  "surface_map_seat": "r.15",
  "structure_class": "CHAMBER",
  "locus_standing": "CROSS-CLASS",
@@ -339,5 +339,12 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "CHAMBER SPECIFICATION"
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "X:LAGRANGE",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_seat_source": "CNM v7.0 §III (#578)"
 }

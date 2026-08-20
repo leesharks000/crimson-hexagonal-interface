@@ -172,7 +172,7 @@
   "entries": 7,
   "rebound": 6
  },
- "locative_key": "X:INFINITE-BLISS",
+ "locative_key": "R:r.21",
  "surface_map_seat": "r.21",
  "structure_class": "ROOM",
  "locus_standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
@@ -219,5 +219,12 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "INSTITUTIONAL PROVENANCE"
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "X:INFINITE-BLISS",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_seat_source": "CNM v7.0 §III (#578)"
 }

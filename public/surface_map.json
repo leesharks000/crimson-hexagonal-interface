@@ -150,11 +150,18 @@
   },
   {
    "identity": {
-    "locative_key": "X:ICHABOD",
+    "locative_key": "R:r.03",
     "name": "Ichabod",
     "structure_type": "CHAMBER",
     "standing": "CROSS-CLASS",
-    "historical_type": "ROOM"
+    "historical_type": "ROOM",
+    "address_history": [
+     {
+      "key": "X:ICHABOD",
+      "until": "2026-08-20",
+      "reason": "canonical: CNM v7.0 core_spine names r.03 Ichabod"
+     }
+    ]
    },
    "coordinates": {
     "authored_x": 1285,
@@ -521,11 +528,19 @@
   },
   {
    "identity": {
-    "locative_key": "X:BREAK-ROOM",
+    "locative_key": "R:r.12",
     "name": "Break Room",
     "structure_type": "ROOM+PORTAL",
     "standing": "DEVELOPED PORTAL FUNCTION",
-    "historical_type": "ROOM"
+    "historical_type": "ROOM",
+    "address_history": [
+     {
+      "key": "X:BREAK-ROOM",
+      "until": "2026-08-20",
+      "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
+     }
+    ],
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
    },
    "coordinates": {
     "authored_x": 330,
@@ -560,11 +575,19 @@
   },
   {
    "identity": {
-    "locative_key": "X:EZEKIEL",
+    "locative_key": "R:r.13",
     "name": "Ezekiel",
     "structure_type": "ROOM",
     "standing": "DEVELOPED / PORTAL MODERATE",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "X:EZEKIEL",
+      "until": "2026-08-20",
+      "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
+     }
+    ],
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
    },
    "coordinates": {
     "authored_x": 1080,
@@ -638,11 +661,19 @@
   },
   {
    "identity": {
-    "locative_key": "X:LAGRANGE",
+    "locative_key": "R:r.15",
     "name": "Lagrange Observatory!",
     "structure_type": "CHAMBER",
     "standing": "CROSS-CLASS",
-    "historical_type": "ROOM"
+    "historical_type": "ROOM",
+    "address_history": [
+     {
+      "key": "X:LAGRANGE",
+      "until": "2026-08-20",
+      "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
+     }
+    ],
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
    },
    "coordinates": {
     "authored_x": 490,
@@ -877,11 +908,19 @@
   },
   {
    "identity": {
-    "locative_key": "X:INFINITE-BLISS",
+    "locative_key": "R:r.21",
     "name": "Infinite Bliss",
     "structure_type": "ROOM",
     "standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "X:INFINITE-BLISS",
+      "until": "2026-08-20",
+      "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
+     }
+    ],
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
    },
    "coordinates": {
     "authored_x": 1210,
@@ -921,11 +960,19 @@
   },
   {
    "identity": {
-    "locative_key": "X:THOUSAND-WORLDS",
+    "locative_key": "R:r.22",
     "name": "Thousand Worlds",
     "structure_type": "ROOM+CHAMBER-LINK",
     "standing": "CROSS-CLASS",
-    "historical_type": "ROOM"
+    "historical_type": "ROOM",
+    "address_history": [
+     {
+      "key": "X:THOUSAND-WORLDS",
+      "until": "2026-08-20",
+      "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
+     }
+    ],
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
    },
    "coordinates": {
     "authored_x": 1260,
@@ -1004,11 +1051,18 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.24",
+    "locative_key": "R:r.33",
     "name": "Migdal",
     "structure_type": "ROOM",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "R:r.24",
+      "until": "2026-08-20",
+      "reason": "blank space moved to the end; r.24 is RESERVED in the canonical roster"
+     }
+    ]
    },
    "coordinates": {
     "authored_x": 255,
@@ -1082,11 +1136,19 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.26",
+    "locative_key": "R:r.27",
     "name": "FBDP Source",
     "structure_type": "ROOM/FIELD-SOURCE",
     "standing": "STRUCTURALLY ESTABLISHED / RELOCATED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "R:r.26",
+      "until": "2026-08-20",
+      "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
+     }
+    ],
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
    },
    "coordinates": {
     "authored_x": 220,
@@ -1315,11 +1377,18 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.32",
+    "locative_key": "R:r.34",
     "name": "Job",
     "structure_type": "ROOM",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "R:r.32",
+      "until": "2026-08-20",
+      "reason": "blank space moved to the end"
+     }
+    ]
    },
    "coordinates": {
     "authored_x": 1120,
@@ -1356,11 +1425,18 @@
   },
   {
    "identity": {
-    "locative_key": "V:33",
+    "locative_key": "R:r.35",
     "name": "Frozen Sin Archive",
     "structure_type": "VAULT",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "V:33",
+      "until": "2026-08-20",
+      "reason": "blank space moved to the end; census seat 33.VLT retained in history"
+     }
+    ]
    },
    "coordinates": {
     "authored_x": 1360,
@@ -1770,5 +1846,40 @@
   "room_class": 30,
   "fields": 3,
   "transversal": 3
+ },
+ "reconciliation": {
+  "2026-08-20": {
+   "authority": "CNM v7.0 §III, AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578)",
+   "ruled_by": "MANUS",
+   "moves": {
+    "X:BREAK-ROOM": "R:r.12",
+    "X:EZEKIEL": "R:r.13",
+    "X:LAGRANGE": "R:r.15",
+    "X:INFINITE-BLISS": "R:r.21",
+    "X:THOUSAND-WORLDS": "R:r.22",
+    "R:r.26": "R:r.27"
+   },
+   "note": "Five loci held numbered seats in the canonical roster while the Surface Map carried them in the X: namespace without a number. FBDP Source was seated at r.26, which the canonical roster marks RESERVED; the canonical seat is r.27. Prior keys are preserved in each locus identity under address_history. Historical addresses are never erased.",
+   "reserved_in_canonical": [
+    "r.23",
+    "r.24",
+    "r.26"
+   ],
+   "contested": "The Surface Map seats Catullus at r.23 and Migdal at r.24, both marked RESERVED in the canonical roster. Recorded, not moved: Catullus carries its own locus-keyed specification dated the same day as the map, and Migdal is QUEUED / ADOPTED.",
+   "second_pass": {
+    "rule": "Constituted rooms take their canonical seats. Truly blank spaces — loci that are QUEUED / ADOPTED with no constituting document — take loci from the end, freeing the low numbers for rooms that are full.",
+    "ichabod": "r.03 per the canonical core_spine.",
+    "blanks_moved": {
+     "Migdal r.24 → r.33": "QUEUED / ADOPTED; r.24 is RESERVED in the canonical roster",
+     "Job r.32 → r.34": "QUEUED / ADOPTED",
+     "Frozen Sin Archive V:33 → r.35": "QUEUED / ADOPTED; census seat 33.VLT preserved in history"
+    },
+    "unchanged": {
+     "sp.01–sp.04": "special_rooms in the canonical roster; they keep their sp. keys",
+     "U:3-60": "CONTRIBUTED ROOM — a distinct container class, constituted, left unnumbered pending ruling",
+     "X:LUNAR-ARM": "SHADOW / INVERSE SPACE — a distinct container class, constituted, left unnumbered pending ruling"
+    }
+   }
+  }
  }
 }

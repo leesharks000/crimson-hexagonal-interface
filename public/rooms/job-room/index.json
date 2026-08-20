@@ -19,7 +19,7 @@
  "canonical": "https://crimsonhexagonal.org/rooms/job-room/",
  "generated": "2026-08-17",
  "source": "hexagon_canonical.json",
- "locative_key": "R:r.32",
+ "locative_key": "R:r.34",
  "surface_map_seat": "r.32",
  "structure_class": "ROOM",
  "locus_standing": "QUEUED / ADOPTED",
@@ -58,5 +58,11 @@
    "hex address",
    "body text"
   ]
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "R:r.32",
+   "until": "2026-08-20"
+  }
+ ]
 }
