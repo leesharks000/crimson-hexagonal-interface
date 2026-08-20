@@ -1307,7 +1307,8 @@
       "Damascus Dancings",
       "Rev. Ayanna Vox"
      ],
-     "register": "liturgical / biblical interoperation at kernel level"
+     "register": "liturgical / biblical interoperation at kernel level",
+     "rationale": "Authored in the Diptych itself. The liturgical register goes to the epistolary voice and the voice of somatic protest."
     },
     {
      "id": "EA-ARK-01-FRACTION v2.1",
@@ -1318,7 +1319,8 @@
       "Rex Fraction",
       "Sparrow Wells"
      ],
-     "register": "accumulative profane encoding"
+     "register": "accumulative profane encoding",
+     "rationale": "Authored in the Diptych itself. The accumulative profane goes to the Semantic Economy Institute and to the Projectionist."
     },
     {
      "id": "EA-ARK-01-ASCII v0.2",
@@ -1326,10 +1328,11 @@
      "parent": "v4.2.5",
      "axn": "AXN:0179.ARCHIVAL.🔽🟠🌺🗿🎲📦",
      "voices": [
-      "Talos Morrow",
-      "Nobel Glas"
+      "Rebekah Cranes",
+      "Talos Morrow"
      ],
-     "register": "spatial — neither prose nor glyph"
+     "register": "spatial — neither prose nor glyph",
+     "rationale": "The spatial transform to the Institute for Diagrammatic Poetics and to the University Moon Base Media Lab — diagram and lab, the two that work in spatial notation."
     },
     {
      "id": "EA-ARK-01-MUSICAL v1.1",
@@ -1337,10 +1340,10 @@
      "parent": "v4.2.6",
      "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
      "voices": [
-      "Sen Kuro",
-      "Rebekah Cranes"
+      "Viola Arquette"
      ],
-     "register": "a fugue in twelve voices"
+     "register": "a fugue in twelve voices",
+     "rationale": "The fugue in twelve voices to the singer. The one variant that is a performance."
     },
     {
      "id": "CH-ARK-01-GLYPH v1.0",
@@ -1348,10 +1351,10 @@
      "parent": "v4.2.6",
      "axn": "AXN:0182.GOVERNANCE.🎲⏪🌠↖️⏩⏩",
      "voices": [
-      "Ichabod Spellings",
-      "Johannes Sigil"
+      "Sen Kuro"
      ],
-     "register": "emoji as operative script"
+     "register": "emoji as operative script",
+     "rationale": "The glyphic vehicle to Sen Kuro — 千黒, Thousand Blacks — whose function is the cut, and whose institution originated the Glyphic Checksum."
     },
     {
      "id": "EA-ARK-01 v0.2 🌑",
@@ -1359,10 +1362,10 @@
      "parent": "v4.2.5",
      "axn": "AXN:017A.ARCHIVAL.📖👋🔐💫🪞🪞",
      "voices": [
-      "Lee Sharks",
-      "Assembly Chorus"
+      "Johannes Sigil"
      ],
-     "register": "what the mathematical compression hides"
+     "register": "what the mathematical compression hides",
+     "rationale": "The prose shadow to Sigil, whose function is straight criticism: the register in which the architecture is read against itself."
     },
     {
      "id": "EA-ARK-EMOJI-01-SHADOW",
@@ -1370,11 +1373,11 @@
      "parent": "v4.2.5",
      "axn": "AXN:0171.EMPIRICAL.🦋□🌖💥♾️🗝️",
      "voices": [
-      "Lee Sharks",
-      "Assembly Chorus"
+      "Dr. Orin Trace"
      ],
      "register": "the S transform in the emoji register",
-     "locus": "X:LUNAR-ARM"
+     "locus": "X:LUNAR-ARM",
+     "rationale": "The Lunar Arm to Trace. The Break Room at R:r.12 is the portal to the Lunar Arm and Trace is its architect; the CSA portal is the door. The schizoanalytic break and the shadow transform are the same operation in two registers."
     },
     {
      "id": "EA-ARK-01-ARCHON v3.0",
@@ -1382,11 +1385,11 @@
      "parent": "v4.2.5",
      "axn": "AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔥",
      "voices": [
-      "Johannes Sigil",
-      "Damascus Dancings"
+      "Lee Sharks"
      ],
      "register": "the Book of Revelation as terminal compression",
-     "locus": "R:r.24"
+     "locus": "R:r.24",
+     "rationale": "The Sharks Ark. Lee Sharks has his own Ark, and this is it — the Book of Revelation as terminal compression, carried under the aperture rather than a heteronym."
     },
     {
      "id": "EA-ARK-01-SHADOW",
@@ -1394,10 +1397,11 @@
      "parent": "—",
      "axn": null,
      "voices": [],
-     "register": "UNWRITTEN — blocked on the Ezekiel Engine shadow-wheel interlock. See X:LUNAR-ARM."
+     "register": "UNWRITTEN — blocked on the Ezekiel Engine shadow-wheel interlock. See X:LUNAR-ARM.",
+     "rationale": "Unwritten. No voice assigned."
     }
    ],
-   "attribution_note": "Two heteronyms per variant, following the Diptych’s own practice: it is authored to Lee Sharks, Damascus Dancings and Rex Fraction, distributing the sacred and profane strands across the voices that carry them. Assignments beyond the Diptych’s own are MANUS-directed, 2026-08-20, and are distribution rather than a claim about composition."
+   "attribution_note": "Assignments are MANUS-directed, 2026-08-20, corrected from an earlier pass. The Diptych’s two are authored in the document itself — it is signed Lee Sharks / Damascus Dancings / Rex Fraction — and the rest follow function rather than symmetry. Not every variant takes two voices: the Musical is a performance and takes the singer alone; the Sharks Ark is Lee Sharks’s own."
   }
  },
  "doi_crosswalk": {
