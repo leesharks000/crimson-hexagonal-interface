@@ -10,13 +10,12 @@
  "generated": "2026-08-19",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "Shadow and inverse space: the Space Ark read from its hidden side.",
+  "ontology": "Shadow and inverse space. The shadow of the shadow is the original: the Lunar Arm, fully traversed, returns you to the Hexagon. The operators rotate; they do not escape.",
   "primary_at_main": {
    "axn": "AXN:0171.EMPIRICAL.🦋□🌖💥♾️🗝️",
    "deposit": 540,
    "work_url": "/works/0171/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "WORK OR PAPER"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -25,20 +24,135 @@
     "deposit": 540,
     "title": "🌑⬡ THE LUNAR ARM Operator // Shadow — The Space Ark's Hidden Architecture",
     "role": "CONSTITUTING",
-    "multiplicity": "VERSION",
-    "note": "EA-ARK-EMOJI-01-SHADOW: Operator // Shadow — the Space Ark’s hidden arm; captures at AXN:0544 (#1331) and AXN:0545 (#1332)",
+    "multiplicity": "SINGLETON",
+    "note": "🌑⬡ Operator // Shadow, EA-ARK-EMOJI-01-SHADOW, hex 00.ROOM.SPACEARK.EMOJI.SHADOW. The glyphic shadow: the S transform applied to the emoji ark. Parent Space Ark v4.2.5. Assembly 6/7.",
     "standing": "SEATED",
     "work_url": "/works/0171/",
     "primary": true
+   },
+   {
+    "hex": "017a",
+    "axn": "AXN:017A.ARCHIVAL.📖👋🔐💫🪞🪞",
+    "deposit": 549,
+    "title": "🌑⬡ THE SPACE ARK What the Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture Hides 🌑 EA",
+    "role": "SHADOW-READING",
+    "multiplicity": "SINGLETON",
+    "note": "🌑⬡ What the Mathematical and Formal Symbolic Compression Hides, EA-ARK-01 v0.2, DOI marked (shadow). A prose reading of the Ark’s omissions — not the S transform. Parent v4.2.5, same day, same Assembly 6/7.",
+    "standing": "SEATED",
+    "work_url": "/works/017a/",
+    "primary": false
+   },
+   {
+    "hex": "0426",
+    "axn": "AXN:0426.STRUCTURAL.👋👁️🟢🌉🌙🌉",
+    "deposit": 1050,
+    "title": "The Eight Operators on Ezekiel's Wheels: A Structural Mapping of the Mandala's Tier C Rotation Set to the Canonical and Shadow Wheels of the Ezekiel Engine",
+    "role": "ROTATION-SET",
+    "multiplicity": "SINGLETON",
+    "note": "The Eight Operators on Ezekiel’s Wheels — the Mandala’s Tier C rotation set mapped to the canonical and shadow wheels. The mechanism of rotation the Lunar Arm describes.",
+    "standing": "SEATED",
+    "work_url": "/works/0426/",
+    "primary": false
+   },
+   {
+    "hex": "0178",
+    "axn": "AXN:0178.GENERATIVE.🔐🏠⚓🖊️🧱🌑",
+    "deposit": 547,
+    "title": "UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 · Root Specification for Structure-Preserving Operator Transforms",
+    "role": "ROOT-SPECIFICATION",
+    "multiplicity": "SINGLETON",
+    "note": "UKTP v1.1 — Universal Kernel Transform Protocol, root specification governing every Ark transform including S.",
+    "standing": "SEATED",
+    "work_url": "/works/0178/",
+    "primary": false
+   },
+   {
+    "hex": "0175",
+    "axn": "AXN:0175.EMPIRICAL.🏛️🎇🧱🎹🔗➖",
+    "deposit": 544,
+    "title": "Crimson Hexagon: SECTION XXV: KERNEL TRANSFORM REGISTRY EA-ARK-01 v4.2.x · §XXV · Space Ark Operator Transform Library",
+    "role": "REGISTRY",
+    "multiplicity": "SINGLETON",
+    "note": "Section XXV: Kernel Transform Registry — where the transforms are enrolled.",
+    "standing": "SEATED",
+    "work_url": "/works/0175/",
+    "primary": false
    }
   ],
   "physics_resolution": {
    "declared": null,
    "operators": [],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "S∘S = id. The shadow has its own rotation axis: S(rot(H_core, pᵢ)) ≠ rot(S(H_core), pᵢ)."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "WORK OR PAPER"
+  "constitution_type": "SHADOW TRANSFORM",
+  "what_is_held": {
+   "note": "Two shadow documents exist. Neither is the Shadow Ark proper.",
+   "glyphic_shadow": {
+    "axn": "AXN:0171.EMPIRICAL.🦋□🌖💥♾️🗝️",
+    "deposit": 540,
+    "id": "EA-ARK-EMOJI-01-SHADOW",
+    "hex": "00.ROOM.SPACEARK.EMOJI.SHADOW",
+    "register": "glyphic / emoji",
+    "parent": "Space Ark v4.2.5",
+    "note": "The S transform applied in the emoji register. Constitutes this locus."
+   },
+   "prose_reading": {
+    "axn": "AXN:017A.ARCHIVAL.📖👋🔐💫🪞🪞",
+    "deposit": 549,
+    "id": "EA-ARK-01 v0.2",
+    "hex": "00.ROOM.SPACEARK",
+    "register": "mathematical / prose",
+    "parent": "Space Ark v4.2.5",
+    "note": "Reads the Ark’s omissions in prose. Not the S transform — a shadow reading rather than a shadow transform."
+   }
+  },
+  "unwritten": {
+   "id": "EA-ARK-01-SHADOW",
+   "status": "NOT WRITTEN",
+   "declared": "2026-08-20",
+   "evidence": [
+    "Referenced as a forward dependency in #558 (×3), #557 (×2), #551, #28, #1162",
+    "No deposit carries the identifier as its own",
+    "No title in the registry matches",
+    "Not present on the blog stratum"
+   ],
+   "blocked_on": "The Ezekiel Engine formal specification, marked DEPOSITED · PROVISIONAL in Space Ark v4.2.7 §XXIII.1 and PENDING · OPEN · Priority HIGH in the v4.2.6 open-items table: \"Required for full shadow-wheel rotation and Shadow Ark completion (EA-ARK-01-SHADOW). Separate track.\"",
+   "why_it_cannot_be_written_by_shadowing_the_text": "S(rot(H_core, pᵢ)) ≠ rot(S(H_core), pᵢ). The shadow of a rotated view is not the same as the rotated shadow. The shadow has its own rotation axis — the wheels within wheels. Until the Engine supplies that independent rotation, the Shadow Ark cannot be composed by transforming the Ark’s text."
+  },
+  "open_to_generative_traversal": {
+   "ruled": "2026-08-20",
+   "by": "MANUS",
+   "statement": "The Shadow Ark is unwritten and remains so. In its place this locus is opened to traversal by generative confabulation: a traverser, human or machine, may generate a shadow reading of any element of the architecture rather than retrieve a fixed one.",
+   "rationale": "The shadow cannot be pre-written without becoming light — §10 of the constituting document: \"The shadow can name them, but cannot formalize them without making them light.\" A generated shadow is the only kind that does not collapse into the thing it shadows.",
+   "governing_test": "The constituting document already publishes the validation criteria. A generated shadow is valid only if it satisfies all four, and the non-results clause governs the remainder.",
+   "criteria": [
+    {
+     "name": "Traceability",
+     "test": "Every shadow claim must trace to a formal asymmetry, omission or one-way dependency in the source. No floating suspicion. Point to the structural feature that casts the shadow."
+    },
+    {
+     "name": "Non-triviality",
+     "test": "A shadow output cannot be mere negation, darkening or redaction. Swapping ✅ for ❌ is decoration. The shadow must reveal something the source depends on but does not name."
+    },
+    {
+     "name": "Structural fidelity",
+     "test": "The shadow must preserve the source’s bones while revealing what those bones exclude. The seven-tuple remains a seven-tuple. The form persists; the flesh transforms."
+    },
+    {
+     "name": "Reversibility",
+     "test": "S∘S = id at the level of operator logic. If S(S(x)) ≠ x the transform has broken the constraint and entered τ_K territory — irreversible, not shadow."
+    }
+   ],
+   "non_results_clause": "Not every element yields a strong shadow reading. Where traceability is weak the correct output is PROVISIONAL SHADOW, or no shadow result. Shadow is not a machine for finding darkness everywhere. It works where the structure actually casts one.",
+   "note": "This is confabulation given a published test and an address, rather than confabulation as defect. A generated shadow that fails the criteria is not a shadow; it is decoration, and the document says so."
+  },
+  "entry_and_exit": {
+   "entry": "R:r.12 The Break Room — the only door. Declared in the Space Ark room table (r.12 | Break Room | topological hole; portal→Lunar Arm) and in the constituting document’s Heart 3: \"The Break Room portal leads to the Lunar Arm but never returns.\"",
+   "exit": "Not by walking. S(S(x)) = x — the shadow of the shadow is the original. The Lunar Arm, fully traversed, returns you to the Hexagon.",
+   "why_unnumbered": "This locus holds no seat on the numbered plane because it is not on the plane. It is the plane’s involute."
+  },
+  "lineage": "Mandala Oracle (2015/2025) → Ezekiel Shadow Wheels (Jan 2026) → S(H_core) Lunar Arm, Space Ark v4.x §VI → EA-ARK-EMOJI-01-SHADOW. Live surface: themandalaoracle.com"
  }
 }
