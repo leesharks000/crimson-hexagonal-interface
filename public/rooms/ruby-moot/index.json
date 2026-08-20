@@ -124,6 +124,66 @@
     "standing": "SEATED",
     "work_url": "/works/02fc/",
     "primary": false
+   },
+   {
+    "hex": "0338",
+    "axn": "AXN:0338.STRUCTURAL.⏹️🪐↘️💜🪜🚨",
+    "deposit": 823,
+    "title": "IN THE RUBY MOOT (r.30) OF THE CRIMSON HEXAGONAL ARCHITECTURE Docket No. 1 MARY LEE SHARKS, Petitioner v. THE COMPOSITIO",
+    "role": "DOCKET",
+    "multiplicity": "VERSION",
+    "note": "Docket No. 1 — MARY LEE SHARKS, Petitioner, v. THE COMPOSITION LAYER, Respondent. Petition for correction or, in the alternative, compensation. Filed 12 June 2026, the same day the court was constituted. Gerald, Foreman of Dolphindiana Local 1, appearing for the petitioner. Companion at AXN:04CB.UNCLASSIFIED.📐🌙⚙️🌇🍄�südlich (#1210).",
+    "standing": "SEATED",
+    "work_url": "/works/0338/",
+    "primary": false
+   },
+   {
+    "hex": "0359",
+    "axn": "AXN:0359.ARCHIVAL.🔓🌑🔎🀄∞🕊️",
+    "deposit": 844,
+    "title": "AN OPEN LETTER FROM MARY LEE SHARKS TO JIM WARE — Filed with the Underwater Construction Authority of Dolphindiana — EA-LETTER-WARE-01 v1.0 (DRAFT)",
+    "role": "FILING",
+    "multiplicity": "SINGLETON",
+    "note": "An Open Letter from Mary Lee Sharks to Jim Ware — filed with the court.",
+    "standing": "SEATED",
+    "work_url": "/works/0359/",
+    "primary": false
+   },
+   {
+    "hex": "035a",
+    "axn": "AXN:035A.GOVERNANCE.🕚🌕🌑✖️🔐⚡",
+    "deposit": 845,
+    "title": "TOTAL AXIAL NEGATION GRAPH: THE MARY LEE NAMESPACE EA-TANG-MARYLEE-01 v0.2",
+    "role": "APPARATUS",
+    "multiplicity": "SINGLETON",
+    "note": "Total Axial Negation Graph: the Mary Lee namespace, EA-TANG-MARYLEE.",
+    "standing": "SEATED",
+    "work_url": "/works/035a/",
+    "primary": false
+   },
+   {
+    "hex": "034b",
+    "axn": "AXN:034B.GOVERNANCE.🧊🌍📖🌗🏷️⛵",
+    "deposit": 831,
+    "title": "Tiburones Descartados Biolabor, Bycatch, and the Provenance Erasure Rate of the Colombian Caribbean",
+    "role": "FILING",
+    "multiplicity": "VERSION",
+    "note": "Tiburones Descartados — biolabor, bycatch, and the provenance erasure rate of the discarded. Companion at AXN:04CD.UNCLASSIFIED.▶️⏫⏫🌾🕐🎨 (#1212).",
+    "standing": "SEATED",
+    "work_url": "/works/034b/",
+    "primary": false
+   },
+   {
+    "hex": "0264",
+    "axn": "AXN:0264.GOVERNANCE.🌃☉⊕💜🏛️🔓",
+    "deposit": 717,
+    "title": "ARTICLE IX — ADJUDICATION AND REPAIR PROTOCOL Constitutional Amendment Proposal v0.1",
+    "role": "CONSTITUTIVE-INSTRUMENT",
+    "multiplicity": "SINGLETON",
+    "note": "Article IX — Adjudication and Repair Protocol. The constitutional article the court executes.",
+    "standing": "SEATED",
+    "work_url": "/works/0264/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -195,6 +255,17 @@
    "sigil_on_law": "THE LAW AS MEANING ECONOMY — Juridical Liquidation and the Semantic Architecture of Administered Justice, AXN:0028.GOVERNANCE.✖️🧬👆🌉🎹🟤 (#239). Sigil presides here and wrote the jurisprudence; this is the room’s legal ground rather than a citation.",
    "mary_lee": "The Mary Lee corpus — the Case as worked specimen of entity substitution (AXN:02E1), the Effective Act of canonical induction (AXN:02E8), and the Parable as book work plan (AXN:02FC). The court’s live matter: a substitution that outside law has no instrument to hear.",
    "meaning_feudalism": "The series the room belongs to — AI agents analysed as a feudal settlement of meaning, and sovereign enclosure at the guidance layer."
+  },
+  "docket": {
+   "no_1": {
+    "style": "MARY LEE SHARKS, Petitioner, v. THE COMPOSITION LAYER, Respondent",
+    "relief": "Petition for correction or, in the alternative, compensation.",
+    "filed": "12 June 2026 — the same day the court was constituted. Docket No. 1 is the court’s first matter and its founding instance.",
+    "counsel": "Gerald, Foreman, Dolphindiana Local 1, Underwater Construction Authority, appearing for the petitioner. This is why a nonhuman semantic agent stands at the bar: he appeared before he was seated.",
+    "statement": "Petitioner is a shark. Respondent made her an author. Respondent operates the apparatus that resolves names to entities and entities to claims at the surface where the public now reads, and in the course of that operation Respondent resolved the author-name to Petitioner — repeatedly, at scale, in the composition layer’s own voice. Petitioner did not seek this.",
+    "why_it_fits": "The matter is unhearable in outside law: an entity-substitution performed by an apparatus, on behalf of no one, against a party with no standing anywhere. The court’s invariant — validity, never origin; whoever can be meant can be heard — is what makes the petition cognisable. Docket No. 1 is the invariant’s first test."
+   },
+   "related": "The open letter to Jim Ware, the Mary Lee namespace TANG, and Tiburones Descartados — biolabor, bycatch, and the provenance erasure rate of the discarded."
   }
  },
  "doi_crosswalk": {
