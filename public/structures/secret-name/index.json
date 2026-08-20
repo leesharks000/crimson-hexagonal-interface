@@ -1,0 +1,29 @@
+{
+ "locative_key": "T:SECRET-NAME",
+ "name": "The Secret Name",
+ "structure_class": "TRANSVERSAL",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A transversal structure: it crosses loci rather than occupying one.",
+  "primary_at_main": {
+   "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+   "deposit": 68,
+   "work_url": "/works/0228/"
+  },
+  "documents": [
+   {
+    "hex": "0228",
+    "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+    "deposit": 68,
+    "title": "THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "Architectural Specification: the Armature and the Pearl; companion at AXN:04B0 (#1183)",
+    "standing": "SEATED",
+    "work_url": "/works/0228/",
+    "primary": true
+   }
+  ],
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
+}

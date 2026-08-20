@@ -50,25 +50,34 @@
  ],
  "surface_map_url": "/map/#S:sp.02",
  "constitution": {
-  "status": "UNCONSTITUTED — DECLARED",
-  "ontology": "Forty-four deposits mention this locus in body text; none takes it as subject. As a threshold rather than a room, it may be constituted by the act of crossing rather than by a specification — but no document states that, and the archive does not supply the reasoning on the locus’s behalf. Declared unspecified pending either a specification or a ruling that thresholds are constituted differently from rooms.",
-  "gap_declaration": {
-   "kind": "THRESHOLD, UNSPECIFIED",
-   "locus": "S:sp.02",
-   "declared": "2026-08-20",
-   "evidence": [
-    "44 body mentions, 0 by title"
-   ],
-   "rule": "Declared absence is inert; undeclared absence gets filled in. This locus carries no constituting document and the archive says so rather than allowing a retrieval system to supply one."
+  "status": "CONSTITUTED",
+  "ontology": "The threshold, held as the Afterlife Archive: what crosses out of the archive and persists.",
+  "primary_at_main": {
+   "axn": "AXN:0510.UNCLASSIFIED.▶️🌓⚓☉🗝️📋",
+   "deposit": 1279,
+   "work_url": "/works/0510/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
-  "documents": [],
-  "sweeps_run": [
-   "room name",
-   "locus key (r.NN)",
-   "Room Anchor",
-   "Charter",
-   "Room Specification",
-   "body text"
-  ]
+  "documents": [
+   {
+    "hex": "0510",
+    "axn": "AXN:0510.UNCLASSIFIED.▶️🌓⚓☉🗝️📋",
+    "deposit": 1279,
+    "title": "The Afterlife Archive: Data-Breach-as-Poem — A Crimson Hexagon Project (Manifesto)",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "The Afterlife Archive: Data-Breach-as-Poem — the threshold under its own name",
+    "standing": "SEATED",
+    "work_url": "/works/0510/",
+    "primary": true
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Threshold",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "A title sweep on the locus name returns nothing; the locus is constituted under a different name entirely. Recorded so the next sweep does not repeat the miss."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
  }
 }

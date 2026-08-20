@@ -1,0 +1,29 @@
+{
+ "locative_key": "T:ARMATURE",
+ "name": "The Armature",
+ "structure_class": "TRANSVERSAL",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A transversal structure, constituted jointly with the Secret Name.",
+  "primary_at_main": {
+   "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+   "deposit": 68,
+   "work_url": "/works/0228/"
+  },
+  "documents": [
+   {
+    "hex": "0228",
+    "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+    "deposit": 68,
+    "title": "THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl",
+    "role": "CONSTITUTING",
+    "multiplicity": "SHARED",
+    "note": "The same architectural specification constitutes the Armature and the Secret Name; they are described together and are not separable documents",
+    "standing": "SEATED",
+    "work_url": "/works/0228/",
+    "primary": true
+   }
+  ],
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
+}

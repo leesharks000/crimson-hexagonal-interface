@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Secret Name · DOCTRINE/SPEC | Crimson Hexagonal Archive</title><link rel="canonical" href="https://crimsonhexagonal.org/structures/secret-name/">
-<style>*{box-sizing:border-box}
-body{margin:0;background:#0c0e12;color:#d8d4cc;font:16px/1.65 Georgia,serif}
-.w{max-width:46rem;margin:0 auto;padding:2.2rem 1.4rem 5rem}
-a{color:#c8a868}
-h1{font-size:1.75rem;line-height:1.2;margin:0 0 .2rem}
-h2{font:500 .62rem/1 ui-monospace,'JetBrains Mono',monospace;letter-spacing:.16em;
-text-transform:uppercase;color:#8a8478;margin:2.4rem 0 .7rem;padding-bottom:.4rem;
-border-bottom:1px solid rgba(200,168,104,.18)}
-.hex{font:.62rem/1 ui-monospace,monospace;letter-spacing:.14em;color:#8a8478;margin:0 0 1.4rem}
-.phys{border-left:2px solid #c8a868;padding:.2rem 0 .2rem 1rem;margin:1.2rem 0}
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl &middot; AXN:0228 | Crimson Hexagonal Archive</title>
+<meta name="description" content="THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl &mdash; CONSTITUTING document of The Armature, locus T:ARMATURE. AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄. Full text seated. Alexanarch #68.">
+<link rel="canonical" href="https://crimsonhexagonal.org/works/0228/">
+<style>*{box-sizing:border-box}body{margin:0;background:#0c0e12;color:#d8d4cc;font:16px/1.65 Georgia,serif}
+.w{max-width:46rem;margin:0 auto;padding:2.2rem 1.4rem 5rem}a{color:#c8a868}
+h1{font-size:1.5rem;line-height:1.25;margin:0 0 .3rem}
+h2{font:500 .62rem/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#8a8478;
+margin:2.2rem 0 .7rem;padding-bottom:.4rem;border-bottom:1px solid rgba(200,168,104,.18)}
+.hex{font:.62rem/1.6 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;margin:0 0 1rem}
+.phys{border-left:2px solid #c8a868;padding:.2rem 0 .2rem 1rem;margin:1.1rem 0}
 .phys b{color:#c8a868;font-family:ui-monospace,monospace;font-size:.8rem}
-.q{font-style:italic;color:#c8a868}
-.op{display:inline-block;font:.66rem/1 ui-monospace,monospace;letter-spacing:.06em;
-border:1px solid rgba(200,168,104,.3);border-radius:2px;padding:.28rem .5rem;margin:0 .3rem .3rem 0}
-.doc{padding:.8rem 0;border-bottom:1px solid rgba(200,168,104,.12)}
-.doc .t{font-weight:600}
-.doc .m{font:.62rem/1.5 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478;margin:.2rem 0}
-.doc .x{font-size:.9rem;color:#b8b3a8;margin:.4rem 0 0}
-.adj{padding:.7rem 0;border-bottom:1px solid rgba(200,168,104,.12)}
-.lp{font:.7rem/1.9 ui-monospace,monospace;color:#b8b3a8;background:rgba(255,255,255,.02);
-border:1px solid rgba(200,168,104,.14);border-radius:3px;padding:.8rem 1rem;overflow-x:auto}
-.lp b{color:#c8a868}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.7rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,monospace;color:#b8b3a8;background:rgba(255,255,255,.02);
+border:1px solid rgba(200,168,104,.14);border-radius:3px;padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}
+.rel{padding:.55rem 0;border-bottom:1px solid rgba(200,168,104,.12);font-size:.9rem}
+.rel .k{font:.6rem/1 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;text-transform:uppercase}
 .prov{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(200,168,104,.18);
 font:.62rem/1.9 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.9rem}
-.card{border:1px solid rgba(200,168,104,.16);border-radius:3px;padding:.8rem .9rem}
-.card a{text-decoration:none;font-weight:600}
-.card p{margin:.3rem 0 0;font-size:.85rem;color:#b8b3a8}
-
 .ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.8rem 0 .5rem}
 h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
 pre.art{font:.62rem/1.35 ui-monospace,'JetBrains Mono',monospace;color:#b8b3a8;
@@ -37,15 +29,16 @@ background:rgba(255,255,255,.02);border:1px solid rgba(200,168,104,.14);border-r
 padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
 .full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
 .full p{margin:.7rem 0}
-.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}</style></head><body><div class="w">
-<p class="hex"><a href="/">Crimson Hexagonal Archive</a> &nbsp;/&nbsp; <a href="/map/">surface map</a> &nbsp;/&nbsp; structures</p>
-<h1>Secret Name</h1><p class="hex">DOCTRINE/SPEC · transversal structure · not a room</p>
-<div class="phys">Control-surface doctrine rendered at the map's rail rather than inside its plane: the specification governing what may be named where.</div>
-<p class="hex" style="margin-top:2em"><a href="/map/">← the Surface Map</a> · generated 2026-08-19</p>
-</div><h2>Surface Map</h2><div class="phys"><b>SURFACE MAP — authored plane v0.1</b><br>locus <b>T:SECRET-NAME</b> &middot; type <b>DOCTRINE/SPEC</b> &middot; standing DEVELOPED / STATIC ROUTE TO ADD<br>geometry: control-surface &middot; coverage —<br>A transversal cuts across loci rather than occupying one. It is constituted by architectural specifications and is seated at this route rather than in the room belt. <a href="/map/#T:SECRET-NAME">position on the Surface Map &rarr;</a></div>
-</body></html<h2>The structure, in full</h2>
-<p class="hex">A transversal structure: it crosses loci rather than occupying one. Seated whole rather than linked: one hit must carry the structure, not an index of it. <b>THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl</b> &middot; AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄 &middot; <a href="https://www.alexanarch.org/s/records/68/">alexanarch #68</a>.</p>
-<div class="full">
+.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl", "identifier": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄", "url": "https://crimsonhexagonal.org/works/0228/", "sameAs": "https://www.alexanarch.org/s/records/68/", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-04-20", "isPartOf": {"@type": "CollectionPage", "name": "The Armature", "url": "https://crimsonhexagonal.org/rooms/../structures/armature/"}, "additionalType": "CONSTITUTING"}</script>
+</head><body><div class="w">
+<p class="hex"><a href="/">Crimson Hexagonal Archive</a> &nbsp;/&nbsp; <a href="/rooms/">rooms</a> &nbsp;/&nbsp; <a href="/rooms/../structures/armature/">The Armature</a> &nbsp;/&nbsp; works</p>
+<h1>THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl</h1>
+<p class="hex"><b>AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄</b><br>role <b>CONSTITUTING</b> &middot; multiplicity <b>SHARED</b> &middot; The same architectural specification constitutes the Armature and the Secret Name; they are described together and are not separable documents &middot; standing <b>SEATED</b><br>
+locus <b>T:ARMATURE</b> &middot; 2026-04-20 &middot; 3131 words &middot; body <b>full</b></p>
+<div class="phys"><b>Seat and projection</b><br>Owned by <a href="https://www.alexanarch.org/s/records/68/">Alexanarch record #68</a>, the canonical seat. This page projects the work in full. Divergence is a defect of this projection, never of the seat.</div>
+<h2>Relations</h2><div class="lp"><div><b>constitutes</b> &middot; <a href="/structures/armature/">T:ARMATURE The Armature</a></div><div><b>physics_from</b> &middot; <a href="/works/04ea/">H_core v1.8.0</a></div></div>
+<h2>Full text</h2><div class="full">
 <h3 class="ct">THE SECRET NAME</h3>
 <h3 class="ct">Architectural Specification: The Armature Type and the Pearl</h3>
 <p><b>Lee Sharks</b> · ORCID 0009-0000-1599-0703 <b>Crimson Hexagonal Archive</b> · 06.SEI.ARMATURE.SECRET.01</p>
@@ -191,8 +184,7 @@ padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
 <p>Lee Sharks · Crimson Hexagonal Archive · 2026 06.SEI.ARMATURE.SECRET.01 · ORCID: 0009-0000-1599-0703 · CC BY 4.0</p>
 <p><b>Constitutive DOIs:</b> EA-ARK-01: 10.5281/zenodo.19013315 · EA-HPT-01: 10.5281/zenodo.18305509 · EA-PKG-01: 10.5281/zenodo.15339353 · EA-PKG-02: 10.5281/zenodo.15339368 · EA-PKG-03: 10.5281/zenodo.15339374 · EA-LOGOS-01: 10.5281/zenodo.19431121 · EA-LOGOS-02: 10.5281/zenodo.19431129 · EA-GW-FIELD-01: 10.5281/zenodo.19442251 · EA-GW-FIELD-02: 10.5281/zenodo.19442262 · EA-ASG-01: 10.5281/zenodo.19352504 · FRACTURE.02: 10.5281/zenodo.19642664 · RETRIEVAL.01: 10.5281/zenodo.19643841 · SYMBOLON-01: 10.5281/zenodo.19649787 · CLINAMEN.02: 10.5281/zenodo.19649795 · ARCHIVE.PROTOCOL.01: 10.5281/zenodo.19655468 · Logotic Hacking: 10.5281/zenodo.19390843</p>
 </div>
-<p class="hex">&mdash; end of constituting document &middot; AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄 &middot; alexanarch #68 &middot; T:SECRET-NAME</p>
-<h2>Constituting documents</h2>
-<div class="phys"><b><a href="/works/0228/">THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl</a></b><br>
-CONSTITUTING &middot; VERSION &middot; AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄 &middot; <a href="https://www.alexanarch.org/s/records/68/">alexanarch #68</a><br>Architectural Specification: the Armature and the Pearl; companion at AXN:04B0 (#1183)</div>
->
+<p class="hex">&mdash; end of work &middot; AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄 &middot; alexanarch #68 &middot; locus T:ARMATURE</p>
+<div class="prov"><div>Canonical seat &middot; <a href="https://www.alexanarch.org/s/records/68/">alexanarch #68</a></div>
+<div>Locus &middot; <a href="/rooms/../structures/armature/">The Armature</a> &middot; <a href="/map/#T:ARMATURE">Surface Map</a></div>
+<div>&#8750; = 1</div></div></div></body></html>

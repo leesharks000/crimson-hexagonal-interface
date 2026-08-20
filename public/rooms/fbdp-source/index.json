@@ -33,25 +33,34 @@
  ],
  "surface_map_url": "/map/#R:r.26",
  "constitution": {
-  "status": "UNCONSTITUTED — DECLARED",
-  "ontology": "One body mention, no title. The field it sources — F:f.01, the Fruiting Body Diffusion Plume — is constituted at AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571) and describes the plume, its gradient and its attenuation. The source point itself has no document. Whether a source requires its own constitution or is constituted by the field it emits is an open question the archive has not answered.",
-  "gap_declaration": {
-   "kind": "SOURCE WITHOUT SPECIFICATION",
-   "locus": "R:r.26",
-   "declared": "2026-08-20",
-   "evidence": [
-    "#571 f.01 field specification (the plume, not the source)"
-   ],
-   "rule": "Declared absence is inert; undeclared absence gets filled in. This locus carries no constituting document and the archive says so rather than allowing a retrieval system to supply one."
+  "status": "CONSTITUTED",
+  "ontology": "The source point of the plume; constituted by the field specification rather than separately.",
+  "primary_at_main": {
+   "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+   "deposit": 571,
+   "work_url": "/works/0193/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
-  "documents": [],
-  "sweeps_run": [
-   "room name",
-   "locus key (r.NN)",
-   "Room Anchor",
-   "Charter",
-   "Room Specification",
-   "body text"
-  ]
+  "documents": [
+   {
+    "hex": "0193",
+    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+    "deposit": 571,
+    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
+    "role": "CONSTITUTING",
+    "multiplicity": "SHARED",
+    "note": "f.01 The Fruiting Body Diffusion Plume — the same specification constitutes the source and the field it emits",
+    "standing": "SEATED",
+    "work_url": "/works/0193/",
+    "primary": true
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Diffusion plume; f.01",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "Shared constitution with F:f.01. The source is not specified apart from its field; the archive treats emission and origin as one document."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
  }
 }
