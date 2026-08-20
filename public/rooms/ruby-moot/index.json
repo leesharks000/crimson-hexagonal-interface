@@ -6,5 +6,29 @@
  "standing": "DEVELOPED",
  "current_surface_seat": "r.30",
  "canonical": "https://crimsonhexagonal.org/rooms/ruby-moot/",
- "generated": "2026-08-19"
+ "generated": "2026-08-19",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Ruby Moot is constituted by a locus-keyed specification from the room-constitution program.",
+  "documents": [
+   {
+    "hex": "0339",
+    "axn": "AXN:0339.GOVERNANCE.◀️🛸🔓🌖🌈🌃",
+    "deposit": 193,
+    "title": "r.30 THE RUBY MOOT: A Court of Record for the Semantic Commons — Room Specification (EA-SEI-MOOT-01 v1.0)",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "A Court of Record for the Semantic Commons. Room specification, 2026-06-12.",
+    "standing": "SEATED",
+    "work_url": "/works/0339/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+ }
 }

@@ -14,5 +14,29 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 28,
   "rebound": 0
+ },
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Imploding Velcro Nativity is constituted by a locus-keyed specification from the room-constitution program.",
+  "documents": [
+   {
+    "hex": "0293",
+    "axn": "AXN:0293.GOVERNANCE.📏♌🟡🔽🌱🕓",
+    "deposit": 743,
+    "title": "r.29 THE IMPLODING VELCRO NATIVITY Room Physics for a Hosted Cosmology Lee Sharks ORCID: 0009-0000-1599-0703",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Room Physics for a Hosted Cosmology. Room specification, 2026-05-19.",
+    "standing": "SEATED",
+    "work_url": "/works/0293/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
  }
 }

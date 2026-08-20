@@ -72,5 +72,43 @@
   4,
   -2
  ],
- "surface_map_url": "/map/#R:r.28"
+ "surface_map_url": "/map/#R:r.28",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "Eve is constituted by a locus-keyed specification from the room-constitution program.",
+  "documents": [
+   {
+    "hex": "01e6",
+    "axn": "AXN:01E6.ARCHIVAL.📎🏙️☽⛩️➗🚪",
+    "deposit": 632,
+    "title": "r.28 EVE Room Specification",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "Room specification: the Choosing Operator (σ_E) and the Garden Lanes. Edition of record.",
+    "standing": "SEATED",
+    "work_url": "/works/01e6/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "σ_E; da'at topology; arboreal (Tree of Knowledge at center)",
+   "operators": [
+    "σ_E",
+    "Φ_G"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+  },
+  "discovery_note": "Found by sweeping the locus key, not the room name.",
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
+  "edition_of_record": {
+   "chosen": "AXN:01E6.ARCHIVAL.📎🏙️☽⛩️➗🚪",
+   "deposit": 632,
+   "superseded_copy": {
+    "axn": "AXN:03D2.ARCHIVAL.✊🕛🎆↙️🙏👋",
+    "deposit": 966,
+    "date": "2026-07-03",
+    "note": "A second record of the same specification, re-imported 2026-07-03 with markdown-escaping artifacts (§1\\. for §1., -- for the em-dash). Identical word count and heading count; degraded typography. A round-trip copy, not a revision. #632 is the edition of record."
+   },
+   "rule": "Structural markers per chain. Identical word and heading counts; the later copy carries markdown-escaping artifacts from a round trip. Degraded typography, not revision."
+  }
+ }
 }
