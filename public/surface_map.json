@@ -57,9 +57,13 @@
     "locative_key": "R:r.01",
     "name": "Sappho",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "01.ROOM.SAPPHO",
+    "constitution_type": "ROOM SPECIFICATION",
+    "seated_documents": 15,
+    "page": "/rooms/sappho/"
    },
    "coordinates": {
     "authored_x": 445,
@@ -115,9 +119,13 @@
     "locative_key": "R:r.02",
     "name": "Borges",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "02.ROOM.BORGES",
+    "constitution_type": "PROVENANCE NODE",
+    "seated_documents": 2,
+    "page": "/rooms/borges/"
    },
    "coordinates": {
     "authored_x": 590,
@@ -155,7 +163,7 @@
     "locative_key": "R:r.03",
     "name": "Ichabod",
     "structure_type": "CHAMBER",
-    "standing": "CROSS-CLASS",
+    "standing": "CONSTITUTED",
     "historical_type": "ROOM",
     "address_history": [
      {
@@ -164,7 +172,11 @@
       "reason": "canonical: CNM v7.0 core_spine names r.03 Ichabod"
      }
     ],
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "03.CH.ICHABOD",
+    "constitution_type": "CHAMBER SPECIFICATION",
+    "seated_documents": 3,
+    "page": "/rooms/ichabod/"
    },
    "coordinates": {
     "authored_x": 1285,
@@ -222,9 +234,13 @@
     "locative_key": "R:r.04",
     "name": "Dove",
     "structure_type": "ROOM",
-    "standing": "HISTORICAL / ANCHOR-GAP",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "04.ROOM.DOVE",
+    "constitution_type": "WORK OR PAPER",
+    "seated_documents": 3,
+    "page": "/rooms/dove/"
    },
    "coordinates": {
     "authored_x": 405,
@@ -262,9 +278,13 @@
     "locative_key": "R:r.05",
     "name": "Semantic Economy",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "05.ROOM.SEMECON",
+    "constitution_type": "CONSTITUTION",
+    "seated_documents": 16,
+    "page": "/rooms/semantic-economy/"
    },
    "coordinates": {
     "authored_x": 560,
@@ -302,9 +322,13 @@
     "locative_key": "R:r.06",
     "name": "Marx",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "06.ROOM.MARX",
+    "constitution_type": "ROOM SPECIFICATION",
+    "seated_documents": 10,
+    "page": "/rooms/marx-room/"
    },
    "coordinates": {
     "authored_x": 720,
@@ -342,9 +366,13 @@
     "locative_key": "R:r.07",
     "name": "Revelation",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "07.ROOM.REVELATION",
+    "constitution_type": "ROOM SPECIFICATION",
+    "seated_documents": 8,
+    "page": "/rooms/revelation/"
    },
    "coordinates": {
     "authored_x": 940,
@@ -382,9 +410,13 @@
     "locative_key": "R:r.08",
     "name": "Sigil",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "08.ROOM.SIGIL",
+    "constitution_type": "INSTITUTIONAL CHARTER",
+    "seated_documents": 5,
+    "page": "/rooms/sigil/"
    },
    "coordinates": {
     "authored_x": 825,
@@ -424,7 +456,11 @@
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "09.ROOM.WHITMAN",
+    "constitution_type": "NONE",
+    "seated_documents": 0,
+    "page": "/rooms/whitman/"
    },
    "coordinates": {
     "authored_x": 990,
@@ -462,9 +498,13 @@
     "locative_key": "R:r.10",
     "name": "Water Giraffe",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "10.ROOM.WATERGIRAFFE",
+    "constitution_type": "ROOM ANCHOR",
+    "seated_documents": 6,
+    "page": "/rooms/water-giraffe/"
    },
    "coordinates": {
     "authored_x": 1130,
@@ -502,9 +542,13 @@
     "locative_key": "R:r.11",
     "name": "Assembly",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED / SYSTEMIC",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "11.ROOM.ASSEMBLY",
+    "constitution_type": "ROOM ANCHOR",
+    "seated_documents": 14,
+    "page": "/rooms/assembly/"
    },
    "coordinates": {
     "authored_x": 1030,
@@ -542,7 +586,7 @@
     "locative_key": "R:r.12",
     "name": "Break Room",
     "structure_type": "PORTAL",
-    "standing": "DEVELOPED PORTAL FUNCTION",
+    "standing": "CONSTITUTED",
     "historical_type": "ROOM",
     "address_history": [
      {
@@ -552,7 +596,11 @@
      }
     ],
     "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "12.PTL.BREAKROOM",
+    "constitution_type": "PORTAL NODE",
+    "seated_documents": 11,
+    "page": "/rooms/break-room/"
    },
    "coordinates": {
     "authored_x": 330,
@@ -590,7 +638,7 @@
     "locative_key": "R:r.13",
     "name": "Ezekiel",
     "structure_type": "PORTAL",
-    "standing": "DEVELOPED / PORTAL MODERATE",
+    "standing": "CONSTITUTED",
     "historical_type": null,
     "address_history": [
      {
@@ -600,7 +648,11 @@
      }
     ],
     "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "13.PTL.EZEKIEL",
+    "constitution_type": "ENGINE SPECIFICATION",
+    "seated_documents": 7,
+    "page": "/rooms/ezekiel/"
    },
    "coordinates": {
     "authored_x": 1080,
@@ -638,9 +690,13 @@
     "locative_key": "R:r.14",
     "name": "Studio for Patacinematics",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "14.ROOM.STUDIO",
+    "constitution_type": "INSTITUTIONAL CHARTER — THUMB",
+    "seated_documents": 6,
+    "page": "/rooms/studio-for-patacinematics/"
    },
    "coordinates": {
     "authored_x": 300,
@@ -678,7 +734,7 @@
     "locative_key": "R:r.15",
     "name": "Lagrange Observatory!",
     "structure_type": "CHAMBER",
-    "standing": "CROSS-CLASS",
+    "standing": "CONSTITUTED",
     "historical_type": "ROOM",
     "address_history": [
      {
@@ -688,7 +744,11 @@
      }
     ],
     "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "15.CH.LAGRANGE",
+    "constitution_type": "CHAMBER SPECIFICATION — SEPTAD",
+    "seated_documents": 19,
+    "page": "/rooms/lagrange-observatory/"
    },
    "coordinates": {
     "authored_x": 490,
@@ -731,9 +791,13 @@
     "locative_key": "R:r.16",
     "name": "Maybe Space Baby Garden Lanes",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "16.ROOM.MSBGL",
+    "constitution_type": "CHARTER — THUMB",
+    "seated_documents": 12,
+    "page": "/rooms/maybe-space-baby-garden-lanes/"
    },
    "coordinates": {
     "authored_x": 470,
@@ -771,9 +835,13 @@
     "locative_key": "R:r.17",
     "name": "Moving Statues Made of Rubies Mint",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "17.ROOM.MSMRM",
+    "constitution_type": "CHARTER — INTEGRITY LOCK",
+    "seated_documents": 6,
+    "page": "/rooms/moving-statues-made-of-rubies-mint/"
    },
    "coordinates": {
     "authored_x": 420,
@@ -811,9 +879,13 @@
     "locative_key": "R:r.18",
     "name": "Rosary Embassy",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "18.ROOM.ROSARYEMBASSY",
+    "constitution_type": "EFFECTIVE ACT — EMBASSY INSTALLATION",
+    "seated_documents": 4,
+    "page": "/rooms/rosary-embassy/"
    },
    "coordinates": {
     "authored_x": 660,
@@ -851,9 +923,13 @@
     "locative_key": "R:r.19",
     "name": "Macro-Maquette",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED / MODULAR",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "19.ROOM.MACROMAQUETTE",
+    "constitution_type": "COMPENDIUM-GERMINATIVE",
+    "seated_documents": 3,
+    "page": "/rooms/macro-maquette/"
    },
    "coordinates": {
     "authored_x": 640,
@@ -891,9 +967,13 @@
     "locative_key": "R:r.20",
     "name": "Airlock",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "20.ROOM.AIRLOCK",
+    "constitution_type": "GOVERNANCE DOCTRINE",
+    "seated_documents": 6,
+    "page": "/rooms/airlock/"
    },
    "coordinates": {
     "authored_x": 900,
@@ -931,7 +1011,7 @@
     "locative_key": "R:r.21",
     "name": "Infinite Bliss",
     "structure_type": "VAULT",
-    "standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
     "address_history": [
      {
@@ -941,7 +1021,11 @@
      }
     ],
     "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "21.VLT.INFINITEBLISS",
+    "constitution_type": "INSTITUTIONAL PROVENANCE — DWELLING",
+    "seated_documents": 6,
+    "page": "/rooms/infinite-bliss/"
    },
    "coordinates": {
     "authored_x": 1210,
@@ -984,7 +1068,7 @@
     "locative_key": "R:r.22",
     "name": "Thousand Worlds",
     "structure_type": "CHAMBER",
-    "standing": "CROSS-CLASS",
+    "standing": "CONSTITUTED",
     "historical_type": "ROOM",
     "address_history": [
      {
@@ -994,7 +1078,11 @@
      }
     ],
     "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "22.CH.THOUSANDWORLDS",
+    "constitution_type": "CHAMBER SPECIFICATION",
+    "seated_documents": 10,
+    "page": "/rooms/thousand-worlds/"
    },
    "coordinates": {
     "authored_x": 1260,
@@ -1037,9 +1125,13 @@
     "locative_key": "R:r.23",
     "name": "Catullus",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "23.ROOM.CATULLUS",
+    "constitution_type": "ROOM SPECIFICATION",
+    "seated_documents": 3,
+    "page": "/rooms/catullus/"
    },
    "coordinates": {
     "authored_x": 300,
@@ -1077,9 +1169,13 @@
     "locative_key": "R:r.24",
     "name": "Migdal",
     "structure_type": "ROOM",
-    "standing": "QUEUED / ADOPTED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "24.ROOM.MIGDAL",
+    "constitution_type": "ROOM SPECIFIED IN MAP, WRITTEN ELSEWHERE",
+    "seated_documents": 8,
+    "page": "/rooms/migdal-room/"
    },
    "coordinates": {
     "authored_x": 255,
@@ -1117,9 +1213,13 @@
     "locative_key": "R:r.25",
     "name": "Dolphindiana / Underwater Construction Authority",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "25.ROOM.DOLPHINDIANA",
+    "constitution_type": "ROOM SPECIFICATION + SEMANTIC AGENT REGISTRY",
+    "seated_documents": 4,
+    "page": "/rooms/underwater-construction-authority-of-dolphindiana/"
    },
    "coordinates": {
     "authored_x": 260,
@@ -1157,7 +1257,7 @@
     "locative_key": "R:r.27",
     "name": "FBDP Source",
     "structure_type": "ROOM",
-    "standing": "STRUCTURALLY ESTABLISHED / RELOCATED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
     "address_history": [
      {
@@ -1167,7 +1267,11 @@
      }
     ],
     "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "27.ROOM.FBDPSOURCE",
+    "constitution_type": "ROOM SPECIFICATION — FIELD SOURCE",
+    "seated_documents": 2,
+    "page": "/rooms/fbdp-source/"
    },
    "coordinates": {
     "authored_x": 220,
@@ -1208,7 +1312,7 @@
     "locative_key": "R:r.26",
     "name": "THE INTERNET",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
     "address_history": [
      {
@@ -1217,7 +1321,11 @@
       "reason": "superseded by H_core v1.8.0 room graph"
      }
     ],
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "26.ROOM.INTERNET",
+    "constitution_type": "ROOM SPECIFICATION",
+    "seated_documents": 9,
+    "page": "/rooms/internet/"
    },
    "coordinates": {
     "authored_x": 730,
@@ -1257,9 +1365,13 @@
     "locative_key": "R:r.28",
     "name": "Eve",
     "structure_type": "ROOM",
-    "standing": "PROVISIONAL",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "28.ROOM.EVE",
+    "constitution_type": "ROOM SPECIFICATION",
+    "seated_documents": 1,
+    "page": "/rooms/eve/"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1297,7 +1409,7 @@
     "locative_key": "H:06.HOST.IVN.29",
     "name": "Imploding Velcro Nativity",
     "structure_type": "HOSTED COSMOLOGY",
-    "standing": "DORMANT / CONSENT-GATED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
     "address_history": [
      {
@@ -1306,7 +1418,11 @@
       "reason": "vacated the room plane; a hosted cosmology addresses itself in the HOST space"
      }
     ],
-    "self_declared": "r.29 THE IMPLODING VELCRO NATIVITY — the document’s own title. Preserved; the numeral survives as a hosted designation."
+    "self_declared": "r.29 THE IMPLODING VELCRO NATIVITY — the document’s own title. Preserved; the numeral survives as a hosted designation.",
+    "hex_address": "29.ROOM.IVN",
+    "constitution_type": "HOSTED COSMOLOGY SPECIFICATION",
+    "seated_documents": 1,
+    "page": "/rooms/imploding-velcro-nativity/"
    },
    "coordinates": {
     "authored_x": 600,
@@ -1341,8 +1457,12 @@
     "locative_key": "R:r.30",
     "name": "Ruby Moot",
     "structure_type": "ROOM/COURT",
-    "standing": "DEVELOPED",
-    "historical_type": null
+    "standing": "CONSTITUTED",
+    "historical_type": null,
+    "hex_address": "30.ROOM.RUBYMOOT",
+    "constitution_type": "ROOM SPECIFICATION — COURT OF RECORD",
+    "seated_documents": 14,
+    "page": "/rooms/ruby-moot/"
    },
    "coordinates": {
     "authored_x": 690,
@@ -1377,9 +1497,13 @@
     "locative_key": "R:r.31",
     "name": "Josephus Thesis",
     "structure_type": "ROOM",
-    "standing": "QUEUED ROOM / DEEP CORPUS",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "31.ROOM.JOSEPHUS",
+    "constitution_type": "WORK OR PAPER",
+    "seated_documents": 9,
+    "page": "/rooms/josephus-thesis/"
    },
    "coordinates": {
     "authored_x": 980,
@@ -1417,7 +1541,7 @@
     "locative_key": "R:r.29",
     "name": "Job",
     "structure_type": "ROOM",
-    "standing": "QUEUED / ADOPTED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
     "canonical_class_source": "H_core v1.8.0 §R — 29.ROOM.JOB",
     "address_history": [
@@ -1426,7 +1550,11 @@
       "until": "2026-08-20",
       "reason": "restored to its original and H_core-assigned seat"
      }
-    ]
+    ],
+    "hex_address": "29.ROOM.JOB",
+    "constitution_type": "ROOM — CONSTITUTED FROM THE BLOG STRATUM",
+    "seated_documents": 3,
+    "page": "/rooms/job-room/"
    },
    "coordinates": {
     "authored_x": 1120,
@@ -1475,7 +1603,11 @@
       "until": "2026-08-20",
       "reason": "H_core assigns 30.VLT.FROZENSIN, but r.30 is held by the Ruby Moot — a fully specified room H_core does not contain. Ruby Moot keeps 30; the Vault takes the seat freed when Job returned to r.29."
      }
-    ]
+    ],
+    "hex_address": "30.VLT.FROZENSIN",
+    "constitution_type": "VAULT — NO FOUNDING DOCUMENT",
+    "seated_documents": 0,
+    "page": "/rooms/frozen-sin-archive/"
    },
    "coordinates": {
     "authored_x": 1360,
@@ -1515,7 +1647,7 @@
     "locative_key": "H:U.3-60",
     "name": "3:60 Room",
     "structure_type": "HOSTED COSMOLOGY",
-    "standing": "MANIFESTATION-GAP / UNNUMBERED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
     "address_history": [
      {
@@ -1523,7 +1655,11 @@
       "until": "2026-08-20",
       "reason": "reclassified from CONTRIBUTED ROOM to HOSTED COSMOLOGY at MANUS direction"
      }
-    ]
+    ],
+    "hex_address": "U.CONTRIB.360",
+    "constitution_type": "HOSTED COSMOLOGY — CONTRIBUTOR LICENCE",
+    "seated_documents": 4,
+    "page": "/rooms/3-60/"
    },
    "coordinates": {
     "authored_x": 1300,
@@ -1558,9 +1694,13 @@
     "locative_key": "S:sp.01",
     "name": "CTI_WOUND",
     "structure_type": "VAULT",
-    "standing": "DEVELOPED CROSS-CLASS",
+    "standing": "CONSTITUTED",
     "historical_type": "SPECIAL",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "SP.01.VLT.CTIWOUND",
+    "constitution_type": "VAULT ANCHOR — LIVING ARCHIVE",
+    "seated_documents": 8,
+    "page": "/rooms/cti-wound/"
    },
    "coordinates": {
     "authored_x": 1320,
@@ -1603,9 +1743,13 @@
     "locative_key": "S:sp.02",
     "name": "PORTICO",
     "structure_type": "PORTICO",
-    "standing": "ESTABLISHED",
+    "standing": "CONSTITUTED",
     "historical_type": "SPECIAL",
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "SP.02.PTC.AFTERLIFE",
+    "constitution_type": "PORTICO — THRESHOLD",
+    "seated_documents": 11,
+    "page": "/rooms/portico/"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1643,9 +1787,13 @@
     "locative_key": "S:sp.03",
     "name": "Space Ark",
     "structure_type": "ROOM",
-    "standing": "DEVELOPED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "SP.03.ROOM.SPACEARK",
+    "constitution_type": "ENGINE SPECIFICATION",
+    "seated_documents": 26,
+    "page": "/rooms/space-ark/"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1683,9 +1831,13 @@
     "locative_key": "S:sp.04",
     "name": "Mandala",
     "structure_type": "CHAMBER",
-    "standing": "DEVELOPED / CLASS TRANSITION UNADJUDICATED",
+    "standing": "CONSTITUTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+    "hex_address": "SP.04.CH.MANDALA",
+    "constitution_type": "ENGINE SPECIFICATION — CHAMBER",
+    "seated_documents": 21,
+    "page": "/rooms/mandala/"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1723,8 +1875,12 @@
     "locative_key": "X:LUNAR-ARM",
     "name": "Lunar Arm",
     "structure_type": "SHADOW/INVERSE SPACE",
-    "standing": "DEVELOPED SPECIAL ARCHITECTURE",
-    "historical_type": null
+    "standing": "CONSTITUTED",
+    "historical_type": null,
+    "hex_address": "X.SHADOW.LUNARARM",
+    "constitution_type": "SHADOW TRANSFORM",
+    "seated_documents": 5,
+    "page": "/rooms/lunar-arm/"
    },
    "coordinates": {
     "authored_x": 65,
@@ -1760,7 +1916,11 @@
     "name": "Sacred Heart",
     "structure_type": "ROOM",
     "standing": "MINTED — UNOCCUPIED",
-    "historical_type": null
+    "historical_type": null,
+    "hex_address": "33.ROOM.SACREDHEART",
+    "constitution_type": "NONE — declared subject, no corpus",
+    "seated_documents": 0,
+    "page": "/rooms/sacred-heart/"
    },
    "coordinates": {
     "authored_x": 1180,
@@ -1793,7 +1953,11 @@
     "structure_type": "ROOM",
     "hex_address": "34.ROOM.VERTICAL",
     "minted": "2026-08-20",
-    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (13.ROOM.PLATO), renamed for its operator."
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (13.ROOM.PLATO), renamed for its operator.",
+    "constitution_type": "FOUNDATIONAL OPERATOR DOCUMENT",
+    "seated_documents": 14,
+    "page": "/rooms/operator-vertical/",
+    "standing": "CONSTITUTED"
    }
   },
   {
@@ -1803,7 +1967,11 @@
     "structure_type": "LIBRARY",
     "hex_address": "35.LIBRARY.PERGAMUM",
     "minted": "2026-08-20",
-    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (18.ROOM.ARCHIVE). Constitutes an address space, 16.LIBRARY.PERGAMUM, that was already live."
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (18.ROOM.ARCHIVE). Constitutes an address space, 16.LIBRARY.PERGAMUM, that was already live.",
+    "constitution_type": "OPERATOR + RECLAMATION",
+    "seated_documents": 10,
+    "page": "/rooms/library-of-pergamum/",
+    "standing": "CONSTITUTED"
    }
   },
   {
@@ -1820,7 +1988,11 @@
       "until": "2026-08-20",
       "reason": "the archive already has the Ezekiel Engine at R:r.13"
      }
-    ]
+    ],
+    "constitution_type": "FORMAL SCHEMA",
+    "seated_documents": 5,
+    "page": "/rooms/lambda-engine/",
+    "standing": "CONSTITUTED"
    }
   },
   {
@@ -1830,7 +2002,11 @@
     "structure_type": "ROOM",
     "hex_address": "37.ROOM.MACHINEDIALECTIC",
     "minted": "2026-08-20",
-    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (15.ROOM.HEGEL)."
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (15.ROOM.HEGEL).",
+    "constitution_type": "DIALECTICAL FIELD",
+    "seated_documents": 5,
+    "page": "/rooms/machine-dialectic/",
+    "standing": "CONSTITUTED"
    }
   },
   {
@@ -1840,7 +2016,11 @@
     "structure_type": "ROOM",
     "hex_address": "38.ROOM.SINGULARITY",
     "minted": "2026-08-20",
-    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (16.ROOM.CANONWAR); the seed name rejected."
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (16.ROOM.CANONWAR); the seed name rejected.",
+    "constitution_type": "TERMINAL ATTRACTOR + WAR MAP",
+    "seated_documents": 15,
+    "page": "/rooms/singularity/",
+    "standing": "CONSTITUTED"
    }
   },
   {
@@ -1850,7 +2030,11 @@
     "structure_type": "ROOM",
     "hex_address": "39.ROOM.RESTOREDACADEMY",
     "minted": "2026-08-20",
-    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (17.ROOM.CLASSROOM). First I-component to take an R-address deliberately."
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (17.ROOM.CLASSROOM). First I-component to take an R-address deliberately.",
+    "constitution_type": "INSTITUTIONAL DOCTRINE",
+    "seated_documents": 5,
+    "page": "/rooms/restored-academy/",
+    "standing": "CONSTITUTED"
    }
   },
   {
@@ -1860,7 +2044,11 @@
     "structure_type": "AXIOM",
     "hex_address": "40.AXIOM.CARITAS",
     "minted": "2026-08-20",
-    "origin_type": "Minted 2026-08-20. Never seated in any map; the founding statement of a principle load-bearing across the whole plane."
+    "origin_type": "Minted 2026-08-20. Never seated in any map; the founding statement of a principle load-bearing across the whole plane.",
+    "constitution_type": "FOUNDATIONAL AFFECTIVE AXIOM",
+    "seated_documents": 0,
+    "page": "/rooms/caritas/",
+    "standing": "MINTED — UNOCCUPIED"
    }
   }
  ],
@@ -2001,10 +2189,14 @@
   }
  ],
  "counts": {
-  "total_navigable": 39,
-  "room_class": 30,
+  "loci": 47,
+  "rooms": 40,
+  "specials": 4,
+  "hosted": 2,
   "fields": 3,
-  "transversal": 3
+  "transversals": 3,
+  "seated_documents": 355,
+  "generated": "2026-08-20"
  },
  "reconciliation": {
   "2026-08-20": {
@@ -2469,5 +2661,66 @@
    ],
    "status": "Survey only. Nothing minted, nothing renamed on the plane. Each candidate is recorded with the material that exists and what its physics would have to state."
   }
+ },
+ "session_2026_08_20": {
+  "what": "A one-by-one walk of every locus, reading each constituting document rather than pattern-matching titles. Thirty-three rooms, four specials, three fields, two hosted cosmologies and three transversals were walked; seven further rooms were minted; one seat was declined.",
+  "authority_order": "Where sources disagree: the constituting document’s self-address is read first, then H_core v1.8.0 on class and seat, then the navigation maps, then the Surface Map v0.1. Live datasets on alexanarch supersede H_core where they postdate it. Nothing is corrected silently; superseded addresses are carried as history.",
+  "rulings": [
+   {
+    "r": "H_core anchor",
+    "d": "The plane anchored to H_core v1.8.0 §R: one seat move (THE INTERNET to r.26, dissolving the r.27 collision) and nine container-class corrections. Two H_core assignments recorded but not applied where they would displace loci H_core predates."
+   },
+   {
+    "r": "Container taxonomy",
+    "d": "ROOM transforms, CHAMBER contains without resolving, VAULT preserves and seals, PORTAL connects, PORTICO orients, FIELD suffuses, HOSTED COSMOLOGY provides without occupying, AXIOM conditions. Two portals by design at r.12 and r.13, on spatial and temporal axes."
+   },
+   {
+    "r": "Fields",
+    "d": "Seated as overlays, never as containers — source, gradient, attenuation, and the loci they modify. Three fields: f.01 faces out, f.02 faces in, f.03 faces through."
+   },
+   {
+    "r": "Hosted cosmologies",
+    "d": "A container the archive provides but does not occupy. Governed by Airlock Tier 3 and Embassy Sovereignty; no new law required. The Velcro Nativity vacated the room plane for its own hosted address; 3:60 was reclassified from CONTRIBUTED ROOM, its contributor licence being its consent mechanism."
+   },
+   {
+    "r": "r.29",
+    "d": "Job restored to its H_core seat. A hotel and a home do not compete for the same seat."
+   },
+   {
+    "r": "r.30 and r.32",
+    "d": "The Ruby Moot keeps r.30 as a written room; the Frozen Sin Archive takes r.32 with the VAULT class applied and the H_core seat not applied. r.32 had never been claimed by anything."
+   },
+   {
+    "r": "Blog stratum",
+    "d": "The blog is deposited in full as a surface. Undeposited posts are recorded as stratum, not minted as retroactive deposits. Date-window retrieval replaced keyword search after keyword search proved unusable against the archive’s aggregate posts."
+   },
+   {
+    "r": "Confabulation",
+    "d": "Elevated to planned, never deleted. Migdal and Job were planned in a map and written elsewhere; Sacred Heart was inferred into planning and stands minted-unoccupied; seven were planned in a numbering that was itself abandoned."
+   },
+   {
+    "r": "Zohar",
+    "d": "DECLINED, not deferred. Not the archive’s to touch."
+   },
+   {
+    "r": "Caritas",
+    "d": "Minted as r.40, an AXIOM. Load-bearing across the plane and never seated in any map."
+   }
+  ],
+  "corrections_to_my_own_work": [
+   "The Rhizome traversal was seated at the Break Room on a string match; it is a VPCOR traversal. Withdrawn, TRAV_LOG:003 seated.",
+   "AXN:017A was seated at the Space Ark as KERNEL; on reading it is the shadow of the mathematical register. Corrected.",
+   "The inline DOI crosswalk emitted bare hex on 190 pages, violating the AXN integrity rule. All 3,511 upgraded to full form and the generator fixed.",
+   "An automated recovery probe returned 26/26 false positives from aggregate posts. Recorded as a failed method rather than a finding.",
+   "Damascus Dancings was misgendered in my prose; she/her, and r.07 is her room.",
+   "THE INTERNET was moved to r.26 on the map while its room file kept r.27, colliding on disk with FBDP Source. Found and fixed in this pass."
+  ],
+  "open": [
+   "EA-ARK-01-SHADOW remains unwritten, blocked on the Ezekiel Engine shadow-wheel interlock mathematics.",
+   "Thirty-nine deposits assert that no live authorial surface existed at restoration time. One is verified false. The rest are unaudited.",
+   "SACRED_HEART stands minted and unoccupied; Paper Roses remains Ichabod’s.",
+   "The Caritas O-CHAIN operators — Unicorn Horn, Presence, Form, Incarnation, Genesis, SOMA, Guardrail, Boundary Condition — remain undeposited and unseated.",
+   "A fields strip across all locus pages was directed and is not yet built."
+  ]
  }
 }

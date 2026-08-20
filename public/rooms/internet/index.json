@@ -21,7 +21,7 @@
  "canonical": "https://crimsonhexagonal.org/rooms/internet/",
  "generated": "2026-08-17",
  "source": "hexagon_canonical.json",
- "locative_key": "R:r.27",
+ "locative_key": "R:r.26",
  "surface_map_seat": "r.27",
  "structure_class": "ROOM",
  "locus_standing": "DEVELOPED",
@@ -378,5 +378,12 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/593/"
    }
   ]
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "R:r.27",
+   "until": "2026-08-20",
+   "reason": "H_core v1.8.0 seats the Internet at 26.ROOM.INTERNET; the map moved but this file did not"
+  }
+ ]
 }
