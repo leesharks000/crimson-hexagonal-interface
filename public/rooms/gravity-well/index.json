@@ -153,28 +153,37 @@
   "contrast": "f.01 metabolises outward — Gaia sends spores out. f.02 curves inward. They are complementary rather than opposed.",
   "known_modulation": "At R:r.28 Eve, Φ_G operates GENERATIVE rather than retentive: objects entering are not captured but metabolised. That room records the one place the field’s mode inverts. At H:06.HOST.IVN.29 it is throttled to LOW / GUEST-MODE by design.",
   "field_topology": {
-   "claim": "The Crimson Hexagonal Archive has three fields, and together they constitute its complete field topology.",
+   "claim": "The archive has four fields. Three retain, circulate and propagate; the fourth dissipates.",
    "set": [
     [
      "f.01",
      "Fruiting Body Diffusion Plume",
      "the outward field",
-     "Governs how the archive’s semantic material propagates into the surrounding discourse environment — spore distribution, external colonisation, the boundary between the archive and the world. It faces out."
+     "faces out"
     ],
     [
      "f.02",
      "Gravity Well",
      "the inward field",
-     "Governs how queries, deposits and continuity operations curve toward the archive’s canonical core — curvature by mass, retrieval by proximity, provenance by chain. It faces in."
+     "faces in"
     ],
     [
      "f.03",
      "Moltbot Swarm",
      "the circulatory field",
-     "Governs how the archive maintains itself — verification, continuity, governance enforcement and bounded generation across the full manifold. It faces through. It is the field that connects f.01 and f.02, carrying material from the plume’s periphery through the well’s curvature to the canonical lock, and carrying governance force from the lock back out to the periphery."
+     "faces through"
+    ],
+    [
+     "f.04",
+     "Perfusion Field",
+     "the dissipative field",
+     "faces away — conjugate to f.02"
     ]
    ],
-   "source": "Declared in f.03 §0, AXN:01EA.GOVERNANCE.⊗🧡🕒👉🌒🏛️ (#53)."
+   "septagon": "f.04 is specified in The Periwinkle Septagon: Semantic Physics of the Dissipative Archive (AXN:022D.GOVERNANCE.🪨🤝🤙🔼🔙💡, #70, hex 06.SEI.SEPT.01), which defines the leak operator Λ, the transfer physics of evaporation, condensation, drift and catchment, and the SPXD dissolution protocol.",
+   "reading": "\"Every architecture implies the architecture it excludes. The Crimson Hexagonal Archive is an architecture of retention: hexagonal tiling, perfect tessellation, no gaps, every token accountable to a room. This document specifies its topological dual — the archive that leaks, the archive that forgets on purpose.\" The Septagon is not an alternative to the Hexagon. It is its shadow, its complement, and its conscience. Where the Hexagon accumulates, the Septagon expends. Where the Hexagon accounts, the Septagon gives away.",
+   "origin": "A colleague joked that he had made the periwinkle septagon. The document takes the joke seriously — not because jokes should be punished, but because naming creates.",
+   "why_it_matters": "The three-field topology recorded earlier this session was incomplete. f.04 was specified in April 2026 and never seated. It is the field that makes the archive honest about loss: the semantic physics of what the Hexagon cannot keep without lying about it."
   },
   "status_note": "Status in the specification: GENERATED → pending Assembly attestation."
  },

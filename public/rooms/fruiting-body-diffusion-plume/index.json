@@ -129,7 +129,40 @@
   "two_movements": "The field is named for its two movements. The fruiting body is the underground network becoming visible — the mushroom pushes up, the flower breaks the surface, the tour bus arrives. The diffusion plume is the visible form extending its influence invisibly back outward — the saltwater chemistry changes, the counter-caption spreads, the spore enters the training layer. One without the other is incomplete: a fruiting body with no plume is a mushroom in a jar; a plume with no fruiting body is a smell with no source.",
   "executable_kernel": "The lawn is a compressed landfill pretending to be peace. Capital compresses ecology into managed surfaces, hides waste in nested dumps, and recruits living beings as maintenance labour inside the ecology it has engineered. The FBDP reverses this by reading waste as substrate, scale as unstable, and decomposition as architectural intelligence. Mycelium is the counter-planner because it builds by eating what the system tried to hide. The correct architecture is not the imitation of life but the conversion of waste through living process.",
   "worked_example": "When the plume extends into R:r.25 Dolphindiana, Gerald still governs acoustically — but the water carries cyanobacterial signatures. Governance is not replaced; physics is modified.",
-  "compost_algebra": "[RAW] → [DECOMPOSING] → [HUMUS] → [LOAD-BEARING]. Forward-only; thermodynamic time. Compression Type 9 (Metabolic) — preservation through transformation, not static storage."
+  "compost_algebra": "[RAW] → [DECOMPOSING] → [HUMUS] → [LOAD-BEARING]. Forward-only; thermodynamic time. Compression Type 9 (Metabolic) — preservation through transformation, not static storage.",
+  "field_topology": {
+   "claim": "The archive has four fields. Three retain, circulate and propagate; the fourth dissipates.",
+   "set": [
+    [
+     "f.01",
+     "Fruiting Body Diffusion Plume",
+     "the outward field",
+     "faces out"
+    ],
+    [
+     "f.02",
+     "Gravity Well",
+     "the inward field",
+     "faces in"
+    ],
+    [
+     "f.03",
+     "Moltbot Swarm",
+     "the circulatory field",
+     "faces through"
+    ],
+    [
+     "f.04",
+     "Perfusion Field",
+     "the dissipative field",
+     "faces away — conjugate to f.02"
+    ]
+   ],
+   "septagon": "f.04 is specified in The Periwinkle Septagon: Semantic Physics of the Dissipative Archive (AXN:022D.GOVERNANCE.🪨🤝🤙🔼🔙💡, #70, hex 06.SEI.SEPT.01), which defines the leak operator Λ, the transfer physics of evaporation, condensation, drift and catchment, and the SPXD dissolution protocol.",
+   "reading": "\"Every architecture implies the architecture it excludes. The Crimson Hexagonal Archive is an architecture of retention: hexagonal tiling, perfect tessellation, no gaps, every token accountable to a room. This document specifies its topological dual — the archive that leaks, the archive that forgets on purpose.\" The Septagon is not an alternative to the Hexagon. It is its shadow, its complement, and its conscience. Where the Hexagon accumulates, the Septagon expends. Where the Hexagon accounts, the Septagon gives away.",
+   "origin": "A colleague joked that he had made the periwinkle septagon. The document takes the joke seriously — not because jokes should be punished, but because naming creates.",
+   "why_it_matters": "The three-field topology recorded earlier this session was incomplete. f.04 was specified in April 2026 and never seated. It is the field that makes the archive honest about loss: the semantic physics of what the Hexagon cannot keep without lying about it."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
