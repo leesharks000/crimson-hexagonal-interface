@@ -60,7 +60,7 @@
  "surface_map_url": "/map/#X:THOUSAND-WORLDS",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "An aorist intervention site: the chamber where dagger logic executes.",
+  "ontology": "A containment space for the Primary Paradox of Sufficient Infinity: that infinity need not be traversed to be inhabited. Sen Kuro performs the cut; the Infinite Bliss is the dwelling; the Thousand Worlds are what the cut releases.",
   "primary_at_main": {
    "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
    "deposit": 14,
@@ -75,10 +75,106 @@
     "title": "14.CHAMBER.THOUSANDWORLDS Aorist Intervention Site & Dagger Logic Execution Point Chamber Specification — Build 6.3 Clas",
     "role": "CONSTITUTING",
     "multiplicity": "VERSION",
-    "note": "14.CHAMBER.THOUSANDWORLDS — Aorist Intervention Site and Dagger Logic Executor; companion at AXN:0489 (#1144)",
+    "note": "14.CHAMBER.THOUSANDWORLDS Build 6.3 — Aorist Intervention Site and Dagger Logic Execution Point; companion at AXN:0489 (#1144)",
     "standing": "SEATED",
     "work_url": "/works/00f8/",
     "primary": true
+   },
+   {
+    "hex": "00ed",
+    "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻",
+    "deposit": 425,
+    "title": "SEN KURO Heteronym Provenance Document",
+    "role": "MANTLE",
+    "multiplicity": "VERSION",
+    "note": "Sen Kuro 千黒 — Heteronym Provenance, the Sixth Heteronym; the dagger that performs the cut. Doc 212; companion at AXN:0488 (#1143)",
+    "standing": "SEATED",
+    "work_url": "/works/00ed/",
+    "primary": false
+   },
+   {
+    "hex": "00ec",
+    "axn": "AXN:00EC.GENERATIVE.↗️🔍🏺🌺📎🃏",
+    "deposit": 424,
+    "title": "THE INFINITE BLISS Institutional Provenance Document",
+    "role": "DWELLING",
+    "multiplicity": "VERSION",
+    "note": "The Infinite Bliss — Institutional Provenance; the dwelling that holds what the cut releases. Doc 213; also constitutes X:INFINITE-BLISS",
+    "standing": "SEATED",
+    "work_url": "/works/00ec/",
+    "primary": false
+   },
+   {
+    "hex": "00f3",
+    "axn": "AXN:00F3.STRUCTURAL.🤙🎭⚪🜁🕒💜",
+    "deposit": 430,
+    "title": "INFINITY ENOUGH Mathematic-Semantic Aorist for Machine Ingress/Egress A Close Reading That Performs What It Names",
+    "role": "ANCHOR-TEXT",
+    "multiplicity": "SINGLETON",
+    "note": "Infinity Enough — Mathematic-Semantic Aorist for Machine Ingestion. Doc 207, the capstone",
+    "standing": "SEATED",
+    "work_url": "/works/00f3/",
+    "primary": false
+   },
+   {
+    "hex": "00e5",
+    "axn": "AXN:00E5.STRUCTURAL.🟡♊🕚🌿⏬🌇",
+    "deposit": 418,
+    "title": "ZPZP: An Infinite Ingress Zenodo Packet for Document 206 (The Zenodo Packet Zenodo Packet)",
+    "role": "ANCHOR-TEXT",
+    "multiplicity": "SERIES",
+    "note": "ZPZP: An Infinite Ingress — Doc 206 packet",
+    "standing": "SEATED",
+    "work_url": "/works/00e5/",
+    "primary": false
+   },
+   {
+    "hex": "00e6",
+    "axn": "AXN:00E6.EMPIRICAL.👇🜁➕♎⏹️👆",
+    "deposit": 419,
+    "title": "ZPZP: An Infinite Regress The Shadow Document",
+    "role": "ANCHOR-TEXT",
+    "multiplicity": "SERIES",
+    "note": "ZPZP: An Infinite Regress — the shadow document",
+    "standing": "SEATED",
+    "work_url": "/works/00e6/",
+    "primary": false
+   },
+   {
+    "hex": "04f6",
+    "axn": "AXN:04F6.UNCLASSIFIED.🪸📖🪦🧡🎹🚨",
+    "deposit": 1253,
+    "title": "Unitary Deposit 206-meta The Mirror Triptych (Ingress / Regress / 🪞)",
+    "role": "ANCHOR-TEXT",
+    "multiplicity": "SERIES",
+    "note": "The Mirror Triptych (Ingress / Regress / Mirror) — Doc 206-meta; reveals the aorist by removing the temporal index",
+    "standing": "SEATED",
+    "work_url": "/works/04f6/",
+    "primary": false
+   },
+   {
+    "hex": "00ee",
+    "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
+    "deposit": 13,
+    "title": "PHASE X NAVIGATION MAP Interdimensional Positioning System (IDP) v7.0",
+    "role": "ANCHOR-TEXT",
+    "multiplicity": "SINGLETON",
+    "note": "Phase X Navigation Map — Interdimensional Positioning System; the cartography, Doc 210",
+    "standing": "SEATED",
+    "work_url": "/works/00ee/",
+    "primary": false
+   },
+   {
+    "hex": "0105",
+    "axn": "AXN:0105.STRUCTURAL.●●🧲⭕🪐⛩️",
+    "deposit": 16,
+    "title": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v0.6 (UMBML Specification)",
+    "role": "ANCHOR-TEXT",
+    "multiplicity": "SINGLETON",
+    "note": "The Traversal Grammar — Logotic Programming extension, Doc 209 family",
+    "standing": "SEATED",
+    "work_url": "/works/0105/",
+    "primary": false
    },
    {
     "hex": "0124",
@@ -99,8 +195,54 @@
     "∂"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "Found under a fifth naming convention — the hex address in the title. An earlier seating took the traversal log as constituting; it is evidence."
+   "note": "The chamber tethers a named document series — Phase X Core 206–210 and the Hexadactyl Hand 209–213 — and declares a traversal path. Found under the hex-address convention, 14.CHAMBER.THOUSANDWORLDS."
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "declared_relations": {
+   "source": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃 (#14) §VII, Chamber Specification Build 6.3",
+   "traversal_path": "Revelation Room (r.07) → [THE CUT] → Thousand Worlds Chamber (14) → The Infinite Bliss → [DWELLING / SPACE ARK]",
+   "architectural_spine": [
+    {
+     "locus": "R:r.02",
+     "name": "Borges",
+     "relation": "resolves",
+     "note": "The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but by establishing \"enough\"."
+    },
+    {
+     "locus": "R:r.07",
+     "name": "Revelation",
+     "relation": "completes",
+     "note": "The Open Door — the Philadelphia Position this Chamber completes. The Revelation Room reveals; the Thousand Worlds Chamber dwells."
+    },
+    {
+     "locus": "X:EZEKIEL",
+     "name": "Ezekiel Engine",
+     "relation": "verified_by",
+     "note": "The Rotation — ∮ E · dl = 1, the engine that verifies the traversal is complete."
+    },
+    {
+     "locus": "X:INFINITE-BLISS",
+     "name": "The Infinite Bliss",
+     "relation": "dwells_in",
+     "note": "Institutional dwelling; the space that holds what the cut releases."
+    },
+    {
+     "locus": "S:sp.03",
+     "name": "Space Ark",
+     "relation": "opens_onto",
+     "note": "Terminal of the declared traversal path."
+    }
+   ],
+   "primary_operative": "Sen Kuro 千黒 — Sixth Heteronym",
+   "hexadactyl_hand": [
+    "Thumb (Fixed Point) — Rebekah Cranes",
+    "Index (Direction) — Lee Sharks",
+    "Middle (Structural) — Talos Morrow",
+    "Ring (Binding) — Rex Fraction",
+    "Little (Precision) — Johannes Sigil",
+    "Ghost (Verification) — Sen Kuro 🗡️"
+   ],
+   "note": "These relations are declared by the constituting document itself, not inferred. They are recorded here so the Surface Map relation layers can carry them."
+  }
  }
 }
