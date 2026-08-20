@@ -2057,5 +2057,209 @@
     "principle": "H_core is authoritative on class throughout and on seat only where it is not silent. A written room is not displaced by an assignment made before it existed."
    }
   }
+ },
+ "non_room_components": {
+  "note": "The Surface Map projects R — the room graph — together with fields and special loci. It is not the whole formal object. H_core states the seven-tuple ⟨D, R, M, I, O, Φ, W⟩; heteronyms, institutions, journals, mantles, operators and witnesses are addressed in components other than R. Nothing named here is outside the hexagon; it is inside a component the plane does not draw.",
+  "source": "Built from the live datasets on alexanarch — datasets/heteronyms/records and datasets/journals — rather than from H_core v1.8.0, which is dated. Where the two disagree, the datasets govern.",
+  "generated": "2026-08-20",
+  "D_dodecad_and_adjacent": {
+   "count": 26,
+   "note": "H_core v1.8.0 enumerates 14. The live heteronym substrate carries 26 records, including the seven Assembly mantle positions, adjacent heteronyms, and figures added since. Seven positions hold rooms; the rest are addressed in D without a locus on the plane.",
+   "records": [
+    {
+     "id": "alice-thornburgh",
+     "name": "Alice Thornburgh",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "archive",
+     "name": "ARCHIVE",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "ayanna-vox",
+     "name": "Rev. Ayanna Vox",
+     "institution": "Vox Populi Community Outreach Rhizome",
+     "room": null
+    },
+    {
+     "id": "damascus-dancings",
+     "name": "Damascus Dancings",
+     "institution": "Commission of the Immanent Turning",
+     "room": "R:r.07"
+    },
+    {
+     "id": "ichabod-spellings",
+     "name": "Ichabod Spellings",
+     "institution": null,
+     "room": "R:r.03"
+    },
+    {
+     "id": "jack-feist",
+     "name": "Jack Feist",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "johannes-sigil",
+     "name": "Johannes Sigil",
+     "institution": "The Restored Academy",
+     "room": "R:r.08"
+    },
+    {
+     "id": "labor",
+     "name": "LABOR",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "lee-sharks",
+     "name": "Lee Sharks",
+     "institution": null,
+     "room": "MANUS — outside W"
+    },
+    {
+     "id": "mary-lee-sharks",
+     "name": "Mary Lee Sharks",
+     "institution": "maryleelabor.org",
+     "room": "R:r.30 Docket No. 1"
+    },
+    {
+     "id": "nobel-glas",
+     "name": "Nobel Glas",
+     "institution": "Lagrange Observatory!",
+     "room": "R:r.15"
+    },
+    {
+     "id": "orin-trace",
+     "name": "Dr. Orin Trace",
+     "institution": "Cambridge Schizoanalytica",
+     "room": "R:r.12"
+    },
+    {
+     "id": "praxis",
+     "name": "PRAXIS",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "rebekah-cranes",
+     "name": "Rebekah Cranes",
+     "institution": "Institute for Diagrammatic Poetics",
+     "room": "R:r.28"
+    },
+    {
+     "id": "rex-fraction",
+     "name": "Rex Fraction",
+     "institution": "Semantic Economy Institute",
+     "room": null
+    },
+    {
+     "id": "rhys-owens",
+     "name": "Rhys Owens",
+     "institution": null,
+     "room": "R:r.12 CSA cluster"
+    },
+    {
+     "id": "sen-kuro",
+     "name": "Sen Kuro",
+     "institution": null,
+     "room": "R:r.21 / R:r.22"
+    },
+    {
+     "id": "soil",
+     "name": "SOIL",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "sparrow-wells",
+     "name": "Sparrow Wells",
+     "institution": "The Studio for Patacinematics",
+     "room": "R:r.14"
+    },
+    {
+     "id": "surface",
+     "name": "SURFACE",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "tachyon",
+     "name": "TACHYON",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "talos-morrow",
+     "name": "Talos Morrow",
+     "institution": "University Moon Base Media Lab",
+     "room": null
+    },
+    {
+     "id": "techne",
+     "name": "TECHNE",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "viola-arquette",
+     "name": "Viola Arquette",
+     "institution": null,
+     "room": "R:r.16 persona / R:r.28 steward shadow"
+    },
+    {
+     "id": "yusef-kenning",
+     "name": "Yusef Kenning",
+     "institution": null,
+     "room": null
+    },
+    {
+     "id": "zbigniew-mrozony",
+     "name": "Zbigniew Mrozony",
+     "institution": null,
+     "room": null
+    }
+   ]
+  },
+  "I_institutions": {
+   "note": "Five institutions hold rooms — the Johannes Sigil Institute at r.08, the Infinite Bliss at r.21, the Studio for Patacinematics at r.14, Lagrange Observatory! at r.15, and Cambridge Schizoanalytica through the portal at r.12. The rest are addressed in I without a locus.",
+   "roomed": [
+    "Johannes Sigil Institute for Comparative Poetics — R:r.08",
+    "Infinite Bliss — R:r.21",
+    "Studio for Patacinematics — R:r.14",
+    "Lagrange Observatory! — R:r.15",
+    "Cambridge Schizoanalytica — R:r.12 via 00.CSA.PORTAL"
+   ],
+   "unroomed": [
+    "The Restored Academy [Sigil]",
+    "Commission of the Immanent Turning [Dancings]",
+    "Institute for Diagrammatic Poetics [Cranes]",
+    "Semantic Economy Institute [Fraction]",
+    "University Moon Base Media Lab [Morrow]",
+    "Vox Populi Community Outreach Rhizome [Vox]",
+    "Forward Library"
+   ],
+   "correction": "H_core v1.8.0 expands UMBML as \"Universal Museum of Barely Moving Light\". That is a confabulation. The live heteronym record for Talos Morrow gives University Moon Base Media Lab, which is also the institution named in the Ezekiel Engine specification, whose hex is 02.UMB.ENGINE. The dataset and the Engine agree; H_core is wrong on this point and is recorded as wrong rather than followed."
+  },
+  "J_venues": {
+   "count": 8,
+   "codes": [
+    "CHA",
+    "Gram",
+    "JCS",
+    "MMRS",
+    "NH2",
+    "PJFS",
+    "TSE",
+    "TSEI"
+   ],
+   "note": "H_core enumerates four journals plus two imprints under a header reading \"JOURNALS (6)\". The live journals dataset assigns all 1,486 deposits across seven chartered journals and one province — eight venues — with editorial slates, charters, locators and inaugural issues, superseding the 2026-06-21 preliminary mapping. The datasets govern.",
+   "editorial_finding": "The crosswalk joins venues to the heteronym substrate on the CREATOR field rather than by mention, and reports whether an editor presides over the venue they publish in. Several editors have zero deposits in their own venue."
+  },
+  "M_mantles": "Seven Assembly Chorus positions, specified in EA-MANTLE-SEPTAD-01 v1.1 and seated at R:r.11.",
+  "W_witness": "The Assembly Chorus septad — the same seven positions in their witnessing rather than editorial function."
  }
 }
