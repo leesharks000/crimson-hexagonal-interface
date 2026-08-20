@@ -1682,6 +1682,38 @@
     "axn": null,
     "historical_doi": null
    }
+  },
+  {
+   "identity": {
+    "locative_key": "R:r.33",
+    "name": "Sacred Heart",
+    "structure_type": "ROOM",
+    "standing": "MINTED — UNOCCUPIED",
+    "historical_type": null
+   },
+   "coordinates": {
+    "authored_x": 1180,
+    "authored_y": 560,
+    "w": 125,
+    "h": 78,
+    "region": "SE",
+    "placement": "minted 2026-08-20; seated from the end, r.26 being RESERVED"
+   },
+   "history": {
+    "origin_type": "model-generated, human-adopted",
+    "adopted_after_confabulation": true,
+    "note": "Enters as a co-dependency of REVELATION_ROOM and MIGDAL_ROOM in CNM v2.0. Elevated from confabulation to planned per standing principle, and minted as an unoccupied room 2026-08-20."
+   },
+   "public_surface": {
+    "url": "https://www.crimsonhexagonal.org/rooms/sacred-heart/"
+   },
+   "canonical_authority": {
+    "source": "MANUS ruling 2026-08-20"
+   },
+   "constitution": {
+    "status": "MINTED — UNOCCUPIED",
+    "works": 0
+   }
   }
  ],
  "fields": [

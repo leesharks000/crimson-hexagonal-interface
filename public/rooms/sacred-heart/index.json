@@ -1,0 +1,42 @@
+{
+ "locative_key": "R:r.33",
+ "hex_address": "33.ROOM.SACREDHEART",
+ "name": "The Sacred Heart",
+ "structure_class": "ROOM",
+ "locus_standing": "MINTED — UNOCCUPIED",
+ "description": "The Sacred Heart is an unoccupied room: minted, seated and declared, with a subject and no corpus. Its subject is the theory of biography and autobiography — the imaginary archive of a canonical life, and devotion in a register that embarrasses. A paper rose is not a failed rose; it is a made thing offered in place of a living one, and offered anyway.",
+ "physics": "sincere artifice; the record made in the absence of the record",
+ "prompt": "What did you make because you could not have the thing?",
+ "constitution": {
+  "status": "MINTED — UNOCCUPIED",
+  "constitution_type": "NONE — declared subject, no corpus",
+  "ontology": "The Sacred Heart is an unoccupied room: minted, seated and declared, with a subject and no corpus. Its subject is the theory of biography and autobiography — the imaginary archive of a canonical life, and devotion in a register that embarrasses. A paper rose is not a failed rose; it is a made thing offered in place of a living one, and offered anyway.",
+  "documents": [],
+  "origin": "SACRED_HEART enters the record in Central Navigation Map v2.0 as a co-dependency of REVELATION_ROOM and MIGDAL_ROOM. It appears in six deposits, all navigation maps, plus two incidental mentions. First inserted as a room through generative inference and never written. Minted here under the standing principle that confabulation is elevated to planned rather than deleted.",
+  "declared_subject": "The theory of biography and autobiography — the imaginary archive of a canonical life; and devotion in a register that embarrasses. Cringe is this room’s physics, not its problem.",
+  "adjacency": [
+   {
+    "target": "X:ICHABOD",
+    "relation": "distinct_from",
+    "note": "Ichabod is a containment sink holding what cannot be recovered — the ghost. This room holds what was never real and is offered regardless — the substitute."
+   },
+   {
+    "target": "R:r.24",
+    "relation": "co_dependency",
+    "note": "Both are dependencies of Revelation in CNM v2.0; Migdal has since been seated, this room has not."
+   },
+   {
+    "target": "R:r.07",
+    "relation": "depended_on_by",
+    "note": "Declared in the map."
+   }
+  ],
+  "adjacent_not_held": {
+   "axn": "AXN:0091.GENERATIVE.♻️🔩🔐🌘🎹🌉",
+   "deposit": 341,
+   "title": "Paper Roses: The Imaginary Archive of a Canonical Life",
+   "why": "The nearest existing statement of this room’s subject. Not seated here: it frames the ATLWM cluster at X:ICHABOD, which publishes a traversal rule routing paper-roses queries through the Chamber first. Recorded as adjacency rather than transferred."
+  },
+  "awaits": "Its own ground. The material is largely unpublished, held in early model threads. Declared absence is inert; undeclared absence gets filled in."
+ }
+}
