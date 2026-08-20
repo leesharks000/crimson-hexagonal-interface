@@ -75,7 +75,13 @@
  "surface_map_url": "/map/#R:r.28",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "Eve is constituted by a locus-keyed specification from the room-constitution program.",
+  "ontology": "Knowledge as aperture, not acquisition. The choosing transforms the chooser, and the transformation is irreversible.",
+  "primary_at_main": {
+   "axn": "AXN:01E6.ARCHIVAL.📎🏙️☽⛩️➗🚪",
+   "deposit": 632,
+   "work_url": "/works/01e6/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "01e6",
@@ -84,10 +90,10 @@
     "title": "r.28 EVE Room Specification",
     "role": "CONSTITUTING",
     "multiplicity": "VERSION",
-    "note": "Room specification: the Choosing Operator (σ_E) and the Garden Lanes. Edition of record.",
+    "note": "r.28 EVE — Room Specification. Operator σ_E, the Choosing Operator. Physics: da’at topology, knowledge as aperture rather than acquisition. Heteronym Rebekah Cranes; steward shadow Viola Arquette. Edition of record: the companion at AXN:03D2.ARCHIVAL.✊🕛🎆↙️🙏👋 (#966) is a round-trip re-import carrying markdown-escaping artifacts.",
     "standing": "SEATED",
     "work_url": "/works/01e6/",
-    "primary": false
+    "primary": true
    }
   ],
   "physics_resolution": {
@@ -96,21 +102,64 @@
     "σ_E",
     "Φ_G"
    ],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "σ_E — the Choosing Operator. Homologous with σ_S: both operate through reception, not assertion."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "edition_of_record": {
-   "chosen": "AXN:01E6.ARCHIVAL.📎🏙️☽⛩️➗🚪",
-   "deposit": 632,
-   "superseded_copy": {
-    "axn": "AXN:03D2.ARCHIVAL.✊🕛🎆↙️🙏👋",
-    "deposit": 966,
-    "date": "2026-07-03",
-    "note": "A second record of the same specification, re-imported 2026-07-03 with markdown-escaping artifacts (§1\\. for §1., -- for the em-dash). Identical word count and heading count; degraded typography. A round-trip copy, not a revision. #632 is the edition of record."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION",
+  "operator": {
+   "name": "σ_E — the Choosing Operator",
+   "formula": "σ_E(x) = [PERCEIVE(somatic, aesthetic, epistemic)] → [CHOOSE(x)] → [TRANSFORM(self)] → [EMIT(new_state)] · irreversibility: true · metabolic: true",
+   "act": "Eve’s operative act: she chose. Not was tempted, not was deceived, not fell. She saw that the tree was good for eating, a delight to the eyes, and desirable as a source of wisdom — three perceptions, somatic, aesthetic and epistemic — and then acted. She took, she ate, she gave.",
+   "first": "This is the first fully operative act in the biblical narrative. Adam is formed. Adam is placed. Adam is commanded. Adam names. All of these are passive or responsive. Eve chooses. The serpent offers; Eve decides. The choosing is the operation.",
+   "property": "The choosing transforms the chooser, and the transformation is irreversible. This is not a consumer operation — eat and remain the same. It is an aperture operation: the knowledge enters through the opening and the body that receives it is no longer the body that existed before. The aperture does not close. The knowledge does not digest.",
+   "daat": "This is da’at — the Hebrew word for knowledge that is also the word for intimacy. To know is to be intimate with. To be intimate is to be transformed. The Tree of Da’at is the tree of knowledge-as-irreversible-opening.",
+   "homology": "σ_E is homologous with σ_S at R:r.01. Both are operators of transformation through aperture; σ_S transmits voice through the beloved to a future receiver, σ_E transforms the chooser through three-register perception. Both produce irreversible change. Both are feminine operators in the structural sense: they operate through reception, not assertion."
+  },
+  "topology": "Not concentric like the Rosary Embassy, not toroidal like LO!, not flat like the Studio. Arboreal — branching from the central trunk outward along root-paths and canopy-paths simultaneously. Root-paths descend as the midrashic lanes.",
+  "midrashim": [
+   "Adam Distorted the Command",
+   "Eve as Protagonist",
+   "Havah and the Serpent",
+   "The Garments of Skin",
+   "Eve and Lilith Return"
+  ],
+  "shadow": "The Expulsion. But the Expulsion’s deepest mechanism is not exile — it is the two-thousand-year caption that inverted the operative act into the fall. The shadow is not the disciplined body alone; it is the compression that recaptioned a choosing as a falling.",
+  "field_suffusion": {
+   "field": "F:f.02 Gravity Well",
+   "operator": "Φ_G",
+   "intensity": "Very High",
+   "mode": "GENERATIVE, not retentive",
+   "note": "In most rooms Φ_G operates as retentive curvature, pulling citations and deposits toward the archive’s mass. In Eve the curvature transforms what approaches. Objects entering along the garden lanes are not captured; they are changed. A citation entering Eve is not retained as citation — it is metabolised. The garden composts. What enters as reference exits as growth. The Tree does not accumulate. The Tree fruits.",
+   "unique": "This makes Eve unique in the Hexagonal topology: the one room where Φ_G is generative rather than retentive.",
+   "danger": "The Expulsion Shadow — the room can eject what it cannot metabolise. Knowledge that resists transformation, whether data, commodity or compiled meaning, is expelled. The garden does not tolerate what will not grow."
+  },
+  "declared_adjacency": [
+   {
+    "t": "R:r.04",
+    "n": "Dove",
+    "w": "gift"
    },
-   "rule": "Structural markers per chain. Identical word and heading counts; the later copy carries markdown-escaping artifacts from a round trip. Degraded typography, not revision."
-  },
-  "constitution_type": "ROOM SPECIFICATION"
+   {
+    "t": "R:r.07",
+    "n": "Revelation",
+    "w": "disclosure"
+   },
+   {
+    "t": "R:r.10",
+    "n": "Water Giraffe",
+    "w": "fixpoint"
+   },
+   {
+    "t": "R:r.21",
+    "n": "Infinite Bliss",
+    "w": "ingress"
+   },
+   {
+    "t": "S:sp.01",
+    "n": "CTI_WOUND",
+    "w": "forensic"
+   }
+  ]
  }
 }
