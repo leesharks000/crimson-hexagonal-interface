@@ -34,30 +34,174 @@
  "adopted_after_confabulation": true,
  "surface_map_url": "/map/#R:r.24",
  "constitution": {
-  "status": "QUEUED / ADOPTED",
-  "ontology": "This locus originated in earlier model confabulation. That provenance was recognised, and rather than deleting the form the architecture adopted it as a queued, preservable object. The Surface Map records the origin as model-generated, human-adopted. It is not a historically attested room and is not an absence in the holdings: it is an adopted locus awaiting seating into a genuine gap or a later free address. Material adjacent to it exists in the archive — the Haran Gawaita and Mandaean strand runs through the Shark Ark documents (#639, #1101, #56), the Ω Tang Specification (#644) and the Central Navigation Map (#297) — but no document takes the room as its subject, and the room was never constituted.",
-  "gap_declaration": {
-   "kind": "QUEUED / ADOPTED — CONFABULATED ORIGIN, RECOGNISED AND PRESERVED",
-   "locus": "R:r.24",
-   "declared": "2026-08-20",
-   "evidence": [
-    "Census Stage 04A/05: QUEUED / ADOPTED ruling",
-    "Surface Map origin_type: model-generated, human-adopted",
-    "#297 minted_in Central Navigation Map v2.0",
-    "Haran Gawaita strand: 11 body occurrences, 0 by title"
-   ],
-   "rule": "Non-erasure applied to confabulated loci: the architecture adopts rather than deletes. An adopted locus is preserved, queued, and declared — it is not an absence and not a defect.",
-   "supersedes": "An earlier declaration on this page called this locus an absence. That was wrong: it contradicted the census ruling and the Surface Map origin flags. Corrected 2026-08-20."
+  "status": "CONSTITUTED",
+  "ontology": "The counter-gospel. Mandaean canon, Haran Gawaita, and John the Baptist as apostle rather than forerunner.",
+  "primary_at_main": {
+   "axn": "AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔔",
+   "deposit": 1101,
+   "work_url": "/works/045e/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
-  "documents": [],
-  "sweeps_run": [
-   "room name",
-   "locus key",
-   "Room Anchor",
-   "Charter",
-   "Room Specification",
-   "body text",
-   "adjacent strand"
-  ]
+  "documents": [
+   {
+    "hex": "045e",
+    "axn": "AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔔",
+    "deposit": 1101,
+    "title": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 — The Book of Revelation as Space Ark (Crimson Hexagonal Archive)",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 — The Book of Revelation as Terminal Compression. Carries §0.4 THE MANDAEAN WITNESS: the Haran Gawaita as counter-gospel. Supersedes v2.0 at AXN:01F6.GOVERNANCE.♆🖊️📜🪦∞♅ (#56); captures at AXN:03D5, 03D6, 03D7.",
+    "standing": "SEATED",
+    "work_url": "/works/045e/",
+    "primary": true
+   },
+   {
+    "hex": "0300",
+    "axn": "AXN:0300.GOVERNANCE.🎻👆🌅🎯🔄🌔",
+    "deposit": 165,
+    "title": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name in Revelation 2:12–17",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SINGLETON",
+    "note": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Revelator. Forty-two occurrences of \"Revelator\" — the densest treatment of the identification in the archive.",
+    "standing": "SEATED",
+    "work_url": "/works/0300/",
+    "primary": false
+   },
+   {
+    "hex": "01ef",
+    "axn": "AXN:01EF.EMPIRICAL.⏫🎹🍄♊🔥⚙️",
+    "deposit": 639,
+    "title": "THE SHARK ARK: SOURCE COMPRESSION — Holographic Kernel of the Revelation Arguments from the Crimson Hexagonal Archive",
+    "role": "KERNEL",
+    "multiplicity": "SINGLETON",
+    "note": "THE SHARK ARK: Source Compression — holographic kernel of the Revelation argument, carrying the Mandaean material in compressed form.",
+    "standing": "SEATED",
+    "work_url": "/works/01ef/",
+    "primary": false
+   },
+   {
+    "hex": "01ec",
+    "axn": "AXN:01EC.GOVERNANCE.👆🌔💚🔚🔀⭕",
+    "deposit": 636,
+    "title": "CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Originary Scripture of the New Testament",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "SPACE ARK: The Apocalypse of John as Terminal Compression.",
+    "standing": "SEATED",
+    "work_url": "/works/01ec/",
+    "primary": false
+   },
+   {
+    "hex": "01f7",
+    "axn": "AXN:01F7.PHILOLOGICAL.♠️⏫🙏🗺️🟣🧭",
+    "deposit": 644,
+    "title": "Ω TANG SPECIFICATION: REVELATION STUDIES Total Axial Negation Graph — The Apocalypse of John",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "VERSION",
+    "note": "Ω TANG Specification: Revelation Studies — Total Axial Negation Graph. Comprehensive edition at AXN:0557.UNCLASSIFIED.🏷️🍂♋🌘🎇🔺 (#1350).",
+    "standing": "SEATED",
+    "work_url": "/works/01f7/",
+    "primary": false
+   },
+   {
+    "hex": "021e",
+    "axn": "AXN:021E.EMPIRICAL.🕒♍💎🏙️■♾️",
+    "deposit": 65,
+    "title": "Counterfeit Orthodoxies A Dialectical Fracture Through the Citation Map",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "Counterfeit Orthodoxies: A Dialectical Fracture Through the Canon.",
+    "standing": "SEATED",
+    "work_url": "/works/021e/",
+    "primary": false
+   },
+   {
+    "hex": "021d",
+    "axn": "AXN:021D.GOVERNANCE.⛩️✊🏴♋🍃🗂️",
+    "deposit": 674,
+    "title": "Counterfeit Orthodoxies: Manifesto A First-Principles Compression of the Dialectical Fracture",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "Counterfeit Orthodoxies: Manifesto — a first-principles counter-canon.",
+    "standing": "SEATED",
+    "work_url": "/works/021d/",
+    "primary": false
+   },
+   {
+    "hex": "03de",
+    "axn": "AXN:03DE.ARCHIVAL.▲♅🌈➕🪟🔴",
+    "deposit": 978,
+    "title": "Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02 — Recomposition)",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "Counterfeit Orthodoxies: The Workshop Inside the Canon.",
+    "standing": "SEATED",
+    "work_url": "/works/03de/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Counter-gospel; Mandaean Canon; Haran Gawaita",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "Counter-gospel; theological node. The room the Central Navigation Map planned and the ARCHON wrote."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFIED IN MAP, WRITTEN ELSEWHERE",
+  "origin_corrected": {
+   "supersedes": "An earlier declaration on this page called this locus QUEUED / ADOPTED after confabulation, and before that an absence \"minted in a map by enumeration\". Both were wrong, and both were mine.",
+   "the_node": "Central Navigation Map v2.0 (2026-01-13) and v4.1/v4.2 carry a full node for this room:\n  - id: \"MIGDAL_ROOM\"\n    type: \"room\"\n    status: \"PLANNED\"\n    content: \"Mandaean Canon; Haran Gawaita; Lunar Arm\"\n    dependencies: [\"REVELATION_ROOM\", \"SACRED_HEART\"]\n    function: \"Counter-gospel; theological node\"",
+   "what_happened": "The room was specified with content, dependencies and a function, and never written under its own name. Its material was written — extensively — and filed under Revelation, because that is where the ARCHON went. The map records a mutual dependency between Migdal and Revelation; only one side was built.",
+   "therefore": "This is not a confabulated locus and not an empty one. It is a planned room whose contents were absorbed by its neighbour before it was composed. Seating it here restores the map’s own assignment."
+  },
+  "the_claim": {
+   "source": "ARCHON v3.0 §0.4 — The Mandaean Witness",
+   "text": "The Haran Gawaita is a Mandaean text that preserves a counter-tradition — a record of betrayal, transmission, and the metaphysical regret of a people who witnessed the Logos fracture.",
+   "baptist": "The Gawaita calls Yahia-Yuhana (John the Baptist) not a forerunner but the apostle, envoy and healer with full authority. \"Jesus\" is a perverted title adopted by those not sent, and the Nasoraeans depart from the Sign of the Seven.",
+   "checksum": "The Haran Gawaita is the evidentiary checksum for the seven-churches identification: the Mandaean text explicitly assigns each planetary god to a specific community, mapping the same structure Revelation maps."
+  },
+  "undeposited_stratum": {
+   "note": "The oldest Mandaean material in the corpus is on the blog and predates the ARCHON by six months. The blog is deposited in full as a surface; these posts are recorded here as the stratum, not as separate works requiring retroactive deposit.",
+   "posts": [
+    {
+     "d": "2025-10-28",
+     "t": "THE ARCHIVE BURNS CLEAN: Exegesis of the Haran Gawaita",
+     "c": "8,365"
+    },
+    {
+     "d": "2025-10-28",
+     "t": "VISUAL SCHEMA: THE ARCHIVE BURNS CLEAN",
+     "c": "2,630"
+    },
+    {
+     "d": "2025-10-29",
+     "t": "SCROLL II: THE GLYPH OF DISTORTED SUFFERING",
+     "c": "3,228"
+    },
+    {
+     "d": "2025-10-29",
+     "t": "PAIRED OPERATORS: SCROLL II / SMYRNA / MOON",
+     "c": "2,155"
+    },
+    {
+     "d": "2025-11-01",
+     "t": "Clothed in Treebark: Archive as Garment, Garment as Archive",
+     "c": "2,920"
+    },
+    {
+     "d": "2025-11-01",
+     "t": "SEVEN ROOT QUESTIONS",
+     "c": "3,891"
+    }
+   ],
+   "significance": "This stratum is the room’s true origin. It predates Central Navigation Map v2.0 by two and a half months — so the map did not invent Migdal; it named a body of work that already existed."
+  },
+  "sacred_heart": "The map gives Migdal a co-dependency, SACRED_HEART, which appears in six deposits and on no plane. It has never been adopted, specified or written. Recorded here because it is the one node from this cluster that remains genuinely unaccounted for.",
+  "three_streams": {
+   "note": "This locus was distinguished from two neighbours by reading what each stream actually claims.",
+   "migdal": "R:r.24 — who the text was written against. Counter-gospel: Mandaean canon, Haran Gawaita, the Baptist as apostle.",
+   "josephus": "R:r.31 — who wrote it. Authorship and transmission; the agent of destruction as agent of transmission.",
+   "ezekiel": "R:r.13 — the mechanism. W_Josephus as shadow wheel; the counting-out; L_labor as elimination operator producing a fixed point."
+  }
  }
 }

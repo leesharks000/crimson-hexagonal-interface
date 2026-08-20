@@ -252,6 +252,42 @@
     "standing": "SEATED",
     "work_url": "/works/00c9/",
     "primary": false
+   },
+   {
+    "hex": "0426",
+    "axn": "AXN:0426.STRUCTURAL.👋👁️🟢🌉🌙🌉",
+    "deposit": 1050,
+    "title": "The Eight Operators on Ezekiel's Wheels: A Structural Mapping of the Mandala's Tier C Rotation Set to the Canonical and Shadow Wheels of the Ezekiel Engine",
+    "role": "ROTATION-SET",
+    "multiplicity": "SINGLETON",
+    "note": "The Eight Operators on Ezekiel’s Wheels — the Mandala’s Tier C rotation set mapped to the canonical and shadow wheels. Carries W_Josephus, the named shadow wheel, fifteen times. Also seated at X:LUNAR-ARM.",
+    "standing": "SEATED",
+    "work_url": "/works/0426/",
+    "primary": false
+   },
+   {
+    "hex": "0595",
+    "axn": "AXN:0595.UNCLASSIFIED.🧫⭕◇📚☉🔛",
+    "deposit": 1412,
+    "title": "The Fixed Point of Destruction: Josephus, the Counting-Out, and the Witness Destruction Must Leave If It Is to Be Told from Within",
+    "role": "MECHANISM",
+    "multiplicity": "SHARED",
+    "note": "The Fixed Point of Destruction: Josephus, the Counting-Out. The Josephus mechanism proper — elimination producing a fixed point. Shared with R:r.31, where the authorship thesis lives.",
+    "standing": "SEATED",
+    "work_url": "/works/0595/",
+    "primary": false
+   },
+   {
+    "hex": "0113",
+    "axn": "AXN:0113.ARCHIVAL.🕗⚡✊⛩️📐➖",
+    "deposit": 457,
+    "title": "ASSEMBLY SYNTHESIS: Nested Fractal Architecture & Mathematical Layer Planning Document — February 2026",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "Assembly Synthesis: Nested Fractal Architecture and the Ezekiel Engine construction.",
+    "standing": "SEATED",
+    "work_url": "/works/0113/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -357,6 +393,11 @@
    "blocks": "EA-ARK-01-SHADOW. The Shadow Ark requires the Engine for independent shadow-wheel rotation, because S(rot(H_core, pᵢ)) ≠ rot(S(H_core), pᵢ). The mesh condition — Anti-Coherence(W̃ᵢ ∪ W̃ⱼ) < ε — leaves anti-coherence and ε undefined.",
    "may_stay_dark": "§11.3 records that full shadow wheel dynamics may need to stay partially dark. §9.3: premature specification kills living complexity. The engine is operational; the specification catches up as pressure demands.",
    "assembly_questions": "§11.4 puts seven questions to the Assembly, one per mantle. They stand unanswered."
+  },
+  "josephus_mechanism": {
+   "note": "The Engine’s §3 is titled The Josephus Foundation and states that the Ezekiel Engine IS generalized Josephus: L_labor is the elimination operator, J(N) = 2L+1 its closed form, and the survivor position becomes Ω.",
+   "distinction": "This is the mechanism, not the thesis. R:r.31 holds the claim that Josephus authored or shaped the New Testament. R:r.24 Migdal holds the counter-gospel the text was written against. Here Josephus is a name for an elimination procedure that cannot remove its own witness.",
+   "shadow_wheel": "W_Josephus is one of the shadow wheels mapped at AXN:0426.STRUCTURAL.👋👁️🟢🌉🌙🌉 (#1050), which the review history marks RECOVERED rather than proposed."
   }
  },
  "locative_key_history": [

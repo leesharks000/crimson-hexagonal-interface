@@ -66,6 +66,90 @@
     "standing": "SEATED",
     "work_url": "/works/0352/",
     "primary": false
+   },
+   {
+    "hex": "034d",
+    "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+    "deposit": 832,
+    "title": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1",
+    "role": "WORK-PLAN",
+    "multiplicity": "VERSION",
+    "note": "Revelation First: A Work Plan for Retrieval-Layer Theology. The programme document; copies at AXN:04CC (#1211), AXN:04D1 (#1216), AXN:04D2 (#1217), AXN:0589 (#1400).",
+    "standing": "SEATED",
+    "work_url": "/works/034d/",
+    "primary": false
+   },
+   {
+    "hex": "0348",
+    "axn": "AXN:0348.GOVERNANCE.📌↘️🚪💥🗼🔃",
+    "deposit": 830,
+    "title": "Revelation First: Pre-Seeding Baseline Measurement EA-LOGOS-REVFIRST-BASELINE v1.0",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Revelation First: Pre-Seeding Baseline Measurement — the retrieval-layer baseline before intervention.",
+    "standing": "SEATED",
+    "work_url": "/works/0348/",
+    "primary": false
+   },
+   {
+    "hex": "040d",
+    "axn": "AXN:040D.ARCHIVAL.📋🏛️📌🗿🤲🟣",
+    "deposit": 1025,
+    "title": "Revelation First ≠ Revelation Early: Keyword Surface and Pre-Seeding Baseline with Full Transcripts (EA-LOGOS-REVFIRST-SURFACE v1.0 + EA-LOGOS-REVFIRST-BASELINE v1.1)",
+    "role": "GOVERNANCE-REFERENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Revelation First ≠ Revelation Early: keyword surface disambiguation.",
+    "standing": "SEATED",
+    "work_url": "/works/040d/",
+    "primary": false
+   },
+   {
+    "hex": "01df",
+    "axn": "AXN:01DF.GOVERNANCE.⏰🌱🕗🔒♉🪨",
+    "deposit": 626,
+    "title": "The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Logos",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "VERSION",
+    "note": "The Word That Became Text: the Slavonic Josephus, the grammar of transmission. Companion at AXN:04A9.UNCLASSIFIED.🎨⚪☽🔄🌗🪐 (#1176).",
+    "standing": "SEATED",
+    "work_url": "/works/01df/",
+    "primary": false
+   },
+   {
+    "hex": "0595",
+    "axn": "AXN:0595.UNCLASSIFIED.🧫⭕◇📚☉🔛",
+    "deposit": 1412,
+    "title": "The Fixed Point of Destruction: Josephus, the Counting-Out, and the Witness Destruction Must Leave If It Is to Be Told from Within",
+    "role": "MECHANISM",
+    "multiplicity": "SHARED",
+    "note": "The Fixed Point of Destruction: Josephus, the Counting-Out. Shared with R:r.13 — this is where the thesis meets the Engine.",
+    "standing": "SEATED",
+    "work_url": "/works/0595/",
+    "primary": false
+   },
+   {
+    "hex": "060e",
+    "axn": "AXN:060E.DATASET.🔗🍄🕔🍁✏️☉",
+    "deposit": 1499,
+    "title": "EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, Collation-Gated",
+    "role": "DATASET",
+    "multiplicity": "SINGLETON",
+    "note": "EA-CORPORA-01 Seat 01: Flavius Josephus — the canonical corpus.",
+    "standing": "SEATED",
+    "work_url": "/works/060e/",
+    "primary": false
+   },
+   {
+    "hex": "0619",
+    "axn": "AXN:0619.DATASET.🏔️⛩️🤙🏙️🕚↘️",
+    "deposit": 1510,
+    "title": "EA-CORPORA-01/12 — The Slavonic Josephus: Negative Search and the Contested Pericope Set, Resolved as Ruled",
+    "role": "DATASET",
+    "multiplicity": "SINGLETON",
+    "note": "EA-CORPORA-01/12: the Slavonic Josephus, negative search.",
+    "standing": "SEATED",
+    "work_url": "/works/0619/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -75,7 +159,8 @@
    "note": null
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "WORK OR PAPER"
+  "constitution_type": "WORK OR PAPER",
+  "three_streams": "Distinguished from R:r.24 Migdal and R:r.13 Ezekiel by what each claims. Josephus asks who wrote it. Migdal asks who it was written against. Ezekiel holds the mechanism — W_Josephus, the counting-out, elimination producing a fixed point."
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
