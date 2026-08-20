@@ -18,5 +18,19 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/job-room/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.32",
+ "surface_map_seat": "r.32",
+ "structure_class": "ROOM",
+ "locus_standing": "QUEUED / ADOPTED",
+ "authored_plane": [
+  1120,
+  880
+ ],
+ "legacy_axial_2026_08_17": [
+  1,
+  3
+ ],
+ "adopted_after_confabulation": true,
+ "surface_map_url": "/map/#R:r.32"
 }

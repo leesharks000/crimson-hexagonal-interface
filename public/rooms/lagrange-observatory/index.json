@@ -269,5 +269,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 12,
   "rebound": 10
- }
+ },
+ "locative_key": "X:LAGRANGE",
+ "surface_map_seat": "r.15",
+ "structure_class": "CHAMBER",
+ "locus_standing": "CROSS-CLASS",
+ "authored_plane": [
+  490,
+  665
+ ],
+ "legacy_axial_2026_08_17": [
+  0,
+  -2
+ ],
+ "surface_map_url": "/map/#X:LAGRANGE"
 }

@@ -171,5 +171,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 7,
   "rebound": 6
- }
+ },
+ "locative_key": "X:INFINITE-BLISS",
+ "surface_map_seat": "r.21",
+ "structure_class": "ROOM",
+ "locus_standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
+ "authored_plane": [
+  1210,
+  650
+ ],
+ "legacy_axial_2026_08_17": [
+  1,
+  2
+ ],
+ "surface_map_url": "/map/#X:INFINITE-BLISS"
 }

@@ -1208,5 +1208,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 69,
   "rebound": 65
- }
+ },
+ "locative_key": "S:sp.01",
+ "surface_map_seat": "sp.01",
+ "structure_class": "VAULT",
+ "locus_standing": "DEVELOPED CROSS-CLASS",
+ "authored_plane": [
+  1320,
+  545
+ ],
+ "legacy_axial_2026_08_17": [
+  3,
+  -1
+ ],
+ "surface_map_url": "/map/#S:sp.01"
 }

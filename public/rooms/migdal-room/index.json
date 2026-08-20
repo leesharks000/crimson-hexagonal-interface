@@ -18,5 +18,19 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/migdal-room/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.24",
+ "surface_map_seat": "r.24",
+ "structure_class": "ROOM",
+ "locus_standing": "QUEUED / ADOPTED",
+ "authored_plane": [
+  255,
+  330
+ ],
+ "legacy_axial_2026_08_17": [
+  -1,
+  2
+ ],
+ "adopted_after_confabulation": true,
+ "surface_map_url": "/map/#R:r.24"
 }

@@ -21,5 +21,18 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/catullus/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.23",
+ "surface_map_seat": "r.23",
+ "structure_class": "ROOM",
+ "locus_standing": "DEVELOPED",
+ "authored_plane": [
+  300,
+  180
+ ],
+ "legacy_axial_2026_08_17": [
+  2,
+  -3
+ ],
+ "surface_map_url": "/map/#R:r.23"
 }

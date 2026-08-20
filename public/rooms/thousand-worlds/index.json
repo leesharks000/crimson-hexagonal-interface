@@ -44,5 +44,18 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/thousand-worlds/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "X:THOUSAND-WORLDS",
+ "surface_map_seat": "r.22",
+ "structure_class": "ROOM+CHAMBER-LINK",
+ "locus_standing": "CROSS-CLASS",
+ "authored_plane": [
+  1260,
+  810
+ ],
+ "legacy_axial_2026_08_17": [
+  2,
+  -2
+ ],
+ "surface_map_url": "/map/#X:THOUSAND-WORLDS"
 }

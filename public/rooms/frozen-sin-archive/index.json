@@ -18,5 +18,19 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/frozen-sin-archive/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "V:33",
+ "surface_map_seat": "33.VLT",
+ "structure_class": "VAULT",
+ "locus_standing": "QUEUED / ADOPTED",
+ "authored_plane": [
+  1360,
+  700
+ ],
+ "legacy_axial_2026_08_17": [
+  4,
+  -1
+ ],
+ "adopted_after_confabulation": true,
+ "surface_map_url": "/map/#V:33"
 }

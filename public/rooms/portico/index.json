@@ -35,5 +35,18 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/portico/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "S:sp.02",
+ "surface_map_seat": "sp.02",
+ "structure_class": "THRESHOLD",
+ "locus_standing": "ESTABLISHED",
+ "authored_plane": [
+  800,
+  92
+ ],
+ "legacy_axial_2026_08_17": [
+  3,
+  -2
+ ],
+ "surface_map_url": "/map/#S:sp.02"
 }

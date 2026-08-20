@@ -59,5 +59,18 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/eve/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.28",
+ "surface_map_seat": "r.28",
+ "structure_class": "ROOM",
+ "locus_standing": "PROVISIONAL",
+ "authored_plane": [
+  800,
+  720
+ ],
+ "legacy_axial_2026_08_17": [
+  4,
+  -2
+ ],
+ "surface_map_url": "/map/#R:r.28"
 }

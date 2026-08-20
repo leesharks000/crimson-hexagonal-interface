@@ -266,5 +266,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 13,
   "rebound": 13
- }
+ },
+ "locative_key": "S:sp.04",
+ "surface_map_seat": "sp.04",
+ "structure_class": "SPECIAL",
+ "locus_standing": "DEVELOPED / CLASS TRANSITION UNADJUDICATED",
+ "authored_plane": [
+  800,
+  930
+ ],
+ "legacy_axial_2026_08_17": [
+  0,
+  3
+ ],
+ "surface_map_url": "/map/#S:sp.04"
 }

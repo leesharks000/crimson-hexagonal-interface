@@ -563,5 +563,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 29,
   "rebound": 28
- }
+ },
+ "locative_key": "X:BREAK-ROOM",
+ "surface_map_seat": "r.12",
+ "structure_class": "ROOM+PORTAL",
+ "locus_standing": "DEVELOPED PORTAL FUNCTION",
+ "authored_plane": [
+  330,
+  620
+ ],
+ "legacy_axial_2026_08_17": [
+  2,
+  0
+ ],
+ "surface_map_url": "/map/#X:BREAK-ROOM"
 }

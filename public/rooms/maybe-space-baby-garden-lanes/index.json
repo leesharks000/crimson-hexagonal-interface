@@ -56,5 +56,18 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/maybe-space-baby-garden-lanes/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.16",
+ "surface_map_seat": "r.16",
+ "structure_class": "ROOM",
+ "locus_standing": "DEVELOPED",
+ "authored_plane": [
+  470,
+  780
+ ],
+ "legacy_axial_2026_08_17": [
+  -3,
+  2
+ ],
+ "surface_map_url": "/map/#R:r.16"
 }

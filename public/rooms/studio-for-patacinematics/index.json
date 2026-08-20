@@ -308,5 +308,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 14,
   "rebound": 13
- }
+ },
+ "locative_key": "R:r.14",
+ "surface_map_seat": "r.14",
+ "structure_class": "ROOM",
+ "locus_standing": "DEVELOPED",
+ "authored_plane": [
+  300,
+  760
+ ],
+ "legacy_axial_2026_08_17": [
+  -3,
+  1
+ ],
+ "surface_map_url": "/map/#R:r.14"
 }

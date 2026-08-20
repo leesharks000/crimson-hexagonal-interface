@@ -52,5 +52,18 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/airlock/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.20",
+ "surface_map_seat": "r.20",
+ "structure_class": "ROOM/GATE",
+ "locus_standing": "DEVELOPED",
+ "authored_plane": [
+  900,
+  590
+ ],
+ "legacy_axial_2026_08_17": [
+  1,
+  0
+ ],
+ "surface_map_url": "/map/#R:r.20"
 }

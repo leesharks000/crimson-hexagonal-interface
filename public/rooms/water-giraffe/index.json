@@ -161,5 +161,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 7,
   "rebound": 7
- }
+ },
+ "locative_key": "R:r.10",
+ "surface_map_seat": "r.10",
+ "structure_class": "ROOM",
+ "locus_standing": "DEVELOPED",
+ "authored_plane": [
+  1130,
+  505
+ ],
+ "legacy_axial_2026_08_17": [
+  0,
+  -1
+ ],
+ "surface_map_url": "/map/#R:r.10"
 }

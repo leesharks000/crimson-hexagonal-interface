@@ -20,5 +20,18 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/internet/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.27",
+ "surface_map_seat": "r.27",
+ "structure_class": "ROOM",
+ "locus_standing": "DEVELOPED",
+ "authored_plane": [
+  730,
+  190
+ ],
+ "legacy_axial_2026_08_17": [
+  3,
+  0
+ ],
+ "surface_map_url": "/map/#R:r.27"
 }

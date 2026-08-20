@@ -18,5 +18,18 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/underwater-construction-authority-of-dolphindiana/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.25",
+ "surface_map_seat": "r.25",
+ "structure_class": "ROOM",
+ "locus_standing": "DEVELOPED",
+ "authored_plane": [
+  260,
+  440
+ ],
+ "legacy_axial_2026_08_17": [
+  -1,
+  -2
+ ],
+ "surface_map_url": "/map/#R:r.25"
 }

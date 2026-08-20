@@ -18,5 +18,18 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/fbdp-source/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "R:r.26",
+ "surface_map_seat": "r.26",
+ "structure_class": "ROOM/FIELD-SOURCE",
+ "locus_standing": "STRUCTURALLY ESTABLISHED / RELOCATED",
+ "authored_plane": [
+  220,
+  535
+ ],
+ "legacy_axial_2026_08_17": [
+  -2,
+  -2
+ ],
+ "surface_map_url": "/map/#R:r.26"
 }

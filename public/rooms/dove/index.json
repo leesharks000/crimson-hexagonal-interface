@@ -118,5 +118,18 @@
   "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
   "entries": 4,
   "rebound": 3
- }
+ },
+ "locative_key": "R:r.04",
+ "surface_map_seat": "r.04",
+ "structure_class": "ROOM",
+ "locus_standing": "HISTORICAL / ANCHOR-GAP",
+ "authored_plane": [
+  405,
+  365
+ ],
+ "legacy_axial_2026_08_17": [
+  -1,
+  -1
+ ],
+ "surface_map_url": "/map/#R:r.04"
 }
