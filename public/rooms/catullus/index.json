@@ -37,7 +37,13 @@
  "surface_map_url": "/map/#R:r.23",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The Catullus Room is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "ontology": "The aorist is missing; the operator runs without completing.",
+  "primary_at_main": {
+   "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+   "deposit": 576,
+   "work_url": "/works/0198/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "0198",
@@ -46,9 +52,33 @@
     "title": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Caption of Rome on Greece",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "THE MISSING AORIST — Nugas as compressions and the operative. Room specification, 2026-03-16.",
+    "note": "EA-ROOM-CATULLUS-AORIST v1.1 — The Missing Aorist: Nugas as Compressions and the Operative Caption of Rome on Greece. Room r.23, status OPERATIONAL. Parent EA-ARK-01 v4.2.7. Assembly Chorus: blind draft pending full Assembly.",
     "standing": "SEATED",
     "work_url": "/works/0198/",
+    "primary": true
+   },
+   {
+    "hex": "0594",
+    "axn": "AXN:0594.GENERATIVE.♦️🧪▲⚙️🎪🌕",
+    "deposit": 1411,
+    "title": "here is what i learned from catullus — Lee Sharks — New Human 2",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SINGLETON",
+    "note": "here is what i learned from catullus — the poem. Published Hello Poetry 2026-07-27, lineated and spoken forms recorded. \"a single / sparrow / matters / more / than all / of rome.\"",
+    "standing": "SEATED",
+    "work_url": "/works/0594/",
+    "primary": false
+   },
+   {
+    "hex": "060f",
+    "axn": "AXN:060F.DATASET.🌙🌻📚🪟💫⚪",
+    "deposit": 1500,
+    "title": "EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,500",
+    "role": "DATASET",
+    "multiplicity": "SINGLETON",
+    "note": "EA-CORPORA-01 Seat 02: Catullus — the witness who kept the name.",
+    "standing": "SEATED",
+    "work_url": "/works/060f/",
     "primary": false
    }
   ],
@@ -58,11 +88,72 @@
     "σ_S",
     "κ_O"
    ],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "σ_C — Catullan Compression, a lossy transform of σ_S. Substrate: Latin, the language that absorbed the aorist into the perfect."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION",
+  "seat_history": {
+   "planned": "PLANNED since Central Navigation Map v2.0, 2026-01-13, under the designation \"Latin lyric; σ_S recursion proof; Catullus 51\" with the proof \"first recorded κῆνος activation\".",
+   "built": "Specified and made OPERATIONAL 2026-03-16, the same day as CNM v7.0.",
+   "conflict": "CNM v7.0, dated the same day, marks r.23 as RESERVED — not yet generated. The room specification and the navigation map disagree on the same date. H_core v1.8.0 lists 23.ROOM.CATULLUS in its room graph without qualification.",
+   "occupancy_check": "No other locus has ever claimed r.23. Every reference to the slot across the archive is either this room or a map marking it reserved. The seat was genuinely empty when Catullus took it — the room was planned early, built late, and seated at the slot it had been promised."
+  },
+  "operator": {
+   "name": "σ_C — Catullan Compression",
+   "definition": "σ_C is σ_S with the aorist removed.",
+   "sigma_S": "σ_S (Sappho): Voice → Dissolution (AORIST) → Substrate (PERFECT) → Inscription (aorist optative)",
+   "sigma_C": "σ_C (Catullus): Voice → Dissolution (PRESENT — never completes) → ??? → Loss (PERFECT)",
+   "reading": "The operator runs — the dissolution symptoms are all present — but it never fires. The trigger event is converted from a completed act into a continuous state. The transformation never achieves the substrate condition. The inscription never occurs within the poem’s grammar.",
+   "otium": "Instead Catullus appends a warning: the only completed action is the destruction of what might have been preserved. Otium perdidit. Leisure — the condition that allows writing, reading, transmission — has already destroyed kings and blessed cities. The material conditions of poetry are the material conditions of loss.",
+   "thesis": "This is not failure. It is the highest-order compression available. Catullus cannot restore the aorist; Latin will not let him. But he can make the absence of the aorist visible — can make the lossy compression itself the content of the poem. He shows you what Rome does to Greece by doing it, in real time, in the grammar of a love lyric."
+  },
+  "three_laws": [
+   "The aorist marks the transformation event. Without it, the operator runs but never fires.",
+   "Nugas are compressions. Maximum density, minimum space, lossy by design.",
+   "The only completed action in the Latin is destruction. Perdidit: has destroyed."
+  ],
+  "room_spec": {
+   "substrate": "Latin — the language that absorbed the aorist into the perfect",
+   "scent": "dulce ridentem — sweetly laughing (PRESENT, where Sappho had AORIST)",
+   "mass": "Rome’s relation to Greece. Empire as lossy compression. What the conqueror preserves and what the conqueror destroys."
+  },
+  "declared_adjacency": [
+   {
+    "target": "R:r.01",
+    "relation": "depends_on — σ_C is lossy σ_S",
+    "type": "structural"
+   },
+   {
+    "target": "R:r.06",
+    "relation": "enables — nugas ≅ linen, both substrates of compression",
+    "type": "structural"
+   },
+   {
+    "target": "R:r.08",
+    "relation": "enables — operative captioning; the poem as caption on empire",
+    "type": "structural"
+   },
+   {
+    "target": "S:sp.01",
+    "relation": "historicized_by — the aorist collapse is a CTI_WOUND in the history of verbal aspect",
+    "type": "temporal"
+   }
+  ],
+  "epigraph": [
+   "Nugas are compressions.",
+   "The aorist is missing.",
+   "The operator runs without completing.",
+   "Rome is the caption on Greece.",
+   "The caption is operative."
+  ],
+  "the_poem": {
+   "axn": "AXN:0594.GENERATIVE.♦️🧪▲⚙️🎪🌕",
+   "deposit": 1411,
+   "venue": "Hello Poetry / New Human 2, 2026-07-27",
+   "text": "here is what i learned from catullus / is that / a single / sparrow / matters / more / than all / of rome",
+   "note": "Seated with the room because it is the room’s thesis in eight lines: the passer of Catullus 2 and 3 set against the empire that is the room’s mass. The lineated and spoken forms are both recorded in the deposit."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
