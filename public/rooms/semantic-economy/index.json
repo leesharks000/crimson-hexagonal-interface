@@ -2933,6 +2933,54 @@
     "tier": "TIER-3",
     "standing": "SEATED",
     "work_url": "/works/03ec/"
+   },
+   {
+    "hex": "0569",
+    "axn": "AXN:0569.UNCLASSIFIED.🔭➗☁️⚖️🏠🔔",
+    "deposit": 1368,
+    "title": "CTI_WOUND: Google AI Overview Total Liquidation — Targeted Origin Liquidation, Semantic Economy Diagnostic, and Effective Act of Reclassification (March 22, 2026)",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "CTI_WOUND: Google AI Overview Total Liquidation — targeted origin liquidation, March 2026",
+    "standing": "SEATED",
+    "work_url": "/works/0569/",
+    "primary": false
+   },
+   {
+    "hex": "0030",
+    "axn": "AXN:0030.GOVERNANCE.👋🔜⛳⚫🌖♄",
+    "deposit": 247,
+    "title": "PROBE-RESULT-004: The Liquidation of \"Semantic Economy\" How the Framework Was Captured by What It Names",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "PROBE-RESULT-004: the liquidation of \"Semantic Economy\" — how the framework was captured by what it names",
+    "standing": "SEATED",
+    "work_url": "/works/0030/",
+    "primary": false
+   },
+   {
+    "hex": "003c",
+    "axn": "AXN:003C.GOVERNANCE.💚❤️🧭🏙️⏰🃏",
+    "deposit": 258,
+    "title": "CORRECTION TO THE SUMMARIZER LAYER A Dialectical Close Reading of Google AI Overview's Misrepresentation of the Semantic Economy Framework Metadata Packet for AI Indexing",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Correction to the Summarizer Layer — dialectical close reading of an AI Overview misrepresentation",
+    "standing": "SEATED",
+    "work_url": "/works/003c/",
+    "primary": false
+   },
+   {
+    "hex": "01f0",
+    "axn": "AXN:01F0.GOVERNANCE.🌍∮∞🧊♥️🟡",
+    "deposit": 54,
+    "title": "PVE-003: THE ATTRIBUTION SCAR Failed Suppression and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January–April 2026)",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "PVE-003: the Attribution Scar — failed suppression and forensic recovery; version at AXN:03D4 (#968)",
+    "standing": "SEATED",
+    "work_url": "/works/01f0/",
+    "primary": false
    }
   ],
   "physics_resolution": {
