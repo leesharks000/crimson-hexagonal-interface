@@ -18,5 +18,27 @@
  "adjacent": [],
  "canonical": "https://crimsonhexagonal.org/rooms/fruiting-body-diffusion-plume/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "F:f.01",
+ "structure_class": "FIELD",
+ "locus_standing": "FIELD",
+ "field_geometry": {
+  "kind": "plume",
+  "origin": [
+   220,
+   535
+  ],
+  "direction_deg": 195,
+  "spread_deg": 70,
+  "radius": 520,
+  "stops": [
+   "SOURCE",
+   "DENSE",
+   "TRACE",
+   "RESIDUAL",
+   "OUTSIDE"
+  ]
+ },
+ "surface_map_url": "/map/#F:f.01",
+ "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators"
 }

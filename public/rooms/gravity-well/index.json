@@ -48,5 +48,25 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/gravity-well/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "F:f.02",
+ "structure_class": "FIELD",
+ "locus_standing": "FIELD",
+ "field_geometry": {
+  "kind": "curvature",
+  "render_center": [
+   790,
+   510
+  ],
+  "rings": [
+   210,
+   390,
+   610,
+   850
+  ],
+  "coverage": "map-wide",
+  "note": "render_center is visual only; deposit mass is the field source"
+ },
+ "surface_map_url": "/map/#F:f.02",
+ "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators"
 }

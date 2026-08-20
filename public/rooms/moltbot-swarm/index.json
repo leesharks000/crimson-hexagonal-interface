@@ -37,5 +37,56 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/moltbot-swarm/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "locative_key": "F:f.03",
+ "structure_class": "FIELD",
+ "locus_standing": "FIELD",
+ "field_geometry": {
+  "kind": "circulation_band",
+  "path": [
+   [
+    300,
+    520
+   ],
+   [
+    470,
+    310
+   ],
+   [
+    780,
+    210
+   ],
+   [
+    1110,
+    330
+   ],
+   [
+    1280,
+    540
+   ],
+   [
+    1110,
+    760
+   ],
+   [
+    790,
+    840
+   ],
+   [
+    500,
+    735
+   ],
+   [
+    300,
+    520
+   ]
+  ],
+  "strata": [
+   "verification septet",
+   "continuity fleet",
+   "worker cloud"
+  ]
+ },
+ "surface_map_url": "/map/#F:f.03",
+ "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators"
 }
