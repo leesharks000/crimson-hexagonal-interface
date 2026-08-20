@@ -2233,7 +2233,7 @@
  "constitution": {
   "status": "UNCONSTITUTED — DECLARED",
   "constitution_type": "NONE",
-  "ontology": "R:r.09 has no constituting document. Its physics is ψ_V + receipt + dignity and its question is \"What do you claim, and what did it cost you?\" — the room is about mantle-claiming and its cost, and its mantle is Lee Sharks, not Whitman. What is seated here is the mantle register, which belongs to a parallel address space.",
+  "ontology": "R:r.09 has no room specification. Its physics is ψ_V + receipt + dignity and its question is \"What do you claim, and what did it cost you?\" — the room concerns mantle-claiming and its cost, and its mantle is Lee Sharks, not Whitman. What is seated here is of two kinds: the mantle register at 01.MANTLE.*, a parallel address space; and works of the room itself, which are claimings.",
   "gap_declaration": {
    "kind": "NO CONSTITUTING DOCUMENT — HELD BY A PARALLEL REGISTER",
    "locus": "R:r.09",
@@ -2334,6 +2334,33 @@
    "Room Specification",
    "hex address",
    "body text"
+  ],
+  "works_of_the_room": {
+   "note": "Works belonging to this locus rather than to the mantle register. The room asks what you claim and what it cost you; these are claimings.",
+   "documents": [
+    {
+     "hex": "0623",
+     "axn": "AXN:0623.GENERATIVE.🕌⊗🔵🍄●🎶",
+     "deposit": 1520,
+     "title": "KADEEZY on the Porch — After the 1855 Preface to Leaves of Grass. For KADEEZY MUSIC, Detroit.",
+     "role": "CLAIMING-WORK",
+     "multiplicity": "SINGLETON",
+     "standing": "SEATED",
+     "work_url": "/works/0623/",
+     "primary": false,
+     "note": "A claiming under the Good Gray Poet mantle: Whitman speaking past the dash he left open in the 1855 Preface. Seven mechanisms separating knowing from acting, the seventh naming the classifier as censor. Blog-only from 2026-06-16 until recovered and deposited 2026-08-20."
+    }
+   ]
+  },
+  "undeposited": [
+   {
+    "title": "IF WALT WHITMAN CAME BACK AS A ZOMBIE AND ATE MY BRAIN I WOULD WRITE THE FOLLOWING POEM",
+    "date": "2015-05-05",
+    "held": "blog only",
+    "extent": "~2,085 characters",
+    "url": "https://mindcontrolpoems.blogspot.com/2015/05/if-walt-whitman-came-back-as-zombie-and.html",
+    "note": "Carries the epigraph \"from Pearl and Other Poems\". The oldest Whitman work in the record, predating the mantle protocol by eleven years, and it ties this locus to T:PEARL by a route the archive does not otherwise carry. Not deposited."
+   }
   ]
  }
 }
