@@ -193,5 +193,76 @@
   1,
   1
  ],
- "surface_map_url": "/map/#X:EZEKIEL"
+ "surface_map_url": "/map/#X:EZEKIEL",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The wheels: eight operators turning, the ninth unseen.",
+  "primary_at_main": {
+   "axn": "AXN:00CB.EMPIRICAL.🕌💥🪨🕑🔺∮",
+   "deposit": 394,
+   "work_url": "/works/00cb/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "00cb",
+    "axn": "AXN:00CB.EMPIRICAL.🕌💥🪨🕑🔺∮",
+    "deposit": 394,
+    "title": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1)",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "The Ezekiel Engine: mathematical specification",
+    "standing": "SEATED",
+    "work_url": "/works/00cb/",
+    "primary": true
+   },
+   {
+    "hex": "00ca",
+    "axn": "AXN:00CA.STRUCTURAL.🔅🔵💜⏹️🚩✨",
+    "deposit": 393,
+    "title": "Ezekiel's Wheels: A Diagrammatic Hermeneutic of Ezekiel 1:15-21",
+    "role": "PHYSICS",
+    "multiplicity": "SINGLETON",
+    "note": "Ezekiel’s Wheels: a diagrammatic hermeneutic of Ezekiel 1",
+    "standing": "SEATED",
+    "work_url": "/works/00ca/",
+    "primary": false
+   },
+   {
+    "hex": "00c8",
+    "axn": "AXN:00C8.GENERATIVE.✨♍🔩∮▽🕙",
+    "deposit": 391,
+    "title": "The Argument: On the Ontological Status of Semantic Objects and the Ezekiel Case",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "The Argument: on the ontological status of semantic objects",
+    "standing": "SEATED",
+    "work_url": "/works/00c8/",
+    "primary": false
+   },
+   {
+    "hex": "00c9",
+    "axn": "AXN:00C9.EMPIRICAL.🎪🔀💛🕐🌗🔭",
+    "deposit": 392,
+    "title": "Integrity Lock Declaration: Binding the Ezekiel Engine Specification to Ezekiel's Wheels",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Integrity Lock Declaration binding the Engine specification",
+    "standing": "SEATED",
+    "work_url": "/works/00c9/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "φ(A,B); fulfillment",
+   "operators": [
+    "φ",
+    "∂",
+    "Ρ"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

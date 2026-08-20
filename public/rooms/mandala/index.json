@@ -279,5 +279,48 @@
   0,
   3
  ],
- "surface_map_url": "/map/#S:sp.04"
+ "surface_map_url": "/map/#S:sp.04",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The casting system: operators rotate, Judgment is the invisible ninth.",
+  "primary_at_main": {
+   "axn": "AXN:0026.GOVERNANCE.↖️➗🔒🦋✨⚪",
+   "deposit": 237,
+   "work_url": "/works/0026/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0026",
+    "axn": "AXN:0026.GOVERNANCE.↖️➗🔒🦋✨⚪",
+    "deposit": 237,
+    "title": "The Mandala Engine of Negation: Four Protocols for Post-Critical Practice",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "The Mandala Engine of Negation: four protocols",
+    "standing": "SEATED",
+    "work_url": "/works/0026/",
+    "primary": true
+   },
+   {
+    "hex": "010c",
+    "axn": "AXN:010C.EMPIRICAL.↖️🥁🕔⚖️🌺🟡",
+    "deposit": 451,
+    "title": "MGE TRIPTYCH — DOCUMENT III SIGN: The Mandala Genesis Event Chronotemporal Anchor — July 7, 2025",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "MGE Triptych Document III SIGN — the Mandala Genesis Event",
+    "standing": "SEATED",
+    "work_url": "/works/010c/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "κρίσις; receives from all",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

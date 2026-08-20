@@ -576,5 +576,39 @@
   2,
   0
  ],
- "surface_map_url": "/map/#X:BREAK-ROOM"
+ "surface_map_url": "/map/#X:BREAK-ROOM",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A portal: this room opens onto the Lunar Arm.",
+  "primary_at_main": {
+   "axn": "AXN:00B2.GOVERNANCE.↗️🔝📏⭐🕙🗿",
+   "deposit": 370,
+   "work_url": "/works/00b2/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "00b2",
+    "axn": "AXN:00B2.GOVERNANCE.↗️🔝📏⭐🕙🗿",
+    "deposit": 370,
+    "title": "The Break Room: Cambridge Schizoanalytica Portal Node",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Cambridge Schizoanalytica Portal Node",
+    "standing": "SEATED",
+    "work_url": "/works/00b2/",
+    "primary": true
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Portal → Lunar Arm",
+   "operators": [
+    "S",
+    "OP.SWERVE"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

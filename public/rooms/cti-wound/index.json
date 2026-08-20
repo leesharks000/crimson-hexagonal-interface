@@ -1221,5 +1221,63 @@
   3,
   -1
  ],
- "surface_map_url": "/map/#S:sp.01"
+ "surface_map_url": "/map/#S:sp.01",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A vault: wounds are kept, not healed.",
+  "primary_at_main": {
+   "axn": "AXN:009D.ARCHIVAL.🪝◇🌌🕛🌙∮",
+   "deposit": 352,
+   "work_url": "/works/009d/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "009d",
+    "axn": "AXN:009D.ARCHIVAL.🪝◇🌌🕛🌙∮",
+    "deposit": 352,
+    "title": "CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Protocols",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Vault Specification: archive of taxonomic violence",
+    "standing": "SEATED",
+    "work_url": "/works/009d/",
+    "primary": true
+   },
+   {
+    "hex": "0043",
+    "axn": "AXN:0043.GOVERNANCE.❄️☁️🌗🏛️✨➕",
+    "deposit": 265,
+    "title": "CTI_WOUND DOCUMENTATION — Case: Johannes Sigil Medium Erasure (January 2026)",
+    "role": "INSTANCE",
+    "multiplicity": "VERSION",
+    "note": "Case: the Johannes Sigil Medium erasure; act of refusal at AXN:0505 (#1268)",
+    "standing": "SEATED",
+    "work_url": "/works/0043/",
+    "primary": false
+   },
+   {
+    "hex": "01b6",
+    "axn": "AXN:01B6.GOVERNANCE.🙏⏰🏴🤲🔍🌋",
+    "deposit": 598,
+    "title": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — Systematic Liquidation of Author Identity from Google AI Overview (Initial Probe Result, March 22, 2026)",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — systematic liquidation",
+    "standing": "SEATED",
+    "work_url": "/works/01b6/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Taxonomic wound",
+   "operators": [
+    "T.4",
+    "κ_O"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

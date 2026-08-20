@@ -6,5 +6,48 @@
  "standing": "MANIFESTATION-GAP / UNNUMBERED",
  "current_surface_seat": "U:3-60",
  "canonical": "https://crimsonhexagonal.org/rooms/3-60/",
- "generated": "2026-08-19"
+ "generated": "2026-08-19",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A contributed room, licensed to its contributor.",
+  "primary_at_main": {
+   "axn": "AXN:0565.UNCLASSIFIED.🌹🕛🔎🎹⏬👁️",
+   "deposit": 1364,
+   "work_url": "/works/0565/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0565",
+    "axn": "AXN:0565.UNCLASSIFIED.🌹🕛🔎🎹⏬👁️",
+    "deposit": 1364,
+    "title": "The 3:60 Room — Contributor License v2.0: Maria, Canonical Witness (EA-THREE-SIXTY-01)",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "Contributor License v2.0: Maria, canonical contributor; room specification at AXN:0564 (#1363)",
+    "standing": "SEATED",
+    "work_url": "/works/0565/",
+    "primary": true
+   },
+   {
+    "hex": "02bf",
+    "axn": "AXN:02BF.GOVERNANCE.🟣⭐⛵👁️🔚🪐",
+    "deposit": 132,
+    "title": "Skiouros Pyrophthalmos and the Sciurid Apocalypse A Composite Whiteboard Maria, Artist of Record · 3:60 Room Contributor License Demonstration",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "Skiouros Pyrophthalmos and the Sciurid Apocalypse",
+    "standing": "SEATED",
+    "work_url": "/works/02bf/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": null,
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "The name-sweep returned zero candidates for this locus; it was found by sweeping the Room Specification convention."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

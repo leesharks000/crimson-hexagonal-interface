@@ -282,5 +282,60 @@
   0,
   -2
  ],
- "surface_map_url": "/map/#X:LAGRANGE"
+ "surface_map_url": "/map/#X:LAGRANGE",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A chamber at the libration point: measurement of meaning.",
+  "primary_at_main": {
+   "axn": "AXN:0110.EMPIRICAL.↘️🌑🌔🌗△🌌",
+   "deposit": 455,
+   "work_url": "/works/0110/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0110",
+    "axn": "AXN:0110.EMPIRICAL.↘️🌑🌔🌗△🌌",
+    "deposit": 455,
+    "title": "LAGRANGE OBSERVATORY! (LO!) Chamber Specification & Nobel Glas Provenance Crimson Hexagon Extension — Semantic Torus Field",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Chamber Specification and Nobel Glas provenance — semantic torus field",
+    "standing": "SEATED",
+    "work_url": "/works/0110/",
+    "primary": true
+   },
+   {
+    "hex": "028a",
+    "axn": "AXN:028A.GOVERNANCE.👈🤙🐚🌖🔓🟡",
+    "deposit": 108,
+    "title": "Framework 15 — Measurement of Meaning: Operations from Lagrange Observatory! within the Semantic Physics Matrix (EA-SEI-FW15-MANIFESTO v1.0)",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "Framework 15 — Measurement of Meaning: operations from Lagrange",
+    "standing": "SEATED",
+    "work_url": "/works/028a/",
+    "primary": false
+   },
+   {
+    "hex": "012a",
+    "axn": "AXN:012A.GOVERNANCE.📦🔒🏷️🪦🕚♋",
+    "deposit": 479,
+    "title": "TL;DR:008 THE OBSERVATION: Google AI Mode Operates the Instruments at Lagrange Observatory!",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "TL;DR:008 The Observation — a summarizer operates the instrument",
+    "standing": "SEATED",
+    "work_url": "/works/012a/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Torus; 3i coords",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
