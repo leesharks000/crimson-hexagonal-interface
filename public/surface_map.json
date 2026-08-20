@@ -1463,12 +1463,19 @@
   },
   {
    "identity": {
-    "locative_key": "V:33",
+    "locative_key": "R:r.32",
     "name": "Frozen Sin Archive",
     "structure_type": "VAULT",
     "standing": "QUEUED / ADOPTED",
     "historical_type": null,
-    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+    "canonical_class_source": "H_core v1.8.0 §R — 30.VLT.FROZENSIN (class applied, seat not)",
+    "address_history": [
+     {
+      "key": "V:33",
+      "until": "2026-08-20",
+      "reason": "H_core assigns 30.VLT.FROZENSIN, but r.30 is held by the Ruby Moot — a fully specified room H_core does not contain. Ruby Moot keeps 30; the Vault takes the seat freed when Job returned to r.29."
+     }
+    ]
    },
    "coordinates": {
     "authored_x": 1360,
@@ -2042,6 +2049,12 @@
     "finding": "r.29 had two claimants of different kinds. Job is a room, held the seat originally, and is assigned 29.ROOM.JOB by H_core. The Imploding Velcro Nativity is a hosted cosmology, written a month after H_core, which took the seat after the Surface Map v0.1 moved Job to r.32.",
     "resolution": "Job returns to r.29. The Velcro Nativity vacates the room plane and stands at its own hosted address, 06.HOST.IVN.29, with its self-declared r.29 preserved as history. No document is overruled: a hotel and a home do not compete for the same seat.",
     "freed": "r.32 is released."
+   },
+   "r30_resolved": {
+    "ruled_by": "MANUS 2026-08-20",
+    "finding": "H_core v1.8.0 assigns 30.VLT.FROZENSIN. r.30 is held by the Ruby Moot — EA-SEI-MOOT-01, a Court of Record for the Semantic Commons, fully specified with a presiding voice, an Adversary General, a clerk, counsel, a bar and a panel of assessors. H_core predates it and does not contain it.",
+    "resolution": "The Ruby Moot keeps r.30. The Frozen Sin Archive takes r.32, freed when the Job Room returned to its own H_core seat at r.29. The VAULT class is applied on H_core’s authority; the seat is not.",
+    "principle": "H_core is authoritative on class throughout and on seat only where it is not silent. A written room is not displaced by an assignment made before it existed."
    }
   }
  }

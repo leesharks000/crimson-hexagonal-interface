@@ -19,7 +19,7 @@
  "canonical": "https://crimsonhexagonal.org/rooms/frozen-sin-archive/",
  "generated": "2026-08-17",
  "source": "hexagon_canonical.json",
- "locative_key": "V:33",
+ "locative_key": "R:r.32",
  "surface_map_seat": "33.VLT",
  "structure_class": "VAULT",
  "locus_standing": "QUEUED / ADOPTED",
@@ -60,7 +60,7 @@
    "adjacent strand"
   ],
   "constitution_type": "VAULT — NO FOUNDING DOCUMENT",
-  "standing": "H_core v1.8.0 assigns 30.VLT.FROZENSIN. The class VAULT is applied on that authority. The seat is not applied: r.30 is held by the Ruby Moot, a fully specified room that H_core does not contain.",
+  "standing": "Seated at R:r.32 as a VAULT. H_core v1.8.0 assigns 30.VLT.FROZENSIN; the class is applied on that authority, the seat is not — r.30 is held by the Ruby Moot, a fully specified room H_core predates and does not contain. r.32 was freed when the Job Room returned to r.29.",
   "inherited_physics": {
    "string": "Semantic Black Hole; extraction residue; what cannot be recovered",
    "prompt": "What was destroyed, and can it be named?",
@@ -111,6 +111,10 @@
   {
    "key": "V:33",
    "class": "VAULT",
+   "until": "2026-08-20"
+  },
+  {
+   "key": "V:33",
    "until": "2026-08-20"
   }
  ],
