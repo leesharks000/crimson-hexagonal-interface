@@ -73,7 +73,9 @@
      "axn": "AXN:0477.UNCLASSIFIED.🍄♅🍀🎬👈♅",
      "deposit": 1126,
      "note": "all 13 sections survive; all ASCII diagrams lost to Blogger indentation ceiling"
-    }
+    },
+    "work_url": "/works/00a7/",
+    "hex": "00a7"
    },
    {
     "role": "MANTLE",
@@ -83,7 +85,9 @@
     "recovery_edition": {
      "axn": "AXN:0476.UNCLASSIFIED.🌾🧬●∞∞⊗",
      "deposit": 1125
-    }
+    },
+    "work_url": "/works/00a8/",
+    "hex": "00a8"
    },
    {
     "role": "PHYSICS",
@@ -95,7 +99,9 @@
      "axn": "AXN:0556.UNCLASSIFIED.🔭♋🌺👈🕊️🏷️",
      "deposit": 1349,
      "kind": "DataCite metadata capture of severed DOI"
-    }
+    },
+    "work_url": "/works/01e7/",
+    "hex": "01e7"
    }
   ]
  },
