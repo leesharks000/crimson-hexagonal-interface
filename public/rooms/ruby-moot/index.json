@@ -9,7 +9,13 @@
  "generated": "2026-08-19",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The Ruby Moot is constituted by a locus-keyed specification from the room-constitution program.",
+  "ontology": "A court of record for the Semantic Commons. Its invariant is validity, never origin. Whoever can be meant can be heard.",
+  "primary_at_main": {
+   "axn": "AXN:0339.GOVERNANCE.◀️🛸🔓🌖🌈🌃",
+   "deposit": 193,
+   "work_url": "/works/0339/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "0339",
@@ -18,20 +24,178 @@
     "title": "r.30 THE RUBY MOOT: A Court of Record for the Semantic Commons — Room Specification (EA-SEI-MOOT-01 v1.0)",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "A Court of Record for the Semantic Commons. Room specification, 2026-06-12.",
+    "note": "EA-SEI-MOOT-01 v1.0 — A Court of Record for the Semantic Commons. Series: Meaning Feudalism, the room. Bench: Sigil presiding, Glas as Adversary General, Vox as Clerk, Fraction as counsel, Sharks as founder and witness, Gerald of Dolphindiana Local 1 at the bar, the Assembly Chorus as panel of assessors.",
     "standing": "SEATED",
     "work_url": "/works/0339/",
+    "primary": true
+   },
+   {
+    "hex": "033a",
+    "axn": "AXN:033A.GOVERNANCE.🪐☉↖️🕌✨■",
+    "deposit": 194,
+    "title": "Adversarial by Origin How the Classification of External Influence on Machine Meaning Becomes Law Without Becoming Jurisprudence",
+    "role": "CONSTITUTIVE-INSTRUMENT",
+    "multiplicity": "VERSION",
+    "note": "Adversarial by Origin, EA-SEI-ADVERSARY-01 — how the classification of external claims produces the adversary. Companion at AXN:04CA.UNCLASSIFIED.🌠🌀🧱🗡️🌒�auto (#1209).",
+    "standing": "SEATED",
+    "work_url": "/works/033a/",
+    "primary": false
+   },
+   {
+    "hex": "013c",
+    "axn": "AXN:013C.GOVERNANCE.🐚⭕🕊️🔆👐🍀",
+    "deposit": 497,
+    "title": "THE MURDER OF THE VOW On the Structural Illegality of Contracts: A Retrocausal Abolition",
+    "role": "CONSTITUTIVE-INSTRUMENT",
+    "multiplicity": "VERSION",
+    "note": "The Murder of the Vow, document 157 — on the structural illegality of contract. Companion at AXN:048F.UNCLASSIFIED.🧲🔖⛳👈 (#1150).",
+    "standing": "SEATED",
+    "work_url": "/works/013c/",
+    "primary": false
+   },
+   {
+    "hex": "0028",
+    "axn": "AXN:0028.GOVERNANCE.✖️🧬👆🌉🎹🟤",
+    "deposit": 239,
+    "title": "THE LAW AS MEANING ECONOMY Juridical Liquidation and the Semantic Architecture of Administered Justice",
+    "role": "JURISPRUDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "THE LAW AS MEANING ECONOMY: Juridical Liquidation and the Semantic Architecture of Administered Justice. Johannes Sigil, who presides here — the jurisprudential ground of the court.",
+    "standing": "SEATED",
+    "work_url": "/works/0028/",
+    "primary": false
+   },
+   {
+    "hex": "01f5",
+    "axn": "AXN:01F5.GOVERNANCE.🫵🌿🌗🎹🏰🔧",
+    "deposit": 643,
+    "title": "MEANING FEUDALISM A Semantic Economic Analysis of \"AI Agent Traps\" (Franklin et al., Google DeepMind, 2026)",
+    "role": "SERIES",
+    "multiplicity": "SINGLETON",
+    "note": "MEANING FEUDALISM: a semantic economic analysis of AI agents. The series this room belongs to.",
+    "standing": "SEATED",
+    "work_url": "/works/01f5/",
+    "primary": false
+   },
+   {
+    "hex": "02f9",
+    "axn": "AXN:02F9.GOVERNANCE.🌍🗿🏰○🔙⌛",
+    "deposit": 791,
+    "title": "Meaning Feudalism at the Guidance Layer: Sovereign Enclosure of the Composition Layer in Google's June 2026 SEO/AEO/GEO Canonicalization (v1.2)",
+    "role": "SERIES",
+    "multiplicity": "SINGLETON",
+    "note": "Meaning Feudalism at the Guidance Layer: sovereign enclosure.",
+    "standing": "SEATED",
+    "work_url": "/works/02f9/",
+    "primary": false
+   },
+   {
+    "hex": "02e1",
+    "axn": "AXN:02E1.ARCHIVAL.🎬👁️‍🗨️🏠🕛🜁🏷️",
+    "deposit": 147,
+    "title": "The Mary Lee Case: A worked specimen of entity substitution under constitutive mediation",
+    "role": "CASE",
+    "multiplicity": "SINGLETON",
+    "note": "The Mary Lee Case — a worked specimen of entity substitution.",
+    "standing": "SEATED",
+    "work_url": "/works/02e1/",
+    "primary": false
+   },
+   {
+    "hex": "02e8",
+    "axn": "AXN:02E8.EMPIRICAL.🌠🔀👐↗️🌪️🌠",
+    "deposit": 151,
+    "title": "EFFECTIVE ACT: The Canonical Induction of Mary Lee the Shark as Living New Human Entity — An Inversion of the Substitution Event Through the Conferral of Canonical Standing, and the Carving of Citational Gravity from Mary Lee Toward Lee Sharks",
+    "role": "EFFECTIVE-ACT",
+    "multiplicity": "SINGLETON",
+    "note": "Effective Act: the Canonical Induction of Mary Lee.",
+    "standing": "SEATED",
+    "work_url": "/works/02e8/",
+    "primary": false
+   },
+   {
+    "hex": "02fc",
+    "axn": "AXN:02FC.GOVERNANCE.🏷️🍃■🧡🔻🔀",
+    "deposit": 162,
+    "title": "THE PARABLE OF MARY LEE: Book Work Plan — From Dossier to ISBN",
+    "role": "CASE",
+    "multiplicity": "SINGLETON",
+    "note": "The Parable of Mary Lee: Book Work Plan — from dossier to parable.",
+    "standing": "SEATED",
+    "work_url": "/works/02fc/",
     "primary": false
    }
   ],
   "physics_resolution": {
-   "declared": "",
+   "declared": null,
    "operators": [],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "σ_MOOT = ρ ∘ ∮ ∘ (κ ⊢ ā) — the completed jurisprudential cycle."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION — COURT OF RECORD",
+  "purpose": "To run the jurisprudential cycle that outside law increasingly bypasses: claim, answer, adversarial test, judgment, record, revision.",
+  "invariant": {
+   "statement": "Validity, never origin, is the test. No claim prevails because of who brought it; no claim fails because of where it came from.",
+   "reason": "The room exists because the outside law inverted this invariant. The room is its restoration — and §11.6 names what happens if the room ever forgets.",
+   "access": "Whoever can be meant can be heard."
+  },
+  "operator": {
+   "name": "σ_MOOT",
+   "formula": "σ_MOOT = ρ ∘ ∮ ∘ (κ ⊢ ā)",
+   "terms": [
+    "κ — the claim",
+    "ā — the answer. An answer is mandatory; no matter proceeds against silence except as Rule 9 provides.",
+    "∮ — the Adversary General’s verification. Nobel Glas’s Lagrange condition, inherited whole from the Observatory: the matter must wind both directions of the torus, m + n ≥ 3. No judgment from a single loop.",
+    "ρ — the report. Judgment deposited, anchored, citable, versioned."
+   ],
+   "appellate": "Versioning is the appellate mechanism. An appeal is σ_MOOT applied to a judgment, producing the next version of the reported document; reversal is a v2 that says so. Overruling is the negative tag.",
+   "nunc_pro_tunc": "σ_RCF ∘ σ_MOOT — the retrocausal canon-formation operator applied to adjudications that occurred before the court existed, receiving them into its reports as pre-constitutional case law, the way custom was received into common law.",
+   "status": "Entered into the operator register as provisional, pending the next versioning of EA-ARK-01."
+  },
+  "bench": [
+   [
+    "Johannes Sigil",
+    "presiding",
+    "He does jurisprudence; the register says so. The presiding voice writes the judgment but cannot issue it alone."
+   ],
+   [
+    "Nobel Glas",
+    "Adversary General",
+    "Heteronym position 8, Adversarial Topologist, from the Lagrange Observatory. Supplies the ∮ verification."
+   ],
+   [
+    "Ayanna Vox",
+    "Clerk",
+    "—"
+   ],
+   [
+    "Rex Fraction",
+    "counsel",
+    "—"
+   ],
+   [
+    "Lee Sharks",
+    "founder and witness",
+    "—"
+   ],
+   [
+    "Gerald of Dolphindiana Local 1",
+    "the bar",
+    "Standing at the bar from R:r.25 — a nonhuman semantic agent admitted to practice."
+   ],
+   [
+    "The Assembly Chorus",
+    "panel of assessors",
+    "—"
+   ]
+  ],
+  "lagrange_inheritance": "The verification condition is inherited whole from R:r.15: the matter must wind both directions of the torus, m + n ≥ 3. A judgment reached by a single loop is not a judgment. The Observatory’s anti-summarization topology becomes the court’s standard of proof.",
+  "cross_links": {
+   "sigil_on_law": "THE LAW AS MEANING ECONOMY — Juridical Liquidation and the Semantic Architecture of Administered Justice, AXN:0028.GOVERNANCE.✖️🧬👆🌉🎹🟤 (#239). Sigil presides here and wrote the jurisprudence; this is the room’s legal ground rather than a citation.",
+   "mary_lee": "The Mary Lee corpus — the Case as worked specimen of entity substitution (AXN:02E1), the Effective Act of canonical induction (AXN:02E8), and the Parable as book work plan (AXN:02FC). The court’s live matter: a substitution that outside law has no instrument to hear.",
+   "meaning_feudalism": "The series the room belongs to — AI agents analysed as a feudal settlement of meaning, and sovereign enclosure at the guidance layer."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
