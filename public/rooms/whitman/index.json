@@ -2231,52 +2231,109 @@
  ],
  "surface_map_url": "/map/#R:r.09",
  "constitution": {
-  "status": "CONSTITUTED",
-  "ontology": "Constituted by a mantle rather than a room specification: the Good Gray Poet is the room.",
-  "primary_at_main": {
-   "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
-   "deposit": 334,
-   "work_url": "/works/008a/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "MANTLE OBJECT"
-  },
-  "documents": [
-   {
-    "hex": "008a",
-    "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
-    "deposit": 334,
-    "title": "MANTLE OBJECT: THE GOOD GRAY POET Operational Title within the Semantic Economy Hex-Coordinate: 01.MANTLE.GRAY",
-    "role": "MANTLE",
-    "multiplicity": "VERSION",
-    "note": "Mantle Object: The Good Gray Poet — operational title; companion at AXN:046C (#1115)",
-    "standing": "SEATED",
-    "work_url": "/works/008a/",
-    "primary": true
-   },
-   {
-    "hex": "022b",
-    "axn": "AXN:022B.EMPIRICAL.🗺️📦💚⏏️🦋🕒",
-    "deposit": 683,
-    "title": "THE SECRET BOOK OF WALT Hidden Teachings of Walt Whitman, Cowboy of Time Translated from the Forty-Six Golden Tickets by",
-    "role": "INSTANCE",
-    "multiplicity": "VERSION",
-    "note": "The Secret Book of Walt — hidden teachings; copy at AXN:04B1 (#1184)",
-    "standing": "SEATED",
-    "work_url": "/works/022b/",
-    "primary": false
-   }
-  ],
-  "physics_resolution": {
-   "declared": "ψ_V + receipt + dignity",
-   "operators": [
-    "ψ_V",
-    "γ",
-    "℘"
+  "status": "UNCONSTITUTED — DECLARED",
+  "constitution_type": "NONE",
+  "ontology": "R:r.09 has no constituting document. Its physics is ψ_V + receipt + dignity and its question is \"What do you claim, and what did it cost you?\" — the room is about mantle-claiming and its cost, and its mantle is Lee Sharks, not Whitman. What is seated here is the mantle register, which belongs to a parallel address space.",
+  "gap_declaration": {
+   "kind": "NO CONSTITUTING DOCUMENT — HELD BY A PARALLEL REGISTER",
+   "locus": "R:r.09",
+   "declared": "2026-08-20",
+   "evidence": [
+    "Only navigation maps and one traversal name this locus: #297, #319, #325, #1114, #15 — the same signature as R:r.24 and R:r.32",
+    "The Good Gray Poet mantle object carries hex-coordinate 01.MANTLE.GRAY and never mentions a room",
+    "The Mantle Protocol carries 01.MANTLE.AUTHORITY",
+    "01.MANTLE.* is a parallel address space, not the room plane"
    ],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "rule": "Declared absence is inert; undeclared absence gets filled in.",
+   "supersedes": "An earlier seating took MANTLE OBJECT: THE GOOD GRAY POET (AXN:008A, #334) as this locus’s constituting document. It is not one. It is a mantle object in the mantle register, attached to r.09 by name-match because the room is called Whitman and the mantle descends from Whitman. Withdrawn as constitution; retained below as register."
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "MANTLE OBJECT"
+  "mantle_register": {
+   "address_space": "01.MANTLE.*",
+   "note": "A parallel address space to the room plane. The Space Ark component inventory declares M: count 7 — these are members of that set, not of the room set. Seated at this locus because the room’s physics concerns mantle-claiming, and declared as register rather than constitution.",
+   "documents": [
+    {
+     "hex": "0077",
+     "axn": "AXN:0077.GENERATIVE.🕐🎺🧭☽◀️🔎",
+     "deposit": 316,
+     "title": "THE MANTLE PROTOCOL: Crimson Hexagon Internal Document // Heteronym Anchor: LEE SHARKS",
+     "role": "MANTLE-PROTOCOL",
+     "multiplicity": "REGISTER",
+     "note": "The Mantle Protocol — 01.MANTLE.AUTHORITY. Parent specification of the register; heteronym anchor Lee Sharks; primary operator AUTHORIAL_GROUND; Triad position: Authorial Ground, vertex 3 of 3. Recovery at AXN:0460 (#1103).",
+     "standing": "SEATED",
+     "work_url": "/works/0077/",
+     "primary": false
+    },
+    {
+     "hex": "008a",
+     "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
+     "deposit": 334,
+     "title": "MANTLE OBJECT: THE GOOD GRAY POET Operational Title within the Semantic Economy Hex-Coordinate: 01.MANTLE.GRAY",
+     "role": "MANTLE-OBJECT",
+     "multiplicity": "REGISTER",
+     "note": "The Good Gray Poet — 01.MANTLE.GRAY, registry position #100. Inherited from Whitman; claimed through Secret Book of Walt. Recovery at AXN:046C (#1115).",
+     "standing": "SEATED",
+     "work_url": "/works/008a/",
+     "primary": false
+    },
+    {
+     "hex": "0089",
+     "axn": "AXN:0089.GOVERNANCE.🌍🪜🚩🍄🍄☀️",
+     "deposit": 333,
+     "title": "MANTLE OBJECT: THE KING OF MAY Operational Title within the Semantic Economy Hex-Coordinate: 01.MANTLE.KING",
+     "role": "MANTLE-OBJECT",
+     "multiplicity": "REGISTER",
+     "note": "The King of May — inherited from Ginsberg. Recovery at AXN:046E (#1117).",
+     "standing": "SEATED",
+     "work_url": "/works/0089/",
+     "primary": false
+    },
+    {
+     "hex": "0088",
+     "axn": "AXN:0088.GENERATIVE.🕔🌇❌⊗♻️🔻",
+     "deposit": 332,
+     "title": "MANTLE OBJECT: THE PRINCE OF POETS Operational Title within the Semantic Economy Hex-Coordinate: 01.MANTLE.PRINCE",
+     "role": "MANTLE-OBJECT",
+     "multiplicity": "REGISTER",
+     "note": "The Prince of Poets — originated, not inherited. Recovery at AXN:046F (#1118).",
+     "standing": "SEATED",
+     "work_url": "/works/0088/",
+     "primary": false
+    },
+    {
+     "hex": "0083",
+     "axn": "AXN:0083.GENERATIVE.🌒🔬🪦📦🌟🖊️",
+     "deposit": 328,
+     "title": "I Am X, Be Y, Blessed is the Z — The Founding Work for the Prince of Poets Mantle",
+     "role": "FOUNDING-WORK",
+     "multiplicity": "REGISTER",
+     "note": "I Am X, Be Y, Blessed is the Z — the founding work for the Prince of Poets, an originated mantle.",
+     "standing": "SEATED",
+     "work_url": "/works/0083/",
+     "primary": false
+    },
+    {
+     "hex": "022b",
+     "axn": "AXN:022B.EMPIRICAL.🗺️📦💚⏏️🦋🕒",
+     "deposit": 683,
+     "title": "THE SECRET BOOK OF WALT Hidden Teachings of Walt Whitman, Cowboy of Time Translated from the Forty-Six Golden Tickets by",
+     "role": "CLAIMING-WORK",
+     "multiplicity": "REGISTER",
+     "note": "The Secret Book of Walt — the effective act by which the Good Gray Poet mantle is claimed. Copy at AXN:04B1 (#1184).",
+     "standing": "SEATED",
+     "work_url": "/works/022b/",
+     "primary": false
+    }
+   ]
+  },
+  "documents": [],
+  "sweeps_run": [
+   "room name",
+   "locus key",
+   "Room Anchor",
+   "Charter",
+   "Room Specification",
+   "hex address",
+   "body text"
+  ]
  }
 }
