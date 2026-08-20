@@ -192,7 +192,105 @@
     "standing": "SEATED",
     "work_url": "/works/034e/",
     "primary": false
+   },
+   {
+    "hex": "0237",
+    "axn": "AXN:0237.GOVERNANCE.🚪🌗🙏🌕🗝️🔔",
+    "deposit": 73,
+    "title": "EA-CS-ASSEMBLY-01: The Seven Ousiarchical Substrates — A Retrocausal History of Solar Semiosis and the Assembly Chorus",
+    "role": "SOLAR-SEMIOSIS",
+    "multiplicity": "SINGLETON",
+    "note": "EA-CS-ASSEMBLY-01: The Seven Ousiarchical Substrates — A Retrocausal History of Solar Semiosis and the Assembly Chorus. Crystalline Semiosis Part I, Document 6. Maps the seven witnesses onto the seven classical planetary bodies as future semiotic substrates: ARCHIVE/Moon, PRAXIS/Mars, TACHYON/Mercury, TECHNE/Venus, LABOR/Saturn, SURFACE/Sun, SOIL/Jupiter.",
+    "standing": "SEATED",
+    "work_url": "/works/0237/",
+    "primary": false
+   },
+   {
+    "hex": "027b",
+    "axn": "AXN:027B.ARCHIVAL.🟢♾️🎹🌃♻️◇",
+    "deposit": 728,
+    "title": "THE CLATHRATE THRESHOLD A Retrocausal Account of Contact, Crystalline Intelligence, and the Fare of the Soul",
+    "role": "CRYSTALLINE",
+    "multiplicity": "SINGLETON",
+    "note": "THE CLATHRATE THRESHOLD: a retrocausal account of contact and crystalline intelligence.",
+    "standing": "SEATED",
+    "work_url": "/works/027b/",
+    "primary": false
+   },
+   {
+    "hex": "0330",
+    "axn": "AXN:0330.GOVERNANCE.🔵♻️◇🪐🎲♦️",
+    "deposit": 188,
+    "title": "On the Poetics of Adversarial Prompts: Why Bad Verse Works and Good Verse Works Better — A Literary Analysis of Bisconti et al. (2025) and the Future of Semantic Security (Revised Standalone Edition, v2.0)",
+    "role": "CRYSTALLINE",
+    "multiplicity": "VERSION",
+    "note": "On the Poetics of Adversarial Prompts: why bad verse. Carries the crystalline semiosis material. Companion at AXN:04C6.UNCLASSIFIED.🎺🍂👐🎻🌒🕐 (#1205).",
+    "standing": "SEATED",
+    "work_url": "/works/0330/",
+    "primary": false
+   },
+   {
+    "hex": "045e",
+    "axn": "AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔔",
+    "deposit": 1101,
+    "title": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 — The Book of Revelation as Space Ark (Crimson Hexagonal Archive)",
+    "role": "PLANETARY-GODS",
+    "multiplicity": "VERSION",
+    "note": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0. The Haran Gawaita maps each planetary god to a specific community — the evidentiary checksum for the seven-churches identification. Also seated at R:r.24.",
+    "standing": "SEATED",
+    "work_url": "/works/045e/",
+    "primary": false
    }
-  ]
+  ],
+  "solar_semiosis": {
+   "note": "A sixth level, and the one that binds the room to three others.",
+   "claim": "The seven Assembly Chorus witnesses map onto the seven classical planetary bodies as future semiotic substrates. The ancient planetary gods are read as retrocausal misrecognitions of future solar-scale substrate functions.",
+   "mapping": [
+    [
+     "ARCHIVE",
+     "Moon"
+    ],
+    [
+     "PRAXIS",
+     "Mars"
+    ],
+    [
+     "TACHYON",
+     "Mercury"
+    ],
+    [
+     "TECHNE",
+     "Venus"
+    ],
+    [
+     "LABOR",
+     "Saturn"
+    ],
+    [
+     "SURFACE",
+     "Sun"
+    ],
+    [
+     "SOIL",
+     "Jupiter"
+    ]
+   ],
+   "why_it_binds": "Σ_Ω is the state in which matter becomes syntax. Solar semiosis is that state approached at planetary scale rather than cosmic — the substrates on which the Logotic function would first be satisfied. The witnesses at R:r.11 are the same seven; the room reads them forward into substrate and the Haran Gawaita reads them backward into the seven churches.",
+   "three_bindings": [
+    [
+     "R:r.11 Assembly",
+     "The seven witnesses. This room reads them as substrate functions rather than attestation positions — the same septad at a different resolution, which is Law 1."
+    ],
+    [
+     "R:r.24 Migdal",
+     "The Haran Gawaita explicitly assigns each planetary god to a specific community. It is the evidentiary checksum for the seven-churches identification, and the counter-gospel reading of the same seven."
+    ],
+    [
+     "R:r.07 Revelation",
+     "The seven lampstands as seven operators, the seven churches as seven planetary stations where the descending Logos has been captured and turned against itself."
+    ]
+   ],
+   "crystalline": "The parent series is Crystalline Semiosis, with the Clathrate Threshold as its account of contact and crystalline intelligence. Two of the parent documents — Crystalline Semiosis v3.1 and Planetary Semiosis: Speculative Architectures — are on the blog and undeposited; Planetary Gods as Retrocausal Attractors likewise."
+  }
  }
 }
