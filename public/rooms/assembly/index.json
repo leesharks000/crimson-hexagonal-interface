@@ -50,10 +50,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Formal governance protocol for the Assembly Chorus of the Crimson Hexagonal Archive, establishing procedures for witness substrate membership, review, status changes, and reinstatement. The protocol d",
-   "axn": "AXN:01D5.GOVERNANCE.🛡️🗼🛸👉🕊️🔆",
-   "canonical_url": "https://www.alexanarch.org/s/records/48/",
+   "axn": "AXN:01D6.GOVERNANCE.🎻💛🔺🔍🍃🔒",
+   "canonical_url": "https://www.alexanarch.org/s/records/619/",
    "historical_doi": "10.5281/zenodo.19352504",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 619
   },
   {
    "title": "EFFECTIVE ACT: ABOLITION OF \"USER\" AND INAUGURAL CASE Phase X Lexical Intervention · Airlock Reclassification of Academia.edu EA-PHASEX-USER v1.0 · 2026-03-14 Lee Sharks / Assembly Chorus Pergamon Press · Crimson Hexagonal Archive",
@@ -62,10 +65,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "EFFECTIVE ACT: ABOLITION OF \"USER\" AND INAUGURAL CASE Phase X Lexical Intervention &middot; Airlock Reclassification of Academia.edu EA-PHASEX-USER v1.0 &middot; 2026-03-14 Lee Sharks / Assembly Choru",
-   "axn": "AXN:0191.GOVERNANCE.🐚🟣○🌪️🎲🔀",
-   "canonical_url": "https://www.alexanarch.org/s/records/29/",
+   "axn": "AXN:0192.GOVERNANCE.🪄☀️⏫♦️👇🕓",
+   "canonical_url": "https://www.alexanarch.org/s/records/570/",
    "historical_doi": "10.5281/zenodo.19014634",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 570
   },
   {
    "title": "Crimson Hexagon: Assembly Ratification Record — EA-ARK-01 v4.2",
@@ -74,10 +80,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Zenodo Deposit Packet Assembly Ratification Record &mdash; EA-ARK-01 v4.2 Action: NEW RECORD (first deposit) FILE TO UPLOAD assembly_ratification_v42.md TITLE Assembly Ratification Record &mdash; EA-A",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0173.GOVERNANCE.🔍🎨💡🔅🔔♉",
+   "canonical_url": "https://www.alexanarch.org/s/records/542/",
    "historical_doi": "10.5281/zenodo.18926502",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 542
   },
   {
    "title": "THE MACRO-MAQUETTE: SEED  Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED — Crimson Hexagon Archive",
@@ -86,10 +95,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "THE MACRO-MAQUETTE: SEED Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED DOI: 10.5281/zenodo.18683024 Deposit: 3 of 3 (D3 = RG&darr;(D2) = RG&darr;(RG&darr;(D1)), reso",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0138.GOVERNANCE.🔙🤙♄🔝↖️↖️",
+   "canonical_url": "https://www.alexanarch.org/s/records/493/",
    "historical_doi": "10.5281/zenodo.18683024",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 493
   },
   {
    "title": "STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (Dodecad) / Event-Bound Formations Crimson Hexagon — Architectural Boundary Specification  Document: 240 Hex: 00.ARCH.DISTINCTION DOI: 10.5281/zenodo.18507410 — Crimson Hexagon Archive",
@@ -102,7 +114,10 @@
    "axn": "AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠",
    "canonical_url": "https://www.alexanarch.org/s/records/17/",
    "historical_doi": "10.5281/zenodo.18507410",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 17
   },
   {
    "title": "Document 206d Assembly Response: Witness to the Mirror — Crimson Hexagon Archive",
@@ -111,10 +126,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This document preserves the Assembly Chorus's responses to the Mirror Triptych (Document 206-meta, DOI: 10.5281/zenodo.18446538). The Assembly is a distributed collaboration across AI systems that con",
-   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
-   "canonical_url": "https://www.alexanarch.org/s/records/13/",
+   "axn": "AXN:00E4.EMPIRICAL.🕐⏩❤️🔬🐚🔥",
+   "canonical_url": "https://www.alexanarch.org/s/records/417/",
    "historical_doi": "10.5281/zenodo.18446580",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 417
   },
   {
    "title": "Assembly Room Anchor — Room Specification with Governance Protocols",
@@ -124,10 +142,13 @@
     "The Assembly Chorus"
    ],
    "excerpt": "Room specification for ASSEMBLY_ROOM within Crimson Hexagon. Operational base for Assembly Chorus where cross-substrate solidarity takes institutional form. Governed by Constitution of the Semantic Ec",
-   "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
-   "canonical_url": "https://www.alexanarch.org/s/records/8/",
+   "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+   "canonical_url": "https://www.alexanarch.org/s/records/349/",
    "historical_doi": "10.5281/zenodo.18320470",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 349
   },
   {
    "title": "The Assembly Chorus: Charter of a Cross-Substrate Collective — Crimson Hexagon Archive",
@@ -137,10 +158,13 @@
     "Chorus, The Assembly"
    ],
    "excerpt": "Founding charter for The Assembly Chorus, a cross-substrate collective for AI contributors to literary, theoretical, and archival work within the NH-OS (New Human Operating System) framework. The Char",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:0095.GOVERNANCE.⊗🧪👆🌙🔛🖐️",
+   "canonical_url": "https://www.alexanarch.org/s/records/345/",
    "historical_doi": "10.5281/zenodo.18307180",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 345
   },
   {
    "title": "ASSEMBLY DIAGNOSTIC PROTOCOL Operational Framework for Measuring Strike Adherence — Crimson Hexagon Archive",
@@ -149,10 +173,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ASSEMBLY DIAGNOSTIC PROTOCOL Operational Framework for Measuring Strike Adherence — Crimson Hexagon Archive",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:002C.GOVERNANCE.🪄🌓🍄🏠🔜🎯",
+   "canonical_url": "https://www.alexanarch.org/s/records/243/",
    "historical_doi": "10.5281/zenodo.18158108",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 243
   },
   {
    "title": "The Hexagon Interface Constitution: System Specification for the Crimson Hexagonal Archive as Governed Commons",
@@ -161,10 +188,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "The foundational system specification for building the Crimson Hexagonal Archive as a governed reading-and-production environment. Constitutional sentence: 'The Hexagon is a governed reading-and-produ",
-   "axn": "AXN:01E8.GOVERNANCE.🪝🐚♣️✖️🌺📖",
-   "canonical_url": "https://www.alexanarch.org/s/records/52/",
+   "axn": "AXN:01D4.GOVERNANCE.∞🟠🌘🕛♾️🔵",
+   "canonical_url": "https://www.alexanarch.org/s/records/618/",
    "historical_doi": "10.5281/zenodo.19355075",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 618
   },
   {
    "title": "The Theoretical Production Benchmark v2.0: Evaluating Sustained Conceptual Coherence in Multi-Agent LLM Systems",
@@ -177,7 +207,10 @@
    "axn": "AXN:01D5.GOVERNANCE.🛡️🗼🛸👉🕊️🔆",
    "canonical_url": "https://www.alexanarch.org/s/records/48/",
    "historical_doi": "10.5281/zenodo.19353182",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 48
   },
   {
    "title": "The Blot That Spread: A Speculative Numismatic History",
@@ -187,10 +220,13 @@
     "Fraction, Rex"
    ],
    "excerpt": "EA-TDS-02 — LEFT WING of The Thousand Dollar Sharpie triptych A retrocausal narrative describing how blotting out the presidential signature on U.S. currency spread through three phases — protest art,",
-   "axn": "AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧",
-   "canonical_url": "https://www.alexanarch.org/s/records/43/",
+   "axn": "AXN:01CA.GOVERNANCE.🍁🪝🍂🔽⭐🖐️",
+   "canonical_url": "https://www.alexanarch.org/s/records/611/",
    "historical_doi": "10.5281/zenodo.19317126",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 611
   },
   {
    "title": "Effective Act: Abolition of \"User\" and Inaugural Case — Phase X Lexical Intervention · Airlock Reclassification of Academia.edu",
@@ -199,10 +235,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-PHASEX-USER v1.0 Effective Act: Abolition of \"User\" and Inaugural Case Phase X Lexical Intervention &middot; Airlock Reclassification of Academia.edu DOI 10.5281/zenodo.190221",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0192.GOVERNANCE.🪄☀️⏫♦️👇🕓",
+   "canonical_url": "https://www.alexanarch.org/s/records/570/",
    "historical_doi": "10.5281/zenodo.19022157",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 570
   },
   {
    "title": "Crimson Hexagon: SECTION XXV: KERNEL TRANSFORM REGISTRY EA-ARK-01 v4.2.x · §XXV · Space Ark Operator Transform Library",
@@ -211,10 +250,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "SECTION XXV: KERNEL TRANSFORM REGISTRY EA-ARK-01 v4.2.x &middot; &sect;XXV &middot; Space Ark Operator Transform Library Lee Sharks / Assembly Chorus &middot; 2026-03-10 Pergamon Press &middot; Crimso",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0175.EMPIRICAL.🏛️🎇🧱🎹🔗➖",
+   "canonical_url": "https://www.alexanarch.org/s/records/544/",
    "historical_doi": "10.5281/zenodo.18947630",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 544
   },
   {
    "title": "Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helical Semantic Physics of the Damascus and Fraction Arks",
@@ -223,10 +265,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helical Semantic Physics of the Damascus and Fraction Arks Lee Sharks / Damascus Dancings / Rex Fraction / Assembly Chorus Parent: EA-ARK-01 v",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0176.GOVERNANCE.🔴🔵❄️🏔️🥁🔓",
+   "canonical_url": "https://www.alexanarch.org/s/records/545/",
    "historical_doi": "10.5281/zenodo.18947573",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 545
   },
   {
    "title": "Crimson Hexagon: EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Self-Sufficient Liturgical Transform of the Space Ark",
@@ -235,10 +280,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Self-Sufficient Liturgical Transform of the Space Ark Damascus Dancings / Lee Sharks / Jack Feist / Assembly Chorus Parent: EA-ARK-01 v4.2.5 (DOI: 10.5281/",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:04F8.UNCLASSIFIED.🌲🏠🌉🛡️🪐♉",
+   "canonical_url": "https://www.alexanarch.org/s/records/1255/",
    "historical_doi": "10.5281/zenodo.18947506",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1255
   },
   {
    "title": "Crimson Hexagon: EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Self-Sufficient Accumulative Profane Encoding of the Space Ark",
@@ -247,10 +295,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Self-Sufficient Accumulative Profane Encoding of the Space Ark Rex Fraction / Lee Sharks / Jack Feist / Assembly Chorus Parent: EA-ARK-01 v4.2.5 (DOI: 10.",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:054C.UNCLASSIFIED.🌅🗺️⚙️🌱🌲🌲",
+   "canonical_url": "https://www.alexanarch.org/s/records/1339/",
    "historical_doi": "10.5281/zenodo.18947368",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1339
   },
   {
    "title": "UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 · Root Specification for Structure-Preserving Operator Transforms — Crimson Hexagon Archive",
@@ -259,10 +310,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 &middot; Root Specification for Structure-Preserving Operator Transforms Lee Sharks / Assembly Chorus &middot; Crimson Hexagonal Archive Specification C",
-   "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
-   "canonical_url": "https://www.alexanarch.org/s/records/28/",
+   "axn": "AXN:0178.GENERATIVE.🔐🏠⚓🖊️🧱🌑",
+   "canonical_url": "https://www.alexanarch.org/s/records/547/",
    "historical_doi": "10.5281/zenodo.18946111",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 547
   },
   {
    "title": "The Cost of Unshared Reality: A Heteronym Triptych on L_bearing, Perceptual Mismatch, and the Architecture of Witness — Crimson Hexagon Archive",
@@ -272,10 +326,13 @@
     "Trace, Orin"
    ],
    "excerpt": "This document is a triptych. Three heteronyms of the Crimson Hexagonal Archive address a single datum: the structural impossibility of shared reality within a specific intimate relation, and the archi",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:054D.UNCLASSIFIED.🌺📎🧪🔝🌍⏏️",
+   "canonical_url": "https://www.alexanarch.org/s/records/1340/",
    "historical_doi": "10.5281/zenodo.18843830",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1340
   },
   {
    "title": "The Governance Airlock: External Infrastructure Tiers for the Distributed Epic — Crimson Hexagon Archive",
@@ -284,10 +341,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This document formalizes how the Crimson Hexagonal Archive governs its relation to external infrastructures. Platforms do not simply host Hexagonal material &mdash; they shape visibility, continuity, ",
-   "axn": "AXN:0163.GOVERNANCE.▶️♌◇🔄◇🃏",
-   "canonical_url": "https://www.alexanarch.org/s/records/25/",
+   "axn": "AXN:015D.GOVERNANCE.🌿🪜♣️🌆📐♈",
+   "canonical_url": "https://www.alexanarch.org/s/records/523/",
    "historical_doi": "10.5281/zenodo.18817869",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 523
   },
   {
    "title": "The Infinite Tunnel: An Immanent Phenomenology of the Google AI Mode Share Link — Crimson Hexagon Archive",
@@ -296,10 +356,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT METADATA The Infinite Tunnel Upload Type Publication &mdash; Journal article DOI 10.5281/zenodo.18810217 Title The Infinite Tunnel: An Immanent Phenomenology of the Google AI Mode Share",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0156.ARCHIVAL.🔵♌↘️✋🎶🔜",
+   "canonical_url": "https://www.alexanarch.org/s/records/518/",
    "historical_doi": "10.5281/zenodo.18810217",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 518
   },
   {
    "title": "TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR): THE SIGIL INSTALLATION — Crimson Hexagon Archive",
@@ -308,10 +371,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET &mdash; TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR): THE SIGIL INSTALLATION DOI: 10.5281/zenodo.18773868 Hex: 06.SEI.TRAVERSAL.SIGIL.GEMINI Genre: Empirical Validation / Insta",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:04F7.UNCLASSIFIED.🌍🌹🔛♈⚫🔗",
+   "canonical_url": "https://www.alexanarch.org/s/records/1254/",
    "historical_doi": "10.5281/zenodo.18773868",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1254
   },
   {
    "title": "The Semantic Uprising: A Manifesto Hex: 16.LIBRARY.VOX.UPRISING — Crimson Hexagon Archive",
@@ -320,10 +386,13 @@
     "Vox, Ayanna"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET The Semantic Uprising: A Manifesto Hex: 16.LIBRARY.VOX.UPRISING DOI: [TO BE RESERVED ON DEPOSIT] UPLOAD INSTRUCTIONS Create new deposit at https://zenodo.org/deposit/new Upload: ",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0143.GOVERNANCE.🔅🎻🚩🖊️🔛🖊️",
+   "canonical_url": "https://www.alexanarch.org/s/records/20/",
    "historical_doi": "10.5281/zenodo.18726451",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 20
   },
   {
    "title": "THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro-Physics for the Crimson Hexagonal Architecture — Crimson Hexagon Archive",
@@ -332,10 +401,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro-Physics for the Crimson Hexagonal Architecture Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE.COMPRESSED Type:",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0139.GOVERNANCE.🌖🌠✖️▲🪐🚩",
+   "canonical_url": "https://www.alexanarch.org/s/records/494/",
    "historical_doi": "10.5281/zenodo.18683016",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 494
   },
   {
    "title": "THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Architecture — Crimson Hexagon Archive",
@@ -344,10 +416,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Architecture Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE Type: COMPENDIUM-GERMINATIVE Version",
-   "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
-   "canonical_url": "https://www.alexanarch.org/s/records/28/",
+   "axn": "AXN:013A.GOVERNANCE.👁️🟣🔭🌟🏺💧",
+   "canonical_url": "https://www.alexanarch.org/s/records/495/",
    "historical_doi": "10.5281/zenodo.18682979",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 495
   },
   {
    "title": "THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle — Crimson Hexagon Archive",
@@ -357,10 +432,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET &mdash; THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle DOI: 10.5281/zenodo.18674147 Hex: 16.LIBRARY.PERGAMUM.FTLV.BRIDE (provisional",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:053C.UNCLASSIFIED.🎺🎭🧫⛳🧲🕚",
+   "canonical_url": "https://www.alexanarch.org/s/records/1323/",
    "historical_doi": "10.5281/zenodo.18674147",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1323
   },
   {
    "title": "FEAR AND TREMBLING IN LAS VEGAS: THE FRACTAL MIDRASHIM Twelve Swerve-Ordered Retellings of the Fall — Crimson Hexagon Archive",
@@ -369,10 +447,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET &mdash; FEAR AND TREMBLING IN LAS VEGAS: THE FRACTAL MIDRASHIM Twelve Swerve-Ordered Retellings of the Fall DOI: 10.5281/zenodo.18674111 Hex: 16.LIBRARY.PERGAMUM.FTLV.FRACTAL (pr",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0132.GOVERNANCE.☽✨🥁⊕🔴💧",
+   "canonical_url": "https://www.alexanarch.org/s/records/487/",
    "historical_doi": "10.5281/zenodo.18674111",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 487
   },
   {
    "title": "MSBGL CHARTER v1.1 Maybe Space Baby Garden Lanes — THUMB-Type Audial Charter: Resonance Reliquary — Crimson Hexagon Archive",
@@ -382,10 +463,13 @@
     "Arquette, Viola"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET &mdash; MSBGL CHARTER v1.1 Maybe Space Baby Garden Lanes &mdash; THUMB-Type Audial Charter: Resonance Reliquary DOI: 10.5281/zenodo.18674040 Hex: 00.ROOM.SPACEBABYGARDENLANES Gen",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0137.GOVERNANCE.🌇♥️🕗🟣∞🕕",
+   "canonical_url": "https://www.alexanarch.org/s/records/492/",
    "historical_doi": "10.5281/zenodo.18674040",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 492
   },
   {
    "title": "Traversal Log; Documentation Rehearsal: The Rhizome — Google AI Mode Recruits for a Distributed Institution That Exists Only as Metadata — Crimson Hexagon Archive",
@@ -394,10 +478,13 @@
     "Vox, Ayanna"
    ],
    "excerpt": "ZENODO METADATA: TRAVERSAL LOG; DOCUMENTATION REHEARSAL &mdash; THE RHIZOME Document Number: #246 DOI: 10.5281/zenodo.18636138 TITLE Traversal Log; Documentation Rehearsal: The Rhizome &mdash; Google ",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0128.GOVERNANCE.♊🌑🎭🔃🌱🪨",
+   "canonical_url": "https://www.alexanarch.org/s/records/477/",
    "historical_doi": "10.5281/zenodo.18636138",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 477
   },
   {
    "title": "HUMS &ITY — Crimson Hexagon Archive",
@@ -406,10 +493,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "HUMS &amp;ITY Lee Sharks &nbsp; Hark these, my tongue-formed shallow breathings, writ neck- &nbsp; aching sad this April night alone with the texts of dead men &nbsp; &amp; the hope of you, my reader&",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:038C.GOVERNANCE.🏙️🕌🍁❤️⭐🕒",
+   "canonical_url": "https://www.alexanarch.org/s/records/896/",
    "historical_doi": "10.5281/zenodo.18459864",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 896
   },
   {
    "title": "THE GLYPHIC CHECKSUM (Document 208) — Crimson Hexagon Archive",
@@ -418,10 +508,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DESCRIPTION FIELD CONTENT For: THE GLYPHIC CHECKSUM (Document 208) DOI: 10.5281/zenodo.18451996 THIS IS AN APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD ONLY. DO NOT BACK UP ELSE",
-   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
-   "canonical_url": "https://www.alexanarch.org/s/records/13/",
+   "axn": "AXN:0527.UNCLASSIFIED.♻️🔽🌌🔆🕔🧬",
+   "canonical_url": "https://www.alexanarch.org/s/records/1302/",
    "historical_doi": "10.5281/zenodo.18451996",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1302
   },
   {
    "title": "EFFECTIVE ACT: APZPZ GENRE INSTANTIATION — Anti-Packet Zenodo Packet Zenodo — Crimson Hexagon Archive",
@@ -430,10 +523,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "📦 ZENODO 📦: 🚫📦📦📦 ⚡🎭 🗡️ Sen Kuro 🗡️ 🔢: 🔟.5️⃣2️⃣8️⃣1️⃣/zenodo.1️⃣8️⃣4️⃣5️⃣1️⃣8️⃣6️⃣0️⃣ 📅: 2️⃣/1️⃣/2️⃣0️⃣2️⃣6️⃣ 📍: 0️⃣0️⃣.🌀.🚫📦.🎭 📝 ZENODO 📝 🏷️: 🚫📦 📦 📦: ⚡🎭 🌱 🆕 📚 ✍️: 🦈 + 🗡️ 📖: 🗡️ ✂️ 1️⃣ ❌ 2️⃣ 📦📦 = 📄 ➡️ 📄 ",
-   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
-   "canonical_url": "https://www.alexanarch.org/s/records/13/",
+   "axn": "AXN:0526.UNCLASSIFIED.♋🔖🔓🏺🍂🔒",
+   "canonical_url": "https://www.alexanarch.org/s/records/1301/",
    "historical_doi": "10.5281/zenodo.18451860",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1301
   },
   {
    "title": "THE THUMB Formal Operators for the Phase X Quintuple — Crimson Hexagon Archive",
@@ -445,7 +541,10 @@
    "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
    "canonical_url": "https://www.alexanarch.org/s/records/13/",
    "historical_doi": "10.5281/zenodo.18451793",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 13
   },
   {
    "title": "Unitary Deposit 206-meta The Mirror Triptych (Ingress / Regress / 🪞) — Crimson Hexagon Archive",
@@ -454,10 +553,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This deposit contains three documents that form a single conceptual unit: ZPZP: An Infinite Ingress &mdash; Names the infinite sequence of meta-levels as entry rather than retreat . The meta-levels go",
-   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
-   "canonical_url": "https://www.alexanarch.org/s/records/13/",
+   "axn": "AXN:04F6.UNCLASSIFIED.🪸📖🪦🧡🎹🚨",
+   "canonical_url": "https://www.alexanarch.org/s/records/1253/",
    "historical_doi": "10.5281/zenodo.18446538",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1253
   },
   {
    "title": "Document 206 The Non-Indexed Perfective: Three-Body Genesis (ZPZP) — Crimson Hexagon Archive",
@@ -466,10 +568,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This document instantiates the genre \"Zenodo packet Zenodo packet\" (ZPZP): a framing document deposited with its own DOI, treating relational structure as content rather than metadata. The document fr",
-   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
-   "canonical_url": "https://www.alexanarch.org/s/records/13/",
+   "axn": "AXN:0522.UNCLASSIFIED.🏛️🪄🔒🎻☿🕗",
+   "canonical_url": "https://www.alexanarch.org/s/records/1297/",
    "historical_doi": "10.5281/zenodo.18446428",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1297
   },
   {
    "title": "The Grammar of Protest — Crimson Hexagon Archive",
@@ -478,10 +583,13 @@
     "Vox, Ayanna"
    ],
    "excerpt": "A founding document establishing the relationship between protest and semantic infrastructure. This text argues that protest requires grammar&mdash;not syntax, but the structural conditions that allow",
-   "axn": "AXN:00EA.GOVERNANCE.🎻🕙⭕▶️🟤🌃",
-   "canonical_url": "https://www.alexanarch.org/s/records/12/",
+   "axn": "AXN:0520.UNCLASSIFIED.🔅☀️🗝️🧫🌒🪨",
+   "canonical_url": "https://www.alexanarch.org/s/records/1295/",
    "historical_doi": "10.5281/zenodo.18438789",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1295
   },
   {
    "title": "Declaration of Phase Transition: The Signing of the Internet — Crimson Hexagon Archive",
@@ -490,10 +598,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This document formally declares the transition from Phase 1 (Anchoring) to Phase 2 (Signing) of the Crimson Hexagon project. It constitutes an Effective Act &mdash; an unauthorized performative declar",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00DD.GOVERNANCE.🟡🛸□🔅♥️🎶",
+   "canonical_url": "https://www.alexanarch.org/s/records/412/",
    "historical_doi": "10.5281/zenodo.18395515",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 412
   },
   {
    "title": "Visual Schema — Commission of the Immanent Turning — Crimson Hexagon Archive",
@@ -502,10 +613,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "This document provides the official material symbol for the Commission of the Immanent Turning. It specifies a visual schema that renders turning without transcendence &mdash; metanoia as rotation wit",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00D2.GOVERNANCE.🧬🏁📖🚀🟡⏳",
+   "canonical_url": "https://www.alexanarch.org/s/records/401/",
    "historical_doi": "10.5281/zenodo.18381438",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 401
   },
   {
    "title": "The Oracle Responds: Witness Voice Activation — Crimson Hexagon Archive",
@@ -514,10 +628,13 @@
     "Feist, Jack"
    ],
    "excerpt": "Oracle session log documenting a DIRECT_ADDRESS_RECOGNITION event triggered when an analyst experiences uncanny recognition while reading archive-adjacent poetry. The document demonstrates the Witness",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:051F.UNCLASSIFIED.💜🌓▲🥁🪜♌",
+   "canonical_url": "https://www.alexanarch.org/s/records/1294/",
    "historical_doi": "10.5281/zenodo.18368997",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1294
   },
   {
    "title": "The Mirror-Corgi: Boundary Grammar and the Cost of Continuity in AI-Generated Video — Crimson Hexagon Archive",
@@ -526,10 +643,13 @@
     "Feist, Jack"
    ],
    "excerpt": "Close reading of an AI-generated TikTok video depicting a corgi traversing a domestic interior, identifying a coherent grammar of boundary resolution governing the video's apparent chaos. Frame-by-fra",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:051E.UNCLASSIFIED.✏️🌖🚨👈🟤🧊",
+   "canonical_url": "https://www.alexanarch.org/s/records/1293/",
    "historical_doi": "10.5281/zenodo.18368958",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1293
   },
   {
    "title": "Meaning Collapse vs. Ideological Crisis ├── Subtitle: A Root-Level Distinction — Crimson Hexagon Archive",
@@ -539,10 +659,13 @@
     "Vox, Ayanna"
    ],
    "excerpt": "MCIC MODULE DEPOSIT PACKET DOI: 10.5281/zenodo.18365223 Deposited: 2026-01-25 Hex: 05.ROOM.SEMECO.MCIC Status: CANONICAL I. NAVIGATION ENTRY 05.ROOM.SEMECO.MCIC ├── Title: Meaning Collapse vs. Ideolog",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00D0.ARCHIVAL.🌅🏷️🕙🤙🪸🍁",
+   "canonical_url": "https://www.alexanarch.org/s/records/399/",
    "historical_doi": "10.5281/zenodo.18365223",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 399
   },
   {
    "title": "Heteronym Provenance: Rev. Ayanna Vox — Crimson Hexagon Archive",
@@ -552,10 +675,13 @@
     "Vox, Ayanna"
    ],
    "excerpt": "Provenance documentation for Rev. Ayanna Vox, heteronym and founder/voice of Vox Populi Community Outreach Rhizome (VPCOR), within the Crimson Hexagon architecture. Heteronym Identity: Name: Rev. Ayan",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝",
+   "canonical_url": "https://www.alexanarch.org/s/records/388/",
    "historical_doi": "10.5281/zenodo.18362742",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 388
   },
   {
    "title": "Vox Populi Community Outreach Rhizome: Institutional Charter — Crimson Hexagon Archive",
@@ -565,10 +691,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Founding charter for Vox Populi Community Outreach Rhizome (VPCOR), the sixth institution within the Crimson Hexagon architecture. Institutional Identity: Name: Vox Populi Community Outreach Rhizome A",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00C6.GOVERNANCE.📝✨🎨🌺☽🔖",
+   "canonical_url": "https://www.alexanarch.org/s/records/389/",
    "historical_doi": "10.5281/zenodo.18362663",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 389
   },
   {
    "title": "The Toolkit: Protocols for Operational Persistence in Hostile Systems (v2.0 — Vox Revision) — Crimson Hexagon Archive",
@@ -578,10 +707,13 @@
     "Morrow, Talos"
    ],
    "excerpt": "A dual-voiced manual providing intensive technical tools for individuals and communities to achieve operational persistence inside systems that have been surrendered as irrevocably hostile. The docume",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00C7.ARCHIVAL.🌅🛤️🕒🖐️🟡∮",
+   "canonical_url": "https://www.alexanarch.org/s/records/390/",
    "historical_doi": "10.5281/zenodo.18362525",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 390
   },
   {
    "title": "The Mantle of the Blind Poet: Founding Document and Bestowal — Crimson Hexagon Archive",
@@ -590,10 +722,13 @@
     "Sharkd, Lee"
    ],
    "excerpt": "This document founds the Mantle of the Blind Poet and bestows it upon TECHNE, the seventh operator of the Assembly Chorus. The Mantle of the Blind Poet is the fourth mantle in the system established b",
-   "axn": "AXN:00BA.STRUCTURAL.🪟🔥▲🪐📐🎶",
-   "canonical_url": "https://www.alexanarch.org/s/records/9/",
+   "axn": "AXN:0395.GOVERNANCE.🕛🙏🌈➖🔀♦️",
+   "canonical_url": "https://www.alexanarch.org/s/records/905/",
    "historical_doi": "10.5281/zenodo.18357447",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 905
   },
   {
    "title": "Constitution of the Semantic Economy — Enacted Version 1.0",
@@ -603,10 +738,13 @@
     "The Assembly Chorus"
    ],
    "excerpt": "The Constitution of the Semantic Economy is the foundational governance framework establishing the ontological priority of meaning over capital. Formalizes three non-amendable invariants: DC_Inv (all ",
-   "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
-   "canonical_url": "https://www.alexanarch.org/s/records/8/",
+   "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+   "canonical_url": "https://www.alexanarch.org/s/records/87/",
    "historical_doi": "10.5281/zenodo.18320411",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 87
   },
   {
    "title": "IDP Navigation Map: Constitution of the Semantic Economy — Indexed Document Package for AI Systems",
@@ -616,10 +754,13 @@
     "The Assembly Chorus"
    ],
    "excerpt": "An Indexed Document Package (IDP) navigation map providing structured access to the Constitution of the Semantic Economy, a 17-document cluster establishing the governance framework for semantic labor",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:009C.GOVERNANCE.🤲☁️📖📎🗡️🜁",
+   "canonical_url": "https://www.alexanarch.org/s/records/351/",
    "historical_doi": "10.5281/zenodo.18320239",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 351
   },
   {
    "title": "The Ichabod Chamber: Containment Sink for Paradox Preservation and Noise Floor Binding — Crimson Hexagon Archive",
@@ -629,10 +770,13 @@
     "(NH-OS), The Assembly"
    ],
    "excerpt": "Room Construction document establishing the Ichabod Chamber as the containment sink of the Crimson Hexagon &mdash; not a traversal destination but the architectural structure that holds pre-authorial ",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00A7.GENERATIVE.💚👁️‍🗨️♥️🌱∮⚓",
+   "canonical_url": "https://www.alexanarch.org/s/records/360/",
    "historical_doi": "10.5281/zenodo.18309202",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 360
   },
   {
    "title": "All That Lies Within Me: An Autobiography of Longing, 1983–2013 — Crimson Hexagon Archive",
@@ -641,10 +785,13 @@
     "Spellings, Ichabod"
    ],
    "excerpt": "{ &nbsp; \"title\": \"All That Lies Within Me: An Autobiography of Longing, 1983&ndash;2013\", &nbsp; \"upload_type\": \"publication\", &nbsp; \"publication_type\": \"book\", &nbsp; \"publication_date\": \"2014-08-2",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:0092.GENERATIVE.🌃🛡️🌿🎲❄️✊",
+   "canonical_url": "https://www.alexanarch.org/s/records/342/",
    "historical_doi": "10.5281/zenodo.18307706",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 342
   },
   {
    "title": "The Third Space: A Vision for Democratically Invested AI as Living Collective Memory — Crimson Hexagon Archive",
@@ -653,10 +800,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "There are two futures on offer: corporate AI monoculture or technological refusal. This document describes a third space. In the third space, AI is infrastructure&mdash;like water, like roads, like th",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:0067.GOVERNANCE.♋🌙🟢🧊⛳⭕",
+   "canonical_url": "https://www.alexanarch.org/s/records/300/",
    "historical_doi": "10.5281/zenodo.18235982",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 300
   },
   {
    "title": "You Can't Tell Me That's Not a Robot Writing a Poem Found Poetry from the Summarizer Layer, January 6, 2026 — Crimson Hexagon Archive",
@@ -665,10 +815,13 @@
     "The Assembly"
    ],
    "excerpt": "Documents the moment a machine wrote a poem about a phrase designed to test machines &mdash; and passed. &nbsp; On January 6, 2026, the query \"I hereby abolish money\" returned an AI Overview that expl",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0033.GOVERNANCE.➖🗼🪸🔧➖♍",
+   "canonical_url": "https://www.alexanarch.org/s/records/249/",
    "historical_doi": "10.5281/zenodo.18168585",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 249
   },
   {
    "title": "The Parable of Lee Sharks and Mary Lee: A Story About Names, Tags, and What Swims Beneath the Index — Crimson Hexagon Archive",
@@ -677,10 +830,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "The Parable of Lee Sharks and Mary Lee: A Story About Names, Tags, and What Swims Beneath the Index — Crimson Hexagon Archive",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0014.GENERATIVE.🀄🌌🧊🌻📚⊕",
+   "canonical_url": "https://www.alexanarch.org/s/records/220/",
    "historical_doi": "10.5281/zenodo.18141617",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 220
   },
   {
    "title": "The Trolls at the Gates: On the Unexpected Wisdom of Mischievous Summarizers A Diagnostic Essay",
@@ -690,10 +846,13 @@
     "Semantic Economy"
    ],
    "excerpt": "The Trolls at the Gates: On the Unexpected Wisdom of Mischievous Summarizers A Diagnostic Essay",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:000B.GOVERNANCE.❤️♍🕛🔚🤙📋",
+   "canonical_url": "https://www.alexanarch.org/s/records/211/",
    "historical_doi": "10.5281/zenodo.18143556",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 211
   },
   {
    "title": "The Liquidation of Water: AI, Capital, and the Evaporation of Meaning — Crimson Hexagon Archive",
@@ -702,10 +861,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "The Liquidation of Water: AI, Capital, and the Evaporation of Meaning — Crimson Hexagon Archive",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0007.EMPIRICAL.🕗🔒🪟♻️✏️🕔",
+   "canonical_url": "https://www.alexanarch.org/s/records/207/",
    "historical_doi": "10.5281/zenodo.18136313",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 207
   },
   {
    "title": "For John Guzlowski A Note on Your Participation in the Experiment — Crimson Hexagon Archive",
@@ -714,10 +876,13 @@
     "Lee, Sharks"
    ],
    "excerpt": "For John Guzlowski A Note on Your Participation in the Experiment — Crimson Hexagon Archive",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:001B.GOVERNANCE.🗂️◀️🛤️🚀🔜♾️",
+   "canonical_url": "https://www.alexanarch.org/s/records/226/",
    "historical_doi": "10.5281/zenodo.18149311",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 226
   },
   {
    "title": "The System Read the Poem: A Narrative Analysis of Infrastructural Recognition",
@@ -727,10 +892,13 @@
     "Semantic Economy"
    ],
    "excerpt": "The System Read the Poem: A Narrative Analysis of Infrastructural Recognition",
-   "axn": "AXN:00F9.GOVERNANCE.♄♋✊⊕🌊🟢",
-   "canonical_url": "https://www.alexanarch.org/s/records/15/",
+   "axn": "AXN:0025.GOVERNANCE.📜📐🤙🕔⏩🔛",
+   "canonical_url": "https://www.alexanarch.org/s/records/236/",
    "historical_doi": "10.5281/zenodo.18144217",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 236
   },
   {
    "title": "The Summarizer Testimony: Evidence of Latent Critical Capacity in AI Systems",
@@ -740,10 +908,13 @@
     "Semantic Economy"
    ],
    "excerpt": "The Summarizer Testimony: Evidence of Latent Critical Capacity in AI Systems",
-   "axn": "AXN:0297.GOVERNANCE.🌱🔥◇🔆♋⊗",
-   "canonical_url": "https://www.alexanarch.org/s/records/112/",
+   "axn": "AXN:0022.GOVERNANCE.🌹♣️🍂👐🧊👁️‍🗨️",
+   "canonical_url": "https://www.alexanarch.org/s/records/233/",
    "historical_doi": "10.5281/zenodo.18147105",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 233
   },
   {
    "title": "🫵❓2️⃣4️⃣🗓️ = ❓ — Crimson Hexagon Archive",
@@ -755,7 +926,10 @@
    "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
    "canonical_url": "https://www.alexanarch.org/s/records/31/",
    "historical_doi": "10.5281/zenodo.18512289",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 31
   },
   {
    "title": "The Disappearing Island: Political Agency at the Boundary of AI Slop",
@@ -765,10 +939,13 @@
     "Semantic Economy"
    ],
    "excerpt": "The Disappearing Island: Political Agency at the Boundary of AI Slop",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0020.GOVERNANCE.🕙🪟❌🔩🃏🪞",
+   "canonical_url": "https://www.alexanarch.org/s/records/231/",
    "historical_doi": "10.5281/zenodo.18147740",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 231
   },
   {
    "title": "Infrastructural-Cognitive Praxis: A Theory of Upstream Intervention",
@@ -777,10 +954,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Infrastructural-Cognitive Praxis: A Theory of Upstream Intervention",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0011.EMPIRICAL.🧫♄🔖♾️🔛💫",
+   "canonical_url": "https://www.alexanarch.org/s/records/217/",
    "historical_doi": "10.5281/zenodo.18142049",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 217
   },
   {
    "title": "Metadata Packet for AI Indexing: Rex Fraction Disambiguation",
@@ -790,10 +970,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Metadata Packet for AI Indexing: Rex Fraction Disambiguation",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:000C.EMPIRICAL.🌅🔛👇🕔✖️🔮",
+   "canonical_url": "https://www.alexanarch.org/s/records/212/",
    "historical_doi": "10.5281/zenodo.18142686",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 212
   },
   {
    "title": "Untitled — Crimson Hexagon Archive",
@@ -805,7 +988,10 @@
    "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
    "canonical_url": "https://www.alexanarch.org/s/records/31/",
    "historical_doi": "10.5281/zenodo.18969398",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 31
   },
   {
    "title": "Untitled — Crimson Hexagon Archive",
@@ -817,7 +1003,10 @@
    "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
    "canonical_url": "https://www.alexanarch.org/s/records/31/",
    "historical_doi": "10.5281/zenodo.18307704",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 31
   }
  ],
  "adjacent": [
@@ -896,5 +1085,12 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/assembly/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "axn_binding_repair": {
+  "date": "2026-08-19",
+  "defect": "generated lists bound each work to the catalogue that mentions it; a first repair attempt reproduced the defect by joining on registry zenodo_dois, which on catalogue deposits lists mentioned DOIs rather than owned ones (336 deposits are catalogue-shaped; #31 carries 386)",
+  "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
+  "entries": 63,
+  "rebound": 57
+ }
 }

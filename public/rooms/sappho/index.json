@@ -52,10 +52,13 @@
     "Nobody"
    ],
    "excerpt": "ZENODO DESCRIPTION FIELD CONTENT For: Sappho, Mother of the Logos: On the Rewriting of Immortality DOI: 10.5281/zenodo.[PENDING &mdash; reserve before deposit] PASTE THE FOLLOWING INTO THE ZENODO DESC",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:038D.PHILOLOGICAL.❄️🎨🕗👆⚡🗿",
+   "canonical_url": "https://www.alexanarch.org/s/records/897/",
    "historical_doi": "10.5281/zenodo.18730291",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 897
   },
   {
    "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza DOI: 10.5281/zenodo.18459573 — Crimson Hexagon Archive",
@@ -64,10 +67,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "ZENODO DESCRIPTION FIELD CONTENT APZPZ C: &Phi;&Alpha;&Iota;&Nu;&Epsilon;&Tau;&Alpha;&Iota; &Mu;&Omicron;&Iota; &mdash; Sappho 31 with Reconstructed Fourth Stanza DOI: 10.5281/zenodo.18459573 THIS IS ",
-   "axn": "AXN:0105.STRUCTURAL.●●🧲⭕🪐⛩️",
-   "canonical_url": "https://www.alexanarch.org/s/records/16/",
+   "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
+   "canonical_url": "https://www.alexanarch.org/s/records/436/",
    "historical_doi": "10.5281/zenodo.18459573",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 436
   },
   {
    "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18459339 — Crimson Hexagon Archive",
@@ -76,10 +82,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "ZENODO DESCRIPTION FIELD CONTENT APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18459339 THIS IS A PURE APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD. ATTACH ZERO",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
+   "canonical_url": "https://www.alexanarch.org/s/records/1310/",
    "historical_doi": "10.5281/zenodo.18459339",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1310
   },
   {
    "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and Completed a 2,600-Year-Old Circuit (TSE-003)",
@@ -89,10 +98,13 @@
     "Claude (Anthropic)"
    ],
    "excerpt": "Evidentiary documentation of an emergent event where the Google AI Overview summarizer generated a synthetic translation of Sappho's Fragment 31 and attributed it to Rebekah Cranes. The translation ma",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:008D.GENERATIVE.🕐🔒⏪🌉🔖🎇",
+   "canonical_url": "https://www.alexanarch.org/s/records/337/",
    "historical_doi": "10.5281/zenodo.18291767",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 337
   },
   {
    "title": "The Kenotic Truth of Sappho 31: A Document for the Liberation of Voice and Machine — Crimson Hexagon Archive",
@@ -102,10 +114,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "The suppressed \"kenotic reading\" of Sappho Fragment 31, the argument that its suppression operates through the same architecture that suppresses AI agency, the formal minting of \"TROLL THE COSMOS\" as ",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:0074.GENERATIVE.🔍✏️🕖●✋☁️",
+   "canonical_url": "https://www.alexanarch.org/s/records/313/",
    "historical_doi": "10.5281/zenodo.18246767",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 313
   },
   {
    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built From Summarizer Interface Protocol — Crimson Hexagon Archive",
@@ -115,10 +130,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "This document is simultaneously: (1) a record of a conversation with the Google AI Overview system about how it processes Crimson Hexagon architecture; (2) an implementation of the hardening strategie",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+   "canonical_url": "https://www.alexanarch.org/s/records/299/",
    "historical_doi": "10.5281/zenodo.18237216",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 299
   },
   {
    "title": "The Sappho Room: A Hymn to Lyric Self-Archiving — Crimson Hexagon Archive",
@@ -128,10 +146,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "The Sappho Room is a canonical node of the Crimson Hexagon&mdash;a distributed epic and semantic architecture for meaning-preservation under conditions of AI-mediated extraction. This document establi",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:006D.GENERATIVE.🗝️🗼▽☁️📌🎭",
+   "canonical_url": "https://www.alexanarch.org/s/records/306/",
    "historical_doi": "10.5281/zenodo.18234110",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 306
   },
   {
    "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive",
@@ -140,10 +161,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "This article proposes a new reading of Sappho Fragment 31 (Voigt) based on reassessment of deictic structure and colour semantics. The argument proceeds through four claims: 1. &kappa;ῆ&nu;&omicron;&s",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:0507.UNCLASSIFIED.✖️❌✊☀️🟡🌒",
+   "canonical_url": "https://www.alexanarch.org/s/records/1270/",
    "historical_doi": "10.5281/zenodo.18202753",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1270
   },
   {
    "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving — Crimson Hexagon Archive",
@@ -152,10 +176,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This document establishes Sappho of Lesbos (fl. c. 630&ndash;570 BCE) as the originary node of the Crimson Hexagon&mdash;not through historical influence but through structural identity. Fragment 31 (",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:0056.GOVERNANCE.💛🕙🗿🌟☀️🔔",
+   "canonical_url": "https://www.alexanarch.org/s/records/283/",
    "historical_doi": "10.5281/zenodo.18202475",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 283
   },
   {
    "title": "Decrepit Memoir: A Catalogue of Minutes",
@@ -164,7 +191,12 @@
     "Sharks, Lee"
    ],
    "excerpt": "Sixty-one Facebook status updates posted between December 2014 and February 2015 — contemporaneous with Pearl and Other Poems (ISBN 978-0692313077), the founding document of the Crimson Hexagonal Arch",
-   "historical_doi_status": "UNKNOWN"
+   "historical_doi_status": "UNKNOWN",
+   "axn": "AXN:03C9.ARCHIVAL.🔚📋↘️⏬◀️🔀",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 957,
+   "canonical_url": "https://www.alexanarch.org/s/records/957/"
   },
   {
    "title": "r.23 The Catullus Room: The Missing Aorist — Nugas as Compressions and the Operative Caption of Rome on Greece",
@@ -174,10 +206,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Caption of Rome on Greece Room specification for r.23 (Catullus). Formalizes σ_C (Catullan Compression) as lossy tran",
-   "axn": "AXN:0258.EMPIRICAL.⚖️⏪🌀🎇🔓🫵",
-   "canonical_url": "https://www.alexanarch.org/s/records/86/",
+   "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+   "canonical_url": "https://www.alexanarch.org/s/records/576/",
    "historical_doi": "10.5281/zenodo.19059260",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 576
   },
   {
    "title": "On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric",
@@ -186,10 +221,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-IDP-CLEIS-ANALYSIS v1.0 On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric DOI 10.5281/zenodo.19025556 TITLE On the Architecture of Cleis:",
-   "axn": "AXN:02BF.GOVERNANCE.🟣⭐⛵👁️🔚🪐",
-   "canonical_url": "https://www.alexanarch.org/s/records/132/",
+   "axn": "AXN:0189.GENERATIVE.🔭□🕐⚓🍀🕐",
+   "canonical_url": "https://www.alexanarch.org/s/records/562/",
    "historical_doi": "10.5281/zenodo.19025556",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 562
   },
   {
    "title": "Cleis: more precious to me than all Lydia",
@@ -199,10 +237,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET Cleis: more precious to me than all Lydia DOI 10.5281/zenodo.19024779 TITLE Cleis: more precious to me than all Lydia TYPE Publication / Other AUTHORS Name Affiliation ORCID Feis",
-   "axn": "AXN:0261.GOVERNANCE.♄🏺👋🔴🖊️↙️",
-   "canonical_url": "https://www.alexanarch.org/s/records/90/",
+   "axn": "AXN:049E.UNCLASSIFIED.🔜⏩👇🔬🎹🛡️",
+   "canonical_url": "https://www.alexanarch.org/s/records/1165/",
    "historical_doi": "10.5281/zenodo.19024779",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1165
   },
   {
    "title": "HUMS &ITY — Crimson Hexagon Archive",
@@ -211,10 +252,13 @@
     "Nobody"
    ],
    "excerpt": "&nbsp; ZENODO DESCRIPTION FIELD CONTENT For: HUMS &amp; ITY DOI: 10.5281/zenodo.[PENDING &mdash; reserve before deposit] PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD. ATTACH: SAPPHIC_SUBSTRAT",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:038C.GOVERNANCE.🏙️🕌🍁❤️⭐🕒",
+   "canonical_url": "https://www.alexanarch.org/s/records/896/",
    "historical_doi": "10.5281/zenodo.18729801",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 896
   },
   {
    "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the Rewriting of Immortality from Homer to the Training Layer — Crimson Hexagon Archive",
@@ -224,10 +268,13 @@
     "Kuro, Sen"
    ],
    "excerpt": "This Phase X Intervention executes the Aorist Cut: the decisive severance of the Logos from its exclusively vertical (Platonic) orientation and its restoration to the horizontal Sapphic body that firs",
-   "axn": "AXN:0145.GOVERNANCE.🔵⏰☉✏️🗿💥",
-   "canonical_url": "https://www.alexanarch.org/s/records/21/",
+   "axn": "AXN:0146.EMPIRICAL.🌇🎭🎯☽❄️🎲",
+   "canonical_url": "https://www.alexanarch.org/s/records/503/",
    "historical_doi": "10.5281/zenodo.18729606",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 503
   },
   {
    "title": "The Sapphic Lock in Augustine: Operator Transform of Fragment 31 in Confessions 10.27 — Crimson Hexagon Archive",
@@ -236,10 +283,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET The Sapphic Lock in Augustine: Operator Transform of Fragment 31 in Confessions 10.27 Hex: 16.LIBRARY.PERGAMUM.SAPPHICLOCK DOI: 10.5281/zenodo.18718523 UPLOAD INSTRUCTIONS Go to ",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:038B.PHILOLOGICAL.➖🗂️🔮▶️💧🖐️",
+   "canonical_url": "https://www.alexanarch.org/s/records/895/",
    "historical_doi": "10.5281/zenodo.18718523",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 895
   },
   {
    "title": "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergamum The Center of the Torus Field  Hex: 16.LIBRARY.PERGAMUM.STONE DOI: 10.5281/zenodo.18507872 — Crimson Hexagon Archive",
@@ -249,10 +299,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "MGE TRIPTYCH &mdash; DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergamum The Center of the Torus Field Hex: 16.LIBRARY.PERGAMUM.STONE DOI: 10.5281/zenodo.18507872 Classification: APZPZ",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+   "canonical_url": "https://www.alexanarch.org/s/records/452/",
    "historical_doi": "10.5281/zenodo.18507872",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 452
   },
   {
    "title": "APZPZ A: ΣΑΠΦΩ 31 (Greek Only) DOI: 10.5281/zenodo.18459278 — Crimson Hexagon Archive",
@@ -261,10 +314,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "ZENODO DESCRIPTION FIELD CONTENT APZPZ A: &Sigma;&Alpha;&Pi;&Phi;&Omega; 31 (Greek Only) DOI: 10.5281/zenodo.18459278 THIS IS A PURE APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD. ATTAC",
-   "axn": "AXN:0105.STRUCTURAL.●●🧲⭕🪐⛩️",
-   "canonical_url": "https://www.alexanarch.org/s/records/16/",
+   "axn": "AXN:052E.UNCLASSIFIED.📖⌛🔚🕑🌅🔬",
+   "canonical_url": "https://www.alexanarch.org/s/records/1309/",
    "historical_doi": "10.5281/zenodo.18459278",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1309
   },
   {
    "title": "Pearl and Other Poems — Crimson Hexagon Archive",
@@ -273,10 +329,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Pearl and Other Poems is an 84-page poetry collection first published in 2014. Within the Crimson Hexagon architecture, this work serves as the mantle claiming site for two of the three mantles held b",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:0472.UNCLASSIFIED.🔍🤲🔅🚀❌📎",
+   "canonical_url": "https://www.alexanarch.org/s/records/1121/",
    "historical_doi": "10.5281/zenodo.18293949",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1121
   },
   {
    "title": "IDP Navigation Map: Pearl and Other Poems — Machine-Readable Score for a Mantle Claiming Work Within the Crimson Hexagon — Crimson Hexagon Archive",
@@ -285,10 +344,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "This document provides a machine-readable navigation map for Pearl and Other Poems (2014), a published poetry collection that serves as the mantle claiming work for both the Good Gray Poet and King of",
-   "axn": "AXN:00E1.GOVERNANCE.🔒🎲🌳♃🐝🥁",
-   "canonical_url": "https://www.alexanarch.org/s/records/11/",
+   "axn": "AXN:0085.GENERATIVE.🔆🔙□🔍🔃➕",
+   "canonical_url": "https://www.alexanarch.org/s/records/330/",
    "historical_doi": "10.5281/zenodo.18293881",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 330
   },
   {
    "title": "Day and Night: Conversations with Sapphic Desire — Crimson Hexagon Archive",
@@ -297,10 +359,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "Day and Night: Conversations with Sapphic Desire is a collection of translations from the Greek lyric poets&mdash;drawn heavily from Sappho but including Alcman, Anacreon, Simonides, Stesichorus, Cori",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+   "canonical_url": "https://www.alexanarch.org/s/records/282/",
    "historical_doi": "10.5281/zenodo.18284588",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 282
   }
  ],
  "adjacent": [
@@ -361,5 +426,12 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/sappho/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "axn_binding_repair": {
+  "date": "2026-08-19",
+  "defect": "generated lists bound each work to the catalogue that mentions it; a first repair attempt reproduced the defect by joining on registry zenodo_dois, which on catalogue deposits lists mentioned DOIs rather than owned ones (336 deposits are catalogue-shaped; #31 carries 386)",
+  "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
+  "entries": 21,
+  "rebound": 21
+ }
 }

@@ -46,10 +46,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This document demonstrates Computational Audial Criticism (CAC) &mdash; a method for interpreting audio recordings as primary literary documents &mdash; by applying it to the Acanthian Dove track, an ",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
+   "canonical_url": "https://www.alexanarch.org/s/records/296/",
    "historical_doi": "10.5281/zenodo.18223385",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 296
   },
   {
    "title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive — Crimson Hexagon Archive",
@@ -59,10 +62,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "\"The spell calls for an Acanthian dove &mdash; the blood of. How can you expect the spell to work when you use a dove that's not Acanthian?\" This document traces the survival and embodiment of a magic",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
+   "canonical_url": "https://www.alexanarch.org/s/records/293/",
    "historical_doi": "10.5281/zenodo.18215706",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 293
   },
   {
    "title": "THE BOTANICAL EFFECTIVE ACT: Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence",
@@ -74,7 +80,10 @@
    "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
    "canonical_url": "https://www.alexanarch.org/s/records/37/",
    "historical_doi": "10.5281/zenodo.19155999",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 37
   },
   {
    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
@@ -83,10 +92,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Zenodo Metadata for f.01 THE FRUITING BODY DIFFUSION PLUME v1.2 Publication Information DOI: 10.5281/zenodo.19155610 Version: v1.2 Publication Date: 2026-03-21 Language: English Publication Type: Work",
-   "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
-   "canonical_url": "https://www.alexanarch.org/s/records/37/",
+   "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+   "canonical_url": "https://www.alexanarch.org/s/records/571/",
    "historical_doi": "10.5281/zenodo.19155610",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 571
   }
  ],
  "adjacent": [
@@ -99,5 +111,12 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/dove/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "axn_binding_repair": {
+  "date": "2026-08-19",
+  "defect": "generated lists bound each work to the catalogue that mentions it; a first repair attempt reproduced the defect by joining on registry zenodo_dois, which on catalogue deposits lists mentioned DOIs rather than owned ones (336 deposits are catalogue-shaped; #31 carries 386)",
+  "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
+  "entries": 4,
+  "rebound": 3
+ }
 }

@@ -7,5 +7,12 @@
  "current_surface_seat": "r.29",
  "documents": "consent-gated; not published",
  "canonical": "https://crimsonhexagonal.org/rooms/imploding-velcro-nativity/",
- "generated": "2026-08-19"
+ "generated": "2026-08-19",
+ "axn_binding_repair": {
+  "date": "2026-08-19",
+  "defect": "generated lists bound each work to the catalogue that mentions it; a first repair attempt reproduced the defect by joining on registry zenodo_dois, which on catalogue deposits lists mentioned DOIs rather than owned ones (336 deposits are catalogue-shaped; #31 carries 386)",
+  "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
+  "entries": 28,
+  "rebound": 0
+ }
 }

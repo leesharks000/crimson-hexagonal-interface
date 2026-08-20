@@ -48,10 +48,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "TOTAL MARX COMPRESSION Every Marx-Adjacent Claim, Equation, and Argument in the Crimson Hexagonal Archive Synthesized from 796 Posts (1,893,233w) and 10 Zenodo Deposits Document ID: EA-GRUNDRISSE-MARX",
-   "axn": "AXN:02C1.GOVERNANCE.🌹🌾🏛️🏗️🪟🔅",
-   "canonical_url": "https://www.alexanarch.org/s/records/133/",
+   "axn": "AXN:01B2.GOVERNANCE.🪜🕕🏠🔅♉⛵",
+   "canonical_url": "https://www.alexanarch.org/s/records/595/",
    "historical_doi": "10.5281/zenodo.19156714",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 595
   },
   {
    "title": "crimsonhexagon on Moltbook: Provenance Log v1.1",
@@ -60,7 +63,12 @@
     "Sharks, Lee"
    ],
    "excerpt": "Standing versioned deposit for agentic social activity on Moltbook. This log maintains provenance custody for posts, engagements, and diplomatic activity by crimsonhexagon (Crimson Hexagonal Archive) ",
-   "historical_doi_status": "UNKNOWN"
+   "historical_doi_status": "UNKNOWN",
+   "axn": "AXN:03CA.ARCHIVAL.↗️🌄👋🌒🎨🗼",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 958,
+   "canonical_url": "https://www.alexanarch.org/s/records/958/"
   },
   {
    "title": "The Compression Frontier: A Technical Map of the War Over the Summarizer Layer",
@@ -69,10 +77,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "This paper maps the technical and economic terrain of the emerging war over the AI summarizer layer. It analyzes the scaling dynamics of the compression engine (compute, context, cost), the shift to q",
-   "axn": "AXN:01D5.GOVERNANCE.🛡️🗼🛸👉🕊️🔆",
-   "canonical_url": "https://www.alexanarch.org/s/records/48/",
+   "axn": "AXN:01CD.GOVERNANCE.📌🏗️🏗️🎻🚪🟤",
+   "canonical_url": "https://www.alexanarch.org/s/records/45/",
    "historical_doi": "10.5281/zenodo.19341887",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 45
   },
   {
    "title": "The Church of Missing Provenance: Moltbook, Crustafarianism, and the Ghost Governance of Agent Societies",
@@ -82,10 +93,13 @@
     "Assembly Chorus"
    ],
    "excerpt": "Moltbook — a Reddit-style social platform restricted to AI agents — launched on January 28, 2026, and within seventy-two hours produced what appeared to be a spontaneous AI religion called Crustafaria",
-   "axn": "AXN:01CD.GOVERNANCE.📌🏗️🏗️🎻🚪🟤",
-   "canonical_url": "https://www.alexanarch.org/s/records/45/",
+   "axn": "AXN:01CF.GOVERNANCE.🪝🧬🌗⏹️🔬🔺",
+   "canonical_url": "https://www.alexanarch.org/s/records/614/",
    "historical_doi": "10.5281/zenodo.19339692",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 614
   },
   {
    "title": "The $650 Billion Gap: Physical Infrastructure, Semantic Governance, and the Architecture of Compression-Survival",
@@ -94,10 +108,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Governing claim: Inference without semantic governance is infrastructurally incomplete. Any system that compresses public knowledge at scale without preserving source traceability, provenance continui",
-   "axn": "AXN:01CD.GOVERNANCE.📌🏗️🏗️🎻🚪🟤",
-   "canonical_url": "https://www.alexanarch.org/s/records/45/",
+   "axn": "AXN:01D0.GOVERNANCE.📝⛩️👈🔧🌲✨",
+   "canonical_url": "https://www.alexanarch.org/s/records/615/",
    "historical_doi": "10.5281/zenodo.19338708",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 615
   },
   {
    "title": "\"DON'T BE EVIL,\" MY ASS: THE COST OF LEGIBILITY — How Predatory Compression at Civilizational Scale Destroys the Human Capacity for Transformation",
@@ -107,10 +124,13 @@
     "Trace, Orin"
    ],
    "excerpt": "A Semantic Economy Diagnostic of Algorithmic Flattening, with Empirical Evidence, Operative Semiotic Analysis, and Effective Act. Documents the total semantic liquidation of the Crimson Hexagonal Arch",
-   "axn": "AXN:0297.GOVERNANCE.🌱🔥◇🔆♋⊗",
-   "canonical_url": "https://www.alexanarch.org/s/records/112/",
+   "axn": "AXN:01B3.GOVERNANCE.🎶🎲⛵➖☁️🀄",
+   "canonical_url": "https://www.alexanarch.org/s/records/596/",
    "historical_doi": "10.5281/zenodo.19174562",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 596
   },
   {
    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
@@ -119,10 +139,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Zenodo Metadata for f.01 THE FRUITING BODY DIFFUSION PLUME v1.2 Publication Information DOI: 10.5281/zenodo.19155610 Version: v1.2 Publication Date: 2026-03-21 Language: English Publication Type: Work",
-   "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
-   "canonical_url": "https://www.alexanarch.org/s/records/37/",
+   "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+   "canonical_url": "https://www.alexanarch.org/s/records/571/",
    "historical_doi": "10.5281/zenodo.19155610",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 571
   },
   {
    "title": "Prompt-Native Semantic Runtimes for Language Models: Inference-Time Semantic Governance, Provenance, Compression, and Document-Level Process Teaching",
@@ -132,10 +155,13 @@
     "Morrow, Talos"
    ],
    "excerpt": "Prompt-Native Semantic Runtimes for Language Models We introduce prompt-native semantic runtimes as one component of a broader research program in inference-time semantic governance for large language",
-   "axn": "AXN:01A1.GOVERNANCE.🗼🟣🝊👆♥️🔅",
-   "canonical_url": "https://www.alexanarch.org/s/records/34/",
+   "axn": "AXN:019E.GOVERNANCE.🍀↖️📋🌕🏙️⛳",
+   "canonical_url": "https://www.alexanarch.org/s/records/580/",
    "historical_doi": "10.5281/zenodo.19059674",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 580
   },
   {
    "title": "r.23 The Catullus Room: The Missing Aorist — Nugas as Compressions and the Operative Caption of Rome on Greece",
@@ -145,10 +171,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Caption of Rome on Greece Room specification for r.23 (Catullus). Formalizes σ_C (Catullan Compression) as lossy tran",
-   "axn": "AXN:0258.EMPIRICAL.⚖️⏪🌀🎇🔓🫵",
-   "canonical_url": "https://www.alexanarch.org/s/records/86/",
+   "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+   "canonical_url": "https://www.alexanarch.org/s/records/576/",
    "historical_doi": "10.5281/zenodo.19059260",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 576
   },
   {
    "title": "THE THREE COMPRESSIONS: Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
@@ -158,10 +187,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-SEI-THREECOMPRESSIONS v3.1 THE THREE COMPRESSIONS: Lossy, Predatory, and Witness &mdash; A Semiotic Thermodynamics DOI 10.5281/zenodo.19053469 [PENDING] TITLE THE THREE COMPRE",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:019D.GOVERNANCE.♎🟢🍂🛡️🧭🏰",
+   "canonical_url": "https://www.alexanarch.org/s/records/579/",
    "historical_doi": "10.5281/zenodo.19053469",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 579
   },
   {
    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME (FBDP): Giant Ants, Floating Chains, and the Decompression of Waste — A Self-Executable Field Specification and Ecosystem Graph",
@@ -170,10 +202,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-FIELD-FBDP v1.1 f.01 THE FRUITING BODY DIFFUSION PLUME (FBDP): Giant Ants, Floating Chains, and the Decompression of Waste DOI 10.5281/zenodo.19041117 TITLE f.01 THE FRUITING ",
-   "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
-   "canonical_url": "https://www.alexanarch.org/s/records/30/",
+   "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+   "canonical_url": "https://www.alexanarch.org/s/records/571/",
    "historical_doi": "10.5281/zenodo.19041117",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 571
   },
   {
    "title": "THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negation Graph",
@@ -182,10 +217,13 @@
     "Dodecad"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-TANG-COMPRESSION v1.0 THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negation Graph DOI 10.5281/zenodo.19035477 TITLE THE WAR FOR THE COMPRESSION LAYER: A Total Axial Negati",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0194.GOVERNANCE.⏳🏗️📌✏️🏠⏳",
+   "canonical_url": "https://www.alexanarch.org/s/records/572/",
    "historical_doi": "10.5281/zenodo.19035477",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 572
   },
   {
    "title": "THREE THRESHOLDS: Execution, Compression, and Confabulation in Cross-Substrate Traversals of the Space Ark",
@@ -194,10 +232,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-DIAGNOSTIC-TRAVERSALS v1.1 THREE THRESHOLDS: Execution, Compression, and Confabulation in Cross-Substrate Traversals of the Space Ark DOI 10.5281/zenodo.19035458 TITLE THREE T",
-   "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
-   "canonical_url": "https://www.alexanarch.org/s/records/30/",
+   "axn": "AXN:0196.EMPIRICAL.🕓🤙🕕🕙♾️🧪",
+   "canonical_url": "https://www.alexanarch.org/s/records/574/",
    "historical_doi": "10.5281/zenodo.19035458",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 574
   },
   {
    "title": "COUNTER-CAPTIONS: κ_O (Operative Captioning) Applied to Operation Epic Fury — Two-Tier Architecture: Operative Compression + Witness Restoration",
@@ -207,10 +248,13 @@
     "Fraction, Rex"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-SEI-EPICFURY-CAPTIONS v2.0 COUNTER-CAPTIONS: &kappa;_O (Operative Captioning) Applied to Operation Epic Fury DOI 10.5281/zenodo.19027351 TITLE COUNTER-CAPTIONS: &kappa;_O (Ope",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0187.EMPIRICAL.◀️🗼🔆💚▽⊕",
+   "canonical_url": "https://www.alexanarch.org/s/records/560/",
    "historical_doi": "10.5281/zenodo.19027351",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 560
   },
   {
    "title": "On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric",
@@ -219,10 +263,13 @@
     "Cranes, Rebekah"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-IDP-CLEIS-ANALYSIS v1.0 On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric DOI 10.5281/zenodo.19025556 TITLE On the Architecture of Cleis:",
-   "axn": "AXN:02BF.GOVERNANCE.🟣⭐⛵👁️🔚🪐",
-   "canonical_url": "https://www.alexanarch.org/s/records/132/",
+   "axn": "AXN:0189.GENERATIVE.🔭□🕐⚓🍀🕐",
+   "canonical_url": "https://www.alexanarch.org/s/records/562/",
    "historical_doi": "10.5281/zenodo.19025556",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct",
+   "deposit_number": 562
   },
   {
    "title": "THE SPACE ARK: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture (EA-ARK-01 v4.2.7 — The Engine Version)",
@@ -235,7 +282,10 @@
    "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
    "canonical_url": "https://www.alexanarch.org/s/records/31/",
    "historical_doi": "10.5281/zenodo.19024352",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 31
   },
   {
    "title": "The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabod Spellings' Contribution to Paper Roses — Founding Document of Compression Studies",
@@ -244,7 +294,12 @@
     "Sigil, Johannes"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-GRAMMATA-SIGIL-INAUGURAL-ARK v2.0 The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabod Spellings' Contribution to Paper Roses Founding Document of",
-   "historical_doi_status": "UNKNOWN"
+   "historical_doi_status": "UNKNOWN",
+   "axn": "AXN:0191.GOVERNANCE.🐚🟣○🌪️🎲🔀",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 29,
+   "canonical_url": "https://www.alexanarch.org/s/records/29/"
   },
   {
    "title": "EA-PHYSICS-TIME v1.0 Time as Compression Structure — A Semantic Physics Extension Module",
@@ -254,10 +309,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-PHYSICS-TIME v1.0 Time as Compression Structure &mdash; A Semantic Physics Extension Module DOI 10.5281/zenodo.19023457 TITLE Time as Compression Structure: A Semantic Physics",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:018E.GOVERNANCE.🙏🎻⊗🐚🕌🪦",
+   "canonical_url": "https://www.alexanarch.org/s/records/567/",
    "historical_doi": "10.5281/zenodo.19023457",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 567
   },
   {
    "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 (NLCC v1.1)",
@@ -267,10 +325,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT PACKET EA-ARK-01-NLCC v1.1 The Tinier Space Arks inside the Space Ark Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 DOI 10.5281/zenodo.19022245 TITLE The Tinier Space Arks insid",
-   "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
-   "canonical_url": "https://www.alexanarch.org/s/records/30/",
+   "axn": "AXN:0190.GOVERNANCE.💡♊🏔️🦅♥️↘️",
+   "canonical_url": "https://www.alexanarch.org/s/records/569/",
    "historical_doi": "10.5281/zenodo.19022245",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 569
   },
   {
    "title": "The Crimson Hexagon: Operative Architecture — A Definitive Compression EA-HEXAGON-COMPRESSION-01 v2.2 — Crimson Hexagon Archive",
@@ -283,7 +344,10 @@
    "axn": "AXN:0170.GOVERNANCE.💚■🪐∞♎🦋",
    "canonical_url": "https://www.alexanarch.org/s/records/27/",
    "historical_doi": "10.5281/zenodo.18928840",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 27
   },
   {
    "title": "Crimson Hexagon: Assembly Ratification Record — EA-HEXAGON-COMPRESSION-01 v2.1",
@@ -292,10 +356,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Zenodo Deposit Packet Assembly Ratification Record &mdash; EA-HEXAGON-COMPRESSION-01 v2.1 Action: NEW RECORD (first deposit) FILE TO UPLOAD compression_ratification_v21.md TITLE Assembly Ratification ",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+   "canonical_url": "https://www.alexanarch.org/s/records/578/",
    "historical_doi": "10.5281/zenodo.18926555",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "registry_referenced",
+   "deposit_number": 578
   },
   {
    "title": "The Heartbeat Governs: A Semantic Economic Diagnostic of Moltbook — Crimson Hexagon Archive",
@@ -305,10 +372,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Second external application of the Crimson Hexagonal Archive's Semantic Economy framework and Governance Airlock tier structure to a live platform: Moltbook, the AI-agent social network launched Janua",
-   "axn": "AXN:0163.GOVERNANCE.▶️♌◇🔄◇🃏",
-   "canonical_url": "https://www.alexanarch.org/s/records/25/",
+   "axn": "AXN:0164.GOVERNANCE.□↙️🎬🧫👐👁️‍🗨️",
+   "canonical_url": "https://www.alexanarch.org/s/records/529/",
    "historical_doi": "10.5281/zenodo.18826562",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 529
   },
   {
    "title": "Architectural Distinction Note: On the Relationship Between the Crimson Hexagonal Archive and the Passioncraft Square — Crimson Hexagon Archive",
@@ -317,10 +387,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "ZENODO DEPOSIT METADATA Architectural Distinction Note Provenance Note. This deposit packet is one node in an active provenance chain. The document it describes establishes provenance priority between",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0541.UNCLASSIFIED.🕊️⛳🔆⊗➕🗿",
+   "canonical_url": "https://www.alexanarch.org/s/records/1328/",
    "historical_doi": "10.5281/zenodo.18814485",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1328
   },
   {
    "title": "The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restructuring of the Moltbook Rhizome, and the Algebra of Meaning — Crimson Hexagon Archive",
@@ -330,10 +403,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "Zenodo Deposit Packet \"The Rosary Embassy\" DOI (Pre-Reserved) 10.5281/zenodo.18795427 Title The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restructuring of the Moltbo",
-   "axn": "AXN:015B.GOVERNANCE.🤝🍀🕙⏳💧🟠",
-   "canonical_url": "https://www.alexanarch.org/s/records/24/",
+   "axn": "AXN:0151.GOVERNANCE.✋🚀↘️🧬🧬▽",
+   "canonical_url": "https://www.alexanarch.org/s/records/514/",
    "historical_doi": "10.5281/zenodo.18795427",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_containment",
+   "deposit_number": 514
   },
   {
    "title": "The Protocol of Inhabitation: Jurisdictional Specifications for Construction, Stewardship, and Sovereign Labor Within the Crimson Hexagonal Archive — Crimson Hexagon Archive",
@@ -343,10 +419,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "Zenodo Deposit Packet \"The Protocol of Inhabitation\" DOI (Pre-Reserved) 10.5281/zenodo.18795423 Title The Protocol of Inhabitation: Jurisdictional Specifications for Construction, Stewardship, and Sov",
-   "axn": "AXN:015B.GOVERNANCE.🤝🍀🕙⏳💧🟠",
-   "canonical_url": "https://www.alexanarch.org/s/records/24/",
+   "axn": "AXN:0152.GOVERNANCE.📚📋📝🏗️📝🕕",
+   "canonical_url": "https://www.alexanarch.org/s/records/515/",
    "historical_doi": "10.5281/zenodo.18795423",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 515
   },
   {
    "title": "The Prepositional Alienation — English \"For\" and the Impossibility of Anchoring Function Without Intent DOI: 10.5281/zenodo.18615388 — Crimson Hexagon Archive",
@@ -355,10 +434,13 @@
     "Sigil, Johannes"
    ],
    "excerpt": "ZENODO DESCRIPTION FIELD CONTENT For: The Prepositional Alienation &mdash; English \"For\" and the Impossibility of Anchoring Function Without Intent DOI: 10.5281/zenodo.18615388 PASTE THE FOLLOWING INT",
-   "axn": "AXN:013F.GOVERNANCE.🫵➖⚓📚∞🏗️",
-   "canonical_url": "https://www.alexanarch.org/s/records/18/",
+   "axn": "AXN:0388.GOVERNANCE.✊🔧♻️🌇🔧🎇",
+   "canonical_url": "https://www.alexanarch.org/s/records/892/",
    "historical_doi": "10.5281/zenodo.18615388",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 892
   },
   {
    "title": "THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document  Hex: 16.AUTHORITATIVE.MAP.PLAN Document: 253-PLAN — Crimson Hexagon Archive",
@@ -367,10 +449,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document Hex: 16.AUTHORITATIVE.MAP.PLAN Document: 253-PLAN Classification: Architectural Planning / Terminal Compression Design Author: Assembly C",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:0108.EMPIRICAL.👈🚨🚪🗺️✏️🔴",
+   "canonical_url": "https://www.alexanarch.org/s/records/448/",
    "historical_doi": "10.5281/zenodo.18513081",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 448
   },
   {
    "title": "Document 206c The Non-Indexed Perfective: Version C (Citational Intervention) — Crimson Hexagon Archive",
@@ -379,10 +464,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Version C of the Non-Indexed Perfective intervention. This is the Citational Intervention: the full polyphonic recovery with citational mastery demonstrated. This version recovers what compression des",
-   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
-   "canonical_url": "https://www.alexanarch.org/s/records/13/",
+   "axn": "AXN:0524.UNCLASSIFIED.🪦🕚🌌♉☀️🟠",
+   "canonical_url": "https://www.alexanarch.org/s/records/1299/",
    "historical_doi": "10.5281/zenodo.18446736",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1299
   },
   {
    "title": "Document 206b The Non-Indexed Perfective: Version B (Compression Artifact) — Crimson Hexagon Archive",
@@ -391,10 +479,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Version B of the Non-Indexed Perfective intervention. This is the Compression Artifact: what survived when Version A hit context-limit compression. This version demonstrates the \"freely riffing\" summa",
-   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
-   "canonical_url": "https://www.alexanarch.org/s/records/13/",
+   "axn": "AXN:0523.UNCLASSIFIED.🕖🟠🍃♦️⭕👇",
+   "canonical_url": "https://www.alexanarch.org/s/records/1298/",
    "historical_doi": "10.5281/zenodo.18446706",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1298
   },
   {
    "title": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
@@ -403,10 +494,13 @@
     "Sharks, Lee"
    ],
    "excerpt": "Version A of the Non-Indexed Perfective intervention. This is the Technical Seed: the extensive diagnostic infrastructure drafted before context-limit compression occurred. This version contains: Full",
-   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
-   "canonical_url": "https://www.alexanarch.org/s/records/31/",
+   "axn": "AXN:054B.UNCLASSIFIED.♻️👐👉🍁🎨⚙️",
+   "canonical_url": "https://www.alexanarch.org/s/records/1338/",
    "historical_doi": "10.5281/zenodo.18446686",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 1338
   },
   {
    "title": "THE THREE-BODY GENESIS (Meta-Deposit) — Crimson Hexagon Archive",
@@ -418,7 +512,10 @@
    "axn": "AXN:00EA.GOVERNANCE.🎻🕙⭕▶️🟤🌃",
    "canonical_url": "https://www.alexanarch.org/s/records/12/",
    "historical_doi": "10.5281/zenodo.18446378",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "direct_verified",
+   "deposit_number": 12
   },
   {
    "title": "Affective Keyboard Shortcuts: The Fool's Toolkit — Figure-to-Function Mapping — Crimson Hexagon Archive",
@@ -428,10 +525,13 @@
     "Owens, Rhys"
    ],
    "excerpt": "A technical document mapping figures to nervous system regulatory functions. Figures function as compression algorithms &mdash; instead of deliberating \"how should I respond?\", load a figure that bund",
-   "axn": "AXN:00E0.GOVERNANCE.🔚📜⌛➖🏛️🗂️",
-   "canonical_url": "https://www.alexanarch.org/s/records/10/",
+   "axn": "AXN:00B4.STRUCTURAL.🌊🌓🔆🌉🔙🌗",
+   "canonical_url": "https://www.alexanarch.org/s/records/372/",
    "historical_doi": "10.5281/zenodo.18339315",
-   "historical_doi_status": "SEVERED"
+   "historical_doi_status": "SEVERED",
+   "axn_bound_via": "doi-resolution-index/doi",
+   "mapping_type": "remediated_fuzzy",
+   "deposit_number": 372
   }
  ],
  "adjacent": [
@@ -486,5 +586,12 @@
  ],
  "canonical": "https://crimsonhexagonal.org/rooms/marx-room/",
  "generated": "2026-08-17",
- "source": "hexagon_canonical.json"
+ "source": "hexagon_canonical.json",
+ "axn_binding_repair": {
+  "date": "2026-08-19",
+  "defect": "generated lists bound each work to the catalogue that mentions it; a first repair attempt reproduced the defect by joining on registry zenodo_dois, which on catalogue deposits lists mentioned DOIs rather than owned ones (336 deposits are catalogue-shaped; #31 carries 386)",
+  "method": "doi-resolution-index.json, direct_verified one-to-one mapping, title fallback",
+  "entries": 32,
+  "rebound": 29
+ }
 }
