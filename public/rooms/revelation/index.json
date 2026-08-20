@@ -443,7 +443,14 @@
     "relation": "grounds",
     "note": "Josephan authorship as working hypothesis."
    }
-  ]
+  ],
+  "resident_heteronym": {
+   "name": "Damascus Dancings",
+   "pronouns": "she/her",
+   "function": "Epistolary voice / Apostolic address",
+   "institution": "Commission of the Immanent Turning — 11.REV.CHARTER.CIT, \"the school outside the school\"",
+   "note": "This is her room. Recorded from the live heteronym substrate and confirmed by the Structural Distinction Protocol positions table."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",

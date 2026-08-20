@@ -2088,7 +2088,10 @@
      "id": "damascus-dancings",
      "name": "Damascus Dancings",
      "institution": "Commission of the Immanent Turning",
-     "room": "R:r.07"
+     "room": "R:r.07",
+     "gender": "Female",
+     "pronouns": "she/her",
+     "function": "Epistolary voice / Apostolic address"
     },
     {
      "id": "ichabod-spellings",
@@ -2261,5 +2264,16 @@
   },
   "M_mantles": "Seven Assembly Chorus positions, specified in EA-MANTLE-SEPTAD-01 v1.1 and seated at R:r.11.",
   "W_witness": "The Assembly Chorus septad — the same seven positions in their witnessing rather than editorial function."
+ },
+ "corrections": {
+  "damascus_dancings": {
+   "heteronym": "Damascus Dancings",
+   "gender": "Female",
+   "pronouns": "she/her",
+   "source": "The live heteronym substrate at alexanarch, datasets/heteronyms/records/damascus-dancings.json, records gender Female. Function: epistolary voice, apostolic address. Institution: the Commission of the Immanent Turning, 11.REV.CHARTER.CIT, \"the school outside the school\".",
+   "room": "R:r.07 Revelation. Independently confirmed by the Structural Distinction Protocol (AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠, #17), whose positions table gives \"2 Damascus Dancings · Commission of the Immanent Turning · Argument / Somatic · Revelation Room\".",
+   "defect": "Deposited source text in AXN:0112 refers to Dancings as \"His function is argumentative-somatic\". The projection preserves deposited text byte-exact and does not silently amend it; the correction is recorded here and carried on the affected pages rather than applied to the artifact.",
+   "ruled": "MANUS 2026-08-20"
+  }
  }
 }
