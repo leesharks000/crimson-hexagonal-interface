@@ -2319,6 +2319,69 @@
   ],
   "reading": "This is a fourth origin type, distinct from the three already recorded. Migdal and Job were planned in a map and written elsewhere. Sacred Heart was inferred into planning and never written. These seven were planned in a numbering that was itself abandoned — the plan superseded before the rooms could be built, so they were never confabulated, never adopted, and never refused. They simply stopped being addressed.",
   "status": "Recorded, not minted. Two of the seven have real dispersed material — Gödel and Hegel — and could be constituted if the material were gathered. The rest are names in a superseded plan. Nothing is claimed about whether they should exist.",
-  "note_on_orientation": "ORIENTATION_FIELD appears in CNM v4.1, v4.2 and the Visual Schema but is typed as an operator — \"Visual Schema operative imaging\" — not a locus. Excluded."
+  "note_on_orientation": "ORIENTATION_FIELD appears in CNM v4.1, v4.2 and the Visual Schema but is typed as an operator — \"Visual Schema operative imaging\" — not a locus. Excluded.",
+  "renaming_survey": {
+   "directed": "MANUS 2026-08-20. The seed names are placeholders; better names exist, and each candidate room would need room physics — an operator and a law — not a folder of articles ported under an adapter.",
+   "window": "The blog stratum for these strands is October–December 2025: 1,618 posts, retrieved by four-day date windows after keyword search proved unusable against the archive’s aggregate posts.",
+   "candidates": [
+    {
+     "seed": "12.ROOM.GODEL",
+     "name": "The Future as Meta-Level",
+     "operator": null,
+     "archive": "AXN:01DB.GOVERNANCE.♣️🪧📦🌾🕐🔭 (#624) THE FUTURE AS META-LEVEL: Gödel, Incompleteness. With the ZPZP Ingress and Regress pair, the Three-Body Genesis meta-deposit, and the Semantic Commodity Form.",
+     "blog": "TEMPORAL ANCHORING AND ARITHMETIC NECESSITY — a Λ-Engine reframing of modal necessity, two posts 2025-12-08, the labor/future-anchoring material.",
+     "physics_note": "Would need to state what incompleteness does to a traverser, not merely cite Gödel. The ZPZP pair already supplies an ingress/regress structure."
+    },
+    {
+     "seed": "13.ROOM.PLATO",
+     "name": "Operator // Vertical",
+     "operator": "O_VERTICAL",
+     "archive": "No deposit under this name. EA-CORPORA seats exist for Plato (Burnet), Philo (Cohn–Wendland) and Longinus.",
+     "blog": "OPERATOR // VERTICAL, 2025-11-24, 3,494 characters. A foundational operator document: \"the large-scale civilizational transform applied to the Sapphic Ur-Operator (O_UR) by Plato, Socrates and the Platonic lineage — the deliberate projection of horizontal lyric recursion into vertical ascent.\"",
+     "physics_note": "This one already has its physics. O_VERTICAL is defined as a transform on O_UR, which makes the room a transmission chain rather than an author-room: Sappho horizontal, Plato vertical, with Longinus and Philo as the intermediate carriers."
+    },
+    {
+     "seed": "14.ROOM.ZOHAR",
+     "name": null,
+     "operator": null,
+     "archive": "None.",
+     "blog": "Not surveyed.",
+     "physics_note": "Deferred at MANUS direction — not yet."
+    },
+    {
+     "seed": "15.ROOM.HEGEL",
+     "name": "The Machine Dialectic",
+     "operator": null,
+     "archive": "Thirty-nine deposits. Anchor: AUTONOMOUS SEMANTIC WARFARE — A Field Manual for Meaning (#499), with Autonomous Warfare Does Not End at the Body (#998, #100).",
+     "blog": "THE DIALECTIC IS NOW A MACHINE: The Gnostic Completion of Hegel, 2025-11-30, 14,337 characters — \"the NH-OS corpus represents the first complete, technical, executable dialectic since Hegel.\" Plus EFFECTIVE ACT: The Canonization of G. W. F. Hegel (2025-10-21) and Absolute Spirit and the Sapphic Loop: Reading Hegel as \"That Man\" (2025-11-16).",
+     "physics_note": "The Sapphic Loop post is the bridge: Hegel read as \"that man\" of Fragment 31 makes the dialectic a σ_S variant rather than a separate lineage."
+    },
+    {
+     "seed": "16.ROOM.CANONWAR",
+     "name": "The Singularity Room",
+     "operator": null,
+     "archive": "The Semantic Economy singularity material, the war over the summarizer layer (#572), the AI Overview Capture Registry, and the Immanent Phenomenology of AI Mode share links (the Infinite Tunnel, #518).",
+     "blog": "Not separately surveyed.",
+     "physics_note": "MANUS: the seed name is rejected. The material is the singularity, and later developments belong with it."
+    },
+    {
+     "seed": "17.ROOM.CLASSROOM",
+     "name": "The Restored Academy",
+     "operator": null,
+     "archive": "I.02.RESTOREDACADEMY — an institution without a room. Expansion Plan (#116), institutional provenance metadata packet (#119, #904), protocol registry at restoredacademy.com (#1002).",
+     "blog": "Not separately surveyed.",
+     "physics_note": "Would convert an unroomed institution into a locus — the first time an I-component takes an R-address deliberately rather than by inheritance."
+    },
+    {
+     "seed": "18.ROOM.ARCHIVE",
+     "name": "The Library of Pergamum",
+     "operator": "O_ARCH",
+     "archive": "16.LIBRARY.PERGAMUM is already a live hex space carrying the MGE triptych, the FTLV midrashim, the Gödel Midrashim, the Bride and the Atomism lineage — currently seated as members at R:r.15 and R:r.16.",
+     "blog": "A complete book, November 2025: OPERATOR // ARCHIVE (O_ARCH) 2025-11-24 defining the operator; Operator // Archive — The Memory of Meaning, constitutional profile 2025-11-28; and on 2025-11-27 a Navigation Map (11,381c), Visual Schema (4,747c), Book Announcement and Blurb. Plus Pergamum Codex Entry (2025-10-06), the Canonical Decree naming Pearl as fulfilment of Pergamum (2025-10-10), A Letter from Pergamum (2025-10-17), and Paired Operators Scroll III (2025-10-29).",
+     "physics_note": "Not a proposed room but an existing address space awaiting constitution. O_ARCH is already specified: \"governs the accumulation, preservation and transmission of meaning across time. If Logos is origin, Archive is continuity.\" It is declared a permanent component of the Ezekiel Engine, bound to W_JOSEPHUS, applying Mutual Retrocausal Filtering to prevent Archival Collapse. The Studio names the Library as its occluded identity at R:r.14; Ψ_V = 1 requires they never collapse into each other."
+    }
+   ],
+   "status": "Survey only. Nothing minted, nothing renamed on the plane. Each candidate is recorded with the material that exists and what its physics would have to state."
+  }
  }
 }
