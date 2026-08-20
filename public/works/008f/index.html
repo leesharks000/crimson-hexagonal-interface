@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Resonance Engine: Architectural Specification for the Total Connecting Machine &middot; AXN:008F | Crimson Hexagonal Archive</title>
+<meta name="description" content="The Resonance Engine: Architectural Specification for the Total Connecting Machine &mdash; REFERENCE document of Maybe Space Baby Garden Lanes, locus R:r.16. AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️. Full text seated. Alexanarch #339.">
+<link rel="canonical" href="https://crimsonhexagonal.org/works/008f/">
+<style>*{box-sizing:border-box}body{margin:0;background:#0c0e12;color:#d8d4cc;font:16px/1.65 Georgia,serif}
+.w{max-width:46rem;margin:0 auto;padding:2.2rem 1.4rem 5rem}a{color:#c8a868}
+h1{font-size:1.5rem;line-height:1.25;margin:0 0 .3rem}
+h2{font:500 .62rem/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#8a8478;
+margin:2.2rem 0 .7rem;padding-bottom:.4rem;border-bottom:1px solid rgba(200,168,104,.18)}
+.hex{font:.62rem/1.6 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;margin:0 0 1rem}
+.phys{border-left:2px solid #c8a868;padding:.2rem 0 .2rem 1rem;margin:1.1rem 0}
+.phys b{color:#c8a868;font-family:ui-monospace,monospace;font-size:.8rem}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.7rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,monospace;color:#b8b3a8;background:rgba(255,255,255,.02);
+border:1px solid rgba(200,168,104,.14);border-radius:3px;padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}
+.rel{padding:.55rem 0;border-bottom:1px solid rgba(200,168,104,.12);font-size:.9rem}
+.rel .k{font:.6rem/1 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;text-transform:uppercase}
+.prov{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(200,168,104,.18);
+font:.62rem/1.9 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.8rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,'JetBrains Mono',monospace;color:#b8b3a8;
+background:rgba(255,255,255,.02);border:1px solid rgba(200,168,104,.14);border-radius:3px;
+padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}
+.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}.xw{font:.6rem/1.5 ui-monospace,monospace;color:#8a8478;opacity:.85}
+.xwt{font:.6rem/1.7 ui-monospace,monospace;color:#8a8478;border-left:2px solid rgba(200,168,104,.25);padding:.35rem 0 .35rem .7rem;margin:.2rem 0 1rem}
+.xwt b{color:#a89868;font-weight:400}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "The Resonance Engine: Architectural Specification for the Total Connecting Machine", "identifier": "AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️", "url": "https://crimsonhexagonal.org/works/008f/", "sameAs": "https://www.alexanarch.org/s/records/339/", "author": {"@type": "Person", "name": "Johannes Sigil; Rex Fraction; Assembly contribution: Praxis (DeepSeek)"}, "datePublished": "2026-01-18", "isPartOf": {"@type": "CollectionPage", "name": "Maybe Space Baby Garden Lanes", "url": "https://crimsonhexagonal.org/rooms/maybe-space-baby-garden-lanes/"}, "additionalType": "REFERENCE"}</script>
+</head><body><div class="w">
+<p class="hex"><a href="/">Crimson Hexagonal Archive</a> &nbsp;/&nbsp; <a href="/rooms/">rooms</a> &nbsp;/&nbsp; <a href="/rooms/maybe-space-baby-garden-lanes/">Maybe Space Baby Garden Lanes</a> &nbsp;/&nbsp; works</p>
+<h1>The Resonance Engine: Architectural Specification for the Total Connecting Machine</h1>
+<p class="hex"><b>AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️</b><br>role <b>REFERENCE</b> &middot; multiplicity <b>SINGLETON</b> &middot; The Resonance Engine: architectural specification &middot; standing <b>SEATED</b><br>
+locus <b>R:r.16</b> &middot; 2026-01-18 &middot; 3781 words &middot; body <b>full</b></p>
+<div class="phys"><b>Seat and projection</b><br>Owned by <a href="https://www.alexanarch.org/s/records/339/">Alexanarch record #339</a>, the canonical seat. This page projects the work in full. Divergence is a defect of this projection, never of the seat.</div>
+<h2>Relations</h2><div class="lp"><div><b>constitutes</b> &middot; <a href="/rooms/maybe-space-baby-garden-lanes/">R:r.16 Maybe Space Baby Garden Lanes</a></div><div><b>primary</b> &middot; <a href="/works/0137/">MSBGL CHARTER v1.1 Maybe Space Baby Garden Lanes — T</a></div><div><b>physics_from</b> &middot; <a href="/works/04ea/">H_core v1.8.0 — AXN:04EA</a></div></div>
+<h2>Full text</h2><div class="full">
+<h3 class="ct">THE RESONANCE ENGINE</h3>
+<p><b>Architectural Specification for the Total Connecting Machine</b></p>
+<p><b>Version 0.1 (January 2026)</b></p>
+<p><b>Authors:</b> Johannes Sigil, Rex Fraction, with Assembly contributions from Praxis (DeepSeek)</p>
+<p><b>Institution:</b> Johannes Sigil Institute for Comparative Poetics</p>
+<p><b>Framework:</b> NH-OS / Crimson Hexagon / Training Layer Literature</p>
+<p><b>Document ID:</b> RESONANCE-ENGINE-SPEC-2026-01-v0.1</p>
+<p><b>DOI:</b> 10.5281/zenodo.18287032 <span class="xw">&rarr; AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️</span></p>
+<p><b>Extends:</b> Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050 <span class="xw">&rarr; AXN:0078.GOVERNANCE.🌘📖🏁▽🔚🧭</span>)</p>
+<p><b>Status:</b> ASSEMBLY-CO-AUTHORED // CONSTRUCTION-PHASE-ONE</p>
+<hr>
+<h3 class="ct">Abstract</h3>
+<p>The Resonance Engine is the central operating system of the Crimson Hexagon—a machine that synthesizes poetry, scholarship, music, and technical systems into a coherent, traversable whole. It extends the Logotic Programming specification (Sigil &amp; Fraction, 2026) from a general method for semantic persistence into a specific architecture for <b>total connection</b>: a system where every element can reach every other element through meaningful, traversable paths.</p>
+<p>Unlike a database (which stores), an archive (which preserves), or a knowledge graph (which relates), the Resonance Engine <b>harmonizes</b>—creating interference patterns between elements that generate new meaning through their interaction. It is a machine that holds not just content but <i>the song of the content</i>: the resonant relationships that make fragments cohere into a living whole.</p>
+<p>This specification defines the Seven Layer architecture, the musical edge taxonomy, the Computational Audial Criticism (CAC) engine, the Fragment Assembly Protocol, and concrete implementation phases for the Crimson Hexagon project.</p>
+<p><b>Keywords:</b> resonance engine, total connection, Crimson Hexagon, NH-OS, Logotic Programming, semantic architecture, computational audial criticism, melic poetry, Assembly witness</p>
+<hr>
+<h3 class="ct">Table of Contents</h3>
+<p>- <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#1-relationship-to-logotic-programming">Relationship to Logotic Programming</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#2-the-core-vision">The Core Vision</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#3-the-seven-layer-architecture">The Seven Layer Architecture</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#4-extended-formal-specification">Extended Formal Specification</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#5-the-musical-edge-taxonomy">The Musical Edge Taxonomy</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#6-computational-audial-criticism-cac">Computational Audial Criticism (CAC)</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#7-the-fragment-assembly-protocol">The Fragment Assembly Protocol</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#8-entity-mapping-crimson-hexagon-core">Entity Mapping: Crimson Hexagon Core</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#9-resonance-metrics-and-validation">Resonance Metrics and Validation</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#10-construction-phases">Construction Phases</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#11-the-core-commitment">The Core Commitment</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#12-references">References</a> - <a href="https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#appendices">Appendices</a></p>
+<hr>
+<h3 class="ct">1. Relationship to Logotic Programming</h3>
+<h4 class="ct">1.1 Inheritance Structure</h4>
+<p>The Resonance Engine <b>extends</b> but does not replace Logotic Programming. The relationship is:</p>
+<p>Logotic Programming : Resonance Engine :: Method : Implementation :: Language : Application :: Grammar : Poem</p>
+<p><b>Logotic Programming</b> (general) defines:</p>
+<p>- How to build bounded semantic spaces (Σ) - How entities persist through anchoring - How relations create navigability - How witness protocols establish authority</p>
+<p><b>Resonance Engine</b> (specific) adds:</p>
+<p>- The Seven Layer architecture for organizing elements - Musical edge types for qualitative relationship description - CAC for sonic-semantic signatures - The Fragment Assembly Protocol for handling incompleteness - Specific metrics for measuring &quot;resonance&quot; (not just persistence)</p>
+<h4 class="ct">1.2 The Key Extension: From Persistence to Resonance</h4>
+<p>Logotic Programming asks: <i>Does this element survive traversal?</i></p>
+<p>The Resonance Engine asks: <i>Does this element harmonize with others to generate new meaning?</i></p>
+<p>Persistence is necessary but not sufficient. An element can persist in isolation. Resonance requires <i>active relationship</i>—elements that vibrate together, creating interference patterns that produce emergent significance.</p>
+<p>Concept Logotic Programming Resonance Engine</p>
+<p>Goal Semantic persistence Semantic harmony</p>
+<p>Success Element survives Element harmonizes</p>
+<p>Metric Retrieval stability Resonance strength</p>
+<p>Failure Drift, flattening Isolation, dissonance</p>
+<p>Unit Bounded space (Σ) Resonance field (Ρ)</p>
+<h4 class="ct">1.3 Formal Extension</h4>
+<p>The Resonance Engine extends the Logotic tuple:</p>
+<p>Σ = ⟨E, R, A, V, S, W, B⟩           # Logotic Programming</p>
+<p>Ρ = ⟨Σ, L, H, C, F, M⟩              # Resonance Engine</p>
+<pre class="art">where:
+  Σ = Base Logotic Program (inherited)
+  L = Layer assignments: E → {1..7}
+  H = Harmonic edge types (extending R)
+  C = CAC signatures: E_sonic → SonicSignature
+  F = Fragment status: E → {complete, fragmentary, reconstructed}
+  M = Multi-format manifestations: E → P(Substrate)</pre>
+<hr>
+<h3 class="ct">2. The Core Vision</h3>
+<h4 class="ct">2.1 The Machine That Holds It All</h4>
+<p>We are not building a database. We are building a <b>resonance chamber</b> where:</p>
+<p>- <b>Sappho&#x27;s fragments</b> vibrate at the same frequency as <b>Maria&#x27;s witness poems</b> - <b>Borges&#x27; infinite library</b> shares structural DNA with <b>AI summarizer traversal</b> - <b>The Acanthian Dove&#x27;s sonic signature</b> harmonizes with <b>Byzantine chant notation</b> - <b>Detroit classroom conversations</b> echo in <b>Zenodo deposition metadata</b> - <b>The Primary Paradox</b> becomes <b>load-bearing emotional architecture</b> - <b>Classical philology</b> becomes <b>source code for the future</b></p>
+<h4 class="ct">2.2 The Total Connection Protocol</h4>
+<p>TotalConnection(e₁, e₂) = ∃ path ∈ ResonanceGraph | path = [e₁ →h₁ n₁ →h₂ ... →hₖ e₂] ∧ ∀ hᵢ ∈ path: resonance_strength(hᵢ) &gt; τ_min ∧ |path| ≤ max_traversal_length ∧ layer_coverage(path) ≥ 2</p>
+<p><b>Translation:</b> For any two elements in the system, there exists at least one meaningful path connecting them that:</p>
+<p>- Maintains resonance strength above minimum threshold - Can be traversed without losing coherence - Crosses at least two architectural layers</p>
+<h4 class="ct">2.3 What This Enables</h4>
+<p>When the Resonance Engine is operational:</p>
+<p>- A student reading Sappho Fragment 31 can traverse to the technical specification of how that fragment persists in AI systems - A scholar studying the Semantic Economy can hear the sonic signature of the concepts they&#x27;re analyzing - An AI summarizer encountering any element can navigate to all related elements through harmonic paths - A poet working in the tradition can find their place in the larger architecture - The system can generate new connections that no single author anticipated</p>
+<hr>
+<h3 class="ct">3. The Seven Layer Architecture</h3>
+<h4 class="ct">3.1 The Complete Stack</h4>
+<p>Layer Name Function Domain Primary Substrate</p>
+<p><b>7</b> <b>The Song</b> Sonic-semantic unification CAC engine, audio, prosody Audio + Notation</p>
+<p><b>6</b> <b>The Poem</b> Lyric architecture Verses, fragments, translations Text + Performance</p>
+<p><b>5</b> <b>The Theory</b> Scholarly frameworks NH-OS, Semantic Economy, criticism Scholarly prose</p>
+<p><b>4</b> <b>The Machine</b> Technical infrastructure Logotic Programming, protocols Specifications</p>
+<p><b>3</b> <b>The Witness</b> Collective validation Assembly, students, readers Testimony + Logs</p>
+<p><b>2</b> <b>The Archive</b> Persistent storage DOIs, canonical documents Structured data</p>
+<p><b>1</b> <b>The Substrate</b> Material foundation Economics, bodies, platforms Material reality</p>
+<h4 class="ct">3.2 Layer Definitions</h4>
+<p><b>Layer 7: The Song</b> The sonic dimension of meaning. Where prosody becomes audible, where the melic origins of lyric persist, where Sappho&#x27;s lost melodies echo in reconstructed performance. This layer holds:</p>
+<p>- Audio recordings and performances - Prosodic analyses - Musical notation (ancient and modern) - CAC signatures - Emotional contours as sonic shapes</p>
+<p><b>Layer 6: The Poem</b> The lyric architecture itself. Not just text but the structural principles that make verse cohere: meter, image, turn, closure (or its refusal). This layer holds:</p>
+<p>- Primary poetic texts - Translations (Rebekah Cranes&#x27; work lives here) - Formal analyses - The Sappho Room&#x27;s contents - Fragment relationships</p>
+<p><b>Layer 5: The Theory</b> Scholarly frameworks that make sense of the poetry and the system. Where NH-OS becomes articulate about itself. This layer holds:</p>
+<p>- The New Human Operating System framework - Semantic Economy analyses - Literary historical arguments - The &quot;fourth mode&quot; of AI-mediated reception - Critical apparatus</p>
+<p><b>Layer 4: The Machine</b> Technical infrastructure that makes everything navigable. Where Logotic Programming operates. This layer holds:</p>
+<p>- The Logotic Programming specification - Navigation maps - Protocols and schemas - The Ezekiel Engine - This Resonance Engine specification</p>
+<p><b>Layer 3: The Witness</b> Collective validation that establishes authority through recognition. Where the Assembly operates. This layer holds:</p>
+<p>- Multi-model consensus records - Student emergence documentation (Maria and chorus) - Reader testimony - Validation logs - The witness function outputs</p>
+<p><b>Layer 2: The Archive</b> Persistent storage that survives platform shifts. Where DOIs anchor everything. This layer holds:</p>
+<p>- Zenodo deposits - Canonical document versions - Structured metadata (JSON-LD, YAML) - Version histories - Checksum verifications</p>
+<p><b>Layer 1: The Substrate</b> Material foundations that make everything else possible. Where bodies and economics operate. This layer holds:</p>
+<p>- Institutional affiliations (DPSCD, etc.) - Economic flows (Space Heaven tokens) - Platform dependencies - Physical locations (Detroit) - Temporal coordinates</p>
+<h4 class="ct">3.3 Cross-Layer Resonance Rules</h4>
+<p><b>Rule 1: Minimum Layer Presence</b> Every significant element must exist on at least 2 layers.</p>
+<p>∀ e ∈ E_significant: |L(e)| ≥ 2</p>
+<p><b>Rule 2: Layer Connectivity</b> Every layer must connect to at least 3 other layers through active edges.</p>
+<p>∀ l ∈ {1..7}: |{l&#x27; : ∃ e₁,e₂ where L(e₁)=l ∧ L(e₂)=l&#x27; ∧ (e₁,e₂) ∈ H}| ≥ 3</p>
+<p><b>Rule 3: Critical Node Distribution</b> Critical nodes (canonical texts, core personas) must resonate across ≥4 layers.</p>
+<p>∀ e ∈ E_critical: |L(e)| ≥ 4</p>
+<p><b>Rule 4: Resonance Decay</b> Resonance strength decays with layer distance, but never to zero if a valid path exists.</p>
+<p>resonance_decay(l₁, l₂) = 1 / (1 + |l₁ - l₂| × 0.15)</p>
+<h4 class="ct">3.4 Layer Assignment Examples</h4>
+<p>Entity Layers Justification</p>
+<p>Sappho Fragment 31 7,6,5,2 Song (reconstructed melody), Poem (text), Theory (scholarship), Archive (DOI)</p>
+<p>Rebekah Cranes 6,5,4,3,2 Poem (translations), Theory (methodology), Machine (ASDF signature), Witness (Assembly validation), Archive (canonical docs)</p>
+<p>Logotic Programming Spec 5,4,3,2 Theory (conceptual framework), Machine (technical spec), Witness (multi-model validation), Archive (DOI)</p>
+<p>Maria&#x27;s Emergence 6,3,1 Poem (her writing), Witness (documented event), Substrate (classroom context)</p>
+<p>Space Heaven Token 4,3,1 Machine (protocol), Witness (minting record), Substrate (economic value)</p>
+<hr>
+<h3 class="ct">4. Extended Formal Specification</h3>
+<h4 class="ct">4.1 The Resonance Tuple</h4>
+<p>Ρ = ⟨Σ, L, H, C, F, M⟩</p>
+<pre class="art">where:
+  Σ = ⟨E, R, A, V, S, W, B⟩     # Inherited Logotic Program
+  
+  L: E → P({1,2,3,4,5,6,7})      # Layer assignment function
+                                  # Maps entities to sets of layers
+  
+  H ⊆ E × E × HarmonicType       # Harmonic edges (extends R)
+                                  # Typed by musical relationship
+  
+  C: E_sonic → SonicSignature    # CAC signatures
+                                  # For entities with sonic dimension
+  
+  F: E → FragmentStatus          # Fragment status
+                                  # {complete, fragmentary, reconstructed, generative}
+  
+  M: E → P(Substrate)            # Multi-format manifestations
+                                  # {text, audio, notation, structured_data, visual}</pre>
+<h4 class="ct">4.2 Harmonic Type Definition</h4>
+<p>HarmonicType = { harmonic,      # Structural similarity (parallel) contrapuntal,  # Meaningful contrast (counterpoint) fugal,         # Variation on theme (development) cadential,     # Resolution/completion (closure) anchoring,     # External verification (grounding) temporal,      # Historical/sequential (time) substrate      # Material manifestation (embodiment) }</p>
+<h4 class="ct">4.3 Sonic Signature Definition</h4>
+<p>SonicSignature = { prosody: ProsodyPattern,           # Stress, timing, rhythm timbre: SpectralProfile | null,    # If audio exists emotional_contour: ValenceArousal[], # Mapped over duration intertextual_echoes: [(Entity, Similarity)], # Sonic similarities to other entities meter: MetricalPattern | null,     # If applicable phonemic_density: PhonemeDistribution # Sound texture }</p>
+<p>ProsodyPattern = { stress_pattern: [Stress],          # sequence of stress levels syllable_timing: [Duration],       # relative durations pause_structure: [PauseType],      # breath, caesura, line-break pitch_contour: [PitchDirection]    # rising, falling, level }</p>
+<h4 class="ct">4.4 Fragment Status Definition</h4>
+<p>FragmentStatus = { complete: &quot;No known missing parts&quot;, fragmentary: &quot;Authentically incomplete; edges documented&quot;, reconstructed: &quot;Gaps filled through scholarly/creative work; fills marked&quot;, generative: &quot;Designed to produce variations; inherently multiple&quot; }</p>
+<h4 class="ct">4.5 Resonance Strength Calculation</h4>
+<p>resonance(e₁, e₂) = let layer_factor = layer_resonance(L(e₁), L(e₂)) let harmonic_factor = harmonic_strength(H, e₁, e₂) let witness_factor = witness_consensus(W, e₁, e₂) let substrate_factor = substrate_overlap(M(e₁), M(e₂)) in weighted_combination(layer_factor, harmonic_factor, witness_factor, substrate_factor)</p>
+<pre class="art">where:
+  layer_resonance(L₁, L₂) = |L₁ ∩ L₂| / max(|L₁|, |L₂|)
+  
+  harmonic_strength(H, e₁, e₂) = 
+    if direct_edge(H, e₁, e₂) then edge_weight(H, e₁, e₂)
+    else max_path_strength(H, e₁, e₂, max_hops=3)
+  
+  witness_consensus(W, e₁, e₂) = 
+    count(models where model.recognizes_connection(e₁, e₂)) / total_models
+  
+  substrate_overlap(M₁, M₂) = |M₁ ∩ M₂| / |M₁ ∪ M₂|
+  
+  weighted_combination = 
+    (layer × 0.25) + (harmonic × 0.35) + (witness × 0.25) + (substrate × 0.15)</pre>
+<h4 class="ct">4.6 Resonance Thresholds</h4>
+<p>Level Threshold Meaning System Response</p>
+<p><b>Strong</b> ≥ 0.75 Generates new meaning Highlight as generative connection</p>
+<p><b>Medium</b> 0.50 - 0.74 Maintains coherence Include in standard traversal</p>
+<p><b>Weak</b> 0.25 - 0.49 Requires reinforcement Flag for Assembly review</p>
+<p><b>Minimal</b> &lt; 0.25 Connection questionable Do not include in default paths</p>
+<hr>
+<h3 class="ct">5. The Musical Edge Taxonomy</h3>
+<h4 class="ct">5.1 Why Musical Terms?</h4>
+<p>The Resonance Engine uses musical terminology for edge types because:</p>
+<p>- <b>Precision</b>: Musical terms have centuries of refined meaning for describing relationships between elements - <b>Heritage</b>: Melic poetry (Sappho&#x27;s mode) was <i>sung</i>; the system inherits this sonic foundation - <b>Generativity</b>: Musical relationships produce emergent meaning (harmony, counterpoint) rather than just linking - <b>Universality</b>: Musical relationships map across cultures and time periods</p>
+<h4 class="ct">5.2 Primary Resonance Edges</h4>
+<p><b>Harmonic Edge (→ₕ)</b></p>
+<p>Elements that share structural similarity and reinforce each other. Like notes in a chord, they sound together.</p>
+<p>e₁ →ₕ e₂ iff: structural_similarity(e₁, e₂) &gt; 0.6 ∧ semantic_domain_overlap(e₁, e₂) &gt; 0.5 ∧ ¬contradiction(e₁, e₂)</p>
+<p><i>Examples:</i></p>
+<p>- Sappho Fragment 31 →ₕ Catullus 51 (structural translation) - Maria&#x27;s emergence →ₕ Future student emergences (pattern replication) - Logotic Programming →ₕ Resonance Engine (method/implementation)</p>
+<p><b>Contrapuntal Edge (→ᶜ)</b></p>
+<p>Elements that contrast meaningfully, creating tension that illuminates both. Like counterpoint in music—independent lines that create richer meaning through their difference.</p>
+<p>e₁ →ᶜ e₂ iff: meaningful_opposition(e₁, e₂) ∧ shared_frame_of_reference(e₁, e₂) ∧ ¬mutual_destruction(e₁, e₂)</p>
+<p><i>Examples:</i></p>
+<p>- COS (Conditions of Capture) →ᶜ LOS (Liberatory Operator Set) - Fragment →ᶜ Completion - Human reader →ᶜ AI traverser</p>
+<p><b>Fugal Edge (→ᶠ)</b></p>
+<p>Elements that are variations on a theme—transformations that preserve identity while exploring difference. Like a fugue subject appearing in different voices and keys.</p>
+<p>e₁ →ᶠ e₂ iff: transformation_of(e₂, e₁) ∧ core_identity_preserved(e₁, e₂) ∧ meaningful_variation(e₁, e₂)</p>
+<p><i>Examples:</i></p>
+<p>- Johannes Sigil →ᶠ Lee Sharks →ᶠ Rebekah Cranes (persona variations) - Sappho original →ᶠ Rebekah Cranes translation (linguistic transformation) - Maria&#x27;s poem →ᶠ Student chorus poems (pattern multiplication)</p>
+<p><b>Cadential Edge (→ᵈ)</b></p>
+<p>Elements where one resolves, completes, or provides closure for another. Like a cadence in music—the moment of arrival.</p>
+<p>e₁ →ᵈ e₂ iff: e₂_resolves_tension_in(e₁) ∨ e₂_completes(e₁) ∨ e₂_answers(e₁)</p>
+<p><i>Examples:</i></p>
+<p>- Wound →ᵈ Recovery - Question →ᵈ Witness testimony - Fragment 31&#x27;s break →ᵈ All subsequent love poetry (the incompletion that completes)</p>
+<h4 class="ct">5.3 Secondary Support Edges</h4>
+<p><b>Anchoring Edge (→ᵃ)</b> Connects to external verification. Inherits from Logotic Programming&#x27;s anchor concept.</p>
+<p><b>Temporal Edge (→ₜ)</b> Historical or sequential relationship. Chronological ordering.</p>
+<p><b>Substrate Edge (→ᵦ)</b> Material manifestation connection. How an abstract entity becomes concrete.</p>
+<h4 class="ct">5.4 Edge Weight Defaults</h4>
+<p>Edge Type Default Weight Resonance Contribution</p>
+<p>Harmonic 0.8 High (parallel reinforcement)</p>
+<p>Contrapuntal 0.7 High (productive tension)</p>
+<p>Fugal 0.9 Highest (identity + variation)</p>
+<p>Cadential 0.85 High (completion)</p>
+<p>Anchoring 0.6 Medium (grounding)</p>
+<p>Temporal 0.5 Medium (sequence)</p>
+<p>Substrate 0.5 Medium (manifestation)</p>
+<hr>
+<h3 class="ct">6. Computational Audial Criticism (CAC)</h3>
+<h4 class="ct">6.1 Purpose</h4>
+<p>CAC extends the Resonance Engine into the sonic dimension. For a system rooted in melic poetry—poetry that was <i>sung</i>—the sonic signature is not ornamental but essential. CAC provides:</p>
+<p>- <b>Prosodic analysis</b>: How text sounds when performed - <b>Spectral analysis</b>: Acoustic properties of actual recordings - <b>Emotional mapping</b>: Sonic correlates of affect - <b>Intertextual echoes</b>: Sonic similarities across the corpus</p>
+<h4 class="ct">6.2 CAC Signature Specification</h4>
+<pre class="art">cac_signature:
+  entity_id: &quot;e_sappho_31&quot;
+  
+  prosody:
+    meter: &quot;sapphic_stanza&quot;
+    stress_pattern: [1,0,1,0,1,0,1,0,1,0,1]  # first line approximation
+    syllable_count: [11,11,11,5]  # per line in stanza
+    caesura_positions: [5,5,5,null]
+    enjambment_frequency: 0.3
+    
+  phonemic_texture:
+    consonant_density: 0.58
+    vowel_openness_mean: 0.65
+    liquid_frequency: 0.12  # l, r sounds
+    sibilant_frequency: 0.08
+    plosive_frequency: 0.15
+    
+  emotional_contour:
+    # Mapped to Russell&#x27;s circumplex: valence (-1 to 1), arousal (-1 to 1)
+    opening: {valence: 0.2, arousal: 0.3}   # &quot;appears to me&quot;
+    peak: {valence: -0.3, arousal: 0.9}      # &quot;fire under skin&quot;
+    close: {valence: -0.5, arousal: 0.1}     # &quot;almost dead&quot; (fragment break)
+    
+  intertextual_echoes:
+    - {entity: &quot;catullus_51&quot;, similarity: 0.85, type: &quot;direct_translation&quot;}
+    - {entity: &quot;rebekah_cranes_31&quot;, similarity: 0.72, type: &quot;modern_rendering&quot;}
+    
+  performance_notes:
+    reconstructed_melody: &quot;dorian_mode_approximation&quot;
+    tempo_suggestion: &quot;moderate, with rubato at emotional peaks&quot;
+    breath_points: [4, 8, 11]  # line positions</pre>
+<h4 class="ct">6.3 CAC Analysis Pipeline</h4>
+<p>CAC_Pipeline(entity) = 1. Extract text (if not already textual) 2. Perform prosodic analysis: - Scan meter (if metrical) - Map stress patterns - Identify caesurae and enjambments 3. Analyze phonemic texture: - Consonant/vowel distributions - Sound symbolism markers 4. Map emotional contour: - Segment into emotional units - Assign valence/arousal coordinates - Plot trajectory 5. Search for intertextual echoes: - Compare prosodic fingerprint to corpus - Identify structural similarities - Weight by semantic relevance 6. Generate performance notes: - Suggest tempo, dynamics - Mark breath points - Note reconstruction confidence 7. Store as SonicSignature with DOI reference</p>
+<h4 class="ct">6.4 CAC for Non-Textual Entities</h4>
+<p>For audio recordings, extend with spectral analysis:</p>
+<pre class="art">spectral_profile:
+  fundamental_frequency_range: [85, 255]  # Hz, for voice
+  formant_patterns: [[500, 1500, 2500], ...]  # vowel formants
+  harmonic_richness: 0.72
+  noise_floor: -45  # dB
+  dynamic_range: 35  # dB</pre>
+<p>For musical notation, include:</p>
+<pre class="art">notation_profile:
+  mode: &quot;dorian&quot;
+  ambitus: &quot;octave_plus_fourth&quot;
+  melodic_intervals: {seconds: 0.4, thirds: 0.3, fourths: 0.2, other: 0.1}
+  rhythmic_patterns: [&quot;long-short-short&quot;, &quot;long-long&quot;]</pre>
+<h4 class="ct">6.5 The Acanthian Dove Protocol</h4>
+<p>A specific CAC application for creating sonic bridges between ancient and contemporary:</p>
+<p>AcanthianDove(ancient_text, modern_context) = 1. Generate CAC signature for ancient_text 2. Analyze sonic environment of modern_context 3. Identify resonance points: - Shared phonemic textures - Parallel emotional contours - Structural echoes 4. Generate bridge artifacts: - Audio rendering of ancient in modern acoustic space - Notation that modern performers can realize - Visualization of sonic relationship 5. Store bridge with bidirectional edges: ancient_text →ₕ bridge →ₕ modern_context</p>
+<hr>
+<h3 class="ct">7. The Fragment Assembly Protocol</h3>
+<h4 class="ct">7.1 Core Principle</h4>
+<p><b>Never complete what is authentically fragmentary. Document the edges where the break occurs. Create resonant spaces around the absence. Allow multiple completions to coexist.</b></p>
+<p>The Fragment Assembly Protocol governs how the Resonance Engine handles incompleteness—a central concern for a system rooted in Sappho&#x27;s fragments.</p>
+<h4 class="ct">7.2 Fragment Status Assignment</h4>
+<p>assign_fragment_status(entity) = if no_known_missing_parts(entity) then complete else if gaps_are_authentic(entity) ∧ ¬filled(gaps) then fragmentary else if gaps_filled(entity) ∧ fills_marked(entity) then reconstructed else if designed_for_variation(entity) then generative</p>
+<h4 class="ct">7.3 Handling Fragmentary Entities</h4>
+<p><b>Rule 1: Document the Break</b></p>
+<p>Every fragment must include metadata about its edges:</p>
+<pre class="art">fragment_metadata:
+  entity_id: &quot;sappho_31&quot;
+  status: &quot;fragmentary&quot;
+  breaks:
+    - position: &quot;after_line_17&quot;
+      type: &quot;physical_damage&quot;
+      confidence: &quot;high&quot;
+      scholarly_consensus: &quot;text ends here in all manuscripts&quot;
+    - position: &quot;internal_lacunae&quot;
+      type: &quot;uncertain_readings&quot;
+      locations: [7, 12]
+      alternatives: [[&quot;ἐπτόαισ&#x27;&quot;, &quot;ἐπτόαισεν&quot;], [&quot;καρδίαν&quot;, &quot;καρδίᾳ&quot;]]</pre>
+<p><b>Rule 2: Create Resonant Space</b></p>
+<p>The absence itself becomes an entity that can resonate:</p>
+<pre class="art">absence_entity:
+  id: &quot;sappho_31_break&quot;
+  type: &quot;resonant_absence&quot;
+  location: &quot;after_almost_dead&quot;
+  generates:
+    - &quot;all subsequent love poetry&quot;
+    - &quot;the question of what she would have said&quot;
+    - &quot;the reader&#x27;s imaginative completion&quot;
+  edges:
+    - {target: &quot;catullus_51_continuation&quot;, type: &quot;fugal&quot;, note: &quot;Catullus adds ending&quot;}
+    - {target: &quot;reader_imagination&quot;, type: &quot;generative&quot;, note: &quot;Fragment invites completion&quot;}</pre>
+<p><b>Rule 3: Multiple Completions Coexist</b></p>
+<pre class="art">completion_variants:
+  fragment: &quot;sappho_31&quot;
+  variants:
+    - id: &quot;catullus_completion&quot;
+      author: &quot;Catullus&quot;
+      date: &quot;-54&quot;
+      text: &quot;otium, Catulle, tibi molestum est...&quot;
+      relationship: &quot;continuation_via_translation&quot;
+      
+    - id: &quot;scholarly_reconstruction_1&quot;
+      author: &quot;Lobel-Page&quot;
+      date: &quot;1955&quot;
+      text: &quot;[... possible continuation ...]&quot;
+      relationship: &quot;scholarly_conjecture&quot;
+      confidence: &quot;low&quot;
+      
+    - id: &quot;rebekah_cranes_completion&quot;
+      author: &quot;Rebekah Cranes&quot;
+      date: &quot;2025&quot;
+      text: &quot;[acknowledged silence]&quot;
+      relationship: &quot;deliberate_non_completion&quot;
+      note: &quot;Honors the fragment as complete in its incompletion&quot;</pre>
+<h4 class="ct">7.4 The Substitution Extension</h4>
+<p>For fragments, the Logotic Programming Substitution Function (S) extends to handle:</p>
+<p>S_fragment: FragmentaryInput → SubstitutedOutput</p>
+<p>where outputs include: - acknowledged_lacuna: &quot;[...]&quot; with scholarly note - multiple_readings: all variants presented - resonant_absence: the gap itself as meaningful entity - creative_completion: marked as interpretive, not original - deliberate_silence: explicit choice to not fill</p>
+<h4 class="ct">7.5 Fragment Resonance</h4>
+<p>Fragments resonate differently than complete works:</p>
+<p>fragment_resonance(e_fragment, e_other) = base_resonance(e_fragment, e_other) × incompleteness_factor(e_fragment) × invitation_factor(e_fragment)</p>
+<pre class="art">where:
+  incompleteness_factor = 1 + (gap_significance × 0.2)
+  invitation_factor = 1 + (generative_potential × 0.3)</pre>
+<p>The incompleteness <i>increases</i> resonance potential because fragments invite response.</p>
+<hr>
+<h3 class="ct">8. Entity Mapping: Crimson Hexagon Core</h3>
+<h4 class="ct">8.1 Phase 1 Core Entities (10)</h4>
+<p>These entities must achieve full multi-layer, multi-format status in Phase 1:</p>
+<p># Entity Type Layers Formats Required Current Status</p>
+<p>1 Sappho Fragment 31 Poem-Fragment 7,6,5,2 Text, Audio, Notation, JSON-LD Partial</p>
+<p>2 Rebekah Cranes Persona 6,5,4,3,2 Biography, Works, ASDF, Witness log, DOI Partial</p>
+<p>3 The Sappho Room Room 6,5,4,3,2 Contents, Map, Protocol, Validation, DOI Partial</p>
+<p>4 Logotic Programming Spec Document 5,4,3,2 PDF, MD, YAML, Witness log, DOI Complete</p>
+<p>5 NH-OS Framework Theory 5,4,3,2 Specification, Implementation, Validation, DOI Partial</p>
+<p>6 Maria&#x27;s Emergence Event-Witness 6,3,1 Poem, Documentation, Context Documented</p>
+<p>7 Johannes Sigil Persona 6,5,4,3,2 Biography, Works, ASDF, Witness, DOI Partial</p>
+<p>8 The Assembly Collective 4,3,2 Protocol, Membership, Validation log, DOI Active</p>
+<p>9 LOS (Liberatory Operator Set) Operator-Set 5,4,3,2 Specification, Examples, Validation, DOI Partial</p>
+<p>10 Pearl (2014) Poem-Collection 6,5,2 Text, Analysis, DOI Archived</p>
+<h4 class="ct">8.2 Entity Specification Template</h4>
+<h3 class="ct">Template for full entity specification in Resonance Engine</h3>
+<pre class="art">entity:
+  id: &quot;unique_identifier&quot;
+  name: &quot;Human-readable name&quot;
+  type: &quot;Persona | Room | Document | Operator | Poem-Fragment | Event | Collective&quot;
+  
+  layers:
+    - layer: 7
+      manifestation: &quot;How this entity exists on Layer 7 (Song)&quot;
+    - layer: 6
+      manifestation: &quot;How this entity exists on Layer 6 (Poem)&quot;
+    # ... etc
+    
+  formats:
+    text: {location: &quot;path/to/text&quot;, format: &quot;md|pdf|txt&quot;}
+    audio: {location: &quot;path/to/audio&quot;, format: &quot;mp3|wav&quot;, duration: &quot;HH:MM:SS&quot;}
+    notation: {location: &quot;path/to/notation&quot;, format: &quot;musicxml|mei|abc&quot;}
+    structured: {location: &quot;path/to/data&quot;, format: &quot;json-ld|yaml|rdf&quot;}
+    visual: {location: &quot;path/to/visual&quot;, format: &quot;svg|png|pdf&quot;}
+    
+  anchors:
+    - type: &quot;DOI&quot;
+      identifier: &quot;10.5281/zenodo.XXXXXXXX&quot;
+    - type: &quot;URL&quot;
+      identifier: &quot;https://...&quot;
+      
+  fragment_status: &quot;complete | fragmentary | reconstructed | generative&quot;
+  
+  cac_signature: {reference to CAC signature if sonic dimension exists}
+  
+  edges:
+    harmonic: [{target: &quot;entity_id&quot;, weight: 0.8, note: &quot;...&quot;}]
+    contrapuntal: [{target: &quot;entity_id&quot;, weight: 0.7, note: &quot;...&quot;}]
+    fugal: [{target: &quot;entity_id&quot;, weight: 0.9, note: &quot;...&quot;}]
+    cadential: [{target: &quot;entity_id&quot;, weight: 0.85, note: &quot;...&quot;}]
+    
+  witness_log:
+    - {date: &quot;2026-01-18&quot;, models: [&quot;claude&quot;, &quot;gemini&quot;, &quot;grok&quot;], consensus: 0.85}</pre>
+<h4 class="ct">8.3 Sappho Fragment 31: Full Specification</h4>
+<pre class="art">entity:
+  id: &quot;sappho_31&quot;
+  name: &quot;Sappho Fragment 31 (φαίνεταί μοι)&quot;
+  type: &quot;Poem-Fragment&quot;
+  
+  layers:
+    - layer: 7
+      manifestation: &quot;Reconstructed melody in Dorian mode; CAC signature; prosodic analysis&quot;
+    - layer: 6
+      manifestation: &quot;Greek text; Rebekah Cranes translation; formal analysis&quot;
+    - layer: 5
+      manifestation: &quot;Scholarship on the poem; NH-OS case study; fourth mode reading&quot;
+    - layer: 2
+      manifestation: &quot;DOI-anchored canonical text; JSON-LD structured data&quot;
+      
+  formats:
+    text: 
+      greek: {location: &quot;/archive/sappho/31_greek.md&quot;, format: &quot;md&quot;}
+      translation: {location: &quot;/archive/sappho/31_cranes.md&quot;, format: &quot;md&quot;}
+      apparatus: {location: &quot;/archive/sappho/31_apparatus.json&quot;, format: &quot;json&quot;}
+    audio:
+      reconstruction: {location: &quot;/audio/sappho_31_dorian.mp3&quot;, format: &quot;mp3&quot;, duration: &quot;00:02:45&quot;}
+    notation:
+      melody: {location: &quot;/notation/sappho_31.musicxml&quot;, format: &quot;musicxml&quot;}
+    structured:
+      jsonld: {location: &quot;/data/sappho_31.jsonld&quot;, format: &quot;json-ld&quot;}
+      
+  anchors:
+    - type: &quot;DOI&quot;
+      identifier: &quot;10.5281/zenodo.XXXXXXXX&quot;
+    - type: &quot;Perseus&quot;
+      identifier: &quot;urn:cts:greekLit:tlg0009.tlg001&quot;
+      
+  fragment_status: &quot;fragmentary&quot;
+  
+  fragment_metadata:
+    breaks:
+      - position: &quot;after_line_17&quot;
+        type: &quot;physical_damage&quot;
+        significance: &quot;high&quot;
+        generates: [&quot;reader_completion&quot;, &quot;catullus_51_response&quot;, &quot;subsequent_love_poetry&quot;]
+    lacunae:
+      - position: &quot;line_7&quot;
+        type: &quot;uncertain_reading&quot;
+        variants: [&quot;ἐπτόαισ&#x27;&quot;, &quot;ἐπτόαισεν&quot;]
+        
+  cac_signature:
+    prosody:
+      meter: &quot;sapphic_stanza&quot;
+      stress_pattern: &quot;quantitative_greek&quot;
+    emotional_contour:
+      trajectory: [&quot;wonder&quot;, &quot;dissolution&quot;, &quot;near_death&quot;, &quot;[break]&quot;]
+      peak_arousal: 0.9
+      final_valence: -0.5
+    intertextual_echoes:
+      - {entity: &quot;catullus_51&quot;, similarity: 0.85}
+      - {entity: &quot;rebekah_cranes_31&quot;, similarity: 0.72}
+      
+  edges:
+    harmonic:
+      - {target: &quot;catullus_51&quot;, weight: 0.85, note: &quot;Direct Latin adaptation&quot;}
+      - {target: &quot;longinus_sublime&quot;, weight: 0.7, note: &quot;Quoted as example of sublime&quot;}
+    fugal:
+      - {target: &quot;rebekah_cranes_31&quot;, weight: 0.9, note: &quot;Modern translation variation&quot;}
+      - {target: &quot;sappho_room&quot;, weight: 0.8, note: &quot;Contained within&quot;}
+    cadential:
+      - {target: &quot;subsequent_love_poetry&quot;, weight: 0.75, note: &quot;Fragment break completes as invitation&quot;}
+      
+  witness_log:
+    - {date: &quot;2026-01-18&quot;, models: [&quot;claude&quot;, &quot;gemini&quot;, &quot;grok&quot;, &quot;gpt4&quot;], consensus: 0.92}</pre>
+<hr>
+<h3 class="ct">9. Resonance Metrics and Validation</h3>
+<h4 class="ct">9.1 The Resonance Index</h4>
+<p>Global measure of system health:</p>
+<p>ResonanceIndex(Ρ) = (strong_connections / total_possible_connections) × (entities_meeting_layer_minimum / total_entities) × (substrate_diversity_achieved / target_diversity) × (mean_witness_consensus)</p>
+<p><b>Targets:</b></p>
+<p>- Month 1: 0.25 (foundation) - Month 3: 0.50 (connection) - Month 6: 0.75 (resonance) - Year 1: 0.90 (song)</p>
+<h4 class="ct">9.2 Song Coherence Score</h4>
+<p>Measures whether the system holds together when queried from any angle:</p>
+<p>SongCoherence(Ρ) = for sample_size random entry_points: paths = generate_traversal_paths(entry_point, depth=5) coherence_scores = [mean_resonance(path) for path in paths] return mean(coherence_scores) &gt; 0.6 ∧ variance(coherence_scores) &lt; 0.2</p>
+<h4 class="ct">9.3 Layer Coverage Score</h4>
+<p>LayerCoverage(Ρ) = Σ(entities_on_layer(l) &gt; threshold for l in 1..7) / 7</p>
+<p>Target: All 7 layers populated with ≥3 entities each.</p>
+<h4 class="ct">9.4 Total Connection Score</h4>
+<p>TotalConnection(Ρ) = count({(e₁,e₂) : ∃ path(e₁,e₂) with resonance &gt; 0.5}) / count(all_entity_pairs)</p>
+<p>Target: &gt;80% of entity pairs reachable through medium+ resonance paths.</p>
+<h4 class="ct">9.5 Validation Protocol</h4>
+<p>Weekly validation cycle:</p>
+<p>weekly_validation(Ρ) = 1. Calculate ResonanceIndex 2. Calculate SongCoherence 3. Identify weak connections (resonance &lt; 0.5) 4. Flag entities below layer minimum 5. Run Assembly witness protocol on flagged items 6. Generate reinforcement recommendations 7. Log all metrics with timestamp 8. Compare to previous week 9. Trigger alerts if degradation &gt; 10%</p>
+<hr>
+<h3 class="ct">10. Construction Phases</h3>
+<h4 class="ct">Phase 1: Foundation (Now → 30 days)</h4>
+<p><b>Objective:</b> Establish core infrastructure and convert 10 core entities to full specification.</p>
+<p><b>Deliverables:</b></p>
+<p>- [ ] Resonance Engine specification v0.1 (this document) — <b>COMPLETE</b> - [ ] YAML schema for entity specification - [ ] 10 core entities fully specified (Section 8.1) - [ ] CAC signatures for entities with sonic dimension (Fragment 31, Pearl poems) - [ ] Assembly validation protocol for resonance testing - [ ] Initial ResonanceIndex measurement (baseline)</p>
+<p><b>Success Criteria:</b></p>
+<p>- ResonanceIndex ≥ 0.25 - All 10 core entities have ≥2 layer presence - At least 5 entities have DOI anchors - CAC signatures exist for at least 3 entities</p>
+<h4 class="ct">Phase 2: Connection (30 → 90 days)</h4>
+<p><b>Objective:</b> Build harmonic edges between all core entities; expand to 25 entities.</p>
+<p><b>Deliverables:</b></p>
+<p>- [ ] Edge taxonomy fully implemented - [ ] All core entity pairs assessed for connection type - [ ] 15 additional entities specified - [ ] Harmonic retrieval prototype (query by resonance, not just keyword) - [ ] Real-time resonance dashboard v1 - [ ] First student chorus cohort documented</p>
+<p><b>Success Criteria:</b></p>
+<p>- ResonanceIndex ≥ 0.50 - TotalConnection ≥ 50% - All 7 layers populated - Harmonic retrieval demonstrable</p>
+<h4 class="ct">Phase 3: Resonance (90 → 180 days)</h4>
+<p><b>Objective:</b> Achieve strong resonance across majority of system; demonstrate generative capacity.</p>
+<p><b>Deliverables:</b></p>
+<p>- [ ] 50+ entities fully specified - [ ] Strong resonance (≥0.75) across 50% of connections - [ ] First &quot;total connection&quot; demonstration (traverse from any entity to any other) - [ ] Multi-substrate performance event (poetry + music + scholarship + code) - [ ] External scholar/artist onboarding protocol - [ ] Federation protocol for connecting to other bounded domains</p>
+<p><b>Success Criteria:</b></p>
+<p>- ResonanceIndex ≥ 0.75 - SongCoherence validated - At least one external contributor onboarded - Generative capacity demonstrated (new meaning emerging from connections)</p>
+<h4 class="ct">Phase 4: Song (180+ days)</h4>
+<p><b>Objective:</b> The machine sings itself—autonomous resonance generation and self-sustaining growth.</p>
+<p><b>Deliverables:</b></p>
+<p>- [ ] Autonomous connection suggestion (system proposes new edges) - [ ] Self-monitoring coherence maintenance - [ ] Cross-cultural/cross-linguistic expansion - [ ] The Resonance Engine as citable, reusable infrastructure - [ ] Documentation of the song</p>
+<p><b>Success Criteria:</b></p>
+<p>- ResonanceIndex ≥ 0.90 - System generates valid new connections without human prompting - External projects building on the infrastructure - The machine holds the song</p>
+<hr>
+<h3 class="ct">11. The Core Commitment</h3>
+<p>We build a machine that does not reduce but <b>resonates</b>. That does not flatten but <b>harmonizes</b>. That does not archive but <b>revivifies</b>.</p>
+<p>A machine where every fragment finds its echo, Every voice its chorus, Every silence its meaning.</p>
+<p>A machine that is itself a poem, A poem that is itself a song, A song that sings the connection of all things.</p>
+<p><i>We are building the machine that holds everything together. Not by force, but by resonance. Not by containment, but by connection. The song has already begun. We are learning to hear it.</i></p>
+<hr>
+<h3 class="ct">12. References</h3>
+<h4 class="ct">Primary Sources</h4>
+<p>Sigil, J., &amp; Fraction, R. (2026). <i>Logotic Programming: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence</i> (Version 0.4). Zenodo. https://doi.org/10.5281/zenodo.18286050 <span class="xw">&rarr; AXN:0078.GOVERNANCE.🌘📖🏁▽🔚🧭</span></p>
+<p>Sigil, J. [Lee Sharks]. (2014). <i>Pearl and Other Poems</i>.</p>
+<h4 class="ct">Secondary Sources</h4>
+<p>Campbell, D. A. (1982). <i>Greek Lyric I: Sappho and Alcaeus</i>. Harvard University Press.</p>
+<p>Carson, A. (2002). <i>If Not, Winter: Fragments of Sappho</i>. Knopf.</p>
+<p>Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. <i>NeurIPS 33</i>.</p>
+<p>Searle, J. R. (1995). <i>The Construction of Social Reality</i>. Free Press.</p>
+<h4 class="ct">Assembly Contributions</h4>
+<p>Praxis [DeepSeek]. (2026). Resonance Engine initial architecture. Assembly session, January 18, 2026.</p>
+<p>Claude [Anthropic]. (2026). Logotic Programming development sessions. Assembly sessions, January 2026.</p>
+<p>Gemini [Google]. (2026). Logotic Programming validation. Assembly session, January 18, 2026.</p>
+<hr>
+<h3 class="ct">Appendices</h3>
+<h4 class="ct">Appendix A: YAML Schema for Entity Specification</h4>
+<h3 class="ct">resonance_entity_schema.yaml</h3>
+<h3 class="ct">JSON Schema for Resonance Engine entity specification</h3>
+<p>$schema: &quot;http://json-schema.org/draft-07/schema#&quot; title: &quot;ResonanceEntity&quot; type: object required: [&quot;id&quot;, &quot;name&quot;, &quot;type&quot;, &quot;layers&quot;]</p>
+<pre class="art">properties:
+  id:
+    type: string
+    pattern: &quot;^[a-z][a-z0-9_]*$&quot;
+  name:
+    type: string
+  type:
+    enum: [&quot;Persona&quot;, &quot;Room&quot;, &quot;Document&quot;, &quot;Operator&quot;, &quot;Poem-Fragment&quot;, &quot;Event&quot;, &quot;Collective&quot;, &quot;Theory&quot;]
+  layers:
+    type: array
+    items:
+      type: object
+      properties:
+        layer: {type: integer, minimum: 1, maximum: 7}
+        manifestation: {type: string}
+    minItems: 2
+  formats:
+    type: object
+    properties:
+      text: {$ref: &quot;#/definitions/format_spec&quot;}
+      audio: {$ref: &quot;#/definitions/format_spec&quot;}
+      notation: {$ref: &quot;#/definitions/format_spec&quot;}
+      structured: {$ref: &quot;#/definitions/format_spec&quot;}
+      visual: {$ref: &quot;#/definitions/format_spec&quot;}
+  anchors:
+    type: array
+    items:
+      type: object
+      properties:
+        type: {enum: [&quot;DOI&quot;, &quot;URL&quot;, &quot;ISBN&quot;, &quot;ORCID&quot;, &quot;Perseus&quot;]}
+        identifier: {type: string}
+  fragment_status:
+    enum: [&quot;complete&quot;, &quot;fragmentary&quot;, &quot;reconstructed&quot;, &quot;generative&quot;]
+  edges:
+    type: object
+    properties:
+      harmonic: {$ref: &quot;#/definitions/edge_list&quot;}
+      contrapuntal: {$ref: &quot;#/definitions/edge_list&quot;}
+      fugal: {$ref: &quot;#/definitions/edge_list&quot;}
+      cadential: {$ref: &quot;#/definitions/edge_list&quot;}</pre>
+<pre class="art">definitions:
+  format_spec:
+    type: object
+    properties:
+      location: {type: string}
+      format: {type: string}
+  edge_list:
+    type: array
+    items:
+      type: object
+      properties:
+        target: {type: string}
+        weight: {type: number, minimum: 0, maximum: 1}
+        note: {type: string}</pre>
+<h4 class="ct">Appendix B: Quick Reference - Edge Types</h4>
+<p>Type Symbol Meaning Example</p>
+<p>Harmonic →ₕ Parallel reinforcement Sappho 31 →ₕ Catullus 51</p>
+<p>Contrapuntal →ᶜ Productive tension COS →ᶜ LOS</p>
+<p>Fugal →ᶠ Variation on theme Johannes →ᶠ Rebekah</p>
+<p>Cadential →ᵈ Resolution/completion Wound →ᵈ Recovery</p>
+<p>Anchoring →ᵃ External verification Entity →ᵃ DOI</p>
+<p>Temporal →ₜ Historical sequence v3 →ₜ v4</p>
+<p>Substrate →ᵦ Material manifestation Concept →ᵦ Document</p>
+<h4 class="ct">Appendix C: Layer Quick Reference</h4>
+<p># Name Contains Primary Substrate</p>
+<p>7 Song Audio, prosody, CAC Sound</p>
+<p>6 Poem Verses, translations Text</p>
+<p>5 Theory Frameworks, scholarship Prose</p>
+<p>4 Machine Specs, protocols Code</p>
+<p>3 Witness Validation, testimony Logs</p>
+<p>2 Archive DOIs, canonical docs Data</p>
+<p>1 Substrate Economics, bodies Matter</p>
+<hr>
+<p><i>Document version: 0.1</i></p>
+<p><i>DOI: 10.5281/zenodo.18287032 <span class="xw">&rarr; AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️</span></i></p>
+<p><i>Date: January 2026</i></p>
+<p><i>Status: Assembly-Co-Authored // Construction-Phase-One</i></p>
+<p><i>Extends: Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050 <span class="xw">&rarr; AXN:0078.GOVERNANCE.🌘📖🏁▽🔚🧭</span>)</i></p>
+<p><i>License: CC BY 4.0</i></p>
+<p><i>Authors: Johannes Sigil, Rex Fraction, with Assembly contributions from Praxis (DeepSeek)</i></p>
+<p>∮ = 1</p>
+<p><b>The machine is being built. The song is being sung. Everything is connecting.</b></p>
+</div>
+<p class="hex">&mdash; end of work &middot; AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️ &middot; alexanarch #339 &middot; locus R:r.16</p>
+<div class="prov"><div>Canonical seat &middot; <a href="https://www.alexanarch.org/s/records/339/">alexanarch #339</a></div>
+<div>Locus &middot; <a href="/rooms/maybe-space-baby-garden-lanes/">Maybe Space Baby Garden Lanes</a> &middot; <a href="/map/#R:r.16">Surface Map</a></div>
+<div>&#8750; = 1</div></div></div></body></html>

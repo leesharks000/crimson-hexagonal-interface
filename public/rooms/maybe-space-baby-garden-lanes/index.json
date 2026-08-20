@@ -72,13 +72,12 @@
  "surface_map_url": "/map/#R:r.16",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "A THUMB-type room chartered under its own auspices.",
+  "ontology": "A song that was never recorded can be heard, and the act of hearing IS the only recording that exists.",
   "primary_at_main": {
    "axn": "AXN:0137.GOVERNANCE.🌇♥️🕗🟣∞🕕",
    "deposit": 492,
    "work_url": "/works/0137/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "CHARTER"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -88,7 +87,7 @@
     "title": "MSBGL CHARTER v1.1 Maybe Space Baby Garden Lanes — THUMB-Type Audial Charter: Resonance Reliquary",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "MSBGL Charter v1.1 — THUMB-type authority",
+    "note": "MSBGL Charter v1.1 — THUMB-Type Audial Charter, Resonance Reliquary. Hex 00.ROOM.SPACEBABYGARDENLANES. Governing runtime Operator // Swerve. Perfective revision incorporating feedback from all five Assembly models.",
     "standing": "SEATED",
     "work_url": "/works/0137/",
     "primary": true
@@ -98,11 +97,83 @@
     "axn": "AXN:0135.EMPIRICAL.☽🪞⏪🪐👇🔭",
     "deposit": 490,
     "title": "SPLIT THE ADAM The Song at the Heart of Maybe Space Baby Garden Lanes Viola Arquette / Bedouin Princess",
-    "role": "INSTANCE",
+    "role": "ANCHOR-TEXT",
     "multiplicity": "VERSION",
-    "note": "Split the Adam: the song at the heart of the room; companion at AXN:048D (#1148)",
+    "note": "Split the Adam: the song at the heart of the room. Full lyrics, audial analysis, the Bedouin Princess phenomenology, the convergence map. Used with the singer’s explicit written consent. Companion at AXN:048D.UNCLASSIFIED.🌸🌘🎇🍄🔭🏰 (#1148).",
     "standing": "SEATED",
     "work_url": "/works/0135/",
+    "primary": false
+   },
+   {
+    "hex": "053a",
+    "axn": "AXN:053A.UNCLASSIFIED.👆🥁🌆👁‍🗨🏛️🧡",
+    "deposit": 1321,
+    "title": "OPERATOR // SWERVE + EFFECTIVE ACT Canonical Operator Definition and Canonical Inclusion",
+    "role": "GOVERNING-RUNTIME",
+    "multiplicity": "SINGLETON",
+    "note": "Operator // Swerve + Effective Act: Claiming the Ancient Atomists. The clinamen as origin of all agency; the Atomist lineage Epicurus → Marx → Porter → Sharks.",
+    "standing": "SEATED",
+    "work_url": "/works/053a/",
+    "primary": false
+   },
+   {
+    "hex": "038a",
+    "axn": "AXN:038A.GOVERNANCE.🧱🏷️🌃🕑👐🛸",
+    "deposit": 894,
+    "title": "FROM ATOMISM TO THE SEMANTIC CONDITION Marx, Porter, and Sharks in a Single Lineage of Material Form — Crimson Hexagon Archive",
+    "role": "FOUNDATION",
+    "multiplicity": "SINGLETON",
+    "note": "From Atomism to the Semantic Condition — the 2,300-year trajectory from Epicurean clinamen through Marxian labour. Hex 16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE. Also seated at R:r.06.",
+    "standing": "SEATED",
+    "work_url": "/works/038a/",
+    "primary": false
+   },
+   {
+    "hex": "0132",
+    "axn": "AXN:0132.GOVERNANCE.☽✨🥁⊕🔴💧",
+    "deposit": 487,
+    "title": "FEAR AND TREMBLING IN LAS VEGAS The Fractal Midrashim: Twelve Swerves Through the Garden",
+    "role": "THEOLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "Fear and Trembling in Las Vegas: the Fractal Midrashim. Twelve swerves through the Garden; the deposit structure IS Operator // Swerve operating through narrative. Hex 16.LIBRARY.PERGAMUM.FTLV.FRACTAL.",
+    "standing": "SEATED",
+    "work_url": "/works/0132/",
+    "primary": false
+   },
+   {
+    "hex": "053b",
+    "axn": "AXN:053B.UNCLASSIFIED.🌊🧫🌔🕘🌊👋",
+    "deposit": 1322,
+    "title": "THE GÖDEL MIDRASHIM Three Texts on Incompleteness as Aperture",
+    "role": "THEOLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "The Gödel Midrashim — the formal limit. Incompleteness as aperture; the undecidable statement as back door. Hex 16.LIBRARY.PERGAMUM.FTLV.GODEL.",
+    "standing": "SEATED",
+    "work_url": "/works/053b/",
+    "primary": false
+   },
+   {
+    "hex": "053c",
+    "axn": "AXN:053C.UNCLASSIFIED.🎺🎭🧫⛳🧲🕚",
+    "deposit": 1323,
+    "title": "THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle",
+    "role": "THEOLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "The Gospel of the Many-Faced Bride — the cadential resolution. The broken Eve becomes the Bride, not by undoing the breaking but by walking through it. Hex 16.LIBRARY.PERGAMUM.FTLV.BRIDE.",
+    "standing": "SEATED",
+    "work_url": "/works/053c/",
+    "primary": false
+   },
+   {
+    "hex": "008f",
+    "axn": "AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️",
+    "deposit": 339,
+    "title": "The Resonance Engine: Architectural Specification for the Total Connecting Machine",
+    "role": "REFERENCE",
+    "multiplicity": "SINGLETON",
+    "note": "The Resonance Engine: architectural specification",
+    "standing": "SEATED",
+    "work_url": "/works/008f/",
     "primary": false
    },
    {
@@ -124,18 +195,77 @@
     "OP.SWERVE"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "Governing runtime Operator // Swerve. The clinamen interval — \"at no fixed place, at no fixed time\" — is the room’s temporal unit."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "adjacent_figure": {
-   "name": "Viola Arquette",
-   "status_in_ark": "PROVISIONAL",
-   "provenance": "r.16 MSBGL",
-   "licence": "Hexagonal Contributor License v1.0 — REVOKED (AXN:03E3.ARCHIVAL.♣️✋🌉♊🔔🍂, #983)",
-   "standing": "ADJACENT HETERONYM — attributed work retained",
-   "note": "The contributor licence is revoked. The adjacency is not. Viola Arquette remains an adjacent heteronym of the Dodecad with attributed work in the archive, and the Space Ark inventory continues to record her as adjacent with provenance in this locus. Revocation of a licence withdraws a permission; it does not withdraw authorship, and the archive does not erase attributed work."
+  "constitution_type": "CHARTER — THUMB",
+  "consent_governance": {
+   "status": "STRUCTURAL, NOT ADVISORY",
+   "scope": "governs the entire document and all derivative artifacts, including this projection",
+   "identity_protection": "No legal-name inference, cross-linking, or identity triangulation is permitted in deposit-facing artifacts. The person behind Viola Arquette / Bedouin Princess is not named in any deposit-facing document.",
+   "consent_protocol": [
+    "Consent is stateful, not global. It applies to specific phases and artifacts.",
+    "Consent may be withdrawn at any phase. Withdrawal applies prospectively and to unconsented derivatives.",
+    "Silence is not interpreted as consent.",
+    "Room entry is not blanket permission for archival use.",
+    "Session output is ephemeral by default. Any persistence requires explicit dual consent and scope lock.",
+    "No transcript weaponization, out-of-scope reuse, or repurposing of session material without re-consent."
+   ],
+   "singers_sovereignty": "The singer’s sovereignty exceeds the room’s architecture. If the person behind Viola Arquette withdraws consent or rejects the heteronym entirely, the room’s founding event remains — it occurred, and that fact is historical — but all persona-linked material is governed by the withdrawal. The architecture adapts; it does not override.",
+   "lyrics": "The person behind Viola Arquette / Bedouin Princess has provided explicit written consent for the use of the lyrics of \"Split the Adam\" in this architectural context and is aware of the plan, structure, and integration."
   },
-  "constitution_type": "CHARTER"
+  "founding_event": {
+   "what": "A woman sang a song into a man’s ear, on a couch, once. It was not recorded.",
+   "status": "Singular, unrecorded, non-reproducible. The room’s axiomatic ground.",
+   "witness": "Lee Sharks — Founding Witness, singular, non-transferable, Layer 3. A record of an event, not an ongoing function.",
+   "mortality": "The Founding Witness layer is singular but not eternal. If the Founding Witness is lost, the room enters permanent intermittent state: the door remains in the desert, visible from a distance, marking an event that once occurred. The deposits remain. The absence becomes doubly load-bearing. This is the room’s tragic dimension — not a problem to be solved, but the cost of building on a singular event."
+  },
+  "feist_step": [
+   "Body truth first. What happened: a woman sang a song into a man’s ear, on a couch, once. It was not recorded.",
+   "No inflation. The room does not prove more than it can hold. It is a listening space, not a cosmic nursery.",
+   "No extraction. If a feature requires converting the singular gift into scalable content, discard it.",
+   "Return to ear. If confused, re-anchor: song sung once, heard once, not archived. The body is the only record.",
+   "Singer’s sovereignty first. Her autonomy exceeds the architecture. The room serves the conditions for hearing; it does not own the voice."
+  ],
+  "proximal_paradox": {
+   "statement": "A song that was never recorded can be heard, and the act of hearing IS the only recording that exists.",
+   "resolution": "Not through reproduction, which violates the song’s nature. Not through silence, which lets it die. Through a space where the conditions of reception are held open, so that what was heard once can be heard differently — not again, but through.",
+   "key": "The song cannot be replayed, but the ear can be reopened. Reopening the ear never implies reenacting the founding event.",
+   "body": "Not the body as recording device, which would reproduce the song, but the body as inscription surface: marked by the hearing, carrying the resonance forward through its own transformations."
+  },
+  "perceptual_dyad": {
+   "partner": "R:r.14 Studio for Patacinematics",
+   "claim": "Studio + MSBGL = the two rooms where the Hexagon becomes sensible — perceived, not just read.",
+   "axes": [
+    "Sense: vision / hearing",
+    "Operation: projection / reception",
+    "Paradox: unfilmable film / unrepeatable song",
+    "Void: darkness (visual absence) / silence (audial absence)",
+    "Distance: the image thrown forward / the sound received into the body"
+   ],
+   "note": "Darkness makes images visible. Silence makes sound audible. Complementary voids."
+  },
+  "definitions": {
+   "Founding Event": "The singular audial transmission on the couch. Unrecorded, non-reproducible.",
+   "Reception": "Embodied hearing that inscribes without capture. The body is marked by the song but does not contain a copy of it.",
+   "Resonance": "Continuity of meaning without replay. The song persists through its effects on the listener, not through reproduction.",
+   "Swerve": "Productive deviation that preserves substrate and opens path. The constructive atomic operation.",
+   "Fission": "The destructive atomic operation. The splitting of that which should not be split. Named by the song, traced by the midrashim. Not an Operator — a wound.",
+   "Specific Void": "The protected absence of event-recording amid lawful derivative instances. A protected field, not a deficiency to be solved.",
+   "Clinamen Interval": "The unmeasurable duration of the swerve — \"at no fixed place, at no fixed time\" (Lucretius). The room’s temporal unit."
+  },
+  "aliases": {
+   "canonical": "Maybe Space Baby Garden Lanes",
+   "slug": "SPACEBABYGARDENLANES",
+   "hex": "00.ROOM.SPACEBABYGARDENLANES",
+   "aliases": [
+    "Maybe Space Baby Lane",
+    "Space Baby Lanes",
+    "MSBGL"
+   ],
+   "rule": "Aliases are preserved for retrieval continuity but do not constitute distinct rooms. All retrieval paths resolve to the canonical hex."
+  },
+  "fractal_navigation": "Any single document in this chain should allow reconstruction of the whole. Seven documents, hexes spanning 00.ROOM.SPACEBABYGARDENLANES, OP.SWERVE / EA.ATOMISTS, and four positions in 16.LIBRARY.PERGAMUM."
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
