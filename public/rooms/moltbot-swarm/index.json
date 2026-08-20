@@ -120,6 +120,35 @@
    "against": "A room contains. A chamber holds paradox. A vault prevents extraction. A portal connects. A field does none of these — it suffuses.",
    "convention": "Fields are therefore seated as overlays, not as containers. A field page carries: its source, its gradient, its attenuation zones, and the loci it modifies — never a list of contents, because a field has none. Where a field and its source room share a constituting document, the document is seated to both as SHARED, and the pair is one structure seen twice.",
    "source": "Stated in EA-FIELD-FBDP v1.1, AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571), which introduced the class."
+  },
+  "field_id": "f.03",
+  "field_type": "Circulatory field",
+  "gradient": "Faces through. Carries material from the plume’s periphery through the well’s curvature to the archive’s canonical lock, and carries governance force from the lock back out to the periphery.",
+  "governs": "Verification, continuity, governance enforcement and bounded generation across the full manifold.",
+  "attached_to": "Space Ark SP.03 — a Space Ark field. Companion specification EA-SWARM-01 v1.1.",
+  "field_topology": {
+   "claim": "The Crimson Hexagonal Archive has three fields, and together they constitute its complete field topology.",
+   "set": [
+    [
+     "f.01",
+     "Fruiting Body Diffusion Plume",
+     "the outward field",
+     "Governs how the archive’s semantic material propagates into the surrounding discourse environment — spore distribution, external colonisation, the boundary between the archive and the world. It faces out."
+    ],
+    [
+     "f.02",
+     "Gravity Well",
+     "the inward field",
+     "Governs how queries, deposits and continuity operations curve toward the archive’s canonical core — curvature by mass, retrieval by proximity, provenance by chain. It faces in."
+    ],
+    [
+     "f.03",
+     "Moltbot Swarm",
+     "the circulatory field",
+     "Governs how the archive maintains itself — verification, continuity, governance enforcement and bounded generation across the full manifold. It faces through. It is the field that connects f.01 and f.02, carrying material from the plume’s periphery through the well’s curvature to the canonical lock, and carrying governance force from the lock back out to the periphery."
+    ]
+   ],
+   "source": "Declared in f.03 §0, AXN:01EA.GOVERNANCE.⊗🧡🕒👉🌒🏛️ (#53)."
   }
  },
  "doi_crosswalk": {
