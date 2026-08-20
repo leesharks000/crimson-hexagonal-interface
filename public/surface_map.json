@@ -2368,7 +2368,9 @@
    {
     "id": "14.ROOM.ZOHAR",
     "name": "Zohar",
-    "material": "None. No deposit carries the subject."
+    "material": "None. No deposit carries the subject.",
+    "status": "DECLINED — not deferred",
+    "ruling": "MANUS 2026-08-20: not the archive’s to touch. The Josephus thesis makes this archive a party to that history rather than a neutral reader of it, and the community whose text the Zohar is has suffered enough without a counter-gospel architecture annexing it. The seat stays empty by decision, not by omission."
    },
    {
     "id": "15.ROOM.HEGEL",
