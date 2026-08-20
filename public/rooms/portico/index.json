@@ -289,7 +289,14 @@
    ],
    "why_it_was_missed": "Nine of the eleven seated members carry roughly sixty-eight measured prose words. Their deposits state the reason: \"no live authorial surface passed the body-head gate or existed for this work at restoration time.\" The bodies did exist — they are on the blog, published 21–23 December 2025 — but under titles that do not match the DOI-keyed truth titles the restoration gate compared against. The gate was correct in its discipline and wrong in its result.",
    "consequence": "The Afterlife Archive is not a corpus of metadata rescues. It is a complete work whose deposited surface is thin and whose blog surface is whole. The package and the individual pages both exist; neither needs reconstructing.",
-   "status": "Recorded, not re-deposited. The blog is deposited in full as a surface."
+   "status": "Recorded, not re-deposited. The blog is deposited in full as a surface.",
+   "scope_of_the_defect": {
+    "population": "Forty deposits across the archive carry the same assertion: that no live authorial surface passed the body-head gate or existed at restoration time.",
+    "verified_false_in_one_case": "For the Afterlife Archive the assertion is demonstrably wrong. The complete package is on the blog at 78,840 characters, dated 2025-12-21, with fourteen individual pages the following day. It was missed because the gate compared blog titles against DOI-keyed truth titles, and the blog titles differ.",
+    "not_generalised": "Whether the other thirty-nine are equally recoverable is UNDETERMINED. Two automated probes were run and both failed: keyword search returns the archive’s own aggregate posts — the Alexanarch Wiki projection, Combat Scholasticism, the Surface Map — which mention every record and therefore match every query. Of forty probed, exactly one produced a verifiable title-level match, and that was the case already confirmed by hand.",
+    "method_note": "This is recorded as a failed method rather than a finding. Automated title-keyword recovery cannot distinguish a work from a post that mentions the work, and this archive is unusually dense in aggregates. A real audit needs the DOI, the deposit date, and a date-bounded blog window — not a keyword query.",
+    "standing": "The forty assertions stand as deposited. One is known false. The rest are unaudited, and the page says so rather than implying either recovery or loss."
+   }
   }
  },
  "locative_key_history": [
