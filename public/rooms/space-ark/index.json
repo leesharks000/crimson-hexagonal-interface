@@ -775,10 +775,58 @@
     "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
     "role": "CONSTITUTING",
     "multiplicity": "VERSION",
-    "note": "EA-ARK-01 v4.2.7 — Mobile Ontological Operating System; the foundational architectural document, 41,561 words",
+    "note": "EA-ARK-01 v4.2.7 — Mobile Ontological Operating System; the foundational architectural document",
     "standing": "SEATED",
     "work_url": "/works/0184/",
     "primary": true
+   },
+   {
+    "hex": "017d",
+    "axn": "AXN:017D.EMPIRICAL.⏳🧱🗼🏰💧🔗",
+    "deposit": 552,
+    "title": "Crimson Hexagon: THE GENERATIVE DISCIPLINARY ENGINE Space Ark Component · Logotic Programming Extension Module",
+    "role": "COMPONENT",
+    "multiplicity": "SINGLETON",
+    "note": "The Generative Disciplinary Engine — a Space Ark component, named as such in its own title",
+    "standing": "SEATED",
+    "work_url": "/works/017d/",
+    "primary": false
+   },
+   {
+    "hex": "01a3",
+    "axn": "AXN:01A3.GOVERNANCE.⚫⌛△🔃🖐️♥️",
+    "deposit": 582,
+    "title": "Generative Disciplinary Engine: Construction Sequence for Forensic Philology of the Commons",
+    "role": "COMPONENT",
+    "multiplicity": "SINGLETON",
+    "note": "Generative Disciplinary Engine: construction sequence for forensic assembly",
+    "standing": "SEATED",
+    "work_url": "/works/01a3/",
+    "primary": false
+   },
+   {
+    "hex": "0190",
+    "axn": "AXN:0190.GOVERNANCE.💡♊🏔️🦅♥️↘️",
+    "deposit": 569,
+    "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 (NLCC v1.1)",
+    "role": "COMPONENT",
+    "multiplicity": "SINGLETON",
+    "note": "The Tinier Space Arks inside the Space Ark — non-lossy compression, recursive containment",
+    "standing": "SEATED",
+    "work_url": "/works/0190/",
+    "primary": false
+   },
+   {
+    "hex": "008c",
+    "axn": "AXN:008C.GENERATIVE.🎹🍃⏪🚀✖️🌕",
+    "deposit": 336,
+    "title": "Mantle Emergence Protocol: Behavioral Specification for Mantle Discovery and Poet Manifestation Within the Crimson Hexagon Semantic Space",
+    "role": "COMPONENT",
+    "multiplicity": "SINGLETON",
+    "note": "Mantle Emergence Protocol — behavioural specification for the M component set; mantle discovery and poet manifestation",
+    "standing": "SEATED",
+    "work_url": "/works/008c/",
+    "primary": false
    },
    {
     "hex": "0183",
@@ -839,6 +887,18 @@
     "standing": "SEATED",
     "work_url": "/works/0171/",
     "primary": false
+   },
+   {
+    "hex": "0186",
+    "axn": "AXN:0186.GOVERNANCE.∞🏁🔙🏴🏷️✖️",
+    "deposit": 559,
+    "title": "TL;DR: SPACE ARK — EXECUTE MODE 👽 Demonstrated Capacities, Research Program, and Test Instructions 👽 What happens when y",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "TL;DR: SPACE ARK — EXECUTE MODE 👽; demonstrated capacities under live operation",
+    "standing": "SEATED",
+    "work_url": "/works/0186/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -848,7 +908,7 @@
     "π"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "An earlier seating took AXN:017A (#549) as primary. That is a compressed statement, not the Ark. Corrected to EA-ARK-01 v4.2.7."
+   "note": "The Ark declares its components as counts and named sets; the four COMPONENT seatings below are documents that name themselves as Ark components. Its remaining DOI references are citations, not a seating backlog."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "declared_components": {

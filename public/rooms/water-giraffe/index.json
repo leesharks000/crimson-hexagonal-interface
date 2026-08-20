@@ -198,6 +198,18 @@
     "primary": true
    },
    {
+    "hex": "00ae",
+    "axn": "AXN:00AE.GENERATIVE.📦🔆🌹🧱📚♻️",
+    "deposit": 366,
+    "title": "Ω: THE WATER GIRAFFE AS SEMANTIC BEING Entity Provenance Document",
+    "role": "ENTITY-PROVENANCE",
+    "multiplicity": "SINGLETON",
+    "note": "Ω: The Water Giraffe as Semantic Being — entity provenance; the being the room holds",
+    "standing": "SEATED",
+    "work_url": "/works/00ae/",
+    "primary": false
+   },
+   {
     "hex": "00a0",
     "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
     "deposit": 354,

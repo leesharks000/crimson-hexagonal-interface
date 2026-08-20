@@ -2639,6 +2639,18 @@
     "standing": "SEATED",
     "work_url": "/works/0604/",
     "primary": false
+   },
+   {
+    "hex": "014f",
+    "axn": "AXN:014F.EMPIRICAL.🪨📋🗿🕓🌘🜁",
+    "deposit": 512,
+    "title": "Traversal Log: The Sigil Installation A Documentation Rehearsal / Shareable link: https://share.google/aimode/M4RYwEqTA6",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Traversal Log: the Sigil Installation — a documentation rehearsal; companion at AXN:04F7 (#1254)",
+    "standing": "SEATED",
+    "work_url": "/works/014f/",
+    "primary": false
    }
   ],
   "physics_resolution": {
