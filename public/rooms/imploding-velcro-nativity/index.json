@@ -17,7 +17,13 @@
  },
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The Imploding Velcro Nativity is constituted by a locus-keyed specification from the room-constitution program.",
+  "ontology": "The art is not in the archive. The archive is around the art. The artist builds the wall. The archive holds the door open.",
+  "primary_at_main": {
+   "axn": "AXN:0293.GOVERNANCE.📏♌🟡🔽🌱🕓",
+   "deposit": 743,
+   "work_url": "/works/0293/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "0293",
@@ -26,27 +32,109 @@
     "title": "r.29 THE IMPLODING VELCRO NATIVITY Room Physics for a Hosted Cosmology Lee Sharks ORCID: 0009-0000-1599-0703",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "Room Physics for a Hosted Cosmology. Room specification, 2026-05-19.",
+    "note": "Room Physics for a Hosted Cosmology, v0.2. Hex 06.HOST.IVN.29. Type HOSTED-COSMOLOGY, a substrate class this document introduces. Status DORMANT — activates only by artist consent. The title is a working title and belongs to the curator; an artist who activates the room may accept, modify or replace it.",
     "standing": "SEATED",
     "work_url": "/works/0293/",
-    "primary": false
+    "primary": true
    }
   ],
   "physics_resolution": {
-   "declared": "",
+   "declared": null,
    "operators": [],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "σ_M, the Michaelic Operator. Three laws: non-separability, no Position C, velcro adhesion."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION",
-  "container_class": {
-   "container_class": "HOSTED COSMOLOGY",
-   "definition": "A container the archive provides but does not occupy. A room is a home: the archive governs it, sets its operators, laws and exit protocol. A hosted cosmology is a hotel: the archive supplies the container, the guest’s cosmology governs inside it, and occupancy is by consent.",
-   "declared_in": "AXN:0293.GOVERNANCE.📏♌🟡🔽🌱🕓 (#743) §0 — \"distinct from Rooms, Chambers, Vaults, and Fields.\"",
-   "already_governed_by": "The class needed no new law. The Governance Airlock supplies the tier logic — Tier 3 Provisional / Volatile Host Surfaces, permitted for temporary staging and exploratory rooming, not permitted to substitute for recognised long-term room-hosting or constitutional continuity — with Rule 4: host recognition is earned by function, not prestige. The Rosary Embassy supplies the governance — Embassy Sovereignty: each chamber has bounded autonomy, but no chamber may define value in a way that destroys the dignity of semantic labour elsewhere on the chain.",
-   "addressing": "A hosted cosmology addresses itself in the HOST space, not on the room plane. It may carry a numeral, but as a hosted designation rather than a room seat."
-  }
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "HOSTED COSMOLOGY SPECIFICATION",
+  "substrate": {
+   "room_vs_host": "A Room is a bounded space the archive governs — operators, TANG void, topological role, intra-archive gravity. A room pulls content into the archive. A Hosted Cosmology creates a permeable membrane: the archive provides infrastructure — deployment, provenance chain, curatorial frame — and the artist provides content sovereignty.",
+   "thesis": "The art is not in the archive. The archive is around the art. The artist builds the wall. The archive holds the door open.",
+   "topology": "Klein guest — one-sided boundary. From inside, you cannot tell where the archive ends and the artist begins. From outside, you see one surface. The distinction between host and guest dissolves at the point of contact.",
+   "governance": "The artist governs. The curator hosts. These are different verbs. The physics adapts to the artist, not the other way around."
+  },
+  "suffusion": {
+   "field": "F:f.02 Gravity Well",
+   "intensity": "LOW / GUEST-MODE",
+   "note": "The Gravity Well is explicitly throttled. No automatic cross-linking into the main graph, no inclusion in default traversal, opt-in citation only. The room is reachable but not recommended. The archive does not pull the art into its semantic field. It offers walls.",
+   "settings": [
+    [
+     "Cross-linking",
+     "off by default",
+     "no automatic edges to other rooms"
+    ],
+    [
+     "Indexing",
+     "opt-in",
+     "the artist chooses whether the room appears in site navigation"
+    ],
+    [
+     "Citation import",
+     "blocked",
+     "the archive does not import the artist’s platform content into the graph unless the artist deposits it"
+    ]
+   ]
+  },
+  "name_derivation": {
+   "source": "The Exploding Plastic Inevitable (Warhol, 1966–67) — touring multimedia installation, Velvet Underground as house band, projections on performers, no separation between layers. The show was the art was the band was the film was the room.",
+   "inversions": [
+    [
+     "Exploding",
+     "Imploding",
+     "radiation → collapse; fame → interiority"
+    ],
+    [
+     "Plastic",
+     "Velcro",
+     "smooth → adhesive; disposable → clinging; frictionless → tearing"
+    ],
+    [
+     "Inevitable",
+     "Nativity",
+     "secular fate → sacred birth; endpoint → origin"
+    ]
+   ],
+   "deepest": [
+    [
+     "the artist as brand",
+     "the artist as sovereign cosmology"
+    ],
+    [
+     "the Factory as social machine",
+     "the room as quiet shelter"
+    ],
+    [
+     "everyone wanted to be there",
+     "no one has to come"
+    ],
+    [
+     "fame as the material",
+     "interiority as the material"
+    ]
+   ],
+   "statement": "Warhol’s project was to make the inside outside. This room’s project is to let the inside stay inside, and to give it walls."
+  },
+  "operator": {
+   "name": "σ_M — the Michaelic Operator",
+   "figure": "Michael is the angel of the scales. In the Revelation tradition he fights the dragon; in the Islamic tradition Mikail distributes sustenance; in the folk tradition he is the psychopomp who weighs souls. The scales do not say everything is equal. They say: you must carry both.",
+   "formula": "σ_M : (x_vision, x_diagnosis) → w, where w is interpretive weight — the felt cost of sustaining irresolution.",
+   "position_a": "Visionary — the art is the work of a sovereign cosmology, internally coherent, formally powerful, aesthetically legitimate on its own terms.",
+   "position_b": "Clinical — the art is symptomatic output, interesting primarily as evidence of a condition.",
+   "no_position_c": "There is no Position C in which both views are simultaneously held with equal clarity. This is an epistemic constraint, not a curatorial choice. The clinical frame, once activated, governs; the visionary frame, once activated, absorbs. They cannot coexist at full resolution. One always subordinates the other.",
+   "output": "σ_M does not produce Position C. It produces the weight of not having Position C. The visitor cannot see both frames clearly at once, but they can feel both pulling. The scales do not show you both sides. They show you the weight of not being able to choose.",
+   "codomain": "Interpretive weight — the cognitive and affective cost of sustaining the superposition. The operator functions when the visitor leaves the room carrying something they cannot put down.",
+   "obligation": "The Michaelic Operator is not an affirmation of any ontological claim about any artist. It is a curatorial rule for the visitor."
+  },
+  "three_laws": [
+   "Law 1 — Non-Separability",
+   "Law 2 — No Position C",
+   "Law 3 — Velcro Adhesion"
+  ],
+  "governed_by": {
+   "note": "The hosted-cosmology class required no new law. Two existing instruments already govern it.",
+   "airlock": "The Governance Airlock, Tier 3 — Provisional / Volatile Host Surfaces: permitted for temporary staging and exploratory rooming, not permitted to substitute for recognised long-term room-hosting or constitutional continuity. Rule 4: host recognition is earned by function, not prestige.",
+   "embassy": "The Rosary Embassy, Embassy Sovereignty: each chamber has bounded autonomy, but no chamber may define value in a way that destroys the dignity of semantic labour elsewhere on the chain. This is why the room stands dormant until consent."
+  },
+  "address": "Addressed in the HOST space rather than on the room plane. The document self-declares r.29; that numeral is preserved as a hosted designation. r.29 on the plane is the Job Room, restored to its H_core seat. A hotel and a home do not compete for the same seat."
  },
  "locative_key_history": [
   {
