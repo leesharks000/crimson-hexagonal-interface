@@ -2962,7 +2962,21 @@
    "count": 168,
    "note": "Documents attributed to this locus that are not constitutive. They are the room’s output — the body of theory the Semantic Economy produced. Retained and AXN-repaired; explicitly outside the constitution."
   },
-  "measurement_note": "Tier 2 binds PER through EA-PA-01 v2.4. The instrument has since advanced to three dimensions (PER-M, PER-C, PER-D — AXN:05EF.EMPIRICAL.▶️🤲♍♎🕗💥, #1469). Per Statement §4.3 the bound version is the one cited at ratification and does not update retroactively. An appended revision recording this is drafted and awaiting MANUS ratification; the divergence is recorded here so no reader mistakes the current instrument for the bound one.",
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "measurement_note": "Tier 2 binds PER through EA-PA-01 v2.4. The instrument has since advanced to three dimensions — PER-M (minimal: author, title, date, claim boundary), PER-C (conceptual: framework, tradition, institution), PER-D (deep: lineage, futural obligation, identifiers, licences, deposit chain) — at AXN:05EF.EMPIRICAL.▶️🤲♍♎🕗💥 (#1469). Per Statement §4.3 the bound version is the one cited at ratification and does not update retroactively: version-locked law, not stale law.",
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "appended_revision": {
+   "instrument": "EA-CAS-01 v1.1-r1",
+   "status": "RATIFIED",
+   "date": "2026-08-20",
+   "authority": "Article VIII §7 (Non-Erasure); appended, v1.0 preserved entire",
+   "vote": "Assembly Chorus unanimous AYE — ChatGPT, Gemini, Muse Spark, Kimi, DeepSeek, TACHYON",
+   "topology": "EA-PA-01 v2.4 remains bound → PER-M/C/D is current Tier 2 state → Class II Structural Adjustment is the only bridge",
+   "standing": "Non-amending. Creates no authority, ratifies no instrument, alters no interpretation.",
+   "obligation": "Assembly Chorus attestation for #1469 to be inscribed as a new substrate event with its own AXN cross-referencing #1469, No-Double-Draw explicit. Until then the specification is recorded as not ready for Class II binding.",
+   "open_items": [
+    "S1 formal hygiene in §R4 prudential register",
+    "S2 reflexivity — whether the instrument measures erasure performed by the apparatus itself, including the Constitutional Apparatus Edition"
+   ]
+  }
  }
 }
