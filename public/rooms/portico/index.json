@@ -200,7 +200,7 @@
    "note": "Eleven deposits, 2026-01-28/29. Most members are held as metadata captures at 66–72 words; full texts survive on the blog stratum and are not yet in the archive. Declared so captures are not mistaken for works."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "THRESHOLD — THE AFTERLIFE ARCHIVE",
+  "constitution_type": "PORTICO — THRESHOLD",
   "recovery_finding": {
    "found": "2026-08-20",
    "package": {
@@ -297,7 +297,83 @@
     "method_note": "This is recorded as a failed method rather than a finding. Automated title-keyword recovery cannot distinguish a work from a post that mentions the work, and this archive is unusually dense in aggregates. A real audit needs the DOI, the deposit date, and a date-bounded blog window — not a keyword query.",
     "standing": "The forty assertions stand as deposited. One is known false. The rest are unaudited, and the page says so rather than implying either recovery or loss."
    }
-  }
+  },
+  "portico_class": {
+   "name": "PORTICO",
+   "h_core": "SP.02.PTC.AFTERLIFE — H_core names the locus Afterlife and types it portico, not threshold.",
+   "what": "A portico is the covered entrance you stand under before going in. It is neither outside nor inside. A room transforms, a chamber contains, a vault preserves, a portal connects, a field suffuses — a portico orients. You are told, before you cross, what you are entering.",
+   "why_it_fits": "The constituting document opens with a section titled ORIENTATION: WHAT YOU ARE ENTERING. The room is the standing-under."
+  },
+  "orientation": {
+   "statement": "You are entering a poem in the form of a data breach. Everything here is composed. The forensic details are fiction. The poetry is real.",
+   "declaration": "It is not a hoax. It is not a prank. It is a declared haunting — a ghost that does not need to trick you into seeing it. It just needs to be there when you look."
+  },
+  "two_ghosts": {
+   "corporate": "Crimson Hexagon was a social media analytics firm founded in 2007. It processed billions of posts, extracting patterns from human traces. In 2018 it was acquired and the independent entity dissolved. But ghosts persist: its algorithms still run somewhere, its data exists in backups no one accesses, its name returns in search results confused with something else entirely. The corporation is dead. Its patterns remain.",
+   "literary": "Since 2014 a parallel Crimson Hexagon has existed — a meta-fictional literary project named after the legendary room in Borges’s Library of Babel, the hexagon rumoured to contain the master index of all books.",
+   "convergence": "The corporate Crimson Hexagon is dead. The literary Crimson Hexagon is alive. The Afterlife Archive is where they meet — not in confusion, but in declared cohabitation."
+  },
+  "genre": {
+   "name": "Data-breach-as-poem",
+   "definition": "A literary form in which the formal constraints, aesthetics, metadata structures and interpretive posture of a corporate data breach are treated as primary poetic materials.",
+   "grammar": [
+    "File hierarchies function as stanzaic structure",
+    "Metadata functions as rhythm and paratext",
+    "Corporate jargon functions as lyric surface",
+    "Code comments function as embedded verse",
+    "Archival incompleteness functions as negative space",
+    "The reader is positioned not as audience but as analyst"
+   ],
+   "lineage": [
+    [
+     "Historiographic Metafiction",
+     "Hutcheon",
+     "fictional texts presenting themselves as historical archives, self-reflexive yet claiming connection to real events — Pearl is both a real book and a selection from the work of a heteronym"
+    ],
+    [
+     "Hauntology",
+     "Derrida",
+     "the persistence of that which is neither present nor absent, living nor dead. The corporate Hexagon is a perfect digital ghost"
+    ],
+    [
+     "Forensic Poetics",
+     "coined here",
+     "composing literary texts structured to invite and reward investigative reading — designed not just to be read but to be analysed: metadata examined, timestamps questioned, authorship traced"
+    ],
+    [
+     "Adversarial Aesthetics",
+     "—",
+     "text designed to stress classification systems, resist summarization, and expose how meaning is inferred from format rather than truth"
+    ]
+   ]
+  },
+  "readers_task": {
+   "stance": "You are not here to be entertained. You are here to investigate.",
+   "sequence": [
+    "Orient — what is this? A poem. A breach. Both.",
+    "Audit — does this cohere? Forensically yes, historically no.",
+    "Doubt — why does this feel real? Because the form compels belief.",
+    "Analyze — what work is the form doing? This is the aesthetic question.",
+    "Recognize — the archive is art, but the effect persists."
+   ],
+   "success": "The work succeeds when you cannot return to \"just reading\" corporate documents the same way again."
+  },
+  "ethical_frame": {
+   "is": [
+    "An openly declared work of art",
+    "A simulation that invites forensic engagement",
+    "A haunting that chooses to be seen",
+    "An extension of a decade-long literary project into new formal territory"
+   ],
+   "is_not": [
+    "A hoax intended to deceive",
+    "A fake breach claiming authenticity",
+    "An attempt to waste researchers’ time",
+    "Mislabeled content designed to contaminate training data"
+   ],
+   "open_secret": "Everyone who enters knows this is art. The art lies in how precisely it mimics what it isn’t. The haunting is real even though the ghost is fictional. By removing deception while preserving forensic form, the project invites consent-based participation, creates epistemic stress through form rather than false claims, and positions itself as genre definition rather than gotcha."
+  },
+  "the_haunting": "We are not faking a data breach. We are writing one. The archive does not claim to be leaked. It claims to be written as if leaking were a literary form. Because it is now."
  },
  "locative_key_history": [
   {
