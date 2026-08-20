@@ -69,5 +69,62 @@
   -3,
   2
  ],
- "surface_map_url": "/map/#R:r.16"
+ "surface_map_url": "/map/#R:r.16",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A THUMB-type room chartered under its own auspices.",
+  "primary_at_main": {
+   "axn": "AXN:0137.GOVERNANCE.🌇♥️🕗🟣∞🕕",
+   "deposit": 492,
+   "work_url": "/works/0137/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0137",
+    "axn": "AXN:0137.GOVERNANCE.🌇♥️🕗🟣∞🕕",
+    "deposit": 492,
+    "title": "MSBGL CHARTER v1.1 Maybe Space Baby Garden Lanes — THUMB-Type Audial Charter: Resonance Reliquary",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "MSBGL Charter v1.1 — THUMB-type authority",
+    "standing": "SEATED",
+    "work_url": "/works/0137/",
+    "primary": true
+   },
+   {
+    "hex": "0135",
+    "axn": "AXN:0135.EMPIRICAL.☽🪞⏪🪐👇🔭",
+    "deposit": 490,
+    "title": "SPLIT THE ADAM The Song at the Heart of Maybe Space Baby Garden Lanes Viola Arquette / Bedouin Princess",
+    "role": "INSTANCE",
+    "multiplicity": "VERSION",
+    "note": "Split the Adam: the song at the heart of the room; companion at AXN:048D (#1148)",
+    "standing": "SEATED",
+    "work_url": "/works/0135/",
+    "primary": false
+   },
+   {
+    "hex": "0136",
+    "axn": "AXN:0136.GOVERNANCE.🗝️🌓♊🌑🎺🔥",
+    "deposit": 491,
+    "title": "VISUAL SCHEMA -- MAYBE SPACE BABY GARDEN LANES Under the auspices of Rebekah Cranes and the Institute for Diagrammatic Poetics",
+    "role": "APPARATUS",
+    "multiplicity": "SINGLETON",
+    "note": "Visual schema",
+    "standing": "SEATED",
+    "work_url": "/works/0136/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Clinamen; OP.SWERVE",
+   "operators": [
+    "OP.SWERVE"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

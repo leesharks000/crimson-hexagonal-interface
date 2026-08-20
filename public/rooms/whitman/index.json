@@ -2229,5 +2229,52 @@
   -1,
   0
  ],
- "surface_map_url": "/map/#R:r.09"
+ "surface_map_url": "/map/#R:r.09",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "Constituted by a mantle rather than a room specification: the Good Gray Poet is the room.",
+  "primary_at_main": {
+   "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
+   "deposit": 334,
+   "work_url": "/works/008a/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "008a",
+    "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
+    "deposit": 334,
+    "title": "MANTLE OBJECT: THE GOOD GRAY POET Operational Title within the Semantic Economy Hex-Coordinate: 01.MANTLE.GRAY",
+    "role": "MANTLE",
+    "multiplicity": "VERSION",
+    "note": "Mantle Object: The Good Gray Poet — operational title; companion at AXN:046C (#1115)",
+    "standing": "SEATED",
+    "work_url": "/works/008a/",
+    "primary": true
+   },
+   {
+    "hex": "022b",
+    "axn": "AXN:022B.EMPIRICAL.🗺️📦💚⏏️🦋🕒",
+    "deposit": 683,
+    "title": "THE SECRET BOOK OF WALT Hidden Teachings of Walt Whitman, Cowboy of Time Translated from the Forty-Six Golden Tickets by",
+    "role": "INSTANCE",
+    "multiplicity": "VERSION",
+    "note": "The Secret Book of Walt — hidden teachings; copy at AXN:04B1 (#1184)",
+    "standing": "SEATED",
+    "work_url": "/works/022b/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "ψ_V + receipt + dignity",
+   "operators": [
+    "ψ_V",
+    "γ",
+    "℘"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

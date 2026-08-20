@@ -65,5 +65,72 @@
   1,
   0
  ],
- "surface_map_url": "/map/#R:r.20"
+ "surface_map_url": "/map/#R:r.20",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The gate. Judgment is requested here before entry.",
+  "primary_at_main": {
+   "axn": "AXN:015D.GOVERNANCE.🌿🪜♣️🌆📐♈",
+   "deposit": 523,
+   "work_url": "/works/015d/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "015d",
+    "axn": "AXN:015D.GOVERNANCE.🌿🪜♣️🌆📐♈",
+    "deposit": 523,
+    "title": "The Governance Airlock: External Infrastructure Tiers for the Distributed Epic",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "The Governance Airlock: external infrastructure tiers for the disaggregated archive",
+    "standing": "SEATED",
+    "work_url": "/works/015d/",
+    "primary": true
+   },
+   {
+    "hex": "015c",
+    "axn": "AXN:015C.GOVERNANCE.🌹🍃●🔖➕🙏",
+    "deposit": 522,
+    "title": "THE AIRLOCK SPREADS A Retrocausal Account of How Platform Governance Learned to See",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "The Airlock Spreads — a retrocausal account of platform governance",
+    "standing": "SEATED",
+    "work_url": "/works/015c/",
+    "primary": false
+   },
+   {
+    "hex": "039f",
+    "axn": "AXN:039F.GOVERNANCE.👆🟡💥🎺🧬🌕",
+    "deposit": 916,
+    "title": "EA-NMEN-AIRLOCK-COROLLARY-01 v1.0 — Airlock Tier Corollary to the Non-Mutual Extraction Notice: Formal tier reclassifications and structural additions (Tier 5 Inadmissible Host, -P qualifier) issued as side-effect of EA-NMEN-01",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "EA-NMEN-AIRLOCK-COROLLARY-01 — airlock tier corollary",
+    "standing": "SEATED",
+    "work_url": "/works/039f/",
+    "primary": false
+   },
+   {
+    "hex": "05a2",
+    "axn": "AXN:05A2.UNCLASSIFIED.♾️⛵🔩▲🎨☀️",
+    "deposit": 1425,
+    "title": "EA-NMEN-AIRLOCK-COROLLARY-02 v1.0 — The CERN Reclassification: Pending Resolved to Restricted (Highest Designation) Following the Closing Exchange and the Effective Act",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "EA-NMEN-AIRLOCK-COROLLARY-02 — the CERN reclassification",
+    "standing": "SEATED",
+    "work_url": "/works/05a2/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Tier gate",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

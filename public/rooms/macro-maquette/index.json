@@ -87,5 +87,62 @@
   -3,
   0
  ],
- "surface_map_url": "/map/#R:r.19"
+ "surface_map_url": "/map/#R:r.19",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A compendium of micro-physics; the room that models the rooms.",
+  "primary_at_main": {
+   "axn": "AXN:013A.GOVERNANCE.👁️🟣🔭🌟🏺💧",
+   "deposit": 495,
+   "work_url": "/works/013a/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "013a",
+    "axn": "AXN:013A.GOVERNANCE.👁️🟣🔭🌟🏺💧",
+    "deposit": 495,
+    "title": "THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Architecture",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "A Compendium of Micro-Physics — full compendium, edition of record; copy at AXN:053D (#1324)",
+    "standing": "SEATED",
+    "work_url": "/works/013a/",
+    "primary": true
+   },
+   {
+    "hex": "0139",
+    "axn": "AXN:0139.GOVERNANCE.🌖🌠✖️▲🪐🚩",
+    "deposit": 494,
+    "title": "THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro-Physics for the Crimson Hexagonal Architecture",
+    "role": "KERNEL",
+    "multiplicity": "SINGLETON",
+    "note": "Compressed Charter — document-zoom kernel of the compendium",
+    "standing": "SEATED",
+    "work_url": "/works/0139/",
+    "primary": false
+   },
+   {
+    "hex": "0138",
+    "axn": "AXN:0138.GOVERNANCE.🔙🤙♄🔝↖️↖️",
+    "deposit": 493,
+    "title": "THE MINI MACRO-MAQUETTE MAQUETTE: SEED",
+    "role": "KERNEL",
+    "multiplicity": "VERSION",
+    "note": "The Mini Macro-Maquette Maquette: SEED — entity-zoom kernel; copy at AXN:053E (#1325)",
+    "standing": "SEATED",
+    "work_url": "/works/0138/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "12 MPMs; OP.ROUTE",
+   "operators": [
+    "OP.ROUTE"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "The three seatings form a kernel zoom-series per EA-HK-01: SEED at entity zoom, Compressed Charter at document zoom, Compendium as source."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

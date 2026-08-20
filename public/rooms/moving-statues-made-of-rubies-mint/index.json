@@ -69,5 +69,48 @@
   -2,
   2
  ],
- "surface_map_url": "/map/#R:r.17"
+ "surface_map_url": "/map/#R:r.17",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The mint: where semantic coinage is struck.",
+  "primary_at_main": {
+   "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+   "deposit": 505,
+   "work_url": "/works/0148/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0148",
+    "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+    "deposit": 505,
+    "title": "Charter of the Moving Statues Made of Rubies Mint: Room Provenance, Integrity Lock, and the Hand That Works the Material",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Charter of the Mint — room provenance",
+    "standing": "SEATED",
+    "work_url": "/works/0148/",
+    "primary": true
+   },
+   {
+    "hex": "0147",
+    "axn": "AXN:0147.GOVERNANCE.🔐🔃🔃🤲➗♅",
+    "deposit": 504,
+    "title": "VISUAL SCHEMA — MOVING STATUES MADE OF RUBIES MIND (MSMRM) Material Symbol Aesthetic / Room-Integrity Hand Diagram",
+    "role": "APPARATUS",
+    "multiplicity": "SINGLETON",
+    "note": "Visual schema — material register",
+    "standing": "SEATED",
+    "work_url": "/works/0147/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Lenticular; QUEUED",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
