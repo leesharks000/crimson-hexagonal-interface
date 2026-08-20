@@ -72,13 +72,12 @@
  "surface_map_url": "/map/#R:r.17",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The mint: where semantic coinage is struck.",
+  "ontology": "A mint: where memographic value is coined. The statues move because the light changes, not because the stone does.",
   "primary_at_main": {
    "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
    "deposit": 505,
    "work_url": "/works/0148/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "CHARTER"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -87,11 +86,59 @@
     "deposit": 505,
     "title": "Charter of the Moving Statues Made of Rubies Mint: Room Provenance, Integrity Lock, and the Hand That Works the Material",
     "role": "CONSTITUTING",
-    "multiplicity": "SINGLETON",
-    "note": "Charter of the Mint — room provenance",
+    "multiplicity": "HAND",
+    "note": "PINKY — the seal. Charter, room provenance and integrity lock. Hex 00.ROOM.MSMRM. Published in Provenance: Journal of Forensic Semiotics, series Memographic Studies. Lee Sharks, Rex Fraction and Sparrow Wells.",
     "standing": "SEATED",
     "work_url": "/works/0148/",
     "primary": true
+   },
+   {
+    "hex": "0144",
+    "axn": "AXN:0144.EMPIRICAL.🝊↙️∮🪸⚙️📌",
+    "deposit": 502,
+    "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait R",
+    "role": "HAND-MEMBER",
+    "multiplicity": "HAND",
+    "note": "THUMB — GRASP. \"Whose Face Is on the Twenty?\" by Rex Fraction. Provenance audit and anchor: Sully 1824 → Welch 1852 → BEP die 1928 → redesign 1996–2003, naming the curatorial gap. The opposable digit; without it nothing has purchase.",
+    "standing": "SEATED",
+    "work_url": "/works/0144/",
+    "primary": false
+   },
+   {
+    "hex": "014b",
+    "axn": "AXN:014B.ARCHIVAL.📏💧💜♎🌙⛵",
+    "deposit": 508,
+    "title": "The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium That Doesn't Care",
+    "role": "HAND-MEMBER",
+    "multiplicity": "HAND",
+    "note": "INDEX — POINT. \"The Lizard People Were Right.\" Experimental control: a Cretaceous therapod in a fedora, rendered in full currency conventions, reads as a dignitary. The conventions encode status, not identity.",
+    "standing": "SEATED",
+    "work_url": "/works/014b/",
+    "primary": false
+   },
+   {
+    "hex": "014a",
+    "axn": "AXN:014A.ARCHIVAL.⚖️🔚🎲↖️⊕🦅",
+    "deposit": 507,
+    "title": "All the Spoils of Babylon: Curatorial Prompting, Latent Style Activation, and the Means of Meaning Production",
+    "role": "HAND-MEMBER",
+    "multiplicity": "HAND",
+    "note": "MIDDLE — WORK. \"All the Spoils of Babylon.\" Manufacturing analysis: watercolour and intaglio side by side across six axes — expression, line, colour, form, background, orientation — naming the prompt as curatorial instrument.",
+    "standing": "SEATED",
+    "work_url": "/works/014a/",
+    "primary": false
+   },
+   {
+    "hex": "0149",
+    "axn": "AXN:0149.GOVERNANCE.▽🔐📎🎶🌍🏠",
+    "deposit": 506,
+    "title": "The Inauguration of Memography Toward a Forensic Method for Viral Observation",
+    "role": "HAND-MEMBER",
+    "multiplicity": "HAND",
+    "note": "RING — BIND. \"The Inauguration of Memography.\" Discipline founding: five axioms, five stages, five principles, a twelve-term vocabulary, a citational lineage, and four testable predictions with falsification conditions.",
+    "standing": "SEATED",
+    "work_url": "/works/0149/",
+    "primary": false
    },
    {
     "hex": "0147",
@@ -110,17 +157,123 @@
    "declared": "Lenticular; QUEUED",
    "operators": [],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "Five laws, five operations, five fingers. Identity is a dependent variable of presentation."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "status_note": {
-   "declared_by_ark": "pending",
-   "current": "OPERATIONAL",
-   "ruled": "2026-08-20",
-   "authority": "MANUS",
-   "note": "The Space Ark component inventory (EA-ARK-01 v4.2.7, §COMPONENTS) records R: pending: 1 # MSMRM. That inventory predates the seating of this locus. The Mint is constituted by its Charter (AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙🌒, #505) and is upgraded to OPERATIONAL by MANUS ruling. The Ark entry stands unaltered under non-erasure; this note records the supersession."
+  "constitution_type": "CHARTER — INTEGRITY LOCK",
+  "structure": {
+   "name": "The Hand",
+   "form": "five documents, five laws, five operations",
+   "principle": "A hand has five fingers. No finger is the hand. Remove one and the hand is wounded — but still a hand. The hand is not the fingers; the hand is what the fingers do together.",
+   "fingers": [
+    {
+     "digit": "Thumb",
+     "op": "GRASP",
+     "doc": "Whose Face Is on the Twenty?",
+     "axn": "AXN:0144.EMPIRICAL.🝊↙️∮🪸⚙️📌",
+     "function": "provenance audit / anchor",
+     "operation": "Hold the object still for examination. Establish provenance. Fix the frame so the kernel can be extracted."
+    },
+    {
+     "digit": "Index",
+     "op": "POINT",
+     "doc": "The Lizard People Were Right",
+     "axn": "AXN:014B.ARCHIVAL.📏💧💜♎🌙⛵",
+     "function": "experimental control / pointer",
+     "operation": "Direct attention. Demonstrate that the mechanism generalises — that what was noticed is structural, not incidental."
+    },
+    {
+     "digit": "Middle",
+     "op": "WORK",
+     "doc": "All the Spoils of Babylon",
+     "axn": "AXN:014A.ARCHIVAL.⚖️🔚🎲↖️⊕🦅",
+     "function": "manufacturing analysis / reach",
+     "operation": "Perform the transformation. Document what changed, what stayed fixed, and what each change contributed."
+    },
+    {
+     "digit": "Ring",
+     "op": "BIND",
+     "doc": "The Inauguration of Memography",
+     "axn": "AXN:0149.GOVERNANCE.▽🔐📎🎶🌍🏠",
+     "function": "discipline founding / commitment",
+     "operation": "Covenant the discipline. Make the method explicit, the vocabulary shared, the predictions testable."
+    },
+    {
+     "digit": "Pinky",
+     "op": "SEAL",
+     "doc": "This charter",
+     "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+     "function": "room provenance / seal",
+     "operation": "Lock the integrity. Ensure the five documents are a room, not a collection."
+    }
+   ],
+   "coordination": "GRASP without POINT is grip without direction. POINT without WORK is diagnosis without treatment. WORK without BIND is labour without legacy. BIND without SEAL is covenant without closure. SEAL without GRASP is lock without object."
   },
-  "constitution_type": "CHARTER"
+  "five_laws": [
+   {
+    "n": 1,
+    "law": "Identity is a dependent variable of presentation.",
+    "note": "The same steel lines read through different curatorial parameters produce a different social object. The statues move because the light changes, not because the stone does."
+   },
+   {
+    "n": 2,
+    "law": "Authority transfers across substrates.",
+    "note": "The conventions of institutional representation confer status on whatever occupies them. President, financier, dinosaur. The convention set does not check credentials. The rubies do not ask who you are. They make you look like you run the world."
+   },
+   {
+    "n": 3,
+    "law": "The gap is where meaning is manufactured.",
+    "note": "The undocumented interval between official rationale and aesthetic specifics. The gap is not a failure. It is the mechanism. The statues stand in it."
+   },
+   {
+    "n": 4,
+    "law": "Every meme is a witness.",
+    "note": "The room admits memes as primary sources. The door is open to shitposts. An observation wrapped in an inadequate frame is still an observation. The memographer’s task is extraction, not judgment."
+   },
+   {
+    "n": 5,
+    "law": "The hand works the material.",
+    "note": "Manus + plere: to fill by hand. The room is not a viewing gallery. It is a workshop. The statues are not behind glass. They are in your hands."
+   }
+  ],
+  "series_thesis": "Portrait authority is not carried by identity alone but is produced through curatorial presentation decisions that govern legibility, status, and social ontology.",
+  "integrity_lock": {
+   "kind": "semantic, not cryptographic",
+   "mechanism": "The five documents share a vocabulary of twelve terms, a five-stage method, five laws, five operations, a proof structure (forensic-historical → control → constructive → disciplinary → architectural), and a holographic cross-reference system in which each document carries compressed seeds of every other.",
+   "behaviour": "If any document is altered, the holographic seeds in the other four register the inconsistency. If any is removed, the other four still contain its essential contribution.",
+   "statement": "The lock is not cryptographic. It is semantic. It holds because the arguments hold. It breaks if the arguments break. That is the only kind of integrity that matters."
+  },
+  "failure_modes": [
+   {
+    "name": "Amputation",
+    "what": "A document is lost or inaccessible. Memographic manipulation becomes impaired but not impossible — the holographic seeds preserve the lost finger’s contribution at reduced resolution.",
+    "resisted_by": "the DOI system"
+   },
+   {
+    "name": "Fusion",
+    "what": "Two documents merge their functions until indistinguishable. The grip weakens because the same operation is performed twice and another not at all.",
+    "resisted_by": "functional differentiation"
+   },
+   {
+    "name": "Holographic collapse",
+    "what": "A document ceases to contain the whole. Traversal from it can no longer reconstruct the complete hand.",
+    "resisted_by": "the holographic seeds"
+   },
+   {
+    "name": "Seal breach",
+    "what": "The integrity lock is contradicted, ignored or superseded without replacement. The hand becomes a collection — five related papers rather than a room.",
+    "resisted_by": "this charter, by being as permanent as the documents it seals"
+   }
+  ],
+  "emergence": "The room was not designed in advance and then populated. It was discovered in the practice — the documents were written, and the room emerged around them, the way a hand emerges when you close your fingers around something worth holding.",
+  "name_precedence": "The phrase \"moving statues made of rubies\" appears in Lee Sharks’ published literary works, predating this room’s construction. Not a novel coinage but a returning motif. The rubies predate the room, just as the observation predates the method.",
+  "source_defect": {
+   "kind": "DOI ERROR IN THE CONSTITUTING DOCUMENT",
+   "where": "§XII The Five Holdings",
+   "what": "The table gives the Pinky’s DOI as 10.5281/zenodo.18745236, which is the Index’s DOI. The charter’s own header gives 10.5281/zenodo.18745265. The table entry is wrong.",
+   "handling": "Recorded, not corrected. The document stands as deposited; the crosswalk on this page resolves both DOIs to their true AXNs, so the error is visible and non-propagating."
+  },
+  "status_note": {}
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
