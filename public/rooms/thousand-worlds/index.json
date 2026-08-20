@@ -47,7 +47,7 @@
  "source": "hexagon_canonical.json",
  "locative_key": "R:r.22",
  "surface_map_seat": "r.22",
- "structure_class": "ROOM+CHAMBER-LINK",
+ "structure_class": "CHAMBER",
  "locus_standing": "CROSS-CLASS",
  "authored_plane": [
   1260,
@@ -295,6 +295,11 @@
   {
    "key": "X:THOUSAND-WORLDS",
    "until": "2026-08-20"
+  },
+  {
+   "key": "R:r.22",
+   "class": "ROOM+CHAMBER-LINK",
+   "until": "2026-08-20"
   }
  ],
  "canonical_seat_source": "CNM v7.0 §III (#578)",
@@ -411,5 +416,6 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/14/"
    }
   ]
- }
+ },
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

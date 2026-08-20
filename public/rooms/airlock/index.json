@@ -55,7 +55,7 @@
  "source": "hexagon_canonical.json",
  "locative_key": "R:r.20",
  "surface_map_seat": "r.20",
- "structure_class": "ROOM/GATE",
+ "structure_class": "ROOM",
  "locus_standing": "DEVELOPED",
  "authored_plane": [
   900,
@@ -361,5 +361,13 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/523/"
    }
   ]
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "R:r.20",
+   "class": "ROOM/GATE",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

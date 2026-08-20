@@ -58,5 +58,13 @@
    "hex address",
    "body text"
   ]
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "R:r.32",
+   "class": "ROOM",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

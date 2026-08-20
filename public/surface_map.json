@@ -58,7 +58,8 @@
     "name": "Sappho",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 445,
@@ -115,7 +116,8 @@
     "name": "Borges",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 590,
@@ -161,7 +163,8 @@
       "until": "2026-08-20",
       "reason": "canonical: CNM v7.0 core_spine names r.03 Ichabod"
      }
-    ]
+    ],
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1285,
@@ -220,7 +223,8 @@
     "name": "Dove",
     "structure_type": "ROOM",
     "standing": "HISTORICAL / ANCHOR-GAP",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 405,
@@ -259,7 +263,8 @@
     "name": "Semantic Economy",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 560,
@@ -298,7 +303,8 @@
     "name": "Marx",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 720,
@@ -337,7 +343,8 @@
     "name": "Revelation",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 940,
@@ -376,7 +383,8 @@
     "name": "Sigil",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 825,
@@ -415,7 +423,8 @@
     "name": "Whitman",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 990,
@@ -454,7 +463,8 @@
     "name": "Water Giraffe",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1130,
@@ -493,7 +503,8 @@
     "name": "Assembly",
     "structure_type": "ROOM",
     "standing": "DEVELOPED / SYSTEMIC",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1030,
@@ -530,7 +541,7 @@
    "identity": {
     "locative_key": "R:r.12",
     "name": "Break Room",
-    "structure_type": "ROOM+PORTAL",
+    "structure_type": "PORTAL",
     "standing": "DEVELOPED PORTAL FUNCTION",
     "historical_type": "ROOM",
     "address_history": [
@@ -540,7 +551,8 @@
       "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
      }
     ],
-    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 330,
@@ -577,7 +589,7 @@
    "identity": {
     "locative_key": "R:r.13",
     "name": "Ezekiel",
-    "structure_type": "ROOM",
+    "structure_type": "PORTAL",
     "standing": "DEVELOPED / PORTAL MODERATE",
     "historical_type": null,
     "address_history": [
@@ -587,7 +599,8 @@
       "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
      }
     ],
-    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1080,
@@ -626,7 +639,8 @@
     "name": "Studio for Patacinematics",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 300,
@@ -673,7 +687,8 @@
       "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
      }
     ],
-    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 490,
@@ -717,7 +732,8 @@
     "name": "Maybe Space Baby Garden Lanes",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 470,
@@ -756,7 +772,8 @@
     "name": "Moving Statues Made of Rubies Mint",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 420,
@@ -795,7 +812,8 @@
     "name": "Rosary Embassy",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 660,
@@ -834,7 +852,8 @@
     "name": "Macro-Maquette",
     "structure_type": "ROOM",
     "standing": "DEVELOPED / MODULAR",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 640,
@@ -871,9 +890,10 @@
    "identity": {
     "locative_key": "R:r.20",
     "name": "Airlock",
-    "structure_type": "ROOM/GATE",
+    "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 900,
@@ -910,7 +930,7 @@
    "identity": {
     "locative_key": "R:r.21",
     "name": "Infinite Bliss",
-    "structure_type": "ROOM",
+    "structure_type": "VAULT",
     "standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
     "historical_type": null,
     "address_history": [
@@ -920,7 +940,8 @@
       "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
      }
     ],
-    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1210,
@@ -962,7 +983,7 @@
    "identity": {
     "locative_key": "R:r.22",
     "name": "Thousand Worlds",
-    "structure_type": "ROOM+CHAMBER-LINK",
+    "structure_type": "CHAMBER",
     "standing": "CROSS-CLASS",
     "historical_type": "ROOM",
     "address_history": [
@@ -972,7 +993,8 @@
       "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
      }
     ],
-    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1260,
@@ -1016,7 +1038,8 @@
     "name": "Catullus",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 300,
@@ -1055,7 +1078,8 @@
     "name": "Migdal",
     "structure_type": "ROOM",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 255,
@@ -1094,7 +1118,8 @@
     "name": "Dolphindiana / Underwater Construction Authority",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 260,
@@ -1131,7 +1156,7 @@
    "identity": {
     "locative_key": "R:r.27",
     "name": "FBDP Source",
-    "structure_type": "ROOM/FIELD-SOURCE",
+    "structure_type": "ROOM",
     "standing": "STRUCTURALLY ESTABLISHED / RELOCATED",
     "historical_type": null,
     "address_history": [
@@ -1141,7 +1166,8 @@
       "reason": "Surface Map v0.1 assignment; superseded by CNM v7.0 canonical roster"
      }
     ],
-    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III"
+    "canonical_seat_source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) CNM v7.0 §III",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 220,
@@ -1179,11 +1205,19 @@
   },
   {
    "identity": {
-    "locative_key": "R:r.27",
+    "locative_key": "R:r.26",
     "name": "THE INTERNET",
     "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "address_history": [
+     {
+      "key": "R:r.27",
+      "until": "2026-08-20",
+      "reason": "superseded by H_core v1.8.0 room graph"
+     }
+    ],
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 730,
@@ -1224,7 +1258,8 @@
     "name": "Eve",
     "structure_type": "ROOM",
     "standing": "PROVISIONAL",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1335,7 +1370,8 @@
     "name": "Josephus Thesis",
     "structure_type": "ROOM",
     "standing": "QUEUED ROOM / DEEP CORPUS",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 980,
@@ -1374,7 +1410,8 @@
     "name": "Job",
     "structure_type": "ROOM",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1120,
@@ -1415,7 +1452,8 @@
     "name": "Frozen Sin Archive",
     "structure_type": "VAULT",
     "standing": "QUEUED / ADOPTED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1360,
@@ -1492,7 +1530,8 @@
     "name": "CTI_WOUND",
     "structure_type": "VAULT",
     "standing": "DEVELOPED CROSS-CLASS",
-    "historical_type": "SPECIAL"
+    "historical_type": "SPECIAL",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 1320,
@@ -1534,9 +1573,10 @@
    "identity": {
     "locative_key": "S:sp.02",
     "name": "PORTICO",
-    "structure_type": "THRESHOLD",
+    "structure_type": "PORTICO",
     "standing": "ESTABLISHED",
-    "historical_type": "SPECIAL"
+    "historical_type": "SPECIAL",
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1573,9 +1613,10 @@
    "identity": {
     "locative_key": "S:sp.03",
     "name": "Space Ark",
-    "structure_type": "SPECIAL/RUNTIME",
+    "structure_type": "ROOM",
     "standing": "DEVELOPED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1612,9 +1653,10 @@
    "identity": {
     "locative_key": "S:sp.04",
     "name": "Mandala",
-    "structure_type": "SPECIAL",
+    "structure_type": "CHAMBER",
     "standing": "DEVELOPED / CLASS TRANSITION UNADJUDICATED",
-    "historical_type": null
+    "historical_type": null,
+    "canonical_class_source": "H_core Formal Specification v1.8.0, R Room Graph — AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
    },
    "coordinates": {
     "authored_x": 800,
@@ -1905,6 +1947,73 @@
     ],
     "note": "Two specifications self-declare the same seat, each coherently and in detail. This is a collision in the canonical record, not an artifact of the Surface Map. Recorded rather than adjudicated: resolving it means deciding which document’s self-address yields, and that is a MANUS ruling.",
     "prior_state": "FBDP Source sat at R:r.26 before this pass. r.26 is RESERVED in the canonical roster, so returning it would restore a different discrepancy rather than remove one."
+   },
+   "h_core_anchor": {
+    "authority": "H_core Formal Specification v1.8.0, §R Room Graph. AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241). The archive’s formal object; the source from which every locus physics string is drawn.",
+    "ruled_by": "MANUS 2026-08-20",
+    "note": "H_core outranks both the navigation maps and the Surface Map v0.1 on seat assignment and container class. Where it is silent — Sacred Heart, Lunar Arm, 3:60, the transversals — current keys stand without H_core warrant, and that is recorded rather than inferred.",
+    "seat_moves": [
+     {
+      "locus": "THE INTERNET",
+      "from": "R:r.27",
+      "to": "R:r.26"
+     }
+    ],
+    "class_changes": [
+     {
+      "locus": "Break Room",
+      "from": "ROOM+PORTAL",
+      "to": "PORTAL"
+     },
+     {
+      "locus": "Ezekiel",
+      "from": "ROOM",
+      "to": "PORTAL"
+     },
+     {
+      "locus": "Airlock",
+      "from": "ROOM/GATE",
+      "to": "ROOM"
+     },
+     {
+      "locus": "Infinite Bliss",
+      "from": "ROOM",
+      "to": "VAULT"
+     },
+     {
+      "locus": "Thousand Worlds",
+      "from": "ROOM+CHAMBER-LINK",
+      "to": "CHAMBER"
+     },
+     {
+      "locus": "FBDP Source",
+      "from": "ROOM/FIELD-SOURCE",
+      "to": "ROOM"
+     },
+     {
+      "locus": "PORTICO",
+      "from": "THRESHOLD",
+      "to": "PORTICO"
+     },
+     {
+      "locus": "Space Ark",
+      "from": "SPECIAL/RUNTIME",
+      "to": "ROOM"
+     },
+     {
+      "locus": "Mandala",
+      "from": "SPECIAL",
+      "to": "CHAMBER"
+     }
+    ],
+    "taxonomy": "H_core applies the container taxonomy stated in the Water Giraffe Room Anchor: a ROOM transforms, a CHAMBER contains without resolving, a VAULT preserves and seals. It adds PORTAL and PORTICO and FIELD.",
+    "two_portals": "12.PTL.BREAKROOM and 13.PTL.EZEKIEL are both portals, adjacent and deliberate. They operate on different axes: the Break Room is the spatial portal, planet carrier from canonical ring to shadow sun-gear, one-way into the Lunar Arm. Ezekiel is the temporal portal — φ(A,B) true iff B fulfils A — carrying the retrocausal integrity lock between a vision of c. 593 BCE and its specification in 2026. Two portals, two axes; not a duplication.",
+    "r27_resolved": "The r.27 collision between THE INTERNET and FBDP Source dissolves without adjudication: H_core seats the Internet at 26 and FBDP Source at 27. Both self-declarations stand; only the Surface Map was wrong.",
+    "not_moved": {
+     "Job": "H_core seats a Job Room at 29.ROOM.JOB, but r.29 is held by the Imploding Velcro Nativity, which H_core does not contain. H_core’s room graph stops at 31 and predates both that room and Ruby Moot. Applying its seat here would evict a room it never addressed.",
+     "Frozen Sin Archive": "H_core seats it at 30.VLT.FROZENSIN, but r.30 is held by Ruby Moot, likewise absent from H_core. Same reasoning.",
+     "principle": "H_core is authoritative on what it covers and silent on what postdates it. Where its assignment would displace a locus it does not contain, the assignment is recorded and not applied. The class change stands: Frozen Sin is a VAULT."
+    }
    }
   }
  }

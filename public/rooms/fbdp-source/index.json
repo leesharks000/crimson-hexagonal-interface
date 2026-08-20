@@ -21,7 +21,7 @@
  "source": "hexagon_canonical.json",
  "locative_key": "R:r.27",
  "surface_map_seat": "r.26",
- "structure_class": "ROOM/FIELD-SOURCE",
+ "structure_class": "ROOM",
  "locus_standing": "STRUCTURALLY ESTABLISHED / RELOCATED",
  "authored_plane": [
   220,
@@ -69,6 +69,11 @@
   {
    "key": "R:r.26",
    "until": "2026-08-20"
+  },
+  {
+   "key": "R:r.27",
+   "class": "ROOM/FIELD-SOURCE",
+   "until": "2026-08-20"
   }
  ],
  "canonical_seat_source": "CNM v7.0 §III (#578)",
@@ -94,5 +99,6 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/571/"
    }
   ]
- }
+ },
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

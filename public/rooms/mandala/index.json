@@ -269,7 +269,7 @@
  },
  "locative_key": "S:sp.04",
  "surface_map_seat": "sp.04",
- "structure_class": "SPECIAL",
+ "structure_class": "CHAMBER",
  "locus_standing": "DEVELOPED / CLASS TRANSITION UNADJUDICATED",
  "authored_plane": [
   800,
@@ -452,5 +452,13 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/956/"
    }
   ]
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "S:sp.04",
+   "class": "SPECIAL",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

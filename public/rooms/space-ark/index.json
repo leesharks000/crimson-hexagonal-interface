@@ -747,7 +747,7 @@
  },
  "locative_key": "S:sp.03",
  "surface_map_seat": "sp.03",
- "structure_class": "SPECIAL/RUNTIME",
+ "structure_class": "ROOM",
  "locus_standing": "DEVELOPED",
  "authored_plane": [
   800,
@@ -1801,5 +1801,13 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/584/"
    }
   ]
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "S:sp.03",
+   "class": "SPECIAL/RUNTIME",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

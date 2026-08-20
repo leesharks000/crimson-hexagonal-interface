@@ -183,7 +183,7 @@
  },
  "locative_key": "R:r.13",
  "surface_map_seat": "r.13",
- "structure_class": "ROOM",
+ "structure_class": "PORTAL",
  "locus_standing": "DEVELOPED / PORTAL MODERATE",
  "authored_plane": [
   1080,
@@ -404,6 +404,11 @@
   {
    "key": "X:EZEKIEL",
    "until": "2026-08-20"
+  },
+  {
+   "key": "R:r.13",
+   "class": "ROOM",
+   "until": "2026-08-20"
   }
  ],
  "canonical_seat_source": "CNM v7.0 §III (#578)",
@@ -464,5 +469,6 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/511/"
    }
   ]
- }
+ },
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

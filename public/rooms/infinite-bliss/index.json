@@ -174,7 +174,7 @@
  },
  "locative_key": "R:r.21",
  "surface_map_seat": "r.21",
- "structure_class": "ROOM",
+ "structure_class": "VAULT",
  "locus_standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
  "authored_plane": [
   1210,
@@ -349,6 +349,11 @@
   {
    "key": "X:INFINITE-BLISS",
    "until": "2026-08-20"
+  },
+  {
+   "key": "R:r.21",
+   "class": "ROOM",
+   "until": "2026-08-20"
   }
  ],
  "canonical_seat_source": "CNM v7.0 §III (#578)",
@@ -430,5 +435,6 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/503/"
    }
   ]
- }
+ },
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

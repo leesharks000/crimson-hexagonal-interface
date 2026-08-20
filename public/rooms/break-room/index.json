@@ -566,7 +566,7 @@
  },
  "locative_key": "R:r.12",
  "surface_map_seat": "r.12",
- "structure_class": "ROOM+PORTAL",
+ "structure_class": "PORTAL",
  "locus_standing": "DEVELOPED PORTAL FUNCTION",
  "authored_plane": [
   330,
@@ -816,6 +816,11 @@
   {
    "key": "X:BREAK-ROOM",
    "until": "2026-08-20"
+  },
+  {
+   "key": "R:r.12",
+   "class": "ROOM+PORTAL",
+   "until": "2026-08-20"
   }
  ],
  "canonical_seat_source": "CNM v7.0 §III (#578)",
@@ -995,5 +1000,6 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/585/"
    }
   ]
- }
+ },
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }

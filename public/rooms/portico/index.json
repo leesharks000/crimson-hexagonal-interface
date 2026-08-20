@@ -38,7 +38,7 @@
  "source": "hexagon_canonical.json",
  "locative_key": "S:sp.02",
  "surface_map_seat": "sp.02",
- "structure_class": "THRESHOLD",
+ "structure_class": "PORTICO",
  "locus_standing": "ESTABLISHED",
  "authored_plane": [
   800,
@@ -201,5 +201,13 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "WORK OR PAPER"
- }
+ },
+ "locative_key_history": [
+  {
+   "key": "S:sp.02",
+   "class": "THRESHOLD",
+   "until": "2026-08-20"
+  }
+ ],
+ "canonical_source": "H_core v1.8.0 §R Room Graph (#1241)"
 }
