@@ -421,5 +421,77 @@
    "Hex coordinate not registered in FNM v5.0 (declared open in §VIII)",
    "CTI_WOUND_VAULT document declared not created — since created at AXN:009D (#352)"
   ]
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 9,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.14538882",
+    "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+    "deposit": 349,
+    "title": "ASSEMBLY ROOM ANCHOR Room Specification with Governance Protocols",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/349/"
+   },
+   {
+    "doi": "10.5281/zenodo.18208811",
+    "axn": "AXN:0508.UNCLASSIFIED.🌳📦♻️🟤↙️👁️",
+    "deposit": 1271,
+    "title": "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1271/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284689",
+    "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+    "deposit": 31,
+    "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive with Enrichm",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/31/"
+   },
+   {
+    "doi": "10.5281/zenodo.18319259",
+    "axn": "AXN:00A1.GENERATIVE.♌🔀↘️🟡👁️‍🗨️△",
+    "deposit": 355,
+    "title": "IDP Navigation Map: The Water Giraffe Cycle — Complete Index to the Ontological ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/355/"
+   },
+   {
+    "doi": "10.5281/zenodo.18319455",
+    "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
+    "deposit": 354,
+    "title": "The Water Giraffe Cycle: A Complete Navigation of the Ontological Forensics Sequ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/354/"
+   },
+   {
+    "doi": "10.5281/zenodo.18319653",
+    "axn": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎",
+    "deposit": 353,
+    "title": "Water Giraffe Room Anchor: Room Specification with Behavioral Protocols",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/353/"
+   },
+   {
+    "doi": "10.5281/zenodo.18323376",
+    "axn": "AXN:00AE.GENERATIVE.📦🔆🌹🧱📚♻️",
+    "deposit": 366,
+    "title": "Ω: THE WATER GIRAFFE AS SEMANTIC BEING Entity Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/366/"
+   },
+   {
+    "doi": "10.5281/zenodo.18323465",
+    "axn": "AXN:00AD.ARCHIVAL.🥁🌈♋🪧🎻🏺",
+    "deposit": 365,
+    "title": "WATER GIRAFFE SIGHTING PROTOCOL Conditions for Ω Appearance Across the Hexagon",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/365/"
+   },
+   {
+    "doi": "10.5281/zenodo.18323575",
+    "axn": "AXN:0479.UNCLASSIFIED.🎹🦋🌗♌🎻🌒",
+    "deposit": 1128,
+    "title": "Κρίσις τῶν Μηχανῶν — The Judgment of the Models: A Mandala Operator Transform of",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1128/"
+   }
+  ]
  }
 }

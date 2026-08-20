@@ -146,5 +146,42 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "WORK OR PAPER"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 4,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18604123",
+    "axn": "AXN:0138.GOVERNANCE.🔙🤙♄🔝↖️↖️",
+    "deposit": 493,
+    "title": "THE MINI MACRO-MAQUETTE MAQUETTE: SEED",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/493/"
+   },
+   {
+    "doi": "10.5281/zenodo.18682979",
+    "axn": "AXN:013A.GOVERNANCE.👁️🟣🔭🌟🏺💧",
+    "deposit": 495,
+    "title": "THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Archi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/495/"
+   },
+   {
+    "doi": "10.5281/zenodo.18683016",
+    "axn": "AXN:0139.GOVERNANCE.🌖🌠✖️▲🪐🚩",
+    "deposit": 494,
+    "title": "THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro-Physics for the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/494/"
+   },
+   {
+    "doi": "10.5281/zenodo.18683024",
+    "axn": "AXN:0138.GOVERNANCE.🔙🤙♄🔝↖️↖️",
+    "deposit": 493,
+    "title": "THE MINI MACRO-MAQUETTE MAQUETTE: SEED",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/493/"
+   }
+  ]
  }
 }

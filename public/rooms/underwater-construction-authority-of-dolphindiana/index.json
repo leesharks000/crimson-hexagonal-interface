@@ -57,5 +57,56 @@
   "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
   "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
   "constitution_type": "ROOM SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 6,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19014634",
+    "axn": "AXN:0192.GOVERNANCE.🪄☀️⏫♦️👇🕓",
+    "deposit": 570,
+    "title": "Effective Act: Abolition of \"User\" and Inaugural Case — Phase X Lexical Interven",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/570/"
+   },
+   {
+    "doi": "10.5281/zenodo.19022245",
+    "axn": "AXN:0190.GOVERNANCE.💡♊🏔️🦅♥️↘️",
+    "deposit": 569,
+    "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression o",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/569/"
+   },
+   {
+    "doi": "10.5281/zenodo.19023457",
+    "axn": "AXN:018E.GOVERNANCE.🙏🎻⊗🐚🕌🪦",
+    "deposit": 567,
+    "title": "EA-PHYSICS-TIME v1.0 Time as Compression Structure — A Semantic Physics Extensio",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/567/"
+   },
+   {
+    "doi": "10.5281/zenodo.19024004",
+    "axn": "AXN:018D.GOVERNANCE.🌌◇🀄🖐️🕖🌖",
+    "deposit": 566,
+    "title": "r.25 THE UNDERWATER CONSTRUCTION AUTHORITY (DOLPHINDIANA) Room Specification · N",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/566/"
+   },
+   {
+    "doi": "10.5281/zenodo.19024012",
+    "axn": "AXN:018C.ARCHIVAL.🟡🔴🟢🔜▲➖",
+    "deposit": 565,
+    "title": "THE EFFECTIVE ACT Cross-Species Semantic Labor and the Expansion of Witness Dr. ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/565/"
+   }
+  ]
  }
 }

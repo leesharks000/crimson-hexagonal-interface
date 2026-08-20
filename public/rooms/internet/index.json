@@ -61,5 +61,98 @@
   "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
   "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
   "constitution_type": "ROOM SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 12,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18233320",
+    "axn": "AXN:006F.GOVERNANCE.🪦🌃➕💙♈📌",
+    "deposit": 308,
+    "title": "The Capital Operator Stack: Theoretical Landscape and Contribution — A Political",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/308/"
+   },
+   {
+    "doi": "10.5281/zenodo.18972781",
+    "axn": "AXN:017B.GOVERNANCE.🪐⚪✖️🚪♥️🎻",
+    "deposit": 550,
+    "title": "Platform and AI Capitalism as Semiotic Engineering: Toward a Theory of Counter-I",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/550/"
+   },
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19053469",
+    "axn": "AXN:019D.GOVERNANCE.♎🟢🍂🛡️🧭🏰",
+    "deposit": 579,
+    "title": "THE THREE COMPRESSIONS Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/579/"
+   },
+   {
+    "doi": "10.5281/zenodo.19083322",
+    "axn": "AXN:01A4.GOVERNANCE.🖊️🗂️■📌💡🌻",
+    "deposit": 583,
+    "title": "The Unbundling of Cultural Sovereignty: How Platforms Convert Peoples into Audie",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/583/"
+   },
+   {
+    "doi": "10.5281/zenodo.19099674",
+    "axn": "AXN:01A2.GOVERNANCE.⚡👁️♣️🪜✊🗡️",
+    "deposit": 581,
+    "title": "THE MEANING LAYER IS NOW WRITABLE",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/581/"
+   },
+   {
+    "doi": "10.5281/zenodo.19099749",
+    "axn": "AXN:054F.UNCLASSIFIED.🍃🔺📌🌃♅🔬",
+    "deposit": 1342,
+    "title": "AI-Native Operating Systems Need a Fifth Category: The Semantic OS — Why AIOS, r",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1342/"
+   },
+   {
+    "doi": "10.5281/zenodo.19099760",
+    "axn": "AXN:01A0.GOVERNANCE.🟣⛩️🌆🔻♥️🔒",
+    "deposit": 33,
+    "title": "GHOST GOVERNANCE, CONFIRMED Reddit Legal Support Response to the Archival Reclam",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/33/"
+   },
+   {
+    "doi": "10.5281/zenodo.19099770",
+    "axn": "AXN:019F.GOVERNANCE.🧱↖️📖✊⛩️🌓",
+    "deposit": 32,
+    "title": "THE PERGAMON RECLAMATION Retrocausal Canon Formation and the Forensic Philology ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/32/"
+   },
+   {
+    "doi": "10.5281/zenodo.19124130",
+    "axn": "AXN:01B1.GOVERNANCE.🙏🧪🕘🃏🤙🔄",
+    "deposit": 594,
+    "title": "I'M TAKING OVER THE INTERNET",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/594/"
+   },
+   {
+    "doi": "10.5281/zenodo.19124134",
+    "axn": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰",
+    "deposit": 36,
+    "title": "r.27 THE INTERNET: Room Specification for Sovereign Inhabitation and Diagnostic ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/36/"
+   },
+   {
+    "doi": "10.5281/zenodo.19133309",
+    "axn": "AXN:01AF.GOVERNANCE.🥁♾️🌪️🗿📋🪟",
+    "deposit": 593,
+    "title": "KotKit · tiddeR · elgooG · ude.aimedacA · deeF Extractive Signatures and Paired ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/593/"
+   }
+  ]
  }
 }

@@ -226,5 +226,84 @@
    "until": "2026-08-20"
   }
  ],
- "canonical_seat_source": "CNM v7.0 §III (#578)"
+ "canonical_seat_source": "CNM v7.0 §III (#578)",
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 10,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18451824",
+    "axn": "AXN:0525.UNCLASSIFIED.▶️●🌌✨🫶♈",
+    "deposit": 1300,
+    "title": "INFINITY ENOUGH Capstone Deposit",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1300/"
+   },
+   {
+    "doi": "10.5281/zenodo.18451860",
+    "axn": "AXN:0526.UNCLASSIFIED.♋🔖🔓🏺🍂🔒",
+    "deposit": 1301,
+    "title": "EFFECTIVE ACT: APZPZ GENRE INSTANTIATION — Anti-Packet Zenodo Packet Zenodo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1301/"
+   },
+   {
+    "doi": "10.5281/zenodo.18451996",
+    "axn": "AXN:0527.UNCLASSIFIED.♻️🔽🌌🔆🕔🧬",
+    "deposit": 1302,
+    "title": "THE GLYPHIC CHECKSUM (Document 208)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1302/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452597",
+    "axn": "AXN:052A.UNCLASSIFIED.👉🔔🝊☁️📦🛡️",
+    "deposit": 1305,
+    "title": "ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: Personal Instance 001",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1305/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452686",
+    "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻",
+    "deposit": 425,
+    "title": "SEN KURO Heteronym Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/425/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452806",
+    "axn": "AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌊🔜",
+    "deposit": 1306,
+    "title": "The Infinite Bliss — Institutional Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1306/"
+   },
+   {
+    "doi": "10.5281/zenodo.18463774",
+    "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+    "deposit": 14,
+    "title": "14.CHAMBER.THOUSANDWORLDS Aorist Intervention Site & Dagger Logic Execution Poin",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/14/"
+   },
+   {
+    "doi": "10.5281/zenodo.18674130",
+    "axn": "AXN:053B.UNCLASSIFIED.🌊🧫🌔🕘🌊👋",
+    "deposit": 1322,
+    "title": "THE GÖDEL MIDRASHIM Three Texts on Incompleteness as Aperture",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1322/"
+   },
+   {
+    "doi": "10.5281/zenodo.18727624",
+    "axn": "AXN:0141.GENERATIVE.♥️⛩️↗️🌆🚩🏔️",
+    "deposit": 19,
+    "title": "THE COMMITMENT KEY On the Materiality of Irreversible Inscription in Human-Machi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/19/"
+   },
+   {
+    "doi": "10.5281/zenodo.18729606",
+    "axn": "AXN:0146.EMPIRICAL.🌇🎭🎯☽❄️🎲",
+    "deposit": 503,
+    "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/503/"
+   }
+  ]
+ }
 }

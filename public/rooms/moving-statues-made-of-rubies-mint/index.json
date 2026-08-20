@@ -121,5 +121,63 @@
    "note": "The Space Ark component inventory (EA-ARK-01 v4.2.7, §COMPONENTS) records R: pending: 1 # MSMRM. That inventory predates the seating of this locus. The Mint is constituted by its Charter (AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙🌒, #505) and is upgraded to OPERATIONAL by MANUS ruling. The Ark entry stands unaltered under non-erasure; this note records the supersession."
   },
   "constitution_type": "CHARTER"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 7,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18285009",
+    "axn": "AXN:007A.EMPIRICAL.🌕🌊🔭🐝🎨🔃",
+    "deposit": 319,
+    "title": "CRIMSON HEXAGON: CENTRAL NAVIGATION MAP v4.1 Comprehensive Semantic Architecture",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/319/"
+   },
+   {
+    "doi": "10.5281/zenodo.18604123",
+    "axn": "AXN:0138.GOVERNANCE.🔙🤙♄🔝↖️↖️",
+    "deposit": 493,
+    "title": "THE MINI MACRO-MAQUETTE MAQUETTE: SEED",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/493/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745216",
+    "axn": "AXN:0144.EMPIRICAL.🝊↙️∮🪸⚙️📌",
+    "deposit": 502,
+    "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, an",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/502/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745236",
+    "axn": "AXN:014B.ARCHIVAL.📏💧💜♎🌙⛵",
+    "deposit": 508,
+    "title": "The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium T",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/508/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745250",
+    "axn": "AXN:014A.ARCHIVAL.⚖️🔚🎲↖️⊕🦅",
+    "deposit": 507,
+    "title": "All the Spoils of Babylon: Curatorial Prompting, Latent Style Activation, and th",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/507/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745259",
+    "axn": "AXN:0149.GOVERNANCE.▽🔐📎🎶🌍🏠",
+    "deposit": 506,
+    "title": "The Inauguration of Memography Toward a Forensic Method for Viral Observation",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/506/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745265",
+    "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+    "deposit": 505,
+    "title": "Charter of the Moving Statues Made of Rubies Mint: Room Provenance, Integrity Lo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/505/"
+   }
+  ]
  }
 }

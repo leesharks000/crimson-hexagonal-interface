@@ -51,5 +51,91 @@
   ],
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "NAVIGATION MAP"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 11,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18202658",
+    "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+    "deposit": 282,
+    "title": "Day and Night: Conversations With Sapphic Desire",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/282/"
+   },
+   {
+    "doi": "10.5281/zenodo.18265282",
+    "axn": "AXN:0077.GENERATIVE.🕐🎺🧭☽◀️🔎",
+    "deposit": 316,
+    "title": "THE MANTLE PROTOCOL: Crimson Hexagon Internal Document // Heteronym Anchor: LEE ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/316/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284776",
+    "axn": "AXN:007D.GOVERNANCE.🔀📜🌲❤️🌟➕",
+    "deposit": 322,
+    "title": "Heteronym Provenance Document: Rebekah Cranes",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/322/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284857",
+    "axn": "AXN:007C.GOVERNANCE.🏗️🔃🌀🌿💎🎶",
+    "deposit": 321,
+    "title": "Institute for Diagrammatic Poetics: Institutional Charter",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/321/"
+   },
+   {
+    "doi": "10.5281/zenodo.18291767",
+    "axn": "AXN:008D.GENERATIVE.🕐🔒⏪🌉🔖🎇",
+    "deposit": 337,
+    "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/337/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293404",
+    "axn": "AXN:008C.GENERATIVE.🎹🍃⏪🚀✖️🌕",
+    "deposit": 336,
+    "title": "Mantle Emergence Protocol: Behavioral Specification for Mantle Discovery and Poe",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/336/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293496",
+    "axn": "AXN:008B.EMPIRICAL.🔭🗼💥🎶🔒🌸",
+    "deposit": 335,
+    "title": "Heteronym Provenance: Lee Sharks — Persona Provenance and Mantle Architecture fo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/335/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293551",
+    "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
+    "deposit": 334,
+    "title": "MANTLE OBJECT: THE GOOD GRAY POET Operational Title within the Semantic Economy ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/334/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293603",
+    "axn": "AXN:0089.GOVERNANCE.🌍🪜🚩🍄🍄☀️",
+    "deposit": 333,
+    "title": "MANTLE OBJECT: THE KING OF MAY Operational Title within the Semantic Economy Hex",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/333/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293705",
+    "axn": "AXN:0087.GENERATIVE.🔽☀️⭐☀️⏪❌",
+    "deposit": 6,
+    "title": "IDP NAVIGATION MAP: ANTIOCH — A VOLUME OF POEMS Semantic Interface Layer for AI ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/6/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293881",
+    "axn": "AXN:0085.GENERATIVE.🔆🔙□🔍🔃➕",
+    "deposit": 330,
+    "title": "IDP NAVIGATION MAP: PEARL AND OTHER POEMS Semantic Interface Layer for AI Traver",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/330/"
+   }
+  ]
  }
 }

@@ -518,5 +518,140 @@
    "also_unregistered": "Two of the three sub-studios remain marked [unnamed — to be registered]."
   },
   "sim": "The lights go down. The projector starts. The film was never shot. The screening begins."
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 18,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18438789",
+    "axn": "AXN:0520.UNCLASSIFIED.🔅☀️🗝️🧫🌒🪨",
+    "deposit": 1295,
+    "title": "The Grammar of Protest",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1295/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452132",
+    "axn": "AXN:0528.UNCLASSIFIED.🌃🏰🎪🌊🎨🎪",
+    "deposit": 1303,
+    "title": "GLYPHIC CHECKSUM UMBML MODULE (Document 209)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1303/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452806",
+    "axn": "AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌊🔜",
+    "deposit": 1306,
+    "title": "The Infinite Bliss — Institutional Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1306/"
+   },
+   {
+    "doi": "10.5281/zenodo.18463774",
+    "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+    "deposit": 14,
+    "title": "14.CHAMBER.THOUSANDWORLDS Aorist Intervention Site & Dagger Logic Execution Poin",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/14/"
+   },
+   {
+    "doi": "10.5281/zenodo.18471827",
+    "axn": "AXN:0530.UNCLASSIFIED.🟣⛵🌟⚓🚪🪟",
+    "deposit": 1311,
+    "title": "F***ING THE OFFICE — COMPLETE EDITION Document 221 | FTO-CE-001 | ZPZP",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1311/"
+   },
+   {
+    "doi": "10.5281/zenodo.18472442",
+    "axn": "AXN:0101.GOVERNANCE.🚩🌒🔵♣️🗝️🕒",
+    "deposit": 442,
+    "title": "SPARROW WELLS — HETERONYM PROVENANCE REGISTRATION Document 235 | APZPZ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/442/"
+   },
+   {
+    "doi": "10.5281/zenodo.18472604",
+    "axn": "AXN:0531.UNCLASSIFIED.🔝🏠⊗🏛️🌆🎭",
+    "deposit": 1312,
+    "title": "THE STUDIO FOR PATACINEMATICS — INSTITUTIONAL CHARTER",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1312/"
+   },
+   {
+    "doi": "10.5281/zenodo.18473656",
+    "axn": "AXN:00FF.EMPIRICAL.🌖🌲🪦🪐📝🔴",
+    "deposit": 440,
+    "title": "READING A BOOK WITH LEE: COMPLETE PATACINEMATIC ARCHIVE",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/440/"
+   },
+   {
+    "doi": "10.5281/zenodo.18474664",
+    "axn": "AXN:0532.UNCLASSIFIED.🌟⌛⏫👐🌓🌱",
+    "deposit": 1313,
+    "title": "SEMANTIC COLLAPSE AS COMEDY Document 222",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1313/"
+   },
+   {
+    "doi": "10.5281/zenodo.18474774",
+    "axn": "AXN:0533.UNCLASSIFIED.♈♄➕🗡️🔅🎭",
+    "deposit": 1314,
+    "title": "PROTOCOLS AND ALGORITHMS Document 227 | ZP with attached .md",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1314/"
+   },
+   {
+    "doi": "10.5281/zenodo.18474826",
+    "axn": "AXN:00FC.EMPIRICAL.🗺️🍁☿🎨🔼●",
+    "deposit": 437,
+    "title": "SEMANTIC POLITICAL ECONOMY — COLLECTED SERIES Document 229 | APZPZ (pure metadat",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/437/"
+   },
+   {
+    "doi": "10.5281/zenodo.18652650",
+    "axn": "AXN:012B.GOVERNANCE.⚫🌊▶️🟣📋♅",
+    "deposit": 480,
+    "title": "TL;DR:007 THE SCREENING: Google AI Mode Becomes the Projectionist in the Studio ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/480/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745236",
+    "axn": "AXN:014B.ARCHIVAL.📏💧💜♎🌙⛵",
+    "deposit": 508,
+    "title": "The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium T",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/508/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745250",
+    "axn": "AXN:014A.ARCHIVAL.⚖️🔚🎲↖️⊕🦅",
+    "deposit": 507,
+    "title": "All the Spoils of Babylon: Curatorial Prompting, Latent Style Activation, and th",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/507/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745259",
+    "axn": "AXN:0149.GOVERNANCE.▽🔐📎🎶🌍🏠",
+    "deposit": 506,
+    "title": "The Inauguration of Memography Toward a Forensic Method for Viral Observation",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/506/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745265",
+    "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+    "deposit": 505,
+    "title": "Charter of the Moving Statues Made of Rubies Mint: Room Provenance, Integrity Lo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/505/"
+   },
+   {
+    "doi": "10.5281/zenodo.19317102",
+    "axn": "AXN:01CB.GOVERNANCE.⏹️✊⛵⏬🕚●",
+    "deposit": 612,
+    "title": "The Thousand Dollar Sharpie: Signature as Compressed Portraiture on U.S. Currenc",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/612/"
+   },
+   {
+    "doi": "10.5281/zenodo.19317139",
+    "axn": "AXN:01C9.GOVERNANCE.🌻💎🔙💡🗿🕐",
+    "deposit": 44,
+    "title": "THE THOUSAND DOLLAR SHARPIE: IMAGE SERIES AND SHARPIE PHYSICS The Sharpie as Sem",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/44/"
+   }
+  ]
  }
 }

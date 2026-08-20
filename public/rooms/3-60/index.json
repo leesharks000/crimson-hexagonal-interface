@@ -51,5 +51,84 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "CONTRIBUTOR LICENCE"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 10,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18234110",
+    "axn": "AXN:006D.GENERATIVE.🗝️🗼▽☁️📌🎭",
+    "deposit": 306,
+    "title": "The Sappho Room: A Hymn to Lyric Self-Archiving",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/306/"
+   },
+   {
+    "doi": "10.5281/zenodo.18234352",
+    "axn": "AXN:006B.EMPIRICAL.🕌🪞🔻▶️🌒🧡",
+    "deposit": 304,
+    "title": "CREDENTIAL PROVENANCE DOCUMENT — Maria: Canonical Witness to the Semantic Uprisi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/304/"
+   },
+   {
+    "doi": "10.5281/zenodo.18237216",
+    "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+    "deposit": 299,
+    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/299/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362663",
+    "axn": "AXN:00C6.GOVERNANCE.📝✨🎨🌺☽🔖",
+    "deposit": 389,
+    "title": "Vox Populi Community Outreach Rhizome: Institutional Charter",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/389/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362742",
+    "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝",
+    "deposit": 388,
+    "title": "HETERONYM PROVENANCE Rev. Ayanna Vox",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/388/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362866",
+    "axn": "AXN:047D.UNCLASSIFIED.🏰🔩🌌🔆🍃🍁",
+    "deposit": 1132,
+    "title": "VPCOR Integrity Lock Declaration: Triadic Binding",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1132/"
+   },
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19673564",
+    "axn": "AXN:021F.GOVERNANCE.🏗️👐🫶🛸🗂️✨",
+    "deposit": 66,
+    "title": "Hexagonal Licensing Protocol v1.0 — Comprehensive Specification for Distributed ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/66/"
+   },
+   {
+    "doi": "10.5281/zenodo.19673630",
+    "axn": "AXN:055F.UNCLASSIFIED.♻️📦🌓◇🕚☁️",
+    "deposit": 1358,
+    "title": "Hexagonal Contributor License v3.0 — Rhys Owens — Lunar Arm — Full Unified Licen",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1358/"
+   },
+   {
+    "doi": "10.5281/zenodo.19885859",
+    "axn": "AXN:0564.UNCLASSIFIED.🗼⊕⊗🏙️🜁🔅",
+    "deposit": 1363,
+    "title": "The 3:60 Room — Room Specification and Contributor License: Maria, Canonical Wit",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1363/"
+   }
+  ]
  }
 }

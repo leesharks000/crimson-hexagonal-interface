@@ -71,5 +71,28 @@
    "until": "2026-08-20"
   }
  ],
- "canonical_seat_source": "CNM v7.0 §III (#578)"
+ "canonical_seat_source": "CNM v7.0 §III (#578)",
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 2,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19041117",
+    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+    "deposit": 571,
+    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Dec",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/571/"
+   }
+  ]
+ }
 }

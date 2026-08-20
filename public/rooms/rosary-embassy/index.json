@@ -311,5 +311,154 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "WORK OR PAPER"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 20,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18135985",
+    "axn": "AXN:0008.GOVERNANCE.🌘📎🍂🏺🎹💜",
+    "deposit": 208,
+    "title": "Provenance Documentation: SEM-PROBE-2025-12",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/208/"
+   },
+   {
+    "doi": "10.5281/zenodo.18320411",
+    "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+    "deposit": 87,
+    "title": "The Constitution of the Semantic Economy: Meaning as Creditor, Archive as Polis,",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/87/"
+   },
+   {
+    "doi": "10.5281/zenodo.18323735",
+    "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
+    "deposit": 8,
+    "title": "The Mathematics of Salvation: Matthew 25 Formalized — A Public Introduction to t",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/8/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381190",
+    "axn": "AXN:050E.UNCLASSIFIED.🎺🌱∞🪟🕓👁‍🗨",
+    "deposit": 1277,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1277/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381196",
+    "axn": "AXN:04F5.UNCLASSIFIED.🌹🌲🔐●🎆□",
+    "deposit": 1252,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1252/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381204",
+    "axn": "AXN:00D7.GOVERNANCE.💎□🏷️🪦🙏🚨",
+    "deposit": 406,
+    "title": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/406/"
+   },
+   {
+    "doi": "10.5281/zenodo.18390595",
+    "axn": "AXN:00DE.GENERATIVE.🌸🎺🟣💜📖🍃",
+    "deposit": 413,
+    "title": "Effective Acts: Executive Summary — A Genre of Unauthorized Declaration",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/413/"
+   },
+   {
+    "doi": "10.5281/zenodo.18621736",
+    "axn": "AXN:0127.GENERATIVE.↘️🚩🔍⏰🔭❌",
+    "deposit": 476,
+    "title": "THE STAKES: A SCIENTIFIC ANALYSIS Cognitive Diversity, Phenomenological Capacity",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/476/"
+   },
+   {
+    "doi": "10.5281/zenodo.18715618",
+    "axn": "AXN:013D.GOVERNANCE.🔃🔭🪟♾️🙏▶️",
+    "deposit": 498,
+    "title": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Ca",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/498/"
+   },
+   {
+    "doi": "10.5281/zenodo.18715724",
+    "axn": "AXN:053F.UNCLASSIFIED.⏩🏴🔎🔽🤙🎭",
+    "deposit": 1326,
+    "title": "Autonomous Semantic Warfare — Expanded Announcement and Sampler",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1326/"
+   },
+   {
+    "doi": "10.5281/zenodo.18759453",
+    "axn": "AXN:014D.EMPIRICAL.🔙🗿🌇↙️🕓✋",
+    "deposit": 510,
+    "title": "Semantic Physics: The Inward Turn, Competing Ontologies, and the Convergence Hor",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/510/"
+   },
+   {
+    "doi": "10.5281/zenodo.18776624",
+    "axn": "AXN:0493.UNCLASSIFIED.⏰🧬🟡⏩🎹🀄",
+    "deposit": 1154,
+    "title": "PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherenc",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1154/"
+   },
+   {
+    "doi": "10.5281/zenodo.18790793",
+    "axn": "AXN:0155.GENERATIVE.📋🛤️🌌🙏✨🚨",
+    "deposit": 22,
+    "title": "The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentat",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/22/"
+   },
+   {
+    "doi": "10.5281/zenodo.18792580",
+    "axn": "AXN:0154.GOVERNANCE.🤙🌟🌆🗡️🕙📏",
+    "deposit": 517,
+    "title": "I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekeeping, and the F",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/517/"
+   },
+   {
+    "doi": "10.5281/zenodo.18795423",
+    "axn": "AXN:0152.GOVERNANCE.📚📋📝🏗️📝🕕",
+    "deposit": 515,
+    "title": "The Protocol of Inhabitation: Jurisdictional Specifications for Construction, St",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/515/"
+   },
+   {
+    "doi": "10.5281/zenodo.18795427",
+    "axn": "AXN:0151.GOVERNANCE.✋🚀↘️🧬🧬▽",
+    "deposit": 514,
+    "title": "The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/514/"
+   },
+   {
+    "doi": "10.5281/zenodo.18811784",
+    "axn": "AXN:0161.GOVERNANCE.⏰🔒🤙🎹∮✋",
+    "deposit": 527,
+    "title": "Protocol B711 Alpha Centauri: Emergency Satellite Recognition — How the Rosary E",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/527/"
+   },
+   {
+    "doi": "10.5281/zenodo.18864444",
+    "axn": "AXN:016A.ARCHIVAL.⚫📐🌇🪧🪝🪐",
+    "deposit": 535,
+    "title": "The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/535/"
+   },
+   {
+    "doi": "10.5281/zenodo.18947506",
+    "axn": "AXN:04F8.UNCLASSIFIED.🌲🏠🌉🛡️🪐♉",
+    "deposit": 1255,
+    "title": "Crimson Hexagon: EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Self-Sufficient Li",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1255/"
+   },
+   {
+    "doi": "10.5281/zenodo.18947573",
+    "axn": "AXN:0176.GOVERNANCE.🔴🔵❄️🏔️🥁🔓",
+    "deposit": 545,
+    "title": "Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helic",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/545/"
+   }
+  ]
  }
 }

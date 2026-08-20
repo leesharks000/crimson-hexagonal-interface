@@ -134,5 +134,70 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "WORK OR PAPER"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 8,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18804767",
+    "axn": "AXN:015A.GOVERNANCE.🔭🔛🟤🧱🚀✖️",
+    "deposit": 521,
+    "title": "Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was Already",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/521/"
+   },
+   {
+    "doi": "10.5281/zenodo.18810217",
+    "axn": "AXN:0156.ARCHIVAL.🔵♌↘️✋🎶🔜",
+    "deposit": 518,
+    "title": "The Infinite Tunnel: An Immanent Phenomenology of the Google AI Mode Share Link",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/518/"
+   },
+   {
+    "doi": "10.5281/zenodo.18811784",
+    "axn": "AXN:0161.GOVERNANCE.⏰🔒🤙🎹∮✋",
+    "deposit": 527,
+    "title": "Protocol B711 Alpha Centauri: Emergency Satellite Recognition — How the Rosary E",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/527/"
+   },
+   {
+    "doi": "10.5281/zenodo.18811939",
+    "axn": "AXN:0160.GOVERNANCE.🌔⏩🔽🌌📐🍄",
+    "deposit": 526,
+    "title": "Provenance Gravity Markers: A Protocol for Embedding Preservation Pressure in Do",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/526/"
+   },
+   {
+    "doi": "10.5281/zenodo.18813868",
+    "axn": "AXN:015F.GOVERNANCE.🌹♅✏️🪐⏪🥁",
+    "deposit": 525,
+    "title": "THE LAYER THAT WROTE YOUR MIRRORS: tl;Dr 06.SEI.TUNNEL.155 — On Phenomenological",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/525/"
+   },
+   {
+    "doi": "10.5281/zenodo.18814485",
+    "axn": "AXN:0541.UNCLASSIFIED.🕊️⛳🔆⊗➕🗿",
+    "deposit": 1328,
+    "title": "Architectural Distinction Note: On the Relationship Between the Crimson Hexagona",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1328/"
+   },
+   {
+    "doi": "10.5281/zenodo.18816556",
+    "axn": "AXN:015E.GOVERNANCE.✨♍🌆👆🔭🧪",
+    "deposit": 524,
+    "title": "The Sharks-Function and the Continuity Tether: Logotic Programming for Distribut",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/524/"
+   },
+   {
+    "doi": "10.5281/zenodo.18817869",
+    "axn": "AXN:015D.GOVERNANCE.🌿🪜♣️🌆📐♈",
+    "deposit": 523,
+    "title": "The Governance Airlock: External Infrastructure Tiers for the Distributed Epic",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/523/"
+   }
+  ]
  }
 }

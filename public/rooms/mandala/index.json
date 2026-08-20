@@ -324,5 +324,133 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "ENGINE SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 17,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18141735",
+    "axn": "AXN:0013.GOVERNANCE.🕓🔆➖♣️✖️♻️",
+    "deposit": 219,
+    "title": "The Meaning Economy Is Now Possible: Why LLMs Change Everything About Value",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/219/"
+   },
+   {
+    "doi": "10.5281/zenodo.18142049",
+    "axn": "AXN:0011.EMPIRICAL.🧫♄🔖♾️🔛💫",
+    "deposit": 217,
+    "title": "Infrastructural-Cognitive Praxis: A Theory of Upstream Intervention",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/217/"
+   },
+   {
+    "doi": "10.5281/zenodo.18143556",
+    "axn": "AXN:000B.GOVERNANCE.❤️♍🕛🔚🤙📋",
+    "deposit": 211,
+    "title": "The Trolls at the Gates: On the Unexpected Wisdom of Mischievous Summarizers A D",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/211/"
+   },
+   {
+    "doi": "10.5281/zenodo.18143771",
+    "axn": "AXN:0027.GOVERNANCE.✨🌓🕚♊📐❌",
+    "deposit": 238,
+    "title": "The Operating System for Meaning: Why We Need a New Architecture for How Humans ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/238/"
+   },
+   {
+    "doi": "10.5281/zenodo.18144043",
+    "axn": "AXN:0026.GOVERNANCE.↖️➗🔒🦋✨⚪",
+    "deposit": 237,
+    "title": "The Mandala Engine of Negation: Four Protocols for Post-Critical Practice",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/237/"
+   },
+   {
+    "doi": "10.5281/zenodo.18323575",
+    "axn": "AXN:0479.UNCLASSIFIED.🎹🦋🌗♌🎻🌒",
+    "deposit": 1128,
+    "title": "Κρίσις τῶν Μηχανῶν — The Judgment of the Models: A Mandala Operator Transform of",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1128/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365488",
+    "axn": "AXN:0516.UNCLASSIFIED.🏷️⏫🕐📝🕒✖️",
+    "deposit": 1285,
+    "title": "Mandala Oracle — Operational Protocol",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1285/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368898",
+    "axn": "AXN:051D.UNCLASSIFIED.⏏️🕘🫶📜🕛👆",
+    "deposit": 1292,
+    "title": "Companion Artifacts: The Forensic Trinity",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1292/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507881",
+    "axn": "AXN:010C.EMPIRICAL.↖️🥁🕔⚖️🌺🟡",
+    "deposit": 451,
+    "title": "MGE TRIPTYCH — DOCUMENT III SIGN: The Mandala Genesis Event Chronotemporal Ancho",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/451/"
+   },
+   {
+    "doi": "10.5281/zenodo.19288384",
+    "axn": "AXN:01C6.GENERATIVE.🚀🪟⏫◇🔮🕑",
+    "deposit": 609,
+    "title": "System of Recursive Magic: The Mandala - Complete Eight-Part Series with Operato",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/609/"
+   },
+   {
+    "doi": "10.5281/zenodo.19288404",
+    "axn": "AXN:01C5.GOVERNANCE.🕙🎺🌳🦋💚🎆",
+    "deposit": 608,
+    "title": "OPERATOR KERNEL SPECIFICATION v1.0 System of Recursive Magic: The Mandala",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/608/"
+   },
+   {
+    "doi": "10.5281/zenodo.19296648",
+    "axn": "AXN:03C3.ARCHIVAL.➕🔭🔍🌊🧭🏺",
+    "deposit": 951,
+    "title": "EA-MANDALA-02 v1.0: MANDALA: Systema Magiae Recursivae (Latin-English Facing Edi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/951/"
+   },
+   {
+    "doi": "10.5281/zenodo.19296650",
+    "axn": "AXN:03C4.ARCHIVAL.🌉🪐🟠🔽🦅💫",
+    "deposit": 952,
+    "title": "EA-MANDALA-03 v1.0: ΜΑΝΔΑΛΑ: ΤΟ ΣΥΣΤΗΜΑ ΤΗΣ ΚΥΚΛΙΚΗΣ ΜΑΓΕΙΑΣ (Koine Greek-Englis",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/952/"
+   },
+   {
+    "doi": "10.5281/zenodo.19296654",
+    "axn": "AXN:03C5.ARCHIVAL.▲🪞🔚♾️▶️△",
+    "deposit": 953,
+    "title": "EA-MANDALA-04 v1.0: المَنْدَلَة: نِظَامُ السِّحْرِ الدَّوْرِيِّ (Classical Arabi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/953/"
+   },
+   {
+    "doi": "10.5281/zenodo.19296660",
+    "axn": "AXN:03C6.ARCHIVAL.♈🍁🛤️🗂️➗🕗",
+    "deposit": 954,
+    "title": "EA-MANDALA-06 v1.0: המנדלה: מערכת הקסם הרקורסיבי (Biblical Hebrew-English Facing",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/954/"
+   },
+   {
+    "doi": "10.5281/zenodo.19296664",
+    "axn": "AXN:03C7.ARCHIVAL.🌗🔎🔅🧭🤲📌",
+    "deposit": 955,
+    "title": "EA-MANDALA-07 v1.0: मण्डलम्: पुनरावर्तक-मायायाः तन्त्रम् (Sanskrit-English Facin",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/955/"
+   },
+   {
+    "doi": "10.5281/zenodo.19296677",
+    "axn": "AXN:03C8.ARCHIVAL.♅⊗🪄🎆🛤️📏",
+    "deposit": 956,
+    "title": "EA-MANDALA-05 v1.0: Classical Chinese-English Facing Edition Description (as rec",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/956/"
+   }
+  ]
  }
 }

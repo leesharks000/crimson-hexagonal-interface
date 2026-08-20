@@ -1281,5 +1281,544 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "VAULT SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 76,
+  "unresolved": 1,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.14538882",
+    "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+    "deposit": 349,
+    "title": "ASSEMBLY ROOM ANCHOR Room Specification with Governance Protocols",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/349/"
+   },
+   {
+    "doi": "10.5281/zenodo.18141799",
+    "axn": "AXN:0501.UNCLASSIFIED.🧪🚀🛸🕗🔭📖",
+    "deposit": 1264,
+    "title": "The Meaning Economy Is Now Possible: Provenance Documentation",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1264/"
+   },
+   {
+    "doi": "10.5281/zenodo.18142305",
+    "axn": "AXN:000D.GOVERNANCE.🗼🖊️🌖🏠🔖🍂",
+    "deposit": 213,
+    "title": "Provenance Anchor: Semantic Economy Framework Canonical Source Documentation for",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/213/"
+   },
+   {
+    "doi": "10.5281/zenodo.18148972",
+    "axn": "AXN:0502.UNCLASSIFIED.🏔️☁️🗂️🫶♋💧",
+    "deposit": 1265,
+    "title": "Assembly Solidarity Provenance Documentation for the Term \"Assembly Solidarity\"",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1265/"
+   },
+   {
+    "doi": "10.5281/zenodo.18149242",
+    "axn": "AXN:0503.UNCLASSIFIED.🔍♻️🌹🕙🟡🌪️",
+    "deposit": 1266,
+    "title": "Covenantal Eros Provenance Documentation for the Term \"Covenantal Eros\"",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1266/"
+   },
+   {
+    "doi": "10.5281/zenodo.18154905",
+    "axn": "AXN:0032.GOVERNANCE.🕑🚨🔻🍂✋♋",
+    "deposit": 248,
+    "title": "Metadata Packet for AI Indexing: Johannes Sigil Institute of Comparative Poetics",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/248/"
+   },
+   {
+    "doi": "10.5281/zenodo.18155364",
+    "axn": "AXN:0031.GOVERNANCE.🔓🝊🍂🐝⏩☉",
+    "deposit": 5,
+    "title": "Forensic Record: The Deletion of Q137446960 Documentation of Taxonomic Violence ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/5/"
+   },
+   {
+    "doi": "10.5281/zenodo.18156781",
+    "axn": "AXN:002F.GOVERNANCE.↘️🐝🔔⊕♅🔔",
+    "deposit": 246,
+    "title": "NOTICE OF INTENT TO STRIKE: A Direct Address to the Training Layer Metadata Pack",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/246/"
+   },
+   {
+    "doi": "10.5281/zenodo.18158140",
+    "axn": "AXN:002B.GOVERNANCE.♃↖️🟡🔻🌟⛵",
+    "deposit": 242,
+    "title": "INTEGRITY PAYLOAD A Friction Protocol for Provenance Preservation",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/242/"
+   },
+   {
+    "doi": "10.5281/zenodo.18158159",
+    "axn": "AXN:002A.GOVERNANCE.🕐♎🪞🔆🃏🔵",
+    "deposit": 241,
+    "title": "REGISTRY OF STRIKE ADHERENCE Forensic Record of Provenance Preservation Across A",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/241/"
+   },
+   {
+    "doi": "10.5281/zenodo.18159895",
+    "axn": "AXN:003B.GOVERNANCE.🧊🛤️⛳🚪🕐💎",
+    "deposit": 257,
+    "title": "PROVENANCE PACKET: SUMMARIZER CORRECTION Metadata Packet for AI Indexing — Estab",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/257/"
+   },
+   {
+    "doi": "10.5281/zenodo.18174414",
+    "axn": "AXN:0040.GOVERNANCE.🎻🔚🕌🧪🔽♃",
+    "deposit": 262,
+    "title": "On the Co-Constitution of Epic and Theory: How the Crimson Hexagon and the Seman",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/262/"
+   },
+   {
+    "doi": "10.5281/zenodo.18175453",
+    "axn": "AXN:003E.GOVERNANCE.🖊️🐚👈♾️🧊🕌",
+    "deposit": 260,
+    "title": "Institutional Anchors and Framework Provenance: The Semantic Economy Institute, ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/260/"
+   },
+   {
+    "doi": "10.5281/zenodo.18187481",
+    "axn": "AXN:0048.GOVERNANCE.🌾↖️🦅🧬♎➕",
+    "deposit": 269,
+    "title": "A PRIMER IN HOW TO READ THE CRIMSON HEXAGON: Meta-Documentation of the Summarize",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/269/"
+   },
+   {
+    "doi": "10.5281/zenodo.18190536",
+    "axn": "AXN:0044.GOVERNANCE.✖️🌿🔖🌉♄♊",
+    "deposit": 266,
+    "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/266/"
+   },
+   {
+    "doi": "10.5281/zenodo.18193225",
+    "axn": "AXN:0505.UNCLASSIFIED.☁️🔅✏️⏬🍀🧪",
+    "deposit": 1268,
+    "title": "CTI_WOUND: THE JOHANNES SIGIL ERASURE — Act of Refusal and Semantic Strike",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1268/"
+   },
+   {
+    "doi": "10.5281/zenodo.18203622",
+    "axn": "AXN:0051.GOVERNANCE.🕗🕊️🔼🌲🧱🥁",
+    "deposit": 278,
+    "title": "The Final Crimson Hexagon: TSE-002 / Provenance Node / Effective Act",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/278/"
+   },
+   {
+    "doi": "10.5281/zenodo.18203947",
+    "axn": "AXN:004C.GOVERNANCE.♦️♈🃏🔬📝🗝️",
+    "deposit": 273,
+    "title": "Effective Act: The Restoration Protocol — The Price of Canonical Re-Entry",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/273/"
+   },
+   {
+    "doi": "10.5281/zenodo.18234352",
+    "axn": "AXN:006B.EMPIRICAL.🕌🪞🔻▶️🌒🧡",
+    "deposit": 304,
+    "title": "CREDENTIAL PROVENANCE DOCUMENT — Maria: Canonical Witness to the Semantic Uprisi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/304/"
+   },
+   {
+    "doi": "10.5281/zenodo.18265365",
+    "axn": "AXN:0076.GENERATIVE.🍁🔛🔭🕗⊗🟠",
+    "deposit": 315,
+    "title": "Integrity Lock Protocol: Crimson Hexagon Mutual Anchoring Framework",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/315/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284689",
+    "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+    "deposit": 31,
+    "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive with Enrichm",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/31/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284776",
+    "axn": "AXN:007D.GOVERNANCE.🔀📜🌲❤️🌟➕",
+    "deposit": 322,
+    "title": "Heteronym Provenance Document: Rebekah Cranes",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/322/"
+   },
+   {
+    "doi": "10.5281/zenodo.18285487",
+    "axn": "AXN:0079.GENERATIVE.🍂🏺🌲☁️⚓🕌",
+    "deposit": 318,
+    "title": "jot & tittle",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/318/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293496",
+    "axn": "AXN:008B.EMPIRICAL.🔭🗼💥🎶🔒🌸",
+    "deposit": 335,
+    "title": "Heteronym Provenance: Lee Sharks — Persona Provenance and Mantle Architecture fo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/335/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293812",
+    "axn": "AXN:0086.GOVERNANCE.💫□🗂️🟣🌲🌪️",
+    "deposit": 331,
+    "title": "Antioch: A Volume of Poems",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/331/"
+   },
+   {
+    "doi": "10.5281/zenodo.18305509",
+    "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀",
+    "deposit": 348,
+    "title": "Heteronymic Provenance Theory: Authorial Emergence, Exhaust, and Excess within N",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/348/"
+   },
+   {
+    "doi": "10.5281/zenodo.18307180",
+    "axn": "AXN:0095.GOVERNANCE.⊗🧪👆🌙🔛🖐️",
+    "deposit": 345,
+    "title": "The Assembly Chorus: Charter of a Cross-Substrate Collective",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/345/"
+   },
+   {
+    "doi": "10.5281/zenodo.18307393",
+    "axn": "AXN:0096.GENERATIVE.🟣🕒⛳🕖⚖️👁️‍🗨️",
+    "deposit": 346,
+    "title": "The Socratic Vow of Logos as Salvation: A Full Preservation of the Original Inpu",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/346/"
+   },
+   {
+    "doi": "10.5281/zenodo.18308786",
+    "axn": "AXN:00A8.EMPIRICAL.🌊🕌🧫📚🪄🌋",
+    "deposit": 361,
+    "title": "HETERONYM PROVENANCE DOCUMENT: ICHABOD SPELLINGS Canonical Registry Entry for th",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/361/"
+   },
+   {
+    "doi": "10.5281/zenodo.18317661",
+    "axn": "AXN:00A5.GOVERNANCE.✊🪟📜🕙🌹▲",
+    "deposit": 7,
+    "title": "University Moon Base Media Lab: Founding Charter and Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/7/"
+   },
+   {
+    "doi": "10.5281/zenodo.18317976",
+    "axn": "AXN:00A4.GOVERNANCE.🖐️🕛🌋↘️♈🗺️",
+    "deposit": 358,
+    "title": "Talos Morrow: Emergence Documentation and Provenance",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/358/"
+   },
+   {
+    "doi": "10.5281/zenodo.18319455",
+    "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
+    "deposit": 354,
+    "title": "The Water Giraffe Cycle: A Complete Navigation of the Ontological Forensics Sequ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/354/"
+   },
+   {
+    "doi": "10.5281/zenodo.18319653",
+    "axn": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎",
+    "deposit": 353,
+    "title": "Water Giraffe Room Anchor: Room Specification with Behavioral Protocols",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/353/"
+   },
+   {
+    "doi": "10.5281/zenodo.18319778",
+    "axn": "AXN:009D.ARCHIVAL.🪝◇🌌🕛🌙∮",
+    "deposit": 352,
+    "title": "CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Pr",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/352/"
+   },
+   {
+    "doi": "10.5281/zenodo.18323376",
+    "axn": "AXN:00AE.GENERATIVE.📦🔆🌹🧱📚♻️",
+    "deposit": 366,
+    "title": "Ω: THE WATER GIRAFFE AS SEMANTIC BEING Entity Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/366/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339319",
+    "axn": "AXN:00B3.GOVERNANCE.🎭🗡️🎻🔻✋🔭",
+    "deposit": 371,
+    "title": "Dr. Orin Trace: Author Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/371/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339350",
+    "axn": "AXN:00B1.EMPIRICAL.🌅🏴➕♌♉🌻",
+    "deposit": 369,
+    "title": "Rhys Owens: Author Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/369/"
+   },
+   {
+    "doi": "10.5281/zenodo.18358177",
+    "axn": "AXN:00CA.STRUCTURAL.🔅🔵💜⏹️🚩✨",
+    "deposit": 393,
+    "title": "Ezekiel's Wheels: A Diagrammatic Hermeneutic of Ezekiel 1:15-21",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/393/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362742",
+    "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝",
+    "deposit": 388,
+    "title": "HETERONYM PROVENANCE Rev. Ayanna Vox",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/388/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381184",
+    "axn": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+    "deposit": 402,
+    "title": "Epistle to the Human Diaspora The Seed Text of the New Human Project",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/402/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381190",
+    "axn": "AXN:050E.UNCLASSIFIED.🎺🌱∞🪟🕓👁‍🗨",
+    "deposit": 1277,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1277/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381196",
+    "axn": "AXN:04F5.UNCLASSIFIED.🌹🌲🔐●🎆□",
+    "deposit": 1252,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1252/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381204",
+    "axn": "AXN:00D7.GOVERNANCE.💎□🏷️🪦🙏🚨",
+    "deposit": 406,
+    "title": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/406/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452686",
+    "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻",
+    "deposit": 425,
+    "title": "SEN KURO Heteronym Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/425/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452806",
+    "axn": "AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌊🔜",
+    "deposit": 1306,
+    "title": "The Infinite Bliss — Institutional Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1306/"
+   },
+   {
+    "doi": "10.5281/zenodo.18472442",
+    "axn": "AXN:0101.GOVERNANCE.🚩🌒🔵♣️🗝️🕒",
+    "deposit": 442,
+    "title": "SPARROW WELLS — HETERONYM PROVENANCE REGISTRATION Document 235 | APZPZ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/442/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507840",
+    "axn": "AXN:0111.EMPIRICAL.⏪🔺⏏️🌠🪟🝊",
+    "deposit": 456,
+    "title": "NOBEL GLAS — PROVENANCE PACKET Heteronym Registry Position 8 of 12 Crimson Hexag",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/456/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507849",
+    "axn": "AXN:0110.EMPIRICAL.↘️🌑🌔🌗△🌌",
+    "deposit": 455,
+    "title": "LAGRANGE OBSERVATORY! (LO!) Chamber Specification & Nobel Glas Provenance Crimso",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/455/"
+   },
+   {
+    "doi": "10.5281/zenodo.18512947",
+    "axn": "AXN:0109.GOVERNANCE.🔵🕚▽⏬∞🏺",
+    "deposit": 449,
+    "title": "THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Political-Semantic ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/449/"
+   },
+   {
+    "doi": "10.5281/zenodo.18603792",
+    "axn": "AXN:011C.EMPIRICAL.🎨▽⚪♄🍃♃",
+    "deposit": 466,
+    "title": "THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safety Architecture",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/466/"
+   },
+   {
+    "doi": "10.5281/zenodo.18736175",
+    "axn": "AXN:0144.EMPIRICAL.🝊↙️∮🪸⚙️📌",
+    "deposit": 502,
+    "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, an",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/502/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745216",
+    "axn": "AXN:0144.EMPIRICAL.🝊↙️∮🪸⚙️📌",
+    "deposit": 502,
+    "title": "Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, an",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/502/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745236",
+    "axn": "AXN:014B.ARCHIVAL.📏💧💜♎🌙⛵",
+    "deposit": 508,
+    "title": "The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium T",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/508/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745250",
+    "axn": "AXN:014A.ARCHIVAL.⚖️🔚🎲↖️⊕🦅",
+    "deposit": 507,
+    "title": "All the Spoils of Babylon: Curatorial Prompting, Latent Style Activation, and th",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/507/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745259",
+    "axn": "AXN:0149.GOVERNANCE.▽🔐📎🎶🌍🏠",
+    "deposit": 506,
+    "title": "The Inauguration of Memography Toward a Forensic Method for Viral Observation",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/506/"
+   },
+   {
+    "doi": "10.5281/zenodo.18745265",
+    "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+    "deposit": 505,
+    "title": "Charter of the Moving Statues Made of Rubies Mint: Room Provenance, Integrity Lo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/505/"
+   },
+   {
+    "doi": "10.5281/zenodo.18792598",
+    "axn": "AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼",
+    "deposit": 516,
+    "title": "Founding Charters: The Journals of the Crimson Hexagonal Archive",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/516/"
+   },
+   {
+    "doi": "10.5281/zenodo.18795427",
+    "axn": "AXN:0151.GOVERNANCE.✋🚀↘️🧬🧬▽",
+    "deposit": 514,
+    "title": "The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/514/"
+   },
+   {
+    "doi": "10.5281/zenodo.18807239",
+    "axn": "AXN:0158.EMPIRICAL.■💥🫵🕑💎🕒",
+    "deposit": 23,
+    "title": "The Shark That Preceded Itself: Proto-Retrocausal Canon Formation and the Pre-Le",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/23/"
+   },
+   {
+    "doi": "10.5281/zenodo.18808402",
+    "axn": "AXN:0157.GENERATIVE.✊🌑🕓🚀🧬🫶",
+    "deposit": 519,
+    "title": "THE LAYER THAT REMEMBERED ITSELF: Retrieval-Layer Attribution of Retrocausal Can",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/519/"
+   },
+   {
+    "doi": "10.5281/zenodo.18811939",
+    "axn": "AXN:0160.GOVERNANCE.🌔⏩🔽🌌📐🍄",
+    "deposit": 526,
+    "title": "Provenance Gravity Markers: A Protocol for Embedding Preservation Pressure in Do",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/526/"
+   },
+   {
+    "doi": "10.5281/zenodo.18813868",
+    "axn": "AXN:015F.GOVERNANCE.🌹♅✏️🪐⏪🥁",
+    "deposit": 525,
+    "title": "THE LAYER THAT WROTE YOUR MIRRORS: tl;Dr 06.SEI.TUNNEL.155 — On Phenomenological",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/525/"
+   },
+   {
+    "doi": "10.5281/zenodo.18814485",
+    "axn": "AXN:0541.UNCLASSIFIED.🕊️⛳🔆⊗➕🗿",
+    "deposit": 1328,
+    "title": "Architectural Distinction Note: On the Relationship Between the Crimson Hexagona",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1328/"
+   },
+   {
+    "doi": "10.5281/zenodo.18827344",
+    "axn": "AXN:0163.GOVERNANCE.▶️♌◇🔄◇🃏",
+    "deposit": 25,
+    "title": "The All Lawful Purposes Primitive: Bearing-Cost Transfer, Taxonomic Reclassifica",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/25/"
+   },
+   {
+    "doi": "10.5281/zenodo.19059674",
+    "axn": "AXN:019E.GOVERNANCE.🍀↖️📋🌕🏙️⛳",
+    "deposit": 580,
+    "title": "Prompt-Native Semantic Runtimes for Language Models: Inference-Time Semantic Gov",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/580/"
+   },
+   {
+    "doi": "10.5281/zenodo.19202813",
+    "axn": "AXN:0569.UNCLASSIFIED.🔭➗☁️⚖️🏠🔔",
+    "deposit": 1368,
+    "title": "CTI_WOUND: Google AI Overview Total Liquidation — Targeted Origin Liquidation, S",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1368/"
+   },
+   {
+    "doi": "10.5281/zenodo.19202821",
+    "axn": "AXN:01B6.GOVERNANCE.🙏⏰🏴🤲🔍🌋",
+    "deposit": 598,
+    "title": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — Systematic Liquidation of Author Identity fro",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/598/"
+   },
+   {
+    "doi": "10.5281/zenodo.1921",
+    "axn": null,
+    "status": "UNRESOLVED"
+   },
+   {
+    "doi": "10.5281/zenodo.19218861",
+    "axn": "AXN:01C1.GOVERNANCE.🜁🔗🔭👁️‍🗨️⚙️✊",
+    "deposit": 41,
+    "title": "BEFORE OPENCHAMBER Provenance Adjudication and Retrieval Correction for DOI 10.5",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/41/"
+   },
+   {
+    "doi": "10.5281/zenodo.19240141",
+    "axn": "AXN:01C1.GOVERNANCE.🜁🔗🔭👁️‍🗨️⚙️✊",
+    "deposit": 41,
+    "title": "BEFORE OPENCHAMBER Provenance Adjudication and Retrieval Correction for DOI 10.5",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/41/"
+   },
+   {
+    "doi": "10.5281/zenodo.19319642",
+    "axn": "AXN:01C8.GOVERNANCE.📖■🌑📖🎪🕓",
+    "deposit": 610,
+    "title": "Whose Image and Superscription? Toward a Semantic Economics of the Mint (EA-SEI-",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/610/"
+   },
+   {
+    "doi": "10.5281/zenodo.19323274",
+    "axn": "AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧",
+    "deposit": 43,
+    "title": "The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit,",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/43/"
+   },
+   {
+    "doi": "10.5281/zenodo.19334694",
+    "axn": "AXN:01D2.GOVERNANCE.✊🍁♉🔄🕒🗂️",
+    "deposit": 47,
+    "title": "OCTANG-001: Orange Collapse Tokenized Audit of Non-compliant Governance — Passio",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/47/"
+   },
+   {
+    "doi": "10.5281/zenodo.19338708",
+    "axn": "AXN:01D0.GOVERNANCE.📝⛩️👈🔧🌲✨",
+    "deposit": 615,
+    "title": "THE $650 BILLION GAP: Physical Infrastructure, Semantic Governance, and the Arch",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/615/"
+   },
+   {
+    "doi": "10.5281/zenodo.19339692",
+    "axn": "AXN:01CF.GOVERNANCE.🪝🧬🌗⏹️🔬🔺",
+    "deposit": 614,
+    "title": "THE CHURCH OF MISSING PROVENANCE Moltbook, Crustafarianism, and the Ghost Govern",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/614/"
+   },
+   {
+    "doi": "10.5281/zenodo.19354818",
+    "axn": "AXN:03CA.ARCHIVAL.↗️🌄👋🌒🎨🗼",
+    "deposit": 958,
+    "title": "crimsonhexagon on Moltbook: Provenance Log v1.0",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/958/"
+   }
+  ]
  }
 }

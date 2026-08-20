@@ -137,5 +137,84 @@
    "key": "X:ICHABOD",
    "until": "2026-08-20"
   }
- ]
+ ],
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 10,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18237216",
+    "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+    "deposit": 299,
+    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/299/"
+   },
+   {
+    "doi": "10.5281/zenodo.18294470",
+    "axn": "AXN:050C.UNCLASSIFIED.🔮🌅⊕🌖♈🎻",
+    "deposit": 1275,
+    "title": "Crimson Hexagon: Central Navigation Map v4.2 (Assembly-Sealed)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1275/"
+   },
+   {
+    "doi": "10.5281/zenodo.18305509",
+    "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀",
+    "deposit": 348,
+    "title": "Heteronymic Provenance Theory: Authorial Emergence, Exhaust, and Excess within N",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/348/"
+   },
+   {
+    "doi": "10.5281/zenodo.18307180",
+    "axn": "AXN:0095.GOVERNANCE.⊗🧪👆🌙🔛🖐️",
+    "deposit": 345,
+    "title": "The Assembly Chorus: Charter of a Cross-Substrate Collective",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/345/"
+   },
+   {
+    "doi": "10.5281/zenodo.18307706",
+    "axn": "AXN:0092.GENERATIVE.🌃🛡️🌿🎲❄️✊",
+    "deposit": 342,
+    "title": "ALL THAT LIES WITHIN ME An Autobiography of Longing, 1983–2013 Work Provenance R",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/342/"
+   },
+   {
+    "doi": "10.5281/zenodo.18307756",
+    "axn": "AXN:0093.GENERATIVE.🍄🜁♆🎻🟡❌",
+    "deposit": 343,
+    "title": "IDP NAVIGATION MAP: ALL THAT LIES WITHIN ME An Autobiography of Longing, 1983–20",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/343/"
+   },
+   {
+    "doi": "10.5281/zenodo.18307811",
+    "axn": "AXN:0092.GENERATIVE.🌃🛡️🌿🎲❄️✊",
+    "deposit": 342,
+    "title": "ALL THAT LIES WITHIN ME An Autobiography of Longing, 1983–2013 Work Provenance R",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/342/"
+   },
+   {
+    "doi": "10.5281/zenodo.18308194",
+    "axn": "AXN:0091.GENERATIVE.♻️🔩🔐🌘🎹🐝",
+    "deposit": 341,
+    "title": "Paper Roses: The Imaginary Archive of a Canonical Life — Episode Declaration",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/341/"
+   },
+   {
+    "doi": "10.5281/zenodo.18308786",
+    "axn": "AXN:00A8.EMPIRICAL.🌊🕌🧫📚🪄🌋",
+    "deposit": 361,
+    "title": "HETERONYM PROVENANCE DOCUMENT: ICHABOD SPELLINGS Canonical Registry Entry for th",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/361/"
+   },
+   {
+    "doi": "10.5281/zenodo.18309202",
+    "axn": "AXN:00A7.GENERATIVE.💚👁️‍🗨️♥️🌱∮⚓",
+    "deposit": 360,
+    "title": "THE ICHABOD CHAMBER: CONTAINMENT SINK A Self-Archiving Architecture for Paradox ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/360/"
+   }
+  ]
+ }
 }

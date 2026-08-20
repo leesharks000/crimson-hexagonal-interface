@@ -216,5 +216,42 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "WORK OR PAPER"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 4,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18215706",
+    "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
+    "deposit": 293,
+    "title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/293/"
+   },
+   {
+    "doi": "10.5281/zenodo.18223385",
+    "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
+    "deposit": 296,
+    "title": "Computational Audial Criticism: An Applied Analysis of the Acanthian Dove Track",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/296/"
+   },
+   {
+    "doi": "10.5281/zenodo.19155610",
+    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+    "deposit": 571,
+    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Dec",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/571/"
+   },
+   {
+    "doi": "10.5281/zenodo.19155999",
+    "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
+    "deposit": 37,
+    "title": "THE BOTANICAL EFFECTIVE ACT: Extending Semantic Labor Recognition to Plants, Fun",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/37/"
+   }
+  ]
  }
 }

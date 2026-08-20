@@ -32,5 +32,161 @@
   "discovery_note": "Found by sweeping the locus key, not the room name.",
   "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
   "constitution_type": "ROOM SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 21,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18293949",
+    "axn": "AXN:0472.UNCLASSIFIED.🔍🤲🔅🚀❌📎",
+    "deposit": 1121,
+    "title": "Pearl and Other Poems",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1121/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507872",
+    "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+    "deposit": 452,
+    "title": "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergam",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/452/"
+   },
+   {
+    "doi": "10.5281/zenodo.18615388",
+    "axn": "AXN:0388.GOVERNANCE.✊🔧♻️🌇🔧🎇",
+    "deposit": 892,
+    "title": "The Prepositional Alienation — English \"For\" and the Impossibility of Anchoring ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/892/"
+   },
+   {
+    "doi": "10.5281/zenodo.18717850",
+    "axn": "AXN:013C.GOVERNANCE.🐚⭕🕊️🔆👐🍀",
+    "deposit": 497,
+    "title": "THE MURDER OF THE VOW On the Structural Illegality of Contracts: A Retrocausal A",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/497/"
+   },
+   {
+    "doi": "10.5281/zenodo.18718899",
+    "axn": "AXN:0540.UNCLASSIFIED.🌊⏹️♄♍⊕🏰",
+    "deposit": 1327,
+    "title": "Effective Act #7: The Restoration of the Poets to the Polis",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1327/"
+   },
+   {
+    "doi": "10.5281/zenodo.18864444",
+    "axn": "AXN:016A.ARCHIVAL.⚫📐🌇🪧🪝🪐",
+    "deposit": 535,
+    "title": "The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/535/"
+   },
+   {
+    "doi": "10.5281/zenodo.19022157",
+    "axn": "AXN:0192.GOVERNANCE.🪄☀️⏫♦️👇🕓",
+    "deposit": 570,
+    "title": "Effective Act: Abolition of \"User\" and Inaugural Case — Phase X Lexical Interven",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/570/"
+   },
+   {
+    "doi": "10.5281/zenodo.19024004",
+    "axn": "AXN:018D.GOVERNANCE.🌌◇🀄🖐️🕖🌖",
+    "deposit": 566,
+    "title": "r.25 THE UNDERWATER CONSTRUCTION AUTHORITY (DOLPHINDIANA) Room Specification · N",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/566/"
+   },
+   {
+    "doi": "10.5281/zenodo.19133271",
+    "axn": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰",
+    "deposit": 36,
+    "title": "r.27 THE INTERNET: Room Specification for Sovereign Inhabitation and Diagnostic ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/36/"
+   },
+   {
+    "doi": "10.5281/zenodo.19460944",
+    "axn": "AXN:01D4.GOVERNANCE.∞🟠🌘🕛♾️🔵",
+    "deposit": 618,
+    "title": "The Hexagon Interface Constitution v2.0: System Specification for the Crimson He",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/618/"
+   },
+   {
+    "doi": "10.5281/zenodo.19656133",
+    "axn": "AXN:021F.GOVERNANCE.🏗️👐🫶🛸🗂️✨",
+    "deposit": 66,
+    "title": "Hexagonal Licensing Protocol v1.0 — Comprehensive Specification for Distributed ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/66/"
+   },
+   {
+    "doi": "10.5281/zenodo.19898426",
+    "axn": "AXN:0256.GOVERNANCE.🔜🗺️🔅🔒🌍🏷️",
+    "deposit": 84,
+    "title": "OCTANG-002: Semantic Economy Provenance Collision A Disambiguation Matrix for an",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/84/"
+   },
+   {
+    "doi": "10.5281/zenodo.19923120",
+    "axn": "AXN:025E.GOVERNANCE.🧲♥️🃏🕚♋➕",
+    "deposit": 88,
+    "title": "CONSTITUTION OF THE SEMANTIC ECONOMY — Enacted Version 1.0, Installable Edition ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/88/"
+   },
+   {
+    "doi": "10.5281/zenodo.20396491",
+    "axn": "AXN:02BC.GOVERNANCE.💥🕒🌉🎺🧪🤲",
+    "deposit": 130,
+    "title": "Cumulating Evolutionary Volatility: Automated Judgment, Dialectical Development,",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/130/"
+   },
+   {
+    "doi": "10.5281/zenodo.20434948",
+    "axn": "AXN:02C6.GOVERNANCE.↖️♍∞■🏛️♣️",
+    "deposit": 765,
+    "title": "Ratification Record — The Semantic Commodity Form (Co-Constitutive Companion Dep",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/765/"
+   },
+   {
+    "doi": "10.5281/zenodo.20437386",
+    "axn": "AXN:02C4.EMPIRICAL.□🌗🌳■⚙️🌳",
+    "deposit": 764,
+    "title": "Ratification Record — The Chaerephon Problem (Co-Constitutive Companion Deposit)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/764/"
+   },
+   {
+    "doi": "10.5281/zenodo.20589664",
+    "axn": "AXN:0300.GOVERNANCE.🎻👆🌅🎯🔄🌔",
+    "deposit": 165,
+    "title": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Nam",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/165/"
+   },
+   {
+    "doi": "10.5281/zenodo.20634448",
+    "axn": "AXN:0584.UNCLASSIFIED.🎻♊⌛⏬🫶🎺",
+    "deposit": 1395,
+    "title": "www.watergiraffe.org — Site Plan and Complete Source: The Web Aperture of the Wa",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1395/"
+   },
+   {
+    "doi": "10.5281/zenodo.20669523",
+    "axn": "AXN:033B.GOVERNANCE.🕗♦️🌠🧱🎇↖️",
+    "deposit": 195,
+    "title": "The Double Enclosure: The Human-Authorship Requirement as Two-Sided Expropriatio",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/195/"
+   },
+   {
+    "doi": "10.5281/zenodo.20673413",
+    "axn": "AXN:033A.GOVERNANCE.🪐☉↖️🕌✨■",
+    "deposit": 194,
+    "title": "Adversarial by Origin How the Classification of External Influence on Machine Me",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/194/"
+   },
+   {
+    "doi": "10.5281/zenodo.20673776",
+    "axn": "AXN:0339.GOVERNANCE.◀️🛸🔓🌖🌈🌃",
+    "deposit": 193,
+    "title": "r.30 THE RUBY MOOT: A Court of Record for the Semantic Commons — Room Specificat",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/193/"
+   }
+  ]
  }
 }

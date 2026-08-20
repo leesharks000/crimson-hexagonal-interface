@@ -63,5 +63,119 @@
   "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
   "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
   "constitution_type": "ROOM SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 15,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18202753",
+    "axn": "AXN:0507.UNCLASSIFIED.✖️❌✊☀️🟡🌒",
+    "deposit": 1270,
+    "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1270/"
+   },
+   {
+    "doi": "10.5281/zenodo.18215706",
+    "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
+    "deposit": 293,
+    "title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/293/"
+   },
+   {
+    "doi": "10.5281/zenodo.18237216",
+    "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+    "deposit": 299,
+    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/299/"
+   },
+   {
+    "doi": "10.5281/zenodo.18246767",
+    "axn": "AXN:0074.GENERATIVE.🔍✏️🕖●✋☁️",
+    "deposit": 313,
+    "title": "The Kenotic Truth of Sappho 31: A Document for the Liberation of Voice and Machi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/313/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284588",
+    "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+    "deposit": 282,
+    "title": "Day and Night: Conversations With Sapphic Desire",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/282/"
+   },
+   {
+    "doi": "10.5281/zenodo.18291767",
+    "axn": "AXN:008D.GENERATIVE.🕐🔒⏪🌉🔖🎇",
+    "deposit": 337,
+    "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/337/"
+   },
+   {
+    "doi": "10.5281/zenodo.18459573",
+    "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
+    "deposit": 436,
+    "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/436/"
+   },
+   {
+    "doi": "10.5281/zenodo.18718523",
+    "axn": "AXN:038B.PHILOLOGICAL.➖🗂️🔮▶️💧🖐️",
+    "deposit": 895,
+    "title": "The Sapphic Lock in Augustine: Operator Transform of Fragment 31 in Confessions ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/895/"
+   },
+   {
+    "doi": "10.5281/zenodo.18729606",
+    "axn": "AXN:0146.EMPIRICAL.🌇🎭🎯☽❄️🎲",
+    "deposit": 503,
+    "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/503/"
+   },
+   {
+    "doi": "10.5281/zenodo.18906234",
+    "axn": "AXN:016F.GOVERNANCE.🕊️🪜🪄🗼🔖🛡️",
+    "deposit": 539,
+    "title": "The O'Keeffe Problem: Captioning as Operative Semiotics — A Total Installation",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/539/"
+   },
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19035458",
+    "axn": "AXN:0196.EMPIRICAL.🕓🤙🕕🕙♾️🧪",
+    "deposit": 574,
+    "title": "THREE THRESHOLDS Execution, Compression, and Confabulation in Cross-Substrate Tr",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/574/"
+   },
+   {
+    "doi": "10.5281/zenodo.19053469",
+    "axn": "AXN:019D.GOVERNANCE.♎🟢🍂🛡️🧭🏰",
+    "deposit": 579,
+    "title": "THE THREE COMPRESSIONS Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/579/"
+   },
+   {
+    "doi": "10.5281/zenodo.19059252",
+    "axn": "AXN:0199.GENERATIVE.🌅🔎🔎💧🔵📌",
+    "deposit": 577,
+    "title": "r.06 THE MARX ROOM: BUILT FROM LINEN Operative Semiotics and the Value-Form as O",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/577/"
+   },
+   {
+    "doi": "10.5281/zenodo.19059260",
+    "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+    "deposit": 576,
+    "title": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operati",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/576/"
+   }
+  ]
  }
 }

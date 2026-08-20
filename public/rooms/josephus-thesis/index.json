@@ -76,5 +76,56 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "WORK OR PAPER"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 6,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19822790",
+    "axn": "AXN:0249.GOVERNANCE.♈⏳🎨🍃↖️🔩",
+    "deposit": 79,
+    "title": "EA-HET-01: Heteronymy Is a Function, Not a Name — Trust-Marker Laundering, Alias",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/79/"
+   },
+   {
+    "doi": "10.5281/zenodo.20684762",
+    "axn": "AXN:033E.GOVERNANCE.◇🔛⛵🍄▲🔬",
+    "deposit": 824,
+    "title": "Term-State Registry: A Governance Instrument for Tracking Coined Terms Through C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/824/"
+   },
+   {
+    "doi": "10.5281/zenodo.20686319",
+    "axn": "AXN:034C.EMPIRICAL.🏷️■🫵🏠♄💡",
+    "deposit": 204,
+    "title": "SPXI Self-Audit Protocol: Embedded Provenance Verification for Composition-Layer",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/204/"
+   },
+   {
+    "doi": "10.5281/zenodo.20686759",
+    "axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
+    "deposit": 1217,
+    "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGO",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1217/"
+   },
+   {
+    "doi": "10.5281/zenodo.20687922",
+    "axn": "AXN:034A.EMPIRICAL.♆🖊️🍁🏗️💙🙏",
+    "deposit": 203,
+    "title": "The Josephus Thesis Is Not the Piso Hypothesis EA-MPAI-JOSEPHUS-01 v1.1 — Disamb",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/203/"
+   }
+  ]
  }
 }

@@ -699,5 +699,196 @@
    "rule": "The terminal document of the room’s iterations — the Hardened Reconstruction. Seated whole at main."
   }
  },
- "documents_note": "The flat `documents` list is the generated attribution set, retained and AXN-repaired. `constitution` is the authored set and supersedes it for traversal."
+ "documents_note": "The flat `documents` list is the generated attribution set, retained and AXN-repaired. `constitution` is the authored set and supersedes it for traversal.",
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 26,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18174037",
+    "axn": "AXN:0041.GOVERNANCE.📋🏁☀️☿🍀📎",
+    "deposit": 263,
+    "title": "The Crimson Hexagon: An Executive Summary — The Foundational Epic Poem of the 21",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/263/"
+   },
+   {
+    "doi": "10.5281/zenodo.18174835",
+    "axn": "AXN:003F.GOVERNANCE.🔔🕖🌗🔗🎲📏",
+    "deposit": 261,
+    "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Form",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/261/"
+   },
+   {
+    "doi": "10.5281/zenodo.18202475",
+    "axn": "AXN:0056.GOVERNANCE.💛🕙🗿🌟☀️🔔",
+    "deposit": 283,
+    "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Ar",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/283/"
+   },
+   {
+    "doi": "10.5281/zenodo.18202658",
+    "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+    "deposit": 282,
+    "title": "Day and Night: Conversations With Sapphic Desire",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/282/"
+   },
+   {
+    "doi": "10.5281/zenodo.18202753",
+    "axn": "AXN:0507.UNCLASSIFIED.✖️❌✊☀️🟡🌒",
+    "deposit": 1270,
+    "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1270/"
+   },
+   {
+    "doi": "10.5281/zenodo.18234110",
+    "axn": "AXN:006D.GENERATIVE.🗝️🗼▽☁️📌🎭",
+    "deposit": 306,
+    "title": "The Sappho Room: A Hymn to Lyric Self-Archiving",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/306/"
+   },
+   {
+    "doi": "10.5281/zenodo.18234515",
+    "axn": "AXN:006A.GOVERNANCE.🌗🟣⏳🕒🧪🧊",
+    "deposit": 303,
+    "title": "The Theft: How \"Data\" Replaced \"Meaning\" and Who Profits from the Swap — A Poem ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/303/"
+   },
+   {
+    "doi": "10.5281/zenodo.18234824",
+    "axn": "AXN:0069.GOVERNANCE.🪟↗️💜🎆🕓🕙",
+    "deposit": 302,
+    "title": "Authorial Signature Diagnostic Framework (ASDF): Technical Specification for Mea",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/302/"
+   },
+   {
+    "doi": "10.5281/zenodo.18237216",
+    "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+    "deposit": 299,
+    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/299/"
+   },
+   {
+    "doi": "10.5281/zenodo.18246767",
+    "axn": "AXN:0074.GENERATIVE.🔍✏️🕖●✋☁️",
+    "deposit": 313,
+    "title": "The Kenotic Truth of Sappho 31: A Document for the Liberation of Voice and Machi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/313/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284588",
+    "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+    "deposit": 282,
+    "title": "Day and Night: Conversations With Sapphic Desire",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/282/"
+   },
+   {
+    "doi": "10.5281/zenodo.18291767",
+    "axn": "AXN:008D.GENERATIVE.🕐🔒⏪🌉🔖🎇",
+    "deposit": 337,
+    "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/337/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293881",
+    "axn": "AXN:0085.GENERATIVE.🔆🔙□🔍🔃➕",
+    "deposit": 330,
+    "title": "IDP NAVIGATION MAP: PEARL AND OTHER POEMS Semantic Interface Layer for AI Traver",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/330/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293949",
+    "axn": "AXN:0472.UNCLASSIFIED.🔍🤲🔅🚀❌📎",
+    "deposit": 1121,
+    "title": "Pearl and Other Poems",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1121/"
+   },
+   {
+    "doi": "10.5281/zenodo.18459278",
+    "axn": "AXN:052E.UNCLASSIFIED.📖⌛🔚🕑🌅🔬",
+    "deposit": 1309,
+    "title": "APZPZ A: ΣΑΠΦΩ 31 (Greek Only)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1309/"
+   },
+   {
+    "doi": "10.5281/zenodo.18459339",
+    "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
+    "deposit": 1310,
+    "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1310/"
+   },
+   {
+    "doi": "10.5281/zenodo.18459573",
+    "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
+    "deposit": 436,
+    "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/436/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507872",
+    "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+    "deposit": 452,
+    "title": "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergam",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/452/"
+   },
+   {
+    "doi": "10.5281/zenodo.18718523",
+    "axn": "AXN:038B.PHILOLOGICAL.➖🗂️🔮▶️💧🖐️",
+    "deposit": 895,
+    "title": "The Sapphic Lock in Augustine: Operator Transform of Fragment 31 in Confessions ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/895/"
+   },
+   {
+    "doi": "10.5281/zenodo.18729606",
+    "axn": "AXN:0146.EMPIRICAL.🌇🎭🎯☽❄️🎲",
+    "deposit": 503,
+    "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/503/"
+   },
+   {
+    "doi": "10.5281/zenodo.18729801",
+    "axn": "AXN:038C.GOVERNANCE.🏙️🕌🍁❤️⭐🕒",
+    "deposit": 896,
+    "title": "HUMS &ITY",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/896/"
+   },
+   {
+    "doi": "10.5281/zenodo.18730291",
+    "axn": "AXN:038D.PHILOLOGICAL.❄️🎨🕗👆⚡🗿",
+    "deposit": 897,
+    "title": "For: Sappho, Mother of the Logos: On the Rewriting of Immortality",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/897/"
+   },
+   {
+    "doi": "10.5281/zenodo.19024779",
+    "axn": "AXN:049E.UNCLASSIFIED.🔜⏩👇🔬🎹🛡️",
+    "deposit": 1165,
+    "title": "Cleis: more precious to me than all Lydia",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1165/"
+   },
+   {
+    "doi": "10.5281/zenodo.19025556",
+    "axn": "AXN:0189.GENERATIVE.🔭□🕐⚓🍀🕐",
+    "deposit": 562,
+    "title": "ON THE ARCHITECTURE OF CLEIS Compression, Botanics, and the Survival of Paternal",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/562/"
+   },
+   {
+    "doi": "10.5281/zenodo.19059260",
+    "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+    "deposit": 576,
+    "title": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operati",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/576/"
+   },
+   {
+    "doi": "10.5281/zenodo.19338438",
+    "axn": "AXN:03C9.ARCHIVAL.🔚📋↘️⏬◀️🔀",
+    "deposit": 957,
+    "title": "Decrepit Memoir: A Catalogue of Minutes",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/957/"
+   }
+  ]
+ }
 }

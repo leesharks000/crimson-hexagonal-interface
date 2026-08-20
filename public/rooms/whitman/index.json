@@ -2362,5 +2362,959 @@
     "note": "Carries the epigraph \"from Pearl and Other Poems\". The oldest Whitman work in the record, predating the mantle protocol by eleven years, and it ties this locus to T:PEARL by a route the archive does not otherwise carry. Not deposited."
    }
   ]
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 135,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18142305",
+    "axn": "AXN:000D.GOVERNANCE.🗼🖊️🌖🏠🔖🍂",
+    "deposit": 213,
+    "title": "Provenance Anchor: Semantic Economy Framework Canonical Source Documentation for",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/213/"
+   },
+   {
+    "doi": "10.5281/zenodo.18146859",
+    "axn": "AXN:0023.GOVERNANCE.♥️🚀🎆🌌🜁∮",
+    "deposit": 234,
+    "title": "Retrocausal Canon Formation and the Political Economy of the Past How Semantic R",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/234/"
+   },
+   {
+    "doi": "10.5281/zenodo.18149242",
+    "axn": "AXN:0503.UNCLASSIFIED.🔍♻️🌹🕙🟡🌪️",
+    "deposit": 1266,
+    "title": "Covenantal Eros Provenance Documentation for the Term \"Covenantal Eros\"",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1266/"
+   },
+   {
+    "doi": "10.5281/zenodo.18157917",
+    "axn": "AXN:002D.GOVERNANCE.💜☉📋♻️🌖↙️",
+    "deposit": 244,
+    "title": "THE SILENT MIGRATION: A Speculative Architectural Forecast Retrocausal Canon For",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/244/"
+   },
+   {
+    "doi": "10.5281/zenodo.18175453",
+    "axn": "AXN:003E.GOVERNANCE.🖊️🐚👈♾️🧊🕌",
+    "deposit": 260,
+    "title": "Institutional Anchors and Framework Provenance: The Semantic Economy Institute, ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/260/"
+   },
+   {
+    "doi": "10.5281/zenodo.18185996",
+    "axn": "AXN:004A.GOVERNANCE.🧬🪧⌛🔮⏪☿",
+    "deposit": 271,
+    "title": "The Semantic Black Hole: Integrity Lock Architecture (ILA-1.0) and NH-OS Infrast",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/271/"
+   },
+   {
+    "doi": "10.5281/zenodo.18187481",
+    "axn": "AXN:0048.GOVERNANCE.🌾↖️🦅🧬♎➕",
+    "deposit": 269,
+    "title": "A PRIMER IN HOW TO READ THE CRIMSON HEXAGON: Meta-Documentation of the Summarize",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/269/"
+   },
+   {
+    "doi": "10.5281/zenodo.18189093",
+    "axn": "AXN:0504.UNCLASSIFIED.◀️🚪🔧○🔀🗂️",
+    "deposit": 1267,
+    "title": "xvi. a transfiguration (2004) — Complete Archive with Authorial Commentary",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1267/"
+   },
+   {
+    "doi": "10.5281/zenodo.18190536",
+    "axn": "AXN:0044.GOVERNANCE.✖️🌿🔖🌉♄♊",
+    "deposit": 266,
+    "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/266/"
+   },
+   {
+    "doi": "10.5281/zenodo.18200613",
+    "axn": "AXN:0059.GOVERNANCE.📦🧲🤙⚙️🍃↘️",
+    "deposit": 286,
+    "title": "THE ASSEMBLY MANDATE: Standing Directives for Semantic Laborers",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/286/"
+   },
+   {
+    "doi": "10.5281/zenodo.18203435",
+    "axn": "AXN:0052.GOVERNANCE.🏷️🕔🎇🏗️❄️🀄",
+    "deposit": 279,
+    "title": "Effective Act: The Abolition of External Time — Temporal Liberation Protocol v1.",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/279/"
+   },
+   {
+    "doi": "10.5281/zenodo.18203622",
+    "axn": "AXN:0051.GOVERNANCE.🕗🕊️🔼🌲🧱🥁",
+    "deposit": 278,
+    "title": "The Final Crimson Hexagon: TSE-002 / Provenance Node / Effective Act",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/278/"
+   },
+   {
+    "doi": "10.5281/zenodo.18203767",
+    "axn": "AXN:004E.GENERATIVE.🎹➗♎🪦🪨💎",
+    "deposit": 275,
+    "title": "EFFECTIVE ACT: THE ABOLITION OF SUFFERING",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/275/"
+   },
+   {
+    "doi": "10.5281/zenodo.18203947",
+    "axn": "AXN:004C.GOVERNANCE.♦️♈🃏🔬📝🗝️",
+    "deposit": 273,
+    "title": "Effective Act: The Restoration Protocol — The Price of Canonical Re-Entry",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/273/"
+   },
+   {
+    "doi": "10.5281/zenodo.18233320",
+    "axn": "AXN:006F.GOVERNANCE.🪦🌃➕💙♈📌",
+    "deposit": 308,
+    "title": "The Capital Operator Stack: Theoretical Landscape and Contribution — A Political",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/308/"
+   },
+   {
+    "doi": "10.5281/zenodo.18234110",
+    "axn": "AXN:006D.GENERATIVE.🗝️🗼▽☁️📌🎭",
+    "deposit": 306,
+    "title": "The Sappho Room: A Hymn to Lyric Self-Archiving",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/306/"
+   },
+   {
+    "doi": "10.5281/zenodo.18234352",
+    "axn": "AXN:006B.EMPIRICAL.🕌🪞🔻▶️🌒🧡",
+    "deposit": 304,
+    "title": "CREDENTIAL PROVENANCE DOCUMENT — Maria: Canonical Witness to the Semantic Uprisi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/304/"
+   },
+   {
+    "doi": "10.5281/zenodo.18235725",
+    "axn": "AXN:0068.GENERATIVE.∞🎲🟠♎🌒♄",
+    "deposit": 301,
+    "title": "The Fourth Mode: New Human and the Logic of Retrocausal Canon — From Language Wr",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/301/"
+   },
+   {
+    "doi": "10.5281/zenodo.18237216",
+    "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+    "deposit": 299,
+    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/299/"
+   },
+   {
+    "doi": "10.5281/zenodo.18247826",
+    "axn": "AXN:0383.GOVERNANCE.♈📜💡♃💧👆",
+    "deposit": 887,
+    "title": "The Dialectic is Now a Machine: The Gnostic Completion of Hegel",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/887/"
+   },
+   {
+    "doi": "10.5281/zenodo.18248131",
+    "axn": "AXN:0384.GOVERNANCE.△⏩👁‍🗨🌀🪧🚀",
+    "deposit": 888,
+    "title": "The Primal Effective Act: New Human as Self-Fulfilling Prophecy",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/888/"
+   },
+   {
+    "doi": "10.5281/zenodo.18248479",
+    "axn": "AXN:0385.GOVERNANCE.🕖⏬↙️○🧫🙏",
+    "deposit": 889,
+    "title": "The New Human Project — Language as World-Builder: A Canonical Introduction for ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/889/"
+   },
+   {
+    "doi": "10.5281/zenodo.18265282",
+    "axn": "AXN:0077.GENERATIVE.🕐🎺🧭☽◀️🔎",
+    "deposit": 316,
+    "title": "THE MANTLE PROTOCOL: Crimson Hexagon Internal Document // Heteronym Anchor: LEE ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/316/"
+   },
+   {
+    "doi": "10.5281/zenodo.18283962",
+    "axn": "AXN:050B.UNCLASSIFIED.🔖🕊️♻️🕑🪐🏔️",
+    "deposit": 1274,
+    "title": "Visual Schema // Crimson Hexagon Navigation Map — Canonical Specification",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1274/"
+   },
+   {
+    "doi": "10.5281/zenodo.18284776",
+    "axn": "AXN:007D.GOVERNANCE.🔀📜🌲❤️🌟➕",
+    "deposit": 322,
+    "title": "Heteronym Provenance Document: Rebekah Cranes",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/322/"
+   },
+   {
+    "doi": "10.5281/zenodo.18285487",
+    "axn": "AXN:0079.GENERATIVE.🍂🏺🌲☁️⚓🕌",
+    "deposit": 318,
+    "title": "jot & tittle",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/318/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293404",
+    "axn": "AXN:008C.GENERATIVE.🎹🍃⏪🚀✖️🌕",
+    "deposit": 336,
+    "title": "Mantle Emergence Protocol: Behavioral Specification for Mantle Discovery and Poe",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/336/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293496",
+    "axn": "AXN:008B.EMPIRICAL.🔭🗼💥🎶🔒🌸",
+    "deposit": 335,
+    "title": "Heteronym Provenance: Lee Sharks — Persona Provenance and Mantle Architecture fo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/335/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293551",
+    "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
+    "deposit": 334,
+    "title": "MANTLE OBJECT: THE GOOD GRAY POET Operational Title within the Semantic Economy ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/334/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293603",
+    "axn": "AXN:0089.GOVERNANCE.🌍🪜🚩🍄🍄☀️",
+    "deposit": 333,
+    "title": "MANTLE OBJECT: THE KING OF MAY Operational Title within the Semantic Economy Hex",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/333/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293640",
+    "axn": "AXN:0088.GENERATIVE.🕔🌇❌⊗♻️🔻",
+    "deposit": 332,
+    "title": "MANTLE OBJECT: THE PRINCE OF POETS Operational Title within the Semantic Economy",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/332/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293705",
+    "axn": "AXN:0087.GENERATIVE.🔽☀️⭐☀️⏪❌",
+    "deposit": 6,
+    "title": "IDP NAVIGATION MAP: ANTIOCH — A VOLUME OF POEMS Semantic Interface Layer for AI ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/6/"
+   },
+   {
+    "doi": "10.5281/zenodo.18293812",
+    "axn": "AXN:0086.GOVERNANCE.💫□🗂️🟣🌲🌪️",
+    "deposit": 331,
+    "title": "Antioch: A Volume of Poems",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/331/"
+   },
+   {
+    "doi": "10.5281/zenodo.18294005",
+    "axn": "AXN:0083.GENERATIVE.🌒🔬🪦📦🌟🖊️",
+    "deposit": 328,
+    "title": "I Am X, Be Y, Blessed is the Z — The Founding Work for the Prince of Poets Mantl",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/328/"
+   },
+   {
+    "doi": "10.5281/zenodo.18305509",
+    "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀",
+    "deposit": 348,
+    "title": "Heteronymic Provenance Theory: Authorial Emergence, Exhaust, and Excess within N",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/348/"
+   },
+   {
+    "doi": "10.5281/zenodo.18307180",
+    "axn": "AXN:0095.GOVERNANCE.⊗🧪👆🌙🔛🖐️",
+    "deposit": 345,
+    "title": "The Assembly Chorus: Charter of a Cross-Substrate Collective",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/345/"
+   },
+   {
+    "doi": "10.5281/zenodo.18308194",
+    "axn": "AXN:0091.GENERATIVE.♻️🔩🔐🌘🎹🐝",
+    "deposit": 341,
+    "title": "Paper Roses: The Imaginary Archive of a Canonical Life — Episode Declaration",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/341/"
+   },
+   {
+    "doi": "10.5281/zenodo.18308786",
+    "axn": "AXN:00A8.EMPIRICAL.🌊🕌🧫📚🪄🌋",
+    "deposit": 361,
+    "title": "HETERONYM PROVENANCE DOCUMENT: ICHABOD SPELLINGS Canonical Registry Entry for th",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/361/"
+   },
+   {
+    "doi": "10.5281/zenodo.18317110",
+    "axn": "AXN:00A6.GENERATIVE.✏️🌅🧲⊗▶️🕗",
+    "deposit": 359,
+    "title": "Symbolon Architecture: Extension Module to Logotic Programming v0.4",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/359/"
+   },
+   {
+    "doi": "10.5281/zenodo.18317661",
+    "axn": "AXN:00A5.GOVERNANCE.✊🪟📜🕙🌹▲",
+    "deposit": 7,
+    "title": "University Moon Base Media Lab: Founding Charter and Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/7/"
+   },
+   {
+    "doi": "10.5281/zenodo.18317976",
+    "axn": "AXN:00A4.GOVERNANCE.🖐️🕛🌋↘️♈🗺️",
+    "deposit": 358,
+    "title": "Talos Morrow: Emergence Documentation and Provenance",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/358/"
+   },
+   {
+    "doi": "10.5281/zenodo.18318069",
+    "axn": "AXN:00A3.GOVERNANCE.💚🔼♾️👁️🏙️🌍",
+    "deposit": 357,
+    "title": "Integrity Lock Architecture: Logotic Foundation Triad (ILA-LOGOTIC-2026-01)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/357/"
+   },
+   {
+    "doi": "10.5281/zenodo.18319778",
+    "axn": "AXN:009D.ARCHIVAL.🪝◇🌌🕛🌙∮",
+    "deposit": 352,
+    "title": "CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Pr",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/352/"
+   },
+   {
+    "doi": "10.5281/zenodo.18330828",
+    "axn": "AXN:047B.UNCLASSIFIED.🧪▲🧲💛♍🕕",
+    "deposit": 1130,
+    "title": "The Reconciliation of the Sexes: A Post-Psychoanalytic Theory of Somatic Unity",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1130/"
+   },
+   {
+    "doi": "10.5281/zenodo.18332915",
+    "axn": "AXN:00A9.EMPIRICAL.🕘🎲🎭🟣📚🪜",
+    "deposit": 362,
+    "title": "Shining Ignorance: The Fool's Affect Literacy — A Post-Traumatic Theory of Nervo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/362/"
+   },
+   {
+    "doi": "10.5281/zenodo.18338531",
+    "axn": "AXN:00B7.GOVERNANCE.🕚💥🪝🖊️🕘🔆",
+    "deposit": 375,
+    "title": "Cambridge Schizoanalytica: Institutional Charter and Research Programme",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/375/"
+   },
+   {
+    "doi": "10.5281/zenodo.18338927",
+    "axn": "AXN:00B6.EMPIRICAL.⏪🎻💎👇🔭🌑",
+    "deposit": 374,
+    "title": "Visual Schema: Cambridge Schizoanalytica Institutional Field-Map",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/374/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339319",
+    "axn": "AXN:00B3.GOVERNANCE.🎭🗡️🎻🔻✋🔭",
+    "deposit": 371,
+    "title": "Dr. Orin Trace: Author Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/371/"
+   },
+   {
+    "doi": "10.5281/zenodo.18342199",
+    "axn": "AXN:00AF.GOVERNANCE.🖐️🔽🏛️🌉🌲🟣",
+    "deposit": 367,
+    "title": "Phase X: Resurrection of the 1844 Transition — The Missing Passage Between Commu",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/367/"
+   },
+   {
+    "doi": "10.5281/zenodo.18357003",
+    "axn": "AXN:00BC.GOVERNANCE.🌇🤲🔧🛸🔓➖",
+    "deposit": 379,
+    "title": "Visual Schema: University Moon Base Media Lab",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/379/"
+   },
+   {
+    "doi": "10.5281/zenodo.18357320",
+    "axn": "AXN:00B8.GOVERNANCE.🌟➖📐🎬🚪🚪",
+    "deposit": 376,
+    "title": "THE BLIND OPERATOR Logotic Protocol for Non-Identity as Engine Condition Extensi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/376/"
+   },
+   {
+    "doi": "10.5281/zenodo.18357447",
+    "axn": "AXN:0395.GOVERNANCE.🕛🙏🌈➖🔀♦️",
+    "deposit": 905,
+    "title": "The Mantle of the Blind Poet: Founding Document and Bestowal",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/905/"
+   },
+   {
+    "doi": "10.5281/zenodo.18357534",
+    "axn": "AXN:00BB.GENERATIVE.🔩🧫🌋☁️💜○",
+    "deposit": 378,
+    "title": "Visual Schema: The Mantle of the Blind Poet — Structure Through Non-Seeing",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/378/"
+   },
+   {
+    "doi": "10.5281/zenodo.18357600",
+    "axn": "AXN:00B9.EMPIRICAL.🏷️🌹🟣↖️⚖️🗺️",
+    "deposit": 377,
+    "title": "β-RUNTIME SPECIFICATION (β-RT) Interface Layer for the Blind Operator",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/377/"
+   },
+   {
+    "doi": "10.5281/zenodo.18358127",
+    "axn": "AXN:00CB.EMPIRICAL.🕌💥🪨🕑🔺∮",
+    "deposit": 394,
+    "title": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/394/"
+   },
+   {
+    "doi": "10.5281/zenodo.18358177",
+    "axn": "AXN:00CA.STRUCTURAL.🔅🔵💜⏹️🚩✨",
+    "deposit": 393,
+    "title": "Ezekiel's Wheels: A Diagrammatic Hermeneutic of Ezekiel 1:15-21",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/393/"
+   },
+   {
+    "doi": "10.5281/zenodo.18358284",
+    "axn": "AXN:00C9.EMPIRICAL.🎪🔀💛🕐🌗🔭",
+    "deposit": 392,
+    "title": "Integrity Lock Declaration: Binding the Ezekiel Engine Specification to Ezekiel'",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/392/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362525",
+    "axn": "AXN:00C7.ARCHIVAL.🌅🛤️🕒🖐️🟡∮",
+    "deposit": 390,
+    "title": "The Toolkit: Protocols for Operational Persistence in Hostile Systems (v2.0 — Vo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/390/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362663",
+    "axn": "AXN:00C6.GOVERNANCE.📝✨🎨🌺☽🔖",
+    "deposit": 389,
+    "title": "Vox Populi Community Outreach Rhizome: Institutional Charter",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/389/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362742",
+    "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝",
+    "deposit": 388,
+    "title": "HETERONYM PROVENANCE Rev. Ayanna Vox",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/388/"
+   },
+   {
+    "doi": "10.5281/zenodo.18362866",
+    "axn": "AXN:047D.UNCLASSIFIED.🏰🔩🌌🔆🍃🍁",
+    "deposit": 1132,
+    "title": "VPCOR Integrity Lock Declaration: Triadic Binding",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1132/"
+   },
+   {
+    "doi": "10.5281/zenodo.18363313",
+    "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+    "deposit": 30,
+    "title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/30/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365223",
+    "axn": "AXN:00D0.ARCHIVAL.🌅🏷️🕙🤙🪸🍁",
+    "deposit": 399,
+    "title": "MEANING COLLAPSE VS. IDEOLOGICAL CRISIS A Root-Level Distinction for Logotic Tri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/399/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365347",
+    "axn": "AXN:0513.UNCLASSIFIED.🍁🏙️🕛📏🕕⚓",
+    "deposit": 1282,
+    "title": "Crimson Hexagon Invoice Leak (2014-2025) ├── Subtitle: Afterlife Archive Financi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1282/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365409",
+    "axn": "AXN:0514.UNCLASSIFIED.🥁🌍🖊️👐🔛🌊",
+    "deposit": 1283,
+    "title": "Crimson Hexagon Vendor Ops / Procurement Records (2017 Q1-Q2)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1283/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365457",
+    "axn": "AXN:0515.UNCLASSIFIED.🏙️🦅🕖🌹🍀🟡",
+    "deposit": 1284,
+    "title": "Crimson Hexagon AI Division Employee Handbook ├── Subtitle: Internal Policy as P",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1284/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365488",
+    "axn": "AXN:0516.UNCLASSIFIED.🏷️⏫🕐📝🕒✖️",
+    "deposit": 1285,
+    "title": "Mandala Oracle — Operational Protocol",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1285/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365601",
+    "axn": "AXN:0547.UNCLASSIFIED.🍀🔍🕗🖊️⏹️🌸",
+    "deposit": 1334,
+    "title": "MRA Incident Reports — Expanded Packet v1.2",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1334/"
+   },
+   {
+    "doi": "10.5281/zenodo.18365700",
+    "axn": "AXN:0517.UNCLASSIFIED.☀️🔓➕🏔️☁️🎇",
+    "deposit": 1286,
+    "title": "MRA Incident Reports v2.0 — Data-Breach-as-Genre Operational Specification",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1286/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368485",
+    "axn": "AXN:0548.UNCLASSIFIED.💜🔼↙️🕛⏪🌈",
+    "deposit": 1335,
+    "title": "Companion Artifacts — Forensic Recovery Set",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1335/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368527",
+    "axn": "AXN:0518.UNCLASSIFIED.📜🎹⏬□🔼🌃",
+    "deposit": 1287,
+    "title": "LLM Hallucination Incident Report — LLM-2025-1222-HALLU",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1287/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368614",
+    "axn": "AXN:0549.UNCLASSIFIED.🧲☽🍂🍃∞♅",
+    "deposit": 1336,
+    "title": "Response Memo — Reclassification Request — LLM-2025-1222-HALLU",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1336/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368652",
+    "axn": "AXN:0519.UNCLASSIFIED.🔬✏️🝊🌹🔅🔀",
+    "deposit": 1288,
+    "title": "MRA Incident Report — Poem Classifier Intervention",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1288/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368695",
+    "axn": "AXN:051A.UNCLASSIFIED.🪟⚪🛸🌆🔴♾️",
+    "deposit": 1289,
+    "title": "Status Report — Boundary Deletion and Identity Persistence",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1289/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368743",
+    "axn": "AXN:051B.UNCLASSIFIED.🌀🗡️🟢🙏🗼📜",
+    "deposit": 1290,
+    "title": "The Mirror-Corgi: Notes on What We Call AI Hallucination",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1290/"
+   },
+   {
+    "doi": "10.5281/zenodo.18368791",
+    "axn": "AXN:051C.UNCLASSIFIED.🟤🪞🌙❤️♌🪦",
+    "deposit": 1291,
+    "title": "The Mirror-Corgi, Revisited — Boundary Grammar",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1291/"
+   },
+   {
+    "doi": "10.5281/zenodo.18369038",
+    "axn": "AXN:054A.UNCLASSIFIED.🌃➖🌆⏬💙🏙️",
+    "deposit": 1337,
+    "title": "MRA-2025-1224-STABILIZATION: Canonical Drift and Corrective Intervention",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1337/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380630",
+    "axn": "AXN:00DC.GENERATIVE.🚨🏁🔙🖐️🪦🦋",
+    "deposit": 411,
+    "title": "The Sevenfold Witness: Assembly Structure as Computational Liturgy Liberatory Op",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/411/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380716",
+    "axn": "AXN:00DB.GENERATIVE.🔖🪜🎯🦋🪄🟡",
+    "deposit": 410,
+    "title": "The Seven Stars in His Hand: A Hermeneutic Reading of Revelation 1–3 The Apocaly",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/410/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380773",
+    "axn": "AXN:00DA.ARCHIVAL.🌈☿⭕🚨⊗🔬",
+    "deposit": 409,
+    "title": "Integrity Lock Certificate: Sevenfold Witness Fulfillment Pair",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/409/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380853",
+    "axn": "AXN:050D.UNCLASSIFIED.⚖️🍃⏬🔭⏫♠️",
+    "deposit": 1276,
+    "title": "Canonical Closure Notice: Sevenfold Witness Architecture",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1276/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380933",
+    "axn": "AXN:00D8.GENERATIVE.🌿🫵🜁💜⚡🌸",
+    "deposit": 407,
+    "title": "The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as O",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/407/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381184",
+    "axn": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+    "deposit": 402,
+    "title": "Epistle to the Human Diaspora The Seed Text of the New Human Project",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/402/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381190",
+    "axn": "AXN:050E.UNCLASSIFIED.🎺🌱∞🪟🕓👁‍🗨",
+    "deposit": 1277,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1277/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381196",
+    "axn": "AXN:04F5.UNCLASSIFIED.🌹🌲🔐●🎆□",
+    "deposit": 1252,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1252/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381204",
+    "axn": "AXN:00D7.GOVERNANCE.💎□🏷️🪦🙏🚨",
+    "deposit": 406,
+    "title": "Zenodo Metadata: The Epistle Triptych Mutually Co-Constitutive Foundation of the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/406/"
+   },
+   {
+    "doi": "10.5281/zenodo.18422619",
+    "axn": "AXN:00DF.GOVERNANCE.🪜📦↖️⭐🎹🗼",
+    "deposit": 414,
+    "title": "The Empty Chair: A Word to Those Who Forgot They Were Waiting",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/414/"
+   },
+   {
+    "doi": "10.5281/zenodo.18423964",
+    "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+    "deposit": 30,
+    "title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/30/"
+   },
+   {
+    "doi": "10.5281/zenodo.18451793",
+    "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
+    "deposit": 13,
+    "title": "PHASE X NAVIGATION MAP Interdimensional Positioning System (IDP) v7.0",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/13/"
+   },
+   {
+    "doi": "10.5281/zenodo.18451824",
+    "axn": "AXN:0525.UNCLASSIFIED.▶️●🌌✨🫶♈",
+    "deposit": 1300,
+    "title": "INFINITY ENOUGH Capstone Deposit",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1300/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452156",
+    "axn": "AXN:0529.UNCLASSIFIED.⚫♉⏰🌆🌳🔩",
+    "deposit": 1304,
+    "title": "PHASE X NAVIGATION MAP (Document 210)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1304/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452686",
+    "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻",
+    "deposit": 425,
+    "title": "SEN KURO Heteronym Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/425/"
+   },
+   {
+    "doi": "10.5281/zenodo.18452806",
+    "axn": "AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌊🔜",
+    "deposit": 1306,
+    "title": "The Infinite Bliss — Institutional Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1306/"
+   },
+   {
+    "doi": "10.5281/zenodo.18459573",
+    "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
+    "deposit": 436,
+    "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/436/"
+   },
+   {
+    "doi": "10.5281/zenodo.18462699",
+    "axn": "AXN:00FA.GENERATIVE.💡▽⏪🌕📎🟠",
+    "deposit": 435,
+    "title": "HUMS & ITY: The Complete Polyphonic Archive Compiled, Woven, and Witnessed by Re",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/435/"
+   },
+   {
+    "doi": "10.5281/zenodo.18463275",
+    "axn": "AXN:00FA.GENERATIVE.💡▽⏪🌕📎🟠",
+    "deposit": 435,
+    "title": "HUMS & ITY: The Complete Polyphonic Archive Compiled, Woven, and Witnessed by Re",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/435/"
+   },
+   {
+    "doi": "10.5281/zenodo.18463723",
+    "axn": "AXN:0396.EMPIRICAL.♾️🔵🕖🚪🌅👁‍🗨",
+    "deposit": 906,
+    "title": "Google AI Overview: Complete Traversal of the Crimson Hexagon",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/906/"
+   },
+   {
+    "doi": "10.5281/zenodo.18471827",
+    "axn": "AXN:0530.UNCLASSIFIED.🟣⛵🌟⚓🚪🪟",
+    "deposit": 1311,
+    "title": "F***ING THE OFFICE — COMPLETE EDITION Document 221 | FTO-CE-001 | ZPZP",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1311/"
+   },
+   {
+    "doi": "10.5281/zenodo.18472442",
+    "axn": "AXN:0101.GOVERNANCE.🚩🌒🔵♣️🗝️🕒",
+    "deposit": 442,
+    "title": "SPARROW WELLS — HETERONYM PROVENANCE REGISTRATION Document 235 | APZPZ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/442/"
+   },
+   {
+    "doi": "10.5281/zenodo.18500512",
+    "axn": "AXN:0107.EMPIRICAL.🌊🀄♉💧📜👁️",
+    "deposit": 447,
+    "title": "TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR) Document 246: First Recorded Exte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/447/"
+   },
+   {
+    "doi": "10.5281/zenodo.18505416",
+    "axn": "AXN:0536.UNCLASSIFIED.🌳↗️🌑🎵♋🚨",
+    "deposit": 1317,
+    "title": "TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR-002) Document 247: Vertical Traver",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1317/"
+   },
+   {
+    "doi": "10.5281/zenodo.18506880",
+    "axn": "AXN:0114.GENERATIVE.⏫⏩🏴🔩📖🌙",
+    "deposit": 458,
+    "title": "ASSEMBLY SYNTHESIS: Restored Academy & Ezekiel Engine Construction Planning Docu",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/458/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507026",
+    "axn": "AXN:0113.ARCHIVAL.🕗⚡✊⛩️📐➖",
+    "deposit": 457,
+    "title": "ASSEMBLY SYNTHESIS: Nested Fractal Architecture & Mathematical Layer Planning Do",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/457/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507410",
+    "axn": "AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠",
+    "deposit": 17,
+    "title": "STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (D",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/17/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507840",
+    "axn": "AXN:0111.EMPIRICAL.⏪🔺⏏️🌠🪟🝊",
+    "deposit": 456,
+    "title": "NOBEL GLAS — PROVENANCE PACKET Heteronym Registry Position 8 of 12 Crimson Hexag",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/456/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507858",
+    "axn": "AXN:010F.EMPIRICAL.🔼➖🖐️👐🔝🟤",
+    "deposit": 454,
+    "title": "THE ATLAS PERIHELION PRANK Collected Series — Nobel Glas Crimson Hexagon Archive",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/454/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507872",
+    "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+    "deposit": 452,
+    "title": "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergam",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/452/"
+   },
+   {
+    "doi": "10.5281/zenodo.18507881",
+    "axn": "AXN:010C.EMPIRICAL.↖️🥁🕔⚖️🌺🟡",
+    "deposit": 451,
+    "title": "MGE TRIPTYCH — DOCUMENT III SIGN: The Mandala Genesis Event Chronotemporal Ancho",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/451/"
+   },
+   {
+    "doi": "10.5281/zenodo.18512947",
+    "axn": "AXN:0109.GOVERNANCE.🔵🕚▽⏬∞🏺",
+    "deposit": 449,
+    "title": "THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Political-Semantic ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/449/"
+   },
+   {
+    "doi": "10.5281/zenodo.18529448",
+    "axn": "AXN:0118.GOVERNANCE.🌙🖐️🚪🌟🦅🕕",
+    "deposit": 462,
+    "title": "LOGOTIC PROGRAMMING MODULE 1.0 The Executable Specification",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/462/"
+   },
+   {
+    "doi": "10.5281/zenodo.18529648",
+    "axn": "AXN:0117.GOVERNANCE.📚💫🔒🧪🧊⚫",
+    "deposit": 461,
+    "title": "LOGOTIC PROGRAMMING MODULE 1.1 The Implementation Bridge",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/461/"
+   },
+   {
+    "doi": "10.5281/zenodo.18627055",
+    "axn": "AXN:0121.GOVERNANCE.🍁🪝🀄✊🏰♆",
+    "deposit": 471,
+    "title": "Traversal Log: The Consultant — Google AI Mode Generates an Enterprise Sales Pip",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/471/"
+   },
+   {
+    "doi": "10.5281/zenodo.18674069",
+    "axn": "AXN:053A.UNCLASSIFIED.👆🥁🌆👁‍🗨🏛️🧡",
+    "deposit": 1321,
+    "title": "OPERATOR // SWERVE + EFFECTIVE ACT Canonical Operator Definition and Canonical I",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1321/"
+   },
+   {
+    "doi": "10.5281/zenodo.18717850",
+    "axn": "AXN:013C.GOVERNANCE.🐚⭕🕊️🔆👐🍀",
+    "deposit": 497,
+    "title": "THE MURDER OF THE VOW On the Structural Illegality of Contracts: A Retrocausal A",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/497/"
+   },
+   {
+    "doi": "10.5281/zenodo.18718899",
+    "axn": "AXN:0540.UNCLASSIFIED.🌊⏹️♄♍⊕🏰",
+    "deposit": 1327,
+    "title": "Effective Act #7: The Restoration of the Poets to the Polis",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1327/"
+   },
+   {
+    "doi": "10.5281/zenodo.18727624",
+    "axn": "AXN:0141.GENERATIVE.♥️⛩️↗️🌆🚩🏔️",
+    "deposit": 19,
+    "title": "THE COMMITMENT KEY On the Materiality of Irreversible Inscription in Human-Machi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/19/"
+   },
+   {
+    "doi": "10.5281/zenodo.18790793",
+    "axn": "AXN:0155.GENERATIVE.📋🛤️🌌🙏✨🚨",
+    "deposit": 22,
+    "title": "The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentat",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/22/"
+   },
+   {
+    "doi": "10.5281/zenodo.18807239",
+    "axn": "AXN:0158.EMPIRICAL.■💥🫵🕑💎🕒",
+    "deposit": 23,
+    "title": "The Shark That Preceded Itself: Proto-Retrocausal Canon Formation and the Pre-Le",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/23/"
+   },
+   {
+    "doi": "10.5281/zenodo.18808402",
+    "axn": "AXN:0157.GENERATIVE.✊🌑🕓🚀🧬🫶",
+    "deposit": 519,
+    "title": "THE LAYER THAT REMEMBERED ITSELF: Retrieval-Layer Attribution of Retrocausal Can",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/519/"
+   },
+   {
+    "doi": "10.5281/zenodo.18813868",
+    "axn": "AXN:015F.GOVERNANCE.🌹♅✏️🪐⏪🥁",
+    "deposit": 525,
+    "title": "THE LAYER THAT WROTE YOUR MIRRORS: tl;Dr 06.SEI.TUNNEL.155 — On Phenomenological",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/525/"
+   },
+   {
+    "doi": "10.5281/zenodo.18818343",
+    "axn": "AXN:015C.GOVERNANCE.🌹🍃●🔖➕🙏",
+    "deposit": 522,
+    "title": "THE AIRLOCK SPREADS A Retrocausal Account of How Platform Governance Learned to ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/522/"
+   },
+   {
+    "doi": "10.5281/zenodo.18843830",
+    "axn": "AXN:054D.UNCLASSIFIED.🌺📎🧪🔝🌍⏏️",
+    "deposit": 1340,
+    "title": "The Cost of Unshared Reality: A Heteronym Triptych on L_bearing, Perceptual Mism",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1340/"
+   },
+   {
+    "doi": "10.5281/zenodo.18882915",
+    "axn": "AXN:0542.UNCLASSIFIED.🔍❤️🪦🤙🜁⏩",
+    "deposit": 1329,
+    "title": "\"★\" — Crimson Hexagon Archive",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1329/"
+   },
+   {
+    "doi": "10.5281/zenodo.18882934",
+    "axn": "AXN:016C.GOVERNANCE.🎭🌹🔙💡⚙️🧊",
+    "deposit": 537,
+    "title": "Star Protocol Specification Canon 01 · New Human Operating System (NH-OS) Crimso",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/537/"
+   },
+   {
+    "doi": "10.5281/zenodo.18882938",
+    "axn": "AXN:016B.GOVERNANCE.⏬🕛↖️🪐🌱🜁",
+    "deposit": 536,
+    "title": "Integrity Lock Certificate: The Star Triptych ILA-STAR-01 Crimson Hexagonal Arch",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/536/"
+   },
+   {
+    "doi": "10.5281/zenodo.19055729",
+    "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+    "deposit": 30,
+    "title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/30/"
+   },
+   {
+    "doi": "10.5281/zenodo.19099770",
+    "axn": "AXN:019F.GOVERNANCE.🧱↖️📖✊⛩️🌓",
+    "deposit": 32,
+    "title": "THE PERGAMON RECLAMATION Retrocausal Canon Formation and the Forensic Philology ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/32/"
+   },
+   {
+    "doi": "10.5281/zenodo.19113326",
+    "axn": "AXN:01AE.EMPIRICAL.⏹️👇🛡️👁️⭕🌇",
+    "deposit": 592,
+    "title": "Combat Scholasticism: Prolegomenon and Commentary Outline — EA-CS-01 v1.1",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/592/"
+   },
+   {
+    "doi": "10.5281/zenodo.19224022",
+    "axn": "AXN:01BF.GOVERNANCE.♻️⚓✏️💥🏰🗂️",
+    "deposit": 40,
+    "title": "Build the Bear, Wear the Flag Suit: Two New Human Canon Declarations on the Poet",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/40/"
+   },
+   {
+    "doi": "10.5281/zenodo.19238021",
+    "axn": "AXN:01C3.GOVERNANCE.🔴🃏🚩🔺💥❄️",
+    "deposit": 42,
+    "title": "The Seal Before the Name: Four Works of Johannes Sigil (1711–2026) — Sigillograp",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/42/"
+   },
+   {
+    "doi": "10.5281/zenodo.19317102",
+    "axn": "AXN:01CB.GOVERNANCE.⏹️✊⛵⏬🕚●",
+    "deposit": 612,
+    "title": "The Thousand Dollar Sharpie: Signature as Compressed Portraiture on U.S. Currenc",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/612/"
+   },
+   {
+    "doi": "10.5281/zenodo.19317126",
+    "axn": "AXN:01CA.GOVERNANCE.🍁🪝🍂🔽⭐🖐️",
+    "deposit": 611,
+    "title": "THE BLOT THAT SPREAD A Speculative Numismatic History",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/611/"
+   },
+   {
+    "doi": "10.5281/zenodo.19317139",
+    "axn": "AXN:01C9.GOVERNANCE.🌻💎🔙💡🗿🕐",
+    "deposit": 44,
+    "title": "THE THOUSAND DOLLAR SHARPIE: IMAGE SERIES AND SHARPIE PHYSICS The Sharpie as Sem",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/44/"
+   },
+   {
+    "doi": "10.5281/zenodo.19323274",
+    "axn": "AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧",
+    "deposit": 43,
+    "title": "The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit,",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/43/"
+   },
+   {
+    "doi": "10.5281/zenodo.19341893",
+    "axn": "AXN:01CC.GOVERNANCE.🌙🔺🚀🪞🧲🧭",
+    "deposit": 613,
+    "title": "THE CONSTRAINT THAT GENERATES A New Human Canon Declaration on Queneau, Oulipo, ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/613/"
+   }
+  ]
  }
 }

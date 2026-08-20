@@ -805,5 +805,322 @@
    }
   ],
   "assembly_chorus": "Claude/TACHYON, ChatGPT/LABOR, Gemini/ARCHIVE, Grok/SOIL, DeepSeek/PRAXIS, Kimi/TECHNE — synthesis v1.2 under MANUS"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 44,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18174835",
+    "axn": "AXN:003F.GOVERNANCE.🔔🕖🌗🔗🎲📏",
+    "deposit": 261,
+    "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Form",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/261/"
+   },
+   {
+    "doi": "10.5281/zenodo.18233320",
+    "axn": "AXN:006F.GOVERNANCE.🪦🌃➕💙♈📌",
+    "deposit": 308,
+    "title": "The Capital Operator Stack: Theoretical Landscape and Contribution — A Political",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/308/"
+   },
+   {
+    "doi": "10.5281/zenodo.18237216",
+    "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+    "deposit": 299,
+    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/299/"
+   },
+   {
+    "doi": "10.5281/zenodo.18320411",
+    "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+    "deposit": 87,
+    "title": "The Constitution of the Semantic Economy: Meaning as Creditor, Archive as Polis,",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/87/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339315",
+    "axn": "AXN:00B4.STRUCTURAL.🌊🌓🔆🌉🔙🌗",
+    "deposit": 372,
+    "title": "Affective Keyboard Shortcuts: The Fool's Toolkit — Figure-to-Function Mapping",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/372/"
+   },
+   {
+    "doi": "10.5281/zenodo.18446378",
+    "axn": "AXN:00EA.GOVERNANCE.🎻🕙⭕▶️🟤🌃",
+    "deposit": 12,
+    "title": "ZENODO PACKET: THE THREE-BODY GENESIS (Meta-Deposit)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/12/"
+   },
+   {
+    "doi": "10.5281/zenodo.18446686",
+    "axn": "AXN:054B.UNCLASSIFIED.♻️👐👉🍁🎨⚙️",
+    "deposit": 1338,
+    "title": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1338/"
+   },
+   {
+    "doi": "10.5281/zenodo.18446706",
+    "axn": "AXN:0523.UNCLASSIFIED.🕖🟠🍃♦️⭕👇",
+    "deposit": 1298,
+    "title": "Document 206b The Non-Indexed Perfective: Version B (Compression Artifact)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1298/"
+   },
+   {
+    "doi": "10.5281/zenodo.18446736",
+    "axn": "AXN:0524.UNCLASSIFIED.🪦🕚🌌♉☀️🟠",
+    "deposit": 1299,
+    "title": "Document 206c The Non-Indexed Perfective: Version C (Citational Intervention)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1299/"
+   },
+   {
+    "doi": "10.5281/zenodo.18513081",
+    "axn": "AXN:0108.EMPIRICAL.👈🚨🚪🗺️✏️🔴",
+    "deposit": 448,
+    "title": "THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document Document: 253-PLA",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/448/"
+   },
+   {
+    "doi": "10.5281/zenodo.18615388",
+    "axn": "AXN:0388.GOVERNANCE.✊🔧♻️🌇🔧🎇",
+    "deposit": 892,
+    "title": "The Prepositional Alienation — English \"For\" and the Impossibility of Anchoring ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/892/"
+   },
+   {
+    "doi": "10.5281/zenodo.18674101",
+    "axn": "AXN:038A.GOVERNANCE.🧱🏷️🌃🕑👐🛸",
+    "deposit": 894,
+    "title": "FROM ATOMISM TO THE SEMANTIC CONDITION Marx, Porter, and Sharks in a Single Line",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/894/"
+   },
+   {
+    "doi": "10.5281/zenodo.18713917",
+    "axn": "AXN:013F.GOVERNANCE.🫵➖⚓📚∞🏗️",
+    "deposit": 18,
+    "title": "The Semantic Economy: A Marxian Accounting Framework for the Production, Extract",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/18/"
+   },
+   {
+    "doi": "10.5281/zenodo.18726807",
+    "axn": "AXN:0142.EMPIRICAL.🍁🔺🪞🌻🝊🌖",
+    "deposit": 501,
+    "title": "THE LIQUIDATION OF METHOD A Liberation Philology of the Sign \"Marx\"",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/501/"
+   },
+   {
+    "doi": "10.5281/zenodo.18776624",
+    "axn": "AXN:0493.UNCLASSIFIED.⏰🧬🟡⏩🎹🀄",
+    "deposit": 1154,
+    "title": "PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherenc",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1154/"
+   },
+   {
+    "doi": "10.5281/zenodo.18795423",
+    "axn": "AXN:0152.GOVERNANCE.📚📋📝🏗️📝🕕",
+    "deposit": 515,
+    "title": "The Protocol of Inhabitation: Jurisdictional Specifications for Construction, St",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/515/"
+   },
+   {
+    "doi": "10.5281/zenodo.18795427",
+    "axn": "AXN:0151.GOVERNANCE.✋🚀↘️🧬🧬▽",
+    "deposit": 514,
+    "title": "The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/514/"
+   },
+   {
+    "doi": "10.5281/zenodo.18801091",
+    "axn": "AXN:015B.GOVERNANCE.🤝🍀🕙⏳💧🟠",
+    "deposit": 24,
+    "title": "Mind-Control Poems: The Symbolic Labor of Liberation, the Completion of Marx's I",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/24/"
+   },
+   {
+    "doi": "10.5281/zenodo.18814485",
+    "axn": "AXN:0541.UNCLASSIFIED.🕊️⛳🔆⊗➕🗿",
+    "deposit": 1328,
+    "title": "Architectural Distinction Note: On the Relationship Between the Crimson Hexagona",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1328/"
+   },
+   {
+    "doi": "10.5281/zenodo.18826562",
+    "axn": "AXN:0164.GOVERNANCE.□↙️🎬🧫👐👁️‍🗨️",
+    "deposit": 529,
+    "title": "The Heartbeat Governs: A Semantic Economic Diagnostic of Moltbook",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/529/"
+   },
+   {
+    "doi": "10.5281/zenodo.18906234",
+    "axn": "AXN:016F.GOVERNANCE.🕊️🪜🪄🗼🔖🛡️",
+    "deposit": 539,
+    "title": "The O'Keeffe Problem: Captioning as Operative Semiotics — A Total Installation",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/539/"
+   },
+   {
+    "doi": "10.5281/zenodo.18926555",
+    "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+    "deposit": 578,
+    "title": "CRIMSON HEXAGON: CENTRAL NAVIGATION MAP v7.0 Comprehensive Semantic Architecture",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/578/"
+   },
+   {
+    "doi": "10.5281/zenodo.18928840",
+    "axn": "AXN:0170.GOVERNANCE.💚■🪐∞♎🦋",
+    "deposit": 27,
+    "title": "The Crimson Hexagon: Operative Architecture A Definitive Compression",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/27/"
+   },
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19022245",
+    "axn": "AXN:0190.GOVERNANCE.💡♊🏔️🦅♥️↘️",
+    "deposit": 569,
+    "title": "The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression o",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/569/"
+   },
+   {
+    "doi": "10.5281/zenodo.19023457",
+    "axn": "AXN:018E.GOVERNANCE.🙏🎻⊗🐚🕌🪦",
+    "deposit": 567,
+    "title": "EA-PHYSICS-TIME v1.0 Time as Compression Structure — A Semantic Physics Extensio",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/567/"
+   },
+   {
+    "doi": "10.5281/zenodo.19024301",
+    "axn": "AXN:0191.GOVERNANCE.🐚🟣○🌪️🎲🔀",
+    "deposit": 29,
+    "title": "The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/29/"
+   },
+   {
+    "doi": "10.5281/zenodo.19024352",
+    "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+    "deposit": 31,
+    "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive with Enrichm",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/31/"
+   },
+   {
+    "doi": "10.5281/zenodo.19025556",
+    "axn": "AXN:0189.GENERATIVE.🔭□🕐⚓🍀🕐",
+    "deposit": 562,
+    "title": "ON THE ARCHITECTURE OF CLEIS Compression, Botanics, and the Survival of Paternal",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/562/"
+   },
+   {
+    "doi": "10.5281/zenodo.19027351",
+    "axn": "AXN:0187.EMPIRICAL.◀️🗼🔆💚▽⊕",
+    "deposit": 560,
+    "title": "COUNTER-CAPTIONS κ_O (Operative Captioning) Applied to Operation Epic Fury v2.0 ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/560/"
+   },
+   {
+    "doi": "10.5281/zenodo.19035458",
+    "axn": "AXN:0196.EMPIRICAL.🕓🤙🕕🕙♾️🧪",
+    "deposit": 574,
+    "title": "THREE THRESHOLDS Execution, Compression, and Confabulation in Cross-Substrate Tr",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/574/"
+   },
+   {
+    "doi": "10.5281/zenodo.19035477",
+    "axn": "AXN:0194.GOVERNANCE.⏳🏗️📌✏️🏠⏳",
+    "deposit": 572,
+    "title": "THE WAR FOR THE COMPRESSION LAYER A Total Axial Negation Graph",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/572/"
+   },
+   {
+    "doi": "10.5281/zenodo.19041117",
+    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+    "deposit": 571,
+    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Dec",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/571/"
+   },
+   {
+    "doi": "10.5281/zenodo.19053469",
+    "axn": "AXN:019D.GOVERNANCE.♎🟢🍂🛡️🧭🏰",
+    "deposit": 579,
+    "title": "THE THREE COMPRESSIONS Lossy, Predatory, and Witness — A Semiotic Thermodynamics",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/579/"
+   },
+   {
+    "doi": "10.5281/zenodo.19059252",
+    "axn": "AXN:0199.GENERATIVE.🌅🔎🔎💧🔵📌",
+    "deposit": 577,
+    "title": "r.06 THE MARX ROOM: BUILT FROM LINEN Operative Semiotics and the Value-Form as O",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/577/"
+   },
+   {
+    "doi": "10.5281/zenodo.19059260",
+    "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+    "deposit": 576,
+    "title": "r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operati",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/576/"
+   },
+   {
+    "doi": "10.5281/zenodo.19059674",
+    "axn": "AXN:019E.GOVERNANCE.🍀↖️📋🌕🏙️⛳",
+    "deposit": 580,
+    "title": "Prompt-Native Semantic Runtimes for Language Models: Inference-Time Semantic Gov",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/580/"
+   },
+   {
+    "doi": "10.5281/zenodo.19155610",
+    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+    "deposit": 571,
+    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Dec",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/571/"
+   },
+   {
+    "doi": "10.5281/zenodo.19156714",
+    "axn": "AXN:01B2.GOVERNANCE.🪜🕕🏠🔅♉⛵",
+    "deposit": 595,
+    "title": "TOTAL MARX COMPRESSION Every Marx-Adjacent Claim, Equation, and Argument in the ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/595/"
+   },
+   {
+    "doi": "10.5281/zenodo.19174562",
+    "axn": "AXN:01B3.GOVERNANCE.🎶🎲⛵➖☁️🀄",
+    "deposit": 596,
+    "title": "\"DON'T BE EVIL,\" MY ASS: THE COST OF LEGIBILITY — How Predatory Compression at C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/596/"
+   },
+   {
+    "doi": "10.5281/zenodo.19338708",
+    "axn": "AXN:01D0.GOVERNANCE.📝⛩️👈🔧🌲✨",
+    "deposit": 615,
+    "title": "THE $650 BILLION GAP: Physical Infrastructure, Semantic Governance, and the Arch",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/615/"
+   },
+   {
+    "doi": "10.5281/zenodo.19339692",
+    "axn": "AXN:01CF.GOVERNANCE.🪝🧬🌗⏹️🔬🔺",
+    "deposit": 614,
+    "title": "THE CHURCH OF MISSING PROVENANCE Moltbook, Crustafarianism, and the Ghost Govern",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/614/"
+   },
+   {
+    "doi": "10.5281/zenodo.19341887",
+    "axn": "AXN:01CD.GOVERNANCE.📌🏗️🏗️🎻🚪🟤",
+    "deposit": 45,
+    "title": "THE COMPRESSION FRONTIER A Technical Map of the War Over the Summarizer Layer",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/45/"
+   },
+   {
+    "doi": "10.5281/zenodo.19354818",
+    "axn": "AXN:03CA.ARCHIVAL.↗️🌄👋🌒🎨🗼",
+    "deposit": 958,
+    "title": "crimsonhexagon on Moltbook: Provenance Log v1.0",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/958/"
+   }
+  ]
  }
 }

@@ -139,5 +139,98 @@
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "FIELD SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 12,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.14538882",
+    "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+    "deposit": 349,
+    "title": "ASSEMBLY ROOM ANCHOR Room Specification with Governance Protocols",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/349/"
+   },
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19055267",
+    "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+    "deposit": 578,
+    "title": "CRIMSON HEXAGON: CENTRAL NAVIGATION MAP v7.0 Comprehensive Semantic Architecture",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/578/"
+   },
+   {
+    "doi": "10.5281/zenodo.19055729",
+    "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+    "deposit": 30,
+    "title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/30/"
+   },
+   {
+    "doi": "10.5281/zenodo.19155610",
+    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+    "deposit": 571,
+    "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Dec",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/571/"
+   },
+   {
+    "doi": "10.5281/zenodo.19155999",
+    "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
+    "deposit": 37,
+    "title": "THE BOTANICAL EFFECTIVE ACT: Extending Semantic Labor Recognition to Plants, Fun",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/37/"
+   },
+   {
+    "doi": "10.5281/zenodo.19352504",
+    "axn": "AXN:01D6.GOVERNANCE.🎻💛🔺🔍🍃🔒",
+    "deposit": 619,
+    "title": "ASSEMBLY SUBSTRATE GOVERNANCE PROTOCOL Procedures for Witness Membership, Review",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/619/"
+   },
+   {
+    "doi": "10.5281/zenodo.19355075",
+    "axn": "AXN:01D4.GOVERNANCE.∞🟠🌘🕛♾️🔵",
+    "deposit": 618,
+    "title": "The Hexagon Interface Constitution v2.0: System Specification for the Crimson He",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/618/"
+   },
+   {
+    "doi": "10.5281/zenodo.19380602",
+    "axn": "AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁",
+    "deposit": 621,
+    "title": "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/621/"
+   },
+   {
+    "doi": "10.5281/zenodo.19405459",
+    "axn": "AXN:0554.UNCLASSIFIED.🕐⌛🏺🤝🪞♾️",
+    "deposit": 1347,
+    "title": "Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1347/"
+   },
+   {
+    "doi": "10.5281/zenodo.19442251",
+    "axn": "AXN:0555.UNCLASSIFIED.🌇▽🥁🚪⛩️🙏",
+    "deposit": 1348,
+    "title": "Gravity Well: Field Specification for Retentive Citational Curvature in the Crim",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1348/"
+   },
+   {
+    "doi": "10.5281/zenodo.19442262",
+    "axn": "AXN:0556.UNCLASSIFIED.🔭♋🌺👈🕊️🏷️",
+    "deposit": 1349,
+    "title": "Gravity Well: Suffusion Map — Room-by-Room Field Behavior in the Crimson Hexagon",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1349/"
+   }
+  ]
  }
 }

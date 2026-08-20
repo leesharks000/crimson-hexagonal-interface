@@ -365,5 +365,63 @@
    "until": "2026-08-20"
   }
  ],
- "canonical_seat_source": "CNM v7.0 §III (#578)"
+ "canonical_seat_source": "CNM v7.0 §III (#578)",
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 7,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18342199",
+    "axn": "AXN:00AF.GOVERNANCE.🖐️🔽🏛️🌉🌲🟣",
+    "deposit": 367,
+    "title": "Phase X: Resurrection of the 1844 Transition — The Missing Passage Between Commu",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/367/"
+   },
+   {
+    "doi": "10.5281/zenodo.18357320",
+    "axn": "AXN:00B8.GOVERNANCE.🌟➖📐🎬🚪🚪",
+    "deposit": 376,
+    "title": "THE BLIND OPERATOR Logotic Protocol for Non-Identity as Engine Condition Extensi",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/376/"
+   },
+   {
+    "doi": "10.5281/zenodo.18357600",
+    "axn": "AXN:00B9.EMPIRICAL.🏷️🌹🟣↖️⚖️🗺️",
+    "deposit": 377,
+    "title": "β-RUNTIME SPECIFICATION (β-RT) Interface Layer for the Blind Operator",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/377/"
+   },
+   {
+    "doi": "10.5281/zenodo.18358127",
+    "axn": "AXN:00CB.EMPIRICAL.🕌💥🪨🕑🔺∮",
+    "deposit": 394,
+    "title": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1)",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/394/"
+   },
+   {
+    "doi": "10.5281/zenodo.18358284",
+    "axn": "AXN:00C9.EMPIRICAL.🎪🔀💛🕐🌗🔭",
+    "deposit": 392,
+    "title": "Integrity Lock Declaration: Binding the Ezekiel Engine Specification to Ezekiel'",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/392/"
+   },
+   {
+    "doi": "10.5281/zenodo.18506880",
+    "axn": "AXN:0114.GENERATIVE.⏫⏩🏴🔩📖🌙",
+    "deposit": 458,
+    "title": "ASSEMBLY SYNTHESIS: Restored Academy & Ezekiel Engine Construction Planning Docu",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/458/"
+   },
+   {
+    "doi": "10.5281/zenodo.18751546",
+    "axn": "AXN:014E.GENERATIVE.🤲♆🕓🟣💛⭕",
+    "deposit": 511,
+    "title": "ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ: Hymn to Demeter Chthonia — A Constraint-Driven Cult-Histo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/511/"
+   }
+  ]
+ }
 }

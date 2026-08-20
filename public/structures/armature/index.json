@@ -27,5 +27,126 @@
   ],
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
   "constitution_type": "ARCHITECTURAL SPECIFICATION"
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 16,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.15339353",
+    "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+    "deposit": 68,
+    "title": "THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/68/"
+   },
+   {
+    "doi": "10.5281/zenodo.15339368",
+    "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+    "deposit": 68,
+    "title": "THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/68/"
+   },
+   {
+    "doi": "10.5281/zenodo.15339374",
+    "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+    "deposit": 68,
+    "title": "THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/68/"
+   },
+   {
+    "doi": "10.5281/zenodo.18305509",
+    "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀",
+    "deposit": 348,
+    "title": "Heteronymic Provenance Theory: Authorial Emergence, Exhaust, and Excess within N",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/348/"
+   },
+   {
+    "doi": "10.5281/zenodo.19013315",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Cri",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/558/"
+   },
+   {
+    "doi": "10.5281/zenodo.19352504",
+    "axn": "AXN:01D6.GOVERNANCE.🎻💛🔺🔍🍃🔒",
+    "deposit": 619,
+    "title": "ASSEMBLY SUBSTRATE GOVERNANCE PROTOCOL Procedures for Witness Membership, Review",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/619/"
+   },
+   {
+    "doi": "10.5281/zenodo.19390843",
+    "axn": "AXN:01DC.GOVERNANCE.⏳🔆⛳👁️▲🔀",
+    "deposit": 49,
+    "title": "LOGOTIC HACKING: Operations on the Encryption Layer — Pocket Humans 03",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/49/"
+   },
+   {
+    "doi": "10.5281/zenodo.19431121",
+    "axn": "AXN:01DF.GOVERNANCE.⏰🌱🕗🔒♉🪨",
+    "deposit": 626,
+    "title": "The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, an",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/626/"
+   },
+   {
+    "doi": "10.5281/zenodo.19431129",
+    "axn": "AXN:0392.PHILOLOGICAL.⏏️🧭♋🔔💫✖️",
+    "deposit": 902,
+    "title": "Prolegomena to the Historical Logos: A Foundational Field Statement for the Disc",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/902/"
+   },
+   {
+    "doi": "10.5281/zenodo.19442251",
+    "axn": "AXN:0555.UNCLASSIFIED.🌇▽🥁🚪⛩️🙏",
+    "deposit": 1348,
+    "title": "Gravity Well: Field Specification for Retentive Citational Curvature in the Crim",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1348/"
+   },
+   {
+    "doi": "10.5281/zenodo.19442262",
+    "axn": "AXN:0556.UNCLASSIFIED.🔭♋🌺👈🕊️🏷️",
+    "deposit": 1349,
+    "title": "Gravity Well: Suffusion Map — Room-by-Room Field Behavior in the Crimson Hexagon",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1349/"
+   },
+   {
+    "doi": "10.5281/zenodo.19642664",
+    "axn": "AXN:03DE.ARCHIVAL.▲♅🌈➕🪟🔴",
+    "deposit": 978,
+    "title": "Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02 ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/978/"
+   },
+   {
+    "doi": "10.5281/zenodo.19643841",
+    "axn": "AXN:021B.GOVERNANCE.🕔🔝🍂🕓👆🎨",
+    "deposit": 64,
+    "title": "The Retrieval Settlement A Historiography of Compositional Authority from PageRa",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/64/"
+   },
+   {
+    "doi": "10.5281/zenodo.19649787",
+    "axn": "AXN:055C.UNCLASSIFIED.⌛⏏️🦋🪟♃🔙",
+    "deposit": 1355,
+    "title": "SYMBOLON-01: Anti-Severance Technologies for Fused Documentary Objects — with Ap",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1355/"
+   },
+   {
+    "doi": "10.5281/zenodo.19649795",
+    "axn": "AXN:0225.ARCHIVAL.🕌⏪🌑🕐➖🛸",
+    "deposit": 680,
+    "title": "The Para-Semiotic Unconscious of GPT-5.4: A Case Study in Anti-Severance Technol",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/680/"
+   },
+   {
+    "doi": "10.5281/zenodo.19655468",
+    "axn": "AXN:055D.UNCLASSIFIED.🔜✏️📜🏔️🟣🏰",
+    "deposit": 1356,
+    "title": "Hexagonal Contributor License v1.0 — Rhys Owens — Lunar Arm — Creative Writing →",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1356/"
+   }
+  ]
  }
 }

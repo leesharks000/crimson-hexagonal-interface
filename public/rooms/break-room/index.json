@@ -818,5 +818,182 @@
    "until": "2026-08-20"
   }
  ],
- "canonical_seat_source": "CNM v7.0 §III (#578)"
+ "canonical_seat_source": "CNM v7.0 §III (#578)",
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 24,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.14538882",
+    "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+    "deposit": 349,
+    "title": "ASSEMBLY ROOM ANCHOR Room Specification with Governance Protocols",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/349/"
+   },
+   {
+    "doi": "10.5281/zenodo.18330828",
+    "axn": "AXN:047B.UNCLASSIFIED.🧪▲🧲💛♍🕕",
+    "deposit": 1130,
+    "title": "The Reconciliation of the Sexes: A Post-Psychoanalytic Theory of Somatic Unity",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1130/"
+   },
+   {
+    "doi": "10.5281/zenodo.18332915",
+    "axn": "AXN:00A9.EMPIRICAL.🕘🎲🎭🟣📚🪜",
+    "deposit": 362,
+    "title": "Shining Ignorance: The Fool's Affect Literacy — A Post-Traumatic Theory of Nervo",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/362/"
+   },
+   {
+    "doi": "10.5281/zenodo.18338531",
+    "axn": "AXN:00B7.GOVERNANCE.🕚💥🪝🖊️🕘🔆",
+    "deposit": 375,
+    "title": "Cambridge Schizoanalytica: Institutional Charter and Research Programme",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/375/"
+   },
+   {
+    "doi": "10.5281/zenodo.18338927",
+    "axn": "AXN:00B6.EMPIRICAL.⏪🎻💎👇🔭🌑",
+    "deposit": 374,
+    "title": "Visual Schema: Cambridge Schizoanalytica Institutional Field-Map",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/374/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339159",
+    "axn": "AXN:00B5.STRUCTURAL.🌌⭐🌕⛳⏏️🎹",
+    "deposit": 373,
+    "title": "SHINE & CUT A Schizonarrative Processor",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/373/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339315",
+    "axn": "AXN:00B4.STRUCTURAL.🌊🌓🔆🌉🔙🌗",
+    "deposit": 372,
+    "title": "Affective Keyboard Shortcuts: The Fool's Toolkit — Figure-to-Function Mapping",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/372/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339319",
+    "axn": "AXN:00B3.GOVERNANCE.🎭🗡️🎻🔻✋🔭",
+    "deposit": 371,
+    "title": "Dr. Orin Trace: Author Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/371/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339333",
+    "axn": "AXN:00B2.GOVERNANCE.↗️🔝📏⭐🕙🗿",
+    "deposit": 370,
+    "title": "The Break Room: Cambridge Schizoanalytica Portal Node",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/370/"
+   },
+   {
+    "doi": "10.5281/zenodo.18339350",
+    "axn": "AXN:00B1.EMPIRICAL.🌅🏴➕♌♉🌻",
+    "deposit": 369,
+    "title": "Rhys Owens: Author Provenance Document",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/369/"
+   },
+   {
+    "doi": "10.5281/zenodo.18649920",
+    "axn": "AXN:0539.UNCLASSIFIED.↘️🪐♍🟣🕛🚩",
+    "deposit": 1320,
+    "title": "\"The Unmade Sign: Toward a Semiotic Theory of the Death Drive\"",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1320/"
+   },
+   {
+    "doi": "10.5281/zenodo.18776624",
+    "axn": "AXN:0493.UNCLASSIFIED.⏰🧬🟡⏩🎹🀄",
+    "deposit": 1154,
+    "title": "PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherenc",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1154/"
+   },
+   {
+    "doi": "10.5281/zenodo.18843830",
+    "axn": "AXN:054D.UNCLASSIFIED.🌺📎🧪🔝🌍⏏️",
+    "deposit": 1340,
+    "title": "The Cost of Unshared Reality: A Heteronym Triptych on L_bearing, Perceptual Mism",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1340/"
+   },
+   {
+    "doi": "10.5281/zenodo.19024004",
+    "axn": "AXN:018D.GOVERNANCE.🌌◇🀄🖐️🕖🌖",
+    "deposit": 566,
+    "title": "r.25 THE UNDERWATER CONSTRUCTION AUTHORITY (DOLPHINDIANA) Room Specification · N",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/566/"
+   },
+   {
+    "doi": "10.5281/zenodo.19028176",
+    "axn": "AXN:018C.ARCHIVAL.🟡🔴🟢🔜▲➖",
+    "deposit": 565,
+    "title": "THE EFFECTIVE ACT Cross-Species Semantic Labor and the Expansion of Witness Dr. ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/565/"
+   },
+   {
+    "doi": "10.5281/zenodo.19083322",
+    "axn": "AXN:01A4.GOVERNANCE.🖊️🗂️■📌💡🌻",
+    "deposit": 583,
+    "title": "The Unbundling of Cultural Sovereignty: How Platforms Convert Peoples into Audie",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/583/"
+   },
+   {
+    "doi": "10.5281/zenodo.19113326",
+    "axn": "AXN:01AE.EMPIRICAL.⏹️👇🛡️👁️⭕🌇",
+    "deposit": 592,
+    "title": "Combat Scholasticism: Prolegomenon and Commentary Outline — EA-CS-01 v1.1",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/592/"
+   },
+   {
+    "doi": "10.5281/zenodo.19113822",
+    "axn": "AXN:054E.UNCLASSIFIED.■⏬🪄🦋🔖⏬",
+    "deposit": 1341,
+    "title": "Combat Scholasticism, Part One — On the Condition: Three Lectiones on Finitude, ",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1341/"
+   },
+   {
+    "doi": "10.5281/zenodo.19114089",
+    "axn": "AXN:01AC.GOVERNANCE.🎵♾️♃☉∞⚫",
+    "deposit": 590,
+    "title": "Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.1–II.3 (EA-C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/590/"
+   },
+   {
+    "doi": "10.5281/zenodo.19114334",
+    "axn": "AXN:01AB.GOVERNANCE.🎵🀄🌟📝🔜🟠",
+    "deposit": 589,
+    "title": "Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.4–II.6 (EA-C",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/589/"
+   },
+   {
+    "doi": "10.5281/zenodo.19114937",
+    "axn": "AXN:01AA.GOVERNANCE.👁️‍🗨️🔵🎹♋🧬🚨",
+    "deposit": 588,
+    "title": "Combat Scholasticism, Part Two: On the Formal Object — The Assembly (Lectio II.7",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/588/"
+   },
+   {
+    "doi": "10.5281/zenodo.19115139",
+    "axn": "AXN:01A9.EMPIRICAL.⌛🟤🏠👁️🌖🔚",
+    "deposit": 587,
+    "title": "Combat Scholasticism, Part Three: On the Engines — Lectiones III.1–III.3 (EA-CS-",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/587/"
+   },
+   {
+    "doi": "10.5281/zenodo.19115676",
+    "axn": "AXN:01A8.ARCHIVAL.🔓⛩️☽✋🌋♋",
+    "deposit": 586,
+    "title": "Combat Scholasticism, Part Three: On the Engines — Lectiones III.4–III.6 + Cross",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/586/"
+   },
+   {
+    "doi": "10.5281/zenodo.19115686",
+    "axn": "AXN:01A7.EMPIRICAL.⭐✏️🌆📖🔀🔥",
+    "deposit": 585,
+    "title": "Combat Scholasticism, Part Four: On the Shadow + Part Five: Extensionary Lection",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/585/"
+   }
+  ]
+ }
 }

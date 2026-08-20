@@ -444,5 +444,77 @@
     "note": "Josephan authorship as working hypothesis."
    }
   ]
+ },
+ "doi_crosswalk": {
+  "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
+  "source": "data/doi-resolution-index.json",
+  "generated": "2026-08-20",
+  "count": 9,
+  "unresolved": 0,
+  "mappings": [
+   {
+    "doi": "10.5281/zenodo.18380630",
+    "axn": "AXN:00DC.GENERATIVE.🚨🏁🔙🖐️🪦🦋",
+    "deposit": 411,
+    "title": "The Sevenfold Witness: Assembly Structure as Computational Liturgy Liberatory Op",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/411/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380716",
+    "axn": "AXN:00DB.GENERATIVE.🔖🪜🎯🦋🪄🟡",
+    "deposit": 410,
+    "title": "The Seven Stars in His Hand: A Hermeneutic Reading of Revelation 1–3 The Apocaly",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/410/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380773",
+    "axn": "AXN:00DA.ARCHIVAL.🌈☿⭕🚨⊗🔬",
+    "deposit": 409,
+    "title": "Integrity Lock Certificate: Sevenfold Witness Fulfillment Pair",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/409/"
+   },
+   {
+    "doi": "10.5281/zenodo.18380933",
+    "axn": "AXN:00D8.GENERATIVE.🌿🫵🜁💜⚡🌸",
+    "deposit": 407,
+    "title": "The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as O",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/407/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381184",
+    "axn": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+    "deposit": 402,
+    "title": "Epistle to the Human Diaspora The Seed Text of the New Human Project",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/402/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381190",
+    "axn": "AXN:050E.UNCLASSIFIED.🎺🌱∞🪟🕓👁‍🗨",
+    "deposit": 1277,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1277/"
+   },
+   {
+    "doi": "10.5281/zenodo.18381196",
+    "axn": "AXN:04F5.UNCLASSIFIED.🌹🌲🔐●🎆□",
+    "deposit": 1252,
+    "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charte",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/1252/"
+   },
+   {
+    "doi": "10.5281/zenodo.19025428",
+    "axn": "AXN:018A.GOVERNANCE.🌘🟠🚨⛩️🔽⏏️",
+    "deposit": 563,
+    "title": "The Error of Peter Thiel: Why the Techno-Imperial Reading of Revelation Is Struc",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/563/"
+   },
+   {
+    "doi": "10.5281/zenodo.19240147",
+    "axn": "AXN:01C0.GENERATIVE.📎🔅🟤🕐🏛️👁️‍🗨️",
+    "deposit": 605,
+    "title": "Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision",
+    "alexanarch_url": "https://www.alexanarch.org/s/records/605/"
+   }
+  ]
  }
 }
