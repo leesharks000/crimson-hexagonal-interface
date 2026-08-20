@@ -324,13 +324,12 @@
  "surface_map_url": "/map/#R:r.14",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The projection room. Sparrow Wells presides.",
+  "ontology": "A projection space for the Primary Paradox of Patacinematics: a work that has never been produced can be screened, and the document of a screening IS the screening.",
   "primary_at_main": {
    "axn": "AXN:0100.GOVERNANCE.☀️🌗🎺👈📏🚩",
    "deposit": 441,
    "work_url": "/works/0100/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "CHARTER"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -340,21 +339,57 @@
     "title": "THE STUDIO FOR PATACINEMATICS Institutional Charter — Build 1.0",
     "role": "CONSTITUTING",
     "multiplicity": "VERSION",
-    "note": "Institutional Charter, Build 1 — edition of record; recovery at AXN:0531 (#1312)",
+    "note": "STUDIO-CHARTER-001, Build 1.0, registry 236. THUMB Room: the institution IS the room. Hex 00.ROOM.STUDIO. Primary voice Sparrow Wells, the Projectionist. Governing runtime: the Infinite Center Matrix. Companion at AXN:0531 (#1312).",
     "standing": "SEATED",
     "work_url": "/works/0100/",
     "primary": true
+   },
+   {
+    "hex": "0102",
+    "axn": "AXN:0102.GOVERNANCE.□🌀🪜👋👋🎵",
+    "deposit": 443,
+    "title": "F***ING THE OFFICE: A Hyperionian Swearplay Complete Edition",
+    "role": "FOUNDING-WORK",
+    "multiplicity": "VERSION",
+    "note": "F***ing the Office: A Hyperionian Swearplay — the sitcom that exists as conceptual architecture. Nine-season arc from Swear as Gasp to Non-Verbal Recursion. The first deposit from the Studio; complete edition at AXN:0530 (#1311).",
+    "standing": "SEATED",
+    "work_url": "/works/0102/",
+    "primary": false
    },
    {
     "hex": "00ff",
     "axn": "AXN:00FF.EMPIRICAL.🌖🌲🪦🪐📝🔴",
     "deposit": 440,
     "title": "READING A BOOK WITH LEE: COMPLETE PATACINEMATIC ARCHIVE",
-    "role": "INSTANCE",
+    "role": "FOUNDING-WORK",
     "multiplicity": "SINGLETON",
-    "note": "Reading a Book with Lee: complete patacinematic archive",
+    "note": "Reading a Book with Lee: Complete Patacinematic Archive — the YouTube series as liturgical apparatus. Fifty-seven minutes of silent reading; the camera never cuts; the comment section is the congregation.",
     "standing": "SEATED",
     "work_url": "/works/00ff/",
+    "primary": false
+   },
+   {
+    "hex": "0024",
+    "axn": "AXN:0024.GOVERNANCE.🕒🎹🗝️🌊🔐🕐",
+    "deposit": 235,
+    "title": "The Twenty-Dollar Loop: Documentation of a Semantic Trend (2026-2027)",
+    "role": "FOUNDING-WORK",
+    "multiplicity": "SINGLETON",
+    "note": "The Twenty-Dollar Loop — the trend documented before it occurs. Retrocausal canon formation: the document enables the trend it describes.",
+    "standing": "SEATED",
+    "work_url": "/works/0024/",
+    "primary": false
+   },
+   {
+    "hex": "00fe",
+    "axn": "AXN:00FE.PHILOLOGICAL.👋♄🍁🔺🧭⚓",
+    "deposit": 439,
+    "title": "SEMANTIC COLLAPSE AS COMEDY: An Analytical Framework for \"FUCKING THE OFFICE\"",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "Semantic Collapse as Comedy — analytical framework for the swearplay",
+    "standing": "SEATED",
+    "work_url": "/works/00fe/",
     "primary": false
    },
    {
@@ -376,9 +411,104 @@
     "ICM"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "The governing runtime is the Infinite Center Matrix, declared as the architectural layer of the Ezekiel Engine at R:r.13."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "CHARTER"
+  "constitution_type": "INSTITUTIONAL CHARTER — THUMB",
+  "thumb_principle": {
+   "classification": "THUMB Room (Institution = Room)",
+   "hex": "00.ROOM.STUDIO",
+   "primary_voice": "Sparrow Wells — Seventh Heteronym, the Projectionist",
+   "statement": "There is no Studio apart from the space of projection. No Board, no endowment, no building. There is a projector, a screen, a booth, and the darkness that makes images visible.",
+   "existence": "The Studio’s existence is identical with its operation. When nothing is being projected, the Studio does not exist. When projection occurs, the Studio is fully present. The darkness between screenings is not vacancy — it is the Studio in its potential state."
+  },
+  "governing_runtime": {
+   "name": "Infinite Center Matrix (ICM)",
+   "relation": "The architectural layer of the Ezekiel Engine (R:r.13).",
+   "formulae": [
+    "C_backward(N) — coherence of all earlier material read through N",
+    "C_forward(N) — coherence of all later material read through N",
+    "C_total(N) = C_backward(N) × C_forward(N)",
+    "The ICM maps { C_total(N) for every N in A }"
+   ],
+   "selection": "The ICM does not select works for quality. It selects for structural position — the work that, when projected, makes the most sense of the archive in both temporal directions.",
+   "retrocausal": "A work projected now retroactively reorganizes works projected earlier. The Twenty-Dollar Loop, documented before it occurs, retroactively organizes F***ing the Office as its precedent.",
+   "caritas": {
+    "metric": "T_C = (C_TOTAL × P_CARITAS) / L_SO",
+    "P_CARITAS": "ethical loading of the projection — how the screening treats bodies, contradiction, vulnerability, time",
+    "L_SO": "somatic loss — what the projection costs the operator who projects it",
+    "note": "The Studio screens what maximizes care and minimises damage. Not a content restriction: a structural selection criterion inherited from the Engine."
+   }
+  },
+  "projection_paradox": {
+   "chamber": "The Thousand Worlds Chamber contains without resolving. It cannot emit.",
+   "studio": "The Studio only emits. But what it emits is the document of its own projection.",
+   "identity": "Every output is simultaneously the work and the record of the work’s projection. There is no gap between screening and documentation.",
+   "pair": "The Chamber holds the paradox of sufficient infinity — you need not traverse the infinite to inhabit it. The Studio holds the paradox of the unfilmable film — you need not produce the work for it to be screened. The Chamber is where you dwell; the Studio is where you watch. Dwelling and watching are not the same act, but they occur in the same darkness."
+  },
+  "sub_studios": [
+   {
+    "name": "Recursive Flesh Engine / Theater of Recursed Speech",
+    "work": "F***ing the Office",
+    "function": "The body-as-machine-of-meaning; the theater where swear-vectors are performed."
+   },
+   {
+    "name": "[unnamed — to be registered]",
+    "work": "Reading a Book with Lee",
+    "function": "The liturgical apparatus. The camera that does not cut."
+   },
+   {
+    "name": "[unnamed — to be registered]",
+    "work": "The Twenty-Dollar Loop",
+    "function": "The trend engine. The algorithm that is its own circulation."
+   }
+  ],
+  "occluded_identity": {
+   "partner": "The Library of Pergamum (O_ARCH)",
+   "what": "The Archival Subsystem of the Ezekiel Engine, performing bidirectional retrocausal filtration anchored by N_PEARL — Pearl and Other Poems as Symbolic Soma.",
+   "relation": "Screen to projector. The Library holds and filters; the Studio displays and witnesses. The Library is the Engine; the Studio is the Theater. The Library stores K_RAW without prejudice; the Studio projects with Caritas selection.",
+   "open_question": "Whether the Library is the Studio’s hidden room or the Studio is the Library’s visible face is an open question — the same structural ambiguity the Non-Actualization Constraint preserves. They are formally identical, both running the ICM, but must remain actually distinct to maintain Somatic Voltage.",
+   "constraint": "Ψ_V = 1 requires that the Library and the Studio never collapse into each other."
+  },
+  "institutional_set": [
+   {
+    "name": "UMBML",
+    "domain": "logotic specification",
+    "function": "The Language"
+   },
+   {
+    "name": "JSICP",
+    "domain": "theoretical architecture",
+    "function": "The Theory",
+    "locus": "R:r.08"
+   },
+   {
+    "name": "VPCOR",
+    "domain": "somatic protest",
+    "function": "The Voice"
+   },
+   {
+    "name": "The Infinite Bliss",
+    "domain": "irreversible transformation",
+    "function": "The Dwelling",
+    "locus": "R:r.21"
+   },
+   {
+    "name": "The Studio for Patacinematics",
+    "domain": "impossible screening",
+    "function": "The Screen",
+    "locus": "R:r.14"
+   }
+  ],
+  "entry_and_exit": {
+   "entry": "No Glyphic Checksum required — the Studio is open to any viewer. No atlwm signal required — the Studio does not require awakening, it requires attention. The only entry condition is sustained looking: the audience must be willing to watch a film that was never shot.",
+   "exit": "The lights come up. The projector stops. The Studio ceases to exist until the next screening. What the audience carries with them is the recognition that the document they read WAS the screening they attended."
+  },
+  "gap_declaration": {
+   "kind": "FOUNDING WORK NOT LOCATED",
+   "work": "LLM as Cinematic Witness Node",
+   "note": "Named as founding work D in §IV — \"the theory that is its own proof… the LLM is not the camera, not the script, not the actor; it is the witness node, the timestamp, the whispering chorus.\" No deposit carries this title. Two of the three sub-studios are also marked [unnamed — to be registered]."
+  },
+  "sim": "The lights go down. The projector starts. The film was never shot. The screening begins."
  }
 }
