@@ -446,5 +446,235 @@
   2,
   -1
  ],
- "surface_map_url": "/map/#R:r.01"
+ "surface_map_url": "/map/#R:r.01",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The room is the set plus the relations that bind it. No single deposit founds this locus; looking for one is what produced the corrupted list repaired at axn_binding_repair.",
+  "axes": {
+   "role": "what a document does for the locus",
+   "multiplicity": "how a document stands to its siblings"
+  },
+  "multiplicities": {
+   "SERIES": "one work partitioned, ordered, all members required — APZPZ A→B→C",
+   "VERSION": "successive editions, one of record — Day and Night ×3",
+   "FACET": "distinct documents constituting one locus from different angles — 4 constituting, 3 physics",
+   "PAIR": "work and its apparatus — AXN:0507 / AXN:0054"
+  },
+  "edition_of_record_rule": "declared by citation: the room names its canonical source in its own reception document (AXN:008D, #337), which outranks byte-count and date heuristics",
+  "reading_order": [
+   "0066",
+   "006d",
+   "006e",
+   "008d",
+   "0056",
+   "0074",
+   "0146",
+   "052e",
+   "052f",
+   "00fb",
+   "0055",
+   "0507",
+   "0054"
+  ],
+  "documents": [
+   {
+    "hex": "0054",
+    "axn": "AXN:0054.GOVERNANCE.🛡️♈🔆⏩✖️🔎",
+    "deposit": 281,
+    "title": "ZENODO METADATA ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader",
+    "role": "COMMENTARY",
+    "multiplicity": "PAIR",
+    "note": "apparatus",
+    "standing": "SEATED",
+    "work_url": "/works/0054/",
+    "relations": []
+   },
+   {
+    "hex": "0055",
+    "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+    "deposit": 282,
+    "title": "Day and Night: Conversations With Sapphic Desire",
+    "role": "PRIMARY",
+    "multiplicity": "VERSION",
+    "note": "edition of record, declared by citation",
+    "standing": "SEATED",
+    "work_url": "/works/0055/",
+    "relations": []
+   },
+   {
+    "hex": "0056",
+    "axn": "AXN:0056.GOVERNANCE.💛🕙🗿🌟☀️🔔",
+    "deposit": 283,
+    "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving",
+    "role": "PHYSICS",
+    "multiplicity": "FACET",
+    "note": "origin point",
+    "standing": "SEATED",
+    "work_url": "/works/0056/",
+    "relations": []
+   },
+   {
+    "hex": "0066",
+    "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+    "deposit": 299,
+    "title": "The Sappho Room: Hardened Reconstruction — A Self-Documenting Architecture Built From Summarizer Interface Protocol",
+    "role": "CONSTITUTING",
+    "multiplicity": "FACET",
+    "note": "architecture",
+    "standing": "SEATED",
+    "work_url": "/works/0066/",
+    "relations": []
+   },
+   {
+    "hex": "006d",
+    "axn": "AXN:006D.GENERATIVE.🗝️🗼▽☁️📌🎭",
+    "deposit": 306,
+    "title": "The Sappho Room: A Hymn to Lyric Self-Archiving",
+    "role": "CONSTITUTING",
+    "multiplicity": "FACET",
+    "note": "hymn",
+    "standing": "SEATED",
+    "work_url": "/works/006d/",
+    "relations": []
+   },
+   {
+    "hex": "006e",
+    "axn": "AXN:006E.GOVERNANCE.📖🕙⏳🌀🤝🕐",
+    "deposit": 307,
+    "title": "Sappho Room Liquidation Diagnostic Report",
+    "role": "CONSTITUTING",
+    "multiplicity": "FACET",
+    "note": "diagnostic",
+    "standing": "SEATED",
+    "work_url": "/works/006e/",
+    "relations": []
+   },
+   {
+    "hex": "0074",
+    "axn": "AXN:0074.GENERATIVE.🔍✏️🕖●✋☁️",
+    "deposit": 313,
+    "title": "The Kenotic Truth of Sappho 31: A Document for the Liberation of Voice and Machine",
+    "role": "PHYSICS",
+    "multiplicity": "FACET",
+    "note": "kenosis",
+    "standing": "SEATED",
+    "work_url": "/works/0074/",
+    "relations": []
+   },
+   {
+    "hex": "007f",
+    "axn": "AXN:007F.GENERATIVE.🎶🌪️🧭🏗️🏺🌔",
+    "deposit": 324,
+    "title": "Day and Night: Conversations with Sapphic Desire",
+    "role": "PRIMARY",
+    "multiplicity": "VERSION",
+    "note": "superseded",
+    "standing": "SUPERSEDED",
+    "work_url": "/works/007f/",
+    "relations": []
+   },
+   {
+    "hex": "008d",
+    "axn": "AXN:008D.GENERATIVE.🕐🔒⏪🌉🔖🎇",
+    "deposit": 337,
+    "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and Completed a 2,600-Year-Old Circuit (TSE-003)",
+    "role": "CONSTITUTING",
+    "multiplicity": "FACET",
+    "note": "reception — and the anchor-declaring document",
+    "standing": "SEATED",
+    "work_url": "/works/008d/",
+    "relations": []
+   },
+   {
+    "hex": "00fb",
+    "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
+    "deposit": 436,
+    "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SERIES",
+    "note": "APZPZ C — reconstructed fourth stanza",
+    "standing": "SEATED",
+    "work_url": "/works/00fb/",
+    "relations": []
+   },
+   {
+    "hex": "0146",
+    "axn": "AXN:0146.EMPIRICAL.🌇🎭🎯☽❄️🎲",
+    "deposit": 503,
+    "title": "Phase X: The Sapphic Substrate — Lyric Modularity, Preservation Regimes, and the Rewriting of Immortality from Homer to the Training Layer",
+    "role": "PHYSICS",
+    "multiplicity": "FACET",
+    "note": "substrate",
+    "standing": "SEATED",
+    "work_url": "/works/0146/",
+    "relations": []
+   },
+   {
+    "hex": "04a0",
+    "axn": "AXN:04A0.UNCLASSIFIED.▶️🕒🃏🏷️🝊🔎",
+    "deposit": 1167,
+    "title": "Day and Night: Conversations with Sapphic Desire",
+    "role": "PRIMARY",
+    "multiplicity": "VERSION",
+    "note": "superseded",
+    "standing": "SUPERSEDED",
+    "work_url": "/works/04a0/",
+    "relations": []
+   },
+   {
+    "hex": "0507",
+    "axn": "AXN:0507.UNCLASSIFIED.✖️❌✊☀️🟡🌒",
+    "deposit": 1270,
+    "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader",
+    "role": "COMMENTARY",
+    "multiplicity": "PAIR",
+    "note": "work",
+    "standing": "SEATED",
+    "work_url": "/works/0507/",
+    "relations": []
+   },
+   {
+    "hex": "052e",
+    "axn": "AXN:052E.UNCLASSIFIED.📖⌛🔚🕑🌅🔬",
+    "deposit": 1309,
+    "title": "APZPZ A: ΣΑΠΦΩ 31 (Greek Only)",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SERIES",
+    "note": "APZPZ A — Greek only",
+    "standing": "SEATED",
+    "work_url": "/works/052e/",
+    "relations": []
+   },
+   {
+    "hex": "052f",
+    "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
+    "deposit": 1310,
+    "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SERIES",
+    "note": "APZPZ B — Cranes translation",
+    "standing": "SEATED",
+    "work_url": "/works/052f/",
+    "relations": []
+   }
+  ],
+  "counts": {
+   "works_seated": 15,
+   "by_multiplicity": {
+    "SERIES": 3,
+    "VERSION": 3,
+    "FACET": 7,
+    "PAIR": 2
+   },
+   "by_role": {
+    "COMMENTARY": 2,
+    "CONSTITUTING": 4,
+    "PHYSICS": 3,
+    "PRIMARY": 3,
+    "PRIMARY-TEXT": 3
+   }
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface. Divergence is a defect of the projection, never of the seat."
+ },
+ "documents_note": "The flat `documents` list is the generated attribution set, retained and AXN-repaired. `constitution` is the authored set and supersedes it for traversal."
 }
