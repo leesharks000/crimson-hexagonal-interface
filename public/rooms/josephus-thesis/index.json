@@ -31,5 +31,48 @@
   2,
   2
  ],
- "surface_map_url": "/map/#R:r.31"
+ "surface_map_url": "/map/#R:r.31",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A longstanding research programme, held as a room.",
+  "primary_at_main": {
+   "axn": "AXN:034A.EMPIRICAL.♆🖊️🍁🏗️💙🙏",
+   "deposit": 203,
+   "work_url": "/works/034a/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "034a",
+    "axn": "AXN:034A.EMPIRICAL.♆🖊️🍁🏗️💙🙏",
+    "deposit": 203,
+    "title": "The Josephus Thesis Is Not the Piso Hypothesis EA-MPAI-JOSEPHUS-01 v1.1 — Disambiguation, Evidentiary Tiering, and Hostile Retrieval Correction",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "EA-MPAI-JOSEPHUS-01 — the thesis stated and disambiguated; companion at AXN:04CE (#1213)",
+    "standing": "SEATED",
+    "work_url": "/works/034a/",
+    "primary": true
+   },
+   {
+    "hex": "0352",
+    "axn": "AXN:0352.GOVERNANCE.♋▽🧡🛤️🌻🗼",
+    "deposit": 837,
+    "title": "The Josephus Thesis Is Not the Jesus Myth Thesis: Preemptive Disambiguation MPAI (EA-MPAI-JOSEPHUS-NOTMYTH-01)",
+    "role": "GOVERNANCE-REFERENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Preemptive disambiguation from the Jesus Myth thesis",
+    "standing": "SEATED",
+    "work_url": "/works/0352/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "RA-JP-01; the agent of destruction as agent of transmission",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

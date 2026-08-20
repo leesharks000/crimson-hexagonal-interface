@@ -68,5 +68,74 @@
   "note": "render_center is visual only; deposit mass is the field source"
  },
  "surface_map_url": "/map/#F:f.02",
- "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators"
+ "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "A field, not a room: source, gradient, attenuation, no walls.",
+  "primary_at_main": {
+   "axn": "AXN:01E8.GOVERNANCE.🪝🐚♣️✖️🌺📖",
+   "deposit": 52,
+   "work_url": "/works/01e8/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "01e8",
+    "axn": "AXN:01E8.GOVERNANCE.🪝🐚♣️✖️🌺📖",
+    "deposit": 52,
+    "title": "GRAVITY WELL: FIELD SPECIFICATION EA-GW-FIELD-01 v1.1",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "EA-GW-FIELD-01 v1.1 — field specification",
+    "standing": "SEATED",
+    "work_url": "/works/01e8/",
+    "primary": true
+   },
+   {
+    "hex": "01e7",
+    "axn": "AXN:01E7.EMPIRICAL.🪧🏁🧬👈🔒👁️‍🗨️",
+    "deposit": 633,
+    "title": "GRAVITY WELL: SUFFUSION MAP EA-GW-FIELD-02 v1.0",
+    "role": "PHYSICS",
+    "multiplicity": "PAIR",
+    "note": "EA-GW-FIELD-02 — Suffusion Map: room-by-room field behaviour; capture at AXN:0556 (#1349). Also the physics source for X:ICHABOD.",
+    "standing": "SEATED",
+    "work_url": "/works/01e7/",
+    "primary": false
+   },
+   {
+    "hex": "01d8",
+    "axn": "AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁",
+    "deposit": 621,
+    "title": "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "Gravity Well Protocol Specification v1.0 — governed continuity",
+    "standing": "SEATED",
+    "work_url": "/works/01d8/",
+    "primary": false
+   },
+   {
+    "hex": "0554",
+    "axn": "AXN:0554.UNCLASSIFIED.🕐⌛🏺🤝🪞♾️",
+    "deposit": 1347,
+    "title": "Gravity Well Codebase v0.4.1 — Compression, Wrapping, and Anchoring Microservice (EA-GW-01)",
+    "role": "APPARATUS",
+    "multiplicity": "SINGLETON",
+    "note": "Gravity Well Codebase v0.4.1 — compression, wrapping, anchoring",
+    "standing": "SEATED",
+    "work_url": "/works/0554/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Φ_G; standing curvature field; citational gravity",
+   "operators": [
+    "Φ_G"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "The Suffusion Map seated here is the same document that supplies X:ICHABOD its degree-0 physics — a shared-physics edge."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

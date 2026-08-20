@@ -7,5 +7,36 @@
  "current_surface_seat": "shadow",
  "access": "portal from X:BREAK-ROOM",
  "canonical": "https://crimsonhexagonal.org/rooms/lunar-arm/",
- "generated": "2026-08-19"
+ "generated": "2026-08-19",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "Shadow and inverse space: the Space Ark read from its hidden side.",
+  "primary_at_main": {
+   "axn": "AXN:0171.EMPIRICAL.🦋□🌖💥♾️🗝️",
+   "deposit": 540,
+   "work_url": "/works/0171/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0171",
+    "axn": "AXN:0171.EMPIRICAL.🦋□🌖💥♾️🗝️",
+    "deposit": 540,
+    "title": "🌑⬡ THE LUNAR ARM Operator // Shadow — The Space Ark's Hidden Architecture",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "EA-ARK-EMOJI-01-SHADOW: Operator // Shadow — the Space Ark’s hidden arm; captures at AXN:0544 (#1331) and AXN:0545 (#1332)",
+    "standing": "SEATED",
+    "work_url": "/works/0171/",
+    "primary": true
+   }
+  ],
+  "physics_resolution": {
+   "declared": null,
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
