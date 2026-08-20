@@ -1148,5 +1148,88 @@
   1,
   -1
  ],
- "surface_map_url": "/map/#R:r.02"
+ "surface_map_url": "/map/#R:r.02",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The Library is the Hexagon seen from inside; the problem is retrieval. This locus is founded by a single document and draws its physics from the archive-wide formal object.",
+  "documents": [
+   {
+    "hex": "0044",
+    "axn": "AXN:0044.GOVERNANCE.✖️🌿🔖🌉♄♊",
+    "deposit": 266,
+    "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "sole founding document; seven sections, performative not descriptive (§II.5), chronology preserved as ethical boundary (§II.6)",
+    "standing": "SEATED",
+    "work_url": "/works/0044/"
+   },
+   {
+    "hex": "04ea",
+    "axn": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧",
+    "deposit": 1241,
+    "title": "H_core Formal Specification v1.8.0",
+    "role": "PHYSICS",
+    "multiplicity": "PAIR",
+    "note": "archive-wide formal object; defines O.X.11.Λres :: Query → argmax P(meaning), which the room physics string quotes verbatim. Apparatus at #967.",
+    "standing": "SEATED",
+    "scope": "ARCHIVE-WIDE",
+    "work_url": "/works/04ea/"
+   }
+  ],
+  "index_documents": {
+   "role": "INDEX",
+   "count": 7,
+   "rationale": "Catalogues and navigation maps constitute this locus by being catalogues. Borges is the one room whose subject is the aggregator; elsewhere such attribution is a join defect.",
+   "members": [
+    {
+     "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+     "deposit": 30,
+     "title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAV"
+    },
+    {
+     "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+     "deposit": 578,
+     "title": "Crimson Hexagonal Architecture: Central Navigation Map v7.0 — Comprehe"
+    },
+    {
+     "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+     "deposit": 31,
+     "title": "Crimson Hexagonal Architecture: DOI Registry v7.0 — Complete Archive o"
+    },
+    {
+     "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+     "deposit": 31,
+     "title": "THE SPACE ARK: Mathematical and Formal Symbolic Compression of the Cri"
+    },
+    {
+     "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+     "deposit": 30,
+     "title": "Crimson Hexagon: Fractal Navigation Map v6.2: The Gravitational Epic —"
+    },
+    {
+     "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+     "deposit": 30,
+     "title": "Fractal Navigation Map v5.3: The Crimson Hexagon Semantic Architecture"
+    },
+    {
+     "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+     "deposit": 578,
+     "title": "Crimson Hexagon: Central Navigation Map v2.0 — Comprehensive Semantic "
+    }
+   ]
+  },
+  "physics_resolution": {
+   "declared": "Λ_res; argmax P(meaning)",
+   "operators": [
+    "Λ_res",
+    "S",
+    "β"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241), O.X.11",
+   "signature": "Λ_res Retrieval / Argmax :: Query → argmax P(meaning)",
+   "sweep_note": "The operator index writes Λres unsubscripted; rooms declare Λ_res. A registry sweep for the subscripted form returns zero across 1,517 deposits while the operator is fully defined. Sweep both forms."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
