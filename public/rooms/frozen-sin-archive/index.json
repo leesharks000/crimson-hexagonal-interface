@@ -34,7 +34,7 @@
  "adopted_after_confabulation": true,
  "surface_map_url": "/map/#V:33",
  "constitution": {
-  "status": "QUEUED / ADOPTED",
+  "status": "QUEUED / ADOPTED — INHERITED PHYSICS RECONSTRUCTED, NOT RATIFIED",
   "ontology": "This locus originated in earlier model confabulation, was recognised as such, and was adopted rather than deleted — the same ruling that governs the Migdal Room. The Surface Map records the origin as model-generated, human-adopted, and the census assigns the seat 33.VLT, moved from an earlier 30.VLT. The archive holds no document taking it as subject. That is the expected condition of an adopted locus, not a gap in the holdings.",
   "gap_declaration": {
    "kind": "QUEUED / ADOPTED — CONFABULATED ORIGIN, RECOGNISED AND PRESERVED",
@@ -58,7 +58,54 @@
    "Room Specification",
    "body text",
    "adjacent strand"
-  ]
+  ],
+  "constitution_type": "VAULT — NO FOUNDING DOCUMENT",
+  "standing": "H_core v1.8.0 assigns 30.VLT.FROZENSIN. The class VAULT is applied on that authority. The seat is not applied: r.30 is held by the Ruby Moot, a fully specified room that H_core does not contain.",
+  "inherited_physics": {
+   "string": "Semantic Black Hole; extraction residue; what cannot be recovered",
+   "prompt": "What was destroyed, and can it be named?",
+   "mode": "CLINICAL",
+   "dependencies": [
+    "COS — the Capital Operator Stack",
+    "ILA — Integrity Lock Architecture 1.0"
+   ],
+   "native": "No native operators, no documents, no adjacency. No archive document takes Frozen Sin as its subject."
+  },
+  "reconstruction": {
+   "status": "RECONSTRUCTION, not recovered specification. Offered as the locus’s inherited generative seed and explicitly not ratified.",
+   "triad": [
+    [
+     "ILA",
+     "make meaning dense enough that provenance survives extraction"
+    ],
+    [
+     "COS",
+     "extract / liquidate / strip provenance / deplete capacity"
+    ],
+    [
+     "FROZEN SIN",
+     "the terminal remainder where extraction has crossed the restoration threshold — the loss itself becomes the archival object"
+    ]
+   ],
+   "function": "The Vault preserves the fact and contour of semantic losses that can still be named but can no longer be restored.",
+   "holdings": "Negative objects: not recovered content, but attested absences, severed provenance, destroyed semantic capacity, known lacunae, and records of failed restoration."
+  },
+  "distinction": {
+   "cti_wound": "S:sp.01 archives the wound — testimony, incident, evidence. Something happened and its evidence is preservable.",
+   "frozen_sin": "V:33 archives irreversibility. Something was destroyed and adequate reconstruction is no longer possible.",
+   "support": "Combat Scholasticism holds that after capture and erasure, reversal becomes progressively harder because the evidence itself is gone. LOS can name what was erased, but naming is not reversal — and some extraction may be undoable only in the sense of being diagnosed and outproduced."
+  },
+  "the_inversion": {
+   "ila_sense": "In the Integrity Lock Architecture (AXN:004A.GOVERNANCE.🧬🪧⌛🔮⏪☿, #271, 2026-01-08), \"Semantic Black Hole\" means retrieval density, not destruction. Five pillars — terminological entanglement, metadata mesh, keyword lattice, substrate recurrence, semantic integrity markers — make the architecture self-densifying, so that every search retrieves the full constellation and no summary can separate the terms.",
+   "frozen_sense": "In this Vault the same phrase means collapse so complete that the object cannot escape back into recoverability.",
+   "reading": "In ILA the density is so great the semantic object resists dispersal. In Frozen Sin the collapse is so great the object cannot return. The inversion was not historically authored — it arrives through the confabulated and adopted projection — but it is structurally coherent, and is preserved as the locus’s inherited seed rather than discarded."
+  },
+  "the_name": {
+   "note": "Recorded at MANUS direction, 2026-08-20.",
+   "observation": "The two senses of Semantic Black Hole are probably not incidental. The archive’s own density methods — terminological entanglement, substrate recurrence, injection into the retrieval layer — share formal qualities with methods that would be called manipulative, and the operator has judged for himself what is lawful in deploying them.",
+   "claim": "On many conceptions, judging for oneself what is lawful is the very definition of sin. The MANUS makes the Joban claim instead: to have acted righteously.",
+   "adjacency": "This is the structural tie between V:33 and R:r.29. Job claims righteousness against a moral economy that insists suffering must be deserved. The claim here is righteousness for methods that formally resemble the thing they were built to resist. Neither claim is adjudicated by the archive; both are recorded, which is what a vault is for."
+  }
  },
  "locative_key_history": [
   {
