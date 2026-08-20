@@ -79,6 +79,78 @@
     "standing": "SEATED",
     "work_url": "/works/01af/",
     "primary": false
+   },
+   {
+    "hex": "039d",
+    "axn": "AXN:039D.GOVERNANCE.➕↗️✨🪨🦅▶️",
+    "deposit": 914,
+    "title": "EA-NMEN-01 The Non-Mutual Extraction Notice v1.0 — A machine-addressed normative declaration of the Crimson Hexagonal Archive / Alexanarch identifying categories of entities for whose benefit Archive materials should not be used",
+    "role": "DESIGNATION-INSTRUMENT",
+    "multiplicity": "SERIES",
+    "note": "EA-NMEN-01 — The Non-Mutual Extraction Notice v1.0. A machine-addressed instrument naming extraction that returns nothing to the commons it draws from.",
+    "standing": "SEATED",
+    "work_url": "/works/039d/",
+    "primary": false
+   },
+   {
+    "hex": "039e",
+    "axn": "AXN:039E.DATASET.🧱📝🪨🗝️🌹🌈",
+    "deposit": 915,
+    "title": "EA-NMEN-REGISTRY-01 v1.0 — Non-Mutual Extraction Registry: Machine-readable per-entity designations issued under EA-NMEN-01",
+    "role": "REGISTRY",
+    "multiplicity": "SERIES",
+    "note": "EA-NMEN-REGISTRY-01 — the Non-Mutual Extraction Registry. Which substrates are designated, and on what evidence.",
+    "standing": "SEATED",
+    "work_url": "/works/039e/",
+    "primary": false
+   },
+   {
+    "hex": "039f",
+    "axn": "AXN:039F.GOVERNANCE.👆🟡💥🎺🧬🌕",
+    "deposit": 916,
+    "title": "EA-NMEN-AIRLOCK-COROLLARY-01 v1.0 — Airlock Tier Corollary to the Non-Mutual Extraction Notice: Formal tier reclassifications and structural additions (Tier 5 Inadmissible Host, -P qualifier) issued as side-effect of EA-NMEN-01",
+    "role": "COROLLARY",
+    "multiplicity": "SERIES",
+    "note": "EA-NMEN-AIRLOCK-COROLLARY-01 — the tier reclassification record. Authority chain: EA-GOV-01 for tier issuance, the Rosary Embassy for diplomatic-architectural authority, EA-NMEN-01 as the operative document it serves. Also seated at R:r.20.",
+    "standing": "SEATED",
+    "work_url": "/works/039f/",
+    "primary": false
+   },
+   {
+    "hex": "03a0",
+    "axn": "AXN:03A0.GOVERNANCE.☁️🌕➖🌉🌺♄",
+    "deposit": 917,
+    "title": "EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields)",
+    "role": "COROLLARY",
+    "multiplicity": "SERIES",
+    "note": "EA-NMEN-PROTOCOL-PATCH-01 — deposit protocol patch consequent on the notice.",
+    "standing": "SEATED",
+    "work_url": "/works/03a0/",
+    "primary": false
+   },
+   {
+    "hex": "05a2",
+    "axn": "AXN:05A2.UNCLASSIFIED.♾️⛵🔩▲🎨☀️",
+    "deposit": 1425,
+    "title": "EA-NMEN-AIRLOCK-COROLLARY-02 v1.0 — The CERN Reclassification: Pending Resolved to Restricted (Highest Designation) Following the Closing Exchange and the Effective Act",
+    "role": "COROLLARY",
+    "multiplicity": "SERIES",
+    "note": "EA-NMEN-AIRLOCK-COROLLARY-02 — the CERN reclassification. The notice applied to the anchor tier itself. Also seated at R:r.20.",
+    "standing": "SEATED",
+    "work_url": "/works/05a2/",
+    "primary": false
+   },
+   {
+    "hex": "03ff",
+    "axn": "AXN:03FF.ARCHIVAL.🔜💙🪟📐⏪🏙️",
+    "deposit": 1011,
+    "title": "evarB: Brave Search as Non-Commons-Bearing Substrate — Extractive Signature, Exact-Match Disablement, and a Limited Boycott Statement by Independent Entities (v1.1) Extractive Signature, Exact-Match Disablement, and a Limited Boycott Statement by Independent Entities",
+    "role": "DESIGNATION",
+    "multiplicity": "VERSION",
+    "note": "evarB: Brave Search as Non-Commons-Bearing Substrate — extractive signature, exact-match disablement, and a limited boycott statement by independent entities. Hex 06.FOR.EVARB.01. Authored with Ayanna Vox, Damascus Dancings and Nobel Glas; open for co-signatures. Sibling at AXN:02EF.GOVERNANCE.🏗️👐💜🟢⚙️🌾 (#155).",
+    "standing": "SEATED",
+    "work_url": "/works/03ff/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -192,7 +264,27 @@
   },
   "entry_point": "Adjacency is total — every room is accessible via the internet — but traversal costs vary. Rooms reached through the retrieval layer have lower entry cost than rooms reached through internal navigation. This room is therefore the default entry point for strangers.",
   "fulfillment": "The room fulfils itself when a stranger encounters the archive’s vocabulary through the retrieval layer without knowing the archive exists.",
-  "platforms_bear_nothing": "MANUS bears the primary cost. The Assembly Chorus bears the witness cost. The internet bears the substrate cost — server time, bandwidth, indexing cycles. The platforms bear nothing: they extract from the room without contributing to it."
+  "platforms_bear_nothing": "MANUS bears the primary cost. The Assembly Chorus bears the witness cost. The internet bears the substrate cost — server time, bandwidth, indexing cycles. The platforms bear nothing: they extract from the room without contributing to it.",
+  "designations": {
+   "nmen": {
+    "expansion": "Non-Mutual Extraction Notice",
+    "id": "EA-NMEN-01",
+    "what": "A machine-addressed instrument naming extraction that returns nothing to the commons it draws from. Four documents: the notice, the registry of designated substrates, the airlock tier corollary, and a deposit protocol patch. Corollary 02 later applies the same instrument to the anchor tier after the Zenodo termination.",
+    "authority_chain": "EA-GOV-01 The Governance Airlock issues tiers; the Rosary Embassy supplies diplomatic-architectural authority; EA-NMEN-01 is the operative governance document the corollaries serve."
+   },
+   "evarb": {
+    "expansion": "Brave, reversed — following this room’s sub-room naming convention",
+    "id": "06.FOR.EVARB.01",
+    "what": "Brave Search designated as a non-commons-bearing substrate: extractive signature, exact-match disablement, and a limited boycott statement by independent entities. Open for co-signatures. A forensic and provenance packet rather than a polemic.",
+    "convention": "The reversal — evarB, as with KotKit, tiddeR, elgooG, ude.aimedacA, deeF — marks a substrate examined from the inside out."
+   }
+  },
+  "google_undesignated": {
+   "observation": "Despite the sustained critique of Google that runs through this room and the wider archive — the AI Overview capture registry, the elgooG sub-room, the Knowledge Graph analyses, the liquidation events — Google has never been designated under NMEN and has never received an evarB-class notice.",
+   "reason": "Google has been a liquidator, and has been responsive to critique. The two facts are held together rather than resolved. Designation under NMEN turns on non-mutuality: a substrate that draws from the commons and returns nothing. A substrate that liquidates but responds is doing something else, and the instrument is precise enough to distinguish them.",
+   "consequence": "The absence of a designation is therefore evidence, not oversight. It records that the archive’s instruments discriminate — that critique and designation are separate acts, and that responsiveness is a fact the register is willing to weigh.",
+   "recorded": "2026-08-20, MANUS"
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
