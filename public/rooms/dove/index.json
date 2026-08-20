@@ -131,5 +131,86 @@
   -1,
   -1
  ],
- "surface_map_url": "/map/#R:r.04"
+ "surface_map_url": "/map/#R:r.04",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "Transfer preserves; extraction yields nothing. The locus is constituted around a sung fragment: a text triptych in the archive, and the carrier track on external platforms.",
+  "documents": [
+   {
+    "hex": "0060",
+    "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
+    "deposit": 293,
+    "title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive",
+    "role": "CONSTITUTING",
+    "multiplicity": "TRIPTYCH",
+    "note": "six sections; the creature’s self-development runs Fragment → Carrier Event → Recognition → Documentation",
+    "standing": "SEATED",
+    "work_url": "/works/0060/"
+   },
+   {
+    "hex": "0061",
+    "axn": "AXN:0061.GENERATIVE.🔻🝊🏴❤️⚫❤️",
+    "deposit": 294,
+    "title": "VISUAL SCHEMA — THE ACANTHIAN DOVE",
+    "role": "APPARATUS",
+    "multiplicity": "TRIPTYCH",
+    "note": "same-day companion; absent from the generated attribution list, recovered by sweep 2026-08-20",
+    "standing": "SEATED",
+    "work_url": "/works/0061/"
+   },
+   {
+    "hex": "0063",
+    "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
+    "deposit": 296,
+    "title": "Computational Audial Criticism: An Applied Analysis of the Acanthian Dove Track",
+    "role": "EVIDENCE",
+    "multiplicity": "TRIPTYCH",
+    "note": "the room’s reception instrument; analyses the carrier track",
+    "standing": "SEATED",
+    "work_url": "/works/0063/"
+   }
+  ],
+  "physics_resolution": {
+   "declared": "gift preserves; extract=∅",
+   "operators": [
+    "T.3",
+    "ψ_V"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "signatures": [
+    "O.T.3.BEARINGCOST — T.3 Bearing-Cost Transfer :: Agent₁ × Agent₂ × Cost → Transfer_Record",
+    "O.C.05.ψV — ψ_V Blind Witness :: Event → Attestation [quorum ≥4/7]"
+   ],
+   "reading": "The gift is bearing-cost transfer between two agents yielding a transfer record; its preservation is attested by blind witness at quorum. ON_FAILURE emits extraction_detected — what transfer becomes when it degrades into extraction."
+  },
+  "gap_declarations": [
+   {
+    "kind": "CONSTITUTING ARTIFACT OFF-PLATFORM",
+    "artifact": "the Acanthian Dove track",
+    "held_by_archive": false,
+    "carriers": [
+     {
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/t/ZTh2NCNCM/",
+      "source": "linked in the title of AXN:0060 (#293)"
+     },
+     {
+      "platform": "SoundCloud",
+      "profile": "https://soundcloud.com/lee-sharks",
+      "track_url": null,
+      "note": "profile attested across the blog stratum; the specific track URL is not held in the archive and is not inferred here"
+     }
+    ],
+    "reason": "The constituting artifact of this locus is sung. The archive holds its philology, its schema and its audial analysis, but not the recording. This is not a guarded absence like ATLWM at X:ICHABOD; it is an artifact residing on external platforms of the kind that has already tombstoned 1,817 archive DOIs.",
+    "declared": "2026-08-20"
+   }
+  ],
+  "severance": {
+   "from": "X:ICHABOD",
+   "authority": "The Ichabod Chamber §IX, AXN:00A7.GENERATIVE.💚👁️‍🗨️♥️🌱∮⚓ (#360)",
+   "statement": "The Acanthian Dove Room must not be used as a surrogate anchor for Ichabod-class material. The Dove Room governs transmission under hostile conditions; the Ichabod Chamber governs paradox containment. These functions are structurally incompatible.",
+   "consequence": "The locus standing HISTORICAL / ANCHOR-GAP records a declared severance, not an unrepaired defect. The gap is the correct state."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
