@@ -762,23 +762,59 @@
   "status": "CONSTITUTED",
   "ontology": "Runtime and governance: the mobile ontological operating system.",
   "primary_at_main": {
-   "axn": "AXN:017A.ARCHIVAL.📖👋🔐💫🪞🪞",
-   "deposit": 549,
-   "work_url": "/works/017a/",
+   "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+   "deposit": 558,
+   "work_url": "/works/0184/",
    "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
+   {
+    "hex": "0184",
+    "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+    "deposit": 558,
+    "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "EA-ARK-01 v4.2.7 — Mobile Ontological Operating System; the foundational architectural document, 41,561 words",
+    "standing": "SEATED",
+    "work_url": "/works/0184/",
+    "primary": true
+   },
+   {
+    "hex": "0183",
+    "axn": "AXN:0183.GOVERNANCE.🎨🕒🌙🏠🔭🌖",
+    "deposit": 557,
+    "title": "CRIMSON HEXAGON: SPACE ARK — Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture EA-ARK-0",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SINGLETON",
+    "note": "Mathematical and Formal Symbolic Compression",
+    "standing": "SEATED",
+    "work_url": "/works/0183/",
+    "primary": false
+   },
+   {
+    "hex": "0185",
+    "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+    "deposit": 28,
+    "title": "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0",
+    "role": "INSTANCE",
+    "multiplicity": "VERSION",
+    "note": "Musical Register: a fugue in twelve; variant at AXN:049B (#1162)",
+    "standing": "SEATED",
+    "work_url": "/works/0185/",
+    "primary": false
+   },
    {
     "hex": "017a",
     "axn": "AXN:017A.ARCHIVAL.📖👋🔐💫🪞🪞",
     "deposit": 549,
     "title": "🌑⬡ THE SPACE ARK What the Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture Hides 🌑 EA",
-    "role": "CONSTITUTING",
+    "role": "KERNEL",
     "multiplicity": "SINGLETON",
-    "note": "What the Mathematical and Formal Symbolic Compression carries — the Ark stated",
+    "note": "What the Mathematical and Formal Symbolic Compression carries — compressed statement of the Ark",
     "standing": "SEATED",
     "work_url": "/works/017a/",
-    "primary": true
+    "primary": false
    },
    {
     "hex": "0175",
@@ -799,7 +835,7 @@
     "title": "🌑⬡ THE LUNAR ARM Operator // Shadow — The Space Ark's Hidden Architecture",
     "role": "SHADOW",
     "multiplicity": "VERSION",
-    "note": "The Lunar Arm — Operator // Shadow, the Ark’s hidden side; also constitutes X:LUNAR-ARM",
+    "note": "The Lunar Arm — Operator // Shadow; also constitutes X:LUNAR-ARM",
     "standing": "SEATED",
     "work_url": "/works/0171/",
     "primary": false
@@ -812,7 +848,7 @@
     "π"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "A shared-constitution edge: the Lunar Arm document constitutes both this locus and X:LUNAR-ARM."
+   "note": "An earlier seating here took AXN:017A (#549) as primary. That is a compressed statement, not the Ark. Corrected 2026-08-20 to EA-ARK-01 v4.2.7."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
  }
