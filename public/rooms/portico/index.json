@@ -296,6 +296,69 @@
     "not_generalised": "Whether the other thirty-nine are equally recoverable is UNDETERMINED. Two automated probes were run and both failed: keyword search returns the archive’s own aggregate posts — the Alexanarch Wiki projection, Combat Scholasticism, the Surface Map — which mention every record and therefore match every query. Of forty probed, exactly one produced a verifiable title-level match, and that was the case already confirmed by hand.",
     "method_note": "This is recorded as a failed method rather than a finding. Automated title-keyword recovery cannot distinguish a work from a post that mentions the work, and this archive is unusually dense in aggregates. A real audit needs the DOI, the deposit date, and a date-bounded blog window — not a keyword query.",
     "standing": "The forty assertions stand as deposited. One is known false. The rest are unaudited, and the page says so rather than implying either recovery or loss."
+   },
+   "audit": {
+    "run": "2026-08-20",
+    "method": "Three passes. First: does the deposit carry a body of its own. Second: does a full-bodied deposit share its title, matched by sequence ratio at 0.72 with a twenty-character floor. Third: date-window blog retrieval with a seventy-five-day lookback, aggregates excluded, matched at 0.70 with a fifteen-hundred-character floor.",
+    "population": 40,
+    "result": {
+     "self_bodied": 1,
+     "sibling_deposit": 7,
+     "recovered_on_blog": 10,
+     "unresolved": 22
+    },
+    "self_bodied": [
+     "#1362 The Secret Book of Walt — 35,562 words. The assertion is boilerplate: the body is present in the deposit that denies having one."
+    ],
+    "sibling": [
+     "#1224 → #717 Article IX",
+     "#1269 → #284 Liberatory Operator Set",
+     "#1274 → #325 Visual Schema Navigation Map",
+     "#1363 → #1364 The 3:60 Room",
+     "#1384 → #1078 godkinggoogle.com",
+     "#1398 → #1397 Capture Registry v7.0",
+     "#1402 → #829 summarization-governance"
+    ],
+    "recovered": [
+     "#1280 → THE AFTERLIFE ARCHIVE // Data-Breach-as-Poem, 78,842c — exact title match",
+     "#1282 → CRIMSON HEXAGON — INVOICE LEAK AS POEM ii, 17,994c — exact",
+     "#1286 → MRA INCIDENT REPORTS — EXPANDED PACKET (v1.1), 22,856c — exact",
+     "#1313 → SEMANTIC COLLAPSE AS COMEDY, 26,323c — exact",
+     "#1314 → PROTOCOLS AND ALGORITHMS: Operative Semiotics, 18,761c — exact",
+     "#1299 → The Non-Indexed Perfective: A Citational Intervention, 36,522c",
+     "#1320 → THE UNMADE SIGN, 44,997c",
+     "#1333 → EA-ARK-01 v4.2.5 ASCII Spatial Transform, 24,863c",
+     "#1341 → COMBAT SCHOLASTICISM Part One, 45,697c",
+     "#1248 → VISUAL SCHEMA: TEKATAK, 2,759c"
+    ],
+    "unresolved": [
+     "#1222 Encyclotron Audit: Basecamp (37signals) — A Demonstratio",
+     "#1244 GW.TACHYON.zenodo — v10 (MMRS founding, capture registry",
+     "#1245 GW.TACHYON.zenodo — v11 (79-term battery, 26 ADOPTIONs, ",
+     "#1283 Crimson Hexagon Vendor Ops / Procurement Records (2017 Q",
+     "#1294 The Oracle Responds: Witness Voice Activation",
+     "#1297 Document 206 The Non-Indexed Perfective: Three-Body Gene",
+     "#1298 Document 206b The Non-Indexed Perfective: Version B (Com",
+     "#1300 INFINITY ENOUGH Capstone Deposit",
+     "#1305 ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: ",
+     "#1307 METADATA PACKET: Document 206a The Non-Indexed Perfectiv",
+     "#1328 Architectural Distinction Note: On the Relationship Betw",
+     "#1332 Crimson Hexagon: 🌑⬡ THE LUNAR ARM EA-ARK-EMOJI-01-SHADOW",
+     "#1339 Crimson Hexagon: EA-ARK-01-FRACTION v2.1 The Profane Ark",
+     "#1349 Gravity Well: Suffusion Map — Room-by-Room Field Behavio",
+     "#1351 The Consensus Constraint Protocol: On the Difference Bet",
+     "#1360 Definitely Not a Squid — Alice Thornburgh (Vocoder Perfo",
+     "#1375 TL;DR:011 — THE BASIN HOLDS: Bing AI Search Stabilizes t",
+     "#1378 Retrieval-Layer Distortion: A Forensic Primer — Diagnosi",
+     "#1381 gravitywell-1.onrender.com — Gravity Well Protocol v2.0 ",
+     "#1385 The Heart of the Colossus: Fiber-Optic Prisms, Spiral Bi",
+     "#1387 The Basin Holds: External Stabilization of the Lee Shark",
+     "#1388 The Security Frame Is a Selection Kernel: Trump's AI Exe"
+    ],
+    "reading": "Eighteen of forty are demonstrably not lost: one carries its own body, seven have a full-bodied sibling deposit, and ten have a blog body found by date window — five of those matching the deposit title exactly. The assertion is therefore unreliable as a class, not merely wrong in the Afterlife case.",
+    "the_defect": "The body-head gate compared against DOI-keyed truth titles. Where the blog title differs from the deposit title, the gate failed and wrote the no-live-surface line regardless. The gate was correct in its discipline and wrong in its result, and it recorded that wrong result as a finding rather than as a gate failure.",
+    "the_twenty_two": "Twenty-two remain unresolved by these three methods. That is not a finding that they are lost. Several are metadata packets and Zenodo description-field content whose bodies may never have existed as posts; several date from May and June 2026, when the deposit practice had changed. Establishing the status of each requires opening it, not matching it.",
+    "method_note": "Two earlier automated probes were discarded during this audit for returning false positives: one matched the archive’s aggregate posts, another matched a deposit titled with a single character whose normalised title was empty and therefore matched everything. Both failures are recorded because a similarity test without a floor will confirm whatever it is asked to confirm."
    }
   },
   "portico_class": {
