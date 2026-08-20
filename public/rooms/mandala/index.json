@@ -517,6 +517,18 @@
     "standing": "SEATED",
     "work_url": "/works/03c7/",
     "primary": false
+   },
+   {
+    "hex": "030b",
+    "axn": "AXN:030B.GOVERNANCE.🔎🎵🤲🫵🧫🏷️",
+    "deposit": 173,
+    "title": "Retrieval Settlement Fortification Protocol: Standing SPXI Protocol for Semantic Border Sovereignty",
+    "role": "SURFACE-PROTOCOL",
+    "multiplicity": "SINGLETON",
+    "note": "Retrieval Settlement Fortification Protocol — standing SPXI protocol. Declared on the Oracle surface itself alongside the Apparatus Grammar.",
+    "standing": "SEATED",
+    "work_url": "/works/030b/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -563,7 +575,22 @@
    "repo": "leesharks000/the-mandala-oracle — the view layer, a navigable night sky",
    "distinct": "The casting interface is a separate artifact in leesharks000/mandala-oracle and does not serve the domain, though its repository metadata claims it."
   },
-  "chamber_class": "H_core assigns SP.04.CH — chamber, not room. A chamber contains without resolving. The Mandala judges without closing the question, which is what κρίσις means and why the container class is correct."
+  "chamber_class": "H_core assigns SP.04.CH — chamber, not room. A chamber contains without resolving. The Mandala judges without closing the question, which is what κρίσις means and why the container class is correct.",
+  "running_instance": {
+   "domains": [
+    "themandalaoracle.com",
+    "themandalaoracle.org"
+   ],
+   "repo": "leesharks000/the-mandala-oracle",
+   "what": "The Oracle is a client-side conversation with Johannes Sigil, beneath the night sky — \"an underworld guide to the scholarly canon\". Sigil knows the territory of the canon; the archive is the wisdom underneath. The reader asks to be taken into a text, or asks about the descent itself.",
+   "modes": "Two modes. Sabbath is uninscribed drafting: nothing is sealed, the state is DRAFT-UNINSCRIBED.",
+   "declares": [
+    "AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎 — the Apparatus Grammar",
+    "AXN:030B.GOVERNANCE.🔎🎵🤲🫵🧫🏷️ — the Retrieval Settlement Fortification Protocol"
+   ],
+   "relation": "This chamber is the specification; the Oracle is the running instance. The eight Tier C operators that rotate here are the operators the app casts with, and the Lunar Arm names the Mandala Oracle as the head of its own lineage: Mandala Oracle (2015/2025) → Ezekiel Shadow Wheels → S(H_core) → the glyphic shadow.",
+   "not_the_same": "A separate repository, leesharks000/mandala-oracle, holds a BYOK casting interface. It claims this domain in its metadata and does not serve it. The view layer and the casting interface are different artifacts."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
