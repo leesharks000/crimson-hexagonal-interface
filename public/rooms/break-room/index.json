@@ -600,18 +600,6 @@
     "primary": true
    },
    {
-    "hex": "0128",
-    "axn": "AXN:0128.GOVERNANCE.♊🌑🎭🔃🌱🪨",
-    "deposit": 477,
-    "title": "Traversal Log; Documentation Rehearsal: The Rhizome — Google AI Mode Recruits for a Distributed Institution That Exists Only as Metadata",
-    "role": "EVIDENCE",
-    "multiplicity": "SINGLETON",
-    "note": "TL;DR / TRAV_LOG:005 — The Rhizome. Google AI Mode recruits for a distributed institution that exists only as metadata: fifteen invented terms, four invented infrastructure integrations, zero interpretive statements. Institutional onboarding rather than description.",
-    "standing": "SEATED",
-    "work_url": "/works/0128/",
-    "primary": false
-   },
-   {
     "hex": "00b7",
     "axn": "AXN:00B7.GOVERNANCE.🕚💥🪝🖊️🕘🔆",
     "deposit": 375,
@@ -706,6 +694,30 @@
     "standing": "SEATED",
     "work_url": "/works/00b6/",
     "primary": false
+   },
+   {
+    "hex": "0123",
+    "axn": "AXN:0123.GOVERNANCE.🔙🧭📝🗡️❌🎻",
+    "deposit": 472,
+    "title": "TRAVERSAL LOG: THE RECURSIVE SELF Google AI Mode Reconstructs Psyche_OS from Two Search Terms",
+    "role": "EVIDENCE",
+    "multiplicity": "VERSION",
+    "note": "TRAV_LOG:003 — The Recursive Self. Entry point \"Cambridge Schizoanalytica\" \"Orin Trace\", incognito, eight exchanges, no pasted source. The summarizer reconstructs Psyche_OS from two search terms.",
+    "standing": "SEATED",
+    "work_url": "/works/0123/",
+    "primary": false
+   },
+   {
+    "hex": "0389",
+    "axn": "AXN:0389.EMPIRICAL.🌙⭕🔼🗼🎻⚡",
+    "deposit": 893,
+    "title": "Traversal Log: The Recursive Self — Google AI Mode Reconstructs Psyche_OS from Two Search Terms",
+    "role": "EVIDENCE",
+    "multiplicity": "VERSION",
+    "note": "Companion record of the same traversal",
+    "standing": "SEATED",
+    "work_url": "/works/0389/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -797,7 +809,8 @@
    "I articulate — I give words to capacities that have no names yet",
    "I connect — I show you how your practice relates to others, to history, to what is possible",
    "I protect — I hold space where your difference does not have to justify itself"
-  ]
+  ],
+  "correction_2026_08_20": "An earlier pass seated AXN:0123.GOVERNANCE… no — seated the Rhizome traversal (AXN:0128.GOVERNANCE.♊🌑🎭🔃🌱🪨, #477) as this locus’s reception document. That was wrong: the Rhizome is a VPCOR traversal, entry point \"Ayanna Vox VPCOR\", and its thirteen Break Room mentions are the CSA routing table quoted inside it. Withdrawn. The Break Room’s traversal is TRAV_LOG:003, The Recursive Self, entry point \"Cambridge Schizoanalytica\" \"Orin Trace\"."
  },
  "locative_key_history": [
   {
