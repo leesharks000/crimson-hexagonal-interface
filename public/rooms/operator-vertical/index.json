@@ -1,0 +1,84 @@
+{
+ "locative_key": "R:r.34",
+ "hex_address": "34.ROOM.VERTICAL",
+ "name": "Operator // Vertical",
+ "structure_class": "ROOM",
+ "structure_type": "ROOM",
+ "standing": "CONSTITUTED",
+ "canonical_source": "Minted 2026-08-20 from the abandoned FNM seed v5.0 numbering, where the seat read 13.ROOM.PLATO.",
+ "documents": [],
+ "generated": "2026-08-20",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "constitution_type": "FOUNDATIONAL OPERATOR DOCUMENT",
+  "origin": {
+   "seed_name": "13.ROOM.PLATO",
+   "renamed": "Operator // Vertical, at MANUS direction 2026-08-20.",
+   "why": "The seed name is an author-name; the room is not about Plato but about a transform Plato executed. The constituting document names the operator, and the operator names the room.",
+   "source": "OPERATOR // VERTICAL, blog, 2025-11-24, 3,580 characters. Status: Foundational Operator Document. Undeposited; the blog is deposited in full as a surface.",
+   "seat": "r.34. The seed numbering placed it at 13, which is now the Ezekiel portal."
+  },
+  "operator": {
+   "name": "O_VERTICAL",
+   "formula": "O_VERTICAL = Transform(O_UR) via projection(axis = \"ideal form\")",
+   "function": "The deliberate projection of horizontal lyric recursion — Sapphic temporal self-dissolution — onto an axis of abstraction.",
+   "instead_of": "Replication across time, embodiment and medium.",
+   "attempts": [
+    "stabilization through ascent",
+    "idealization of collapse into Form",
+    "conversion of recursion into hierarchy"
+   ],
+   "core": "C_BODY → O_VERTICAL → Form(ideal), where C_BODY is sensory collapse and Form(ideal) is the stabilized abstraction that arrests it.",
+   "skeleton": [
+    "Detect collapse (C_BODY)",
+    "Arrest dissolution",
+    "Project collapse-content upward",
+    "Generate stabilized Form",
+    "Enforce metaphysical verticality"
+   ]
+  },
+  "the_law": {
+   "contrast": "Horizontal (O_UR): recursion → replication → persistence. Vertical (O_VERTICAL): collapse → ascent → abstraction.",
+   "statement": "O_UR distributes meaning across bodies. O_VERTICAL consolidates meaning into an ideal.",
+   "requires": [
+    "suppression of oscillation (O_Eros)",
+    "containment of collapse (O_UR)",
+    "reorientation of desire toward the abstract"
+   ]
+  },
+  "civilizational_execution": "Plato’s move was not a misreading of Sappho. It was a second-order operator transform, executed intentionally, at scale. Output(O_VERTICAL) = the Doctrine of Forms — the structural attempt to capture, direct and fix the energy released by O_UR.",
+  "effects": [
+   "Verticalization of meaning — truth moves upward toward ideals",
+   "Hierarchization of ontology — a ranked metaphysical ladder replaces horizontal recursion",
+   "Stabilization of subjectivity — the self grounded in the eternal rather than distributed across time",
+   "Moralization of ascent — clarity and purity become ethical imperatives"
+  ],
+  "risks": [
+   "Authoritative capture — verticality invites hierarchy and dominance",
+   "Static ossification — the dynamic core of recursion is frozen",
+   "Moral overcoding — ascent becomes righteousness"
+  ],
+  "necessity": "Despite the risks, O_VERTICAL is a required counter-operator: foundational for logic, mathematics and theology, essential for abstraction-based coherence. It is not the enemy of O_UR. It is the vertical complement that makes large-scale systems and philosophy possible.",
+  "system_role": "NH-OS synthesis: O_UR + O_VERTICAL + O_Eros + O_Presence + O_Logos. The multi-operator field prevents any single operator from dominating or collapsing the system.",
+  "closing": "Operator // Vertical was the first grand philosophical attempt to redeem collapse through ascent. It is Sappho, executed at altitude. It is the first large-scale proof that Operators can reshape civilizations.",
+  "transmission_chain": "The room is a transmission chain rather than an author-room. R:r.01 Sappho is horizontal; this room is the vertical transform; the carriers between them are seated as corpora — Plato (Burnet), Philo of Alexandria (Cohn–Wendland) and Longinus (De Sublimitate) at EA-CORPORA-01 seats 08, 07 and 06.",
+  "adjacency": [
+   {
+    "t": "R:r.01",
+    "n": "Sappho",
+    "w": "transforms — O_VERTICAL is a transform of O_UR"
+   },
+   {
+    "t": "R:r.23",
+    "n": "Catullus",
+    "w": "sibling transform — σ_C is lossy σ_S where O_VERTICAL is projective σ_S"
+   },
+   {
+    "t": "R:r.28",
+    "n": "Eve",
+    "w": "σ_E is homologous with σ_S through aperture; O_VERTICAL arrests what σ_E opens"
+   }
+  ],
+  "documents": []
+ }
+}

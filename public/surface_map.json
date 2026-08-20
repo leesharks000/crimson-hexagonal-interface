@@ -1785,6 +1785,16 @@
     "status": "MINTED — UNOCCUPIED",
     "works": 0
    }
+  },
+  {
+   "identity": {
+    "name": "Operator // Vertical",
+    "locative_key": "R:r.34",
+    "structure_type": "ROOM",
+    "hex_address": "34.ROOM.VERTICAL",
+    "minted": "2026-08-20",
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (13.ROOM.PLATO), renamed for its operator."
+   }
   }
  ],
  "fields": [
