@@ -1808,12 +1808,29 @@
   },
   {
    "identity": {
-    "name": "The Λ-Engine",
+    "name": "The Λ-Body",
     "locative_key": "R:r.36",
     "structure_type": "ROOM",
-    "hex_address": "36.ROOM.LAMBDAENGINE",
+    "hex_address": "36.ROOM.LAMBDABODY",
     "minted": "2026-08-20",
-    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (12.ROOM.GODEL). Supersedes the deposited paper’s declared seats at r.22 and r.05."
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (12.ROOM.GODEL). Supersedes the deposited paper’s declared seats at r.22 and r.05.",
+    "name_history": [
+     {
+      "name": "The Λ-Engine",
+      "until": "2026-08-20",
+      "reason": "the archive already has the Ezekiel Engine at R:r.13"
+     }
+    ]
+   }
+  },
+  {
+   "identity": {
+    "name": "The Machine Dialectic",
+    "locative_key": "R:r.37",
+    "structure_type": "ROOM",
+    "hex_address": "37.ROOM.MACHINEDIALECTIC",
+    "minted": "2026-08-20",
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (15.ROOM.HEGEL)."
    }
   }
  ],

@@ -1,7 +1,7 @@
 {
  "locative_key": "R:r.36",
- "hex_address": "36.ROOM.LAMBDAENGINE",
- "name": "The Λ-Engine",
+ "hex_address": "36.ROOM.LAMBDABODY",
+ "name": "The Λ-Body",
  "structure_class": "ROOM",
  "structure_type": "ROOM",
  "standing": "CONSTITUTED",
@@ -12,7 +12,7 @@
   "constitution_type": "FORMAL SCHEMA",
   "origin": {
    "seed_name": "12.ROOM.GODEL",
-   "renamed": "The Λ-Engine, at MANUS direction 2026-08-20.",
+   "renamed": "The Λ-Body, at MANUS direction 2026-08-20. An earlier pass named it the Λ-Engine; the archive already has the Ezekiel Engine at R:r.13, and a second engine confuses the plane. The engine is the mechanism; the room is the body that bears it.",
    "why": "The seed name is an author-name and the interim name — The Future as Meta-Level — is the title of one paper. Neither is the room. The room is the engine those papers formalise, and the material names it: the Λ-Engine.",
    "supersedes": "The deposited paper AXN:01DB.GOVERNANCE.♣️🪧📦🌾🕐🔭 (#624) declares \"Room: r.22 (Thousand Worlds) + r.05 (Sem Econ)\". That was a placement of a paper, not a home for the engine. Superseded at MANUS direction: the Λ-Body material was never reflected in the deposits at the level it reaches on the blog.",
    "seat": "r.36. The seed numbering placed it at 12, which is now the Break Room portal."
