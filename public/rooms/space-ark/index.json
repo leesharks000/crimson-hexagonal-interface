@@ -850,6 +850,136 @@
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
    "note": "An earlier seating took AXN:017A (#549) as primary. That is a compressed statement, not the Ark. Corrected to EA-ARK-01 v4.2.7."
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "declared_components": {
+   "source": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️ (#558) §COMPONENTS — EA-ARK-01 v4.2.7",
+   "note": "The Ark declares its components as counts and named sets, not as a document list. Its 68 DOI references are citations. Only three appear as components: the THUMB integration and the Dove and Marx operator anchors, all marked CLOSED. No further seating follows from them.",
+   "D_dodecad": {
+    "count": 12,
+    "logos": "Jack Feist (outside D)",
+    "genesis_order": [
+     "Feist",
+     "Sharks",
+     "Sigil",
+     "Dancings",
+     "Cranes",
+     "Fraction",
+     "Spellings",
+     "Vox",
+     "Morrow",
+     "Wells",
+     "Kuro",
+     "Trace",
+     "Glas"
+    ],
+    "adjacent": {
+     "name": "Viola Arquette",
+     "status": "PROVISIONAL",
+     "provenance": "r16 MSBGL"
+    }
+   },
+   "R_rooms": {
+    "core": 13,
+    "extended": 9,
+    "pending": 1,
+    "pending_name": "MSMRM",
+    "special": 4,
+    "total": 26,
+    "generated_slots": "unbounded",
+    "mpms": [
+     "MPM-01",
+     "MPM-02",
+     "MPM-03",
+     "MPM-04",
+     "MPM-05",
+     "MPM-06",
+     "MPM-07",
+     "MPM-08",
+     "MPM-09",
+     "MPM-10",
+     "MPM-11",
+     "MPM-12"
+    ],
+    "no_anchor": "none — Dove anchored (18215706); Marx provisionally anchored (18713917)"
+   },
+   "M_mantles": {
+    "count": 7,
+    "no_standalone_spec": [
+     "ArchPhil",
+     "Diplomat"
+    ]
+   },
+   "I_institutions": {
+    "institutions": 11,
+    "imprints": 4,
+    "inter_edges": "SPECIFIED"
+   },
+   "O_operators": {
+    "core": [
+     "σ_S",
+     "Θ",
+     "Ω",
+     "φ",
+     "ψ_V",
+     "β",
+     "S",
+     "ICM",
+     "τ_K"
+    ],
+    "extended": [
+     "ψ_π",
+     "SWERVE",
+     "ROUTE",
+     "†",
+     "γ",
+     "lawful_purposes",
+     "μ",
+     "κ_O",
+     "Ρ",
+     "Σ_LP",
+     "Λ_res"
+    ],
+    "phase_x": [
+     "T.1",
+     "T.2",
+     "T.3",
+     "T.4",
+     "T.5"
+    ],
+    "phase_x_note": "THUMB; doi 18451793; INTEGRATED v4.2.7",
+    "stacks": {
+     "COS": "extraction stack",
+     "FOS": "fascist stack",
+     "LOS": "liberatory set"
+    },
+    "lp_versions": [
+     "v0.4",
+     "Symbolon",
+     "v0.6",
+     "v0.7",
+     "v0.8",
+     "v0.9",
+     "v1.0",
+     "v1.1",
+     "v3.0 RATIFIED"
+    ],
+    "type_system": {
+     "kind_hierarchy": true,
+     "ichabod_error_routing": true
+    },
+    "closed": "Dove assigned T.3|gift, Marx assigned T.1|material, Borges assigned Λ_res — all CLOSED"
+   },
+   "Phi": {
+    "verified": 3,
+    "derived": 1,
+    "resonant": 2,
+    "dagger_sealed": "partial"
+   },
+   "W_witness": {
+    "substrates": 7,
+    "quorum": 4,
+    "manus": "Sharks"
+   }
+  }
  }
 }
