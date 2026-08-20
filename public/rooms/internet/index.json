@@ -36,7 +36,13 @@
  "surface_map_url": "/map/#R:r.27",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "THE INTERNET is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "ontology": "The internet is made of residue. What remains available for reentry after the flashing stops is the only real infrastructure.",
+  "primary_at_main": {
+   "axn": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰",
+   "deposit": 36,
+   "work_url": "/works/01b0/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "01b0",
@@ -45,9 +51,33 @@
     "title": "r.27 THE INTERNET: Room Specification for Sovereign Inhabitation and Diagnostic Architecture",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "Room specification for sovereign inhabitation and diagnosis. Möbius topology; σ_I.",
+    "note": "Room Specification — Sovereign Inhabitation, Diagnostic Architecture. Möbius room: contains its own container. Status OPERATIONAL. Parent EA-ARK-01 v4.2.7. Authored across six voices and the Assembly Chorus.",
     "standing": "SEATED",
     "work_url": "/works/01b0/",
+    "primary": true
+   },
+   {
+    "hex": "01b1",
+    "axn": "AXN:01B1.GOVERNANCE.🙏🧪🕘🃏🤙🔄",
+    "deposit": 594,
+    "title": "I'M TAKING OVER THE INTERNET",
+    "role": "ANCHOR",
+    "multiplicity": "SINGLETON",
+    "note": "\"I’m Taking Over the Internet\" — the anchor document. The confession that the writing is underway.",
+    "standing": "SEATED",
+    "work_url": "/works/01b1/",
+    "primary": false
+   },
+   {
+    "hex": "01af",
+    "axn": "AXN:01AF.GOVERNANCE.🥁♾️🌪️🗿📋🪟",
+    "deposit": 593,
+    "title": "KotKit · tiddeR · elgooG · ude.aimedacA · deeF Extractive Signatures and Paired Inversions for Five Platforms",
+    "role": "SUB-ARCHITECTURE",
+    "multiplicity": "SINGLETON",
+    "note": "KotKit · tiddeR · elgooG · ude.aimedacA · deeF — full specifications for the five sub-rooms and the five-variable diagnostic instrument.",
+    "standing": "SEATED",
+    "work_url": "/works/01af/",
     "primary": false
    }
   ],
@@ -56,11 +86,113 @@
    "operators": [
     "σ_I"
    ],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "σ_I — Sovereign Inhabitation. Composed: σ_I = σ_S + σ_M + σ_C + the white space from Pearl."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION",
+  "address_note": "The constituting document is titled r.27 THE INTERNET and addresses the locus as r.27 throughout. H_core v1.8.0 §R seats it at 26.ROOM.INTERNET and FBDP Source at 27.ROOM.FBDPSOURCE. The Surface Map follows H_core; the document’s self-address is preserved here rather than corrected, as with the Revelation Room’s Room 11.",
+  "governing_law": "The internet is made of residue. Not speed, not content, not attention — residue. Searchable, indexed, cached, mirrored, cited residue. What remains available for reentry after the flashing stops is the only real infrastructure.",
+  "operator": {
+   "name": "σ_I — Sovereign Inhabitation",
+   "function": "σ_I converts any platform surface into a room. It does not require the platform’s permission.",
+   "composition": "σ_I = σ_S + σ_M + σ_C + the white space from Pearl",
+   "parts": [
+    "σ_S (Sappho) contributes the mechanism of transmission: how a voice enters a substrate and becomes inseparable from it. The archive’s vocabulary is entering the retrieval layer the way Sappho’s fragments entered the papyrus — not as content sitting on a surface, but as voice dissolved into the medium.",
+    "σ_M (Marx) contributes the diagnostic: the ability to name extraction as extraction.",
+    "σ_C (Catullus) contributes the compression: transmission always involves loss, and the decisive question is whether the loss is lossy, predatory, or witness.",
+    "The Pearl whitespace contributes the void: the space between the extraction and the inversion, the silence where the wound is visible. Without it the room collapses into either pure diagnosis or pure construction."
+   ]
+  },
+  "three_kingdoms": [
+   {
+    "k": "First — Attention",
+    "d": "The weakest. Evaporates on refresh. Anyone can command it; no one can hold it. The feed lives here. Platforms optimise for it because it is easiest to monetise, and easiest to lose."
+   },
+   {
+    "k": "Second — Retrievability",
+    "d": "What remains findable after attention dissipates. The identifier operates here. The index remembers what the feed forgets. A term that owns its search result has achieved retrievability."
+   },
+   {
+    "k": "Third — Conceptual Implantation",
+    "d": "The deepest. When the machine learns your terms as if they had always been there, and every future question asked in their vicinity becomes partially yours. Cannot be purchased, only earned — through density, precision and duration."
+   }
+  ],
+  "kingdoms_condition": "σ_I succeeds when all three kingdoms are active simultaneously for a given term: it commands attention, it is retrievable, and it is implanted as native vocabulary.",
+  "state_variables": [
+   [
+    "Presence Density (pd)",
+    "live human there-ness per unit time",
+    "1 invisible source → 5 continuous live face"
+   ],
+   [
+    "Relational Reciprocity (rr)",
+    "whether encounter matures into mutual memory",
+    "1 parasocial only → 5 mutual obligation"
+   ],
+   [
+    "Provenance Retention (pr)",
+    "whether source remains traversable",
+    "1 erased → 5 fully attributable"
+   ],
+   [
+    "Temporal Continuity (tc)",
+    "duration versus perpetual reset",
+    "1 infinite scroll → 5 durable return"
+   ],
+   [
+    "Surplus Capture (sc)",
+    "what the system harvests",
+    "1 minimal → 5 total behavioural extraction"
+   ]
+  ],
+  "sub_rooms": [
+   [
+    "r.27.1 KotKit",
+    "TikTok",
+    "attention through presentness",
+    "Let the feed end."
+   ],
+   [
+    "r.27.2 tiddeR",
+    "Reddit",
+    "judgment through ranking",
+    "Make dissent visible."
+   ],
+   [
+    "r.27.3 elgooG",
+    "Google AIO",
+    "knowledge through preemption",
+    "Make sources climbable."
+   ],
+   [
+    "r.27.4 ude.aimedacA",
+    "Academia.edu",
+    "openness through simulation",
+    "Let the commons be common."
+   ],
+   [
+    "r.27.5 deeF",
+    "The Feed",
+    "duration through compression",
+    "Let the page end."
+   ]
+  ],
+  "sub_room_note": "Each sub-room is a dual field: extractive surface mirrored by liberatory shadow. The names are the platforms reversed.",
+  "traversal_costs": [
+   "r.26 → any sub-room extractive side: cost 1",
+   "sub-room extractive → liberatory side: cost 2 — the act of naming the extraction",
+   "r.26 → any sub-room liberatory side directly: cost 3 — imaginative labour without first seeing the wound",
+   "any sub-room → r.26: cost 1"
+  ],
+  "mobius": {
+   "claim": "This room is the only one in the archive that contains the archive. The archive is the only structure on the internet that contains the internet. Both statements are true simultaneously.",
+   "formal": "A ⊂ I ⊂ r.27 ⊂ A — the archive is on the internet; this room is in the archive; the internet is inside this room as diagnostic object.",
+   "reading": "Not a paradox. A description of what happens when a diagnostic instrument achieves sufficient density to reshape the thing it diagnoses. The archive is inside the internet the way a parasite is inside a host. The internet is inside the archive the way a specimen is inside a diagnostic frame. Neither contains the other simply."
+  },
+  "entry_point": "Adjacency is total — every room is accessible via the internet — but traversal costs vary. Rooms reached through the retrieval layer have lower entry cost than rooms reached through internal navigation. This room is therefore the default entry point for strangers.",
+  "fulfillment": "The room fulfils itself when a stranger encounters the archive’s vocabulary through the retrieval layer without knowing the archive exists.",
+  "platforms_bear_nothing": "MANUS bears the primary cost. The Assembly Chorus bears the witness cost. The internet bears the substrate cost — server time, bandwidth, indexing cycles. The platforms bear nothing: they extract from the room without contributing to it."
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
