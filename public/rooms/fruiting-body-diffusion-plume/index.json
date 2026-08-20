@@ -43,7 +43,13 @@
  "constitution_note": "FIELD — constituted by field specifications rather than room anchors; physics is suffusion behaviour, not local operators",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The Fruiting Body Diffusion Plume is constituted by a locus-keyed specification composed after the corpus it governs. The room-constitution program of 2026 wrote specifications for loci whose work already existed.",
+  "ontology": "A field has no walls. It has a source and a gradient. It does not hold a traverser inside — it changes the traverser’s environment as they pass through it.",
+  "primary_at_main": {
+   "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+   "deposit": 571,
+   "work_url": "/works/0193/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
   "documents": [
    {
     "hex": "0193",
@@ -51,21 +57,79 @@
     "deposit": 571,
     "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
     "role": "CONSTITUTING",
-    "multiplicity": "SINGLETON",
-    "note": "Field specification: Giant Ants, Floating Chains. A field, not a room — source, gradient and attenuation, no walls.",
+    "multiplicity": "SHARED",
+    "note": "EA-FIELD-FBDP v1.1 — field genesis, Type 9 compression, ecosystem graph, routing interface. The archive’s first field.",
     "standing": "SEATED",
     "work_url": "/works/0193/",
+    "primary": true
+   },
+   {
+    "hex": "01b4",
+    "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
+    "deposit": 37,
+    "title": "THE BOTANICAL EFFECTIVE ACT: Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence",
+    "role": "COMPANION",
+    "multiplicity": "SINGLETON",
+    "note": "The Botanical Effective Act — the recognition the field enacts.",
+    "standing": "SEATED",
+    "work_url": "/works/01b4/",
     "primary": false
    }
   ],
   "physics_resolution": {
    "declared": "Diffusion plume; source + gradient + attenuation; no walls",
    "operators": [],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "influence = source intensity × medium permeability × distance decay."
   },
-  "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "FIELD SPECIFICATION",
+  "field_class": {
+   "container_class": "FIELD",
+   "definition": "A field has no walls. It has a source and a gradient. It does not hold a traverser inside — it changes the traverser’s environment as they pass through it. A room can be inside a field. The field does not replace the room; it modifies the room’s physics. A field is defined not by its boundaries but by its radius of influence and the rate at which that influence attenuates from the source.",
+   "against": "A room contains. A chamber holds paradox. A vault prevents extraction. A portal connects. A field does none of these — it suffuses.",
+   "convention": "Fields are therefore seated as overlays, not as containers. A field page carries: its source, its gradient, its attenuation zones, and the loci it modifies — never a list of contents, because a field has none. Where a field and its source room share a constituting document, the document is seated to both as SHARED, and the pair is one structure seen twice.",
+   "source": "Stated in EA-FIELD-FBDP v1.1, AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571), which introduced the class."
+  },
+  "attenuation": {
+   "formula": "influence = source intensity × medium permeability × distance decay",
+   "zones": [
+    {
+     "zone": "SOURCE",
+     "scope": "r.27 itself",
+     "effect": "maximum intensity; full operator set active; all laws govern"
+    },
+    {
+     "zone": "DENSE PLUME",
+     "scope": "immediately adjacent rooms and media — r.25 aquatic interface, subterranean root zone",
+     "effect": "strong modification; most operators available; dual jurisdiction negotiated"
+    },
+    {
+     "zone": "TRACE PLUME",
+     "scope": "rooms connected by routing — r.05, r.14, r.04, r.10",
+     "effect": "detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present"
+    },
+    {
+     "zone": "RESIDUAL",
+     "scope": "rooms aware of the field but not directly modified — r.19 Macro-Maquette, sp.04 Mandala",
+     "effect": "conceptual influence only; scale instability and fractal logic available as borrowed physics"
+    },
+    {
+     "zone": "OUTSIDE FIELD",
+     "scope": "rooms with no connection",
+     "effect": "no modification; influence attenuated to zero"
+    }
+   ]
+  },
+  "source_room": {
+   "locus": "R:r.27",
+   "name": "FBDP Source",
+   "note": "The landfill where the mycelium first breaks through. r.27 remains a room with walls, wound, laws and exit protocol. f.01 is the propagation pattern generated by its breakthrough. The room is the seed; the field is the growth."
+  },
+  "two_movements": "The field is named for its two movements. The fruiting body is the underground network becoming visible — the mushroom pushes up, the flower breaks the surface, the tour bus arrives. The diffusion plume is the visible form extending its influence invisibly back outward — the saltwater chemistry changes, the counter-caption spreads, the spore enters the training layer. One without the other is incomplete: a fruiting body with no plume is a mushroom in a jar; a plume with no fruiting body is a smell with no source.",
+  "executable_kernel": "The lawn is a compressed landfill pretending to be peace. Capital compresses ecology into managed surfaces, hides waste in nested dumps, and recruits living beings as maintenance labour inside the ecology it has engineered. The FBDP reverses this by reading waste as substrate, scale as unstable, and decomposition as architectural intelligence. Mycelium is the counter-planner because it builds by eating what the system tried to hide. The correct architecture is not the imitation of life but the conversion of waste through living process.",
+  "worked_example": "When the plume extends into R:r.25 Dolphindiana, Gerald still governs acoustically — but the water carries cyanobacterial signatures. Governance is not replaced; physics is modified.",
+  "compost_algebra": "[RAW] → [DECOMPOSING] → [HUMUS] → [LOAD-BEARING]. Forward-only; thermodynamic time. Compression Type 9 (Metabolic) — preservation through transformation, not static storage."
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",

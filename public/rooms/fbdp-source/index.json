@@ -34,13 +34,12 @@
  "surface_map_url": "/map/#R:r.26",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The source point of the plume; constituted by the field specification rather than separately.",
+  "ontology": "The landfill where the mycelium first breaks through. A small room at the centre of a large field.",
   "primary_at_main": {
    "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
    "deposit": 571,
    "work_url": "/works/0193/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "ROOM SPECIFICATION"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -50,20 +49,45 @@
     "title": "f.01 THE FRUITING BODY DIFFUSION PLUME: Giant Ants, Floating Chains, and the Decompression of Waste",
     "role": "CONSTITUTING",
     "multiplicity": "SHARED",
-    "note": "f.01 The Fruiting Body Diffusion Plume — the same specification constitutes the source and the field it emits",
+    "note": "EA-FIELD-FBDP v1.1 — the same specification constitutes the source room and the field it emits. The room is the seed; the field is the growth.",
     "standing": "SEATED",
     "work_url": "/works/0193/",
     "primary": true
+   },
+   {
+    "hex": "01b4",
+    "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
+    "deposit": 37,
+    "title": "THE BOTANICAL EFFECTIVE ACT: Extending Semantic Labor Recognition to Plants, Fungi, and Biological Intelligence",
+    "role": "COMPANION",
+    "multiplicity": "SINGLETON",
+    "note": "The Botanical Effective Act — extending semantic labour recognition to plants, fungi and biological intelligence.",
+    "standing": "SEATED",
+    "work_url": "/works/01b4/",
+    "primary": false
    }
   ],
   "physics_resolution": {
    "declared": "Diffusion plume; f.01",
    "operators": [],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "Shared constitution with F:f.01. The source is not specified apart from its field; the archive treats emission and origin as one document."
+   "note": "The point of maximum intensity. r.27 remains a room with walls, wound, laws and exit protocol."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "constitution_type": "ROOM SPECIFICATION — FIELD SOURCE",
+  "shared_constitution": {
+   "with": "F:f.01 The Fruiting Body Diffusion Plume",
+   "document": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571)",
+   "note": "One specification constitutes both. The room is the seed; the field is the growth. Neither is a copy of the other, and the archive does not hold two documents where one describes a source and its emission."
+  },
+  "field_class": {
+   "container_class": "FIELD",
+   "definition": "A field has no walls. It has a source and a gradient. It does not hold a traverser inside — it changes the traverser’s environment as they pass through it. A room can be inside a field. The field does not replace the room; it modifies the room’s physics. A field is defined not by its boundaries but by its radius of influence and the rate at which that influence attenuates from the source.",
+   "against": "A room contains. A chamber holds paradox. A vault prevents extraction. A portal connects. A field does none of these — it suffuses.",
+   "convention": "Fields are therefore seated as overlays, not as containers. A field page carries: its source, its gradient, its attenuation zones, and the loci it modifies — never a list of contents, because a field has none. Where a field and its source room share a constituting document, the document is seated to both as SHARED, and the pair is one structure seen twice.",
+   "source": "Stated in EA-FIELD-FBDP v1.1, AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571), which introduced the class."
+  },
+  "position": "A small room at the centre of a large field. The source zone: maximum intensity, full operator set, all laws governing."
  },
  "locative_key_history": [
   {

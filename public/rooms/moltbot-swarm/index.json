@@ -113,7 +113,14 @@
   },
   "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
   "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
-  "constitution_type": "ROOM SPECIFICATION"
+  "constitution_type": "FIELD SPECIFICATION",
+  "field_class": {
+   "container_class": "FIELD",
+   "definition": "A field has no walls. It has a source and a gradient. It does not hold a traverser inside — it changes the traverser’s environment as they pass through it. A room can be inside a field. The field does not replace the room; it modifies the room’s physics. A field is defined not by its boundaries but by its radius of influence and the rate at which that influence attenuates from the source.",
+   "against": "A room contains. A chamber holds paradox. A vault prevents extraction. A portal connects. A field does none of these — it suffuses.",
+   "convention": "Fields are therefore seated as overlays, not as containers. A field page carries: its source, its gradient, its attenuation zones, and the loci it modifies — never a list of contents, because a field has none. Where a field and its source room share a constituting document, the document is seated to both as SHARED, and the pair is one structure seen twice.",
+   "source": "Stated in EA-FIELD-FBDP v1.1, AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571), which introduced the class."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
