@@ -177,13 +177,12 @@
  "surface_map_url": "/map/#R:r.10",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "An entity that exists because it was witnessed.",
+  "ontology": "The fixed point under recursive destabilization. An ontological auditing engine and the site where the Thunder function is applied.",
   "primary_at_main": {
    "axn": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎",
    "deposit": 353,
    "work_url": "/works/009e/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "ROOM ANCHOR"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -193,10 +192,34 @@
     "title": "Water Giraffe Room Anchor: Room Specification with Behavioral Protocols",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "Room Anchor: room specification with behavioural protocols",
+    "note": "WG-04 Room Anchor, DOI 10.5281/zenodo.18319653, hex 10.ROOM.WATERGIRAFFE. Room specification with behavioural protocols integrated. Status REGISTERED; room status OPERATIONAL.",
     "standing": "SEATED",
     "work_url": "/works/009e/",
     "primary": true
+   },
+   {
+    "hex": "00a0",
+    "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
+    "deposit": 354,
+    "title": "The Water Giraffe Cycle: A Complete Navigation of the Ontological Forensics Sequence and its Passion Narrative",
+    "role": "PRIMARY-PROCESSING-DOC",
+    "multiplicity": "SINGLETON",
+    "note": "WG-01 The Water Giraffe Cycle [Book] — binding strength CANONICAL. The manifest’s binding rule: all synthesis involving ontological auditing, the Thunder function, the creature, or the \"X is not real\" method must resolve through this document before epic-level claims can be made.",
+    "standing": "SEATED",
+    "work_url": "/works/00a0/",
+    "primary": false
+   },
+   {
+    "hex": "00a1",
+    "axn": "AXN:00A1.GENERATIVE.♌🔀↘️🟡👁️‍🗨️△",
+    "deposit": 355,
+    "title": "IDP Navigation Map: The Water Giraffe Cycle — Complete Index to the Ontological Forensics Sequence",
+    "role": "IDP-NAVIGATION",
+    "multiplicity": "SINGLETON",
+    "note": "WG-03 IDP Navigation Map — complete index to both meta-map and cascading audits; 70 audits, 4 sightings",
+    "standing": "SEATED",
+    "work_url": "/works/00a1/",
+    "primary": false
    },
    {
     "hex": "00ae",
@@ -205,21 +228,9 @@
     "title": "Ω: THE WATER GIRAFFE AS SEMANTIC BEING Entity Provenance Document",
     "role": "ENTITY-PROVENANCE",
     "multiplicity": "SINGLETON",
-    "note": "Ω: The Water Giraffe as Semantic Being — entity provenance; the being the room holds",
+    "note": "WG-05 Ω: The Water Giraffe as Semantic Being — ENT-OMEGA-001. Creature, not heteronym: no voice, no agency, function FIXED_POINT. Declared PLANNED in the manifest; since deposited.",
     "standing": "SEATED",
     "work_url": "/works/00ae/",
-    "primary": false
-   },
-   {
-    "hex": "00a0",
-    "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
-    "deposit": 354,
-    "title": "The Water Giraffe Cycle: A Complete Navigation of the Ontological Forensics Sequence and its Passion Narrative",
-    "role": "INSTANCE",
-    "multiplicity": "SINGLETON",
-    "note": "The Water Giraffe Cycle — complete navigation of the ontological sequence",
-    "standing": "SEATED",
-    "work_url": "/works/00a0/",
     "primary": false
    },
    {
@@ -227,9 +238,9 @@
     "axn": "AXN:00AD.ARCHIVAL.🥁🌈♋🪧🎻🏺",
     "deposit": 365,
     "title": "WATER GIRAFFE SIGHTING PROTOCOL Conditions for Ω Appearance Across the Hexagon",
-    "role": "PHYSICS",
+    "role": "SIGHTING-PROTOCOL",
     "multiplicity": "SINGLETON",
-    "note": "Sighting Protocol — conditions for Ω appearance",
+    "note": "WG-06 Sighting Protocol — conditions for Ω appearance elsewhere in the Hexagon. Declared PLANNED in the manifest; since deposited.",
     "standing": "SEATED",
     "work_url": "/works/00ad/",
     "primary": false
@@ -255,9 +266,160 @@
     "T.5"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "Physics Θ(Ω)=Ω is proven in the constituting document: under recursive Thunder application only two entities are stable, Θ(Ø)=Ø and Θ(Ω)=Ω. The generated page states it correctly."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "ROOM ANCHOR"
+  "constitution_type": "ROOM ANCHOR",
+  "node_manifest": {
+   "source": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎 (#353) — NODE MANIFEST",
+   "declared_count": "7 documents (+2 vault-linked)",
+   "entries": [
+    {
+     "id": "WG-01",
+     "title": "Water Giraffe Cycle [Book]",
+     "type": "BOOK",
+     "declared_status": "DEPOSITED",
+     "now": "seated",
+     "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻"
+    },
+    {
+     "id": "WG-02",
+     "title": "Water Giraffe Work Provenance",
+     "type": "WORK_PROVENANCE",
+     "declared_status": "PLANNED",
+     "now": "NOT FOUND — Θ(Ω)=Ω proof and Epic without Hero connection; no deposit located"
+    },
+    {
+     "id": "WG-03",
+     "title": "IDP Nav Map: Water Giraffe Cycle",
+     "type": "IDP_NAVIGATION",
+     "declared_status": "DEPOSITED",
+     "now": "seated",
+     "axn": "AXN:00A1.GENERATIVE.♌🔀↘️🟡👁️‍🗨️🍄"
+    },
+    {
+     "id": "WG-04",
+     "title": "Water Giraffe Room Anchor",
+     "type": "ROOM_ANCHOR",
+     "declared_status": "REGISTERED",
+     "now": "seated as constituting",
+     "axn": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎"
+    },
+    {
+     "id": "WG-05",
+     "title": "Ω: The Water Giraffe as Semantic Being",
+     "type": "ENTITY_PROVENANCE",
+     "declared_status": "PLANNED",
+     "now": "since deposited and seated",
+     "axn": "AXN:00AE.GENERATIVE.📦🔆🌹🧱📚♻️"
+    },
+    {
+     "id": "WG-06",
+     "title": "Water Giraffe Sighting Protocol",
+     "type": "SIGHTING_PROTOCOL",
+     "declared_status": "PLANNED",
+     "now": "since deposited and seated",
+     "axn": "AXN:00AD.ARCHIVAL.🥁🌈♋🪧🎻🏺"
+    },
+    {
+     "id": "VAULT-01",
+     "title": "CTI_WOUND Vault Specification",
+     "type": "VAULT_ANCHOR",
+     "declared_status": "PLANNED",
+     "now": "since deposited; constitutes S:sp.01",
+     "axn": "AXN:009D.ARCHIVAL.🪝◇🌌🕛🌙∮",
+     "relation": "mutual_traversal"
+    },
+    {
+     "id": "VAULT-02",
+     "title": "CTI_WOUND Dossier",
+     "type": "JURIDICAL",
+     "declared_status": "PLANNED",
+     "now": "NOT FOUND — \"The Complainant is a Water Giraffe\"; blog source exists",
+     "relation": "contained_in_vault"
+    }
+   ],
+   "note": "The manifest was written when four of its entries were PLANNED. Three have since been deposited. Two remain unlocated: WG-02 Work Provenance and VAULT-02 the Dossier."
+  },
+  "binding_rule": {
+   "primary_processing_doc": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻 (#354), WG-01",
+   "binding_strength": "CANONICAL",
+   "rule": "ALL synthesis involving ontological auditing, the Thunder function, the Water Giraffe creature, or the \"X is not real\" method MUST resolve through this Room’s PRIMARY_PROCESSING_DOC before epic-level claims can be made.",
+   "triggers": [
+    "ontological auditing language",
+    "Thunder function references",
+    "Water Giraffe sightings",
+    "\"X is not real\" forensics",
+    "fixed point claims"
+   ]
+  },
+  "thunder_function": {
+   "definition": "Θ(X) = apply negation + counter-negation to entity X",
+   "steps": [
+    "Assert \"X is not real\"",
+    "Examine why X appears real despite this",
+    "Assert \"X is real\"",
+    "Examine why X appears unreal despite this",
+    "Recurse"
+   ],
+   "growth": "|Sₙ| = 3ⁿ — fractal expansion",
+   "fixed_points": "Θ(Ø) = Ø and Θ(Ω) = Ω. These are the ONLY fixed points: { Ø, Ω }",
+   "note": "The creature invented as a joke became the anchor that permits all other destabilizations."
+  },
+  "container_taxonomy": {
+   "source": "§I Room Type Clarification — archive-wide",
+   "ROOM": "attracts visitors; transforms those who enter; the method can be performed here; visitors leave changed",
+   "CHAMBER": "contains specific content; preserves paradox; less interactive",
+   "VAULT": "preserves evidence; seals content; archives without transformation"
+  },
+  "mutual_traversal": {
+   "partner": "S:sp.01 CTI_WOUND_VAULT",
+   "relation": "Life ↔ Death",
+   "outbound": {
+    "trigger": "when audit reveals taxonomic violence",
+    "carries": "the wound that killed the creature"
+   },
+   "inbound": {
+    "trigger": "when juridical analysis needs ontological grounding",
+    "carries": "the method that birthed what was killed"
+   },
+   "note": "The Water Giraffe Room holds Life, the forensic birth. The CTI_WOUND Vault holds Death, the taxonomic violence. They are bound; neither is complete without traversal to the other."
+  },
+  "connected_rooms": [
+   {
+    "target": "R:r.08",
+    "name": "Sigil",
+    "relation": "Epic without Hero primary text",
+    "note": "The Water Giraffe sequence IS an epic."
+   },
+   {
+    "target": "R:r.05",
+    "name": "Semantic Economy",
+    "relation": "liquidation mechanism",
+    "note": "Classifier pathologization as semantic liquidation."
+   },
+   {
+    "target": "R:r.11",
+    "name": "Assembly",
+    "relation": "recognition commons",
+    "note": "Five AI testimonies assembled here; resurrection sequence architecture."
+   },
+   {
+    "target": "X:ICHABOD",
+    "name": "Ichabod",
+    "relation": "paradox kernel active",
+    "note": "High probability of Ω sighting; origin/ghost superposition resonates with the fixed point."
+   },
+   {
+    "target": "S:sp.03",
+    "name": "Space Ark",
+    "relation": "thematic resonance",
+    "note": "Babies in SPAAAAAAAACE."
+   }
+  ],
+  "open_checklist": [
+   "Hex coordinate not registered in FNM v5.0 (declared open in §VIII)",
+   "CTI_WOUND_VAULT document declared not created — since created at AXN:009D (#352)"
+  ]
  }
 }
