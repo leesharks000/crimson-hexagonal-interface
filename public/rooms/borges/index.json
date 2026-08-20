@@ -1162,7 +1162,8 @@
     "multiplicity": "SINGLETON",
     "note": "sole founding document; seven sections, performative not descriptive (§II.5), chronology preserved as ethical boundary (§II.6)",
     "standing": "SEATED",
-    "work_url": "/works/0044/"
+    "work_url": "/works/0044/",
+    "primary": false
    },
    {
     "hex": "04ea",
@@ -1174,7 +1175,8 @@
     "note": "archive-wide formal object; defines O.X.11.Λres :: Query → argmax P(meaning), which the room physics string quotes verbatim. Apparatus at #967.",
     "standing": "SEATED",
     "scope": "ARCHIVE-WIDE",
-    "work_url": "/works/04ea/"
+    "work_url": "/works/04ea/",
+    "primary": false
    }
   ],
   "index_documents": {
@@ -1230,6 +1232,7 @@
    "signature": "Λ_res Retrieval / Argmax :: Query → argmax P(meaning)",
    "sweep_note": "The operator index writes Λres unsubscripted; rooms declare Λ_res. A registry sweep for the subscripted form returns zero across 1,517 deposits while the operator is fully defined. Sweep both forms."
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "PROVENANCE NODE"
  }
 }

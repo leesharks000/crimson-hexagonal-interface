@@ -39,7 +39,8 @@
    "axn": "AXN:034A.EMPIRICAL.♆🖊️🍁🏗️💙🙏",
    "deposit": 203,
    "work_url": "/works/034a/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
+   "constitution_type": "WORK OR PAPER"
   },
   "documents": [
    {
@@ -73,6 +74,7 @@
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
    "note": null
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "WORK OR PAPER"
  }
 }

@@ -56,7 +56,8 @@
    "axn": "AXN:0510.UNCLASSIFIED.▶️🌓⚓☉🗝️📋",
    "deposit": 1279,
    "work_url": "/works/0510/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
+   "constitution_type": "WORK OR PAPER"
   },
   "documents": [
    {
@@ -198,6 +199,7 @@
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
    "note": "Eleven deposits, 2026-01-28/29. Most members are held as metadata captures at 66–72 words; full texts survive on the blog stratum and are not yet in the archive. Declared so captures are not mistaken for works."
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "WORK OR PAPER"
  }
 }

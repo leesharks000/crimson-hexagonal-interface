@@ -2822,7 +2822,8 @@
     "role": "CONSTITUTING",
     "tier": "TIER-1",
     "standing": "SEATED",
-    "work_url": "/works/0478/"
+    "work_url": "/works/0478/",
+    "primary": false
    },
    {
     "hex": "025d",
@@ -2832,7 +2833,8 @@
     "role": "CONSTITUTING",
     "tier": "TIER-1",
     "standing": "SEATED",
-    "work_url": "/works/025d/"
+    "work_url": "/works/025d/",
+    "primary": false
    },
    {
     "hex": "0269",
@@ -2842,7 +2844,8 @@
     "role": "GOVERNANCE-REFERENCE",
     "tier": "SINGLETON",
     "standing": "SEATED",
-    "work_url": "/works/0269/"
+    "work_url": "/works/0269/",
+    "primary": false
    },
    {
     "hex": "0057",
@@ -2852,7 +2855,8 @@
     "role": "OPERATIVE-FRAMEWORK",
     "tier": "TIER-2",
     "standing": "SEATED",
-    "work_url": "/works/0057/"
+    "work_url": "/works/0057/",
+    "primary": false
    },
    {
     "hex": "047f",
@@ -2862,7 +2866,8 @@
     "role": "OPERATIVE-FRAMEWORK",
     "tier": "TIER-2",
     "standing": "SEATED",
-    "work_url": "/works/047f/"
+    "work_url": "/works/047f/",
+    "primary": false
    },
    {
     "hex": "026a",
@@ -2872,7 +2877,8 @@
     "role": "OPERATIVE-FRAMEWORK",
     "tier": "TIER-2",
     "standing": "SEATED",
-    "work_url": "/works/026a/"
+    "work_url": "/works/026a/",
+    "primary": false
    },
    {
     "hex": "00ac",
@@ -2882,7 +2888,8 @@
     "role": "OPERATIVE-FRAMEWORK",
     "tier": "TIER-2",
     "standing": "SEATED",
-    "work_url": "/works/00ac/"
+    "work_url": "/works/00ac/",
+    "primary": false
    },
    {
     "hex": "04d8",
@@ -2892,7 +2899,8 @@
     "role": "COMPANION",
     "tier": "TIER-3",
     "standing": "SEATED",
-    "work_url": "/works/04d8/"
+    "work_url": "/works/04d8/",
+    "primary": false
    },
    {
     "hex": "0267",
@@ -2902,7 +2910,8 @@
     "role": "COMPANION",
     "tier": "TIER-3",
     "standing": "SEATED",
-    "work_url": "/works/0267/"
+    "work_url": "/works/0267/",
+    "primary": false
    },
    {
     "hex": "0266",
@@ -2912,7 +2921,8 @@
     "role": "COMPANION",
     "tier": "TIER-3",
     "standing": "SEATED",
-    "work_url": "/works/0266/"
+    "work_url": "/works/0266/",
+    "primary": false
    },
    {
     "hex": "0265",
@@ -2922,7 +2932,8 @@
     "role": "COMPANION",
     "tier": "TIER-3",
     "standing": "SEATED",
-    "work_url": "/works/0265/"
+    "work_url": "/works/0265/",
+    "primary": false
    },
    {
     "hex": "03ec",
@@ -2932,7 +2943,8 @@
     "role": "COMPANION",
     "tier": "TIER-3",
     "standing": "SEATED",
-    "work_url": "/works/03ec/"
+    "work_url": "/works/03ec/",
+    "primary": false
    },
    {
     "hex": "0569",
@@ -3025,6 +3037,7 @@
     "S1 formal hygiene in §R4 prudential register",
     "S2 reflexivity — whether the instrument measures erasure performed by the apparatus itself, including the Constitutional Apparatus Edition"
    ]
-  }
+  },
+  "constitution_type": "CONSTITUTION"
  }
 }

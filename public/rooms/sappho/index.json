@@ -487,7 +487,8 @@
     "note": "apparatus",
     "standing": "SEATED",
     "work_url": "/works/0054/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "0055",
@@ -499,7 +500,8 @@
     "note": "edition of record, declared by citation",
     "standing": "SEATED",
     "work_url": "/works/0055/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "0056",
@@ -511,7 +513,8 @@
     "note": "origin point",
     "standing": "SEATED",
     "work_url": "/works/0056/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "0066",
@@ -523,7 +526,8 @@
     "note": "architecture",
     "standing": "SEATED",
     "work_url": "/works/0066/",
-    "relations": []
+    "relations": [],
+    "primary": true
    },
    {
     "hex": "006d",
@@ -535,7 +539,8 @@
     "note": "hymn",
     "standing": "SEATED",
     "work_url": "/works/006d/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "006e",
@@ -547,7 +552,8 @@
     "note": "diagnostic",
     "standing": "SEATED",
     "work_url": "/works/006e/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "0074",
@@ -559,7 +565,8 @@
     "note": "kenosis",
     "standing": "SEATED",
     "work_url": "/works/0074/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "007f",
@@ -571,7 +578,8 @@
     "note": "superseded",
     "standing": "SUPERSEDED",
     "work_url": "/works/007f/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "008d",
@@ -583,7 +591,8 @@
     "note": "reception — and the anchor-declaring document",
     "standing": "SEATED",
     "work_url": "/works/008d/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "00fb",
@@ -595,7 +604,8 @@
     "note": "APZPZ C — reconstructed fourth stanza",
     "standing": "SEATED",
     "work_url": "/works/00fb/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "0146",
@@ -607,7 +617,8 @@
     "note": "substrate",
     "standing": "SEATED",
     "work_url": "/works/0146/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "04a0",
@@ -619,7 +630,8 @@
     "note": "superseded",
     "standing": "SUPERSEDED",
     "work_url": "/works/04a0/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "0507",
@@ -631,7 +643,8 @@
     "note": "work",
     "standing": "SEATED",
     "work_url": "/works/0507/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "052e",
@@ -643,7 +656,8 @@
     "note": "APZPZ A — Greek only",
     "standing": "SEATED",
     "work_url": "/works/052e/",
-    "relations": []
+    "relations": [],
+    "primary": false
    },
    {
     "hex": "052f",
@@ -655,7 +669,8 @@
     "note": "APZPZ B — Cranes translation",
     "standing": "SEATED",
     "work_url": "/works/052f/",
-    "relations": []
+    "relations": [],
+    "primary": false
    }
   ],
   "counts": {
@@ -674,7 +689,15 @@
     "PRIMARY-TEXT": 3
    }
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface. Divergence is a defect of the projection, never of the seat."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface. Divergence is a defect of the projection, never of the seat.",
+  "constitution_type": "ROOM SPECIFICATION",
+  "primary_at_main": {
+   "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+   "deposit": 299,
+   "work_url": "/works/0066/",
+   "constitution_type": "ROOM SPECIFICATION",
+   "rule": "The terminal document of the room’s iterations — the Hardened Reconstruction. Seated whole at main."
+  }
  },
  "documents_note": "The flat `documents` list is the generated attribution set, retained and AXN-repaired. `constitution` is the authored set and supersedes it for traversal."
 }

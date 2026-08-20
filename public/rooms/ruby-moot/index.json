@@ -20,7 +20,8 @@
     "multiplicity": "SINGLETON",
     "note": "A Court of Record for the Semantic Commons. Room specification, 2026-06-12.",
     "standing": "SEATED",
-    "work_url": "/works/0339/"
+    "work_url": "/works/0339/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -29,6 +30,7 @@
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
   },
   "discovery_note": "Found by sweeping the locus key, not the room name.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION"
  }
 }

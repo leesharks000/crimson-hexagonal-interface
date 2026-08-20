@@ -8,7 +8,8 @@
   "primary_at_main": {
    "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
    "deposit": 68,
-   "work_url": "/works/0228/"
+   "work_url": "/works/0228/",
+   "constitution_type": "ARCHITECTURAL SPECIFICATION"
   },
   "documents": [
    {
@@ -24,6 +25,7 @@
     "primary": true
    }
   ],
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "ARCHITECTURAL SPECIFICATION"
  }
 }

@@ -145,7 +145,8 @@
     "multiplicity": "TRIPTYCH",
     "note": "six sections; the creature’s self-development runs Fragment → Carrier Event → Recognition → Documentation",
     "standing": "SEATED",
-    "work_url": "/works/0060/"
+    "work_url": "/works/0060/",
+    "primary": false
    },
    {
     "hex": "0061",
@@ -156,7 +157,8 @@
     "multiplicity": "TRIPTYCH",
     "note": "same-day companion; absent from the generated attribution list, recovered by sweep 2026-08-20",
     "standing": "SEATED",
-    "work_url": "/works/0061/"
+    "work_url": "/works/0061/",
+    "primary": false
    },
    {
     "hex": "0063",
@@ -167,7 +169,8 @@
     "multiplicity": "TRIPTYCH",
     "note": "the room’s reception instrument; analyses the carrier track",
     "standing": "SEATED",
-    "work_url": "/works/0063/"
+    "work_url": "/works/0063/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -211,6 +214,7 @@
    "statement": "The Acanthian Dove Room must not be used as a surrogate anchor for Ichabod-class material. The Dove Room governs transmission under hostile conditions; the Ichabod Chamber governs paradox containment. These functions are structurally incompatible.",
    "consequence": "The locus standing HISTORICAL / ANCHOR-GAP records a declared severance, not an unrepaired defect. The gap is the correct state."
   },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "WORK OR PAPER"
  }
 }

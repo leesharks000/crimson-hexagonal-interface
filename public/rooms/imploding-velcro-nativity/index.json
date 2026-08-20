@@ -28,7 +28,8 @@
     "multiplicity": "SINGLETON",
     "note": "Room Physics for a Hosted Cosmology. Room specification, 2026-05-19.",
     "standing": "SEATED",
-    "work_url": "/works/0293/"
+    "work_url": "/works/0293/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -37,6 +38,7 @@
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)"
   },
   "discovery_note": "Found by sweeping the locus key, not the room name.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION"
  }
 }

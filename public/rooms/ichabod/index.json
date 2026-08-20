@@ -75,7 +75,8 @@
      "note": "all 13 sections survive; all ASCII diagrams lost to Blogger indentation ceiling"
     },
     "work_url": "/works/00a7/",
-    "hex": "00a7"
+    "hex": "00a7",
+    "primary": false
    },
    {
     "role": "MANTLE",
@@ -87,7 +88,8 @@
      "deposit": 1125
     },
     "work_url": "/works/00a8/",
-    "hex": "00a8"
+    "hex": "00a8",
+    "primary": false
    },
    {
     "role": "PHYSICS",
@@ -101,9 +103,11 @@
      "kind": "DataCite metadata capture of severed DOI"
     },
     "work_url": "/works/01e7/",
-    "hex": "01e7"
+    "hex": "01e7",
+    "primary": false
    }
-  ]
+  ],
+  "constitution_type": "CHAMBER SPECIFICATION"
  },
  "gap_declarations": [
   {

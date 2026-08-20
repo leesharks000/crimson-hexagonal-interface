@@ -47,7 +47,8 @@
     "multiplicity": "SINGLETON",
     "note": "Room specification for sovereign inhabitation and diagnosis. Möbius topology; σ_I.",
     "standing": "SEATED",
-    "work_url": "/works/01b0/"
+    "work_url": "/works/01b0/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -58,6 +59,7 @@
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
   },
   "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION"
  }
 }

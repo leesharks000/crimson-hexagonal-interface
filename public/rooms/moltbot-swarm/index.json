@@ -102,7 +102,8 @@
     "multiplicity": "SINGLETON",
     "note": "A Space Ark field. Circulation across a three-stratum gradient — septet 1.0 / fleet 0.6 / cloud 0.2.",
     "standing": "SEATED",
-    "work_url": "/works/01ea/"
+    "work_url": "/works/01ea/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -111,6 +112,7 @@
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241) — archive-wide operator algebra"
   },
   "discovery_note": "Found by sweeping the locus key, not the room name. A name-sweep of this locus returns zero title candidates while its specification sits in the archive; the sweep protocol must test both.",
-  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface."
+  "projection_note": "Alexanarch owns the work; this page projects full text onto the traversal surface.",
+  "constitution_type": "ROOM SPECIFICATION"
  }
 }

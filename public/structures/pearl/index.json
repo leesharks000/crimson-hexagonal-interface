@@ -8,7 +8,8 @@
   "primary_at_main": {
    "axn": "AXN:0085.GENERATIVE.🔆🔙□🔍🔃➕",
    "deposit": 330,
-   "work_url": "/works/0085/"
+   "work_url": "/works/0085/",
+   "constitution_type": "NAVIGATION MAP"
   },
   "documents": [
    {
@@ -48,6 +49,7 @@
     "primary": false
    }
   ],
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
+  "constitution_type": "NAVIGATION MAP"
  }
 }
