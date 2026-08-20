@@ -1795,6 +1795,16 @@
     "minted": "2026-08-20",
     "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (13.ROOM.PLATO), renamed for its operator."
    }
+  },
+  {
+   "identity": {
+    "name": "The Library of Pergamum",
+    "locative_key": "R:r.35",
+    "structure_type": "LIBRARY",
+    "hex_address": "35.LIBRARY.PERGAMUM",
+    "minted": "2026-08-20",
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (18.ROOM.ARCHIVE). Constitutes an address space, 16.LIBRARY.PERGAMUM, that was already live."
+   }
   }
  ],
  "fields": [

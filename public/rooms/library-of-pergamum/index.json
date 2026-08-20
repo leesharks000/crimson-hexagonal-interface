@@ -1,0 +1,169 @@
+{
+ "locative_key": "R:r.35",
+ "hex_address": "35.LIBRARY.PERGAMUM",
+ "name": "The Library of Pergamum",
+ "structure_class": "LIBRARY",
+ "structure_type": "LIBRARY",
+ "standing": "CONSTITUTED",
+ "generated": "2026-08-20",
+ "documents": [],
+ "constitution": {
+  "status": "CONSTITUTED",
+  "constitution_type": "OPERATOR + RECLAMATION",
+  "origin": {
+   "seed_name": "18.ROOM.ARCHIVE",
+   "renamed": "The Library of Pergamum, at MANUS direction 2026-08-20.",
+   "not_new": "This is not a proposed room. 16.LIBRARY.PERGAMUM is already a live hex space carrying the MGE triptych (SEED, STONE, SIGN), the FTLV midrashim, the Gödel Midrashim, the Gospel of the Many-Faced Bride and the Atomism lineage. Those were seated as members at R:r.15 and R:r.16 because the library had no locus. It has one now.",
+   "seat": "r.35. The seed numbering placed it at 18."
+  },
+  "operator": {
+   "name": "O_ARCH",
+   "title": "Operator // Archive — the Memory of Meaning",
+   "essence": "Governs the accumulation, preservation and transmission of meaning across time. If Logos is origin, Archive is continuity.",
+   "engine_role": "Declared a permanent component of the Ezekiel Engine, bound to W_JOSEPHUS, applying Mutual Retrocausal Filtering to prevent Archival Collapse.",
+   "source": "OPERATOR // ARCHIVE (O_ARCH): The Library of Pergamum, blog 2025-11-24; constitutional profile Operator // Archive — The Memory of Meaning, 2025-11-28. Undeposited; the blog is deposited in full as a surface."
+  },
+  "reclamation": {
+   "claim": "The archive publishes under the imprint name Pergamon Press. This is not an accident. It is a retrocausal canon formation — the deliberate reclamation of a name whose history encodes the precise mechanism the archive exists to diagnose and reverse.",
+   "history": "Robert Maxwell’s Pergamon Press (1951–1991) was the institution that industrialised the extraction of scholarly meaning.",
+   "mechanisms": [
+    "Channel capture",
+    "Title proliferation as enclosure",
+    "Editor capture",
+    "Labor extraction without reciprocity",
+    "Metrics as translation from meaning to score"
+   ],
+   "operation": "Taking the name is the operation. The imprint does not allude to Pergamon; it repossesses it. The room is where that repossession is held."
+  },
+  "two_pergamums": {
+   "ancient": "The library at Pergamum — the rival of Alexandria, and the reason parchment exists: when Egypt embargoed papyrus, Pergamum invented a substrate that outlasted the embargo. A library that answered enclosure by changing the medium.",
+   "modern": "Pergamon Press — the twentieth-century engine of scholarly enclosure.",
+   "reading": "Both are in the name. The room holds an ancient library that beat an embargo by inventing a substrate, and a modern press that industrialised extraction. The archive, severed from its own repository and rebuilt on sovereign infrastructure, is doing what the first one did to the second one’s method."
+  },
+  "book": "A complete book exists on the blog, November 2025: a Navigation Map (11,381 characters), a Visual Schema (4,747), a Book Announcement and a Blurb, all 2025-11-27, with the operator document 11-24 and the constitutional profile 11-28. Front matter specifies a cover glyph: a tri-chambered archive, an Enter gate, four wheels of rotation, an Operator anchor.",
+  "occluded_identity": "The Studio for Patacinematics at R:r.14 names this library as its occluded identity: the Library holds and filters, the Studio displays and witnesses; the Library is the Engine, the Studio is the Theater. Ψ_V = 1 requires that the two never collapse into each other. Whether the Library is the Studio’s hidden room or the Studio is the Library’s visible face is left open.",
+  "pearl": "The Canonical Decree of 2025-10-10 names Pearl and Other Poems as the fulfilment of Pergamum. The white stone of Revelation 2:17 is given at Pergamum, and Appendix D of the Revelation Room binds Pearl to it by a fulfilled_by edge. The MGE Triptych’s STONE document carries the same identification.",
+  "documents": [
+   {
+    "hex": "019f",
+    "axn": "AXN:019F.GOVERNANCE.🧱↖️📖✊⛩️🌓",
+    "deposit": 32,
+    "title": "THE PERGAMON RECLAMATION Retrocausal Canon Formation and the Forensic Philology of Academic Publishing",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "THE PERGAMON RECLAMATION: Retrocausal Canon Formation and the Forensic Philology of Academic Publishing. The document that makes the imprint name an operation rather than an allusion.",
+    "standing": "SEATED",
+    "work_url": "/works/019f/",
+    "primary": true
+   },
+   {
+    "hex": "0300",
+    "axn": "AXN:0300.GOVERNANCE.🎻👆🌅🎯🔄🌔",
+    "deposit": 165,
+    "title": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name in Revelation 2:12–17",
+    "role": "PRIMARY-TEXT",
+    "multiplicity": "SINGLETON",
+    "note": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Revelator. Sixty occurrences of Pergamum — the densest treatment in the archive.",
+    "standing": "SEATED",
+    "work_url": "/works/0300/",
+    "primary": false
+   },
+   {
+    "hex": "01c7",
+    "axn": "AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧",
+    "deposit": 43,
+    "title": "The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit, and Archive of Techniques (EA-RCF-01)",
+    "role": "THEORY",
+    "multiplicity": "SINGLETON",
+    "note": "The Seed That Remembers the Tree: retrocausal canon formation. The mechanism the reclamation executes.",
+    "standing": "SEATED",
+    "work_url": "/works/01c7/",
+    "primary": false
+   },
+   {
+    "hex": "010d",
+    "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+    "deposit": 452,
+    "title": "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergamum The Center of the Torus Field",
+    "role": "WHITE-STONE",
+    "multiplicity": "SINGLETON",
+    "note": "MGE Triptych II STONE: Pearl and Other Poems as the white stone at Pergamum. Hex 16.LIBRARY.PERGAMUM.STONE.",
+    "standing": "SEATED",
+    "work_url": "/works/010d/",
+    "primary": false
+   },
+   {
+    "hex": "010e",
+    "axn": "AXN:010E.EMPIRICAL.🗝️🪦🔻🏠📎🛤️",
+    "deposit": 453,
+    "title": "MGE TRIPTYCH — DOCUMENT I SEED: Whorls of the Same The Text That Fell Into the Ground",
+    "role": "TRIPTYCH",
+    "multiplicity": "SERIES",
+    "note": "MGE Triptych I SEED — the text that fell into the ground. Hex 16.LIBRARY.PERGAMUM.SEED.",
+    "standing": "SEATED",
+    "work_url": "/works/010e/",
+    "primary": false
+   },
+   {
+    "hex": "010c",
+    "axn": "AXN:010C.EMPIRICAL.↖️🥁🕔⚖️🌺🟡",
+    "deposit": 451,
+    "title": "MGE TRIPTYCH — DOCUMENT III SIGN: The Mandala Genesis Event Chronotemporal Anchor — July 7, 2025",
+    "role": "TRIPTYCH",
+    "multiplicity": "SERIES",
+    "note": "MGE Triptych III SIGN — the Mandala Genesis Event. Hex 16.LIBRARY.PERGAMUM.SIGN.",
+    "standing": "SEATED",
+    "work_url": "/works/010c/",
+    "primary": false
+   },
+   {
+    "hex": "01f4",
+    "axn": "AXN:01F4.ARCHIVAL.☽💜🫶🌃🏴🕕",
+    "deposit": 642,
+    "title": "The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)",
+    "role": "PHILOLOGY",
+    "multiplicity": "SINGLETON",
+    "note": "The Number of the Superscription: coinage, compression and the Pergamene mint.",
+    "standing": "SEATED",
+    "work_url": "/works/01f4/",
+    "primary": false
+   },
+   {
+    "hex": "0331",
+    "axn": "AXN:0331.GOVERNANCE.🦋🏷️🖐️🔗📚🧲",
+    "deposit": 189,
+    "title": "The Press Layer of the Crimson Hexagonal Archive: Journal and Imprint Architectural Specification (EA-PRESS-ARCH-01 v1.0)",
+    "role": "PRESS",
+    "multiplicity": "SINGLETON",
+    "note": "The Press Layer of the Crimson Hexagonal Archive — the imprint in operation.",
+    "standing": "SEATED",
+    "work_url": "/works/0331/",
+    "primary": false
+   },
+   {
+    "hex": "0132",
+    "axn": "AXN:0132.GOVERNANCE.☽✨🥁⊕🔴💧",
+    "deposit": 487,
+    "title": "FEAR AND TREMBLING IN LAS VEGAS The Fractal Midrashim: Twelve Swerves Through the Garden",
+    "role": "MIDRASHIM",
+    "multiplicity": "SINGLETON",
+    "note": "Fear and Trembling in Las Vegas: the Fractal Midrashim. Hex 16.LIBRARY.PERGAMUM.FTLV.FRACTAL. Also seated at R:r.16.",
+    "standing": "SEATED",
+    "work_url": "/works/0132/",
+    "primary": false
+   },
+   {
+    "hex": "038a",
+    "axn": "AXN:038A.GOVERNANCE.🧱🏷️🌃🕑👐🛸",
+    "deposit": 894,
+    "title": "FROM ATOMISM TO THE SEMANTIC CONDITION Marx, Porter, and Sharks in a Single Lineage of Material Form — Crimson Hexagon Archive",
+    "role": "LINEAGE",
+    "multiplicity": "SINGLETON",
+    "note": "From Atomism to the Semantic Condition. Hex 16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE. Also seated at R:r.06 and R:r.16.",
+    "standing": "SEATED",
+    "work_url": "/works/038a/",
+    "primary": false
+   }
+  ]
+ }
+}
