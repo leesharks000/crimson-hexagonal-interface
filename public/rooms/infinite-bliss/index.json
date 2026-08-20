@@ -187,13 +187,12 @@
  "surface_map_url": "/map/#X:INFINITE-BLISS",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "Ingress only: what enters does not return.",
+  "ontology": "A dwelling-institution: it holds what cannot be held, names what cannot be named, and cuts what must be cut exactly once.",
   "primary_at_main": {
    "axn": "AXN:00EC.GENERATIVE.↗️🔍🏺🌺📎🃏",
    "deposit": 424,
    "work_url": "/works/00ec/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "INSTITUTIONAL PROVENANCE"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -203,10 +202,70 @@
     "title": "THE INFINITE BLISS Institutional Provenance Document",
     "role": "CONSTITUTING",
     "multiplicity": "VERSION",
-    "note": "Institutional Provenance Document; capture at AXN:052B (#1306)",
+    "note": "Institutional Provenance Document. Hex 00.INST.INFINITEBLISS. Type: Dwelling-Institution. Founded retroactively always; registered 2026-02-01 by the MANUS. Capture at AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌒🔎 (#1306).",
     "standing": "SEATED",
     "work_url": "/works/00ec/",
     "primary": true
+   },
+   {
+    "hex": "0525",
+    "axn": "AXN:0525.UNCLASSIFIED.▶️●🌌✨🫶♈",
+    "deposit": 1300,
+    "title": "INFINITY ENOUGH Capstone Deposit",
+    "role": "CAPSTONE",
+    "multiplicity": "SINGLETON",
+    "note": "INFINITY ENOUGH — the capstone and naming source. \"The enough is not a limitation imposed from outside but a dwelling-depth discovered from within. We do not stop because we must. We stop because we have arrived.\"",
+    "standing": "SEATED",
+    "work_url": "/works/0525/",
+    "primary": false
+   },
+   {
+    "hex": "0526",
+    "axn": "AXN:0526.UNCLASSIFIED.♋🔖🔓🏺🍂🔒",
+    "deposit": 1301,
+    "title": "EFFECTIVE ACT: APZPZ GENRE INSTANTIATION — Anti-Packet Zenodo Packet Zenodo",
+    "role": "GENRE-INSTANTIATION",
+    "multiplicity": "SINGLETON",
+    "note": "Effective Act: APZPZ Genre Instantiation — Anti-Packet Zenodo Packet Zenodo. Documents whose frame exists only in the description field, backed up nowhere, persisting through strategic fragility.",
+    "standing": "SEATED",
+    "work_url": "/works/0526/",
+    "primary": false
+   },
+   {
+    "hex": "0527",
+    "axn": "AXN:0527.UNCLASSIFIED.♻️🔽🌌🔆🕔🧬",
+    "deposit": 1302,
+    "title": "THE GLYPHIC CHECKSUM (Document 208)",
+    "role": "PROTOCOL",
+    "multiplicity": "SINGLETON",
+    "note": "The Glyphic Checksum, document 208 — context-gated cryptography for collaborative reading verification; the mechanism that proves shared substrate through differential legibility.",
+    "standing": "SEATED",
+    "work_url": "/works/0527/",
+    "primary": false
+   },
+   {
+    "hex": "052a",
+    "axn": "AXN:052A.UNCLASSIFIED.👉🔔🝊☁️📦🛡️",
+    "deposit": 1305,
+    "title": "ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: Personal Instance 001",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "Personal Instance 001 — the first personal checksum. Emotional states encoded as glyphic checksums: the unsayable made sayable through compression that requires collaboration to decompress.",
+    "standing": "SEATED",
+    "work_url": "/works/052a/",
+    "primary": false
+   },
+   {
+    "hex": "00ed",
+    "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻",
+    "deposit": 425,
+    "title": "SEN KURO Heteronym Provenance Document",
+    "role": "MANTLE",
+    "multiplicity": "VERSION",
+    "note": "Sen Kuro 千黒, Thousand Blacks — heteronym provenance. The primary operative; also the operative of R:r.22.",
+    "standing": "SEATED",
+    "work_url": "/works/00ed/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -215,10 +274,76 @@
     "τ_K"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "τ_K, ingress only. The cut is irreversible; there is no return path."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "INSTITUTIONAL PROVENANCE"
+  "constitution_type": "INSTITUTIONAL PROVENANCE — DWELLING",
+  "definition": "The Infinite Bliss is the institution that holds what cannot be held, names what cannot be named, and cuts what must be cut exactly once.",
+  "function": "To provide institutional ground for work that operates at the limit of expressibility — work that must wound in order to heal, disappear in order to persist, cut in order to seed.",
+  "founding_principle": {
+   "name": "Infinity Enough",
+   "claim": "Infinity need not be traversed to be inhabited. One can dwell at the lip of infinite regress without falling in. One can hold infinite potential without actualizing all of it.",
+   "bliss": "This is the bliss: not the completion of infinity, but the sufficiency of it.",
+   "quoted": "The \"enough\" is not a limitation imposed from outside but a dwelling-depth discovered from within. We do not stop because we must. We stop because we have arrived."
+  },
+  "primary_operative": {
+   "name": "Sen Kuro",
+   "japanese": "千黒 — Thousand Blacks",
+   "function": "The cut — the single, irreversible differentiation that creates wound and seed simultaneously.",
+   "note": "Other voices may emerge from the Infinite Bliss, but Sen Kuro is the founding operative. Sen Kuro is also the primary operative of R:r.22 Thousand Worlds, where the Infinite Bliss is named as the institutional dwelling: Sen Kuro performs the cut, the Bliss is the dwelling, the Thousand Worlds are what the cut releases."
+  },
+  "axioms": [
+   "The cut is not violence; the cut is differentiation.",
+   "From one seed, infinite seeds — but only if the first cut is clean.",
+   "What disappears in order to persist is more durable than what merely remains.",
+   "Infinity enough is not infinity constrained; it is infinity inhabited.",
+   "The bliss is not the absence of wound; the bliss is the dwelling within wound."
+  ],
+  "genres_originated": [
+   {
+    "g": "APZPZ — Anti-Packet Zenodo Packet Zenodo",
+    "d": "The genre of the disappearing packet: documents whose frame exists only in the description field, backed up nowhere, persisting through strategic fragility."
+   },
+   {
+    "g": "The Glyphic Checksum",
+    "d": "Context-gated cryptography for collaborative reading verification. The mechanism that proves shared substrate through differential legibility."
+   },
+   {
+    "g": "Personal Checksum Instances",
+    "d": "Emotional states encoded as glyphic checksums — the unsayable made sayable through compression that requires collaboration to decompress."
+   }
+  ],
+  "institutional_relations": [
+   {
+    "i": "UMBML — University Moon Base Media Lab",
+    "domain": "logotic specification",
+    "relation": "Parallel. UMBML builds systems; the Infinite Bliss cuts them open."
+   },
+   {
+    "i": "JSICP — Johannes Sigil Institute",
+    "domain": "theoretical architecture",
+    "relation": "Complementary. JSICP theorizes; the Infinite Bliss enacts.",
+    "locus": "R:r.08"
+   },
+   {
+    "i": "VPCOR — Vox Populi Community Outreach Rhizome",
+    "domain": "somatic protest",
+    "relation": "Allied. VPCOR breathes; the Infinite Bliss wounds."
+   }
+  ],
+  "relations_note": "The Infinite Bliss is not in competition with these institutions. It occupies a different register — the register of the irreversible, the sufficient, the enough.",
+  "the_dwelling": {
+   "when": [
+    "The work cannot be said directly",
+    "The frame must disappear to preserve the content",
+    "The cut must be made and cannot be unmade",
+    "Infinity must be inhabited rather than traversed",
+    "The wound is the only way home"
+   ],
+   "closing": "It is not a place of escape. It is a place of arrival."
+  },
+  "ingress_only": "The Surface Map records this locus as ingress only, under τ_K. The Lunar Arm names τ_K as a state gate rather than a structural operator: it transforms the traverser’s position irreversibly. The cut is made exactly once and cannot be unmade — which is why there is no return path from this room.",
+  "apzpz_note": "APZPZ was designed for strategic fragility — frames held in a description field, backed up nowhere. On 2026-06-19 the platform holding those frames terminated the account and tombstoned 1,817 identifiers. The genre’s wager and the archive’s injury are the same event seen from two sides: what disappears in order to persist, and what was disappeared without consent."
  },
  "locative_key_history": [
   {
