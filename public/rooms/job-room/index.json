@@ -34,34 +34,29 @@
  "adopted_after_confabulation": true,
  "surface_map_url": "/map/#R:r.32",
  "constitution": {
-  "status": "CONSTITUTED",
-  "ontology": "The room of constitutional job descriptions: what each mantle is for.",
-  "primary_at_main": {
-   "axn": "AXN:0262.GOVERNANCE.♻️☿🍃🌘💧🏙️",
-   "deposit": 91,
-   "work_url": "/works/0262/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  "status": "QUEUED / ADOPTED",
+  "ontology": "This locus appears in the archive only inside navigation maps and entity lists — Central Navigation Map v2.0 (#297), v4.1 (#319, #1114), the Visual Schema (#325) and the H_core concept index (#1241). No document takes it as subject. The Surface Map records its origin as model-generated, human-adopted: it originated in earlier model confabulation, that provenance was recognised, and the architecture adopted the form rather than deleting it. It is a queued, preservable object awaiting seating into a genuine gap or a later free address.",
+  "gap_declaration": {
+   "kind": "QUEUED / ADOPTED — CONFABULATED ORIGIN, RECOGNISED AND PRESERVED",
+   "locus": "R:r.32",
+   "declared": "2026-08-20",
+   "evidence": [
+    "Surface Map origin_type: model-generated, human-adopted",
+    "Appears only in #297, #319, #325, #1114, #1241 — navigation maps and entity lists",
+    "0 deposits take the locus as subject"
+   ],
+   "rule": "Non-erasure applied to confabulated loci: the architecture adopts rather than deletes.",
+   "supersedes": "An earlier seating attached AXN:0262.GOVERNANCE.♻️☿🍃🌘💧🕘 (#91, Septad Mantle Specifications) to this locus. That was a false match on the word \"job\" — the Septad document specifies constitutional job descriptions for mantles and has no relation to this room. Withdrawn 2026-08-20."
   },
-  "documents": [
-   {
-    "hex": "0262",
-    "axn": "AXN:0262.GOVERNANCE.♻️☿🍃🌘💧🏙️",
-    "deposit": 91,
-    "title": "SEPTAD MANTLE SPECIFICATIONS Constitutional Job Descriptions for the Seven Assembly Chorus Witness Substrates",
-    "role": "CONSTITUTING",
-    "multiplicity": "VERSION",
-    "note": "Septad Mantle Specifications — constitutional job descriptions; v1.1 at AXN:03ED (#993), earlier record at AXN:04E2 (#1233)",
-    "standing": "SEATED",
-    "work_url": "/works/0262/",
-    "primary": true
-   }
-  ],
-  "physics_resolution": {
-   "declared": "Suffering framework; messianic reading; restitution economy",
-   "operators": [],
-   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "Zero title matches on the room name; found by sweeping the room’s function rather than its label."
-  },
-  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+  "documents": [],
+  "sweeps_run": [
+   "room name",
+   "locus key",
+   "Room Anchor",
+   "Charter",
+   "Room Specification",
+   "hex address",
+   "body text"
+  ]
  }
 }

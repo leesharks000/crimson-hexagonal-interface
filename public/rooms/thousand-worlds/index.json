@@ -60,25 +60,37 @@
  "surface_map_url": "/map/#X:THOUSAND-WORLDS",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "A room-and-chamber link, constituted by the event of its own traversal.",
+  "ontology": "An aorist intervention site: the chamber where dagger logic executes.",
   "primary_at_main": {
-   "axn": "AXN:0124.GOVERNANCE.⊗⚪🚪🕔🕖♠️",
-   "deposit": 473,
-   "work_url": "/works/0124/",
+   "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+   "deposit": 14,
+   "work_url": "/works/00f8/",
    "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
+   {
+    "hex": "00f8",
+    "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+    "deposit": 14,
+    "title": "14.CHAMBER.THOUSANDWORLDS Aorist Intervention Site & Dagger Logic Execution Point Chamber Specification — Build 6.3 Clas",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "14.CHAMBER.THOUSANDWORLDS — Aorist Intervention Site and Dagger Logic Executor; companion at AXN:0489 (#1144)",
+    "standing": "SEATED",
+    "work_url": "/works/00f8/",
+    "primary": true
+   },
    {
     "hex": "0124",
     "axn": "AXN:0124.GOVERNANCE.⊗⚪🚪🕔🕖♠️",
     "deposit": 473,
     "title": "Traversal Log: The Thousand Worlds Session — Google AI Mode as Generative Story Engine",
-    "role": "CONSTITUTING-BY-EVENT",
+    "role": "EVIDENCE",
     "multiplicity": "SINGLETON",
-    "note": "Traversal Log: the Thousand Worlds Session — the locus is constituted by the traversal that found it, not by a prior specification",
+    "note": "Traversal Log: the Thousand Worlds Session",
     "standing": "SEATED",
     "work_url": "/works/0124/",
-    "primary": true
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -87,7 +99,7 @@
     "∂"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "No prior specification exists. The locus enters the record through a documented traversal, which is a distinct constitution class: the room was walked before it was written."
+   "note": "Found under a fifth naming convention — the hex address in the title. An earlier seating took the traversal log as constituting; it is evidence."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
  }

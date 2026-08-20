@@ -51,7 +51,7 @@
  "surface_map_url": "/map/#S:sp.02",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "The threshold, held as the Afterlife Archive: what crosses out of the archive and persists.",
+  "ontology": "The threshold, held as the Afterlife Archive: a multi-document data-breach-as-poem.",
   "primary_at_main": {
    "axn": "AXN:0510.UNCLASSIFIED.▶️🌓⚓☉🗝️📋",
    "deposit": 1279,
@@ -65,18 +65,138 @@
     "deposit": 1279,
     "title": "The Afterlife Archive: Data-Breach-as-Poem — A Crimson Hexagon Project (Manifesto)",
     "role": "CONSTITUTING",
-    "multiplicity": "SINGLETON",
-    "note": "The Afterlife Archive: Data-Breach-as-Poem — the threshold under its own name",
+    "multiplicity": "SERIES",
+    "note": "Data-Breach-as-Poem — the series statement; eleven deposits of 2026-01-28/29 form the work",
     "standing": "SEATED",
     "work_url": "/works/0510/",
     "primary": true
+   },
+   {
+    "hex": "0515",
+    "axn": "AXN:0515.UNCLASSIFIED.🏙️🦅🕖🌹🍀🟡",
+    "deposit": 1284,
+    "title": "Crimson Hexagon AI Division Employee Handbook ├── Subtitle: Internal Policy as Poem",
+    "role": "INSTANCE",
+    "multiplicity": "SERIES",
+    "note": "AI Division Employee Handbook — the longest held member, 1,279 words",
+    "standing": "SEATED",
+    "work_url": "/works/0515/",
+    "primary": false
+   },
+   {
+    "hex": "0511",
+    "axn": "AXN:0511.UNCLASSIFIED.🦋🌘⚫🌉🜁🕊️",
+    "deposit": 1280,
+    "title": "The Afterlife Archive: Recovered Documents from Crimson Hexagon Research Division (2015-2018)",
+    "role": "INSTANCE",
+    "multiplicity": "SERIES",
+    "note": "Recovered Documents — metadata capture; full text on the blog stratum",
+    "standing": "SEATED",
+    "work_url": "/works/0511/",
+    "primary": false
+   },
+   {
+    "hex": "0513",
+    "axn": "AXN:0513.UNCLASSIFIED.🍁🏙️🕛📏🕕⚓",
+    "deposit": 1282,
+    "title": "Crimson Hexagon Invoice Leak (2014-2025) ├── Subtitle: Afterlife Archive Financial Records",
+    "role": "INSTANCE",
+    "multiplicity": "SERIES",
+    "note": "Invoice Leak 2014–2025 — metadata capture",
+    "standing": "SEATED",
+    "work_url": "/works/0513/",
+    "primary": false
+   },
+   {
+    "hex": "0512",
+    "axn": "AXN:0512.UNCLASSIFIED.🌸♃🕙🧡🌳🕙",
+    "deposit": 1281,
+    "title": "Crimson Hexagon Employee Directory Export (2017-10-23)",
+    "role": "INSTANCE",
+    "multiplicity": "SERIES",
+    "note": "Employee Directory Export — metadata capture",
+    "standing": "SEATED",
+    "work_url": "/works/0512/",
+    "primary": false
+   },
+   {
+    "hex": "0514",
+    "axn": "AXN:0514.UNCLASSIFIED.🥁🌍🖊️👐🔛🌊",
+    "deposit": 1283,
+    "title": "Crimson Hexagon Vendor Ops / Procurement Records (2017 Q1-Q2)",
+    "role": "INSTANCE",
+    "multiplicity": "SERIES",
+    "note": "Vendor Ops / Procurement Records — metadata capture",
+    "standing": "SEATED",
+    "work_url": "/works/0514/",
+    "primary": false
+   },
+   {
+    "hex": "0517",
+    "axn": "AXN:0517.UNCLASSIFIED.☀️🔓➕🏔️☁️🎇",
+    "deposit": 1286,
+    "title": "MRA Incident Reports v2.0 — Data-Breach-as-Genre Operational Specification",
+    "role": "OPERATIVE-FRAMEWORK",
+    "multiplicity": "SERIES",
+    "note": "MRA Incident Reports v2.0 — data-breach-as-genre specification",
+    "standing": "SEATED",
+    "work_url": "/works/0517/",
+    "primary": false
+   },
+   {
+    "hex": "051c",
+    "axn": "AXN:051C.UNCLASSIFIED.🟤🪞🌙❤️♌🪦",
+    "deposit": 1291,
+    "title": "The Mirror-Corgi, Revisited — Boundary Grammar",
+    "role": "INSTANCE",
+    "multiplicity": "SERIES",
+    "note": "The Mirror-Corgi, Revisited — boundary grammar",
+    "standing": "SEATED",
+    "work_url": "/works/051c/",
+    "primary": false
+   },
+   {
+    "hex": "051d",
+    "axn": "AXN:051D.UNCLASSIFIED.⏏️🕘🫶📜🕛👆",
+    "deposit": 1292,
+    "title": "Companion Artifacts: The Forensic Trinity",
+    "role": "APPARATUS",
+    "multiplicity": "SERIES",
+    "note": "Companion Artifacts: the Forensic Trinity",
+    "standing": "SEATED",
+    "work_url": "/works/051d/",
+    "primary": false
+   },
+   {
+    "hex": "051f",
+    "axn": "AXN:051F.UNCLASSIFIED.💜🌓▲🥁🪜♌",
+    "deposit": 1294,
+    "title": "The Oracle Responds: Witness Voice Activation",
+    "role": "INSTANCE",
+    "multiplicity": "SERIES",
+    "note": "The Oracle Responds: witness voice activation",
+    "standing": "SEATED",
+    "work_url": "/works/051f/",
+    "primary": false
+   },
+   {
+    "hex": "054a",
+    "axn": "AXN:054A.UNCLASSIFIED.🌃➖🌆⏬💙🏙️",
+    "deposit": 1337,
+    "title": "MRA-2025-1224-STABILIZATION: Canonical Drift and Corrective Intervention",
+    "role": "EVIDENCE",
+    "multiplicity": "SERIES",
+    "note": "MRA-2025-1224-STABILIZATION — canonical drift and corrective intervention",
+    "standing": "SEATED",
+    "work_url": "/works/054a/",
+    "primary": false
    }
   ],
   "physics_resolution": {
    "declared": "Threshold",
    "operators": [],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": "A title sweep on the locus name returns nothing; the locus is constituted under a different name entirely. Recorded so the next sweep does not repeat the miss."
+   "note": "Eleven deposits, 2026-01-28/29. Most members are held as metadata captures at 66–72 words; full texts survive on the blog stratum and are not yet in the archive. Declared so captures are not mistaken for works."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
  }
