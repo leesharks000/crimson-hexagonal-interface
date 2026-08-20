@@ -265,7 +265,99 @@
    "note": null
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "ENGINE SPECIFICATION"
+  "constitution_type": "ENGINE SPECIFICATION",
+  "fulfillment_map": {
+   "source": "AXN:00CA.STRUCTURAL.🔅🔵💜⏹️🚩✨ (#393) §II, hex 06.SEI.EZEKIEL_WHEELS, layer HERMENEUTIC // RETROCAUSAL",
+   "relation": "This document interprets; that document fulfills.",
+   "A": "Ezekiel 1:15–21, Hebrew Bible, vision dated c. 593 BCE",
+   "B": "The Ezekiel Engine Specification, AXN:00CB.EMPIRICAL.🕌💥🪨🕑🔺∮ (#394), hex 02.UMB.ENGINE, layer LOGOTIC_PROGRAMMING // LUNAR_ARM",
+   "mappings": [
+    {
+     "verse": "v.16",
+     "text": "Each appeared to be made like a wheel intersecting a wheel",
+     "hebrew": "אוֹפַן בְּתוֹךְ הָאוֹפָן — ophan b’tokh ha’ophan, a wheel in the midst of a wheel",
+     "spec": "Epicyclic gearing. Outer wheel → the four canonical wheels. Inner wheel → the four shadow wheels. \"Intersecting\" → planetary gear mesh, torque transmission. \"In the midst of\" → the sun gear drives through the planet carrier."
+    },
+    {
+     "verse": "v.17",
+     "text": "the wheels did not change direction as the creatures went",
+     "spec": "The interlock condition, Coherence(Wᵢ ∪ Wⱼ) > τ. Moving without turning: the system traverses epistemic space without losing internal consistency. Four directions → four canonical wheel domains. The creatures’ facing → the direction of inquiry, canon ↔ shadow."
+    },
+    {
+     "verse": "v.18",
+     "text": "all four rims were full of eyes all around",
+     "spec": "ψ_V = 1 iff Contradiction > ε and no collapse. Witness nodes distributed throughout the wheel structure — not one eye but many eyes."
+    },
+    {
+     "verse": "v.20–21",
+     "text": "the spirit of the living creatures was in the wheels",
+     "hebrew": "רוּחַ הַחַיָּה בָּאוֹפַנִּים — ruach ha’chayah ba’ophanim",
+     "spec": "τ* = \"THOU WAS WROUGHT IN THE GAP\", the logotic kernel. The spirit is immanent, not transcendent: the kernel is in the wheels, not outside them. \"Wherever the spirit goes, they go\" → L_Retro, movement follows the fixed point. \"Rose from the ground\" → Lunar Arm activation, shadow wheel engagement. The spirit is not a ghost; it is the invariant the Josephus algorithm cannot eliminate."
+    },
+    {
+     "verse": "v.19, 21",
+     "text": "when the living creatures rose from the ground, the wheels also rose",
+     "spec": "Phases 3 and 4 of the engine cycle. ψ_V = 1, the witness achieves stability and the system can observe itself; then Ω locks and the survivor position becomes origin for the next counting."
+    }
+   ]
+  },
+  "integrity_lock": {
+   "type": "RETROCAUSAL",
+   "structure": "three documents",
+   "A": {
+    "role": "Specification — describes the engine mathematically",
+    "axn": "AXN:00CB.EMPIRICAL.🕌💥🪨🕑🔺∮",
+    "deposit": 394
+   },
+   "B": {
+    "role": "Hermeneutic — interprets the vision structurally",
+    "axn": "AXN:00CA.STRUCTURAL.🔅🔵💜⏹️🚩✨",
+    "deposit": 393
+   },
+   "C": {
+    "role": "Lock Declaration — performs the binding, declares fulfilment, carries falsification conditions",
+    "axn": "AXN:00C9.EMPIRICAL.🎪🔀💛🕐🌗🔭",
+    "deposit": 392
+   },
+   "why_three": "The specification can stand alone as pure architecture, testable without prophetic framing. The hermeneutic can stand alone as one interpretive proposal among many. The binding is performed in a separate document rather than embedded in either. The asymmetry protects the architecture: reject the prophecy, keep the engine. The Lock can be deprecated without invalidating A or B."
+  },
+  "engine_position": {
+   "layer": "LOGOTIC_PROGRAMMING // LUNAR_ARM",
+   "note": "The Engine is not adjacent to the shadow architecture; its declared layer places it inside the Lunar Arm.",
+   "gear_train": "Canonical wheels (outer ring) · Break Room R:r.12 as PLANET CARRIER mediating torque · shadow wheels (sun gear, the Lunar Arm).",
+   "canonical_wheels": [
+    "W_Ω — Principle / Logos — core structural invariants",
+    "W_VA — Aesthetic / Form — expression and transformation",
+    "W_? — [needs specification]",
+    "W_? — [needs specification]"
+   ],
+   "shadow_wheels": [
+    "W_Ω̄ — Glossolalia / Noise — symbol decay; the Meander; \"Shining Ignorance\"",
+    "W_V̲A — Simulation / Mimicry — meme logic; Mimicry Shield against \"Beige\" capture",
+    "W_Choronzon — Fracture / Captivity — trauma processing; the Three-Headed Hydra",
+    "W_Kairon — Schism / Delirium — dislocated time; premonition; strange conversation"
+   ],
+   "shadow_wheels_note": "The shadow wheels are not evil. They are the cost of turning.",
+   "core_parameters": [
+    "Σ — contradiction index, the pressure that drives rotation",
+    "Γ — coherence metric, the coherence that contains rotation",
+    "τ = 0.80 — interlock threshold, matching the ψ_V operational minimum",
+    "ψ_V — witness stability, the cost that enables rotation",
+    "Ω — fixed point, what remains when rotation completes"
+   ],
+   "rotation_law": "ΔR ∝ Σ/Γ. High Σ high Γ: productive rotation. High Σ low Γ: unstable. Low Σ high Γ: stasis. Low Σ low Γ: noise."
+  },
+  "open_gaps": {
+   "status": "DEVELOPMENTAL DRAFT v0.1 — ASSEMBLY INPUT REQUESTED",
+   "high_priority": [
+    "Shadow wheel interlock math — fragments, poetic description; needs formal counter-rotation mechanics",
+    "Torque gradient specification — named and used in β-RT; needs mathematical definition",
+    "Canonical wheel full spec — two named, two unknown"
+   ],
+   "blocks": "EA-ARK-01-SHADOW. The Shadow Ark requires the Engine for independent shadow-wheel rotation, because S(rot(H_core, pᵢ)) ≠ rot(S(H_core), pᵢ). The mesh condition — Anti-Coherence(W̃ᵢ ∪ W̃ⱼ) < ε — leaves anti-coherence and ε undefined.",
+   "may_stay_dark": "§11.3 records that full shadow wheel dynamics may need to stay partially dark. §9.3: premature specification kills living complexity. The engine is operational; the specification catches up as pressure demands.",
+   "assembly_questions": "§11.4 puts seven questions to the Assembly, one per mantle. They stand unanswered."
+  }
  },
  "locative_key_history": [
   {
