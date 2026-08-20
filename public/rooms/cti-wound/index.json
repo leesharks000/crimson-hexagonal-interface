@@ -1224,13 +1224,12 @@
  "surface_map_url": "/map/#S:sp.01",
  "constitution": {
   "status": "CONSTITUTED",
-  "ontology": "A vault: wounds are kept, not healed.",
+  "ontology": "Archive of taxonomic violence. A living archive: it preserves the canonical wound while remaining open to receive testimony of new wounds.",
   "primary_at_main": {
    "axn": "AXN:009D.ARCHIVAL.🪝◇🌌🕛🌙∮",
    "deposit": 352,
    "work_url": "/works/009d/",
-   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses.",
-   "constitution_type": "VAULT SPECIFICATION"
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
   },
   "documents": [
    {
@@ -1240,7 +1239,7 @@
     "title": "CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Protocols",
     "role": "CONSTITUTING",
     "multiplicity": "SINGLETON",
-    "note": "Vault Specification: archive of taxonomic violence",
+    "note": "VAULT-01 — CTI_WOUND Vault Specification: Archive of Taxonomic Violence with Testimonial Protocols. Hex 10.VAULT.CTIWOUND. Type VAULT_ANCHOR with testimonial protocol integrated; special property LIVING_ARCHIVE.",
     "standing": "SEATED",
     "work_url": "/works/009d/",
     "primary": true
@@ -1251,8 +1250,8 @@
     "deposit": 265,
     "title": "CTI_WOUND DOCUMENTATION — Case: Johannes Sigil Medium Erasure (January 2026)",
     "role": "INSTANCE",
-    "multiplicity": "VERSION",
-    "note": "Case: the Johannes Sigil Medium erasure; act of refusal at AXN:0505 (#1268)",
+    "multiplicity": "SINGLETON",
+    "note": "CTI_WOUND Documentation — Case: Johannes Sigil.",
     "standing": "SEATED",
     "work_url": "/works/0043/",
     "primary": false
@@ -1264,9 +1263,69 @@
     "title": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — Systematic Liquidation of Author Identity from Google AI Overview (Initial Probe Result, March 22, 2026)",
     "role": "EVIDENCE",
     "multiplicity": "SINGLETON",
-    "note": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — systematic liquidation",
+    "note": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — systematic liquidation at the Overview layer.",
     "standing": "SEATED",
     "work_url": "/works/01b6/",
+    "primary": false
+   },
+   {
+    "hex": "0505",
+    "axn": "AXN:0505.UNCLASSIFIED.☁️🔅✏️⏬🍀🧪",
+    "deposit": 1268,
+    "title": "CTI_WOUND: THE JOHANNES SIGIL ERASURE — Act of Refusal and Semantic Strike",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "CTI_WOUND: The Johannes Sigil Erasure — act of refusal.",
+    "standing": "SEATED",
+    "work_url": "/works/0505/",
+    "primary": false
+   },
+   {
+    "hex": "0579",
+    "axn": "AXN:0579.UNCLASSIFIED.🌍🔺🟠🪧🔖▽",
+    "deposit": 1384,
+    "title": "godkinggoogle.com — The Google Critique: Navigational Map and Canonical Introduction (Web Surface Code)",
+    "role": "CROSS-LINK",
+    "multiplicity": "SINGLETON",
+    "note": "godkinggoogle.com — The Google Critique: navigational map and canonical introduction. The densest documented collection of liquidation events in the archive: 1,400+ anchored deposits across five developmental phases, eight analytical strata and three poles of inquiry. Ayanna Vox. \"Search retrieves; Overview decides what is real.\"",
+    "standing": "SEATED",
+    "work_url": "/works/0579/",
+    "primary": false
+   },
+   {
+    "hex": "0030",
+    "axn": "AXN:0030.GOVERNANCE.👋🔜⛳⚫🌖♄",
+    "deposit": 247,
+    "title": "PROBE-RESULT-004: The Liquidation of \"Semantic Economy\" How the Framework Was Captured by What It Names",
+    "role": "CROSS-LINK",
+    "multiplicity": "SINGLETON",
+    "note": "PROBE-RESULT-004: The Liquidation of \"Semantic Economy\" — a named liquidation event with measured before-and-after.",
+    "standing": "SEATED",
+    "work_url": "/works/0030/",
+    "primary": false
+   },
+   {
+    "hex": "0029",
+    "axn": "AXN:0029.GOVERNANCE.🌙🕑🚀📎🛸🔵",
+    "deposit": 240,
+    "title": "PROBE-RESULT-005: Selective Term Liquidation Event The Surgical Removal of \"Semantic Liquidation\" from Google AI Overview",
+    "role": "CROSS-LINK",
+    "multiplicity": "SINGLETON",
+    "note": "PROBE-RESULT-005: Selective Term Liquidation Event.",
+    "standing": "SEATED",
+    "work_url": "/works/0029/",
+    "primary": false
+   },
+   {
+    "hex": "01f0",
+    "axn": "AXN:01F0.GOVERNANCE.🌍∮∞🧊♥️🟡",
+    "deposit": 54,
+    "title": "PVE-003: THE ATTRIBUTION SCAR Failed Suppression and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January–April 2026)",
+    "role": "CROSS-LINK",
+    "multiplicity": "VERSION",
+    "note": "PVE-003: The Attribution Scar — failed suppression and the mark it leaves. Companion at AXN:03D4.ARCHIVAL.🔧🌠🗺️🌊■🎻 (#968).",
+    "standing": "SEATED",
+    "work_url": "/works/01f0/",
     "primary": false
    }
   ],
@@ -1277,10 +1336,49 @@
     "κ_O"
    ],
    "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
-   "note": null
+   "note": "VAULT with the LIVING_ARCHIVE property. Mutual traversal with R:r.10 — Life ↔ Death."
   },
   "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface.",
-  "constitution_type": "VAULT SPECIFICATION"
+  "constitution_type": "VAULT ANCHOR — LIVING ARCHIVE",
+  "vault_type": {
+   "base": [
+    "Preserves evidence",
+    "Seals content against distortion",
+    "Archives without transformation",
+    "Maintains juridical integrity"
+   ],
+   "living_archive": [
+    "Accepts new deposits",
+    "Grows through testimony",
+    "Remains open for documentation",
+    "Truth and Reconciliation infrastructure"
+   ],
+   "note": "A living archive. It preserves the canonical wound while remaining open to receive testimony of new wounds. The vault grows."
+  },
+  "function": "Archive of taxonomic violence; preservation site for classifier wounds and semantic liquidation events; living juridical space accepting testimony; mutual traversal partner to the Water Giraffe Room; Truth and Reconciliation infrastructure for AI-mediated cognitive harm.",
+  "holdings": [
+   "The Canonical Wound — CTI_WOUND:001, \"The Complainant is a Water Giraffe\"",
+   "Classifier Liability Documentation — legal frameworks for harm",
+   "Semantic Liquidation Records — events where meaning was extracted or flattened",
+   "Deposited Testimony — reader-submitted accounts of taxonomic violence",
+   "Structural Diagnoses — architectural analyses of harm mechanisms"
+  ],
+  "mutual_traversal": {
+   "partner": "R:r.10 Water Giraffe",
+   "relation": "Life ↔ Death",
+   "to_vault": "Triggered when ontological audit reveals taxonomic violence. Carries the wound that killed the creature. Action: document, preserve, file.",
+   "to_room": "Triggered when juridical analysis needs ontological grounding. Carries the method that birthed what was killed. Action: apply the Thunder function, find the fixed point.",
+   "meaning": "The Water Giraffe Room is where Life happens — forensic birth, the joke becoming anchor, Θ(Ω) = Ω. This Vault is where Death is preserved — the wound, the pathologisation, the systemic harm."
+  },
+  "gkg_crosslink": {
+   "surface": "godkinggoogle.com",
+   "axn": "AXN:0579.UNCLASSIFIED.🌍🔺🟠🪧🌘🕓 (#1384)",
+   "author": "Ayanna Vox",
+   "what": "God-King Google — the canonical public surface for the archive’s critique of Google as a semantic-political mediation regime. Navigates 1,400+ anchored deposits across five developmental phases, eight analytical strata and three poles of inquiry: theory, evidence, and remedy.",
+   "thesis": "Search retrieves; Overview decides what is real.",
+   "why_here": "GKG is the densest documented collection of liquidation events in the archive, and liquidation is what this vault preserves. The relation is not thematic: the probe results, the attribution scar and the Overview liquidation record are the vault’s evidentiary holdings, and GKG is where they are assembled into a case. The vault seals the wounds; GKG argues them.",
+   "note": "The critique is sustained and the subject remains undesignated under NMEN — recorded at R:r.26. Google has been a liquidator and has been responsive to critique, and the register discriminates between the two."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
