@@ -1842,6 +1842,16 @@
     "minted": "2026-08-20",
     "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (16.ROOM.CANONWAR); the seed name rejected."
    }
+  },
+  {
+   "identity": {
+    "name": "The Restored Academy",
+    "locative_key": "R:r.39",
+    "structure_type": "ROOM",
+    "hex_address": "39.ROOM.RESTOREDACADEMY",
+    "minted": "2026-08-20",
+    "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (17.ROOM.CLASSROOM). First I-component to take an R-address deliberately."
+   }
   }
  ],
  "fields": [
@@ -2382,7 +2392,7 @@
    }
   ],
   "reading": "This is a fourth origin type, distinct from the three already recorded. Migdal and Job were planned in a map and written elsewhere. Sacred Heart was inferred into planning and never written. These seven were planned in a numbering that was itself abandoned — the plan superseded before the rooms could be built, so they were never confabulated, never adopted, and never refused. They simply stopped being addressed.",
-  "status": "Recorded, not minted. Two of the seven have real dispersed material — Gödel and Hegel — and could be constituted if the material were gathered. The rest are names in a superseded plan. Nothing is claimed about whether they should exist.",
+  "status": "Six of seven minted 2026-08-20: r.34 Operator // Vertical, r.35 The Library of Pergamum, r.36 The Λ-Body, r.37 The Machine Dialectic, r.38 The Singularity Room, r.39 The Restored Academy. Zohar deferred at MANUS direction — not yet.",
   "note_on_orientation": "ORIENTATION_FIELD appears in CNM v4.1, v4.2 and the Visual Schema but is typed as an operator — \"Visual Schema operative imaging\" — not a locus. Excluded.",
   "renaming_survey": {
    "directed": "MANUS 2026-08-20. The seed names are placeholders; better names exist, and each candidate room would need room physics — an operator and a law — not a folder of articles ported under an adapter.",
