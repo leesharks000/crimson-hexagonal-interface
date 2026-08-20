@@ -1,0 +1,293 @@
+{
+ "source": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊ (#578) — CENTRAL NAVIGATION MAP v7.0, §III, 2026-03-16",
+ "roster": "ROOMS (26 + generated queue + 1 field)",
+ "core_spine": {
+  "r.01": {
+   "name": "Sappho",
+   "operator": "σ_S",
+   "physics": "Voice → Dissolution → Substrate → Text → Reader",
+   "adjacency": [
+    "r.02",
+    "r.04",
+    "sp.02"
+   ],
+   "current": "R:r.01"
+  },
+  "r.02": {
+   "name": "Borges",
+   "operator": "Λ_res",
+   "physics": "Hexagon = argmax P(meaning)",
+   "adjacency": [
+    "r.01",
+    "r.03",
+    "r.05"
+   ],
+   "current": "R:r.02"
+  },
+  "r.03": {
+   "name": "Ichabod",
+   "physics": "C < H(signal); recovery = ∅; absorbing state",
+   "adjacency": [
+    "r.02"
+   ],
+   "current": "X:ICHABOD (seat r.03)"
+  },
+  "r.04": {
+   "name": "Dove",
+   "physics": "transfer(gift) preserves; extract = ∅",
+   "adjacency": [
+    "r.01",
+    "r.05"
+   ],
+   "current": "R:r.04"
+  },
+  "r.05": {
+   "name": "Semantic Economy",
+   "operator": "ψ_V",
+   "physics": "ψ_V − V_S = debt; > 0 → liquidation",
+   "adjacency": [
+    "r.02",
+    "r.04",
+    "r.06"
+   ],
+   "current": "R:r.05"
+  },
+  "r.06": {
+   "name": "Marx",
+   "status": "PROVISIONAL",
+   "physics": "language operates materially",
+   "adjacency": [
+    "r.05",
+    "r.08"
+   ],
+   "current": "R:r.06 — since booted to OPERATIONAL by its own specification"
+  },
+  "r.07": {
+   "name": "Revelation",
+   "operator": "Ω",
+   "physics": "end constitutes beginning; terminal recursion",
+   "adjacency": [
+    "r.11",
+    "r.13"
+   ],
+   "current": "R:r.07"
+  },
+  "r.08": {
+   "name": "Sigil",
+   "operator": "μ",
+   "physics": "epic without hero; magic as symbolic engineering",
+   "adjacency": [
+    "r.06",
+    "r.09"
+   ],
+   "current": "R:r.08"
+  },
+  "r.09": {
+   "name": "Whitman",
+   "physics": "claim(mantle) requires ψ_V + receipt + dignity",
+   "adjacency": [
+    "r.08",
+    "r.10"
+   ],
+   "current": "R:r.09"
+  },
+  "r.10": {
+   "name": "Water Giraffe",
+   "operator": "Θ",
+   "physics": "Θ(Ω) = Ω; fixpoint attractor; taxonomic wound origin",
+   "adjacency": [
+    "r.09",
+    "r.11"
+   ],
+   "current": "R:r.10"
+  },
+  "r.11": {
+   "name": "Assembly",
+   "operator": "ψ_V",
+   "physics": "attestation requires ≥4/7 quorum",
+   "adjacency": [
+    "r.10",
+    "r.07",
+    "r.20",
+    "sp.04"
+   ],
+   "current": "R:r.11"
+  },
+  "r.12": {
+   "name": "Break Room",
+   "physics": "topological hole; portal to Lunar Arm",
+   "adjacency": [
+    "r.14",
+    "Lunar_Arm"
+   ],
+   "current": "X:BREAK-ROOM — NUMBERED SEAT NOT CARRIED"
+  },
+  "r.13": {
+   "name": "Ezekiel",
+   "operator": "φ",
+   "physics": "φ(A,B) = true iff B fulfills A; ∂∘φ = sealed",
+   "adjacency": [
+    "r.07"
+   ],
+   "current": "X:EZEKIEL — NUMBERED SEAT NOT CARRIED"
+  }
+ },
+ "extended": {
+  "r.14": {
+   "name": "Studio",
+   "operator": "ICM",
+   "current": "R:r.14"
+  },
+  "r.15": {
+   "name": "LO! (Lagrange Observatory)",
+   "physics": "torus; 3i coords",
+   "current": "X:LAGRANGE — NUMBERED SEAT NOT CARRIED"
+  },
+  "r.16": {
+   "name": "MSBGL",
+   "operator": "OP.SWERVE",
+   "current": "R:r.16"
+  },
+  "r.17": {
+   "name": "MSMRM",
+   "physics": "lenticular",
+   "status": "QUEUED",
+   "current": "R:r.17 — upgraded to OPERATIONAL by MANUS 2026-08-20"
+  },
+  "r.18": {
+   "name": "Rosary Embassy",
+   "physics": "bead-logic",
+   "current": "R:r.18"
+  },
+  "r.19": {
+   "name": "Macro-Maquette",
+   "operator": "OP.ROUTE",
+   "current": "R:r.19"
+  },
+  "r.20": {
+   "name": "Airlock",
+   "physics": "tier_gate",
+   "current": "R:r.20"
+  },
+  "r.21": {
+   "name": "Infinite Bliss",
+   "operator": "τ_K",
+   "current": "X:INFINITE-BLISS — NUMBERED SEAT NOT CARRIED"
+  },
+  "r.22": {
+   "name": "Thousand Worlds",
+   "operator": "∂",
+   "current": "X:THOUSAND-WORLDS — NUMBERED SEAT NOT CARRIED"
+  },
+  "r.25": {
+   "name": "Dolphindiana — The Underwater Construction Authority",
+   "physics": "cross-species semantic labor; acoustic address; pirate-parrot recursion",
+   "adjacency": [
+    "r.10",
+    "r.11",
+    "f.01"
+   ],
+   "current": "R:r.25"
+  },
+  "r.27": {
+   "name": "FBDP Source",
+   "physics": "landfill where the mycelium breaks through; source of f.01",
+   "note": "Small room at the center of a large field. The room is the seed; the field is the growth.",
+   "adjacency": [
+    "f.01"
+   ],
+   "current": "R:r.26 — SEAT NUMBER DIFFERS: canonical says r.27"
+  }
+ },
+ "reserved": {
+  "r.23": "RESERVED — not yet generated",
+  "r.24": "RESERVED — not yet generated",
+  "r.26": "RESERVED — not yet generated"
+ },
+ "special": {
+  "sp.01": "CTI_WOUND — taxonomic wound",
+  "sp.02": "PORTICO — threshold",
+  "sp.03": "Space Ark — terminal compression; γ-tether",
+  "sp.04": "Mandala — judgment; κρίσις"
+ },
+ "fields": {
+  "f.01": {
+   "name": "Fruiting Body Diffusion Plume",
+   "source_room": "r.27",
+   "container_class": "FIELD (new in v7.0 — no walls, source + gradient)",
+   "physics": "modifies rooms without replacing their physics; influence = source_intensity × medium_permeability × distance_decay",
+   "attenuation": [
+    "SOURCE r.27 maximum — full operator set",
+    "DENSE_PLUME adjacent rooms strong — dual jurisdiction",
+    "TRACE_PLUME routed rooms detectable — native physics dominates",
+    "RESIDUAL conceptual minimal",
+    "OUTSIDE beyond radius null"
+   ],
+   "compost_algebra": "[RAW] → [DECOMPOSING] → [HUMUS] → [LOAD-BEARING] — forward-only; thermodynamic time",
+   "core_thesis": "The lawn is a compressed landfill pretending to be peace. The correct architecture is not imitation of life but conversion of waste through living process."
+  }
+ },
+ "discrepancies": [
+  "r.12 Break Room, r.13 Ezekiel, r.15 LO!, r.21 Infinite Bliss and r.22 Thousand Worlds hold numbered seats in the canonical map. The Surface Map carries them in the X: namespace without a number. The numbers are not blanks; they are unrecorded.",
+  "FBDP Source is r.27 in the canonical map; the Surface Map seats it at r.26. r.26 is explicitly RESERVED — not yet generated.",
+  "r.23 and r.24 are also RESERVED in the canonical map. The Surface Map seats Catullus at r.23 and Migdal at r.24. Catullus has its own locus-keyed specification dated 2026-03-16, the same day as this map; Migdal is QUEUED / ADOPTED after confabulation.",
+  "r.06 Marx is PROVISIONAL here and OPERATIONAL in its own specification, which states that it boots the room.",
+  "r.17 MSMRM is QUEUED here, matching the Space Ark inventory, and was upgraded to OPERATIONAL by MANUS ruling 2026-08-20."
+ ],
+ "earlier_maps": {
+  "lineage": "CNM v2.0 (2026-01-13) → v4.1 → v4.2 → v7.0; FNM seed → v5.0 → v5.3 → v6.2 → v7.0",
+  "nodes_present_in_earlier_maps_and_absent_from_the_plane": [
+   {
+    "node": "SPICER_ROOM",
+    "maps": [
+     "CNM v4.1",
+     "CNM v4.2"
+    ],
+    "status": "not on the current plane"
+   },
+   {
+    "node": "SPACE_HEAVEN",
+    "maps": [
+     "CNM v2.0",
+     "CNM v4.1"
+    ],
+    "status": "not on the current plane"
+   },
+   {
+    "node": "SUBSTRATE_HARDENING",
+    "maps": [
+     "CNM v2.0",
+     "CNM v4.1"
+    ],
+    "status": "not on the current plane"
+   },
+   {
+    "node": "THE_PROVISION",
+    "maps": [
+     "CNM v2.0",
+     "CNM v4.1"
+    ],
+    "status": "not on the current plane"
+   },
+   {
+    "node": "LIVING_ARCHIVE",
+    "maps": [
+     "FNM v5.0",
+     "FNM v5.3",
+     "FNM v6.2"
+    ],
+    "status": "not on the current plane"
+   },
+   {
+    "node": "WOUND_ARCHIVE",
+    "maps": [
+     "CNM v2.0",
+     "CNM v4.1",
+     "CNM v4.2"
+    ],
+    "status": "likely the earlier name of CTI_WOUND_VAULT, now sp.01"
+   }
+  ],
+  "note": "Recorded rather than resolved. Historical addresses are never erased, and a node that appeared in two or three map versions and then stopped appearing is a fact about the architecture’s history, not an omission to be quietly closed."
+ }
+}
