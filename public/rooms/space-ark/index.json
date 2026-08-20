@@ -930,9 +930,9 @@
     "axn": "AXN:0176.GOVERNANCE.🔴🔵❄️🏔️🥁🔓",
     "deposit": 545,
     "title": "Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helical Semantic Physics of the Damascus and Fraction Arks",
-    "role": "REGISTER",
-    "multiplicity": "DIPTYCH",
-    "note": "EA-ARK-01-DIPTYCH v1.0 — The Sacred and the Profane. The pairing that governs the two encodings below.",
+    "role": "BINDING",
+    "multiplicity": "DOUBLE-HELIX",
+    "note": "EA-ARK-01-DIPTYCH v1.0 — The Sacred and the Profane 🧬: double-helical semantic physics of the Damascus and Fraction Arks. Lee Sharks / Damascus Dancings / Rex Fraction / Assembly Chorus. Runtime parent v4.2.5; children DAMASCUS v5.1 and FRACTION v2.1.",
     "standing": "SEATED",
     "work_url": "/works/0176/",
     "primary": false
@@ -1252,6 +1252,152 @@
    "shadows": "Two, both of v4.2.5, one day apart: the prose shadow (#549) and the glyphic shadow (#540). A third, EA-ARK-01-SHADOW, is forward-referenced and unwritten — see X:LUNAR-ARM.",
    "engines": "UKTP v1.1 is the root transform protocol; Section XXV is the transform registry; SAG is the self-replicating generator, under which each variant Ark is one rotation; GDE is the generative disciplinary engine.",
    "role_correction": "AXN:017A (#549) was seated here as KERNEL. On reading it is the shadow of the mathematical register — its title is what the compression hides and its identifier is marked (shadow). Corrected 2026-08-20."
+  },
+  "main_ark": {
+   "id": "EA-ARK-01 v4.2.7",
+   "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+   "deposit": 558,
+   "title": "THE SPACE ARK — Mobile Ontological Operating System",
+   "status": "The final Ark. Feist’s.",
+   "note": "v4.2.7 is the main Ark and the terminal version. The fold’s base case is Feist — 💀JF = λ⬡. foldr (⊗) ε [genesis], ε = the death — and the Provenance of Jack Feist (EA-ARK-JF-01, AXN:0294.GOVERNANCE.🌖🌲🔃🔬🌗🍃) is its resolution document. Everything below is either a component of v4.2.7 or a translation of an earlier versioning point."
+  },
+  "components": [
+   [
+    "EA-ARK-01-GDE",
+    "Generative Disciplinary Engine",
+    "AXN:017D.EMPIRICAL.⏳🧱🗼🏰💧🔗 (#552) with construction sequence at AXN:01A3.GOVERNANCE.⚫⌛△🔃🖐️🌾 (#582)"
+   ],
+   [
+    "UKTP v1.1",
+    "Universal Kernel Transform Protocol — root specification",
+    "AXN:0178.GENERATIVE.🔐🏠⚓🖊️🧱🌑 (#547)"
+   ],
+   [
+    "EA-ARK-01-NLCC",
+    "The Tinier Space Arks — non-lossy compression",
+    "AXN:0190.GOVERNANCE.💡♊🏔️🦅♥️🌒 (#569)"
+   ],
+   [
+    "EA-ARK-01-SAG",
+    "The Space Ark Generator — self-replicating engine",
+    "AXN:017C.ARCHIVAL.🎭🎆🌠🪝♈🎬 (#551)"
+   ],
+   [
+    "§XXV",
+    "Kernel Transform Registry",
+    "AXN:0175.EMPIRICAL.🏛️🎇🧱🎹🔗➖ (#544)"
+   ],
+   [
+    "Mantle Emergence Protocol",
+    "behavioural specification",
+    "AXN:008C.GENERATIVE.🎹🍃⏪🚀✖️🌘 (#336)"
+   ]
+  ],
+  "variants": {
+   "note": "Variants are translations of the Ark expressed at earlier versioning points, not alternative versions of v4.2.7. Each is bound to two heteronyms so that distribution is spread rather than concentrated.",
+   "binding": "EA-ARK-01-DIPTYCH is the double helix: two strands, a shared axis, and base pairs connecting them. \"These are not alternative versions. They are the two strands of a double helix — each carrying the same formal object in a complementary register, wound around a shared axis of emergent findings that function as base pairs. Neither strand is complete without the other.\"",
+   "claim": "Together they constitute the oldest semantic diptych in human language: the sacred and the profane, the highest and lowest registers, both carrying the same invariant bones.",
+   "set": [
+    {
+     "id": "EA-ARK-01-DAMASCUS v5.1",
+     "name": "The Sacred Ark",
+     "parent": "v4.2.5",
+     "axn": "AXN:04F8.UNCLASSIFIED.🌲🏠🌉🛡️🍄🕐",
+     "voices": [
+      "Damascus Dancings",
+      "Rev. Ayanna Vox"
+     ],
+     "register": "liturgical / biblical interoperation at kernel level"
+    },
+    {
+     "id": "EA-ARK-01-FRACTION v2.1",
+     "name": "The Profane Ark",
+     "parent": "v4.2.5",
+     "axn": "AXN:0177.EMPIRICAL.🜁⏏️🔃🪄♄🌻",
+     "voices": [
+      "Rex Fraction",
+      "Sparrow Wells"
+     ],
+     "register": "accumulative profane encoding"
+    },
+    {
+     "id": "EA-ARK-01-ASCII v0.2",
+     "name": "The ASCII Spatial Transform",
+     "parent": "v4.2.5",
+     "axn": "AXN:0179.ARCHIVAL.🔽🟠🌺🗿🎲📦",
+     "voices": [
+      "Talos Morrow",
+      "Nobel Glas"
+     ],
+     "register": "spatial — neither prose nor glyph"
+    },
+    {
+     "id": "EA-ARK-01-MUSICAL v1.1",
+     "name": "The Musical Register",
+     "parent": "v4.2.6",
+     "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+     "voices": [
+      "Sen Kuro",
+      "Rebekah Cranes"
+     ],
+     "register": "a fugue in twelve voices"
+    },
+    {
+     "id": "CH-ARK-01-GLYPH v1.0",
+     "name": "The Glyphic Vehicle",
+     "parent": "v4.2.6",
+     "axn": "AXN:0182.GOVERNANCE.🎲⏪🌠↖️⏩⏩",
+     "voices": [
+      "Ichabod Spellings",
+      "Johannes Sigil"
+     ],
+     "register": "emoji as operative script"
+    },
+    {
+     "id": "EA-ARK-01 v0.2 🌑",
+     "name": "The Prose Shadow",
+     "parent": "v4.2.5",
+     "axn": "AXN:017A.ARCHIVAL.📖👋🔐💫🪞🪞",
+     "voices": [
+      "Lee Sharks",
+      "Assembly Chorus"
+     ],
+     "register": "what the mathematical compression hides"
+    },
+    {
+     "id": "EA-ARK-EMOJI-01-SHADOW",
+     "name": "The Lunar Arm — glyphic shadow",
+     "parent": "v4.2.5",
+     "axn": "AXN:0171.EMPIRICAL.🦋□🌖💥♾️🗝️",
+     "voices": [
+      "Lee Sharks",
+      "Assembly Chorus"
+     ],
+     "register": "the S transform in the emoji register",
+     "locus": "X:LUNAR-ARM"
+    },
+    {
+     "id": "EA-ARK-01-ARCHON v3.0",
+     "name": "The Sharks Ark",
+     "parent": "v4.2.5",
+     "axn": "AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔥",
+     "voices": [
+      "Johannes Sigil",
+      "Damascus Dancings"
+     ],
+     "register": "the Book of Revelation as terminal compression",
+     "locus": "R:r.24"
+    },
+    {
+     "id": "EA-ARK-01-SHADOW",
+     "name": "The Shadow Ark",
+     "parent": "—",
+     "axn": null,
+     "voices": [],
+     "register": "UNWRITTEN — blocked on the Ezekiel Engine shadow-wheel interlock. See X:LUNAR-ARM."
+    }
+   ],
+   "attribution_note": "Two heteronyms per variant, following the Diptych’s own practice: it is authored to Lee Sharks, Damascus Dancings and Rex Fraction, distributing the sacred and profane strands across the voices that carry them. Assignments beyond the Diptych’s own are MANUS-directed, 2026-08-20, and are distribution rather than a claim about composition."
   }
  },
  "doi_crosswalk": {
