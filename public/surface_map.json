@@ -1852,6 +1852,16 @@
     "minted": "2026-08-20",
     "origin_type": "Minted from the abandoned FNM seed v5.0 numbering (17.ROOM.CLASSROOM). First I-component to take an R-address deliberately."
    }
+  },
+  {
+   "identity": {
+    "name": "Caritas",
+    "locative_key": "R:r.40",
+    "structure_type": "AXIOM",
+    "hex_address": "40.AXIOM.CARITAS",
+    "minted": "2026-08-20",
+    "origin_type": "Minted 2026-08-20. Never seated in any map; the founding statement of a principle load-bearing across the whole plane."
+   }
   }
  ],
  "fields": [
