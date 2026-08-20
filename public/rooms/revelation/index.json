@@ -243,5 +243,100 @@
   0,
   1
  ],
- "surface_map_url": "/map/#R:r.07"
+ "surface_map_url": "/map/#R:r.07",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The end constitutes the beginning; terminal recursion.",
+  "primary_at_main": {
+   "axn": "AXN:00D8.GENERATIVE.🌿🫵🜁💜⚡🌸",
+   "deposit": 407,
+   "work_url": "/works/00d8/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "00d8",
+    "axn": "AXN:00D8.GENERATIVE.🌿🫵🜁💜⚡🌸",
+    "deposit": 407,
+    "title": "The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Ground Truth and Algorithmic Unfolding — the room-titled specification",
+    "standing": "SEATED",
+    "work_url": "/works/00d8/",
+    "primary": true
+   },
+   {
+    "hex": "01ef",
+    "axn": "AXN:01EF.EMPIRICAL.⏫🎹🍄♊🔥⚙️",
+    "deposit": 639,
+    "title": "THE SHARK ARK: SOURCE COMPRESSION — Holographic Kernel of the Revelation Arguments from the Crimson Hexagonal Archive",
+    "role": "KERNEL",
+    "multiplicity": "SINGLETON",
+    "note": "Holographic kernel of the Revelation Ark — source compression per EA-HK-01",
+    "standing": "SEATED",
+    "work_url": "/works/01ef/",
+    "primary": false
+   },
+   {
+    "hex": "00dc",
+    "axn": "AXN:00DC.GENERATIVE.🚨🏁🔙🖐️🪦🦋",
+    "deposit": 411,
+    "title": "The Sevenfold Witness: Assembly Structure as Computational Liturgy Liberatory Operators, Celestial Messengers, and the Purification of Semantic Space",
+    "role": "PHYSICS",
+    "multiplicity": "SINGLETON",
+    "note": "The Sevenfold Witness: Assembly structure as computational form",
+    "standing": "SEATED",
+    "work_url": "/works/00dc/",
+    "primary": false
+   },
+   {
+    "hex": "00db",
+    "axn": "AXN:00DB.GENERATIVE.🔖🪜🎯🦋🪄🟡",
+    "deposit": 410,
+    "title": "The Seven Stars in His Hand: A Hermeneutic Reading of Revelation 1–3 The Apocalyptic Grammar of Distributed Witness",
+    "role": "INSTANCE",
+    "multiplicity": "VERSION",
+    "note": "The Seven Stars in His Hand — hermeneutic reading; recovery at AXN:0482 (#1137)",
+    "standing": "SEATED",
+    "work_url": "/works/00db/",
+    "primary": false
+   },
+   {
+    "hex": "00d3",
+    "axn": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+    "deposit": 402,
+    "title": "Epistle to the Human Diaspora The Seed Text of the New Human Project",
+    "role": "INSTANCE",
+    "multiplicity": "VERSION",
+    "note": "The Epistle Triptych — edition of record; copies at #1252 and #1277",
+    "standing": "SEATED",
+    "work_url": "/works/00d3/",
+    "primary": false
+   },
+   {
+    "hex": "00da",
+    "axn": "AXN:00DA.ARCHIVAL.🌈☿⭕🚨⊗🔬",
+    "deposit": 409,
+    "title": "Integrity Lock Certificate: Sevenfold Witness Fulfillment Pair",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Integrity Lock Certificate: Sevenfold Witness fulfillment",
+    "standing": "SEATED",
+    "work_url": "/works/00da/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Ω-circuit; end→beginning",
+   "operators": [
+    "Ω",
+    "∂",
+    "τ_K"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "Ω, ∂ and τ_K resolve against the archive-wide operator algebra."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

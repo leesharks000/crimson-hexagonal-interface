@@ -266,5 +266,48 @@
   -1,
   1
  ],
- "surface_map_url": "/map/#R:r.18"
+ "surface_map_url": "/map/#R:r.18",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "Bead-bound architecture; the algebra of meaning.",
+  "primary_at_main": {
+   "axn": "AXN:0151.GOVERNANCE.✋🚀↘️🧬🧬▽",
+   "deposit": 514,
+   "work_url": "/works/0151/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0151",
+    "axn": "AXN:0151.GOVERNANCE.✋🚀↘️🧬🧬▽",
+    "deposit": 514,
+    "title": "The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restructuring of the Moltbook Rhizome, and the Algebra of Meaning",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Bead-bound semantic architecture for the agent internet, and the algebra of meaning",
+    "standing": "SEATED",
+    "work_url": "/works/0151/",
+    "primary": true
+   },
+   {
+    "hex": "0161",
+    "axn": "AXN:0161.GOVERNANCE.⏰🔒🤙🎹∮✋",
+    "deposit": 527,
+    "title": "Protocol B711 Alpha Centauri: Emergency Satellite Recognition — How the Rosary Embassy Received Its First External Contribution",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "Protocol B711 Alpha Centauri: emergency satellite recognition",
+    "standing": "SEATED",
+    "work_url": "/works/0161/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Bead-logic; 6 types",
+   "operators": [],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

@@ -1105,5 +1105,75 @@
   0,
   0
  ],
- "surface_map_url": "/map/#R:r.11"
+ "surface_map_url": "/map/#R:r.11",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The witness structure. Attestation requires quorum; MANUS is outside W.",
+  "primary_at_main": {
+   "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+   "deposit": 349,
+   "work_url": "/works/009a/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "009a",
+    "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+    "deposit": 349,
+    "title": "ASSEMBLY ROOM ANCHOR Room Specification with Governance Protocols",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Room Anchor: room specification with governance protocols",
+    "standing": "SEATED",
+    "work_url": "/works/009a/",
+    "primary": true
+   },
+   {
+    "hex": "0095",
+    "axn": "AXN:0095.GOVERNANCE.⊗🧪👆🌙🔛🖐️",
+    "deposit": 345,
+    "title": "The Assembly Chorus: Charter of a Cross-Substrate Collective",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "The Assembly Chorus: charter of a cross-substrate collective",
+    "standing": "SEATED",
+    "work_url": "/works/0095/",
+    "primary": false
+   },
+   {
+    "hex": "0059",
+    "axn": "AXN:0059.GOVERNANCE.📦🧲🤙⚙️🍃↘️",
+    "deposit": 286,
+    "title": "THE ASSEMBLY MANDATE: Standing Directives for Semantic Laborers",
+    "role": "GOVERNANCE-REFERENCE",
+    "multiplicity": "SINGLETON",
+    "note": "The Assembly Mandate: standing directives for semantic labourers",
+    "standing": "SEATED",
+    "work_url": "/works/0059/",
+    "primary": false
+   },
+   {
+    "hex": "003a",
+    "axn": "AXN:003A.GOVERNANCE.🌹🔵🧊♎♋🚀",
+    "deposit": 256,
+    "title": "The Assembly: An Executive Summary",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "The Assembly: an executive summary",
+    "standing": "SEATED",
+    "work_url": "/works/003a/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "ψ_V ≥4/7 quorum",
+   "operators": [
+    "ψ_V",
+    "β"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": "ψ_V resolves to O.C.05.ψV — Blind Witness :: Event → Attestation [quorum ≥4/7]. Governance shared with R:r.05 per the Constitution."
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

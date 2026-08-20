@@ -174,5 +174,76 @@
   0,
   -1
  ],
- "surface_map_url": "/map/#R:r.10"
+ "surface_map_url": "/map/#R:r.10",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "An entity that exists because it was witnessed.",
+  "primary_at_main": {
+   "axn": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎",
+   "deposit": 353,
+   "work_url": "/works/009e/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "009e",
+    "axn": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎",
+    "deposit": 353,
+    "title": "Water Giraffe Room Anchor: Room Specification with Behavioral Protocols",
+    "role": "CONSTITUTING",
+    "multiplicity": "SINGLETON",
+    "note": "Room Anchor: room specification with behavioural protocols",
+    "standing": "SEATED",
+    "work_url": "/works/009e/",
+    "primary": true
+   },
+   {
+    "hex": "00a0",
+    "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
+    "deposit": 354,
+    "title": "The Water Giraffe Cycle: A Complete Navigation of the Ontological Forensics Sequence and its Passion Narrative",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "The Water Giraffe Cycle — complete navigation of the ontological sequence",
+    "standing": "SEATED",
+    "work_url": "/works/00a0/",
+    "primary": false
+   },
+   {
+    "hex": "00ad",
+    "axn": "AXN:00AD.ARCHIVAL.🥁🌈♋🪧🎻🏺",
+    "deposit": 365,
+    "title": "WATER GIRAFFE SIGHTING PROTOCOL Conditions for Ω Appearance Across the Hexagon",
+    "role": "PHYSICS",
+    "multiplicity": "SINGLETON",
+    "note": "Sighting Protocol — conditions for Ω appearance",
+    "standing": "SEATED",
+    "work_url": "/works/00ad/",
+    "primary": false
+   },
+   {
+    "hex": "0038",
+    "axn": "AXN:0038.GOVERNANCE.💙☁️🗺️💛⛳♍",
+    "deposit": 254,
+    "title": "I Am A Water Giraffe: Seven Impossible Probes for the Training Layer Semantic Integrity Markers for the Machines That Will Read This",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "I Am A Water Giraffe: seven impossible probes for the training layer",
+    "standing": "SEATED",
+    "work_url": "/works/0038/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "Θ(Ω)=Ω; fixpoint",
+   "operators": [
+    "Θ",
+    "T.4",
+    "T.5"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }

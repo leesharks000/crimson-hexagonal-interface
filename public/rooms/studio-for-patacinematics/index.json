@@ -321,5 +321,62 @@
   -3,
   1
  ],
- "surface_map_url": "/map/#R:r.14"
+ "surface_map_url": "/map/#R:r.14",
+ "constitution": {
+  "status": "CONSTITUTED",
+  "ontology": "The projection room. Sparrow Wells presides.",
+  "primary_at_main": {
+   "axn": "AXN:0100.GOVERNANCE.☀️🌗🎺👈📏🚩",
+   "deposit": 441,
+   "work_url": "/works/0100/",
+   "rule": "One primary document seated whole at main so a single retrieval carries the locus rather than an index of it; the rest route to their own addresses."
+  },
+  "documents": [
+   {
+    "hex": "0100",
+    "axn": "AXN:0100.GOVERNANCE.☀️🌗🎺👈📏🚩",
+    "deposit": 441,
+    "title": "THE STUDIO FOR PATACINEMATICS Institutional Charter — Build 1.0",
+    "role": "CONSTITUTING",
+    "multiplicity": "VERSION",
+    "note": "Institutional Charter, Build 1 — edition of record; recovery at AXN:0531 (#1312)",
+    "standing": "SEATED",
+    "work_url": "/works/0100/",
+    "primary": true
+   },
+   {
+    "hex": "00ff",
+    "axn": "AXN:00FF.EMPIRICAL.🌖🌲🪦🪐📝🔴",
+    "deposit": 440,
+    "title": "READING A BOOK WITH LEE: COMPLETE PATACINEMATIC ARCHIVE",
+    "role": "INSTANCE",
+    "multiplicity": "SINGLETON",
+    "note": "Reading a Book with Lee: complete patacinematic archive",
+    "standing": "SEATED",
+    "work_url": "/works/00ff/",
+    "primary": false
+   },
+   {
+    "hex": "012b",
+    "axn": "AXN:012B.GOVERNANCE.⚫🌊▶️🟣📋♅",
+    "deposit": 480,
+    "title": "TL;DR:007 THE SCREENING: Google AI Mode Becomes the Projectionist in the Studio for Patacinematics",
+    "role": "EVIDENCE",
+    "multiplicity": "SINGLETON",
+    "note": "TL;DR:007 The Screening — a summarizer becomes the projectionist",
+    "standing": "SEATED",
+    "work_url": "/works/012b/",
+    "primary": false
+   }
+  ],
+  "physics_resolution": {
+   "declared": "ICM recursive",
+   "operators": [
+    "ICM"
+   ],
+   "source": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧 (#1241)",
+   "note": null
+  },
+  "projection_note": "Alexanarch owns each work; these pages project full text onto the traversal surface."
+ }
 }
