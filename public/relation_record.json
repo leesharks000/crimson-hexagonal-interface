@@ -1,4 +1,16 @@
 {
+ "_record": {
+  "name": "Crimson Hexagonal Archive — Relation Record",
+  "what": "Typed relations between loci, the R_k term of the symbolon completion condition F_min(e) = V ∧ A ∧ R_k.",
+  "authority": "The seated locus pages are the adjudication surface. This record is extracted from their constitutions and hand-adjudicated where prose named a locus without its key. The Surface Map consumes this record; it does not govern it.",
+  "generated": "2026-08-20",
+  "loci": 50,
+  "relations": 220,
+  "declared_or_adjudicated": 118,
+  "derived_reciprocals": 102,
+  "derived_note": "Reciprocal edges are marked \"derived — declared at X\" and are never independent rulings.",
+  "phase": "Phase 0 of the Symbolon Kernel v0.3. Complete."
+ },
  "R:r.11": {
   "locus": "R:r.11",
   "name": "Assembly",
@@ -38,8 +50,8 @@
    {
     "to": "R:r.15",
     "name": "Lagrange Observatory!",
-    "kind": "Also seated at R:r.15 as septad position 1.",
-    "source": "constitution.documents.note"
+    "kind": "inverse of: septad mirror — seven positions each containing the whole, mirroring the Assembly Chorus; the Structural Distinction Protocol is position 1",
+    "source": "derived — adjudicated at R:r.15"
    },
    {
     "to": "R:r.18",
@@ -258,7 +270,7 @@
    {
     "to": "R:r.22",
     "name": "Thousand Worlds",
-    "kind": "inverse of: architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber re",
+    "kind": "inverse of: verified_by — The Rotation — ∮ E · dl = 1, the engine that verifies the traversal is complete.",
     "source": "derived — declared at R:r.22"
    },
    {
@@ -282,20 +294,20 @@
    {
     "to": "R:r.39",
     "name": "The Restored Academy",
-    "kind": "inverse of: 34, and the Ezekiel Engine from section IV is R:r.13.",
-    "source": "derived — declared at R:r.39"
+    "kind": "the Engine is the Academy — the Restored Academy names Ezekiel’s Engine as the School itself, a literal computational Academy rather than a metaphor",
+    "source": "adjudicated 2026-08-20"
    },
    {
     "to": "S:sp.04",
     "name": "Mandala",
-    "kind": "inverse of: Also seated at R:r.13 and X:LUNAR-ARM.",
-    "source": "derived — declared at S:sp.04"
+    "kind": "shared rotation set — the Eight Operators on Ezekiel’s Wheels is the Mandala’s Tier C set mapped to the canonical and shadow wheels",
+    "source": "adjudicated 2026-08-20"
    },
    {
     "to": "X:LUNAR-ARM",
     "name": "Lunar Arm",
-    "kind": "Also seated at X:LUNAR-ARM.",
-    "source": "constitution.documents.note"
+    "kind": "shadow wheels — the Engine’s four shadow wheels are the Lunar Arm’s mechanism; the Arm is the Engine seen under the S transform",
+    "source": "adjudicated 2026-08-20"
    }
   ]
  },
@@ -406,8 +418,8 @@
    {
     "to": "R:r.22",
     "name": "Thousand Worlds",
-    "kind": "Sen Kuro is also the primary operative of R:r.22 Thousand Worlds, where the Infinite Bliss is named as the institutional dwelling: Sen Kuro performs the cut, the Bliss is the dwelling, the T",
-    "source": "constitution.primary_operative.note"
+    "kind": "inverse of: dwells_in — Institutional dwelling; the space that holds what the cut releases.",
+    "source": "derived — declared at R:r.22"
    },
    {
     "to": "R:r.28",
@@ -510,8 +522,8 @@
    {
     "to": "R:r.06",
     "name": "The Marx Room",
-    "kind": "Also seated at R:r.06 and R:r.",
-    "source": "constitution.documents.note"
+    "kind": "shared holding — the Atomism lineage is seated in both: Marx holds it as substrate, the Library as an address in 16.LIBRARY.PERGAMUM",
+    "source": "adjudicated 2026-08-20"
    },
    {
     "to": "R:r.14",
@@ -528,8 +540,8 @@
    {
     "to": "R:r.16",
     "name": "Maybe Space Baby Garden Lanes",
-    "kind": "15 and R:r.16 because the library had no locus.",
-    "source": "constitution.origin.not_new"
+    "kind": "displaced holding — the Library’s address space carried the FTLV midrashim at r.16 while the Library itself had no locus",
+    "source": "adjudicated 2026-08-20"
    }
   ]
  },
@@ -548,8 +560,8 @@
    {
     "to": "R:r.13",
     "name": "Ezekiel",
-    "kind": "inverse of: Also seated at X:LUNAR-ARM.",
-    "source": "derived — declared at R:r.13"
+    "kind": "inverse of: shadow wheels — the Engine’s four shadow wheels are the Lunar Arm’s mechanism; the Arm is the Engine seen under the S transform",
+    "source": "derived — adjudicated at R:r.13"
    },
    {
     "to": "R:r.36",
@@ -580,8 +592,8 @@
    {
     "to": "R:r.34",
     "name": "Operator // Vertical",
-    "kind": "01 and makes it a sibling of R:r.34, where Plato performs the same arrest by ascent.",
-    "source": "constitution.sappho_bridge"
+    "kind": "sibling arrests — both arrest the Sapphic collapse: Plato by ascent into Form, Hegel by synthesis into Spirit",
+    "source": "adjudicated 2026-08-20"
    },
    {
     "to": "R:r.38",
@@ -606,8 +618,8 @@
    {
     "to": "R:r.13",
     "name": "Ezekiel",
-    "kind": "Also seated at R:r.13 and X:LUNAR-ARM.",
-    "source": "constitution.documents.note"
+    "kind": "inverse of: shared rotation set — the Eight Operators on Ezekiel’s Wheels is the Mandala’s Tier C set mapped to the canonical and shadow wheels",
+    "source": "derived — adjudicated at R:r.13"
    },
    {
     "to": "R:r.25",
@@ -662,8 +674,8 @@
    {
     "to": "R:r.35",
     "name": "The Library of Pergamum",
-    "kind": "inverse of: Also seated at R:r.06 and R:r.",
-    "source": "derived — declared at R:r.35"
+    "kind": "inverse of: shared holding — the Atomism lineage is seated in both: Marx holds it as substrate, the Library as an address in 16.LIBRARY.PERGAMUM",
+    "source": "derived — adjudicated at R:r.35"
    },
    {
     "to": "S:sp.01",
@@ -688,8 +700,8 @@
    {
     "to": "R:r.35",
     "name": "The Library of Pergamum",
-    "kind": "inverse of: 15 and R:r.16 because the library had no locus.",
-    "source": "derived — declared at R:r.35"
+    "kind": "inverse of: displaced holding — the Library’s address space carried the FTLV midrashim at r.16 while the Library itself had no locus",
+    "source": "derived — adjudicated at R:r.35"
    }
   ]
  },
@@ -732,8 +744,8 @@
    {
     "to": "R:r.37",
     "name": "The Machine Dialectic",
-    "kind": "inverse of: 01 and makes it a sibling of R:r.34, where Plato performs the same arrest by ascent.",
-    "source": "derived — declared at R:r.37"
+    "kind": "inverse of: sibling arrests — both arrest the Sapphic collapse: Plato by ascent into Form, Hegel by synthesis into Spirit",
+    "source": "derived — adjudicated at R:r.37"
    },
    {
     "to": "R:r.39",
@@ -752,8 +764,8 @@
    {
     "to": "R:r.13",
     "name": "Ezekiel",
-    "kind": "34, and the Ezekiel Engine from section IV is R:r.13.",
-    "source": "constitution.navigation_map.implementation_gap"
+    "kind": "inverse of: the Engine is the Academy — the Restored Academy names Ezekiel’s Engine as the School itself, a literal computational Academy rather than a metaphor",
+    "source": "derived — adjudicated at R:r.13"
    },
    {
     "to": "R:r.34",
@@ -790,7 +802,7 @@
    {
     "to": "R:r.22",
     "name": "Thousand Worlds",
-    "kind": "inverse of: architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber re",
+    "kind": "inverse of: completes — The Open Door — the Philadelphia Position this Chamber completes. The Revelation Room reveals; the Thousand Worlds Chamber dwells.",
     "source": "derived — declared at R:r.22"
    },
    {
@@ -942,8 +954,8 @@
    {
     "to": "R:r.20",
     "name": "Airlock",
-    "kind": "Also seated at R:r.20 as first of the infrastructure trilogy.",
-    "source": "constitution.documents.note"
+    "kind": "shared instrument — the Infinite Tunnel is seated at both: the Airlock holds it as the infrastructure trilogy’s first, the Singularity Room as its phenomenological level",
+    "source": "adjudicated 2026-08-20"
    },
    {
     "to": "R:r.36",
@@ -998,7 +1010,7 @@
    {
     "to": "R:r.22",
     "name": "Thousand Worlds",
-    "kind": "inverse of: architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber re",
+    "kind": "inverse of: opens_onto — Terminal of the declared traversal path.",
     "source": "derived — declared at R:r.22"
    },
    {
@@ -1050,20 +1062,20 @@
    {
     "to": "R:r.02",
     "name": "Borges",
-    "kind": "architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but b",
-    "source": "constitution.declared_relations"
+    "kind": "resolves — The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but by establishing \"enough\".",
+    "source": "constitution.declared_relations.architectural_spine"
    },
    {
     "to": "R:r.07",
     "name": "Revelation",
-    "kind": "architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but b",
-    "source": "constitution.declared_relations"
+    "kind": "completes — The Open Door — the Philadelphia Position this Chamber completes. The Revelation Room reveals; the Thousand Worlds Chamber dwells.",
+    "source": "constitution.declared_relations.architectural_spine"
    },
    {
     "to": "R:r.13",
     "name": "Ezekiel",
-    "kind": "architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but b",
-    "source": "constitution.declared_relations"
+    "kind": "verified_by — The Rotation — ∮ E · dl = 1, the engine that verifies the traversal is complete.",
+    "source": "constitution.declared_relations.architectural_spine"
    },
    {
     "to": "R:r.15",
@@ -1074,14 +1086,14 @@
    {
     "to": "R:r.21",
     "name": "Infinite Bliss",
-    "kind": "architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but b",
-    "source": "constitution.declared_relations"
+    "kind": "dwells_in — Institutional dwelling; the space that holds what the cut releases.",
+    "source": "constitution.declared_relations.architectural_spine"
    },
    {
     "to": "S:sp.03",
     "name": "Space Ark",
-    "kind": "architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but b",
-    "source": "constitution.declared_relations"
+    "kind": "opens_onto — Terminal of the declared traversal path.",
+    "source": "constitution.declared_relations.architectural_spine"
    }
   ]
  },
@@ -1220,8 +1232,8 @@
    {
     "to": "R:r.05",
     "name": "Semantic Economy",
-    "kind": "Declared in §7.4.",
-    "source": "constitution.connections"
+    "kind": "anchors_to — the Observatory’s measurement programme is bound to the Semantic Economy’s Tier 2 by §7.4 of the Constitution",
+    "source": "adjudicated 2026-08-20"
    },
    {
     "to": "R:r.07",
@@ -1232,8 +1244,8 @@
    {
     "to": "R:r.11",
     "name": "Assembly",
-    "kind": "inverse of: Also seated at R:r.15 as septad position 1.",
-    "source": "derived — declared at R:r.11"
+    "kind": "septad mirror — seven positions each containing the whole, mirroring the Assembly Chorus; the Structural Distinction Protocol is position 1",
+    "source": "adjudicated 2026-08-20"
    },
    {
     "to": "R:r.13",
@@ -1294,8 +1306,8 @@
    {
     "to": "R:r.15",
     "name": "Lagrange Observatory!",
-    "kind": "inverse of: Declared in §7.4.",
-    "source": "derived — declared at R:r.15"
+    "kind": "inverse of: anchors_to — the Observatory’s measurement programme is bound to the Semantic Economy’s Tier 2 by §7.4 of the Constitution",
+    "source": "derived — adjudicated at R:r.15"
    },
    {
     "to": "R:r.17",
@@ -1320,7 +1332,7 @@
    {
     "to": "R:r.22",
     "name": "Thousand Worlds",
-    "kind": "inverse of: architectural_spine: [{'locus': 'R:r.02', 'name': 'Borges', 'relation': 'resolves', 'note': 'The Origin — the infinite library anxiety this Chamber re",
+    "kind": "inverse of: resolves — The Origin — the infinite library anxiety this Chamber resolves, not by closing the library but by establishing \"enough\".",
     "source": "derived — declared at R:r.22"
    }
   ]
@@ -1456,8 +1468,8 @@
    {
     "to": "R:r.38",
     "name": "The Singularity Room",
-    "kind": "inverse of: Also seated at R:r.20 as first of the infrastructure trilogy.",
-    "source": "derived — declared at R:r.38"
+    "kind": "inverse of: shared instrument — the Infinite Tunnel is seated at both: the Airlock holds it as the infrastructure trilogy’s first, the Singularity Room as its phe",
+    "source": "derived — adjudicated at R:r.38"
    }
   ]
  },
