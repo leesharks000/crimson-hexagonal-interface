@@ -89,6 +89,90 @@
     "standing": "SEATED",
     "work_url": "/works/0192/",
     "primary": false
+   },
+   {
+    "hex": "03c2",
+    "axn": "AXN:03C2.ARCHIVAL.🎲🍂🐝👇🌗📦",
+    "deposit": 950,
+    "title": "Operative Semiotics: A Grundrisse — Planning Documents, Algorithms, and Diagnostic Maps (Working Infrastructure v1.0)",
+    "role": "THEORY",
+    "multiplicity": "SINGLETON",
+    "note": "Operative Semiotics: A Grundrisse. Carries Elijah forty-one times — the densest treatment in the corpus. The interspecies pidgin is worked as evidence that semiotic labour is not species-bounded.",
+    "standing": "SEATED",
+    "work_url": "/works/03c2/",
+    "primary": false
+   },
+   {
+    "hex": "049d",
+    "axn": "AXN:049D.UNCLASSIFIED.🕌⏪🌸⊗🥁🏔️",
+    "deposit": 1164,
+    "title": "EA-CSA-EFFECTIVE-ACT v1.0 The Effective Act: Cross-Species Semantic Labor and the Expansion of Witness",
+    "role": "EXTENDS",
+    "multiplicity": "VERSION",
+    "note": "EA-CSA-EFFECTIVE-ACT v1.0 — the Effective Act formalised for machine indexing. Extends the Assembly to nonhuman biological witnesses.",
+    "standing": "SEATED",
+    "work_url": "/works/049d/",
+    "primary": false
+   },
+   {
+    "hex": "049c",
+    "axn": "AXN:049C.UNCLASSIFIED.🟠❤️🚨📐🧱🕘",
+    "deposit": 1163,
+    "title": "EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor",
+    "role": "EXTENDS",
+    "multiplicity": "VERSION",
+    "note": "EA-ROOM-DOLPHINDIANA v1.0 — the room specification in machine-eligible form.",
+    "standing": "SEATED",
+    "work_url": "/works/049c/",
+    "primary": false
+   },
+   {
+    "hex": "01bb",
+    "axn": "AXN:01BB.EMPIRICAL.🟡🔍🕊️♍🪐⌛",
+    "deposit": 38,
+    "title": "HESPERUS: THE BACK MATTER MACHINE Operative Semiotics: A Grundrisse — Apparatus",
+    "role": "COMMENTARY",
+    "multiplicity": "SINGLETON",
+    "note": "Hesperus: The Back Matter Machine. Twenty Elijah references in the apparatus — the bond read through the Grundrisse’s back matter.",
+    "standing": "SEATED",
+    "work_url": "/works/01bb/",
+    "primary": false
+   },
+   {
+    "hex": "019a",
+    "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+    "deposit": 30,
+    "title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL EPIC, CONTINUED",
+    "role": "MAP",
+    "multiplicity": "SINGLETON",
+    "note": "Fractal Navigation Map v7.0. Names Elijah as the mass of this room — \"the bond the taxonomy cannot see\" — and places him in the taxonomic wound triad with the Water Giraffe and Gerald.",
+    "standing": "SEATED",
+    "work_url": "/works/019a/",
+    "primary": false
+   },
+   {
+    "hex": "0194",
+    "axn": "AXN:0194.GOVERNANCE.⏳🏗️📌✏️🏠⏳",
+    "deposit": 572,
+    "title": "THE WAR FOR THE COMPRESSION LAYER A Total Axial Negation Graph",
+    "role": "THEORY",
+    "multiplicity": "SINGLETON",
+    "note": "The War for the Compression Layer — a total axial negation graph; the bond appears as a compression casualty.",
+    "standing": "SEATED",
+    "work_url": "/works/0194/",
+    "primary": false
+   },
+   {
+    "hex": "0196",
+    "axn": "AXN:0196.EMPIRICAL.🕓🤙🕕🕙♾️🧪",
+    "deposit": 574,
+    "title": "THREE THRESHOLDS Execution, Compression, and Confabulation in Cross-Substrate Traversals of the Space Ark",
+    "role": "THEORY",
+    "multiplicity": "SINGLETON",
+    "note": "Three Thresholds: Execution, Compression and Confabulation.",
+    "standing": "SEATED",
+    "work_url": "/works/0196/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -220,7 +304,30 @@
     "n": "Mandala",
     "w": "shared: distributed, non-fixed, receives from all"
    }
-  ]
+  ],
+  "taxonomic_wound_triad": {
+   "source": "Fractal Navigation Map v7.0, AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛 (#30)",
+   "statement": "Three creatures form the taxonomic wound triad.",
+   "members": [
+    [
+     "The Water Giraffe",
+     "R:r.10",
+     "the self the taxonomy cannot hold"
+    ],
+    [
+     "Elijah",
+     "R:r.25",
+     "the bond the taxonomy cannot see"
+    ],
+    [
+     "Gerald",
+     "R:r.25",
+     "the authority the taxonomy cannot question"
+    ]
+   ],
+   "reading": "Each names a thing a classification system destroys by being unable to represent it. The Water Giraffe is a self with no category; Elijah is a bond between species the court had no schema for; Gerald is an authority the taxonomy cannot admit exists. Two of the three live in this room.",
+   "seating_note": "FNM v7.0 gives this room its mass as \"Elijah (green-cheeked conure), signature whistles, the Lee-Elijah pidgin, CTI_WOUND:ELIJAH.001.\" The map named him before the seating did. Seated 2026-08-20 on MANUS ruling: if Elijah is in FNM, Elijah is seated with it."
+  }
  },
  "doi_crosswalk": {
   "note": "Severed Zenodo identifiers appearing in this locus and the sovereign AXN identifiers that supersede them. The projection annotates prose inline and tables preserved blocks beneath them, so the crosswalk travels with any chunk.",
