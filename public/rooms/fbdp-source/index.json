@@ -65,6 +65,90 @@
     "standing": "SEATED",
     "work_url": "/works/01b4/",
     "primary": false
+   },
+   {
+    "hex": "0201",
+    "axn": "AXN:0201.GOVERNANCE.🗝️⭐🎇💥🔻🚪",
+    "deposit": 59,
+    "title": "CHARTER OF THE LIVING ARKITECTURE LAB (LAL) A Living Architecture Laboratory for Substrate Engineering, Myceliated Construction, and Planetary-Scale Ecological Design",
+    "role": "INSTITUTION",
+    "multiplicity": "VERSION",
+    "note": "Charter of the Living Arkitecture Lab — a living architecture laboratory for substrate engineering, myceliated construction and planetary-scale ecological design. Hex 00.LAL.CHARTER. Lee Sharks with Alice Thornburgh. Companion at AXN:04AC.UNCLASSIFIED.🜁🌿🧊🌳🌒🕐 (#1179).",
+    "standing": "SEATED",
+    "work_url": "/works/0201/",
+    "primary": false
+   },
+   {
+    "hex": "0250",
+    "axn": "AXN:0250.GOVERNANCE.🦋🧲🔜🌠🎺✨",
+    "deposit": 709,
+    "title": "MPAI-LAL-INSTITUTION-01: Living Architecture Lab Formal Identity Disambiguation Packet (Institution)",
+    "role": "INSTITUTION",
+    "multiplicity": "SINGLETON",
+    "note": "MPAI-LAL-INSTITUTION-01 — the Living Architecture Lab formalised for machine indexing.",
+    "standing": "SEATED",
+    "work_url": "/works/0250/",
+    "primary": false
+   },
+   {
+    "hex": "0562",
+    "axn": "AXN:0562.UNCLASSIFIED.🥁🦋☽🍄✋🔭",
+    "deposit": 1361,
+    "title": "Living Architecture Lab — livingarchitecturelab.org Site Code v0.1.2 (SPXI Compliant)",
+    "role": "SURFACE",
+    "multiplicity": "SINGLETON",
+    "note": "livingarchitecturelab.org — the Lab’s site.",
+    "standing": "SEATED",
+    "work_url": "/works/0562/",
+    "primary": false
+   },
+   {
+    "hex": "0231",
+    "axn": "AXN:0231.STRUCTURAL.🖐️🚩🥁🌟♣️🕔",
+    "deposit": 686,
+    "title": "Mycelial Cardboard Boxes: Market Analysis and Production Strategy",
+    "role": "APPLIED",
+    "multiplicity": "SINGLETON",
+    "note": "Mycelial Cardboard Boxes: market analysis and production. The compost algebra at industrial scale — [RAW] → [DECOMPOSING] → [HUMUS] → [LOAD-BEARING] as a manufacturing process.",
+    "standing": "SEATED",
+    "work_url": "/works/0231/",
+    "primary": false
+   },
+   {
+    "hex": "0224",
+    "axn": "AXN:0224.GOVERNANCE.↙️🟡🌄🪜🔜➕",
+    "deposit": 679,
+    "title": "UNITED STATES PATENT APPLICATION Publication Number: US 2026/0418001 A1 SELF-PROPAGATING FRIED TUBEROUS CRISP WITH EMBED",
+    "role": "PATENT",
+    "multiplicity": "SINGLETON",
+    "note": "United States Patent Application — the myceliated construction method entering the property regime. A field that metabolises, filed as an invention.",
+    "standing": "SEATED",
+    "work_url": "/works/0224/",
+    "primary": false
+   },
+   {
+    "hex": "055e",
+    "axn": "AXN:055E.UNCLASSIFIED.🏺♣️🔛↙️✨💚",
+    "deposit": 1357,
+    "title": "Hexagonal Contributor License v3.0 — Alice Thornburgh — f.01 Architect — Full Unified License",
+    "role": "LICENCE",
+    "multiplicity": "SINGLETON",
+    "note": "Hexagonal Contributor License v3.0 — Alice Thornburgh. The consent instrument under which the Lab collaborates.",
+    "standing": "SEATED",
+    "work_url": "/works/055e/",
+    "primary": false
+   },
+   {
+    "hex": "024f",
+    "axn": "AXN:024F.GOVERNANCE.🛸🏠🧊🌘❌🌺",
+    "deposit": 708,
+    "title": "EA-LAL-SITE-01: Living Architecture Lab Site Blueprint — A Compressed Architecture for livingarchitecturelab.org",
+    "role": "SURFACE",
+    "multiplicity": "SINGLETON",
+    "note": "EA-LAL-SITE-01 — Living Architecture Lab site specification.",
+    "standing": "SEATED",
+    "work_url": "/works/024f/",
+    "primary": false
    }
   ],
   "physics_resolution": {
@@ -87,7 +171,15 @@
    "convention": "Fields are therefore seated as overlays, not as containers. A field page carries: its source, its gradient, its attenuation zones, and the loci it modifies — never a list of contents, because a field has none. Where a field and its source room share a constituting document, the document is seated to both as SHARED, and the pair is one structure seen twice.",
    "source": "Stated in EA-FIELD-FBDP v1.1, AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃ (#571), which introduced the class."
   },
-  "position": "A small room at the centre of a large field. The source zone: maximum intensity, full operator set, all laws governing."
+  "position": "A small room at the centre of a large field. The source zone: maximum intensity, full operator set, all laws governing.",
+  "the_lab": {
+   "name": "The Living Arkitecture Lab (LAL)",
+   "hex": "00.LAL.CHARTER",
+   "with": "Alice Thornburgh, co-author and contributor under the Hexagonal Contributor License v3.0.",
+   "what": "A living architecture laboratory for substrate engineering, myceliated construction and planetary-scale ecological design. Founded 2026-04-12.",
+   "why_here": "The room is the seed; the field is the growth. R:r.27 shares its constituting document with F:f.01 by design, but the Lab is the room’s own — the institution that takes compost algebra out of the archive and into cardboard, patents and buildings. The field metabolises meaning; the Lab metabolises matter.",
+   "arc": "Charter (#59) → machine-indexed institution (#709) → site (#1361) → applied production (#686) → patent application (#679). A field specification becoming a manufacturing method and then property."
+  }
  },
  "locative_key_history": [
   {
