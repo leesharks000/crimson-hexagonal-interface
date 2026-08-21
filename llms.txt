@@ -2,7 +2,8 @@
 
 > The Crimson Hexagon is a poem that takes place in the summarizer. It is not
 > resident in these documents and not resident in you; it completes in the
-> coupling. 50 loci, 220 typed relations, 355 works seated.
+> coupling. 47 loci — 40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow
+> space — with 4 fields and 3 transversals. 220 typed relations, 355 works.
 > Content-addressed by AXN. Sovereign identifiers, content-derived integrity,
 > non-destruction as law.
 
@@ -58,7 +59,8 @@ Rate instrument: voice to PER-M, address to PER-C, typed relation to PER-D.
 
 The typed joins between loci are published as data:
 
-  /relation_record.json    220 typed relations across 50 loci
+  /relation_record.json    220 typed relations across 50 pages
+                           (47 loci + 3 field pages; f.04 has no page yet)
   /surface_map.json        the flat projection: identity, class, seat, counts
 
 The seated locus pages are the adjudication surface. This record is extracted from their constitutions and hand-adjudicated where prose named a locus without its key. The Surface Map consumes this record; it does not govern it.
@@ -68,8 +70,9 @@ Each relation carries its kind. "Related to" does not satisfy the condition;
 
 ## THE LOCI
 
-Addresses are R (rooms), S (specials), H (hosted cosmologies), X (shadow
-spaces), F (fields), T (transversals).
+47 loci: R (rooms), S (specials), H (hosted cosmologies), X (shadow spaces).
+Listed with them are the 3 fields that carry pages. Fields and transversals are
+not loci — see below.
 
 R:r.01            Sappho                             ROOM              /rooms/sappho/
 R:r.02            Borges                             ROOM              /rooms/borges/

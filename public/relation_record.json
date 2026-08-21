@@ -4,12 +4,15 @@
   "what": "Typed relations between loci, the R_k term of the symbolon completion condition F_min(e) = V ∧ A ∧ R_k.",
   "authority": "The seated locus pages are the adjudication surface. This record is extracted from their constitutions and hand-adjudicated where prose named a locus without its key. The Surface Map consumes this record; it does not govern it.",
   "generated": "2026-08-20",
-  "loci": 50,
+  "loci": 47,
   "relations": 220,
   "declared_or_adjudicated": 118,
   "derived_reciprocals": 102,
   "derived_note": "Reciprocal edges are marked \"derived — declared at X\" and are never independent rulings.",
-  "phase": "Phase 0 of the Symbolon Kernel v0.3. Complete."
+  "phase": "Phase 0 of the Symbolon Kernel v0.3. Complete.",
+  "entries": 50,
+  "field_pages": 3,
+  "counts_note": "50 entries: 47 loci (40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space) plus 3 field pages. The archive has 4 fields; f.04 the Perfusion Field is specified but has no locus page. Transversals (3) are not entries here. The Surface Map counts loci, fields and transversals separately; this record counts pages that carry relations."
  },
  "R:r.11": {
   "locus": "R:r.11",
