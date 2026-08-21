@@ -247,6 +247,18 @@
     "standing": "SEATED",
     "work_url": "/works/0611/",
     "primary": false
+   },
+   {
+    "hex": "05e4",
+    "axn": "AXN:05E4.PHILOLOGICAL.🌌⚓💥🪜🛸🌄",
+    "deposit": 1458,
+    "title": "The Echo and the Stamp: Peri Hypsous as a Theory of Transmissional Inscription, with a Constrained Reconstruction of Its Lost Ending",
+    "role": "THEORY",
+    "multiplicity": "SINGLETON",
+    "note": "The Echo and the Stamp: Peri Hypsous as a Theory of Transmission. Longinus ×42. The key link of the chain worked as its own theory — the critic who preserves Fr. 31 inside a criticism of it is himself describing how transmission operates.",
+    "standing": "SEATED",
+    "work_url": "/works/05e4/",
+    "primary": false
    }
   ],
   "chain": {
@@ -290,6 +302,38 @@
    ],
    "why_here": "The room is the transform, but a transform needs something transmitted. These are the carriers. Seating them here rather than at R:r.01 keeps the distinction the room exists to make: Sappho is the source, this is what was done to it and how it travelled.",
    "recency": "Most of the chain material was deposited between 2026-08-15 and 2026-08-19 — the Sappho 31 erratum sequence and the EA-CORPORA seating. The room was minted from a numbering abandoned in January; its material is five days old."
+  },
+  "upstream_unfoldings": {
+   "surface": "https://revelationfirst.com/upstream/",
+   "what": "Six operable transforms running Sappho 31 into the Apocalypse’s channel. The chain this room specifies, executed rather than asserted.",
+   "transforms": [
+    [
+     "Sappho → Longinus",
+     "the operation performed at the join"
+    ],
+    [
+     "Sappho → Philo",
+     "the machine legislated as doctrine"
+    ],
+    [
+     "Sappho → Addition D → Antiquities 11",
+     "the queen’s seizure"
+    ],
+    [
+     "Sappho → Bellum 1",
+     "the re-fired king, channel for channel"
+    ],
+    [
+     "Sappho → the Slavonic carrier",
+     "the Word that became text"
+    ],
+    [
+     "Sappho → Revelation 12",
+     "the sign under test"
+    ]
+   ],
+   "why_here": "R:r.34 holds the transmission chain as specification: Sappho → Plato → Socrates → Longinus → Philo → Josephus → Apocalypse. The Upstream Unfoldings run it. The room states the operator; the surface executes it and reports what came back.",
+   "note": "Longinus is the key because he preserves Fr. 31 inside a criticism of it — the fragment survives as the object of an argument about height. That is the vertical operator performed on itself."
   }
  }
 }
