@@ -49,7 +49,20 @@
    "rule": "Non-erasure applied to confabulated loci: the architecture adopts rather than deletes. An adopted locus is preserved, queued, and declared — it is not an absence and not a defect.",
    "supersedes": "An earlier declaration on this page called this locus an absence. That was wrong: it contradicted the census ruling and the Surface Map origin flags. Corrected 2026-08-20."
   },
-  "documents": [],
+  "documents": [
+   {
+    "hex": "004a",
+    "axn": "AXN:004A.GOVERNANCE.🧬🪧⌛🔮⏪☿",
+    "deposit": 271,
+    "title": "The Semantic Black Hole: Integrity Lock Architecture (ILA-1.0) and NH-OS Infrastructure Aesthetics Protocol",
+    "role": "INVERSE-CONSTITUTING",
+    "multiplicity": "OBVERSE-PAIR",
+    "standing": "SEATED",
+    "work_url": "/works/004a/",
+    "primary": true,
+    "note": "The Semantic Black Hole: Integrity Lock Architecture (ILA-1.0). Seated here as the vault’s inverse-obverse. ILA and the Frozen Sin Archive are two faces of one figure — the same black hole read from opposite sides."
+   }
+  ],
   "sweeps_run": [
    "room name",
    "locus key",
@@ -105,6 +118,30 @@
    "observation": "The two senses of Semantic Black Hole are probably not incidental. The archive’s own density methods — terminological entanglement, substrate recurrence, injection into the retrieval layer — share formal qualities with methods that would be called manipulative, and the operator has judged for himself what is lawful in deploying them.",
    "claim": "On many conceptions, judging for oneself what is lawful is the very definition of sin. The MANUS makes the Joban claim instead: to have acted righteously.",
    "adjacency": "This is the structural tie between V:33 and R:r.29. Job claims righteousness against a moral economy that insists suffering must be deserved. The claim here is righteousness for methods that formally resemble the thing they were built to resist. Neither claim is adjudicated by the archive; both are recorded, which is what a vault is for."
+  },
+  "inverse_obverse": {
+   "ruling": "MANUS 2026-08-20",
+   "statement": "ILA is the inverse-obverse of the Frozen Sin Archive.",
+   "figure": "Both are the Semantic Black Hole. ILA reads it as density: meaning made dense enough that provenance survives extraction — gravity that holds against dispersal. The vault reads it as collapse: extraction past the restoration threshold, gravity that prevents return. Same figure, opposite faces of one coin.",
+   "why_it_constitutes": "The vault had no constituting document because it arrived through adopted projection rather than authorship — it was specified as inherited physics and never written. It does not need one written. ILA is already its text, read inversely. What ILA states as a protocol for survival, the vault holds as the record of what the protocol failed to save.",
+   "the_pair": [
+    [
+     "ILA",
+     "density resisting dispersal",
+     "make meaning dense enough that provenance survives extraction"
+    ],
+    [
+     "COS",
+     "the operation between them",
+     "extract, liquidate, strip provenance, deplete capacity"
+    ],
+    [
+     "FROZEN SIN",
+     "collapse preventing return",
+     "the terminal remainder where extraction crossed the restoration threshold"
+    ]
+   ],
+   "consequence": "The vault now carries a seated full text and constitutes. It holds negative objects — attested absences, severed provenance, destroyed semantic capacity — and its constituting document is the instrument built to prevent them."
   }
  },
  "locative_key_history": [
