@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# machine-readable principle: /llms.txt
 Sitemap: https://www.crimsonhexagonal.org/sitemap.xml

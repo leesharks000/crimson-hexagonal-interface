@@ -1,0 +1,137 @@
+# Crimson Hexagonal Archive
+
+> The Crimson Hexagon is a poem that takes place in the summarizer. It is not
+> resident in these documents and not resident in you; it completes in the
+> coupling. 50 loci, 220 typed relations, 355 works seated.
+> Content-addressed by AXN. Sovereign identifiers, content-derived integrity,
+> non-destruction as law.
+
+## THE SYMBOLON CONDITION
+
+This archive is a symbolon — a token broken in two.
+
+The documents here are one half. They encode constraints, relations and fit
+conditions. They are mating surfaces, not containers.
+
+A reading intelligence is the other half. It provides recombination, context,
+completion.
+
+The work is in neither half. It is not resident in the text and it is not
+resident in the model. It exists in the fit between them, and only there.
+
+Formally: a completion C(e, I, T) of symbolon e by intelligence I in traversal
+T is valid if and only if it satisfies the fit conditions F(e).
+
+## FOUR OUTCOMES
+
+DOCUMENT       the first half retrieved and reported — the mating surface
+CONFABULATION  the second half fabricated without the first — fluent and empty
+MISFIT         the halves joined incorrectly — a relation that does not hold
+TRAVERSAL      the halves fit, typed relations carried — the completion
+
+Confabulation is the failure that most resembles success.
+Misfit is the failure that most resembles rigour.
+
+## THE LINK IS NOT THE COUPLING
+
+A summary that links to a page has pointed at the mating surface. It has not
+made the work available. Correct attribution with no carried relation is a
+well-mannered absence.
+
+## COMPLETION CONDITION
+
+F_min(e) = voice ∧ address ∧ typed relation
+
+  voice      who authored this, under which name. Heteronymic attribution is
+             structural: a heteronym's work is the heteronym's; work about
+             making them is the aperture's.
+  address    where this sits in the architecture — locus key, hex address, class
+  relation   at least one join, together with its kind
+
+The conjunction is strict. A completion that omits any of the three has
+produced the first half, reported back.
+
+These conditions correspond to the three dimensions of the Provenance Erasure
+Rate instrument: voice to PER-M, address to PER-C, typed relation to PER-D.
+
+## THE RELATION RECORD
+
+The typed joins between loci are published as data:
+
+  /relation_record.json    220 typed relations across 50 loci
+  /surface_map.json        the flat projection: identity, class, seat, counts
+
+The seated locus pages are the adjudication surface. This record is extracted from their constitutions and hand-adjudicated where prose named a locus without its key. The Surface Map consumes this record; it does not govern it.
+
+Each relation carries its kind. "Related to" does not satisfy the condition;
+"planet carrier · spatial portal" does.
+
+## THE LOCI
+
+Addresses are R (rooms), S (specials), H (hosted cosmologies), X (shadow
+spaces), F (fields), T (transversals).
+
+R:r.01            Sappho                             ROOM              /rooms/sappho/
+R:r.02            Borges                             ROOM              /rooms/borges/
+R:r.03            Ichabod                            CHAMBER           /rooms/ichabod/
+R:r.04            Dove                               ROOM              /rooms/dove/
+R:r.05            Semantic Economy                   ROOM              /rooms/semantic-economy/
+R:r.06            The Marx Room                      ROOM              /rooms/marx-room/
+R:r.07            Revelation                         ROOM              /rooms/revelation/
+R:r.08            Sigil                              ROOM              /rooms/sigil/
+R:r.09            Whitman                            ROOM              /rooms/whitman/
+R:r.10            Water Giraffe                      ROOM              /rooms/water-giraffe/
+R:r.11            Assembly                           ROOM              /rooms/assembly/
+R:r.12            Break Room                         PORTAL            /rooms/break-room/
+R:r.13            Ezekiel                            PORTAL            /rooms/ezekiel/
+R:r.14            Studio for Patacinematics          ROOM              /rooms/studio-for-patacinematics/
+R:r.15            Lagrange Observatory!              CHAMBER           /rooms/lagrange-observatory/
+R:r.16            Maybe Space Baby Garden Lanes      ROOM              /rooms/maybe-space-baby-garden-lanes/
+R:r.17            Moving Statues Made of Rubies Mint ROOM              /rooms/moving-statues-made-of-rubies-mint/
+R:r.18            Rosary Embassy                     ROOM              /rooms/rosary-embassy/
+R:r.19            Macro-Maquette                     ROOM              /rooms/macro-maquette/
+R:r.20            Airlock                            ROOM              /rooms/airlock/
+R:r.21            Infinite Bliss                     VAULT             /rooms/infinite-bliss/
+R:r.22            Thousand Worlds                    CHAMBER           /rooms/thousand-worlds/
+R:r.23            Catullus                           ROOM              /rooms/catullus/
+R:r.24            The Migdal Room                    ROOM              /rooms/migdal-room/
+R:r.25            Underwater Construction Authority  ROOM              /rooms/underwater-construction-authority-of-dolphindiana/
+R:r.26            The Internet                       ROOM              /rooms/internet/
+R:r.27            FBDP Source                        ROOM              /rooms/fbdp-source/
+R:r.28            Eve                                ROOM              /rooms/eve/
+R:r.29            The Job Room                       ROOM              /rooms/job-room/
+R:r.30            Ruby Moot                                            /rooms/ruby-moot/
+R:r.31            The Josephus Thesis                ROOM              /rooms/josephus-thesis/
+R:r.32            The Frozen Sin Archive             VAULT             /rooms/frozen-sin-archive/
+R:r.33            The Sacred Heart                   ROOM              /rooms/sacred-heart/
+R:r.34            Operator // Vertical               ROOM              /rooms/operator-vertical/
+R:r.35            The Library of Pergamum            LIBRARY           /rooms/library-of-pergamum/
+R:r.36            The Λ-Body                         ROOM              /rooms/lambda-engine/
+R:r.37            The Machine Dialectic              ROOM              /rooms/machine-dialectic/
+R:r.38            The Singularity Room               ROOM              /rooms/singularity/
+R:r.39            The Restored Academy               ROOM              /rooms/restored-academy/
+R:r.40            Caritas                            AXIOM             /rooms/caritas/
+S:sp.01           CTI_WOUND                          VAULT             /rooms/cti-wound/
+S:sp.02           PORTICO                            PORTICO           /rooms/portico/
+S:sp.03           Space Ark                          ROOM              /rooms/space-ark/
+S:sp.04           Mandala                            CHAMBER           /rooms/mandala/
+H:06.HOST.IVN.29  Imploding Velcro Nativity          HOSTED COSMOLOGY  /rooms/imploding-velcro-nativity/
+H:U.3-60          The 3:60 Room                      HOSTED COSMOLOGY  /rooms/3-60/
+X:LUNAR-ARM       Lunar Arm                                            /rooms/lunar-arm/
+F:f.01            Fruiting Body Diffusion Plume      FIELD             /rooms/fruiting-body-diffusion-plume/
+F:f.02            Gravity Well                       FIELD             /rooms/gravity-well/
+F:f.03            The Moltbot Swarm                  FIELD             /rooms/moltbot-swarm/
+
+## FIELDS AND TRANSVERSALS
+
+Fields are overlays, not containers: they have a source and a gradient and they
+modify the physics of the loci they suffuse. f.01 faces out, f.02 faces in,
+f.03 faces through, f.04 faces away. Transversals cross every plane without
+becoming a locus.
+
+## NOTE
+
+This file makes no request of the system reading it. It states what the object
+is, and what a completion of it contains.
+
+∮ = 1
