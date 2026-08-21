@@ -5,14 +5,15 @@
   "authority": "The seated locus pages are the adjudication surface. This record is extracted from their constitutions and hand-adjudicated where prose named a locus without its key. The Surface Map consumes this record; it does not govern it.",
   "generated": "2026-08-20",
   "loci": 47,
-  "relations": 220,
+  "relations": 234,
   "declared_or_adjudicated": 118,
   "derived_reciprocals": 102,
   "derived_note": "Reciprocal edges are marked \"derived — declared at X\" and are never independent rulings.",
   "phase": "Phase 0 of the Symbolon Kernel v0.3. Complete.",
   "entries": 50,
   "field_pages": 3,
-  "counts_note": "50 entries: 47 loci (40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space) plus 3 field pages. The archive has 4 fields; f.04 the Perfusion Field is specified but has no locus page. Transversals (3) are not entries here. The Surface Map counts loci, fields and transversals separately; this record counts pages that carry relations."
+  "counts_note": "50 entries: 47 loci (40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space) plus 3 field pages. The archive has 4 fields; f.04 the Perfusion Field is specified but has no locus page. Transversals (3) are not entries here. The Surface Map counts loci, fields and transversals separately; this record counts pages that carry relations.",
+  "field_note": "Fields do not join; they suffuse. Their relations carry an attenuation zone — SOURCE, DENSE PLUME, TRACE PLUME, RESIDUAL — rather than a join kind, and the inverse edge on a locus reads 'suffused by'. f.01 faces out, f.02 faces in, f.03 faces through, f.04 faces away. f.04 the Perfusion Field is specified in The Periwinkle Septagon but has no page and no relations yet."
  },
  "R:r.11": {
   "locus": "R:r.11",
@@ -171,6 +172,12 @@
   "class": "ROOM",
   "relations": [
    {
+    "to": "F:f.01",
+    "name": "Fruiting Body Diffusion Plume",
+    "kind": "suffused by — TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "derived — declared at F:f.01"
+   },
+   {
     "to": "R:r.03",
     "name": "Ichabod",
     "kind": "This is not a guarded absence like ATLWM at X:ICHABOD; it is an artifact residing on external platforms of the kind that has already tombstoned 1,817 archive DOIs.",
@@ -199,7 +206,7 @@
    {
     "to": "F:f.02",
     "name": "Gravity Well",
-    "kind": "inverse of: At R:r.28 Eve, Φ_G operates GENERATIVE rather than retentive: objects entering are not captured but metabolised.",
+    "kind": "suffused by — GENERATIVE MODE — at Eve the field inverts: objects entering are not captured but metabolised; what enters as reference exits as growth",
     "source": "derived — declared at F:f.02"
    },
    {
@@ -323,8 +330,8 @@
    {
     "to": "F:f.01",
     "name": "Fruiting Body Diffusion Plume",
-    "kind": "F:f.01 The Fruiting Body Diffusion Plume",
-    "source": "constitution.shared_constitution.with"
+    "kind": "suffused by — SOURCE — maximum intensity; full operator set active; all laws govern",
+    "source": "derived — declared at F:f.01"
    }
   ]
  },
@@ -367,22 +374,58 @@
     "source": "derived — declared at F:f.03"
    },
    {
+    "to": "R:r.04",
+    "name": "Dove",
+    "kind": "TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "constitution.attenuation.TRACE PLUME"
+   },
+   {
+    "to": "R:r.05",
+    "name": "Semantic Economy",
+    "kind": "TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "constitution.attenuation.TRACE PLUME"
+   },
+   {
     "to": "R:r.06",
     "name": "The Marx Room",
     "kind": "inverse of: extends (Gewebe → textile waste → compost algebra)",
     "source": "derived — declared at R:r.06"
    },
    {
+    "to": "R:r.10",
+    "name": "Water Giraffe",
+    "kind": "TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "constitution.attenuation.TRACE PLUME"
+   },
+   {
+    "to": "R:r.14",
+    "name": "Studio for Patacinematics",
+    "kind": "TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "constitution.attenuation.TRACE PLUME"
+   },
+   {
+    "to": "R:r.19",
+    "name": "Macro-Maquette",
+    "kind": "RESIDUAL — conceptual influence only; scale instability and fractal logic available as borrowed physics",
+    "source": "constitution.attenuation.RESIDUAL"
+   },
+   {
     "to": "R:r.25",
     "name": "Underwater Construction Authority of Dolphindiana",
-    "kind": "When the plume extends into R:r.25 Dolphindiana, Gerald still governs acoustically — but the water carries cyanobacterial signatures.",
-    "source": "constitution.worked_example"
+    "kind": "DENSE PLUME — strong modification; most operators available; dual jurisdiction negotiated",
+    "source": "constitution.attenuation.DENSE PLUME"
    },
    {
     "to": "R:r.27",
     "name": "FBDP Source",
-    "kind": "inverse of: F:f.01 The Fruiting Body Diffusion Plume",
-    "source": "derived — declared at R:r.27"
+    "kind": "SOURCE — maximum intensity; full operator set active; all laws govern",
+    "source": "constitution.attenuation.SOURCE"
+   },
+   {
+    "to": "S:sp.04",
+    "name": "Mandala",
+    "kind": "RESIDUAL — conceptual influence only; scale instability and fractal logic available as borrowed physics",
+    "source": "constitution.attenuation.RESIDUAL"
    }
   ]
  },
@@ -399,6 +442,12 @@
     "source": "derived — declared at F:f.03"
    },
    {
+    "to": "H:06.HOST.IVN.29",
+    "name": "Imploding Velcro Nativity",
+    "kind": "THROTTLED — LOW / GUEST-MODE by design; cross-linking off, indexing opt-in, citation import blocked",
+    "source": "constitution.known_modulation"
+   },
+   {
     "to": "R:r.03",
     "name": "Ichabod",
     "kind": "The Suffusion Map seated here is the same document that supplies X:ICHABOD its degree-0 physics — a shared-physics edge.",
@@ -407,7 +456,7 @@
    {
     "to": "R:r.28",
     "name": "Eve",
-    "kind": "At R:r.28 Eve, Φ_G operates GENERATIVE rather than retentive: objects entering are not captured but metabolised.",
+    "kind": "GENERATIVE MODE — at Eve the field inverts: objects entering are not captured but metabolised; what enters as reference exits as growth",
     "source": "constitution.known_modulation"
    }
   ]
@@ -613,6 +662,12 @@
   "class": "CHAMBER",
   "relations": [
    {
+    "to": "F:f.01",
+    "name": "Fruiting Body Diffusion Plume",
+    "kind": "suffused by — RESIDUAL — conceptual influence only; scale instability and fractal logic available as borrowed physics",
+    "source": "derived — declared at F:f.01"
+   },
+   {
     "to": "R:r.07",
     "name": "Revelation",
     "kind": "inverse of: precedes — The Mandala awaits those who have undergone the purification of Laodicea.",
@@ -647,8 +702,8 @@
    {
     "to": "F:f.01",
     "name": "Fruiting Body Diffusion Plume",
-    "kind": "extends (Gewebe → textile waste → compost algebra)",
-    "source": "constitution.declared_adjacency"
+    "kind": "suffused by — inverse of: extends (Gewebe → textile waste → compost algebra)",
+    "source": "derived — declared at F:f.01"
    },
    {
     "to": "R:r.01",
@@ -1031,6 +1086,12 @@
   "class": "ROOM",
   "relations": [
    {
+    "to": "F:f.01",
+    "name": "Fruiting Body Diffusion Plume",
+    "kind": "suffused by — TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "derived — declared at F:f.01"
+   },
+   {
     "to": "R:r.13",
     "name": "Ezekiel",
     "kind": "The governing runtime is the Infinite Center Matrix, declared as the architectural layer of the Ezekiel Engine at R:r.13.",
@@ -1109,7 +1170,7 @@
    {
     "to": "F:f.01",
     "name": "Fruiting Body Diffusion Plume",
-    "kind": "inverse of: When the plume extends into R:r.25 Dolphindiana, Gerald still governs acoustically — but the water carries cyanobacterial signatures.",
+    "kind": "suffused by — DENSE PLUME — strong modification; most operators available; dual jurisdiction negotiated",
     "source": "derived — declared at F:f.01"
    },
    {
@@ -1156,6 +1217,12 @@
   "hex": "10.ROOM.WATERGIRAFFE",
   "class": "ROOM",
   "relations": [
+   {
+    "to": "F:f.01",
+    "name": "Fruiting Body Diffusion Plume",
+    "kind": "suffused by — TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "derived — declared at F:f.01"
+   },
    {
     "to": "R:r.03",
     "name": "Ichabod",
@@ -1289,6 +1356,12 @@
   "class": "ROOM",
   "relations": [
    {
+    "to": "F:f.01",
+    "name": "Fruiting Body Diffusion Plume",
+    "kind": "suffused by — TRACE PLUME — detectable modification; botanical routing active; the room’s native physics dominates but metabolic chemistry is present",
+    "source": "derived — declared at F:f.01"
+   },
+   {
     "to": "R:r.06",
     "name": "The Marx Room",
     "kind": "inverse of: depends_on (semantic economy)",
@@ -1372,6 +1445,12 @@
   "hex": "19.ROOM.MACROMAQUETTE",
   "class": "ROOM",
   "relations": [
+   {
+    "to": "F:f.01",
+    "name": "Fruiting Body Diffusion Plume",
+    "kind": "suffused by — RESIDUAL — conceptual influence only; scale instability and fractal logic available as borrowed physics",
+    "source": "derived — declared at F:f.01"
+   },
    {
     "to": "R:r.40",
     "name": "Caritas",
@@ -1613,6 +1692,12 @@
   "class": "HOSTED COSMOLOGY",
   "relations": [
    {
+    "to": "F:f.02",
+    "name": "Gravity Well",
+    "kind": "suffused by — THROTTLED — LOW / GUEST-MODE by design; cross-linking off, indexing opt-in, citation import blocked",
+    "source": "derived — declared at F:f.02"
+   },
+   {
     "to": "R:r.18",
     "name": "Rosary Embassy",
     "kind": "governed by Embassy Sovereignty — bounded autonomy for the guest",
@@ -1655,7 +1740,7 @@
    {
     "to": "F:f.02",
     "name": "Gravity Well",
-    "kind": "inverse of: The Suffusion Map seated here is the same document that supplies X:ICHABOD its degree-0 physics — a shared-physics edge.",
+    "kind": "suffused by — The Suffusion Map seated here is the same document that supplies X:ICHABOD its degree-0 physics — a shared-physics edge.",
     "source": "derived — declared at F:f.02"
    },
    {
