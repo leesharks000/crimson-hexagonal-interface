@@ -136,7 +136,9 @@
     const r = await fetch('https://www.alexanarch.org/api/counts.json', {cache:'no-store'});
     const c = await r.json();
     const n = c?.deposits?.total;
-    if (n) document.querySelectorAll('[data-counts="deposits"]')
+    if (n) document.querySelectorAll('[data-count="deposits.total"]')
+             .forEach(el => el.textContent = n.toLocaleString());
+    document.querySelectorAll('[data-counts="deposits"]')
              .forEach(el => el.textContent = n.toLocaleString());
   } catch (e) { /* leave the ellipsis rather than assert a number we could not verify */ }
 })();
