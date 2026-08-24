@@ -120,5 +120,26 @@
 
 <div style="max-width:900px;margin:40px auto 20px;padding:12px 24px;font-size:0.82em;color:#888;text-align:center;border-top:1px solid #e5e5e5;"><a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener" style="color:#888;">Discussion →</a></div>
 <script src="https://www.alexanarch.org/assets/counts.js" defer></script>
+
+<script>
+// COUNTS ARE FETCHED, NOT WRITTEN. api/counts.json is the fleet's canonical
+// figure and says so in its own _note: "Every surface that states a number
+// should fetch it from here rather than hand-setting it."
+//
+// It was hand-set here, and drifted: this page carried 1,520 while the archive
+// held 1,539, alongside 1488 from the interface's own meta (a snapshot frozen
+// 2026-04-07) and 482 seated documents — THREE DIFFERENT QUANTITIES ALL
+// LABELLED "DEPOSITS". 482 in 38 rooms is the interface's seated corpus and is
+// correct; the archive total is a different number and is now fetched.
+(async () => {
+  try {
+    const r = await fetch('https://www.alexanarch.org/api/counts.json', {cache:'no-store'});
+    const c = await r.json();
+    const n = c?.deposits?.total;
+    if (n) document.querySelectorAll('[data-counts="deposits"]')
+             .forEach(el => el.textContent = n.toLocaleString());
+  } catch (e) { /* leave the ellipsis rather than assert a number we could not verify */ }
+})();
+</script>
 </body>
 </html>
