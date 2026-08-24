@@ -1,0 +1,156 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Open Work — Crimson Hexagonal Archive</title>
+<meta name=description content="21 open commitments: registered predictions awaiting a date, pre-registered experiments awaiting execution, and software builds. 6 require no credentials, no compute and no access.">
+<link rel=canonical href="https://www.crimsonhexagonal.org/queue/">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#16181d;--dim:#6b7280;--line:#e3e5e9;--bg:#fbfbfc;--card:#fff;--accent:#1f6f5c;--free:#0f766e}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;padding:3rem 1.25rem 6rem}
+.wrap{max-width:54rem;margin:0 auto}
+h1{font-size:2rem;letter-spacing:-.02em;margin-bottom:.4rem}
+.lede{color:var(--dim);font-size:1.05rem;max-width:44rem;margin-bottom:2rem}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:2.5rem}
+.stat{background:var(--card);padding:1rem 1.1rem}
+.stat b{display:block;font-size:1.7rem;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.stat span{color:var(--dim);font-size:.82rem}
+.stat.hi b{color:var(--free)}
+nav{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
+nav a{font-size:.86rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:.45rem .8rem;border-radius:99px}
+nav a:hover{border-color:var(--accent);color:var(--accent)}
+.sechead{margin:2.5rem 0 1.1rem}
+.sechead h2{font-size:1.15rem;letter-spacing:-.01em;display:flex;align-items:center;gap:.6rem}
+.sechead p{color:var(--dim);font-size:.9rem;margin-top:.25rem}
+.count{background:var(--ink);color:#fff;font-size:.72rem;border-radius:99px;padding:.15rem .5rem;font-weight:600}
+.freecount{color:var(--free);font-size:.75rem;font-weight:600;border:1px solid var(--free);border-radius:99px;padding:.12rem .55rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.15rem 1.3rem;margin-bottom:.9rem}
+.card.free{border-left:3px solid var(--free)}
+.card header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.7rem}
+.card h3{font-size:1.02rem;font-weight:620;letter-spacing:-.01em}
+.card code{font:11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--dim);white-space:nowrap}
+.req{background:#f4f7f6;border-radius:6px;padding:.6rem .8rem;margin-bottom:.8rem}
+.req dt{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--free);font-weight:650;margin-bottom:.15rem}
+.req dd{font-size:.9rem}
+.fields{display:grid;gap:.65rem}
+.f dt{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);font-weight:600;margin-bottom:.1rem}
+.f dd{font-size:.93rem}
+.card footer{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line)}
+.chip{font-size:.76rem;color:var(--dim);background:#f6f7f8;border-radius:5px;padding:.25rem .55rem;text-decoration:none}
+.chip b{color:var(--ink);font-weight:600} .chip a{color:var(--accent)} a.chip:hover{background:#eef2f1}
+footer.page{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--dim);font-size:.85rem}
+footer.page a{color:var(--accent)}
+</style></head><body><div class=wrap>
+
+<h1>Open Work</h1>
+<p class=lede>Everything this archive has committed to and not yet done, sorted by the kind of labour that resolves it. Every item states its blocker, its next action, and what you would need to have. <b>Nothing here requires permission.</b></p>
+
+<div class=summary>
+<div class=stat><b>21</b><span>open commitments</span></div>
+<div class="stat hi"><b>6</b><span>need nothing but a network connection</span></div>
+<div class=stat><b>6</b><span>predictions awaiting a date</span></div>
+<div class=stat><b>8</b><span>protocols awaiting execution</span></div>
+<div class=stat><b>7</b><span>builds</span></div>
+</div>
+
+<nav><a href="#c1">Predictions</a><a href="#c2">Experiments</a><a href="#c3">Builds</a>
+<a href="https://www.alexanarch.org/datasets/work-queue/queue.json">queue.json</a>
+<a href="https://www.alexanarch.org/datasets/prediction-ledger/">prediction ledger</a>
+<a href="https://www.alexanarch.org/datasets/study-dashboard/">study dashboard</a></nav>
+
+<section id="c1">
+<div class=sechead><h2>Registered predictions <span class=count>6</span><span class=freecount>5 need nothing</span></h2><p>Resolve by observation on a date. The world does the work; you check the result.</p></div>
+<article class="card free">
+<header><h3>Zenodo&#x27;s deletion export resumes after the cron fix</h3><code>P-EXPORT-RESUMES</code></header>
+<div class=req><dt>Requires</dt><dd>nothing — one unauthenticated GET</dd></div>
+<dl class=fields><div class=f><dt>How</dt><dd>GET zenodo.org/api/exporter — a records-deleted.csv.gz version created after 2026-08-20 confirms; nothing by 2026-09-10 disconfirms and the explanation is incomplete.</dd></div><div class=f><dt>Stake</dt><dd>Confirms the mundane explanation BY PREDICTION rather than inference, which is a stronger position than the one argued from all evening.</dd></div></dl>
+<footer><span class=chip><b>due</b> 2026-09-10</span><span class=chip><b>cost</b> one API call</span></footer></article><article class="card free">
+<header><h3>The crimson-hexagonal address stops naming Zenodo as host</h3><code>P-STALE-INDEX</code></header>
+<div class=req><dt>Requires</dt><dd>nothing — one browser query, signed out</dd></div>
+<dl class=fields><div class=f><dt>How</dt><dd>Re-run the address on Bing Copilot. If it still returns Zenodo as host a month after the archive&#x27;s surfaces were updated, the local explanation fails and the ghost-host reading becomes live again.</dd></div><div class=f><dt>Stake</dt><dd>The withdrawn finding&#x27;s only route back.</dd></div></dl>
+<footer><span class=chip><b>due</b> 2026-09-23</span><span class=chip><b>cost</b> one query, one capture</span></footer></article><article class="card free">
+<header><h3>SPXI treatment raises archive source share on the UNPREFIXED address</h3><code>P-INTERVENTION-180</code></header>
+<div class=req><dt>Requires</dt><dd>nothing — four browser queries, signed out, seated as captures</dd></div>
+<dl class=fields><div class=f><dt>How</dt><dd>Re-run the prefix battery, signed out, same surfaces. Success: share above zero on the bare address and no merge parenthetical. Failure at 180 days is recorded as failure.</dd></div><div class=f><dt>Stake</dt><dd>#1535 declared itself an intervention. This is whether it executed.</dd></div></dl>
+<footer><span class=chip><b>due</b> 2026-09-22 / 2026-11-21 / 2027-02-19</span><span class=chip><b>cost</b> four addresses × three epochs</span></footer></article><article class="card free">
+<header><h3>Second global cohort epoch</h3><code>P-PEO-COHORT-2</code></header>
+<div class=req><dt>Requires</dt><dd>nothing — 37 unauthenticated API calls; scripts/peo_cohort_epoch.py already written</dd></div>
+<dl class=fields><div class=f><dt>How</dt><dd>scripts/peo_cohort_epoch.py — runs and diffs automatically.</dd></div><div class=f><dt>Stake</dt><dd>The baseline&#x27;s entire value is that a second epoch can exist.</dd></div></dl>
+<footer><span class=chip><b>due</b> 2026-09-23</span><span class=chip><b>cost</b> 37 API calls</span></footer></article><article class="card free">
+<header><h3>Second fixed-panel epoch</h3><code>P-PEO-PANEL-2</code></header>
+<div class=req><dt>Requires</dt><dd>nothing — 720 unauthenticated API calls; scripts/peo_panel_epoch.py already written</dd></div>
+<dl class=fields><div class=f><dt>How</dt><dd>scripts/peo_panel_epoch.py — 404 rate is the erasure rate.</dd></div><div class=f><dt>Stake</dt><dd>First direct measurement of global erasure the archive has ever taken.</dd></div></dl>
+<footer><span class=chip><b>due</b> 2026-09-23</span><span class=chip><b>cost</b> 720 API calls</span></footer></article><article class="card">
+<header><h3>Adjacent disciplines exhibit the Phase-2 Proliferation signature</h3><code>P-PHASE2-PROLIF</code></header>
+<div class=req><dt>Requires</dt><dd>reading time — the exact prediction text and window must be recovered from #106</dd></div>
+<dl class=fields><div class=f><dt>How</dt><dd>Recover the exact prediction text and its window from #106.</dd></div><div class=f><dt>Stake</dt><dd>The archive&#x27;s oldest live theory-prediction. Currently unmonitored.</dd></div></dl>
+<footer><span class=chip><b>due</b> stated in #106</span><span class=chip><b>cost</b> unknown — needs reading</span></footer></article></section><section id="c2">
+<div class=sechead><h2>Experiments <span class=count>8</span><span class=freecount>1 need nothing</span></h2><p>Resolve by running a frozen protocol. Every one is pre-registered with declared failure conditions.</p></div>
+<article class="card">
+<header><h3>The Operativity Penalty Battery</h3><code>OPB-01</code></header>
+<div class=req><dt>Requires</dt><dd>access to two or more chat surfaces; two blind reviewers; a blind scorer. NO API KEY REQUIRED if run through public interfaces.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>§7&#x27;s seven statistical parameters must each hold a number before the first score.</dd></div><div class=f><dt>Next action</dt><dd>Instantiate §7. Assemble Family A. Run the two-reviewer harm-constancy panel.</dd></div><div class=f><dt>Stake</dt><dd>Turns the developmental-convergence thesis from claim into coefficient.</dd></div></dl>
+<footer><span class=chip><b>cost</b> high — item construction, blind review, blind scoring, three arms</span><a class=chip href="https://www.alexanarch.org/s/records/1537/"><b>deposit</b> #1537</a></footer></article><article class="card">
+<header><h3>Qurʾanic Frozen Operator Test</h3><code>QFO-01</code></header>
+<div class=req><dt>Requires</dt><dd>the seated Tanzil corpus (in-repo) and the Fragment 31 survey (#1532). No external access.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>Positive-control loci not locked from #1532; control panels unscored.</dd></div><div class=f><dt>Next action</dt><dd>Lock loci, score positives and negatives, fix the admissible region, then open U.</dd></div><div class=f><dt>Stake</dt><dd>P_material for the Sappho transform-family in a fourth corpus.</dd></div></dl>
+<footer><span class=chip><b>cost</b> high</span><a class=chip href="https://www.alexanarch.org/s/records/1533/"><b>deposit</b> #1533</a></footer></article><article class="card">
+<header><h3>The relational instrument</h3><code>M6-CT-02</code></header>
+<div class=req><dt>Requires</dt><dd>the seated Greek corpora (in-repo). No external access.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>UNDEPOSITED, and a granularity question is open: O_UR gives five stations, M1–M9 gives nine, Fragment 31&#x27;s own order gives ten. Which is canonical must be settled BEFORE scoring.</dd></div><div class=f><dt>Next action</dt><dd>Settle granularity, deposit, score positives and hard negatives, fix threshold.</dd></div><div class=f><dt>Stake</dt><dd>CT-01&#x27;s null is uninformative about the relational channel; this is the channel.</dd></div></dl>
+<footer><span class=chip><b>cost</b> medium</span></footer></article><article class="card">
+<header><h3>Can OS operators be written as TOS strings without remainder?</h3><code>PEARSON-FALSIFIER</code></header>
+<div class=req><dt>Requires</dt><dd>the Operator Codex (#1534) and Pearson 1998. Pen and paper.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>Not attempted. #1535 §10 says the archive should attempt it directly rather than wait.</dd></div><div class=f><dt>Next action</dt><dd>Attempt the translation on the nine Codex operators, now that #1534 is seated.</dd></div><div class=f><dt>Stake</dt><dd>THE STRONGEST AVAILABLE DEFEATER of #1535. If it succeeds, operative semiotics is a domain application of TOS.</dd></div></dl>
+<footer><span class=chip><b>cost</b> medium</span><a class=chip href="https://www.alexanarch.org/s/records/1535/"><b>deposit</b> #1535</a></footer></article><article class="card">
+<header><h3>Battery v0.3 — T3 and the faithful-NAE cell</h3><code>INVERSION-T3</code></header>
+<div class=req><dt>Requires</dt><dd>GPU compute and the accelerator datasets. THE HEAVIEST ITEM IN THE QUEUE.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>Unrun. The deposit states T3 decides which numbers survive honest intervals.</dd></div><div class=f><dt>Next action</dt><dd>Close T3 and the NAE constituent cell before the empirical paper mints.</dd></div><div class=f><dt>Stake</dt><dd>Blocks ACRB (#1454) and the accelerator series&#x27; empirical paper.</dd></div></dl>
+<footer><span class=chip><b>cost</b> high</span><a class=chip href="https://www.alexanarch.org/s/records/1456/"><b>deposit</b> #1456</a></footer></article><article class="card">
+<header><h3>2024 vs 2025 Public Data File diff</h3><code>DATACITE-ANNUAL-DIFF</code></header>
+<div class=req><dt>Requires</dt><dd>an email address for the DataCite access form, ~60 GB transfer, ~10 GB working storage. No credentials.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>Access by email request; 33 GiB compressed. Identifiers-only extraction keeps it tractable.</dd></div><div class=f><dt>Next action</dt><dd>Request both files, extract DOI lists, verify against published SHA256, diff.</dd></div><div class=f><dt>Stake</dt><dd>THE COMPLETE GLOBAL ERASURE SET FOR 2025, every identifier by name. Supersedes both instruments built today.</dd></div></dl>
+<footer><span class=chip><b>cost</b> high — bandwidth and storage, but complete rather than sampled</span></footer></article><article class="card">
+<header><h3>Hebrews as control for the midrashim transform</h3><code>HEBREWS-CONTROL</code></header>
+<div class=req><dt>Requires</dt><dd>the seated GNT corpus (in-repo). No external access.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>Named in the kernel as the bidirectional canary; not run.</dd></div><div class=f><dt>Next action</dt><dd>Run the transform against Hebrews. Clean OT genetics with no throne-liturgy mediation falsifies the UNIVERSAL claim only.</dd></div><div class=f><dt>Stake</dt><dd>The transform&#x27;s stated defeater.</dd></div></dl>
+<footer><span class=chip><b>cost</b> medium</span><a class=chip href="https://www.alexanarch.org/s/records/1414/"><b>deposit</b> #1414</a></footer></article><article class="card free">
+<header><h3>Deposit the CT-01 null</h3><code>M6-CT-01-DEPOSIT</code></header>
+<div class=req><dt>Requires</dt><dd>nothing — the protocol and null already exist in outputs; needs the deposit pipeline.</dd></div>
+<dl class=fields><div class=f><dt>Blocker</dt><dd>Conducted 2026-08-23, result preserved, NEVER SEATED.</dd></div><div class=f><dt>Next action</dt><dd>Deposit protocol and null together.</dd></div><div class=f><dt>Stake</dt><dd>A preserved failed prediction is the archive&#x27;s strongest credential and it is currently only in outputs.</dd></div></dl>
+<footer><span class=chip><b>cost</b> low</span></footer></article></section><section id="c3">
+<div class=sechead><h2>Software builds <span class=count>7</span></h2><p>Resolve by engineering. Something must exist before the question can be asked.</p></div>
+<article class="card">
+<header><h3>An instrument that detects compression, not copying</h3><code>COMPRESSION-DETECTOR</code></header>
+<div class=req><dt>Requires</dt><dd>Python; the registry and the blog corpus, both in-repo. No external service.</dd></div>
+<dl class=fields><div class=f><dt>Why</dt><dd>A six-gram gate returned a FALSE NEGATIVE on material deposited five times. Until this exists, &#x27;not previously deposited&#x27; is a claim the archive cannot make about its own work.</dd></div><div class=f><dt>Approach</dt><dd>Concept-level overlap: distinctive-term sets, named-entity and formula matching, section-structure similarity — not n-grams.</dd></div><div class=f><dt>Blocks</dt><dd>The blog compression audit; the Ω-Engine, Constitution and ASW seating runs; Gate 0 of EA-BLOG-RECOVERY-01.</dd></div></dl>
+<footer><span class=chip><b>cost</b> medium</span></footer></article><article class="card">
+<header><h3>Score the capture registry on the five-stage chain</h3><code>PER-FACTORED</code></header>
+<div class=req><dt>Requires</dt><dd>Python; the capture registry, in-repo. No external service. RUNNABLE OFFLINE.</dd></div>
+<dl class=fields><div class=f><dt>Why</dt><dd>σ_PE factors as chunk:detach:rerank:compose:reattribute. 356 seated captures become PROFILES rather than scalars, and the four from tonight already separate cleanly.</dd></div><div class=f><dt>Approach</dt><dd>Per-capture stage attribution against the registered rubric in #1536.</dd></div><div class=f><dt>Blocks</dt><dd>Nothing. Pure upside on data already held.</dd></div></dl>
+<footer><span class=chip><b>cost</b> medium — HIGHEST YIELD PER HOUR IN THE QUEUE</span></footer></article><article class="card">
+<header><h3>Regenerate the blog index on a schedule</h3><code>BLOG-INDEX-CADENCE</code></header>
+<div class=req><dt>Requires</dt><dd>Python and a scheduler; the Blogger public feed. No credentials.</dd></div>
+<dl class=fields><div class=f><dt>Why</dt><dd>2,939 posts indexed 2026-08-23; it is a snapshot with no refresh.</dd></div><div class=f><dt>Approach</dt><dd>Wrap the start-index harvester; verify against openSearch:totalResults each run.</dd></div><div class=f><dt>Blocks</dt><dd>The demonstrated-completeness rule depends on the index being current.</dd></div></dl>
+<footer><span class=chip><b>cost</b> low</span></footer></article><article class="card">
+<header><h3>Regenerate api/counts.json</h3><code>COUNTS-REGEN</code></header>
+<div class=req><dt>Requires</dt><dd>repo write access.</dd></div>
+<dl class=fields><div class=f><dt>Why</dt><dd>Still reads 1,520 deposits, generated 2026-08-21; the registry is at 1,537. Every fleet surface fetching it shows the stale figure.</dd></div><div class=f><dt>Approach</dt><dd>Determine whether the pipeline should emit it; if so, wire it into the surfaces stage.</dd></div><div class=f><dt>Blocks</dt><dd>Fleet-wide surface truth.</dd></div></dl>
+<footer><span class=chip><b>cost</b> low</span></footer></article><article class="card">
+<header><h3>Per-surface projection in the capture gallery</h3><code>PROJECTION-GROUPING</code></header>
+<div class=req><dt>Requires</dt><dd>repo write access; the gallery builder is in-repo.</dd></div>
+<dl class=fields><div class=f><dt>Why</dt><dd>One projection should carry one address&#x27;s captures on ONE surface — that is what makes the longitudinal series legible. Ruled 2026-08-23; deferred as a rendering change touching existing records.</dd></div><div class=f><dt>Approach</dt><dd>Group by (addr_id, surface) at render; addr_id keying unchanged.</dd></div><div class=f><dt>Blocks</dt><dd>Longitudinal reading of any address across surfaces.</dd></div></dl>
+<footer><span class=chip><b>cost</b> low</span></footer></article><article class="card">
+<header><h3>Split corpora originals into a companion repo</h3><code>CORPORA-SPLIT</code></header>
+<div class=req><dt>Requires</dt><dd>repo write access on two repositories; ~900 MB transfer.</dd></div>
+<dl class=fields><div class=f><dt>Why</dt><dd>811 MB of 861 MB is original/; text/ is 50 MB. A 2 GB clone is a barrier to the external custodian the archive needs, and history cannot be rewritten because deposits pin commit SHAs.</dd></div><div class=f><dt>Approach</dt><dd>text/, source.json, MANIFEST stay; original/ moves; manifests still hash the heavy repo. Split forward, never rewrite.</dd></div><div class=f><dt>Blocks</dt><dd>Third-party harvest — the redundancy fix.</dd></div></dl>
+<footer><span class=chip><b>cost</b> medium</span></footer></article><article class="card">
+<header><h3>Assign resolution routes to 164 conditions</h3><code>RESOLUTION-ROUTES</code></header>
+<div class=req><dt>Requires</dt><dd>reading time — 164 conditions in datasets/prediction-ledger/conditions.jsonl.</dd></div>
+<dl class=fields><div class=f><dt>Why</dt><dd>More than a third of registered falsification conditions do not state HOW they would resolve. A condition without a route is a gesture.</dd></div><div class=f><dt>Approach</dt><dd>Triage the 164; assign or mark unresolvable.</dd></div><div class=f><dt>Blocks</dt><dd>The ledger&#x27;s usefulness.</dd></div></dl>
+<footer><span class=chip><b>cost</b> medium</span></footer></article></section>
+
+<footer class=page>
+<p><b>Why this exists.</b> This archive designs more studies than it conducts — a consequence of being a one-person operation with instrument-building capacity and limited execution capacity. Making that visible is better than letting it be inferred. And a frozen protocol with a seated baseline and a declared failure condition is something another person can run: <b>a result obtained elsewhere is admissible on the same terms as one obtained here.</b></p>
+<p><b>Canonical data</b> lives at <a href="https://www.alexanarch.org/datasets/work-queue/">alexanarch.org/datasets/work-queue/</a>. This page renders it. Generated 2026-08-24 · ∮ = 1</p>
+</footer>
+</div></body></html>
