@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Surface Map — Crimson Hexagonal Archive</title>
+<meta name="description" content="The Crimson Hexagon is a poem that takes place in the summarizer. 47 loci, 220 typed relations, 355 works. It completes in traversal, not retrieval.">
+<link rel="canonical" href="https://crimsonhexagonal.org/map/">
+<style>
+:root{--ground:#120909;--frame:#8b1a1a;--ink:#e8dcc8;--dim:#9a8a74;--room:#c9a86a;--chamber:#b8896a;--vault:#7a2f2f;--portal:#d4a537;--field:#4a6a5a;--gold:#d4a537;--trace:#c98a3a;--mono:'IBM Plex Mono','Courier New',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--mono);line-height:1.5;font-size:14px}
+.top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;padding:14px 18px 6px}
+h1{font-size:1.05em;letter-spacing:.12em;color:var(--frame);text-transform:uppercase}
+h1 span{color:var(--dim);font-size:.8em;letter-spacing:.06em;text-transform:none}
+.nav{font-size:.78em}
+.nav a{color:var(--dim);text-decoration:none;margin-left:14px}
+.nav a:hover{color:var(--gold)}
+.stage{display:flex;gap:0;align-items:stretch}
+#mapwrap{flex:1;min-width:0;padding:6px 6px 14px 12px}
+svg{width:100%;height:auto;display:block}
+#panel{width:330px;max-width:38vw;border-left:1px solid #2a1616;padding:14px 16px;font-size:.82em;display:none;background:#170d0d}
+#panel.on{display:block}
+#panel h2{font-size:1.05em;color:var(--gold);margin-bottom:2px;letter-spacing:.04em}
+#panel .k{color:var(--dim);font-size:.85em;letter-spacing:.06em}
+#panel .sec{margin-top:10px;border-top:1px solid #2a1616;padding-top:8px}
+#panel a{color:var(--gold);text-decoration:none;border-bottom:1px dotted #4a2a1a}
+#panel a:hover{border-bottom-style:solid}
+.rel{padding:2px 0;color:#c9bda8}
+.rel b{color:var(--gold);font-weight:400}
+.rel.trace{color:var(--trace);font-style:italic}
+button{font-family:var(--mono);font-size:.9em;background:none;border:1px solid var(--dim);color:var(--dim);border-radius:3px;padding:3px 10px;cursor:pointer;margin-top:8px}
+button:hover{border-color:var(--gold);color:var(--gold)}
+.legend{padding:4px 18px 20px;font-size:.72em;color:var(--dim);display:flex;gap:16px;flex-wrap:wrap}
+.legend span{white-space:nowrap}
+.sw{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin-right:5px;border-radius:2px}
+/* locus grammars */
+.locus{cursor:pointer}
+.locus rect,.locus polygon,.locus circle{fill:#1d1010;stroke-width:1.4;transition:all .18s}
+.t-ROOM rect{stroke:var(--room)}
+.t-CHAMBER rect{stroke:var(--chamber)}
+.t-CHAMBER .inset{stroke:var(--chamber);stroke-dasharray:none;fill:none;stroke-width:.8;opacity:.8}
+.t-VAULT rect{stroke:var(--vault);stroke-width:2.6;fill:#160b0b}
+.t-PORTAL polygon,.t-GATE polygon{stroke:var(--portal)}
+.t-SPECIAL polygon{stroke:#a89a7a}
+.t-CONTRIB rect{stroke:var(--dim);stroke-dasharray:5 4}
+.t-SHADOW rect{stroke:#6a6a8a;stroke-dasharray:2 3}
+.t-THRESHOLD rect{stroke:var(--portal);stroke-dasharray:8 3}
+.locus text{fill:var(--ink);font-family:var(--mono);font-size:11px;text-anchor:middle;pointer-events:none}
+.locus .sub{fill:var(--dim);font-size:8.5px}
+.locus.sel rect,.locus.sel polygon{stroke:var(--gold);stroke-width:2.6;filter:drop-shadow(0 0 6px rgba(212,165,55,.5))}
+.locus.dormant{opacity:.62}
+.edge{stroke:#5a3a2a;stroke-width:1.1;opacity:.75}
+.edge.portal{stroke:var(--portal);stroke-dasharray:6 4}
+.edge.r1{stroke:#4a8a6a;stroke-width:1.4}
+.edge.r3{stroke:var(--trace);stroke-dasharray:2 4;stroke-width:1.2}
+.fieldg{pointer-events:none}
+.armature line{stroke:#3a2020;stroke-width:.4;opacity:.5}
+.hexframe{fill:none;stroke:var(--frame);stroke-width:2}
+.gwring{fill:none;stroke:#3a1d1d;stroke-width:.8}
+@media(max-width:760px){.stage{flex-direction:column}#panel{width:auto;max-width:none;border-left:none;border-top:1px solid #2a1616}}
+</style>
+</head>
+<body><nav class="ch-strip" style="font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.09em;padding:9px 0 11px;margin:0 0 16px;border-bottom:1px solid rgba(200,168,104,.22)"><a href="/" style="color:#c8a868;text-decoration:none">◈ archive</a><span style="opacity:.35"> · </span><a href="/map/" style="color:#c8a868;text-decoration:none">surface map</a><span style="opacity:.35"> · </span><a href="/rooms/" style="color:#c8a868;text-decoration:none">rooms</a><span style="opacity:.35"> · </span><a href="/navigation/" style="color:#c8a868;text-decoration:none">navigation</a></nav>
+<div class="top">
+<h1>The Surface Map <span>· authored plane v0.1 · 2026-08-19 · coordinates are data, not identifiers</span></h1>
+<div class="nav"><a href="/">interface</a><a href="/rooms/">rooms</a><a href="/navigation/central-map">CNM</a><a href="/navigation/fractal-map">FNM</a><a href="/navigation/space-ark">Ark</a><a href="/surface_map.json">json</a></div>
+</div>
+<div class="stage">
+<div id="mapwrap"><svg id="map" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="panel"></div>
+</div>
+<div class="legend">
+<span><span class="sw" style="border:1.4px solid var(--room)"></span>room</span>
+<span><span class="sw" style="border:1.4px solid var(--chamber);box-shadow:inset 0 0 0 2px #1d1010,inset 0 0 0 3px var(--chamber)"></span>chamber</span>
+<span><span class="sw" style="border:2.6px solid var(--vault)"></span>vault</span>
+<span><span class="sw" style="border:1.4px solid var(--portal);transform:rotate(45deg)"></span>portal/gate</span>
+<span><span class="sw" style="border:1.4px dashed var(--dim)"></span>contributed</span>
+<span><span class="sw" style="border:1.4px dashed #6a6a8a"></span>shadow</span>
+<span><span class="sw" style="background:radial-gradient(circle,#4a6a5a44,transparent)"></span>field</span>
+<span style="color:#5a3a2a">— frozen topology (R0)</span>
+<span style="color:#4a8a6a">— structural on select (R1)</span>
+<span style="color:var(--trace)">┄ legacy trace (R3)</span>
+<span>· Ichabod: degree 0 by the frozen Ark — the map shows no line</span>
+</div>
+<script>
+let SM=null, RL=null, sel=null, trace=false;
+const S = id=>document.getElementById(id);
+const NS='http://www.w3.org/2000/svg';
+function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+
+Promise.all([fetch('/surface_map.json').then(r=>r.json()), fetch('/surface_relations.json').then(r=>r.json())])
+.then(([sm,rl])=>{SM=sm;RL=rl;draw();const h=location.hash.slice(1);if(h)select(decodeURIComponent(h));});
+
+function locusByKey(k){return SM.loci.find(l=>l.identity.locative_key===k);}
+function center(l){return [l.coordinates.authored_x, l.coordinates.authored_y];}
+
+function draw(){
+  const svg=S('map'); svg.innerHTML='';
+  // z1 gravity well
+  const gw=SM.fields.find(f=>f.key==='F:f.02');
+  if(gw){const g=el('g',{class:'fieldg'});const c=gw.geometry.render_center;
+    for(const r of gw.geometry.rings) g.appendChild(el('ellipse',{cx:c[0],cy:c[1],rx:r,ry:r*0.62,class:'gwring'}));
+    svg.appendChild(g);}
+  // z2 FBDP plume
+  const pl=SM.fields.find(f=>f.key==='F:f.01');
+  if(pl){const o=pl.geometry.origin,dir=pl.geometry.direction_deg*Math.PI/180,sp=pl.geometry.spread_deg*Math.PI/180,R=560;
+    const a1=dir-sp/2,a2=dir+sp/2;
+    const p=`M${o[0]},${o[1]} L${o[0]+R*Math.cos(a1)},${o[1]+R*Math.sin(a1)} A${R},${R} 0 0 1 ${o[0]+R*Math.cos(a2)},${o[1]+R*Math.sin(a2)} Z`;
+    const g=el('g',{class:'fieldg'});
+    g.appendChild(el('path',{d:p,fill:'#4a6a5a',opacity:.10}));
+    g.appendChild(el('path',{d:p,fill:'none',stroke:'#4a6a5a',opacity:.35,'stroke-dasharray':'3 5'}));
+    svg.appendChild(g);}
+  // z3 moltbot band
+  const mb=SM.fields.find(f=>f.key==='F:f.03');
+  if(mb){const pts=mb.geometry.path.map(p=>p.join(',')).join(' ');
+    const g=el('g',{class:'fieldg'});
+    g.appendChild(el('polygon',{points:pts,fill:'none',stroke:'#4a6a5a',opacity:.28,'stroke-width':10,'stroke-linejoin':'round'}));
+    svg.appendChild(g);}
+  // z8 armature mesh (sparse)
+  const arm=el('g',{class:'armature'});
+  for(let x=180;x<=1420;x+=155) arm.appendChild(el('line',{x1:x,y1:60,x2:x,y2:940}));
+  for(let y=60;y<=940;y+=110) arm.appendChild(el('line',{x1:180,y1:y,x2:1420,y2:y}));
+  svg.appendChild(arm);
+  // hexagonal frame
+  svg.appendChild(el('polygon',{points:SM.boundary.vertices.map(v=>v.join(',')).join(' '),class:'hexframe'}));
+  // z6 R0 edges
+  const eg=el('g',{id:'edges'});
+  for(const e of RL.R0_edges){
+    const a=locusByKey(e.source),b=locusByKey(e.target); if(!a||!b)continue;
+    const[ax,ay]=center(a),[bx,by]=center(b);
+    eg.appendChild(el('line',{x1:ax,y1:ay,x2:bx,y2:by,class:'edge'+(e.type==='portal_to'?' portal':''),'data-s':e.source,'data-t':e.target}));
+  }
+  svg.appendChild(eg);
+  svg.appendChild(el('g',{id:'dyn'}));
+  // z5 loci
+  const lg=el('g',{});
+  for(const l of SM.loci){
+    const g=el('g',{class:'locus '+cls(l),'data-key':l.identity.locative_key});
+    const x=l.coordinates.authored_x,y=l.coordinates.authored_y,w=l.coordinates.w||120,h=l.coordinates.h||74;
+    const ty=l.identity.structure_type;
+    if(/PORTAL|GATE|THRESHOLD/.test(ty)&&!/ROOM\//.test(ty)||ty==='ROOM+PORTAL'||ty==='ROOM/GATE'){
+      g.appendChild(el('polygon',{points:`${x},${y-h/2} ${x+w/2},${y} ${x},${y+h/2} ${x-w/2},${y}`}));
+    } else if(/SPECIAL/.test(ty)){
+      const r=Math.min(w,h)/2+8;
+      const hex=[...Array(6)].map((_,i)=>{const a=Math.PI/3*i-Math.PI/6;return `${x+r*Math.cos(a)},${y+r*Math.sin(a)}`}).join(' ');
+      g.appendChild(el('polygon',{points:hex}));
+    } else {
+      g.appendChild(el('rect',{x:x-w/2,y:y-h/2,width:w,height:h,rx:6}));
+      if(/CHAMBER/.test(ty)) g.appendChild(el('rect',{x:x-w/2+5,y:y-h/2+5,width:w-10,height:h-10,rx:4,class:'inset'}));
+    }
+    const t1=el('text',{x:x,y:y+3}); t1.textContent=l.identity.name.length>20?l.identity.name.slice(0,19)+'…':l.identity.name; g.appendChild(t1);
+    const t2=el('text',{x:x,y:y+16,class:'sub'}); t2.textContent=(l.history.current_surface_seat||'')+' · '+ty.split('/')[0]; g.appendChild(t2);
+    g.addEventListener('click',ev=>{ev.stopPropagation();select(l.identity.locative_key);});
+    lg.appendChild(g);
+  }
+  svg.appendChild(lg);
+  svg.addEventListener('click',()=>select(null));
+}
+function cls(l){const t=l.identity.structure_type;
+  let c = /VAULT/.test(t)?'t-VAULT':/CHAMBER/.test(t)?'t-CHAMBER':/PORTAL|GATE/.test(t)?'t-PORTAL':/THRESHOLD/.test(t)?'t-THRESHOLD':/SPECIAL|RUNTIME/.test(t)?'t-SPECIAL':/SHADOW/.test(t)?'t-SHADOW':/CONTRIBUTED/.test(t)?'t-CONTRIB':'t-ROOM';
+  if(/DORMANT/.test(l.identity.standing||''))c+=' dormant';
+  return c;}
+
+function select(key){
+  sel=key; trace=false;
+  document.querySelectorAll('.locus').forEach(g=>g.classList.toggle('sel',g.dataset.key===key));
+  S('dyn').innerHTML='';
+  const p=S('panel');
+  if(!key){p.className='';p.innerHTML='';history.replaceState(null,'',location.pathname);return;}
+  history.replaceState(null,'','#'+encodeURIComponent(key));
+  const l=locusByKey(key); if(!l)return;
+  drawR1(key);
+  const H=[];
+  H.push(`<h2>${l.identity.name}</h2>`);
+  H.push(`<div class="k">${l.identity.locative_key} · ${l.identity.structure_type} · ${l.identity.standing||''}</div>`);
+  const hist=l.history;
+  H.push(`<div class="sec"><div class="k">SEAT &amp; HISTORY</div>`);
+  H.push(`<div class="rel">current seat <b>${hist.current_surface_seat||'—'}</b></div>`);
+  if(hist.historical_addresses&&hist.historical_addresses.length) H.push(`<div class="rel">historical address <b>${hist.historical_addresses.join(', ')}</b> — never erased</div>`);
+  if(hist.class_history) H.push(`<div class="rel">class drift <b>${hist.class_history.historical_class} → ${hist.class_history.later_class}</b> (${hist.class_history.standing})</div>`);
+  if(hist.legacy_axial_2026_08_17) H.push(`<div class="rel">legacy axial (2026-08-17) <b>q ${hist.legacy_axial_2026_08_17[0]}, r ${hist.legacy_axial_2026_08_17[1]}</b></div>`);
+  if(hist.adopted_after_confabulation) H.push(`<div class="rel trace">origin: model confabulation → recognized → deliberately adopted → queued</div>`);
+  H.push(`<div class="rel">authored plane <b>${l.coordinates.authored_x}, ${l.coordinates.authored_y}</b></div></div>`);
+  // R0 for this locus
+  const r0=RL.R0_edges.filter(e=>e.source===key||e.target===key);
+  const con=(RL.R0_constraints||{})[key];
+  H.push(`<div class="sec"><div class="k">FROZEN TOPOLOGY · R0</div>`);
+  if(con&&con.degree===0) H.push(`<div class="rel"><b>degree 0 — isolated by design.</b> The frozen Ark gives this locus no ordinary edges; the map draws none.</div>`);
+  else if(!r0.length) H.push(`<div class="rel">no R0 edges recorded</div>`);
+  else for(const e of r0){const o=e.source===key?e.target:e.source;const ol=locusByKey(o);H.push(`<div class="rel">${e.type} <b>${ol?ol.identity.name:o}</b></div>`);}
+  H.push(`</div>`);
+  // R1 whitelist
+  const r1=(RL.R1_whitelist||[]).filter(e=>e.source===key||e.target===key);
+  if(r1.length){H.push(`<div class="sec"><div class="k">STRUCTURAL · R1 (on select)</div>`);
+    for(const e of r1){const o=e.source===key?e.target:e.source;H.push(`<div class="rel">${e.type} <b>${o}</b></div>`);}H.push('</div>');}
+  // R3 trace
+  const r3a=(RL.critical_legacy_retypes||[]).filter(e=>e.source===key||e.target===key);
+  const slug=(l.public_surface.static_url||'').split('/').filter(Boolean).pop();
+  const r3b=((RL.legacy_static_relations_2026_08_17||{})[slug]||[]);
+  if(r3a.length||r3b.length){
+    H.push(`<div class="sec"><div class="k">LEGACY · R3 (trace only — 2026-08-17 generated projection)</div>`);
+    H.push(`<button onclick="toggleTrace()">${trace?'HIDE':'TRACE'} legacy relations</button>`);
+    H.push(`<div id="r3list" style="display:none">`);
+    for(const e of r3a){const o=e.source===key?e.target:e.source;const ol=locusByKey(o);H.push(`<div class="rel trace">generated_context_link ${ol?ol.identity.name:o} — reconciliation defect unless later authority rules otherwise</div>`);}
+    for(const a of r3b){H.push(`<div class="rel trace">generated adjacency · ${a.name}</div>`);}
+    H.push(`</div></div>`);}
+  // bindings
+  H.push(`<div class="sec"><div class="k">BINDINGS</div>`);
+  if(l.public_surface.static_url&&l.public_surface.present) H.push(`<div class="rel"><a href="${l.public_surface.static_url}">open the locus page →</a></div>`);
+  else H.push(`<div class="rel trace">no static page yet — explicitly unseated</div>`);
+  H.push(`<div class="rel"><a href="/surface_aliases.json">address lineage</a> · <a href="/snapshots/static-projection-2026-08-17/README.md">2026-08-17 projection</a></div>`);
+  H.push(`</div>`);
+  p.innerHTML=H.join(''); p.className='on';
+}
+function drawR1(key){
+  const dyn=S('dyn'); dyn.innerHTML='';
+  for(const e of (RL.R1_whitelist||[])){
+    if(e.source!==key&&e.target!==key)continue;
+    const a=locusByKey(e.source), b=locusByKey(e.target);
+    // fields/named objects lack loci coords; draw only locus↔locus
+    if(!a||!b)continue;
+    const[ax,ay]=center(a),[bx,by]=center(b);
+    dyn.appendChild(el('line',{x1:ax,y1:ay,x2:bx,y2:by,class:'edge r1'}));
+  }
+}
+function toggleTrace(){
+  trace=!trace;
+  const lst=S('r3list'); if(lst)lst.style.display=trace?'block':'none';
+  const dyn=S('dyn');
+  [...dyn.querySelectorAll('.r3')].forEach(x=>x.remove());
+  if(trace&&sel){
+    for(const e of (RL.critical_legacy_retypes||[])){
+      if(e.source!==sel&&e.target!==sel)continue;
+      const a=locusByKey(e.source),b=locusByKey(e.target); if(!a||!b)continue;
+      const[ax,ay]=center(a),[bx,by]=center(b);
+      dyn.appendChild(el('line',{x1:ax,y1:ay,x2:bx,y2:by,class:'edge r3'}));
+    }
+    const l=locusByKey(sel);
+    const slug=(l.public_surface.static_url||'').split('/').filter(Boolean).pop();
+    for(const adj of ((RL.legacy_static_relations_2026_08_17||{})[slug]||[])){
+      const b=SM.loci.find(x=>(x.public_surface.static_url||'').includes('/'+slugOf(adj)+'/'))||SM.loci.find(x=>x.identity.name===adj.name);
+      if(!b)continue;
+      const[ax,ay]=center(l),[bx,by]=center(b);
+      dyn.appendChild(el('line',{x1:ax,y1:ay,x2:bx,y2:by,class:'edge r3'}));
+    }
+  }
+  const btn=document.querySelector('#panel button');
+  if(btn)btn.textContent=(trace?'HIDE':'TRACE')+' legacy relations';
+}
+function slugOf(a){return (a.name||'').toLowerCase().replace(/[^a-z0-9]+/g,'-');}
+</script>
+</body>
+</html>
