@@ -1323,7 +1323,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
       {/* Stats row */}
       {stats && (
         <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(5, 1fr)", gap: 8, marginBottom: 20 }}>
-          {[[data.documents.length, "deposits", THEME.gold],
+          {[[data.documents.length, "seated works", THEME.gold],
             [data.rooms.length, "rooms", THEME.tx],
             [data.relations.length, "relations", THEME.tx],
             [stats.emptyRooms.length, "empty rooms", stats.emptyRooms.length > 0 ? THEME.red : THEME.green],
@@ -2243,7 +2243,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
 
           {/* Eyebrow */}
           <div className="fade-in-up" style={{ fontSize: THEME.fs.micro, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 24, fontFamily: THEME.ff.mono, textTransform: "uppercase", animationDelay: "0ms" }}>
-            H_core · {data.meta?.total_deposits || data.documents.length} Deposits · CC BY 4.0
+            H_core · {data.meta?.total_deposits || data.documents.length} Seated Works · CC BY 4.0
           </div>
 
           {/* Hero ∮ */}
@@ -2256,7 +2256,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
 
           {/* Subtitle */}
           <p className="fade-in-up" style={{ fontSize: isMobile ? 14 : 16, color: THEME.tx, lineHeight: 1.65, marginBottom: 10, fontWeight: 400, maxWidth: 560, margin: "0 auto 10px", animationDelay: "300ms" }}>
-            A governed literary architecture. {data.documents.length} DOI-anchored deposits across {data.rooms.length} rooms, each with its own physics, mantle, and operators.
+            A governed literary architecture. {data.documents.length} works seated across {data.rooms.length} rooms — the hexagon’s operating corpus within the Alexanarch archive of <span data-count="deposits.total">1,545</span> AXN-anchored deposits (historical DOIs preserved) — each room with its own physics, mantle, and operators.
           </p>
           <p className="fade-in-up" style={{ fontSize: isMobile ? 13 : 14, color: THEME.txMute, lineHeight: 1.65, marginBottom: 36, fontStyle: "italic", maxWidth: 560, margin: "0 auto 36px", animationDelay: "400ms" }}>
             Machine-traversable. Provenance-bearing. Five thousand years of heteronymic practice.
@@ -2327,7 +2327,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
           <div className="fade-in-up" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12, maxWidth: 520, margin: "0 auto 32px", animationDelay: "800ms" }}>
             {[
               [data.rooms.length, "rooms"],
-              [data.documents.length, "deposits"],
+              [data.documents.length, "seated works"],
               ["∮ = 1", "closed loop"],
             ].map(([val, lbl], i) => (
               <div key={i} style={{ textAlign: "center", padding: "10px 6px", borderTop: `1px solid ${THEME.border}` }}>
@@ -2459,7 +2459,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
               {/* Oracle header */}
               <div style={{ textAlign: "center", marginBottom: 24 }}>
                 <div style={{ fontSize: 10, letterSpacing: THEME.ls.widest, color: THEME.txMute, fontFamily: THEME.ff.mono, textTransform: "uppercase", marginBottom: 8 }}>
-                  Oracle · {data.documents.length} deposits indexed
+                  Oracle · {data.documents.length} seated works indexed
                 </div>
                 <div style={{ fontSize: 11, color: THEME.txMute, fontFamily: THEME.ff.serif, fontStyle: "italic" }}>
                   Search title, keywords, room, and excerpt.
@@ -2569,7 +2569,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 {terms.length === 0 && (
                   <div style={{ textAlign: "center", padding: "40px 20px" }}>
                     <div style={{ fontSize: 13, color: THEME.txMute, fontFamily: THEME.ff.serif, lineHeight: 1.8, fontStyle: "italic", maxWidth: 480, margin: "0 auto" }}>
-                      Type to search across {data.documents.length} deposits. Results scored by title (×4), keywords (×3), room (×2), and excerpt (×1). Click any result to open the document.
+                      Type to search across {data.documents.length} seated works (the hexagon corpus; the full archive lives at alexanarch.org). Results scored by title (×4), keywords (×3), room (×2), and excerpt (×1). Click any result to open the document.
                     </div>
                   </div>
                 )}
@@ -2592,7 +2592,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                     {libMode === "SEARCH" ? "Document Registry" : libMode === "TRAIL" ? "Trail Builder" : "Bibliography Export"}
                   </div>
                   <div style={{ fontSize: 14, color: THEME.txBright, fontFamily: THEME.ff.serif, fontStyle: "italic" }}>
-                    {libMode === "SEARCH" ? `${data.documents.length} deposits indexed` :
+                    {libMode === "SEARCH" ? `${data.documents.length} seated works indexed` :
                      libMode === "TRAIL" ? (trail.name || "Compose an ordered reading path") :
                      "Export citations as Zenodo JSON, BibTeX, or plain text"}
                   </div>
