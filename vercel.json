@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/((?!rooms/|navigation/|assets/|queue/).*)",
+      "source": "/((?!rooms/|navigation/|assets/|queue/|map/|works/|snapshots/|machine/).*)",
       "destination": "/index.html"
     }
   ]

@@ -2238,8 +2238,8 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
         <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse at center, transparent 0%, ${THEME.bg}cc 80%, ${THEME.bg} 100%)`, pointerEvents: "none", zIndex: 1 }} />
 
       {/* Hero content */}
-      <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: isMobile ? "24px 20px" : "40px", overflow: "auto" }}>
-        <div style={{ textAlign: "center", maxWidth: 720, width: "100%" }}>
+      <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", padding: isMobile ? "24px 20px" : "40px", overflow: "auto" }}>
+        <div style={{ textAlign: "center", maxWidth: 720, width: "100%", margin: "auto 0" }}>
 
           {/* Eyebrow */}
           <div className="fade-in-up" style={{ fontSize: THEME.fs.micro, letterSpacing: THEME.ls.widest, color: THEME.txMute, marginBottom: 24, fontFamily: THEME.ff.mono, textTransform: "uppercase", animationDelay: "0ms" }}>
@@ -2256,7 +2256,7 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
 
           {/* Subtitle */}
           <p className="fade-in-up" style={{ fontSize: isMobile ? 14 : 16, color: THEME.tx, lineHeight: 1.65, marginBottom: 10, fontWeight: 400, maxWidth: 560, margin: "0 auto 10px", animationDelay: "300ms" }}>
-            A governed literary architecture. {data.documents.length} works seated across {data.rooms.length} rooms — the hexagon’s operating corpus within the Alexanarch archive of <span data-count="deposits.total">1,545</span> AXN-anchored deposits (historical DOIs preserved) — each room with its own physics, mantle, and operators.
+            A governed literary architecture: {(() => { const tc = {}; (data.rooms||[]).forEach(r => { const t = r.structure_type || "room"; tc[t] = (tc[t]||0)+1; }); const seg = []; if (tc.room) seg.push(`${tc.room} rooms`); if (tc.chamber) seg.push(`${tc.chamber} chambers`); if (tc.vault) seg.push(`${tc.vault} vaults`); if (tc.portal) seg.push(`${tc.portal} portals`); if (tc.field) seg.push(`${tc.field} fields`); if (tc.portico) seg.push(tc.portico === 1 ? "the portico" : `${tc.portico} porticos`); return seg.join(", "); })()} — each with its own physics, mantle, and operators — within the Alexanarch archive of <span data-count="deposits.total">1,545</span> AXN-anchored deposits (historical DOIs preserved).
           </p>
           <p className="fade-in-up" style={{ fontSize: isMobile ? 13 : 14, color: THEME.txMute, lineHeight: 1.65, marginBottom: 36, fontStyle: "italic", maxWidth: 560, margin: "0 auto 36px", animationDelay: "400ms" }}>
             Machine-traversable. Provenance-bearing. Five thousand years of heteronymic practice.
@@ -2324,16 +2324,12 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
           </div>
 
           {/* Stat blocks */}
-          <div className="fade-in-up" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12, maxWidth: 520, margin: "0 auto 32px", animationDelay: "800ms" }}>
-            {[
-              [data.rooms.length, "rooms"],
-              [data.documents.length, "seated works"],
-              ["∮ = 1", "closed loop"],
-            ].map(([val, lbl], i) => (
-              <div key={i} style={{ textAlign: "center", padding: "10px 6px", borderTop: `1px solid ${THEME.border}` }}>
+          <div className="fade-in-up" style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(3, 1fr)" : "repeat(6, 1fr)", gap: 12, maxWidth: 640, margin: "0 auto 32px", animationDelay: "800ms" }}>
+            {(() => { const tc = {}; (data.rooms||[]).forEach(r => { const t = r.structure_type || "room"; tc[t] = (tc[t]||0)+1; }); const items = []; ["room","chamber","vault","portal","field"].forEach(t => { if (tc[t]) items.push([tc[t], tc[t] === 1 ? t : t + "s", "/map/"]); }); if (tc.portico) items.push([tc.portico, tc.portico === 1 ? "portico" : "porticos", "/map/"]); items.push(["∮ = 1", "closed loop", null]); return items; })().map(([val, lbl, href], i) => (
+              <a key={i} href={href || undefined} style={{ textAlign: "center", padding: "10px 6px", borderTop: `1px solid ${THEME.border}`, textDecoration: "none", cursor: href ? "pointer" : "default", display: "block" }} title={href ? "open the flat surface map" : undefined}>
                 <div style={{ fontSize: isMobile ? 22 : 28, color: THEME.gold, fontWeight: 300, marginBottom: 4, fontFamily: THEME.ff.serif, letterSpacing: THEME.ls.tight }}>{val}</div>
                 <div style={{ fontSize: 9, color: THEME.txMute, letterSpacing: THEME.ls.wide, fontFamily: THEME.ff.mono, textTransform: "uppercase" }}>{lbl}</div>
-              </div>
+              </a>
             ))}
           </div>
 
