@@ -1307,7 +1307,7 @@
    "default_operators": [
     "γ"
    ],
-   "structure_type": "room",
+   "structure_type": "ark",
    "hex_address": "SP.03.ROOM.SPACEARK",
    "adjacent": [
     "r01",
