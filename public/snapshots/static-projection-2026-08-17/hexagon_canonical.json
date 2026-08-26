@@ -1716,6 +1716,526 @@
    "companion_doi": "10.5281/zenodo.19458359",
    "q": 1,
    "r": -4
+  },
+  {
+   "id": "r33",
+   "name": "The Sacred Heart",
+   "cat": "seat",
+   "q": 0,
+   "r": 2,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "The Sacred Heart is an unoccupied room: minted, seated and declared, with a subject and no corpus. Its subject is the theory of biography and autobiography — the imaginary archive of a canonical life, and devotion in a register that embarrasses. A paper rose is not a failed rose; it is a made thing ",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "33.ROOM.SACREDHEART",
+   "adjacent": []
+  },
+  {
+   "id": "r34",
+   "name": "Operator // Vertical",
+   "cat": "seat",
+   "q": 1,
+   "r": -2,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "Operator // Vertical",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "34.ROOM.VERTICAL",
+   "adjacent": []
+  },
+  {
+   "id": "r35",
+   "name": "The Library of Pergamum",
+   "cat": "seat",
+   "q": -3,
+   "r": 3,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "The Library of Pergamum",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "35.LIBRARY.PERGAMUM",
+   "adjacent": []
+  },
+  {
+   "id": "r36",
+   "name": "The Λ-Body",
+   "cat": "seat",
+   "q": -2,
+   "r": 3,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "The Λ-Body",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "36.ROOM.LAMBDABODY",
+   "adjacent": []
+  },
+  {
+   "id": "r37",
+   "name": "The Machine Dialectic",
+   "cat": "seat",
+   "q": 2,
+   "r": 1,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "The Machine Dialectic",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "37.ROOM.MACHINEDIALECTIC",
+   "adjacent": []
+  },
+  {
+   "id": "r38",
+   "name": "The Singularity Room",
+   "cat": "seat",
+   "q": 3,
+   "r": -3,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "The Singularity Room",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "38.ROOM.SINGULARITY",
+   "adjacent": []
+  },
+  {
+   "id": "r39",
+   "name": "The Restored Academy",
+   "cat": "seat",
+   "q": 1,
+   "r": -3,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "The Restored Academy",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "39.ROOM.RESTOREDACADEMY",
+   "adjacent": []
+  },
+  {
+   "id": "r40",
+   "name": "Caritas",
+   "cat": "seat",
+   "q": -4,
+   "r": 4,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "Caritas",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "40.AXIOM.CARITAS",
+   "adjacent": []
+  },
+  {
+   "id": "u01",
+   "name": "The 3:60 Room",
+   "cat": "seat",
+   "q": -3,
+   "r": 4,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "The 3:60 Room",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "U.CONTRIB.360",
+   "adjacent": []
+  },
+  {
+   "id": "x01",
+   "name": "Lunar Arm",
+   "cat": "shadow",
+   "q": -2,
+   "r": 4,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "Lunar Arm",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "shadow",
+   "hex_address": "X.SHADOW.LUNARARM",
+   "adjacent": []
   }
  ],
  "edges": [
