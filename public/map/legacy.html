@@ -89,7 +89,7 @@ const S = id=>document.getElementById(id);
 const NS='http://www.w3.org/2000/svg';
 function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
 
-Promise.all([fetch('/surface_map.json').then(r=>r.json()), fetch('/surface_relations.json').then(r=>r.json())])
+Promise.all([fetch('/map/surface_map.json').then(r=>r.json()), fetch('/map/surface_relations.json').then(r=>r.json())])
 .then(([sm,rl])=>{SM=sm;RL=rl;draw();const h=location.hash.slice(1);if(h)select(decodeURIComponent(h));});
 
 function locusByKey(k){return SM.loci.find(l=>l.identity.locative_key===k);}
