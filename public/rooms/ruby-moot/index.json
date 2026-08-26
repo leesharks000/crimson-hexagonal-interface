@@ -1,6 +1,6 @@
 {
  "locative_key": "R:r.30",
- "hex_address": "30.ROOM.RUBYMOOT",
+ "hex_address": "42.ROOM.RUBYMOOT",
  "name": "Ruby Moot",
  "structure_type": "ROOM/COURT",
  "standing": "DEVELOPED",
@@ -423,5 +423,10 @@
     "alexanarch_url": "https://www.alexanarch.org/s/records/193/"
    }
   ]
- }
+ },
+ "id": "r42",
+ "canonical_structure_type": "room",
+ "hex_address_history": [
+  "30.ROOM.RUBYMOOT — reseated 2026-08-25 (number was doubly occupied; canonical seat at 42.ROOM.RUBYMOOT)"
+ ]
 }

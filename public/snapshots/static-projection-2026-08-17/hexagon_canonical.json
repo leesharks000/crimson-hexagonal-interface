@@ -2286,9 +2286,8 @@
     "σ_S"
    ],
    "structure_type": "room",
-   "hex_address": "29.ROOM.IVN",
-   "adjacent": [],
-   "numbering_conflict": "page declares 29.ROOM.IVN while canonical seats a different room at that number — Assembly reconciliation queued 2026-08-25"
+   "hex_address": "41.ROOM.IVN",
+   "adjacent": []
   },
   {
    "id": "r42",
@@ -2339,9 +2338,8 @@
     "σ_S"
    ],
    "structure_type": "room",
-   "hex_address": "30.ROOM.RUBYMOOT",
-   "adjacent": [],
-   "numbering_conflict": "page declares 30.ROOM.RUBYMOOT while canonical seats a different room at that number — Assembly reconciliation queued 2026-08-25"
+   "hex_address": "42.ROOM.RUBYMOOT",
+   "adjacent": []
   }
  ],
  "edges": [

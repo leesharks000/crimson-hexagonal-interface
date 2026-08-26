@@ -335,5 +335,7 @@
    "why_here": "R:r.34 holds the transmission chain as specification: Sappho → Plato → Socrates → Longinus → Philo → Josephus → Apocalypse. The Upstream Unfoldings run it. The room states the operator; the surface executes it and reports what came back.",
    "note": "Longinus is the key because he preserves Fr. 31 inside a criticism of it — the fragment survives as the object of an argument about height. That is the vertical operator performed on itself."
   }
- }
+ },
+ "id": "r34",
+ "canonical_structure_type": "room"
 }
