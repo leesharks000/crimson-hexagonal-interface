@@ -2340,6 +2340,340 @@
    "structure_type": "room",
    "hex_address": "42.ROOM.RUBYMOOT",
    "adjacent": []
+  },
+  {
+   "id": "a01",
+   "name": "The Sharks Ark",
+   "cat": "ark",
+   "q": 3,
+   "r": 1,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "EA-ARK-01-ARCHON — the Book of Revelation as Space Ark; head at Alexanarch #1101 (v3.0), early seats #56, #969–971.",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "ark",
+   "hex_address": "SP.05.ARK.SHARKS",
+   "adjacent": [
+    "sp03"
+   ]
+  },
+  {
+   "id": "a02",
+   "name": "The Sacred Ark",
+   "cat": "ark",
+   "q": 4,
+   "r": 0,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "EA-ARK-01-DIPTYCH — the sacred helix of the double-helix diptych; Alexanarch #545.",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "ark",
+   "hex_address": "SP.06.ARK.SACRED",
+   "adjacent": [
+    "sp03"
+   ]
+  },
+  {
+   "id": "a03",
+   "name": "The Profane Ark",
+   "cat": "ark",
+   "q": 4,
+   "r": -4,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "EA-ARK-01-DIPTYCH / EA-ARK-01-FRACTION — the profane helix and the accumulative profane encoding; Alexanarch #545, #546.",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "ark",
+   "hex_address": "SP.07.ARK.PROFANE",
+   "adjacent": [
+    "sp03"
+   ]
+  },
+  {
+   "id": "a04",
+   "name": "The Glyphic Ark",
+   "cat": "ark",
+   "q": 3,
+   "r": -4,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "CH-ARK-01-GLYPH — the Glyphic Vehicle, full semiotic transform; Alexanarch #556; glyphic checksum #541.",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "ark",
+   "hex_address": "SP.08.ARK.GLYPHIC",
+   "adjacent": [
+    "sp03"
+   ]
+  },
+  {
+   "id": "a05",
+   "name": "The ASCII Ark",
+   "cat": "ark",
+   "q": 2,
+   "r": -4,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "EA-ARK-01 v4.2.5 — the ASCII Spatial Transform; Alexanarch #548.",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "ark",
+   "hex_address": "SP.09.ARK.ASCII",
+   "adjacent": [
+    "sp03"
+   ]
+  },
+  {
+   "id": "x02",
+   "name": "ZPZP — The Shadow Document",
+   "cat": "shadow",
+   "q": 0,
+   "r": -4,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "An Infinite Regress: the shadow document; Alexanarch #419.",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "shadow",
+   "hex_address": "X.SHADOW.ZPZP",
+   "adjacent": [],
+   "provisional": "provisional — seated on registry evidence; Assembly confirmation queued 2026-08-25"
+  },
+  {
+   "id": "x03",
+   "name": "The Shadow Burn",
+   "cat": "shadow",
+   "q": -1,
+   "r": -3,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "What if the virality was the extraction? Alexanarch #647.",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "shadow",
+   "hex_address": "X.SHADOW.BURN",
+   "adjacent": [],
+   "provisional": "provisional — seated on registry evidence; Assembly confirmation queued 2026-08-25"
   }
  ],
  "edges": [
