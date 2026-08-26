@@ -2236,6 +2236,112 @@
    "structure_type": "shadow",
    "hex_address": "X.SHADOW.LUNARARM",
    "adjacent": []
+  },
+  {
+   "id": "r41",
+   "name": "Imploding Velcro Nativity",
+   "cat": "seat",
+   "q": -1,
+   "r": 4,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "Imploding Velcro Nativity",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "29.ROOM.IVN",
+   "adjacent": [],
+   "numbering_conflict": "page declares 29.ROOM.IVN while canonical seats a different room at that number — Assembly reconciliation queued 2026-08-25"
+  },
+  {
+   "id": "r42",
+   "name": "Ruby Moot",
+   "cat": "seat",
+   "q": 0,
+   "r": 4,
+   "physics": "σ_S; 3-body transmission",
+   "desc": "Ruby Moot",
+   "ops": [
+    "σ_S",
+    "Λ_res",
+    "β",
+    "κ_O"
+   ],
+   "het": "—",
+   "inst": "",
+   "prompt": "What do you send, and through whom?",
+   "mantle": "Rebekah Cranes",
+   "preferred_mode": "POETIC",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Rebekah Cranes"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "current_text [.state(latent)]"
+    },
+    {
+     "step": "ROTATE",
+     "value": "144°"
+    },
+    {
+     "step": "APPLY",
+     "value": "σ_S :: (speaker, beloved, witness)"
+    },
+    {
+     "step": "RENDER",
+     "value": "POETIC"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: Dwell"
+    }
+   ],
+   "default_operators": [
+    "σ_S"
+   ],
+   "structure_type": "room",
+   "hex_address": "30.ROOM.RUBYMOOT",
+   "adjacent": [],
+   "numbering_conflict": "page declares 30.ROOM.RUBYMOOT while canonical seats a different room at that number — Assembly reconciliation queued 2026-08-25"
   }
  ],
  "edges": [
