@@ -23,3 +23,15 @@ generators write into `public/`:
     python3 scripts/build_navigation.py   # the four navigation nodes
 
 Rerun both after any change to `hexagon_canonical.json`, then rebuild the sitemap.
+
+## One URL grammar (2026-09-03)
+
+Search Console showed three grammars for one page — canonical `https://crimsonhexagonal.org/works/00db/`,
+sitemap `https://www.crimsonhexagonal.org/works/00db/`, served `https://www.crimsonhexagonal.org/works/00db`
+(vercel `trailingSlash:false`) — with the result "408 submitted, 0 indexed", every indexed page
+"user canonical ≠ Google canonical", and random sitemap URLs never crawled.
+
+**The canonical form is `https://www.crimsonhexagonal.org/<path>` with no trailing slash** (root `/`).
+`scripts/normalize_urls.py` rewrites canonicals, og:url, JSON-LD urls and the sitemap to it; run it after
+the generators (`--check` to verify). `vercel.json` now redirects the apex host to www permanently (308)
+instead of Vercel's default 307. Both generators emit www directly; the normalizer is the safety net.
