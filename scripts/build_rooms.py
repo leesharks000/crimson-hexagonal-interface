@@ -132,20 +132,20 @@ def room_page(r):
     ld = {
         "@context": "https://schema.org", "@type": "CollectionPage",
         "name": r["name"], "identifier": r.get("hex_address"),
-        "url": f"https://crimsonhexagonal.org/rooms/{slug(r['name'])}/",
+        "url": f"https://www.crimsonhexagonal.org/rooms/{slug(r['name'])}/",
         "description": r.get("desc"),
         "isPartOf": {"@type": "Collection", "name": "Crimson Hexagonal Archive",
-                     "url": "https://crimsonhexagonal.org/"},
+                     "url": "https://www.crimsonhexagonal.org/"},
         "hasPart": [{"@type": "CreativeWork", "name": d.get("title"),
                      "identifier": d.get("doi")} for d in ds[:20]],
-        "significantLink": [f"https://crimsonhexagonal.org/rooms/{slug(a['name'])}/" for a in adj],
+        "significantLink": [f"https://www.crimsonhexagonal.org/rooms/{slug(a['name'])}/" for a in adj],
     }
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(r['name'])} &middot; {esc(r.get('hex_address'))} | Crimson Hexagonal Archive</title>
 <meta name="description" content="{esc(r['name'])} — {esc(r.get('desc'))} Physics: {esc(r.get('physics'))}. {len(ds)} documents. Room {esc(r.get('hex_address'))} of the Crimson Hexagonal Archive.">
-<link rel="canonical" href="https://crimsonhexagonal.org/rooms/{slug(r['name'])}/">
+<link rel="canonical" href="https://www.crimsonhexagonal.org/rooms/{slug(r['name'])}/">
 <style>{CSS}</style>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head><body><div class="w">
@@ -203,10 +203,10 @@ def main():
                            "creators": x.get("creators"),
                            "excerpt": (x.get("excerpt") or "")[:400]} for x in ds],
             "adjacent": [{"id": a, "name": BY_ID[a]["name"],
-                          "url": f"https://crimsonhexagonal.org/rooms/{slug(BY_ID[a]['name'])}/",
+                          "url": f"https://www.crimsonhexagonal.org/rooms/{slug(BY_ID[a]['name'])}/",
                           "relation": edge_sentence(r, BY_ID[a])}
                          for a in (r.get("adjacent") or []) if a in BY_ID],
-            "canonical": f"https://crimsonhexagonal.org/rooms/{slug(r['name'])}/",
+            "canonical": f"https://www.crimsonhexagonal.org/rooms/{slug(r['name'])}/",
             "generated": TODAY, "source": "hexagon_canonical.json",
         }, ensure_ascii=False, indent=1))
         made.append((s, r, len(ds)))
@@ -223,7 +223,7 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The rooms | Crimson Hexagonal Archive</title>
 <meta name="description" content="All {len(made)} navigable spaces of the Crimson Hexagonal Archive — {len([1 for _, r, _ in made if r.get('cat') == 'core'])} core rooms and the extension, special, new and field spaces. Each carries its own physics, operators and documents.">
-<link rel="canonical" href="https://crimsonhexagonal.org/rooms/">
+<link rel="canonical" href="https://www.crimsonhexagonal.org/rooms/">
 <style>{CSS}</style></head><body><div class="w">
 <p class="hex"><a href="/">Crimson Hexagonal Archive</a></p>
 <h1>The rooms</h1>

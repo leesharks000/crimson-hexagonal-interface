@@ -6,5 +6,18 @@
       "source": "/((?!rooms/|navigation/|assets/|queue/|map/|works/|snapshots/|machine/).*)",
       "destination": "/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "crimsonhexagonal.org"
+        }
+      ],
+      "destination": "https://www.crimsonhexagonal.org/:path*",
+      "permanent": true
+    }
   ]
 }

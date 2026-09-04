@@ -62,7 +62,7 @@ def page(title, desc, path, body):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} | Crimson Hexagonal Archive</title>
 <meta name="description" content="{esc(desc)}">
-<link rel="canonical" href="https://crimsonhexagonal.org{path}">
+<link rel="canonical" href="https://www.crimsonhexagonal.org{path}">
 <style>{CSS}
 .strata{{border:1px solid rgba(200,168,104,.2);border-radius:3px;padding:1rem 1.2rem;margin:1rem 0}}
 .strata.hist{{border-style:dashed;opacity:.9}}
