@@ -43,3 +43,7 @@ instead of Vercel's default 307. Both generators emit www directly; the normaliz
     python3 scripts/build_rooms.py && python3 scripts/build_navigation.py
     python3 scripts/normalize_urls.py
     python3 scripts/build_sitemap.py        # --check to verify without writing
+
+## The manifest is derived (2026-09-04)
+
+`public/manifest.json` drifted from the tree twice (08-17, and again after the 08-26 seating): 29 rooms / 38 slugs against 50 served room documents. `scripts/sync_manifest.py` now derives `_room_slugs`, `navigable_spaces`, `relations`, `documents` and `counts` from `public/rooms/` and `hexagon_canonical.json`; `--check` fails on drift. Sequence: build_rooms → build_navigation → sync_manifest → normalize_urls → build_sitemap.
