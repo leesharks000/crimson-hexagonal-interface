@@ -8,7 +8,7 @@ public/sitemap.xml (and a copy at the repo root for readers of the source). Data
 pages and are not listed. Run after the generators and normalize_urls.py; `--check` fails if the
 sitemap on disk does not match what the tree would produce.
 """
-import pathlib, re, subprocess, sys, datetime
+import re, pathlib, re, subprocess, sys, datetime
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUB = ROOT/'public'; BASE = 'https://www.crimsonhexagonal.org'
 
@@ -27,6 +27,21 @@ def pages():
     for p in PUB.glob('*.html'):
         if p.name != 'index.html': out['/'+p.stem] = p
     if (ROOT/'index.html').exists(): out['/'] = ROOT/'index.html'
+    # ALTERNATES (2026-09-06): a page whose <link rel=canonical> names a DIFFERENT URL is, by its
+    # own declaration, a duplicate of that URL. Listing it in the sitemap makes Google report
+    # "Alternate page with proper canonical tag" against a submitted URL (14 such pages on
+    # 2026-09-06: seven Catullus-room loci canonicalising to /rooms/catullus, seven document
+    # versions canonicalising to /works/0511). A sitemap lists canonicals only; alternates are
+    # dropped here and named on stderr so the exclusion is visible, never silent.
+    import sys
+    alternates = []
+    for rel, path in list(out.items()):
+        m = re.search(r'<link rel="canonical" href="([^"]+)"', path.read_text(encoding='utf-8', errors='replace'))
+        if m:
+            self_url = 'https://www.crimsonhexagonal.org' + ('' if rel == '/' else rel)
+            if m.group(1).rstrip('/') != self_url.rstrip('/'):
+                alternates.append((rel, m.group(1))); out.pop(rel)
+    for rel, canon in alternates: print(f'  alternate, not listed: {rel} -> {canon}', file=sys.stderr)
     return dict(sorted(out.items(), key=lambda kv: (kv[0] != '/', kv[0].split('/')[1] if '/' in kv[0][1:] or kv[0]!='/' else '', kv[0])))
 
 def priority(path):
