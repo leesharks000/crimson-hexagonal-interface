@@ -128,6 +128,7 @@ function normalizeRoom(room) {
     shadow: room.shadow || null,
     tang_void: room.tang_void || null,
     garden_lanes: room.garden_lanes || null,
+    page_url: room.page_url || null,
   };
 }
 
@@ -141,6 +142,10 @@ function normalizeDoc(doc) {
     r: doc.r || doc.rooms || doc.room_ids || [],
     k: doc.k || doc.keywords || [],
     s: String(doc.s || doc.status || "GENERATED").toUpperCase(),
+    axn: doc.axn || null,
+    record_url: doc.record_url || (doc.doi ? `https://www.alexanarch.org/go/?doi=${doc.doi}` : null),
+    text_url: doc.text_url || null,
+    works_url: doc.works_url || null,
   };
 }
 
@@ -148,24 +153,17 @@ function normalizeRelation(rel) {
   return { id: rel.id || `${rel.from}-${rel.type}-${rel.to}`, from: rel.from, to: rel.to, type: rel.type || "relates_to", status: rel.status || "RATIFIED" };
 }
 
-// ─── Zenodo Live Reader ───
+// ─── Archive Reader ───
+// The Zenodo account behind these DOIs was terminated on 2026-06-19. Texts are read from
+// Alexanarch, which serves them with open CORS; each document carries its text_url.
 
-function doiToRecordId(doi) {
-  if (!doi) return null;
-  const parts = doi.split(".");
-  return parts[parts.length - 1];
-}
-
-async function fetchZenodoMarkdown(doi) {
-  const recordId = doiToRecordId(doi);
-  if (!recordId) throw new Error("No DOI");
-  const rec = await fetch(`https://zenodo.org/api/records/${recordId}`).then(r => r.json());
-  const files = rec.files || [];
-  // Prefer .md, fall back to .txt
-  const mdFile = files.find(f => f.key.endsWith(".md")) || files.find(f => f.key.endsWith(".txt"));
-  if (!mdFile) return { files, text: null, title: rec.metadata?.title || "" };
-  const text = await fetch(mdFile.links.self).then(r => r.text());
-  return { files, text, title: rec.metadata?.title || "", filename: mdFile.key, size: mdFile.size };
+async function fetchArchiveText(textUrl) {
+  if (!textUrl) throw new Error("No archive text for this record");
+  const r = await fetch(textUrl);
+  if (!r.ok) throw new Error(`Archive returned ${r.status}`);
+  let text = await r.text();
+  if (text.startsWith("---\n")) { const end = text.indexOf("\n---", 4); if (end > 0) text = text.slice(end + 4).replace(/^\s+/, ""); }
+  return { text, filename: textUrl.split("/").pop(), size: text.length };
 }
 
 function MdRenderer({ text, mc }) {
@@ -464,6 +462,11 @@ function RoomPanel({ room, docs, relations, onDoc, isMobile, mc, onApplyOp, mode
             {room.het}
           </span>
         )}
+        {room.page_url && (
+          <a href={room.page_url} target="_blank" rel="noreferrer" style={{ fontSize: 9, padding: "3px 9px", border: `1px solid ${THEME.gold}44`, color: THEME.gold, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide, textDecoration: "none" }}>
+            ROOM PAGE ↗
+          </a>
+        )}
       </div>
 
       {/* Description */}
@@ -629,10 +632,15 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12, alignItems: "center" }}>
           <StatusBadge s={doc.s} />
           {doc.d && <span style={{ fontSize: 10, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.06em" }}>{doc.d}</span>}
-          {doc.doi && (
-            <span style={{ fontSize: 9, color: THEME.gold, fontFamily: THEME.ff.mono, padding: "3px 7px", background: THEME.goldGlow, border: `1px solid ${THEME.gold}33`, letterSpacing: THEME.ls.wide }}>
-              {doc.doi}
-            </span>
+          {doc.record_url && (
+            <a href={doc.record_url} target="_blank" rel="noreferrer" title={doc.doi ? `Archive record (former DOI ${doc.doi})` : "Archive record"} style={{ fontSize: 9, color: THEME.gold, fontFamily: THEME.ff.mono, padding: "3px 7px", background: THEME.goldGlow, border: `1px solid ${THEME.gold}33`, letterSpacing: THEME.ls.wide, textDecoration: "none" }}>
+              {doc.axn || doc.doi} ↗
+            </a>
+          )}
+          {doc.works_url && (
+            <a href={doc.works_url} target="_blank" rel="noreferrer" style={{ fontSize: 9, color: THEME.txMute, fontFamily: THEME.ff.mono, padding: "3px 7px", border: `1px solid ${THEME.txMute}33`, letterSpacing: THEME.ls.wide, textDecoration: "none" }}>
+              WORK PAGE ↗
+            </a>
           )}
         </div>
         {(doc.c?.length > 0) && (
@@ -645,7 +653,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
             {doc.e.length > (isMobile ? 320 : 520) ? doc.e.slice(0, isMobile ? 317 : 517) + "…" : doc.e}
           </div>
         )}
-        {doc.doi && (
+        {doc.doi && doc.text_url && (
           <button
             onClick={() => onRead(doc.doi)}
             disabled={isLoading}
@@ -666,7 +674,7 @@ function DocPanel({ doc, rooms, onRoom, mc, isMobile, readState, onRead, relatio
               transition: THEME.t,
             }}
           >
-            {isLoading ? "Fetching from Zenodo…" : "Read Full Text"}
+            {isLoading ? "Fetching from the archive…" : "Read Full Text"}
           </button>
         )}
         {doc.doi && (
@@ -1165,119 +1173,10 @@ function GovernanceActions({ mc, addLog, selDoc, data, isMobile, gwApiKey }) {
   );
 }
 
-function ZenodoDeposit({ mc, addLog, isMobile }) {
-  const [zToken, setZToken] = useState("");
-  const [title, setTitle] = useState("");
-  const [creator, setCreator] = useState("");
-  const [desc, setDesc] = useState("");
-  const [keywords, setKeywords] = useState("");
-  const [version, setVersion] = useState("v1.0");
-  const [fileContent, setFileContent] = useState("");
-  const [fileName, setFileName] = useState("");
-  const [depositing, setDepositing] = useState(false);
-  const [result, setResult] = useState(null);
-
-  const handleFile = (e) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    setFileName(file.name);
-    const reader = new FileReader();
-    reader.onload = (ev) => setFileContent(ev.target.result);
-    reader.readAsText(file);
-  };
-
-  const deposit = async () => {
-    if (!zToken.trim()) return addLog("Zenodo token required", "err");
-    if (!title.trim()) return addLog("Title required", "err");
-    if (!fileContent && !fileName) return addLog("File required", "err");
-    setDepositing(true); setResult(null);
-    try {
-      addLog("ZENODO: creating deposit…", "sys");
-      const headers = { "Authorization": `Bearer ${zToken}`, "Content-Type": "application/json" };
-      // 1. Create
-      const createRes = await fetch("https://zenodo.org/api/deposit/depositions", { method: "POST", headers, body: JSON.stringify({}) });
-      const createData = await createRes.json();
-      if (!createData.id) throw new Error(createData.message || "Create failed");
-      const depId = createData.id;
-      const bucket = createData.links.bucket;
-      addLog(`ZENODO: deposit ${depId} created`, "sys");
-
-      // 2. Upload file
-      const uploadName = fileName || `${title.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 60)}.md`;
-      const blob = new Blob([fileContent], { type: "application/octet-stream" });
-      const uploadRes = await fetch(`${bucket}/${encodeURIComponent(uploadName)}`, {
-        method: "PUT", headers: { "Authorization": `Bearer ${zToken}`, "Content-Type": "application/octet-stream" }, body: blob
-      });
-      if (!uploadRes.ok) throw new Error("File upload failed");
-      addLog(`ZENODO: uploaded ${uploadName}`, "sys");
-
-      // 3. Set metadata
-      const kw = keywords.split(",").map(k => k.trim()).filter(Boolean);
-      const meta = {
-        metadata: {
-          title, upload_type: "publication", publication_type: "technicalnote",
-          description: desc || title, version,
-          creators: [{ name: creator.trim() || "Anonymous" }],
-          access_right: "open", license: "cc-by-sa-4.0",
-          keywords: kw.length > 0 ? kw : ["Crimson Hexagonal Archive"],
-          language: "eng",
-        }
-      };
-      const metaRes = await fetch(`https://zenodo.org/api/deposit/depositions/${depId}`, { method: "PUT", headers, body: JSON.stringify(meta) });
-      if (!metaRes.ok) { const err = await metaRes.json(); throw new Error(err.message || "Metadata failed"); }
-      addLog("ZENODO: metadata set", "sys");
-
-      // 4. Publish
-      const pubRes = await fetch(`https://zenodo.org/api/deposit/depositions/${depId}/actions/publish`, { method: "POST", headers: { "Authorization": `Bearer ${zToken}` } });
-      const pubData = await pubRes.json();
-      if (pubData.state !== "done") throw new Error(pubData.message || "Publish failed");
-      addLog(`ZENODO: PUBLISHED · DOI ${pubData.doi}`, "sys");
-      setResult({ doi: pubData.doi, id: pubData.id, url: pubData.links?.record_html });
-    } catch (e) {
-      addLog(`ZENODO ERROR: ${e.message}`, "err");
-      setResult({ error: e.message });
-    }
-    setDepositing(false);
-  };
-
-  return (
-    <div>
-      <div style={{ fontSize: 10, color: "#B0B8C4", lineHeight: 1.6, marginBottom: 10 }}>Deposit directly to Zenodo under your own account. You need a free Zenodo account and a personal access token (zenodo.org → Settings → Applications → Personal access tokens → New token with deposit:write scope). Token stays in your browser — never sent anywhere except Zenodo.</div>
-      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>ZENODO TOKEN</div>
-      <input value={zToken} onChange={(e) => setZToken(e.target.value)} type="password" placeholder="Zenodo personal access token" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
-      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>TITLE</div>
-      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Document title (EA-XX-01)" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
-      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>CREATOR (Last, First)</div>
-      <input value={creator} onChange={(e) => setCreator(e.target.value)} placeholder="Your name for Zenodo metadata" style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10 }} />
-      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>DESCRIPTION</div>
-      <textarea value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="HTML description for Zenodo" rows={3} style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none", marginBottom: 10, resize: "vertical" }} />
-      <div style={{ display: "flex", gap: 8, marginBottom: 10 }}>
-        <div style={{ flex: 1 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>VERSION</div><input value={version} onChange={(e) => setVersion(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
-        <div style={{ flex: 2 }}><div style={{ fontSize: 9, letterSpacing: 2, color: "#5A6370", marginBottom: 4 }}>KEYWORDS (comma-separated)</div><input value={keywords} onChange={(e) => setKeywords(e.target.value)} style={{ width: "100%", boxSizing: "border-box", background: THEME.bg, border: "1px solid #1E2530", color: THEME.tx, padding: "6px 10px", fontSize: 10, fontFamily: THEME.ff.mono, outline: "none" }} /></div>
-      </div>
-      <div style={{ marginBottom: 8, fontSize: 9, letterSpacing: 2, color: "#5A6370" }}>FILE</div>
-      <input type="file" onChange={handleFile} style={{ fontSize: 9, color: "#B0B8C4", marginBottom: 4 }} />
-      {fileName && <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono, marginBottom: 10 }}>{fileName} ({fileContent.length} chars)</div>}
-      <button onClick={deposit} disabled={depositing} style={{ background: mc + "11", border: `1px solid ${mc}44`, color: mc, padding: "8px 14px", fontSize: 10, cursor: depositing ? "wait" : "pointer", fontFamily: THEME.ff.mono, letterSpacing: 1, marginBottom: 12, width: "100%" }}>
-        {depositing ? "DEPOSITING…" : "CREATE → UPLOAD → PUBLISH"}
-      </button>
-      {result && !result.error && (
-        <div style={{ padding: "8px 10px", background: THEME.surface, borderLeft: "2px solid #5A9F7B22", marginBottom: 10 }}>
-          <div style={{ fontSize: 9, color: "#5A9F7B", fontFamily: THEME.ff.mono, marginBottom: 4 }}>PUBLISHED</div>
-          <div style={{ fontSize: 9, color: mc, fontFamily: THEME.ff.mono, wordBreak: "break-all" }}>DOI: {result.doi}</div>
-          <div style={{ fontSize: 8, color: "#5A6370", fontFamily: THEME.ff.mono }}>{result.url}</div>
-        </div>
-      )}
-      {result?.error && <div style={{ padding: "8px 10px", background: "#120808", borderLeft: "2px solid #7a1a1a", fontSize: 9, color: "#b57a7a", wordBreak: "break-word" }}>{result.error}</div>}
-    </div>
-  );
-}
-
 function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom, depositState, setDepositState, addLog, isMobile, data, mc }) {
   const [chainLabel, setChainLabel] = useState("");
   const [dashTab, setDashTab] = useState("PENDING");
   const [dreamResult, setDreamResult] = useState(null);
-  const [syncResult, setSyncResult] = useState(null);
   const suggestion = selectedDoc ? `doc-${selectedDoc.id}` : selectedRoom ? `room-${selectedRoom.id}` : "hexagon-session";
   useEffect(() => { if (!chainLabel) setChainLabel(suggestion); }, [suggestion, chainLabel]);
   const createChain = async () => {
@@ -1303,7 +1202,7 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
     return { roomCounts, roomNames, emptyRooms, provRelations, months, sortedRooms, maxCount };
   }, [data]);
 
-  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "ZENODO", label: "ZENODO" }, { id: "SYNC", label: "SYNC" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW" }];
+  const tabs = [{ id: "PENDING", label: "PENDING" }, { id: "COVERAGE", label: "COVERAGE" }, { id: "DREAM", label: "DREAM" }, { id: "GRAVITY", label: "GW" }];
 
   return (
     <div className="fade-in" style={{ padding: isMobile ? "20px 18px" : "32px 40px", overflowY: "auto", height: "100%", fontFamily: THEME.ff.serif, maxWidth: 1040, margin: "0 auto", width: "100%", boxSizing: "border-box" }}>
@@ -1452,82 +1351,6 @@ function DepositPanel({ apiKey, setApiKey, configured, selectedDoc, selectedRoom
               })}
             </div>
           </Section>
-        </div>
-      )}
-
-      {/* ZENODO DEPOSIT tab */}
-      {dashTab === "ZENODO" && (
-        <ZenodoDeposit mc={mc} addLog={addLog} isMobile={isMobile} />
-      )}
-
-      {/* SYNC tab — Zenodo live pull */}
-      {dashTab === "SYNC" && (
-        <div>
-          <div style={{ fontSize: 13, color: THEME.tx, fontFamily: THEME.ff.serif, lineHeight: 1.65, marginBottom: 18, fontStyle: "italic", maxWidth: 640 }}>
-            Fetch recent deposits from Zenodo. Shows deposits not yet in the canonical JSON — useful for detecting drift between the archive and the interface.
-          </div>
-          <button
-            onClick={async () => {
-            addLog("Fetching from Zenodo API...", "sys");
-            setSyncResult({ loading: true });
-            try {
-              const existingDois = new Set(data.documents.map(d => d.doi).filter(Boolean));
-              const allHits = [];
-              for (let page = 1; page <= 3; page++) {
-                const r = await fetch(`https://zenodo.org/api/records/?q=creators.name:Sharks&size=25&sort=mostrecent&page=${page}`);
-                const j = await r.json();
-                allHits.push(...(j.hits?.hits || []));
-                if (page === 1) setSyncResult(prev => ({ ...prev, total: j.hits?.total || 0 }));
-                if (allHits.length >= (j.hits?.total || 0)) break;
-              }
-              const newDeps = allHits.filter(h => h.doi && !existingDois.has(h.doi));
-              setSyncResult({ loading: false, total: allHits.length, new: newDeps.length, existing: allHits.length - newDeps.length, deposits: newDeps });
-              addLog(`Zenodo: ${allHits.length} fetched, ${newDeps.length} NEW`, newDeps.length > 0 ? "warn" : "sys");
-            } catch (e) { setSyncResult({ loading: false, error: e.message }); addLog(`Zenodo fetch error: ${e.message}`, "err"); }
-          }}
-            onMouseEnter={e => { e.currentTarget.style.background = mc + "22"; e.currentTarget.style.boxShadow = `0 0 24px ${mc}33`; }}
-            onMouseLeave={e => { e.currentTarget.style.background = mc + "11"; e.currentTarget.style.boxShadow = "none"; }}
-            style={{ background: mc + "11", border: `1px solid ${mc}`, color: mc, padding: "12px 20px", fontSize: 11, cursor: "pointer", fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.widest, marginBottom: 16, width: "100%", textTransform: "uppercase", transition: THEME.t }}
-          >
-            {syncResult?.loading ? "Fetching…" : "Fetch Recent Deposits"}
-          </button>
-
-          <div style={{ fontSize: 11, color: THEME.tx, fontFamily: THEME.ff.mono, marginBottom: 16, letterSpacing: "0.03em", padding: "10px 14px", background: THEME.surface, border: `1px solid ${THEME.border}` }}>
-            <span style={{ color: THEME.txMute }}>{data.documents.length}</span> in JSON
-            {syncResult && <>
-              <span style={{ color: THEME.txFaint, margin: "0 8px" }}>·</span>
-              <span style={{ color: THEME.txMute }}>{syncResult.total || "?"}</span> on Zenodo
-              <span style={{ color: THEME.txFaint, margin: "0 8px" }}>·</span>
-              <span style={{ color: syncResult.new > 0 ? "#9F9F5A" : THEME.green }}>{syncResult.new || 0}</span> new
-            </>}
-          </div>
-
-          {syncResult?.error && (
-            <div style={{ fontSize: 11, color: THEME.red, marginBottom: 16, padding: "10px 14px", background: THEME.red + "08", border: `1px solid ${THEME.red}44`, fontFamily: THEME.ff.mono }}>{syncResult.error}</div>
-          )}
-
-          {syncResult?.deposits?.length > 0 && (
-            <Section label={`New Deposits · ${syncResult.deposits.length}`}>
-              <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                {syncResult.deposits.map((dep, i) => (
-                  <div key={i} style={{ padding: "10px 14px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderLeft: `2px solid #9F9F5A` }}>
-                    <div style={{ fontSize: 12, color: THEME.txBright, fontFamily: THEME.ff.serif, lineHeight: 1.4, marginBottom: 4 }}>
-                      {(dep.metadata?.title || "—").slice(0, 80)}
-                    </div>
-                    <div style={{ fontSize: 9, color: THEME.txMute, fontFamily: THEME.ff.mono, letterSpacing: "0.04em" }}>
-                      {dep.doi} · {dep.metadata?.publication_date} · {(dep.metadata?.related_identifiers || []).length} rels
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Section>
-          )}
-
-          {syncResult && !syncResult.loading && syncResult.new === 0 && (
-            <div style={{ fontSize: 12, color: THEME.green, fontFamily: THEME.ff.mono, padding: "12px 16px", background: THEME.green + "08", border: `1px solid ${THEME.green}44`, letterSpacing: THEME.ls.wide, textTransform: "uppercase" }}>
-              All synced — no new deposits
-            </div>
-          )}
         </div>
       )}
 
@@ -1935,22 +1758,17 @@ function HexagonInterfaceResponsive() {
   const handleRead = useCallback(async (doi) => {
     if (!doi) { setReadState({ doi: null, text: null, loading: false, error: null, filename: null, size: 0 }); return; }
     setReadState({ doi, text: null, loading: true, error: null, filename: null, size: 0 });
-    addLog(`ZENODO: fetching ${doi}`, "sys");
+    const doc = data?.documents?.find((x) => x.doi === doi);
+    addLog(`ARCHIVE: fetching ${doc?.axn || doi}`, "sys");
     try {
-      const result = await fetchZenodoMarkdown(doi);
-      if (result.text) {
-        setReadState({ doi, text: result.text, loading: false, error: null, filename: result.filename, size: result.size });
-        addLog(`ZENODO: ${result.filename} (${(result.size / 1024).toFixed(1)}KB)`, "sys");
-      } else {
-        const fileList = result.files.map(f => f.key).join(", ");
-        setReadState({ doi, text: null, loading: false, error: `No .md file found. Available: ${fileList || "none"}`, filename: null, size: 0 });
-        addLog(`ZENODO: no markdown — files: ${fileList}`, "err");
-      }
+      const result = await fetchArchiveText(doc?.text_url);
+      setReadState({ doi, text: result.text, loading: false, error: null, filename: result.filename, size: result.size });
+      addLog(`ARCHIVE: ${result.filename} (${(result.size / 1024).toFixed(1)}KB)`, "sys");
     } catch (e) {
       setReadState({ doi, text: null, loading: false, error: e.message, filename: null, size: 0 });
-      addLog(`ZENODO error: ${e.message}`, "err");
+      addLog(`ARCHIVE error: ${e.message}`, "err");
     }
-  }, [addLog]);
+  }, [addLog, data]);
 
   const executeTraversal = useCallback((room) => {
     if (!room.lp_program || room.lp_program.length === 0) { addLog(`→ ${room.name} (no LP program)`, "traverse"); return; }
@@ -2039,25 +1857,15 @@ function HexagonInterfaceResponsive() {
 
       addLog(`ORACLE: ${scored.length} documents retrieved`, "sys");
 
-      // 2. Fetch full text for top 3 from Zenodo
+      // 2. Fetch full text for top 3 from the archive (alexanarch.org)
       const contexts = [];
       for (const doc of scored.slice(0, 3)) {
-        if (!doc.doi) continue;
+        if (!doc.text_url) continue;
         try {
-          const recId = doc.doi.split(".").pop();
-          const r = await fetch(`https://zenodo.org/api/records/${recId}`);
-          if (!r.ok) continue;
-          const rec = await r.json();
-          const files = rec.files || [];
-          const textFile = files.find(f => f.key?.endsWith(".md") || f.key?.endsWith(".txt")) || files[0];
-          if (textFile?.links?.self) {
-            const fr = await fetch(textFile.links.self);
-            if (fr.ok) {
-              let text = await fr.text();
-              if (text.length > 4000) text = text.slice(0, 4000) + "\n[…truncated]";
-              contexts.push({ id: doc.id, doi: doc.doi, title: doc.t, text });
-            }
-          }
+          const { text: full } = await fetchArchiveText(doc.text_url);
+          let text = full;
+          if (text.length > 4000) text = text.slice(0, 4000) + "\n[…truncated]";
+          contexts.push({ id: doc.id, doi: doc.doi, title: doc.t, text });
         } catch (e) { /* skip failed fetches */ }
       }
 
@@ -2876,9 +2684,11 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
                 return <>
                   {/* DOI + metadata card */}
                   <div style={{ padding: "14px 18px", background: THEME.surface, border: `1px solid ${THEME.border}`, borderLeft: `2px solid ${mc}66`, marginBottom: 20 }}>
-                    {selDoc.doi && (
+                    {(selDoc.axn || selDoc.doi) && (
                       <div style={{ fontSize: 11, color: THEME.gold, fontFamily: THEME.ff.mono, letterSpacing: "0.04em", wordBreak: "break-all", marginBottom: 8 }}>
-                        {selDoc.doi}
+                        <a href={selDoc.record_url} target="_blank" rel="noreferrer" style={{ color: THEME.gold, textDecoration: "none" }}>{selDoc.axn || selDoc.doi} ↗</a>
+                        {selDoc.works_url && <> · <a href={selDoc.works_url} target="_blank" rel="noreferrer" style={{ color: THEME.gold, textDecoration: "none" }}>work page ↗</a></>}
+                        {selDoc.axn && selDoc.doi && <div style={{ fontSize: 9, color: THEME.txMute, marginTop: 4 }}>former DOI {selDoc.doi}</div>}
                       </div>
                     )}
                     <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
