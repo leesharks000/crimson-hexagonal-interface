@@ -1,0 +1,37 @@
+name: Apply bundle from issue
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: apply-bundle
+jobs:
+  apply:
+    if: startsWith(github.event.issue.title, '[BUNDLE]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          set -euo pipefail
+          URL=$(printf '%s' "$BODY" | grep -oE 'https://[^ )"]+' | head -1)
+          curl -sL "$URL" -o /tmp/b.bundle
+          git bundle verify /tmp/b.bundle
+          REF=$(git bundle list-heads /tmp/b.bundle | head -1 | awk '{print $2}')
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --no-edit --no-rebase /tmp/b.bundle "${REF#refs/heads/}"
+          git push origin HEAD:main
+      - name: Report
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "apply-bundle: ${{ job.status }}"
+          gh issue close ${{ github.event.issue.number }}
