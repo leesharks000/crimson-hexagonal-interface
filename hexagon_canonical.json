@@ -60,7 +60,8 @@
     "r13",
     "sp01",
     "sp03"
-   ]
+   ],
+   "page_url": "/rooms/sappho/"
   },
   {
    "id": "r02",
@@ -116,7 +117,8 @@
     "r19",
     "sp01",
     "sp03"
-   ]
+   ],
+   "page_url": "/rooms/borges/"
   },
   {
    "id": "r03",
@@ -162,7 +164,8 @@
    "adjacent": [
     "r08",
     "r11"
-   ]
+   ],
+   "page_url": "/rooms/ichabod/"
   },
   {
    "id": "r04",
@@ -210,7 +213,8 @@
    "hex_address": "04.ROOM.DOVE",
    "adjacent": [
     "r05"
-   ]
+   ],
+   "page_url": "/rooms/dove/"
   },
   {
    "id": "r05",
@@ -284,7 +288,8 @@
     "r20",
     "sp01",
     "sp03"
-   ]
+   ],
+   "page_url": "/rooms/semantic-economy/"
   },
   {
    "id": "r06",
@@ -341,7 +346,8 @@
     "r28",
     "sp01",
     "sp03"
-   ]
+   ],
+   "page_url": "/rooms/marx-room/"
   },
   {
    "id": "r07",
@@ -395,7 +401,8 @@
     "r13",
     "r18",
     "sp04"
-   ]
+   ],
+   "page_url": "/rooms/revelation/"
   },
   {
    "id": "r08",
@@ -461,7 +468,8 @@
     "sp01",
     "sp03",
     "sp04"
-   ]
+   ],
+   "page_url": "/rooms/sigil/"
   },
   {
    "id": "r09",
@@ -528,7 +536,8 @@
     "r21",
     "sp01",
     "sp03"
-   ]
+   ],
+   "page_url": "/rooms/whitman/"
   },
   {
    "id": "r10",
@@ -575,7 +584,8 @@
    ],
    "structure_type": "room",
    "hex_address": "10.ROOM.WATERGIRAFFE",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/water-giraffe/"
   },
   {
    "id": "r11",
@@ -638,7 +648,8 @@
     "sp01",
     "sp03",
     "sp04"
-   ]
+   ],
+   "page_url": "/rooms/assembly/"
   },
   {
    "id": "r12",
@@ -694,7 +705,8 @@
     "r28",
     "sp01",
     "sp03"
-   ]
+   ],
+   "page_url": "/rooms/break-room/"
   },
   {
    "id": "r13",
@@ -749,7 +761,8 @@
     "r08",
     "r09",
     "r22"
-   ]
+   ],
+   "page_url": "/rooms/ezekiel/"
   },
   {
    "id": "r14",
@@ -801,7 +814,8 @@
     "r16",
     "r17",
     "sp01"
-   ]
+   ],
+   "page_url": "/rooms/studio-for-patacinematics/"
   },
   {
    "id": "r15",
@@ -850,7 +864,8 @@
     "r09",
     "r14",
     "sp01"
-   ]
+   ],
+   "page_url": "/rooms/lagrange-observatory/"
   },
   {
    "id": "r16",
@@ -895,7 +910,8 @@
     "r08",
     "r14",
     "r19"
-   ]
+   ],
+   "page_url": "/rooms/maybe-space-baby-garden-lanes/"
   },
   {
    "id": "r17",
@@ -933,7 +949,8 @@
     "r14",
     "r19",
     "sp01"
-   ]
+   ],
+   "page_url": "/rooms/moving-statues-made-of-rubies-mint/"
   },
   {
    "id": "r18",
@@ -979,7 +996,8 @@
     "r09",
     "r11",
     "sp01"
-   ]
+   ],
+   "page_url": "/rooms/rosary-embassy/"
   },
   {
    "id": "r19",
@@ -1027,7 +1045,8 @@
     "r16",
     "r17",
     "sp01"
-   ]
+   ],
+   "page_url": "/rooms/macro-maquette/"
   },
   {
    "id": "r20",
@@ -1073,7 +1092,8 @@
    "adjacent": [
     "r05",
     "r11"
-   ]
+   ],
+   "page_url": "/rooms/airlock/"
   },
   {
    "id": "r21",
@@ -1121,7 +1141,8 @@
    "adjacent": [
     "r08",
     "r09"
-   ]
+   ],
+   "page_url": "/rooms/infinite-bliss/"
   },
   {
    "id": "r22",
@@ -1164,7 +1185,8 @@
    "hex_address": "22.CH.THOUSANDWORLDS",
    "adjacent": [
     "r13"
-   ]
+   ],
+   "page_url": "/rooms/thousand-worlds/"
   },
   {
    "id": "sp01",
@@ -1226,7 +1248,8 @@
     "r18",
     "r19",
     "sp03"
-   ]
+   ],
+   "page_url": "/rooms/cti-wound/"
   },
   {
    "id": "sp02",
@@ -1263,7 +1286,8 @@
    "default_operators": [],
    "structure_type": "portico",
    "hex_address": "SP.02.PTC.AFTERLIFE",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/portico/"
   },
   {
    "id": "sp03",
@@ -1319,7 +1343,8 @@
     "r11",
     "r12",
     "sp01"
-   ]
+   ],
+   "page_url": "/rooms/space-ark/"
   },
   {
    "id": "sp04",
@@ -1366,7 +1391,8 @@
     "r07",
     "r08",
     "r11"
-   ]
+   ],
+   "page_url": "/rooms/mandala/"
   },
   {
    "id": "r25",
@@ -1382,7 +1408,8 @@
    "prompt": "What do you build under pressure?",
    "structure_type": "room",
    "hex_address": "25.ROOM.DOLPHINDIANA",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/underwater-construction-authority-of-dolphindiana/"
   },
   {
    "id": "r27",
@@ -1398,7 +1425,8 @@
    "prompt": "What fruits from the substrate?",
    "structure_type": "room",
    "hex_address": "27.ROOM.FBDPSOURCE",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/fbdp-source/"
   },
   {
    "id": "r23",
@@ -1417,7 +1445,8 @@
    "prompt": "Whom do you address, and with what force?",
    "structure_type": "room",
    "hex_address": "23.ROOM.CATULLUS",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/catullus/"
   },
   {
    "id": "f02",
@@ -1467,7 +1496,8 @@
    "hex_address": "F.02.FLD.GRAVITYWELL",
    "adjacent": [
     "r05"
-   ]
+   ],
+   "page_url": "/rooms/gravity-well/"
   },
   {
    "id": "r28",
@@ -1538,7 +1568,8 @@
    "adjacent": [
     "r06",
     "r12"
-   ]
+   ],
+   "page_url": "/rooms/eve/"
   },
   {
    "id": "f01",
@@ -1560,7 +1591,8 @@
    "field_doi": "10.5281/zenodo.19041117",
    "source_room": "r27",
    "hex_address": "F.01.FLD.FBDP",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/fruiting-body-diffusion-plume/"
   },
   {
    "id": "r24",
@@ -1581,7 +1613,8 @@
    "default_operators": [],
    "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
    "hex_address": "24.ROOM.MIGDAL",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/migdal-room/"
   },
   {
    "id": "r26",
@@ -1606,7 +1639,8 @@
    ],
    "room_spec_doi": "10.5281/zenodo.19133271",
    "hex_address": "26.ROOM.INTERNET",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/internet/"
   },
   {
    "id": "r29",
@@ -1627,7 +1661,8 @@
    "default_operators": [],
    "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
    "hex_address": "29.ROOM.JOB",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/job-room/"
   },
   {
    "id": "r30",
@@ -1648,7 +1683,8 @@
    "default_operators": [],
    "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
    "hex_address": "30.VLT.FROZENSIN",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/frozen-sin-archive/"
   },
   {
    "id": "r31",
@@ -1669,7 +1705,8 @@
    "default_operators": [],
    "status_note": "Content of Revelation Room in CNM v2.0, displaced when r.07 physics changed. Space Ark status: RESONANT, ACTIVE RESEARCH. Restored as standalone room April 2026.",
    "hex_address": "31.ROOM.JOSEPHUS",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/josephus-thesis/"
   },
   {
    "id": "f03",
@@ -1715,7 +1752,8 @@
    "anchor_doi": "10.5281/zenodo.19458363",
    "companion_doi": "10.5281/zenodo.19458359",
    "q": 1,
-   "r": -4
+   "r": -4,
+   "page_url": "/rooms/moltbot-swarm/"
   },
   {
    "id": "r33",
@@ -1767,7 +1805,8 @@
    ],
    "structure_type": "room",
    "hex_address": "33.ROOM.SACREDHEART",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/sacred-heart/"
   },
   {
    "id": "r34",
@@ -1819,7 +1858,8 @@
    ],
    "structure_type": "room",
    "hex_address": "34.ROOM.VERTICAL",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/operator-vertical/"
   },
   {
    "id": "r35",
@@ -1871,7 +1911,8 @@
    ],
    "structure_type": "room",
    "hex_address": "35.LIBRARY.PERGAMUM",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/library-of-pergamum/"
   },
   {
    "id": "r36",
@@ -1923,7 +1964,8 @@
    ],
    "structure_type": "room",
    "hex_address": "36.ROOM.LAMBDABODY",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/lambda-engine/"
   },
   {
    "id": "r37",
@@ -1975,7 +2017,8 @@
    ],
    "structure_type": "room",
    "hex_address": "37.ROOM.MACHINEDIALECTIC",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/machine-dialectic/"
   },
   {
    "id": "r38",
@@ -2027,7 +2070,8 @@
    ],
    "structure_type": "room",
    "hex_address": "38.ROOM.SINGULARITY",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/singularity/"
   },
   {
    "id": "r39",
@@ -2079,7 +2123,8 @@
    ],
    "structure_type": "room",
    "hex_address": "39.ROOM.RESTOREDACADEMY",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/restored-academy/"
   },
   {
    "id": "r40",
@@ -2131,7 +2176,8 @@
    ],
    "structure_type": "room",
    "hex_address": "40.AXIOM.CARITAS",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/caritas/"
   },
   {
    "id": "u01",
@@ -2183,7 +2229,8 @@
    ],
    "structure_type": "room",
    "hex_address": "U.CONTRIB.360",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/3-60/"
   },
   {
    "id": "x01",
@@ -2235,7 +2282,8 @@
    ],
    "structure_type": "shadow",
    "hex_address": "X.SHADOW.LUNARARM",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/lunar-arm/"
   },
   {
    "id": "r41",
@@ -2287,7 +2335,8 @@
    ],
    "structure_type": "room",
    "hex_address": "41.ROOM.IVN",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/imploding-velcro-nativity/"
   },
   {
    "id": "r42",
@@ -2339,7 +2388,8 @@
    ],
    "structure_type": "room",
    "hex_address": "42.ROOM.RUBYMOOT",
-   "adjacent": []
+   "adjacent": [],
+   "page_url": "/rooms/ruby-moot/"
   },
   {
    "id": "a01",
@@ -3424,7 +3474,10 @@
     "r11"
    ],
    "t": "The Hexagon Interface Constitution v2.0: System Specification for the Crimson Hexagonal Archive as Governed Commons",
-   "e": "LIVE: crimson-hexagonal-interface.vercel.app — Constitutional sentence: 'The Hexagon is a governed reading-and-production environment whose topology organizes, but does not replace, text, labor, and provenance.' Updated for 6-tuple H_core."
+   "e": "LIVE: crimson-hexagonal-interface.vercel.app — Constitutional sentence: 'The Hexagon is a governed reading-and-production environment whose topology organizes, but does not replace, text, labor, and provenance.' Updated for 6-tuple H_core.",
+   "axn": "AXN:01D4.GOVERNANCE.∞🟠🌘🕛♾️🔵",
+   "record_url": "https://www.alexanarch.org/s/records/618/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D4-text.md"
   },
   {
    "id": "19354818",
@@ -3450,7 +3503,10 @@
    "r": [
     "r06",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:03CA.ARCHIVAL.↗️🌄👋🌒🎨🗼",
+   "record_url": "https://www.alexanarch.org/s/records/958/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03CA-text.md"
   },
   {
    "id": "19353182",
@@ -3480,7 +3536,10 @@
     "r11",
     "r15",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01D5.GOVERNANCE.🛡️🗼🛸👉🕊️🔆",
+   "record_url": "https://www.alexanarch.org/s/records/48/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D5-text.md"
   },
   {
    "id": "19352504",
@@ -3504,7 +3563,10 @@
    "assignment": "reviewed",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:01D6.GOVERNANCE.🎻💛🔺🔍🍃🔒",
+   "record_url": "https://www.alexanarch.org/s/records/619/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D6-text.md"
   },
   {
    "id": "19341893",
@@ -3531,7 +3593,10 @@
    "r": [
     "r09",
     "r08"
-   ]
+   ],
+   "axn": "AXN:01CC.GOVERNANCE.🌙🔺🚀🪞🧲🧭",
+   "record_url": "https://www.alexanarch.org/s/records/613/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01CC-text.md"
   },
   {
    "id": "19341887",
@@ -3555,7 +3620,11 @@
    "assignment": "reviewed",
    "r": [
     "r06"
-   ]
+   ],
+   "axn": "AXN:01CD.GOVERNANCE.📌🏗️🏗️🎻🚪🟤",
+   "record_url": "https://www.alexanarch.org/s/records/45/",
+   "works_url": "/works/01cd/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01CD-text.md"
   },
   {
    "id": "19341885",
@@ -3582,7 +3651,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:01CE.GOVERNANCE.🔬🗺️🏺🌠❌➗",
+   "record_url": "https://www.alexanarch.org/s/records/46/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01CE-text.md"
   },
   {
    "id": "19339692",
@@ -3611,7 +3683,10 @@
     "r05",
     "r06",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:01CF.GOVERNANCE.🪝🧬🌗⏹️🔬🔺",
+   "record_url": "https://www.alexanarch.org/s/records/614/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01CF-text.md"
   },
   {
    "id": "19338708",
@@ -3639,7 +3714,10 @@
     "r05",
     "r06",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:01D0.GOVERNANCE.📝⛩️👈🔧🌲✨",
+   "record_url": "https://www.alexanarch.org/s/records/615/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D0-text.md"
   },
   {
    "id": "19338438",
@@ -3663,7 +3741,10 @@
    "assignment": "reviewed",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:03C9.ARCHIVAL.🔚📋↘️⏬◀️🔀",
+   "record_url": "https://www.alexanarch.org/s/records/957/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03C9-text.md"
   },
   {
    "id": "19336567",
@@ -3688,7 +3769,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:01D1.GOVERNANCE.⊗🖐️↙️♌⚪🗿",
+   "record_url": "https://www.alexanarch.org/s/records/616/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D1-text.md"
   },
   {
    "id": "19334694",
@@ -3717,7 +3801,11 @@
     "r05",
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:01D2.GOVERNANCE.✊🍁♉🔄🕒🗂️",
+   "record_url": "https://www.alexanarch.org/s/records/47/",
+   "works_url": "/works/01d2/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D2-text.md"
   },
   {
    "id": "19323274",
@@ -3746,7 +3834,11 @@
     "r09",
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧",
+   "record_url": "https://www.alexanarch.org/s/records/43/",
+   "works_url": "/works/01c7/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C7-text.md"
   },
   {
    "id": "19319642",
@@ -3774,7 +3866,10 @@
     "r01",
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:01C8.GOVERNANCE.📖■🌑📖🎪🕓",
+   "record_url": "https://www.alexanarch.org/s/records/610/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C8-text.md"
   },
   {
    "id": "19317139",
@@ -3803,7 +3898,10 @@
     "r09",
     "r05",
     "r14"
-   ]
+   ],
+   "axn": "AXN:01C9.GOVERNANCE.🌻💎🔙💡🗿🕐",
+   "record_url": "https://www.alexanarch.org/s/records/44/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C9-text.md"
   },
   {
    "id": "19317126",
@@ -3832,7 +3930,10 @@
     "r09",
     "r11",
     "r05"
-   ]
+   ],
+   "axn": "AXN:01CA.GOVERNANCE.🍁🪝🍂🔽⭐🖐️",
+   "record_url": "https://www.alexanarch.org/s/records/611/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01CA-text.md"
   },
   {
    "id": "19317102",
@@ -3861,7 +3962,10 @@
     "r09",
     "r05",
     "r14"
-   ]
+   ],
+   "axn": "AXN:01CB.GOVERNANCE.⏹️✊⛵⏬🕚●",
+   "record_url": "https://www.alexanarch.org/s/records/612/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01CB-text.md"
   },
   {
    "id": "19296677",
@@ -3888,7 +3992,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:03C8.ARCHIVAL.♅⊗🪄🎆🛤️📏",
+   "record_url": "https://www.alexanarch.org/s/records/956/",
+   "works_url": "/works/03c8/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03C8-text.md"
   },
   {
    "id": "19296664",
@@ -3915,7 +4023,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:03C7.ARCHIVAL.🌗🔎🔅🧭🤲📌",
+   "record_url": "https://www.alexanarch.org/s/records/955/",
+   "works_url": "/works/03c7/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03C7-text.md"
   },
   {
    "id": "19296660",
@@ -3942,7 +4054,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:03C6.ARCHIVAL.♈🍁🛤️🗂️➗🕗",
+   "record_url": "https://www.alexanarch.org/s/records/954/",
+   "works_url": "/works/03c6/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03C6-text.md"
   },
   {
    "id": "19296654",
@@ -3969,7 +4085,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:03C5.ARCHIVAL.▲🪞🔚♾️▶️△",
+   "record_url": "https://www.alexanarch.org/s/records/953/",
+   "works_url": "/works/03c5/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03C5-text.md"
   },
   {
    "id": "19296650",
@@ -3996,7 +4116,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:03C4.ARCHIVAL.🌉🪐🟠🔽🦅💫",
+   "record_url": "https://www.alexanarch.org/s/records/952/",
+   "works_url": "/works/03c4/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03C4-text.md"
   },
   {
    "id": "19296648",
@@ -4023,7 +4147,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:03C3.ARCHIVAL.➕🔭🔍🌊🧭🏺",
+   "record_url": "https://www.alexanarch.org/s/records/951/",
+   "works_url": "/works/03c3/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03C3-text.md"
   },
   {
    "id": "19288404",
@@ -4050,7 +4178,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:01C5.GOVERNANCE.🕙🎺🌳🦋💚🎆",
+   "record_url": "https://www.alexanarch.org/s/records/608/",
+   "works_url": "/works/01c5/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C5-text.md"
   },
   {
    "id": "19288384",
@@ -4077,7 +4209,11 @@
    "r": [
     "sp04",
     "r08"
-   ]
+   ],
+   "axn": "AXN:01C6.GENERATIVE.🚀🪟⏫◇🔮🕑",
+   "record_url": "https://www.alexanarch.org/s/records/609/",
+   "works_url": "/works/01c6/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C6-text.md"
   },
   {
    "id": "19240147",
@@ -4101,7 +4237,10 @@
    "assignment": "reviewed",
    "r": [
     "r07"
-   ]
+   ],
+   "axn": "AXN:01C0.GENERATIVE.📎🔅🟤🕐🏛️👁️‍🗨️",
+   "record_url": "https://www.alexanarch.org/s/records/605/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C0-text.md"
   },
   {
    "id": "19240141",
@@ -4130,7 +4269,10 @@
     "r08",
     "r02",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:01C1.GOVERNANCE.🜁🔗🔭👁️‍🗨️⚙️✊",
+   "record_url": "https://www.alexanarch.org/s/records/41/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C1-text.md"
   },
   {
    "id": "19238032",
@@ -4179,7 +4321,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:038F.GOVERNANCE.🟣⏫🔄♉🌉🕔",
+   "record_url": "https://www.alexanarch.org/s/records/899/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-038F-text.md"
   },
   {
    "id": "19238021",
@@ -4206,7 +4351,11 @@
    "r": [
     "r09",
     "r08"
-   ]
+   ],
+   "axn": "AXN:01C3.GOVERNANCE.🔴🃏🚩🔺💥❄️",
+   "record_url": "https://www.alexanarch.org/s/records/42/",
+   "works_url": "/works/01c3/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01C3-text.md"
   },
   {
    "id": "19226055",
@@ -4233,7 +4382,10 @@
     "r05",
     "r12",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01BE.GOVERNANCE.🪸🌌👋⚡🟢●",
+   "record_url": "https://www.alexanarch.org/s/records/604/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01BE-text.md"
   },
   {
    "id": "19224022",
@@ -4257,7 +4409,10 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:01BF.GOVERNANCE.♻️⚓✏️💥🏰🗂️",
+   "record_url": "https://www.alexanarch.org/s/records/40/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01BF-text.md"
   },
   {
    "id": "19202821",
@@ -4283,7 +4438,11 @@
    "r": [
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01B6.GOVERNANCE.🙏⏰🏴🤲🔍🌋",
+   "record_url": "https://www.alexanarch.org/s/records/598/",
+   "works_url": "/works/01b6/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01B6-text.md"
   },
   {
    "id": "19202813",
@@ -4310,7 +4469,11 @@
    "r": [
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0569.UNCLASSIFIED.🔭➗☁️⚖️🏠🔔",
+   "record_url": "https://www.alexanarch.org/s/records/1368/",
+   "works_url": "/works/0569/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0569-text.md"
   },
   {
    "id": "19202705",
@@ -4361,7 +4524,11 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:01BB.EMPIRICAL.🟡🔍🕊️♍🪐⌛",
+   "record_url": "https://www.alexanarch.org/s/records/38/",
+   "works_url": "/works/01bb/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01BB-text.md"
   },
   {
    "id": "19202401",
@@ -4389,7 +4556,10 @@
     "r05",
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0550.UNCLASSIFIED.📏◇🔅🌊🔒♦️",
+   "record_url": "https://www.alexanarch.org/s/records/1343/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0550-text.md"
   },
   {
    "id": "19200688",
@@ -4414,7 +4584,10 @@
    "r": [
     "r05",
     "r06"
-   ]
+   ],
+   "axn": "AXN:01BC.GOVERNANCE.💡🧬◇🟡📚🍂",
+   "record_url": "https://www.alexanarch.org/s/records/39/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01BC-text.md"
   },
   {
    "id": "19200193",
@@ -4438,7 +4611,10 @@
    "assignment": "heuristic",
    "r": [
     "r12"
-   ]
+   ],
+   "axn": "AXN:01BD.GOVERNANCE.♄🏷️🔆□⌛🪦",
+   "record_url": "https://www.alexanarch.org/s/records/603/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01BD-text.md"
   },
   {
    "id": "19187421",
@@ -4467,7 +4643,10 @@
     "r12",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:01B5.GOVERNANCE.↘️❌♅💧🔐↙️",
+   "record_url": "https://www.alexanarch.org/s/records/597/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01B5-text.md"
   },
   {
    "id": "19174562",
@@ -4497,7 +4676,10 @@
     "r06",
     "r12",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01B3.GOVERNANCE.🎶🎲⛵➖☁️🀄",
+   "record_url": "https://www.alexanarch.org/s/records/596/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01B3-text.md"
   },
   {
    "id": "19155999",
@@ -4525,7 +4707,11 @@
     "r04",
     "r05",
     "r27"
-   ]
+   ],
+   "axn": "AXN:01B4.GOVERNANCE.♠️🔐♃🕑🌉🐝",
+   "record_url": "https://www.alexanarch.org/s/records/37/",
+   "works_url": "/works/01b4/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01B4-text.md"
   },
   {
    "id": "19156714",
@@ -4553,7 +4739,10 @@
     "r05",
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:01B2.GOVERNANCE.🪜🕕🏠🔅♉⛵",
+   "record_url": "https://www.alexanarch.org/s/records/595/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01B2-text.md"
   },
   {
    "id": "19155610",
@@ -4581,7 +4770,11 @@
     "r04",
     "r27",
     "r06"
-   ]
+   ],
+   "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+   "record_url": "https://www.alexanarch.org/s/records/571/",
+   "works_url": "/works/0193/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0193-text.md"
   },
   {
    "id": "19133309",
@@ -4606,7 +4799,11 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:01AF.GOVERNANCE.🥁♾️🌪️🗿📋🪟",
+   "record_url": "https://www.alexanarch.org/s/records/593/",
+   "works_url": "/works/01af/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01AF-text.md"
   },
   {
    "id": "19133271",
@@ -4632,7 +4829,11 @@
    "r": [
     "r05",
     "r26"
-   ]
+   ],
+   "axn": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰",
+   "record_url": "https://www.alexanarch.org/s/records/36/",
+   "works_url": "/works/01b0/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01B0-text.md"
   },
   {
    "id": "19124130",
@@ -4656,7 +4857,11 @@
    "assignment": "heuristic",
    "r": [
     "r02"
-   ]
+   ],
+   "axn": "AXN:01B1.GOVERNANCE.🙏🧪🕘🃏🤙🔄",
+   "record_url": "https://www.alexanarch.org/s/records/594/",
+   "works_url": "/works/01b1/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01B1-text.md"
   },
   {
    "id": "19116151",
@@ -4685,7 +4890,10 @@
     "r12",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01A5.GENERATIVE.🕒🛤️⏫⏬➖🔥",
+   "record_url": "https://www.alexanarch.org/s/records/584/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A5-text.md"
   },
   {
    "id": "19115702",
@@ -4715,7 +4923,10 @@
     "r10",
     "r12",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01A6.GOVERNANCE.🔀🌃🧪➗🔩🏁",
+   "record_url": "https://www.alexanarch.org/s/records/35/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A6-text.md"
   },
   {
    "id": "19115686",
@@ -4744,7 +4955,10 @@
     "r12",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01A7.EMPIRICAL.⭐✏️🌆📖🔀🔥",
+   "record_url": "https://www.alexanarch.org/s/records/585/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A7-text.md"
   },
   {
    "id": "19115676",
@@ -4773,7 +4987,10 @@
     "r12",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01A8.ARCHIVAL.🔓⛩️☽✋🌋♋",
+   "record_url": "https://www.alexanarch.org/s/records/586/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A8-text.md"
   },
   {
    "id": "19115139",
@@ -4802,7 +5019,10 @@
     "r12",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01A9.EMPIRICAL.⌛🟤🏠👁️🌖🔚",
+   "record_url": "https://www.alexanarch.org/s/records/587/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A9-text.md"
   },
   {
    "id": "19114937",
@@ -4832,7 +5052,10 @@
     "r11",
     "r12",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01AA.GOVERNANCE.👁️‍🗨️🔵🎹♋🧬🚨",
+   "record_url": "https://www.alexanarch.org/s/records/588/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01AA-text.md"
   },
   {
    "id": "19114334",
@@ -4861,7 +5084,10 @@
     "r12",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01AB.GOVERNANCE.🎵🀄🌟📝🔜🟠",
+   "record_url": "https://www.alexanarch.org/s/records/589/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01AB-text.md"
   },
   {
    "id": "19114089",
@@ -4890,7 +5116,10 @@
     "r12",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01AC.GOVERNANCE.🎵♾️♃☉∞⚫",
+   "record_url": "https://www.alexanarch.org/s/records/590/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01AC-text.md"
   },
   {
    "id": "19113822",
@@ -4919,7 +5148,11 @@
     "r12",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:054E.UNCLASSIFIED.■⏬🪄🦋🔖⏬",
+   "record_url": "https://www.alexanarch.org/s/records/1341/",
+   "works_url": "/works/054e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-054E-text.md"
   },
   {
    "id": "19113326",
@@ -4950,7 +5183,10 @@
     "r09",
     "r12",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:01AE.EMPIRICAL.⏹️👇🛡️👁️⭕🌇",
+   "record_url": "https://www.alexanarch.org/s/records/592/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01AE-text.md"
   },
   {
    "id": "19099770",
@@ -4977,7 +5213,11 @@
    "r": [
     "r09",
     "r08"
-   ]
+   ],
+   "axn": "AXN:019F.GOVERNANCE.🧱↖️📖✊⛩️🌓",
+   "record_url": "https://www.alexanarch.org/s/records/32/",
+   "works_url": "/works/019f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019F-text.md"
   },
   {
    "id": "19099760",
@@ -5001,7 +5241,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:01A0.GOVERNANCE.🟣⛩️🌆🔻♥️🔒",
+   "record_url": "https://www.alexanarch.org/s/records/33/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A0-text.md"
   },
   {
    "id": "19099749",
@@ -5025,7 +5268,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:054F.UNCLASSIFIED.🍃🔺📌🌃♅🔬",
+   "record_url": "https://www.alexanarch.org/s/records/1342/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-054F-text.md"
   },
   {
    "id": "19099674",
@@ -5049,7 +5295,10 @@
    "assignment": "heuristic",
    "r": [
     "r02"
-   ]
+   ],
+   "axn": "AXN:01A2.GOVERNANCE.⚡👁️♣️🪜✊🗡️",
+   "record_url": "https://www.alexanarch.org/s/records/581/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A2-text.md"
   },
   {
    "id": "19083600",
@@ -5074,7 +5323,11 @@
    "assignment": "heuristic",
    "r": [
     "r02"
-   ]
+   ],
+   "axn": "AXN:01A3.GOVERNANCE.⚫⌛△🔃🖐️♥️",
+   "record_url": "https://www.alexanarch.org/s/records/582/",
+   "works_url": "/works/01a3/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A3-text.md"
   },
   {
    "id": "19083322",
@@ -5099,7 +5352,10 @@
    "assignment": "heuristic",
    "r": [
     "r12"
-   ]
+   ],
+   "axn": "AXN:01A4.GOVERNANCE.🖊️🗂️■📌💡🌻",
+   "record_url": "https://www.alexanarch.org/s/records/583/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01A4-text.md"
   },
   {
    "id": "19059674",
@@ -5130,7 +5386,10 @@
     "r05",
     "r15",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:019E.GOVERNANCE.🍀↖️📋🌕🏙️⛳",
+   "record_url": "https://www.alexanarch.org/s/records/580/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019E-text.md"
   },
   {
    "id": "19059260",
@@ -5160,7 +5419,11 @@
     "r06",
     "r08",
     "r23"
-   ]
+   ],
+   "axn": "AXN:0198.GENERATIVE.🌑💡☽🕐🌔🌇",
+   "record_url": "https://www.alexanarch.org/s/records/576/",
+   "works_url": "/works/0198/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0198-text.md"
   },
   {
    "id": "19059252",
@@ -5190,7 +5453,11 @@
     "r05",
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0199.GENERATIVE.🌅🔎🔎💧🔵📌",
+   "record_url": "https://www.alexanarch.org/s/records/577/",
+   "works_url": "/works/0199/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0199-text.md"
   },
   {
    "id": "19055729",
@@ -5218,7 +5485,11 @@
     "r09",
     "r05",
     "r02"
-   ]
+   ],
+   "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+   "record_url": "https://www.alexanarch.org/s/records/30/",
+   "works_url": "/works/019a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019A-text.md"
   },
   {
    "id": "19055267",
@@ -5247,7 +5518,10 @@
     "r05",
     "r02",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+   "record_url": "https://www.alexanarch.org/s/records/578/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019B-text.md"
   },
   {
    "id": "19055255",
@@ -5274,7 +5548,10 @@
    "r": [
     "r05",
     "r02"
-   ]
+   ],
+   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+   "record_url": "https://www.alexanarch.org/s/records/31/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019C-text.md"
   },
   {
    "id": "19053469",
@@ -5303,7 +5580,11 @@
     "r06",
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:019D.GOVERNANCE.♎🟢🍂🛡️🧭🏰",
+   "record_url": "https://www.alexanarch.org/s/records/579/",
+   "works_url": "/works/019d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019D-text.md"
   },
   {
    "id": "19041117",
@@ -5329,7 +5610,11 @@
    "r": [
     "r27",
     "r06"
-   ]
+   ],
+   "axn": "AXN:0193.GOVERNANCE.🐝🌇🪞🪜☁️♃",
+   "record_url": "https://www.alexanarch.org/s/records/571/",
+   "works_url": "/works/0193/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0193-text.md"
   },
   {
    "id": "19035477",
@@ -5357,7 +5642,11 @@
     "r06",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0194.GOVERNANCE.⏳🏗️📌✏️🏠⏳",
+   "record_url": "https://www.alexanarch.org/s/records/572/",
+   "works_url": "/works/0194/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0194-text.md"
   },
   {
    "id": "19035471",
@@ -5386,7 +5675,10 @@
     "r05",
     "r02",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0195.EMPIRICAL.🪨🔝♊⚪🏺🏁",
+   "record_url": "https://www.alexanarch.org/s/records/573/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0195-text.md"
   },
   {
    "id": "19035458",
@@ -5414,7 +5706,11 @@
     "r06",
     "r02",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0196.EMPIRICAL.🕓🤙🕕🕙♾️🧪",
+   "record_url": "https://www.alexanarch.org/s/records/574/",
+   "works_url": "/works/0196/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0196-text.md"
   },
   {
    "id": "19028176",
@@ -5443,7 +5739,11 @@
     "r05",
     "r11",
     "r12"
-   ]
+   ],
+   "axn": "AXN:018C.ARCHIVAL.🟡🔴🟢🔜▲➖",
+   "record_url": "https://www.alexanarch.org/s/records/565/",
+   "works_url": "/works/018c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-018C-text.md"
   },
   {
    "id": "19027351",
@@ -5472,7 +5772,10 @@
     "r06",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0187.EMPIRICAL.◀️🗼🔆💚▽⊕",
+   "record_url": "https://www.alexanarch.org/s/records/560/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0187-text.md"
   },
   {
    "id": "19027085",
@@ -5497,7 +5800,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0188.EMPIRICAL.♌⛩️🌃∮🪨🕘",
+   "record_url": "https://www.alexanarch.org/s/records/561/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0188-text.md"
   },
   {
    "id": "19025556",
@@ -5523,7 +5829,10 @@
    "r": [
     "r01",
     "r06"
-   ]
+   ],
+   "axn": "AXN:0189.GENERATIVE.🔭□🕐⚓🍀🕐",
+   "record_url": "https://www.alexanarch.org/s/records/562/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0189-text.md"
   },
   {
    "id": "19025428",
@@ -5549,7 +5858,10 @@
    "r": [
     "r07",
     "r08"
-   ]
+   ],
+   "axn": "AXN:018A.GOVERNANCE.🌘🟠🚨⛩️🔽⏏️",
+   "record_url": "https://www.alexanarch.org/s/records/563/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-018A-text.md"
   },
   {
    "id": "19024779",
@@ -5575,7 +5887,10 @@
    "r": [
     "r01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:049E.UNCLASSIFIED.↙️📏📜⚓📦👁️",
+   "record_url": "https://www.alexanarch.org/s/records/1165/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-049E-text.md"
   },
   {
    "id": "19024440",
@@ -5600,7 +5915,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:018B.GOVERNANCE.🔩🌅🧪🕑🎻🏰",
+   "record_url": "https://www.alexanarch.org/s/records/564/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-018B-text.md"
   },
   {
    "id": "19024352",
@@ -5631,7 +5949,10 @@
     "r05",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+   "record_url": "https://www.alexanarch.org/s/records/31/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019C-text.md"
   },
   {
    "id": "19024301",
@@ -5659,7 +5980,10 @@
     "r06",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0191.GOVERNANCE.🐚🟣○🌪️🎲🔀",
+   "record_url": "https://www.alexanarch.org/s/records/29/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0191-text.md"
   },
   {
    "id": "19024004",
@@ -5687,7 +6011,11 @@
     "r12",
     "r05",
     "r25"
-   ]
+   ],
+   "axn": "AXN:018D.GOVERNANCE.🌌◇🀄🖐️🕖🌖",
+   "record_url": "https://www.alexanarch.org/s/records/566/",
+   "works_url": "/works/018d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-018D-text.md"
   },
   {
    "id": "19023457",
@@ -5716,7 +6044,11 @@
     "r05",
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:018E.GOVERNANCE.🙏🎻⊗🐚🕌🪦",
+   "record_url": "https://www.alexanarch.org/s/records/567/",
+   "works_url": "/works/018e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-018E-text.md"
   },
   {
    "id": "19023352",
@@ -5743,7 +6075,11 @@
    "r": [
     "r05",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:018F.GOVERNANCE.◇🌳🗡️⌛📎🟣",
+   "record_url": "https://www.alexanarch.org/s/records/568/",
+   "works_url": "/works/018f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-018F-text.md"
   },
   {
    "id": "19022245",
@@ -5772,7 +6108,11 @@
     "r06",
     "r02",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0190.GOVERNANCE.💡♊🏔️🦅♥️↘️",
+   "record_url": "https://www.alexanarch.org/s/records/569/",
+   "works_url": "/works/0190/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0190-text.md"
   },
   {
    "id": "19022157",
@@ -5797,7 +6137,11 @@
    "r": [
     "r11",
     "r20"
-   ]
+   ],
+   "axn": "AXN:0192.GOVERNANCE.🪄☀️⏫♦️👇🕓",
+   "record_url": "https://www.alexanarch.org/s/records/570/",
+   "works_url": "/works/0192/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0192-text.md"
   },
   {
    "id": "19014634",
@@ -5822,7 +6166,11 @@
     "r11",
     "r20",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0192.GOVERNANCE.🪄☀️⏫♦️👇🕓",
+   "record_url": "https://www.alexanarch.org/s/records/570/",
+   "works_url": "/works/0192/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0192-text.md"
   },
   {
    "id": "19004846",
@@ -5848,7 +6196,11 @@
    "r": [
     "r16",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+   "record_url": "https://www.alexanarch.org/s/records/28/",
+   "works_url": "/works/0185/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0185-text.md"
   },
   {
    "id": "19002695",
@@ -5873,7 +6225,11 @@
    "assignment": "heuristic",
    "r": [
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0186.GOVERNANCE.∞🏁🔙🏴🏷️✖️",
+   "record_url": "https://www.alexanarch.org/s/records/559/",
+   "works_url": "/works/0186/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0186-text.md"
   },
   {
    "id": "18969398",
@@ -5896,7 +6252,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+   "record_url": "https://www.alexanarch.org/s/records/31/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019C-text.md"
   },
   {
    "id": "18307704",
@@ -5919,7 +6278,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+   "record_url": "https://www.alexanarch.org/s/records/31/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019C-text.md"
   },
   {
    "id": "18985315",
@@ -5943,7 +6305,11 @@
    "assignment": "heuristic",
    "r": [
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0182.GOVERNANCE.🎲⏪🌠↖️⏩⏩",
+   "record_url": "https://www.alexanarch.org/s/records/556/",
+   "works_url": "/works/0182/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0182-text.md"
   },
   {
    "id": "18972781",
@@ -5970,7 +6336,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:017B.GOVERNANCE.🪐⚪✖️🚪♥️🎻",
+   "record_url": "https://www.alexanarch.org/s/records/550/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-017B-text.md"
   },
   {
    "id": "18970004",
@@ -5996,7 +6365,11 @@
    "r": [
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:017C.ARCHIVAL.🎭🎆🌠🪝♈🎬",
+   "record_url": "https://www.alexanarch.org/s/records/551/",
+   "works_url": "/works/017c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-017C-text.md"
   },
   {
    "id": "18969905",
@@ -6023,7 +6396,11 @@
     "r02",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:017D.EMPIRICAL.⏳🧱🗼🏰💧🔗",
+   "record_url": "https://www.alexanarch.org/s/records/552/",
+   "works_url": "/works/017d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-017D-text.md"
   },
   {
    "id": "18969771",
@@ -6045,7 +6422,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:04A7.UNCLASSIFIED.🌾∮🌒🔐🌕🐚",
+   "record_url": "https://www.alexanarch.org/s/records/1174/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04A7-text.md"
   },
   {
    "id": "18969683",
@@ -6069,7 +6449,10 @@
    "assignment": "heuristic",
    "r": [
     "r02"
-   ]
+   ],
+   "axn": "AXN:017F.ARCHIVAL.🚩🔵👈🛤️☁️▽",
+   "record_url": "https://www.alexanarch.org/s/records/553/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-017F-text.md"
   },
   {
    "id": "18969568",
@@ -6093,7 +6476,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0180.GOVERNANCE.🌱🔛🌾♌✋📦",
+   "record_url": "https://www.alexanarch.org/s/records/554/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0180-text.md"
   },
   {
    "id": "18947665",
@@ -6117,7 +6503,10 @@
    "assignment": "heuristic",
    "r": [
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0174.GENERATIVE.🕌🎯♠️⛵♣️♅",
+   "record_url": "https://www.alexanarch.org/s/records/543/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0174-text.md"
   },
   {
    "id": "18947630",
@@ -6143,7 +6532,11 @@
    "r": [
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0175.EMPIRICAL.🏛️🎇🧱🎹🔗➖",
+   "record_url": "https://www.alexanarch.org/s/records/544/",
+   "works_url": "/works/0175/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0175-text.md"
   },
   {
    "id": "18947573",
@@ -6172,7 +6565,11 @@
     "r11",
     "r18",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0176.GOVERNANCE.🔴🔵❄️🏔️🥁🔓",
+   "record_url": "https://www.alexanarch.org/s/records/545/",
+   "works_url": "/works/0176/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0176-text.md"
   },
   {
    "id": "18947506",
@@ -6200,7 +6597,11 @@
     "r18",
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:04F8.UNCLASSIFIED.🌲🏠🌉🛡️🪐♉",
+   "record_url": "https://www.alexanarch.org/s/records/1255/",
+   "works_url": "/works/04f8/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04F8-text.md"
   },
   {
    "id": "18947368",
@@ -6226,7 +6627,10 @@
    "r": [
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:054C.UNCLASSIFIED.🌅🗺️⚙️🌱🌲🌲",
+   "record_url": "https://www.alexanarch.org/s/records/1339/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-054C-text.md"
   },
   {
    "id": "18946111",
@@ -6250,7 +6654,11 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0178.GENERATIVE.🔐🏠⚓🖊️🧱🌑",
+   "record_url": "https://www.alexanarch.org/s/records/547/",
+   "works_url": "/works/0178/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0178-text.md"
   },
   {
    "id": "18932742",
@@ -6274,7 +6682,11 @@
    "assignment": "heuristic",
    "r": [
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0546.UNCLASSIFIED.⏏️🍂↘️⭕🌾🔵",
+   "record_url": "https://www.alexanarch.org/s/records/1333/",
+   "works_url": "/works/0546/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0546-text.md"
   },
   {
    "id": "18932538",
@@ -6298,7 +6710,10 @@
    "assignment": "heuristic",
    "r": [
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0544.UNCLASSIFIED.⏰🖐️👐♉⚫□",
+   "record_url": "https://www.alexanarch.org/s/records/1331/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0544-text.md"
   },
   {
    "id": "18930444",
@@ -6325,7 +6740,11 @@
     "r02",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0543.UNCLASSIFIED.↘️🔗🌈📝🎬♅",
+   "record_url": "https://www.alexanarch.org/s/records/1330/",
+   "works_url": "/works/0543/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0543-text.md"
   },
   {
    "id": "18928873",
@@ -6350,7 +6769,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0173.GOVERNANCE.🔍🎨💡🔅🔔♉",
+   "record_url": "https://www.alexanarch.org/s/records/542/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0173-text.md"
   },
   {
    "id": "18928840",
@@ -6376,7 +6798,11 @@
    "r": [
     "r06",
     "r02"
-   ]
+   ],
+   "axn": "AXN:0170.GOVERNANCE.💚■🪐∞♎🦋",
+   "record_url": "https://www.alexanarch.org/s/records/27/",
+   "works_url": "/works/0170/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0170-text.md"
   },
   {
    "id": "18926555",
@@ -6403,7 +6829,10 @@
     "r06",
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+   "record_url": "https://www.alexanarch.org/s/records/578/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019B-text.md"
   },
   {
    "id": "18926502",
@@ -6429,7 +6858,10 @@
    "r": [
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0173.GOVERNANCE.🔍🎨💡🔅🔔♉",
+   "record_url": "https://www.alexanarch.org/s/records/542/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0173-text.md"
   },
   {
    "id": "18906234",
@@ -6454,7 +6886,11 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:016F.GOVERNANCE.🕊️🪜🪄🗼🔖🛡️",
+   "record_url": "https://www.alexanarch.org/s/records/539/",
+   "works_url": "/works/016f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-016F-text.md"
   },
   {
    "id": "18882938",
@@ -6483,7 +6919,10 @@
     "r09",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:016B.GOVERNANCE.⏬🕛↖️🪐🌱🜁",
+   "record_url": "https://www.alexanarch.org/s/records/536/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-016B-text.md"
   },
   {
    "id": "18882934",
@@ -6512,7 +6951,10 @@
     "r09",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:016C.GOVERNANCE.🎭🌹🔙💡⚙️🧊",
+   "record_url": "https://www.alexanarch.org/s/records/537/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-016C-text.md"
   },
   {
    "id": "18882915",
@@ -6541,7 +6983,10 @@
     "r09",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0542.UNCLASSIFIED.🔍❤️🪦🤙🜁⏩",
+   "record_url": "https://www.alexanarch.org/s/records/1329/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0542-text.md"
   },
   {
    "id": "18880974",
@@ -6565,7 +7010,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:016E.GOVERNANCE.🎲🎲⏬⏏️🔐👋",
+   "record_url": "https://www.alexanarch.org/s/records/26/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-016E-text.md"
   },
   {
    "id": "18869165",
@@ -6592,7 +7040,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0168.GOVERNANCE.🌃🕒🚩🪝🍁🕙",
+   "record_url": "https://www.alexanarch.org/s/records/533/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0168-text.md"
   },
   {
    "id": "18867491",
@@ -6617,7 +7068,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0169.GOVERNANCE.🔺🕌∞🝊○🚩",
+   "record_url": "https://www.alexanarch.org/s/records/534/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0169-text.md"
   },
   {
    "id": "18864444",
@@ -6646,7 +7100,10 @@
     "r18",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:016A.ARCHIVAL.⚫📐🌇🪧🪝🪐",
+   "record_url": "https://www.alexanarch.org/s/records/535/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-016A-text.md"
   },
   {
    "id": "18862106",
@@ -6670,7 +7127,9 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0167.GENERATIVE.🏷️☿🔺🪦♊🕛",
+   "record_url": "https://www.alexanarch.org/s/records/532/"
   },
   {
    "id": "18843830",
@@ -6699,7 +7158,10 @@
     "r09",
     "r11",
     "r12"
-   ]
+   ],
+   "axn": "AXN:054D.UNCLASSIFIED.🌺📎🧪🔝🌍⏏️",
+   "record_url": "https://www.alexanarch.org/s/records/1340/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-054D-text.md"
   },
   {
    "id": "18829488",
@@ -6724,7 +7186,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0166.GOVERNANCE.🪦🤝🕖🔅🔗⚖️",
+   "record_url": "https://www.alexanarch.org/s/records/531/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0166-text.md"
   },
   {
    "id": "18828193",
@@ -6749,7 +7214,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0162.GOVERNANCE.🔜🍀🕛🏙️⭕📋",
+   "record_url": "https://www.alexanarch.org/s/records/528/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0162-text.md"
   },
   {
    "id": "18827344",
@@ -6776,7 +7244,10 @@
    "r": [
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0163.GOVERNANCE.▶️♌◇🔄◇🃏",
+   "record_url": "https://www.alexanarch.org/s/records/25/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0163-text.md"
   },
   {
    "id": "18826562",
@@ -6804,7 +7275,10 @@
     "r05",
     "r06",
     "r20"
-   ]
+   ],
+   "axn": "AXN:0164.GOVERNANCE.□↙️🎬🧫👐👁️‍🗨️",
+   "record_url": "https://www.alexanarch.org/s/records/529/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0164-text.md"
   },
   {
    "id": "18825919",
@@ -6830,7 +7304,10 @@
    "r": [
     "r05",
     "r20"
-   ]
+   ],
+   "axn": "AXN:0165.GOVERNANCE.🎵♉♅🧫🔖💜",
+   "record_url": "https://www.alexanarch.org/s/records/530/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0165-text.md"
   },
   {
    "id": "18818343",
@@ -6858,7 +7335,11 @@
     "r05",
     "r09",
     "r20"
-   ]
+   ],
+   "axn": "AXN:015C.GOVERNANCE.🌹🍃●🔖➕🙏",
+   "record_url": "https://www.alexanarch.org/s/records/522/",
+   "works_url": "/works/015c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-015C-text.md"
   },
   {
    "id": "18817869",
@@ -6883,7 +7364,11 @@
    "r": [
     "r11",
     "r20"
-   ]
+   ],
+   "axn": "AXN:015D.GOVERNANCE.🌿🪜♣️🌆📐♈",
+   "record_url": "https://www.alexanarch.org/s/records/523/",
+   "works_url": "/works/015d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-015D-text.md"
   },
   {
    "id": "18816556",
@@ -6911,7 +7396,11 @@
     "r05",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:015E.GOVERNANCE.✨♍🌆👆🔭🧪",
+   "record_url": "https://www.alexanarch.org/s/records/524/",
+   "works_url": "/works/015e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-015E-text.md"
   },
   {
    "id": "18814485",
@@ -6937,7 +7426,10 @@
    "r": [
     "r06",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0541.UNCLASSIFIED.🕊️⛳🔆⊗➕🗿",
+   "record_url": "https://www.alexanarch.org/s/records/1328/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0541-text.md"
   },
   {
    "id": "18813868",
@@ -6963,7 +7455,11 @@
    "r": [
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:015F.GOVERNANCE.🌹♅✏️🪐⏪🥁",
+   "record_url": "https://www.alexanarch.org/s/records/525/",
+   "works_url": "/works/015f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-015F-text.md"
   },
   {
    "id": "18811939",
@@ -6988,7 +7484,10 @@
    "r": [
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0160.GOVERNANCE.🌔⏩🔽🌌📐🍄",
+   "record_url": "https://www.alexanarch.org/s/records/526/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0160-text.md"
   },
   {
    "id": "18811784",
@@ -7012,7 +7511,11 @@
    "assignment": "heuristic",
    "r": [
     "r18"
-   ]
+   ],
+   "axn": "AXN:0161.GOVERNANCE.⏰🔒🤙🎹∮✋",
+   "record_url": "https://www.alexanarch.org/s/records/527/",
+   "works_url": "/works/0161/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0161-text.md"
   },
   {
    "id": "18810217",
@@ -7036,7 +7539,11 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0156.ARCHIVAL.🔵♌↘️✋🎶🔜",
+   "record_url": "https://www.alexanarch.org/s/records/518/",
+   "works_url": "/works/0156/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0156-text.md"
   },
   {
    "id": "18808402",
@@ -7066,7 +7573,10 @@
     "r05",
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0157.GENERATIVE.✊🌑🕓🚀🧬🫶",
+   "record_url": "https://www.alexanarch.org/s/records/519/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0157-text.md"
   },
   {
    "id": "18807239",
@@ -7093,7 +7603,10 @@
     "r09",
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0158.EMPIRICAL.■💥🫵🕑💎🕒",
+   "record_url": "https://www.alexanarch.org/s/records/23/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0158-text.md"
   },
   {
    "id": "18805372",
@@ -7118,7 +7631,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0159.GOVERNANCE.🕘🫵🪄🕓🌱🌕",
+   "record_url": "https://www.alexanarch.org/s/records/520/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0159-text.md"
   },
   {
    "id": "18804767",
@@ -7145,7 +7661,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:015A.GOVERNANCE.🔭🔛🟤🧱🚀✖️",
+   "record_url": "https://www.alexanarch.org/s/records/521/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-015A-text.md"
   },
   {
    "id": "18801091",
@@ -7171,7 +7690,11 @@
    "r": [
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:015B.GOVERNANCE.🤝🍀🕙⏳💧🟠",
+   "record_url": "https://www.alexanarch.org/s/records/24/",
+   "works_url": "/works/015b/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-015B-text.md"
   },
   {
    "id": "18795427",
@@ -7202,7 +7725,11 @@
     "r08",
     "r18",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0151.GOVERNANCE.✋🚀↘️🧬🧬▽",
+   "record_url": "https://www.alexanarch.org/s/records/514/",
+   "works_url": "/works/0151/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0151-text.md"
   },
   {
    "id": "18795423",
@@ -7230,7 +7757,11 @@
     "r02",
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0152.GOVERNANCE.📚📋📝🏗️📝🕕",
+   "record_url": "https://www.alexanarch.org/s/records/515/",
+   "works_url": "/works/0152/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0152-text.md"
   },
   {
    "id": "18792598",
@@ -7256,7 +7787,10 @@
    "r": [
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼",
+   "record_url": "https://www.alexanarch.org/s/records/516/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0153-text.md"
   },
   {
    "id": "18792580",
@@ -7281,7 +7815,10 @@
    "r": [
     "r05",
     "r06"
-   ]
+   ],
+   "axn": "AXN:0154.GOVERNANCE.🤙🌟🌆🗡️🕙📏",
+   "record_url": "https://www.alexanarch.org/s/records/517/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0154-text.md"
   },
   {
    "id": "18790793",
@@ -7310,7 +7847,10 @@
     "r09",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0155.GENERATIVE.📋🛤️🌌🙏✨🚨",
+   "record_url": "https://www.alexanarch.org/s/records/22/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0155-text.md"
   },
   {
    "id": "18776624",
@@ -7337,7 +7877,10 @@
    "r": [
     "r12",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0493.UNCLASSIFIED.⏰🧬🟡⏩🎹🀄",
+   "record_url": "https://www.alexanarch.org/s/records/1154/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0493-text.md"
   },
   {
    "id": "18773868",
@@ -7361,7 +7904,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:04F7.UNCLASSIFIED.🌍🌹🔛♈⚫🔗",
+   "record_url": "https://www.alexanarch.org/s/records/1254/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04F7-text.md"
   },
   {
    "id": "18772675",
@@ -7387,7 +7933,10 @@
    "r": [
     "r05",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0150.GOVERNANCE.🛸🌇✨🪧🔥△",
+   "record_url": "https://www.alexanarch.org/s/records/513/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0150-text.md"
   },
   {
    "id": "18759453",
@@ -7414,7 +7963,11 @@
    "r": [
     "r05",
     "r02"
-   ]
+   ],
+   "axn": "AXN:014D.EMPIRICAL.🔙🗿🌇↙️🕓✋",
+   "record_url": "https://www.alexanarch.org/s/records/510/",
+   "works_url": "/works/014d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-014D-text.md"
   },
   {
    "id": "18751546",
@@ -7440,7 +7993,10 @@
    "r": [
     "r01",
     "r13"
-   ]
+   ],
+   "axn": "AXN:014E.GENERATIVE.🤲♆🕓🟣💛⭕",
+   "record_url": "https://www.alexanarch.org/s/records/511/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-014E-text.md"
   },
   {
    "id": "18745265",
@@ -7471,7 +8027,11 @@
     "r14",
     "sp01",
     "r17"
-   ]
+   ],
+   "axn": "AXN:0148.GOVERNANCE.🦋▽🌹⚙️🔙✏️",
+   "record_url": "https://www.alexanarch.org/s/records/505/",
+   "works_url": "/works/0148/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0148-text.md"
   },
   {
    "id": "18745259",
@@ -7501,7 +8061,11 @@
     "r14",
     "r17",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0149.GOVERNANCE.▽🔐📎🎶🌍🏠",
+   "record_url": "https://www.alexanarch.org/s/records/506/",
+   "works_url": "/works/0149/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0149-text.md"
   },
   {
    "id": "18745250",
@@ -7531,7 +8095,11 @@
     "r14",
     "r17",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:014A.ARCHIVAL.⚖️🔚🎲↖️⊕🦅",
+   "record_url": "https://www.alexanarch.org/s/records/507/",
+   "works_url": "/works/014a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-014A-text.md"
   },
   {
    "id": "18745236",
@@ -7561,7 +8129,11 @@
     "r14",
     "r17",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:014B.ARCHIVAL.📏💧💜♎🌙⛵",
+   "record_url": "https://www.alexanarch.org/s/records/508/",
+   "works_url": "/works/014b/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-014B-text.md"
   },
   {
    "id": "18745216",
@@ -7589,7 +8161,11 @@
     "r05",
     "r17",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0144.EMPIRICAL.🝊↙️∮🪸⚙️📌",
+   "record_url": "https://www.alexanarch.org/s/records/502/",
+   "works_url": "/works/0144/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0144-text.md"
   },
   {
    "id": "18735468",
@@ -7615,7 +8191,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0145.GOVERNANCE.🔵⏰☉✏️🗿💥",
+   "record_url": "https://www.alexanarch.org/s/records/21/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0145-text.md"
   },
   {
    "id": "18730291",
@@ -7639,7 +8218,10 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:038D.PHILOLOGICAL.❄️🎨🕗👆⚡🗿",
+   "record_url": "https://www.alexanarch.org/s/records/897/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-038D-text.md"
   },
   {
    "id": "18729801",
@@ -7663,7 +8245,10 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:038C.GOVERNANCE.🏙️🕌🍁❤️⭐🕒",
+   "record_url": "https://www.alexanarch.org/s/records/896/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-038C-text.md"
   },
   {
    "id": "18729606",
@@ -7692,7 +8277,11 @@
     "r01",
     "r08",
     "r21"
-   ]
+   ],
+   "axn": "AXN:0146.EMPIRICAL.🌇🎭🎯☽❄️🎲",
+   "record_url": "https://www.alexanarch.org/s/records/503/",
+   "works_url": "/works/0146/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0146-text.md"
   },
   {
    "id": "18728215",
@@ -7718,7 +8307,10 @@
    "r": [
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0140.GOVERNANCE.🀄🌪️🕑∞🕔□",
+   "record_url": "https://www.alexanarch.org/s/records/500/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0140-text.md"
   },
   {
    "id": "18727624",
@@ -7746,7 +8338,10 @@
     "r02",
     "r09",
     "r21"
-   ]
+   ],
+   "axn": "AXN:0141.GENERATIVE.♥️⛩️↗️🌆🚩🏔️",
+   "record_url": "https://www.alexanarch.org/s/records/19/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0141-text.md"
   },
   {
    "id": "18726807",
@@ -7774,7 +8369,11 @@
     "r05",
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0142.EMPIRICAL.🍁🔺🪞🌻🝊🌖",
+   "record_url": "https://www.alexanarch.org/s/records/501/",
+   "works_url": "/works/0142/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0142-text.md"
   },
   {
    "id": "18726451",
@@ -7800,7 +8399,10 @@
    "r": [
     "r11",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0143.GOVERNANCE.🔅🎻🚩🖊️🔛🖊️",
+   "record_url": "https://www.alexanarch.org/s/records/20/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0143-text.md"
   },
   {
    "id": "18718899",
@@ -7824,7 +8426,11 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:0540.UNCLASSIFIED.🌊⏹️♄♍⊕🏰",
+   "record_url": "https://www.alexanarch.org/s/records/1327/",
+   "works_url": "/works/0540/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0540-text.md"
   },
   {
    "id": "18718523",
@@ -7850,7 +8456,10 @@
    "r": [
     "r01",
     "r08"
-   ]
+   ],
+   "axn": "AXN:038B.PHILOLOGICAL.➖🗂️🔮▶️💧🖐️",
+   "record_url": "https://www.alexanarch.org/s/records/895/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-038B-text.md"
   },
   {
    "id": "18717850",
@@ -7876,7 +8485,11 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:013C.GOVERNANCE.🐚⭕🕊️🔆👐🍀",
+   "record_url": "https://www.alexanarch.org/s/records/497/",
+   "works_url": "/works/013c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-013C-text.md"
   },
   {
    "id": "18715724",
@@ -7903,7 +8516,10 @@
    "r": [
     "r18",
     "r05"
-   ]
+   ],
+   "axn": "AXN:053F.UNCLASSIFIED.⏩🏴🔎🔽🤙🎭",
+   "record_url": "https://www.alexanarch.org/s/records/1326/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-053F-text.md"
   },
   {
    "id": "18715618",
@@ -7930,7 +8546,10 @@
    "r": [
     "r18",
     "r05"
-   ]
+   ],
+   "axn": "AXN:013D.GOVERNANCE.🔃🔭🪟♾️🙏▶️",
+   "record_url": "https://www.alexanarch.org/s/records/498/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-013D-text.md"
   },
   {
    "id": "18713917",
@@ -7958,7 +8577,11 @@
     "r05",
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:013F.GOVERNANCE.🫵➖⚓📚∞🏗️",
+   "record_url": "https://www.alexanarch.org/s/records/18/",
+   "works_url": "/works/013f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-013F-text.md"
   },
   {
    "id": "18683024",
@@ -7986,7 +8609,11 @@
     "r11",
     "r19",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0138.GOVERNANCE.🔙🤙♄🔝↖️↖️",
+   "record_url": "https://www.alexanarch.org/s/records/493/",
+   "works_url": "/works/0138/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0138-text.md"
   },
   {
    "id": "18683016",
@@ -8013,7 +8640,11 @@
     "r11",
     "r02",
     "r19"
-   ]
+   ],
+   "axn": "AXN:0139.GOVERNANCE.🌖🌠✖️▲🪐🚩",
+   "record_url": "https://www.alexanarch.org/s/records/494/",
+   "works_url": "/works/0139/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0139-text.md"
   },
   {
    "id": "18682979",
@@ -8042,7 +8673,11 @@
     "r05",
     "r02",
     "r19"
-   ]
+   ],
+   "axn": "AXN:013A.GOVERNANCE.👁️🟣🔭🌟🏺💧",
+   "record_url": "https://www.alexanarch.org/s/records/495/",
+   "works_url": "/works/013a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-013A-text.md"
   },
   {
    "id": "18674147",
@@ -8068,7 +8703,11 @@
    "r": [
     "r01",
     "r11"
-   ]
+   ],
+   "axn": "AXN:053C.UNCLASSIFIED.🎺🎭🧫⛳🧲🕚",
+   "record_url": "https://www.alexanarch.org/s/records/1323/",
+   "works_url": "/works/053c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-053C-text.md"
   },
   {
    "id": "18674130",
@@ -8095,7 +8734,11 @@
    "r": [
     "r21",
     "r08"
-   ]
+   ],
+   "axn": "AXN:053B.UNCLASSIFIED.🌊🧫🌔🕘🌊👋",
+   "record_url": "https://www.alexanarch.org/s/records/1322/",
+   "works_url": "/works/053b/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-053B-text.md"
   },
   {
    "id": "18674111",
@@ -8119,7 +8762,11 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0132.GOVERNANCE.☽✨🥁⊕🔴💧",
+   "record_url": "https://www.alexanarch.org/s/records/487/",
+   "works_url": "/works/0132/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0132-text.md"
   },
   {
    "id": "18674101",
@@ -8147,7 +8794,11 @@
     "r06",
     "r08",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:038A.GOVERNANCE.🧱🏷️🌃🕑👐🛸",
+   "record_url": "https://www.alexanarch.org/s/records/894/",
+   "works_url": "/works/038a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-038A-text.md"
   },
   {
    "id": "18674069",
@@ -8171,7 +8822,11 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:053A.UNCLASSIFIED.👆🥁🌆👁‍🗨🏛️🧡",
+   "record_url": "https://www.alexanarch.org/s/records/1321/",
+   "works_url": "/works/053a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-053A-text.md"
   },
   {
    "id": "18674057",
@@ -8197,7 +8852,11 @@
    "r": [
     "r08",
     "r16"
-   ]
+   ],
+   "axn": "AXN:0135.EMPIRICAL.☽🪞⏪🪐👇🔭",
+   "record_url": "https://www.alexanarch.org/s/records/490/",
+   "works_url": "/works/0135/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0135-text.md"
   },
   {
    "id": "18674040",
@@ -8223,7 +8882,11 @@
    "r": [
     "r11",
     "r16"
-   ]
+   ],
+   "axn": "AXN:0137.GOVERNANCE.🌇♥️🕗🟣∞🕕",
+   "record_url": "https://www.alexanarch.org/s/records/492/",
+   "works_url": "/works/0137/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0137-text.md"
   },
   {
    "id": "18652949",
@@ -8248,7 +8911,11 @@
    "assignment": "heuristic",
    "r": [
     "r15"
-   ]
+   ],
+   "axn": "AXN:012A.GOVERNANCE.📦🔒🏷️🪦🕚♋",
+   "record_url": "https://www.alexanarch.org/s/records/479/",
+   "works_url": "/works/012a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-012A-text.md"
   },
   {
    "id": "18652650",
@@ -8273,7 +8940,11 @@
    "assignment": "heuristic",
    "r": [
     "r14"
-   ]
+   ],
+   "axn": "AXN:012B.GOVERNANCE.⚫🌊▶️🟣📋♅",
+   "record_url": "https://www.alexanarch.org/s/records/480/",
+   "works_url": "/works/012b/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-012B-text.md"
   },
   {
    "id": "18652548",
@@ -8299,7 +8970,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:012C.GOVERNANCE.📦🎬⭕🗺️🌻💥",
+   "record_url": "https://www.alexanarch.org/s/records/481/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-012C-text.md"
   },
   {
    "id": "18651585",
@@ -8327,7 +9001,10 @@
     "r05",
     "r08",
     "r16"
-   ]
+   ],
+   "axn": "AXN:012D.GOVERNANCE.⏫♆🕓▲🔵🔃",
+   "record_url": "https://www.alexanarch.org/s/records/482/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-012D-text.md"
   },
   {
    "id": "18651067",
@@ -8358,7 +9035,11 @@
     "r08",
     "r11",
     "r16"
-   ]
+   ],
+   "axn": "AXN:012E.GOVERNANCE.🔄🪞⏪✖️○🪸",
+   "record_url": "https://www.alexanarch.org/s/records/483/",
+   "works_url": "/works/012e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-012E-text.md"
   },
   {
    "id": "18649920",
@@ -8385,7 +9066,11 @@
    "r": [
     "r12",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0539.UNCLASSIFIED.↘️🪐♍🟣🕛🚩",
+   "record_url": "https://www.alexanarch.org/s/records/1320/",
+   "works_url": "/works/0539/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0539-text.md"
   },
   {
    "id": "18636138",
@@ -8409,7 +9094,11 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0128.GOVERNANCE.♊🌑🎭🔃🌱🪨",
+   "record_url": "https://www.alexanarch.org/s/records/477/",
+   "works_url": "/works/0128/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0128-text.md"
   },
   {
    "id": "18633294",
@@ -8434,7 +9123,10 @@
    "r": [
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0129.GOVERNANCE.▽🦅⭐☀️🔔🌠",
+   "record_url": "https://www.alexanarch.org/s/records/478/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0129-text.md"
   },
   {
    "id": "18627055",
@@ -8460,7 +9152,10 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0121.GOVERNANCE.🍁🪝🀄✊🏰♆",
+   "record_url": "https://www.alexanarch.org/s/records/471/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0121-text.md"
   },
   {
    "id": "18626559",
@@ -8485,7 +9180,11 @@
    "r": [
     "r08",
     "r12"
-   ]
+   ],
+   "axn": "AXN:0389.EMPIRICAL.🌙⭕🔼🗼🎻⚡",
+   "record_url": "https://www.alexanarch.org/s/records/893/",
+   "works_url": "/works/0389/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0389-text.md"
   },
   {
    "id": "18625272",
@@ -8510,7 +9209,11 @@
    "r": [
     "r08",
     "r22"
-   ]
+   ],
+   "axn": "AXN:0124.GOVERNANCE.⊗⚪🚪🕔🕖♠️",
+   "record_url": "https://www.alexanarch.org/s/records/473/",
+   "works_url": "/works/0124/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0124-text.md"
   },
   {
    "id": "18625242",
@@ -8534,7 +9237,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0125.GOVERNANCE.🚀⛳◀️🔚↗️△",
+   "record_url": "https://www.alexanarch.org/s/records/474/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0125-text.md"
   },
   {
    "id": "18621736",
@@ -8561,7 +9267,10 @@
    "r": [
     "r15",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0127.GENERATIVE.↘️🚩🔍⏰🔭❌",
+   "record_url": "https://www.alexanarch.org/s/records/476/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0127-text.md"
   },
   {
    "id": "18615388",
@@ -8587,7 +9296,11 @@
    "r": [
     "r06",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0388.GOVERNANCE.✊🔧♻️🌇🔧🎇",
+   "record_url": "https://www.alexanarch.org/s/records/892/",
+   "works_url": "/works/0388/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0388-text.md"
   },
   {
    "id": "18612213",
@@ -8612,7 +9325,10 @@
    "r": [
     "r01",
     "r02"
-   ]
+   ],
+   "axn": "AXN:011E.GOVERNANCE.❤️🎯🚀🕊️🌓🪨",
+   "record_url": "https://www.alexanarch.org/s/records/468/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-011E-text.md"
   },
   {
    "id": "18611985",
@@ -8638,7 +9354,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:011F.GOVERNANCE.⛵🔵🦋🔖🜁🌲",
+   "record_url": "https://www.alexanarch.org/s/records/469/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-011F-text.md"
   },
   {
    "id": "18610308",
@@ -8664,7 +9383,10 @@
    "r": [
     "r02",
     "r11"
-   ]
+   ],
+   "axn": "AXN:0120.GOVERNANCE.❄️🪄🌅✏️🌉🕔",
+   "record_url": "https://www.alexanarch.org/s/records/470/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0120-text.md"
   },
   {
    "id": "18604046",
@@ -8688,7 +9410,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:011B.GOVERNANCE.💥👇🌔♾️🌍🔥",
+   "record_url": "https://www.alexanarch.org/s/records/465/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-011B-text.md"
   },
   {
    "id": "18603792",
@@ -8717,7 +9442,10 @@
     "r05",
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:011C.EMPIRICAL.🎨▽⚪♄🍃♃",
+   "record_url": "https://www.alexanarch.org/s/records/466/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-011C-text.md"
   },
   {
    "id": "18568370",
@@ -8742,7 +9470,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:011A.GOVERNANCE.🔔🌗💧∮🕙🪧",
+   "record_url": "https://www.alexanarch.org/s/records/464/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-011A-text.md"
   },
   {
    "id": "18530086",
@@ -8769,7 +9500,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0538.UNCLASSIFIED.📌▽🀄▽📜🏁",
+   "record_url": "https://www.alexanarch.org/s/records/1319/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0538-text.md"
   },
   {
    "id": "18529648",
@@ -8800,7 +9534,10 @@
     "r05",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:0117.GOVERNANCE.📚💫🔒🧪🧊⚫",
+   "record_url": "https://www.alexanarch.org/s/records/461/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0117-text.md"
   },
   {
    "id": "18529448",
@@ -8829,7 +9566,10 @@
     "r09",
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0118.GOVERNANCE.🌙🖐️🚪🌟🦅🕕",
+   "record_url": "https://www.alexanarch.org/s/records/462/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0118-text.md"
   },
   {
    "id": "18522470",
@@ -8857,7 +9597,10 @@
     "r02",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0119.GOVERNANCE.🌸↙️🍀🌔☉✨",
+   "record_url": "https://www.alexanarch.org/s/records/463/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0119-text.md"
   },
   {
    "id": "18513081",
@@ -8881,7 +9624,10 @@
    "assignment": "heuristic",
    "r": [
     "r06"
-   ]
+   ],
+   "axn": "AXN:0108.EMPIRICAL.👈🚨🚪🗺️✏️🔴",
+   "record_url": "https://www.alexanarch.org/s/records/448/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0108-text.md"
   },
   {
    "id": "18512947",
@@ -8912,7 +9658,10 @@
     "r09",
     "r22",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0109.GOVERNANCE.🔵🕚▽⏬∞🏺",
+   "record_url": "https://www.alexanarch.org/s/records/449/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0109-text.md"
   },
   {
    "id": "18512289",
@@ -8937,7 +9686,10 @@
    "r": [
     "r03",
     "r11"
-   ]
+   ],
+   "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+   "record_url": "https://www.alexanarch.org/s/records/31/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019C-text.md"
   },
   {
    "id": "18508740",
@@ -8965,7 +9717,11 @@
     "r01",
     "r05",
     "r15"
-   ]
+   ],
+   "axn": "AXN:0537.UNCLASSIFIED.↗️🗿💚🟣⊗🐝",
+   "record_url": "https://www.alexanarch.org/s/records/1318/",
+   "works_url": "/works/0537/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0537-text.md"
   },
   {
    "id": "18507881",
@@ -8994,7 +9750,11 @@
     "r09",
     "r15",
     "sp04"
-   ]
+   ],
+   "axn": "AXN:010C.EMPIRICAL.↖️🥁🕔⚖️🌺🟡",
+   "record_url": "https://www.alexanarch.org/s/records/451/",
+   "works_url": "/works/010c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-010C-text.md"
   },
   {
    "id": "18507872",
@@ -9023,7 +9783,11 @@
     "r01",
     "r09",
     "r15"
-   ]
+   ],
+   "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+   "record_url": "https://www.alexanarch.org/s/records/452/",
+   "works_url": "/works/010d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-010D-text.md"
   },
   {
    "id": "18507870",
@@ -9048,7 +9812,11 @@
    "assignment": "heuristic",
    "r": [
     "r15"
-   ]
+   ],
+   "axn": "AXN:010E.EMPIRICAL.🗝️🪦🔻🏠📎🛤️",
+   "record_url": "https://www.alexanarch.org/s/records/453/",
+   "works_url": "/works/010e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-010E-text.md"
   },
   {
    "id": "18507858",
@@ -9074,7 +9842,11 @@
    "r": [
     "r09",
     "r15"
-   ]
+   ],
+   "axn": "AXN:010F.EMPIRICAL.🔼➖🖐️👐🔝🟤",
+   "record_url": "https://www.alexanarch.org/s/records/454/",
+   "works_url": "/works/010f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-010F-text.md"
   },
   {
    "id": "18507849",
@@ -9103,7 +9875,11 @@
     "r05",
     "r15",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0110.EMPIRICAL.↘️🌑🌔🌗△🌌",
+   "record_url": "https://www.alexanarch.org/s/records/455/",
+   "works_url": "/works/0110/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0110-text.md"
   },
   {
    "id": "18507840",
@@ -9132,7 +9908,11 @@
     "r09",
     "r15",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0111.EMPIRICAL.⏪🔺⏏️🌠🪟🝊",
+   "record_url": "https://www.alexanarch.org/s/records/456/",
+   "works_url": "/works/0111/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0111-text.md"
   },
   {
    "id": "18507410",
@@ -9161,7 +9941,11 @@
     "r09",
     "r11",
     "r15"
-   ]
+   ],
+   "axn": "AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠",
+   "record_url": "https://www.alexanarch.org/s/records/17/",
+   "works_url": "/works/0112/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0112-text.md"
   },
   {
    "id": "18507026",
@@ -9188,7 +9972,11 @@
     "r05",
     "r09",
     "r11"
-   ]
+   ],
+   "axn": "AXN:0113.ARCHIVAL.🕗⚡✊⛩️📐➖",
+   "record_url": "https://www.alexanarch.org/s/records/457/",
+   "works_url": "/works/0113/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0113-text.md"
   },
   {
    "id": "18506880",
@@ -9215,7 +10003,11 @@
     "r09",
     "r11",
     "r13"
-   ]
+   ],
+   "axn": "AXN:0114.GENERATIVE.⏫⏩🏴🔩📖🌙",
+   "record_url": "https://www.alexanarch.org/s/records/458/",
+   "works_url": "/works/0114/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0114-text.md"
   },
   {
    "id": "18505416",
@@ -9241,7 +10033,10 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0536.UNCLASSIFIED.🌳↗️🌑🎵♋🚨",
+   "record_url": "https://www.alexanarch.org/s/records/1317/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0536-text.md"
   },
   {
    "id": "18500512",
@@ -9267,7 +10062,10 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0107.EMPIRICAL.🌊🀄♉💧📜👁️",
+   "record_url": "https://www.alexanarch.org/s/records/447/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0107-text.md"
   },
   {
    "id": "18484654",
@@ -9296,7 +10094,10 @@
     "r02",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0535.UNCLASSIFIED.⌛🔼🝊🎇⌛🧪",
+   "record_url": "https://www.alexanarch.org/s/records/1316/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0535-text.md"
   },
   {
    "id": "18483834",
@@ -9322,7 +10123,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0534.UNCLASSIFIED.♋🔮♃🌒💙🪜",
+   "record_url": "https://www.alexanarch.org/s/records/1315/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0534-text.md"
   },
   {
    "id": "18480959",
@@ -9348,7 +10152,11 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0105.STRUCTURAL.●●🧲⭕🪐⛩️",
+   "record_url": "https://www.alexanarch.org/s/records/16/",
+   "works_url": "/works/0105/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0105-text.md"
   },
   {
    "id": "18474826",
@@ -9374,7 +10182,10 @@
    "r": [
     "r05",
     "r14"
-   ]
+   ],
+   "axn": "AXN:00FC.EMPIRICAL.🗺️🍁☿🎨🔼●",
+   "record_url": "https://www.alexanarch.org/s/records/437/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00FC-text.md"
   },
   {
    "id": "18474774",
@@ -9401,7 +10212,10 @@
    "r": [
     "r08",
     "r14"
-   ]
+   ],
+   "axn": "AXN:0533.UNCLASSIFIED.♈♄➕🗡️🔅🎭",
+   "record_url": "https://www.alexanarch.org/s/records/1314/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0533-text.md"
   },
   {
    "id": "18474664",
@@ -9428,7 +10242,11 @@
    "r": [
     "r05",
     "r14"
-   ]
+   ],
+   "axn": "AXN:0532.UNCLASSIFIED.🌟⌛⏫👐🌓🌱",
+   "record_url": "https://www.alexanarch.org/s/records/1313/",
+   "works_url": "/works/0532/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0532-text.md"
   },
   {
    "id": "18473656",
@@ -9453,7 +10271,11 @@
    "assignment": "heuristic",
    "r": [
     "r14"
-   ]
+   ],
+   "axn": "AXN:00FF.EMPIRICAL.🌖🌲🪦🪐📝🔴",
+   "record_url": "https://www.alexanarch.org/s/records/440/",
+   "works_url": "/works/00ff/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00FF-text.md"
   },
   {
    "id": "18472604",
@@ -9478,7 +10300,10 @@
    "assignment": "heuristic",
    "r": [
     "r14"
-   ]
+   ],
+   "axn": "AXN:0531.UNCLASSIFIED.🔝🏠⊗🏛️🌆🎭",
+   "record_url": "https://www.alexanarch.org/s/records/1312/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0531-text.md"
   },
   {
    "id": "18472442",
@@ -9507,7 +10332,10 @@
     "r09",
     "r14",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0101.GOVERNANCE.🚩🌒🔵♣️🗝️🕒",
+   "record_url": "https://www.alexanarch.org/s/records/442/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0101-text.md"
   },
   {
    "id": "18471827",
@@ -9535,7 +10363,10 @@
     "r09",
     "r05",
     "r14"
-   ]
+   ],
+   "axn": "AXN:0530.UNCLASSIFIED.🟣⛵🌟⚓🚪🪟",
+   "record_url": "https://www.alexanarch.org/s/records/1311/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0530-text.md"
   },
   {
    "id": "18463774",
@@ -9561,7 +10392,11 @@
    "r": [
     "r21",
     "r22"
-   ]
+   ],
+   "axn": "AXN:00F8.ARCHIVAL.🎭🎨☉🏛️🌊🔃",
+   "record_url": "https://www.alexanarch.org/s/records/14/",
+   "works_url": "/works/00f8/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00F8-text.md"
   },
   {
    "id": "18463723",
@@ -9586,7 +10421,10 @@
    "r": [
     "r01",
     "r09"
-   ]
+   ],
+   "axn": "AXN:0396.EMPIRICAL.♾️🔵🕖🚪🌅👁‍🗨",
+   "record_url": "https://www.alexanarch.org/s/records/906/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0396-text.md"
   },
   {
    "id": "18463275",
@@ -9612,7 +10450,10 @@
    "r": [
     "r01",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00FA.GENERATIVE.💡▽⏪🌕📎🟠",
+   "record_url": "https://www.alexanarch.org/s/records/435/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00FA-text.md"
   },
   {
    "id": "18459864",
@@ -9637,7 +10478,10 @@
    "r": [
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:038C.GOVERNANCE.🏙️🕌🍁❤️⭐🕒",
+   "record_url": "https://www.alexanarch.org/s/records/896/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-038C-text.md"
   },
   {
    "id": "18459573",
@@ -9663,7 +10507,11 @@
    "r": [
     "r01",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
+   "record_url": "https://www.alexanarch.org/s/records/436/",
+   "works_url": "/works/00fb/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00FB-text.md"
   },
   {
    "id": "18459339",
@@ -9687,7 +10535,11 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
+   "record_url": "https://www.alexanarch.org/s/records/1310/",
+   "works_url": "/works/052f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-052F-text.md"
   },
   {
    "id": "18459278",
@@ -9711,7 +10563,11 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:052E.UNCLASSIFIED.📖⌛🔚🕑🌅🔬",
+   "record_url": "https://www.alexanarch.org/s/records/1309/",
+   "works_url": "/works/052e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-052E-text.md"
   },
   {
    "id": "18452806",
@@ -9741,7 +10597,10 @@
     "r08",
     "r09",
     "r21"
-   ]
+   ],
+   "axn": "AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌊🔜",
+   "record_url": "https://www.alexanarch.org/s/records/1306/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-052B-text.md"
   },
   {
    "id": "18452686",
@@ -9769,7 +10628,11 @@
     "r21",
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻",
+   "record_url": "https://www.alexanarch.org/s/records/425/",
+   "works_url": "/works/00ed/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00ED-text.md"
   },
   {
    "id": "18452597",
@@ -9791,7 +10654,11 @@
    "assignment": "heuristic",
    "r": [
     "r21"
-   ]
+   ],
+   "axn": "AXN:052A.UNCLASSIFIED.👉🔔🝊☁️📦🛡️",
+   "record_url": "https://www.alexanarch.org/s/records/1305/",
+   "works_url": "/works/052a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-052A-text.md"
   },
   {
    "id": "18452156",
@@ -9820,7 +10687,10 @@
     "r02",
     "r05",
     "r09"
-   ]
+   ],
+   "axn": "AXN:0529.UNCLASSIFIED.⚫♉⏰🌆🌳🔩",
+   "record_url": "https://www.alexanarch.org/s/records/1304/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0529-text.md"
   },
   {
    "id": "18452132",
@@ -9847,7 +10717,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0528.UNCLASSIFIED.🌃🏰🎪🌊🎨🎪",
+   "record_url": "https://www.alexanarch.org/s/records/1303/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0528-text.md"
   },
   {
    "id": "18451996",
@@ -9871,7 +10744,11 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0527.UNCLASSIFIED.♻️🔽🌌🔆🕔🧬",
+   "record_url": "https://www.alexanarch.org/s/records/1302/",
+   "works_url": "/works/0527/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0527-text.md"
   },
   {
    "id": "18451860",
@@ -9895,7 +10772,11 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0526.UNCLASSIFIED.♋🔖🔓🏺🍂🔒",
+   "record_url": "https://www.alexanarch.org/s/records/1301/",
+   "works_url": "/works/0526/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0526-text.md"
   },
   {
    "id": "18451824",
@@ -9921,7 +10802,11 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0525.UNCLASSIFIED.▶️●🌌✨🫶♈",
+   "record_url": "https://www.alexanarch.org/s/records/1300/",
+   "works_url": "/works/0525/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0525-text.md"
   },
   {
    "id": "18451793",
@@ -9947,7 +10832,11 @@
    "r": [
     "r09",
     "r11"
-   ]
+   ],
+   "axn": "AXN:00EE.ARCHIVAL.🔅⏩🍄🌪️🌸👁️",
+   "record_url": "https://www.alexanarch.org/s/records/13/",
+   "works_url": "/works/00ee/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00EE-text.md"
   },
   {
    "id": "18446736",
@@ -9971,7 +10860,11 @@
    "assignment": "heuristic",
    "r": [
     "r06"
-   ]
+   ],
+   "axn": "AXN:0524.UNCLASSIFIED.🪦🕚🌌♉☀️🟠",
+   "record_url": "https://www.alexanarch.org/s/records/1299/",
+   "works_url": "/works/0524/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0524-text.md"
   },
   {
    "id": "18446706",
@@ -9995,7 +10888,10 @@
    "assignment": "heuristic",
    "r": [
     "r06"
-   ]
+   ],
+   "axn": "AXN:0523.UNCLASSIFIED.🕖🟠🍃♦️⭕👇",
+   "record_url": "https://www.alexanarch.org/s/records/1298/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0523-text.md"
   },
   {
    "id": "18446686",
@@ -10019,7 +10915,10 @@
    "assignment": "heuristic",
    "r": [
     "r06"
-   ]
+   ],
+   "axn": "AXN:054B.UNCLASSIFIED.♻️👐👉🍁🎨⚙️",
+   "record_url": "https://www.alexanarch.org/s/records/1338/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-054B-text.md"
   },
   {
    "id": "18446580",
@@ -10043,7 +10942,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:00E4.EMPIRICAL.🕐⏩❤️🔬🐚🔥",
+   "record_url": "https://www.alexanarch.org/s/records/417/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00E4-text.md"
   },
   {
    "id": "18446538",
@@ -10067,7 +10969,11 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:04F6.UNCLASSIFIED.🪸📖🪦🧡🎹🚨",
+   "record_url": "https://www.alexanarch.org/s/records/1253/",
+   "works_url": "/works/04f6/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04F6-text.md"
   },
   {
    "id": "18446428",
@@ -10091,7 +10997,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0522.UNCLASSIFIED.🏛️🪄🔒🎻☿🕗",
+   "record_url": "https://www.alexanarch.org/s/records/1297/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0522-text.md"
   },
   {
    "id": "18446378",
@@ -10115,7 +11024,10 @@
    "assignment": "heuristic",
    "r": [
     "r06"
-   ]
+   ],
+   "axn": "AXN:00EA.GOVERNANCE.🎻🕙⭕▶️🟤🌃",
+   "record_url": "https://www.alexanarch.org/s/records/12/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00EA-text.md"
   },
   {
    "id": "18438789",
@@ -10141,7 +11053,10 @@
    "r": [
     "r11",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0520.UNCLASSIFIED.🔅☀️🗝️🧫🌒🪨",
+   "record_url": "https://www.alexanarch.org/s/records/1295/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0520-text.md"
   },
   {
    "id": "18433401",
@@ -10165,7 +11080,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:00E3.GOVERNANCE.💚🔒♍🌗🙏🌾",
+   "record_url": "https://www.alexanarch.org/s/records/416/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00E3-text.md"
   },
   {
    "id": "18423964",
@@ -10196,7 +11114,11 @@
     "r05",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+   "record_url": "https://www.alexanarch.org/s/records/30/",
+   "works_url": "/works/019a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019A-text.md"
   },
   {
    "id": "18422619",
@@ -10220,7 +11142,10 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:00DF.GOVERNANCE.🪜📦↖️⭐🎹🗼",
+   "record_url": "https://www.alexanarch.org/s/records/414/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00DF-text.md"
   },
   {
    "id": "18395515",
@@ -10244,7 +11169,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:00DD.GOVERNANCE.🟡🛸□🔅♥️🎶",
+   "record_url": "https://www.alexanarch.org/s/records/412/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00DD-text.md"
   },
   {
    "id": "18390595",
@@ -10269,7 +11197,10 @@
    "assignment": "heuristic",
    "r": [
     "r18"
-   ]
+   ],
+   "axn": "AXN:00DE.GENERATIVE.🌸🎺🟣💜📖🍃",
+   "record_url": "https://www.alexanarch.org/s/records/413/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00DE-text.md"
   },
   {
    "id": "18382027",
@@ -10293,7 +11224,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:00D1.GOVERNANCE.🤙🖐️🕓🔗🔙◀️",
+   "record_url": "https://www.alexanarch.org/s/records/400/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00D1-text.md"
   },
   {
    "id": "18381438",
@@ -10318,7 +11252,10 @@
    "r": [
     "r01",
     "r11"
-   ]
+   ],
+   "axn": "AXN:00D2.GOVERNANCE.🧬🏁📖🚀🟡⏳",
+   "record_url": "https://www.alexanarch.org/s/records/401/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00D2-text.md"
   },
   {
    "id": "18381204",
@@ -10348,7 +11285,10 @@
     "r09",
     "r18",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00D7.GOVERNANCE.💎□🏷️🪦🙏🚨",
+   "record_url": "https://www.alexanarch.org/s/records/406/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00D7-text.md"
   },
   {
    "id": "18381196",
@@ -10378,7 +11318,10 @@
     "r07",
     "r09",
     "r18"
-   ]
+   ],
+   "axn": "AXN:04F5.UNCLASSIFIED.🌹🌲🔐●🎆□",
+   "record_url": "https://www.alexanarch.org/s/records/1252/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04F5-text.md"
   },
   {
    "id": "18381190",
@@ -10408,7 +11351,10 @@
     "r07",
     "r09",
     "r18"
-   ]
+   ],
+   "axn": "AXN:050E.UNCLASSIFIED.🎺🌱∞🪟🕓👁‍🗨",
+   "record_url": "https://www.alexanarch.org/s/records/1277/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-050E-text.md"
   },
   {
    "id": "18381184",
@@ -10438,7 +11384,11 @@
     "r09",
     "r18",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+   "record_url": "https://www.alexanarch.org/s/records/402/",
+   "works_url": "/works/00d3/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00D3-text.md"
   },
   {
    "id": "18380933",
@@ -10469,7 +11419,11 @@
     "r07",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00D8.GENERATIVE.🌿🫵🜁💜⚡🌸",
+   "record_url": "https://www.alexanarch.org/s/records/407/",
+   "works_url": "/works/00d8/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00D8-text.md"
   },
   {
    "id": "18380853",
@@ -10499,7 +11453,11 @@
     "r02",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:050D.UNCLASSIFIED.⚖️🍃⏬🔭⏫♠️",
+   "record_url": "https://www.alexanarch.org/s/records/1276/",
+   "works_url": "/works/050d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-050D-text.md"
   },
   {
    "id": "18380773",
@@ -10530,7 +11488,11 @@
     "r07",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00DA.ARCHIVAL.🌈☿⭕🚨⊗🔬",
+   "record_url": "https://www.alexanarch.org/s/records/409/",
+   "works_url": "/works/00da/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00DA-text.md"
   },
   {
    "id": "18380716",
@@ -10561,7 +11523,11 @@
     "r07",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00DB.GENERATIVE.🔖🪜🎯🦋🪄🟡",
+   "record_url": "https://www.alexanarch.org/s/records/410/",
+   "works_url": "/works/00db/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00DB-text.md"
   },
   {
    "id": "18380630",
@@ -10593,7 +11559,11 @@
     "r08",
     "r09",
     "r11"
-   ]
+   ],
+   "axn": "AXN:00DC.GENERATIVE.🚨🏁🔙🖐️🪦🦋",
+   "record_url": "https://www.alexanarch.org/s/records/411/",
+   "works_url": "/works/00dc/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00DC-text.md"
   },
   {
    "id": "18370841",
@@ -10620,7 +11590,10 @@
    "r": [
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:00CC.GOVERNANCE.⏏️🧊❌🛤️🕘🔃",
+   "record_url": "https://www.alexanarch.org/s/records/395/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00CC-text.md"
   },
   {
    "id": "18370789",
@@ -10645,7 +11618,10 @@
    "r": [
     "r02",
     "sp04"
-   ]
+   ],
+   "axn": "AXN:00CD.STRUCTURAL.🪝🟣⏳🌖▲⚫",
+   "record_url": "https://www.alexanarch.org/s/records/396/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00CD-text.md"
   },
   {
    "id": "18370754",
@@ -10669,7 +11645,10 @@
    "assignment": "heuristic",
    "r": [
     "r02"
-   ]
+   ],
+   "axn": "AXN:00CE.ARCHIVAL.🪝🕘🐝📎🪄🛡️",
+   "record_url": "https://www.alexanarch.org/s/records/397/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00CE-text.md"
   },
   {
    "id": "18370734",
@@ -10693,7 +11672,11 @@
    "assignment": "heuristic",
    "r": [
     "r02"
-   ]
+   ],
+   "axn": "AXN:00CF.EMPIRICAL.🚀💎📜✊🕙🔆",
+   "record_url": "https://www.alexanarch.org/s/records/398/",
+   "works_url": "/works/00cf/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00CF-text.md"
   },
   {
    "id": "18369124",
@@ -10720,7 +11703,11 @@
    "r": [
     "r15",
     "r02"
-   ]
+   ],
+   "axn": "AXN:0330.GOVERNANCE.🔵♻️◇🪐🎲♦️",
+   "record_url": "https://www.alexanarch.org/s/records/188/",
+   "works_url": "/works/0330/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0330-text.md"
   },
   {
    "id": "18369038",
@@ -10745,7 +11732,11 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:054A.UNCLASSIFIED.🌃➖🌆⏬💙🏙️",
+   "record_url": "https://www.alexanarch.org/s/records/1337/",
+   "works_url": "/works/054a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-054A-text.md"
   },
   {
    "id": "18368997",
@@ -10770,7 +11761,11 @@
    "r": [
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:051F.UNCLASSIFIED.💜🌓▲🥁🪜♌",
+   "record_url": "https://www.alexanarch.org/s/records/1294/",
+   "works_url": "/works/051f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-051F-text.md"
   },
   {
    "id": "18368958",
@@ -10795,7 +11790,10 @@
    "r": [
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:051E.UNCLASSIFIED.✏️🌖🚨👈🟤🧊",
+   "record_url": "https://www.alexanarch.org/s/records/1293/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-051E-text.md"
   },
   {
    "id": "18368898",
@@ -10821,7 +11819,11 @@
     "sp02",
     "sp03",
     "sp04"
-   ]
+   ],
+   "axn": "AXN:051D.UNCLASSIFIED.⏏️🕘🫶📜🕛👆",
+   "record_url": "https://www.alexanarch.org/s/records/1292/",
+   "works_url": "/works/051d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-051D-text.md"
   },
   {
    "id": "18368791",
@@ -10846,7 +11848,11 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:051C.UNCLASSIFIED.🟤🪞🌙❤️♌🪦",
+   "record_url": "https://www.alexanarch.org/s/records/1291/",
+   "works_url": "/works/051c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-051C-text.md"
   },
   {
    "id": "18368743",
@@ -10871,7 +11877,10 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:051B.UNCLASSIFIED.🌀🗡️🟢🙏🗼📜",
+   "record_url": "https://www.alexanarch.org/s/records/1290/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-051B-text.md"
   },
   {
    "id": "18368695",
@@ -10896,7 +11905,10 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:051A.UNCLASSIFIED.🪟⚪🛸🌆🔴♾️",
+   "record_url": "https://www.alexanarch.org/s/records/1289/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-051A-text.md"
   },
   {
    "id": "18368652",
@@ -10921,7 +11933,10 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0519.UNCLASSIFIED.🔬✏️🝊🌹🔅🔀",
+   "record_url": "https://www.alexanarch.org/s/records/1288/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0519-text.md"
   },
   {
    "id": "18368614",
@@ -10946,7 +11961,10 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0549.UNCLASSIFIED.🧲☽🍂🍃∞♅",
+   "record_url": "https://www.alexanarch.org/s/records/1336/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0549-text.md"
   },
   {
    "id": "18368527",
@@ -10971,7 +11989,10 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0518.UNCLASSIFIED.📜🎹⏬□🔼🌃",
+   "record_url": "https://www.alexanarch.org/s/records/1287/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0518-text.md"
   },
   {
    "id": "18368485",
@@ -10996,7 +12017,10 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0548.UNCLASSIFIED.💜🔼↙️🕛⏪🌈",
+   "record_url": "https://www.alexanarch.org/s/records/1335/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0548-text.md"
   },
   {
    "id": "18365700",
@@ -11021,7 +12045,11 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0517.UNCLASSIFIED.☀️🔓➕🏔️☁️🎇",
+   "record_url": "https://www.alexanarch.org/s/records/1286/",
+   "works_url": "/works/0517/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0517-text.md"
   },
   {
    "id": "18365601",
@@ -11046,7 +12074,10 @@
    "r": [
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0547.UNCLASSIFIED.🍀🔍🕗🖊️⏹️🌸",
+   "record_url": "https://www.alexanarch.org/s/records/1334/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0547-text.md"
   },
   {
    "id": "18365488",
@@ -11073,7 +12104,11 @@
     "r09",
     "sp03",
     "sp04"
-   ]
+   ],
+   "axn": "AXN:0516.UNCLASSIFIED.🏷️⏫🕐📝🕒✖️",
+   "record_url": "https://www.alexanarch.org/s/records/1285/",
+   "works_url": "/works/0516/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0516-text.md"
   },
   {
    "id": "18365457",
@@ -11099,7 +12134,11 @@
     "r09",
     "sp02",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0515.UNCLASSIFIED.🏙️🦅🕖🌹🍀🟡",
+   "record_url": "https://www.alexanarch.org/s/records/1284/",
+   "works_url": "/works/0515/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0515-text.md"
   },
   {
    "id": "18365409",
@@ -11125,7 +12164,11 @@
    "r": [
     "r01",
     "r09"
-   ]
+   ],
+   "axn": "AXN:0514.UNCLASSIFIED.🥁🌍🖊️👐🔛🌊",
+   "record_url": "https://www.alexanarch.org/s/records/1283/",
+   "works_url": "/works/0514/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0514-text.md"
   },
   {
    "id": "18365347",
@@ -11152,7 +12195,11 @@
     "r01",
     "r09",
     "sp02"
-   ]
+   ],
+   "axn": "AXN:0513.UNCLASSIFIED.🍁🏙️🕛📏🕕⚓",
+   "record_url": "https://www.alexanarch.org/s/records/1282/",
+   "works_url": "/works/0513/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0513-text.md"
   },
   {
    "id": "18365298",
@@ -11177,7 +12224,11 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0512.UNCLASSIFIED.🌸♃🕙🧡🌳🕙",
+   "record_url": "https://www.alexanarch.org/s/records/1281/",
+   "works_url": "/works/0512/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0512-text.md"
   },
   {
    "id": "18365223",
@@ -11208,7 +12259,10 @@
     "r08",
     "r09",
     "r11"
-   ]
+   ],
+   "axn": "AXN:00D0.ARCHIVAL.🌅🏷️🕙🤙🪸🍁",
+   "record_url": "https://www.alexanarch.org/s/records/399/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00D0-text.md"
   },
   {
    "id": "18365012",
@@ -11234,7 +12288,11 @@
    "r": [
     "r08",
     "sp02"
-   ]
+   ],
+   "axn": "AXN:0511.UNCLASSIFIED.🦋🌘⚫🌉🜁🕊️",
+   "record_url": "https://www.alexanarch.org/s/records/1280/",
+   "works_url": "/works/0511/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0511-text.md"
   },
   {
    "id": "18364984",
@@ -11260,7 +12318,11 @@
    "r": [
     "r08",
     "sp02"
-   ]
+   ],
+   "axn": "AXN:0510.UNCLASSIFIED.▶️🌓⚓☉🗝️📋",
+   "record_url": "https://www.alexanarch.org/s/records/1279/",
+   "works_url": "/works/0510/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0510-text.md"
   },
   {
    "id": "18364576",
@@ -11284,7 +12346,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:00BF.GOVERNANCE.♋🪐🌓👇🔖👋",
+   "record_url": "https://www.alexanarch.org/s/records/382/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00BF-text.md"
   },
   {
    "id": "18364558",
@@ -11308,7 +12373,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:00C0.GENERATIVE.🪝↙️🔎🧫🖊️☿",
+   "record_url": "https://www.alexanarch.org/s/records/383/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00C0-text.md"
   },
   {
    "id": "18363313",
@@ -11337,7 +12405,11 @@
     "r09",
     "r05",
     "r02"
-   ]
+   ],
+   "axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
+   "record_url": "https://www.alexanarch.org/s/records/30/",
+   "works_url": "/works/019a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019A-text.md"
   },
   {
    "id": "18362866",
@@ -11366,7 +12438,10 @@
     "r08",
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:047D.UNCLASSIFIED.🏰🔩🌌🔆🍃🍁",
+   "record_url": "https://www.alexanarch.org/s/records/1132/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-047D-text.md"
   },
   {
    "id": "18362742",
@@ -11395,7 +12470,10 @@
     "r09",
     "r11",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝",
+   "record_url": "https://www.alexanarch.org/s/records/388/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00C5-text.md"
   },
   {
    "id": "18362663",
@@ -11425,7 +12503,10 @@
     "r08",
     "r09",
     "r11"
-   ]
+   ],
+   "axn": "AXN:00C6.GOVERNANCE.📝✨🎨🌺☽🔖",
+   "record_url": "https://www.alexanarch.org/s/records/389/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00C6-text.md"
   },
   {
    "id": "18362525",
@@ -11455,7 +12536,10 @@
     "r09",
     "r11",
     "r02"
-   ]
+   ],
+   "axn": "AXN:00C7.ARCHIVAL.🌅🛤️🕒🖐️🟡∮",
+   "record_url": "https://www.alexanarch.org/s/records/390/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00C7-text.md"
   },
   {
    "id": "18358518",
@@ -11481,7 +12565,11 @@
     "r05",
     "r13",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:00C8.GENERATIVE.✨♍🔩∮▽🕙",
+   "record_url": "https://www.alexanarch.org/s/records/391/",
+   "works_url": "/works/00c8/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00C8-text.md"
   },
   {
    "id": "18358284",
@@ -11513,7 +12601,11 @@
     "r09",
     "r13",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:00C9.EMPIRICAL.🎪🔀💛🕐🌗🔭",
+   "record_url": "https://www.alexanarch.org/s/records/392/",
+   "works_url": "/works/00c9/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00C9-text.md"
   },
   {
    "id": "18358177",
@@ -11543,7 +12635,11 @@
     "r09",
     "r13",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00CA.STRUCTURAL.🔅🔵💜⏹️🚩✨",
+   "record_url": "https://www.alexanarch.org/s/records/393/",
+   "works_url": "/works/00ca/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00CA-text.md"
   },
   {
    "id": "18358127",
@@ -11573,7 +12669,11 @@
     "r08",
     "r09",
     "r13"
-   ]
+   ],
+   "axn": "AXN:00CB.EMPIRICAL.🕌💥🪨🕑🔺∮",
+   "record_url": "https://www.alexanarch.org/s/records/394/",
+   "works_url": "/works/00cb/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00CB-text.md"
   },
   {
    "id": "18357600",
@@ -11601,7 +12701,10 @@
     "r09",
     "r13",
     "r02"
-   ]
+   ],
+   "axn": "AXN:00B9.EMPIRICAL.🏷️🌹🟣↖️⚖️🗺️",
+   "record_url": "https://www.alexanarch.org/s/records/377/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B9-text.md"
   },
   {
    "id": "18357534",
@@ -11626,7 +12729,10 @@
    "r": [
     "r01",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00BB.GENERATIVE.🔩🧫🌋☁️💜○",
+   "record_url": "https://www.alexanarch.org/s/records/378/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00BB-text.md"
   },
   {
    "id": "18357447",
@@ -11656,7 +12762,10 @@
     "r05",
     "r09",
     "r11"
-   ]
+   ],
+   "axn": "AXN:0395.GOVERNANCE.🕛🙏🌈➖🔀♦️",
+   "record_url": "https://www.alexanarch.org/s/records/905/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0395-text.md"
   },
   {
    "id": "18357320",
@@ -11686,7 +12795,10 @@
     "r08",
     "r09",
     "r13"
-   ]
+   ],
+   "axn": "AXN:00B8.GOVERNANCE.🌟➖📐🎬🚪🚪",
+   "record_url": "https://www.alexanarch.org/s/records/376/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B8-text.md"
   },
   {
    "id": "18357003",
@@ -11711,7 +12823,10 @@
    "r": [
     "r01",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00BC.GOVERNANCE.🌇🤲🔧🛸🔓➖",
+   "record_url": "https://www.alexanarch.org/s/records/379/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00BC-text.md"
   },
   {
    "id": "18352468",
@@ -11736,7 +12851,10 @@
    "r": [
     "r05",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:00BD.GOVERNANCE.🧱🝊○❌🌳⏫",
+   "record_url": "https://www.alexanarch.org/s/records/380/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00BD-text.md"
   },
   {
    "id": "18351838",
@@ -11762,7 +12880,10 @@
    "r": [
     "r05",
     "r02"
-   ]
+   ],
+   "axn": "AXN:00BE.GOVERNANCE.▲🗂️🧬🎲🙏↙️",
+   "record_url": "https://www.alexanarch.org/s/records/381/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00BE-text.md"
   },
   {
    "id": "18342199",
@@ -11790,7 +12911,10 @@
     "r06",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:00AF.GOVERNANCE.🖐️🔽🏛️🌉🌲🟣",
+   "record_url": "https://www.alexanarch.org/s/records/367/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00AF-text.md"
   },
   {
    "id": "18342108",
@@ -11814,7 +12938,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0387.GOVERNANCE.🧭🧲❄️🌇🪦🎲",
+   "record_url": "https://www.alexanarch.org/s/records/891/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0387-text.md"
   },
   {
    "id": "18339350",
@@ -11842,7 +12969,11 @@
     "r12",
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:00B1.EMPIRICAL.🌅🏴➕♌♉🌻",
+   "record_url": "https://www.alexanarch.org/s/records/369/",
+   "works_url": "/works/00b1/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B1-text.md"
   },
   {
    "id": "18339333",
@@ -11866,7 +12997,11 @@
    "assignment": "heuristic",
    "r": [
     "r12"
-   ]
+   ],
+   "axn": "AXN:00B2.GOVERNANCE.↗️🔝📏⭐🕙🗿",
+   "record_url": "https://www.alexanarch.org/s/records/370/",
+   "works_url": "/works/00b2/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B2-text.md"
   },
   {
    "id": "18339319",
@@ -11894,7 +13029,11 @@
     "r09",
     "r12",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00B3.GOVERNANCE.🎭🗡️🎻🔻✋🔭",
+   "record_url": "https://www.alexanarch.org/s/records/371/",
+   "works_url": "/works/00b3/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B3-text.md"
   },
   {
    "id": "18339315",
@@ -11921,7 +13060,11 @@
    "r": [
     "r12",
     "r06"
-   ]
+   ],
+   "axn": "AXN:00B4.STRUCTURAL.🌊🌓🔆🌉🔙🌗",
+   "record_url": "https://www.alexanarch.org/s/records/372/",
+   "works_url": "/works/00b4/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B4-text.md"
   },
   {
    "id": "18339159",
@@ -11946,7 +13089,11 @@
    "assignment": "heuristic",
    "r": [
     "r12"
-   ]
+   ],
+   "axn": "AXN:00B5.STRUCTURAL.🌌⭐🌕⛳⏏️🎹",
+   "record_url": "https://www.alexanarch.org/s/records/373/",
+   "works_url": "/works/00b5/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B5-text.md"
   },
   {
    "id": "18338927",
@@ -11974,7 +13121,11 @@
     "r01",
     "r09",
     "r12"
-   ]
+   ],
+   "axn": "AXN:00B6.EMPIRICAL.⏪🎻💎👇🔭🌑",
+   "record_url": "https://www.alexanarch.org/s/records/374/",
+   "works_url": "/works/00b6/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B6-text.md"
   },
   {
    "id": "18338531",
@@ -12000,7 +13151,11 @@
    "r": [
     "r09",
     "r12"
-   ]
+   ],
+   "axn": "AXN:00B7.GOVERNANCE.🕚💥🪝🖊️🕘🔆",
+   "record_url": "https://www.alexanarch.org/s/records/375/",
+   "works_url": "/works/00b7/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00B7-text.md"
   },
   {
    "id": "18332915",
@@ -12027,7 +13182,11 @@
    "r": [
     "r09",
     "r12"
-   ]
+   ],
+   "axn": "AXN:00A9.EMPIRICAL.🕘🎲🎭🟣📚🪜",
+   "record_url": "https://www.alexanarch.org/s/records/362/",
+   "works_url": "/works/00a9/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A9-text.md"
   },
   {
    "id": "18330828",
@@ -12054,7 +13213,11 @@
    "r": [
     "r09",
     "r12"
-   ]
+   ],
+   "axn": "AXN:047B.UNCLASSIFIED.🧪▲🧲💛♍🕕",
+   "record_url": "https://www.alexanarch.org/s/records/1130/",
+   "works_url": "/works/047b/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-047B-text.md"
   },
   {
    "id": "18323735",
@@ -12081,7 +13244,11 @@
    "r": [
     "r18",
     "r08"
-   ]
+   ],
+   "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
+   "record_url": "https://www.alexanarch.org/s/records/8/",
+   "works_url": "/works/00ac/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00AC-text.md"
   },
   {
    "id": "18323575",
@@ -12108,7 +13275,11 @@
    "r": [
     "sp04",
     "r10"
-   ]
+   ],
+   "axn": "AXN:0479.UNCLASSIFIED.🎹🦋🌗♌🎻🌒",
+   "record_url": "https://www.alexanarch.org/s/records/1128/",
+   "works_url": "/works/0479/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0479-text.md"
   },
   {
    "id": "18323465",
@@ -12133,7 +13304,11 @@
    "assignment": "heuristic",
    "r": [
     "r10"
-   ]
+   ],
+   "axn": "AXN:00AD.ARCHIVAL.🥁🌈♋🪧🎻🏺",
+   "record_url": "https://www.alexanarch.org/s/records/365/",
+   "works_url": "/works/00ad/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00AD-text.md"
   },
   {
    "id": "18323376",
@@ -12162,7 +13337,11 @@
     "r10",
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00AE.GENERATIVE.📦🔆🌹🧱📚♻️",
+   "record_url": "https://www.alexanarch.org/s/records/366/",
+   "works_url": "/works/00ae/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00AE-text.md"
   },
   {
    "id": "18320470",
@@ -12189,7 +13368,11 @@
    "r": [
     "r11",
     "r05"
-   ]
+   ],
+   "axn": "AXN:009A.GOVERNANCE.🌓✊📐🪟🌈🔄",
+   "record_url": "https://www.alexanarch.org/s/records/349/",
+   "works_url": "/works/009a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-009A-text.md"
   },
   {
    "id": "18320411",
@@ -12216,7 +13399,11 @@
    "r": [
     "r11",
     "r05"
-   ]
+   ],
+   "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
+   "record_url": "https://www.alexanarch.org/s/records/87/",
+   "works_url": "/works/025d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-025D-text.md"
   },
   {
    "id": "18320239",
@@ -12245,7 +13432,11 @@
     "r11",
     "r05",
     "r02"
-   ]
+   ],
+   "axn": "AXN:009C.GOVERNANCE.🤲☁️📖📎🗡️🜁",
+   "record_url": "https://www.alexanarch.org/s/records/351/",
+   "works_url": "/works/009c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-009C-text.md"
   },
   {
    "id": "18319778",
@@ -12272,7 +13463,11 @@
    "r": [
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:009D.ARCHIVAL.🪝◇🌌🕛🌙∮",
+   "record_url": "https://www.alexanarch.org/s/records/352/",
+   "works_url": "/works/009d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-009D-text.md"
   },
   {
    "id": "18319653",
@@ -12297,7 +13492,11 @@
    "assignment": "heuristic",
    "r": [
     "r10"
-   ]
+   ],
+   "axn": "AXN:009E.ARCHIVAL.⚙️🔍🌑🟣🕑📎",
+   "record_url": "https://www.alexanarch.org/s/records/353/",
+   "works_url": "/works/009e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-009E-text.md"
   },
   {
    "id": "18319455",
@@ -12324,7 +13523,11 @@
    "r": [
     "r10",
     "r02"
-   ]
+   ],
+   "axn": "AXN:00A0.GENERATIVE.◀️🛡️📚🍀♎🌻",
+   "record_url": "https://www.alexanarch.org/s/records/354/",
+   "works_url": "/works/00a0/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A0-text.md"
   },
   {
    "id": "18319259",
@@ -12351,7 +13554,11 @@
     "r01",
     "r02",
     "r10"
-   ]
+   ],
+   "axn": "AXN:00A1.GENERATIVE.♌🔀↘️🟡👁️‍🗨️△",
+   "record_url": "https://www.alexanarch.org/s/records/355/",
+   "works_url": "/works/00a1/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A1-text.md"
   },
   {
    "id": "18318069",
@@ -12381,7 +13588,10 @@
     "r09",
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:00A3.GOVERNANCE.💚🔼♾️👁️🏙️🌍",
+   "record_url": "https://www.alexanarch.org/s/records/357/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A3-text.md"
   },
   {
    "id": "18317976",
@@ -12411,7 +13621,10 @@
     "r09",
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:00A4.GOVERNANCE.🖐️🕛🌋↘️♈🗺️",
+   "record_url": "https://www.alexanarch.org/s/records/358/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A4-text.md"
   },
   {
    "id": "18317661",
@@ -12441,7 +13654,10 @@
     "r09",
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:00A5.GOVERNANCE.✊🪟📜🕙🌹▲",
+   "record_url": "https://www.alexanarch.org/s/records/7/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A5-text.md"
   },
   {
    "id": "18317461",
@@ -12470,7 +13686,10 @@
     "r02",
     "r08",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0078.GOVERNANCE.🌘📖🏁▽🔚🧭",
+   "record_url": "https://www.alexanarch.org/s/records/317/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0078-text.md"
   },
   {
    "id": "18317110",
@@ -12499,7 +13718,10 @@
     "r09",
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:00A6.GENERATIVE.✏️🌅🧲⊗▶️🕗",
+   "record_url": "https://www.alexanarch.org/s/records/359/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A6-text.md"
   },
   {
    "id": "18309202",
@@ -12525,7 +13747,11 @@
    "r": [
     "r03",
     "r11"
-   ]
+   ],
+   "axn": "AXN:00A7.GENERATIVE.💚👁️‍🗨️♥️🌱∮⚓",
+   "record_url": "https://www.alexanarch.org/s/records/360/",
+   "works_url": "/works/00a7/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A7-text.md"
   },
   {
    "id": "18308786",
@@ -12553,7 +13779,11 @@
     "r03",
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:00A8.EMPIRICAL.🌊🕌🧫📚🪄🌋",
+   "record_url": "https://www.alexanarch.org/s/records/361/",
+   "works_url": "/works/00a8/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-00A8-text.md"
   },
   {
    "id": "18308194",
@@ -12578,7 +13808,10 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:0091.GENERATIVE.♻️🔩🔐🌘🎹🐝",
+   "record_url": "https://www.alexanarch.org/s/records/341/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0091-text.md"
   },
   {
    "id": "18307811",
@@ -12603,7 +13836,10 @@
    "r": [
     "r03",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0092.GENERATIVE.🌃🛡️🌿🎲❄️✊",
+   "record_url": "https://www.alexanarch.org/s/records/342/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0092-text.md"
   },
   {
    "id": "18307756",
@@ -12632,7 +13868,10 @@
     "r02",
     "r03",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0093.GENERATIVE.🍄🜁♆🎻🟡❌",
+   "record_url": "https://www.alexanarch.org/s/records/343/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0093-text.md"
   },
   {
    "id": "18307706",
@@ -12654,7 +13893,10 @@
    "r": [
     "r03",
     "r11"
-   ]
+   ],
+   "axn": "AXN:0092.GENERATIVE.🌃🛡️🌿🎲❄️✊",
+   "record_url": "https://www.alexanarch.org/s/records/342/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0092-text.md"
   },
   {
    "id": "18307393",
@@ -12684,7 +13926,10 @@
     "r05",
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0096.GENERATIVE.🟣🕒⛳🕖⚖️👁️‍🗨️",
+   "record_url": "https://www.alexanarch.org/s/records/346/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0096-text.md"
   },
   {
    "id": "18307180",
@@ -12713,7 +13958,11 @@
     "r09",
     "r11",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0095.GOVERNANCE.⊗🧪👆🌙🔛🖐️",
+   "record_url": "https://www.alexanarch.org/s/records/345/",
+   "works_url": "/works/0095/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0095-text.md"
   },
   {
    "id": "18305509",
@@ -12739,7 +13988,10 @@
    "r": [
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀",
+   "record_url": "https://www.alexanarch.org/s/records/348/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0098-text.md"
   },
   {
    "id": "18294005",
@@ -12763,7 +14015,11 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:0083.GENERATIVE.🌒🔬🪦📦🌟🖊️",
+   "record_url": "https://www.alexanarch.org/s/records/328/",
+   "works_url": "/works/0083/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0083-text.md"
   },
   {
    "id": "18293949",
@@ -12787,7 +14043,10 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:0472.UNCLASSIFIED.🔍🤲🔅🚀❌📎",
+   "record_url": "https://www.alexanarch.org/s/records/1121/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0472-text.md"
   },
   {
    "id": "18293881",
@@ -12813,7 +14072,11 @@
    "r": [
     "r01",
     "r02"
-   ]
+   ],
+   "axn": "AXN:0085.GENERATIVE.🔆🔙□🔍🔃➕",
+   "record_url": "https://www.alexanarch.org/s/records/330/",
+   "works_url": "/works/0085/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0085-text.md"
   },
   {
    "id": "18293812",
@@ -12840,7 +14103,10 @@
     "r09",
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0086.GOVERNANCE.◇💙🔐🗂️🛸📋",
+   "record_url": "https://www.alexanarch.org/s/records/331/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0086-text.md"
   },
   {
    "id": "18293705",
@@ -12869,7 +14135,10 @@
     "r02",
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0087.GENERATIVE.🔽☀️⭐☀️⏪❌",
+   "record_url": "https://www.alexanarch.org/s/records/6/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0087-text.md"
   },
   {
    "id": "18293640",
@@ -12895,7 +14164,11 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0088.GENERATIVE.🕔🌇❌⊗♻️🔻",
+   "record_url": "https://www.alexanarch.org/s/records/332/",
+   "works_url": "/works/0088/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0088-text.md"
   },
   {
    "id": "18293603",
@@ -12921,7 +14194,11 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0089.GOVERNANCE.🌍🪜🚩🍄🍄☀️",
+   "record_url": "https://www.alexanarch.org/s/records/333/",
+   "works_url": "/works/0089/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0089-text.md"
   },
   {
    "id": "18293551",
@@ -12947,7 +14224,11 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
+   "record_url": "https://www.alexanarch.org/s/records/334/",
+   "works_url": "/works/008a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-008A-text.md"
   },
   {
    "id": "18293496",
@@ -12976,7 +14257,10 @@
     "r09",
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:008B.EMPIRICAL.🔭🗼💥🎶🔒🌸",
+   "record_url": "https://www.alexanarch.org/s/records/335/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-008B-text.md"
   },
   {
    "id": "18293404",
@@ -13004,7 +14288,11 @@
     "r05",
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:008C.GENERATIVE.🎹🍃⏪🚀✖️🌕",
+   "record_url": "https://www.alexanarch.org/s/records/336/",
+   "works_url": "/works/008c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-008C-text.md"
   },
   {
    "id": "18291767",
@@ -13029,7 +14317,11 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:008D.GENERATIVE.🕐🔒⏪🌉🔖🎇",
+   "record_url": "https://www.alexanarch.org/s/records/337/",
+   "works_url": "/works/008d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-008D-text.md"
   },
   {
    "id": "18291321",
@@ -13054,7 +14346,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:008E.GOVERNANCE.🌺🦋⏏️🔔⛳♉",
+   "record_url": "https://www.alexanarch.org/s/records/338/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-008E-text.md"
   },
   {
    "id": "18287032",
@@ -13081,7 +14376,11 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:008F.GENERATIVE.☿💜⚙️🫵🤲❤️",
+   "record_url": "https://www.alexanarch.org/s/records/339/",
+   "works_url": "/works/008f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-008F-text.md"
   },
   {
    "id": "18285487",
@@ -13110,7 +14409,10 @@
     "r09",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0079.GENERATIVE.🍂🏺🌲☁️⚓🕌",
+   "record_url": "https://www.alexanarch.org/s/records/318/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0079-text.md"
   },
   {
    "id": "18284857",
@@ -13138,7 +14440,10 @@
     "r01",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:007C.GOVERNANCE.🏗️🔃🌀🌿💎🎶",
+   "record_url": "https://www.alexanarch.org/s/records/321/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-007C-text.md"
   },
   {
    "id": "18284776",
@@ -13166,7 +14471,10 @@
     "r01",
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:007D.GOVERNANCE.🔀📜🌲❤️🌟➕",
+   "record_url": "https://www.alexanarch.org/s/records/322/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-007D-text.md"
   },
   {
    "id": "18284588",
@@ -13190,7 +14498,11 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:0055.GENERATIVE.🛸🌍🔃♃🔖🔛",
+   "record_url": "https://www.alexanarch.org/s/records/282/",
+   "works_url": "/works/0055/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0055-text.md"
   },
   {
    "id": "18283962",
@@ -13219,7 +14531,10 @@
     "r02",
     "r05",
     "r09"
-   ]
+   ],
+   "axn": "AXN:050B.UNCLASSIFIED.🔖🕊️♻️🕑🪐🏔️",
+   "record_url": "https://www.alexanarch.org/s/records/1274/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-050B-text.md"
   },
   {
    "id": "18265415",
@@ -13243,7 +14558,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0075.GOVERNANCE.🌍📏📐⊗✋🟤",
+   "record_url": "https://www.alexanarch.org/s/records/314/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0075-text.md"
   },
   {
    "id": "18265365",
@@ -13271,7 +14589,10 @@
     "r05",
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0076.GENERATIVE.🍁🔛🔭🕗⊗🟠",
+   "record_url": "https://www.alexanarch.org/s/records/315/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0076-text.md"
   },
   {
    "id": "18265282",
@@ -13298,7 +14619,11 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0077.GENERATIVE.🕐🎺🧭☽◀️🔎",
+   "record_url": "https://www.alexanarch.org/s/records/316/",
+   "works_url": "/works/0077/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0077-text.md"
   },
   {
    "id": "18248576",
@@ -13322,7 +14647,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0386.GOVERNANCE.📐⊕🪝🗼○🗿",
+   "record_url": "https://www.alexanarch.org/s/records/890/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0386-text.md"
   },
   {
    "id": "18248479",
@@ -13348,7 +14676,10 @@
    "r": [
     "r09",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0385.GOVERNANCE.🕖⏬↙️○🧫🙏",
+   "record_url": "https://www.alexanarch.org/s/records/889/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0385-text.md"
   },
   {
    "id": "18248404",
@@ -13374,7 +14705,10 @@
    "r": [
     "r01",
     "r08"
-   ]
+   ],
+   "axn": "AXN:050A.UNCLASSIFIED.🏷️🪦♣️🃏🌠🔃",
+   "record_url": "https://www.alexanarch.org/s/records/1273/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-050A-text.md"
   },
   {
    "id": "18248131",
@@ -13400,7 +14734,10 @@
    "r": [
     "r09",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0384.GOVERNANCE.△⏩👁‍🗨🌀🪧🚀",
+   "record_url": "https://www.alexanarch.org/s/records/888/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0384-text.md"
   },
   {
    "id": "18248011",
@@ -13426,7 +14763,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0468.UNCLASSIFIED.🪜◇🔆📚🗂️❄️",
+   "record_url": "https://www.alexanarch.org/s/records/1111/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0468-text.md"
   },
   {
    "id": "18247925",
@@ -13450,7 +14790,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0072.GOVERNANCE.➗❄️♃🔖◀️👋",
+   "record_url": "https://www.alexanarch.org/s/records/311/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0072-text.md"
   },
   {
    "id": "18247826",
@@ -13476,7 +14819,10 @@
    "r": [
     "r09",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0383.GOVERNANCE.♈📜💡♃💧👆",
+   "record_url": "https://www.alexanarch.org/s/records/887/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0383-text.md"
   },
   {
    "id": "18246767",
@@ -13503,7 +14849,11 @@
    "r": [
     "r01",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0074.GENERATIVE.🔀🪄🚀⚓📦🔻",
+   "record_url": "https://www.alexanarch.org/s/records/313/",
+   "works_url": "/works/0074/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0074-text.md"
   },
   {
    "id": "18237535",
@@ -13532,7 +14882,10 @@
     "r05",
     "r02",
     "r08"
-   ]
+   ],
+   "axn": "AXN:019B.EMPIRICAL.🌻🕒🌪️🍂📏✊",
+   "record_url": "https://www.alexanarch.org/s/records/578/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-019B-text.md"
   },
   {
    "id": "18237216",
@@ -13559,7 +14912,11 @@
    "r": [
     "r01",
     "r09"
-   ]
+   ],
+   "axn": "AXN:0066.EMPIRICAL.♌⊕🍁🌱👁️‍🗨️⏏️",
+   "record_url": "https://www.alexanarch.org/s/records/299/",
+   "works_url": "/works/0066/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0066-text.md"
   },
   {
    "id": "18235982",
@@ -13583,7 +14940,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0067.GOVERNANCE.♋🌙🟢🧊⛳⭕",
+   "record_url": "https://www.alexanarch.org/s/records/300/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0067-text.md"
   },
   {
    "id": "18235725",
@@ -13609,7 +14969,10 @@
    "r": [
     "r09",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0068.GENERATIVE.∞🎲🟠♎🌒♄",
+   "record_url": "https://www.alexanarch.org/s/records/301/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0068-text.md"
   },
   {
    "id": "18234824",
@@ -13636,7 +14999,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0069.GOVERNANCE.🪟↗️💜🎆🕓🕙",
+   "record_url": "https://www.alexanarch.org/s/records/302/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0069-text.md"
   },
   {
    "id": "18234515",
@@ -13661,7 +15027,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:006A.GOVERNANCE.🌗🟣⏳🕒🧪🧊",
+   "record_url": "https://www.alexanarch.org/s/records/303/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-006A-text.md"
   },
   {
    "id": "18234352",
@@ -13691,7 +15060,11 @@
     "r09",
     "sp01",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:006B.EMPIRICAL.🕌🪞🔻▶️🌒🧡",
+   "record_url": "https://www.alexanarch.org/s/records/304/",
+   "works_url": "/works/006b/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-006B-text.md"
   },
   {
    "id": "18234218",
@@ -13716,7 +15089,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0509.UNCLASSIFIED.🕗🛤️🎶🍁🎯♾️",
+   "record_url": "https://www.alexanarch.org/s/records/1272/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0509-text.md"
   },
   {
    "id": "18234110",
@@ -13745,7 +15121,11 @@
     "r01",
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:006D.GENERATIVE.🗝️🗼▽☁️📌🎭",
+   "record_url": "https://www.alexanarch.org/s/records/306/",
+   "works_url": "/works/006d/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-006D-text.md"
   },
   {
    "id": "18233320",
@@ -13771,7 +15151,11 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:006F.GOVERNANCE.🪦🌃➕💙♈📌",
+   "record_url": "https://www.alexanarch.org/s/records/308/",
+   "works_url": "/works/006f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-006F-text.md"
   },
   {
    "id": "18227570",
@@ -13795,7 +15179,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0062.POLEMIC.⚖️🔻🌳♎🌸🚀",
+   "record_url": "https://www.alexanarch.org/s/records/295/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0062-text.md"
   },
   {
    "id": "18223385",
@@ -13819,7 +15206,11 @@
    "assignment": "heuristic",
    "r": [
     "r04"
-   ]
+   ],
+   "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
+   "record_url": "https://www.alexanarch.org/s/records/296/",
+   "works_url": "/works/0063/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0063-text.md"
   },
   {
    "id": "18217093",
@@ -13844,7 +15235,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:005C.GOVERNANCE.🔐🔒🎲🔧🚨🔚",
+   "record_url": "https://www.alexanarch.org/s/records/289/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-005C-text.md"
   },
   {
    "id": "18217047",
@@ -13871,7 +15265,10 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:005D.GOVERNANCE.🌒🕗🪸🟢🏗️♅",
+   "record_url": "https://www.alexanarch.org/s/records/290/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-005D-text.md"
   },
   {
    "id": "18216955",
@@ -13895,7 +15292,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:005E.GOVERNANCE.🔄🕐🟢🥁▶️🟣",
+   "record_url": "https://www.alexanarch.org/s/records/291/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-005E-text.md"
   },
   {
    "id": "18215706",
@@ -13922,7 +15322,11 @@
     "r01",
     "r03",
     "r04"
-   ]
+   ],
+   "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
+   "record_url": "https://www.alexanarch.org/s/records/293/",
+   "works_url": "/works/0060/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0060-text.md"
   },
   {
    "id": "18208959",
@@ -13950,7 +15354,10 @@
     "r01",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:005B.GOVERNANCE.🌔⚡🎻🍁🌺♌",
+   "record_url": "https://www.alexanarch.org/s/records/288/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-005B-text.md"
   },
   {
    "id": "18208811",
@@ -13976,7 +15383,10 @@
    "r": [
     "r10",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0508.UNCLASSIFIED.🌳📦♻️🟤↙️👁️",
+   "record_url": "https://www.alexanarch.org/s/records/1271/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0508-text.md"
   },
   {
    "id": "18203947",
@@ -14004,7 +15414,10 @@
     "r09",
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:004C.GOVERNANCE.♦️♈🃏🔬📝🗝️",
+   "record_url": "https://www.alexanarch.org/s/records/273/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-004C-text.md"
   },
   {
    "id": "18203767",
@@ -14028,7 +15441,11 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:004E.GENERATIVE.🎹➗♎🪦🪨💎",
+   "record_url": "https://www.alexanarch.org/s/records/275/",
+   "works_url": "/works/004e/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-004E-text.md"
   },
   {
    "id": "18203622",
@@ -14054,7 +15471,10 @@
    "r": [
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0051.GOVERNANCE.🕗🕊️🔼🌲🧱🥁",
+   "record_url": "https://www.alexanarch.org/s/records/278/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0051-text.md"
   },
   {
    "id": "18203435",
@@ -14078,7 +15498,10 @@
    "assignment": "heuristic",
    "r": [
     "r09"
-   ]
+   ],
+   "axn": "AXN:0052.GOVERNANCE.🏷️🕔🎇🏗️❄️🀄",
+   "record_url": "https://www.alexanarch.org/s/records/279/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0052-text.md"
   },
   {
    "id": "18203317",
@@ -14102,7 +15525,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0053.GOVERNANCE.⚫◇🧡🫶🛤️🕔",
+   "record_url": "https://www.alexanarch.org/s/records/280/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0053-text.md"
   },
   {
    "id": "18202753",
@@ -14128,7 +15554,11 @@
    "r": [
     "r01",
     "r05"
-   ]
+   ],
+   "axn": "AXN:0507.UNCLASSIFIED.✖️❌✊☀️🟡🌒",
+   "record_url": "https://www.alexanarch.org/s/records/1270/",
+   "works_url": "/works/0507/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0507-text.md"
   },
   {
    "id": "18202475",
@@ -14152,7 +15582,11 @@
    "assignment": "heuristic",
    "r": [
     "r01"
-   ]
+   ],
+   "axn": "AXN:0056.GOVERNANCE.💛🕙🗿🌟☀️🔔",
+   "record_url": "https://www.alexanarch.org/s/records/283/",
+   "works_url": "/works/0056/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0056-text.md"
   },
   {
    "id": "18201565",
@@ -14176,7 +15610,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0506.UNCLASSIFIED.⊗❤️📏🏁⭐🌑",
+   "record_url": "https://www.alexanarch.org/s/records/1269/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0506-text.md"
   },
   {
    "id": "18200613",
@@ -14204,7 +15641,11 @@
     "r09",
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0059.GOVERNANCE.📦🧲🤙⚙️🍃↘️",
+   "record_url": "https://www.alexanarch.org/s/records/286/",
+   "works_url": "/works/0059/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0059-text.md"
   },
   {
    "id": "18193225",
@@ -14232,7 +15673,11 @@
     "r05",
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0505.UNCLASSIFIED.☁️🔅✏️⏬🍀🧪",
+   "record_url": "https://www.alexanarch.org/s/records/1268/",
+   "works_url": "/works/0505/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0505-text.md"
   },
   {
    "id": "18190536",
@@ -14261,7 +15706,11 @@
     "r05",
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0044.GOVERNANCE.✖️🌿🔖🌉♄♊",
+   "record_url": "https://www.alexanarch.org/s/records/266/",
+   "works_url": "/works/0044/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0044-text.md"
   },
   {
    "id": "18189093",
@@ -14291,7 +15740,10 @@
     "r05",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:0504.UNCLASSIFIED.◀️🚪🔧○🔀🗂️",
+   "record_url": "https://www.alexanarch.org/s/records/1267/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0504-text.md"
   },
   {
    "id": "18187481",
@@ -14323,7 +15775,10 @@
     "r09",
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0048.GOVERNANCE.🌾↖️🦅🧬♎➕",
+   "record_url": "https://www.alexanarch.org/s/records/269/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0048-text.md"
   },
   {
    "id": "18185996",
@@ -14353,7 +15808,10 @@
     "r05",
     "r09",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:004A.GOVERNANCE.🧬🪧⌛🔮⏪☿",
+   "record_url": "https://www.alexanarch.org/s/records/271/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-004A-text.md"
   },
   {
    "id": "18175453",
@@ -14381,7 +15839,10 @@
     "r09",
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:003E.GOVERNANCE.🖊️🐚👈♾️🧊🕌",
+   "record_url": "https://www.alexanarch.org/s/records/260/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-003E-text.md"
   },
   {
    "id": "18174835",
@@ -14406,7 +15867,11 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:003F.GOVERNANCE.🔔🕖🌗🔗🎲📏",
+   "record_url": "https://www.alexanarch.org/s/records/261/",
+   "works_url": "/works/003f/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-003F-text.md"
   },
   {
    "id": "18174414",
@@ -14432,7 +15897,10 @@
    "r": [
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0040.GOVERNANCE.🎻🔚🕌🧪🔽♃",
+   "record_url": "https://www.alexanarch.org/s/records/262/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0040-text.md"
   },
   {
    "id": "18174037",
@@ -14456,7 +15924,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0041.GOVERNANCE.📋🏁☀️☿🍀📎",
+   "record_url": "https://www.alexanarch.org/s/records/263/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0041-text.md"
   },
   {
    "id": "18172252",
@@ -14480,7 +15951,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0042.GOVERNANCE.🎺🖊️🎺☁️✖️🌱",
+   "record_url": "https://www.alexanarch.org/s/records/264/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0042-text.md"
   },
   {
    "id": "18168585",
@@ -14503,7 +15977,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0033.GOVERNANCE.➖🗼🪸🔧➖♍",
+   "record_url": "https://www.alexanarch.org/s/records/249/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0033-text.md"
   },
   {
    "id": "18166394",
@@ -14527,7 +16004,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0034.GOVERNANCE.🌃🏰🖊️🌠🕘🏔️",
+   "record_url": "https://www.alexanarch.org/s/records/250/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0034-text.md"
   },
   {
    "id": "18166347",
@@ -14551,7 +16031,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0035.GOVERNANCE.○🔩🙏👁️‍🗨️➖🌓",
+   "record_url": "https://www.alexanarch.org/s/records/251/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0035-text.md"
   },
   {
    "id": "18166062",
@@ -14575,7 +16058,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0036.GOVERNANCE.➗👉👁️⚪⚙️🔐",
+   "record_url": "https://www.alexanarch.org/s/records/252/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0036-text.md"
   },
   {
    "id": "18161783",
@@ -14599,7 +16085,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0039.GOVERNANCE.🃏🗼♦️♆⚪🧡",
+   "record_url": "https://www.alexanarch.org/s/records/255/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0039-text.md"
   },
   {
    "id": "18161697",
@@ -14624,7 +16113,11 @@
    "r": [
     "r05",
     "r11"
-   ]
+   ],
+   "axn": "AXN:003A.GOVERNANCE.🌹🔵🧊♎♋🚀",
+   "record_url": "https://www.alexanarch.org/s/records/256/",
+   "works_url": "/works/003a/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-003A-text.md"
   },
   {
    "id": "18159895",
@@ -14643,7 +16136,10 @@
    "assignment": "heuristic",
    "r": [
     "sp01"
-   ]
+   ],
+   "axn": "AXN:003B.GOVERNANCE.🧊🛤️⛳🚪🕐💎",
+   "record_url": "https://www.alexanarch.org/s/records/257/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-003B-text.md"
   },
   {
    "id": "18159823",
@@ -14668,7 +16164,11 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:003C.GOVERNANCE.💚❤️🧭🏙️⏰🃏",
+   "record_url": "https://www.alexanarch.org/s/records/258/",
+   "works_url": "/works/003c/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-003C-text.md"
   },
   {
    "id": "18158575",
@@ -14692,7 +16192,11 @@
    "r": [
     "r05",
     "r08"
-   ]
+   ],
+   "axn": "AXN:0028.GOVERNANCE.✖️🧬👆🌉🎹🟤",
+   "record_url": "https://www.alexanarch.org/s/records/239/",
+   "works_url": "/works/0028/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0028-text.md"
   },
   {
    "id": "18158273",
@@ -14717,7 +16221,11 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0029.GOVERNANCE.🌙🕑🚀📎🛸🔵",
+   "record_url": "https://www.alexanarch.org/s/records/240/",
+   "works_url": "/works/0029/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0029-text.md"
   },
   {
    "id": "18158159",
@@ -14741,7 +16249,10 @@
    "assignment": "heuristic",
    "r": [
     "sp01"
-   ]
+   ],
+   "axn": "AXN:002A.GOVERNANCE.🕐♎🪞🔆🃏🔵",
+   "record_url": "https://www.alexanarch.org/s/records/241/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-002A-text.md"
   },
   {
    "id": "18158140",
@@ -14764,7 +16275,10 @@
    "assignment": "heuristic",
    "r": [
     "sp01"
-   ]
+   ],
+   "axn": "AXN:002B.GOVERNANCE.♃↖️🟡🔻🌟⛵",
+   "record_url": "https://www.alexanarch.org/s/records/242/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-002B-text.md"
   },
   {
    "id": "18158108",
@@ -14788,7 +16302,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:002C.GOVERNANCE.🪄🌓🍄🏠🔜🎯",
+   "record_url": "https://www.alexanarch.org/s/records/243/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-002C-text.md"
   },
   {
    "id": "18157917",
@@ -14815,7 +16332,10 @@
    "r": [
     "r09",
     "r05"
-   ]
+   ],
+   "axn": "AXN:002D.GOVERNANCE.💜☉📋♻️🌖↙️",
+   "record_url": "https://www.alexanarch.org/s/records/244/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-002D-text.md"
   },
   {
    "id": "18156781",
@@ -14845,7 +16365,10 @@
     "r08",
     "r11",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:002F.GOVERNANCE.↘️🐝🔔⊕♅🔔",
+   "record_url": "https://www.alexanarch.org/s/records/246/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-002F-text.md"
   },
   {
    "id": "18156005",
@@ -14870,7 +16393,11 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0030.GOVERNANCE.👋🔜⛳⚫🌖♄",
+   "record_url": "https://www.alexanarch.org/s/records/247/",
+   "works_url": "/works/0030/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0030-text.md"
   },
   {
    "id": "18155364",
@@ -14899,7 +16426,10 @@
     "r05",
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0031.GOVERNANCE.🔓🝊🍂🐝⏩☉",
+   "record_url": "https://www.alexanarch.org/s/records/5/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0031-text.md"
   },
   {
    "id": "18154905",
@@ -14921,7 +16451,10 @@
    "r": [
     "r08",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0032.GOVERNANCE.🕑🚨🔻🍂✋♋",
+   "record_url": "https://www.alexanarch.org/s/records/248/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0032-text.md"
   },
   {
    "id": "18149311",
@@ -14945,7 +16478,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:001B.GOVERNANCE.🗂️◀️🛤️🚀🔜♾️",
+   "record_url": "https://www.alexanarch.org/s/records/226/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-001B-text.md"
   },
   {
    "id": "18149242",
@@ -14972,7 +16508,10 @@
    "r": [
     "r09",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0503.UNCLASSIFIED.🔍♻️🌹🕙🟡🌪️",
+   "record_url": "https://www.alexanarch.org/s/records/1266/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0503-text.md"
   },
   {
    "id": "18148972",
@@ -14993,7 +16532,10 @@
    "r": [
     "r11",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0502.UNCLASSIFIED.🏔️☁️🗂️🫶♋💧",
+   "record_url": "https://www.alexanarch.org/s/records/1265/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0502-text.md"
   },
   {
    "id": "18148298",
@@ -15017,7 +16559,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:001E.GOVERNANCE.🟢💜♌🛤️💛❤️",
+   "record_url": "https://www.alexanarch.org/s/records/229/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-001E-text.md"
   },
   {
    "id": "18147751",
@@ -15043,7 +16588,10 @@
    "r": [
     "r05",
     "r11"
-   ]
+   ],
+   "axn": "AXN:001F.GOVERNANCE.🌲🏗️🏰🏔️🌄🌖",
+   "record_url": "https://www.alexanarch.org/s/records/230/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-001F-text.md"
   },
   {
    "id": "18147740",
@@ -15068,7 +16616,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0020.GOVERNANCE.🕙🪟❌🔩🃏🪞",
+   "record_url": "https://www.alexanarch.org/s/records/231/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0020-text.md"
   },
   {
    "id": "18147346",
@@ -15092,7 +16643,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0021.GOVERNANCE.🚪⏳🔜♉☽🪦",
+   "record_url": "https://www.alexanarch.org/s/records/232/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0021-text.md"
   },
   {
    "id": "18147105",
@@ -15117,7 +16671,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0022.GOVERNANCE.🌹♣️🍂👐🧊👁️‍🗨️",
+   "record_url": "https://www.alexanarch.org/s/records/233/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0022-text.md"
   },
   {
    "id": "18146859",
@@ -15147,7 +16704,10 @@
     "r05",
     "r08",
     "r09"
-   ]
+   ],
+   "axn": "AXN:0023.GOVERNANCE.♥️🚀🎆🌌🜁∮",
+   "record_url": "https://www.alexanarch.org/s/records/234/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0023-text.md"
   },
   {
    "id": "18146840",
@@ -15172,7 +16732,11 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0024.GOVERNANCE.🕒🎹🗝️🌊🔐🕐",
+   "record_url": "https://www.alexanarch.org/s/records/235/",
+   "works_url": "/works/0024/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0024-text.md"
   },
   {
    "id": "18144217",
@@ -15197,7 +16761,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0025.GOVERNANCE.📜📐🤙🕔⏩🔛",
+   "record_url": "https://www.alexanarch.org/s/records/236/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0025-text.md"
   },
   {
    "id": "18144043",
@@ -15224,7 +16791,11 @@
    "r": [
     "r08",
     "sp04"
-   ]
+   ],
+   "axn": "AXN:0026.GOVERNANCE.↖️➗🔒🦋✨⚪",
+   "record_url": "https://www.alexanarch.org/s/records/237/",
+   "works_url": "/works/0026/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0026-text.md"
   },
   {
    "id": "18143771",
@@ -15248,7 +16819,10 @@
    "assignment": "heuristic",
    "r": [
     "r08"
-   ]
+   ],
+   "axn": "AXN:0027.GOVERNANCE.✨🌓🕚♊📐❌",
+   "record_url": "https://www.alexanarch.org/s/records/238/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0027-text.md"
   },
   {
    "id": "18143556",
@@ -15272,7 +16846,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:000B.GOVERNANCE.❤️♍🕛🔚🤙📋",
+   "record_url": "https://www.alexanarch.org/s/records/211/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-000B-text.md"
   },
   {
    "id": "18142686",
@@ -15294,7 +16871,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:000C.EMPIRICAL.🌅🔛👇🕔✖️🔮",
+   "record_url": "https://www.alexanarch.org/s/records/212/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-000C-text.md"
   },
   {
    "id": "18142305",
@@ -15323,7 +16903,10 @@
     "r09",
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:000D.GOVERNANCE.🗼🖊️🌖🏠🔖🍂",
+   "record_url": "https://www.alexanarch.org/s/records/213/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-000D-text.md"
   },
   {
    "id": "18142278",
@@ -15342,7 +16925,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:000E.GOVERNANCE.🕌📝🍁∮🧊♾️",
+   "record_url": "https://www.alexanarch.org/s/records/214/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-000E-text.md"
   },
   {
    "id": "18142049",
@@ -15366,7 +16952,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0011.EMPIRICAL.🧫♄🔖♾️🔛💫",
+   "record_url": "https://www.alexanarch.org/s/records/217/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0011-text.md"
   },
   {
    "id": "18141799",
@@ -15392,7 +16981,10 @@
    "r": [
     "r05",
     "sp01"
-   ]
+   ],
+   "axn": "AXN:0501.UNCLASSIFIED.🧪🚀🛸🕗🔭📖",
+   "record_url": "https://www.alexanarch.org/s/records/1264/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0501-text.md"
   },
   {
    "id": "18141735",
@@ -15416,7 +17008,10 @@
    "assignment": "heuristic",
    "r": [
     "r05"
-   ]
+   ],
+   "axn": "AXN:0013.GOVERNANCE.🕓🔆➖♣️✖️♻️",
+   "record_url": "https://www.alexanarch.org/s/records/219/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0013-text.md"
   },
   {
    "id": "18141617",
@@ -15439,7 +17034,10 @@
    "r": [
     "r11",
     "sp03"
-   ]
+   ],
+   "axn": "AXN:0014.GENERATIVE.🀄🌌🧊🌻📚⊕",
+   "record_url": "https://www.alexanarch.org/s/records/220/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0014-text.md"
   },
   {
    "id": "18136313",
@@ -15461,7 +17059,10 @@
    "assignment": "heuristic",
    "r": [
     "r11"
-   ]
+   ],
+   "axn": "AXN:0007.EMPIRICAL.🕗🔒🪟♻️✏️🕔",
+   "record_url": "https://www.alexanarch.org/s/records/207/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0007-text.md"
   },
   {
    "id": "19447089",
@@ -15485,7 +17086,10 @@
     "r06",
     "r12"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
+   "record_url": "https://www.alexanarch.org/s/records/965/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03D1-text.md"
   },
   {
    "id": "19447119",
@@ -15511,7 +17115,10 @@
     "r12",
     "r05"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
+   "record_url": "https://www.alexanarch.org/s/records/965/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03D1-text.md"
   },
   {
    "id": "19447121",
@@ -15536,7 +17143,10 @@
     "r08",
     "r05"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
+   "record_url": "https://www.alexanarch.org/s/records/1221/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04D6-text.md"
   },
   {
    "id": "19447123",
@@ -15562,7 +17172,10 @@
     "r12",
     "r28"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:03D2.ARCHIVAL.✊🕛🎆↙️🙏👋",
+   "record_url": "https://www.alexanarch.org/s/records/966/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03D2-text.md"
   },
   {
    "id": "19405459",
@@ -15584,7 +17197,11 @@
     "r05",
     "r11"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:0554.UNCLASSIFIED.🕐⌛🏺🤝🪞♾️",
+   "record_url": "https://www.alexanarch.org/s/records/1347/",
+   "works_url": "/works/0554/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0554-text.md"
   },
   {
    "id": "19412081",
@@ -15606,7 +17223,10 @@
     "r05",
     "r08"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01DD.GOVERNANCE.🤲🟢🟤📎🪦☉",
+   "record_url": "https://www.alexanarch.org/s/records/50/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01DD-text.md"
   },
   {
    "id": "19442251",
@@ -15628,7 +17248,10 @@
     "f02",
     "r05"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:0555.UNCLASSIFIED.🌇▽🥁🚪⛩️🙏",
+   "record_url": "https://www.alexanarch.org/s/records/1348/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0555-text.md"
   },
   {
    "id": "19442262",
@@ -15648,7 +17271,10 @@
    "r": [
     "f02"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:0556.UNCLASSIFIED.🔭♋🌺👈🕊️🏷️",
+   "record_url": "https://www.alexanarch.org/s/records/1349/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0556-text.md"
   },
   {
    "id": "19455105",
@@ -15673,7 +17299,11 @@
     "r11",
     "r08"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:04EA.UNCLASSIFIED.🔧🕛🛸🔜🫶🔧",
+   "record_url": "https://www.alexanarch.org/s/records/1241/",
+   "works_url": "/works/04ea/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04EA-text.md"
   },
   {
    "id": "19432476",
@@ -15693,7 +17323,10 @@
    "r": [
     "sp01"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:04E5.UNCLASSIFIED.🔓🔽🔀♍🪄🌓",
+   "record_url": "https://www.alexanarch.org/s/records/1236/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-04E5-text.md"
   },
   {
    "id": "19429665",
@@ -15715,7 +17348,11 @@
    "r": [
     "r11"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01E0.GOVERNANCE.🌈🎺🔍🔥🍄🪸",
+   "record_url": "https://www.alexanarch.org/s/records/627/",
+   "works_url": "/works/01e0/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01E0-text.md"
   },
   {
    "id": "19425446",
@@ -15737,7 +17374,10 @@
    "r": [
     "r11"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:0553.UNCLASSIFIED.🔬✖️🃏➕☿♠️",
+   "record_url": "https://www.alexanarch.org/s/records/1346/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0553-text.md"
   },
   {
    "id": "19412140",
@@ -15805,7 +17445,10 @@
    "r": [
     "r11"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01DC.GOVERNANCE.⏳🔆⛳👁️▲🔀",
+   "record_url": "https://www.alexanarch.org/s/records/49/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01DC-text.md"
   },
   {
    "id": "19380602",
@@ -15827,7 +17470,11 @@
    "r": [
     "sp01"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁",
+   "record_url": "https://www.alexanarch.org/s/records/621/",
+   "works_url": "/works/01d8/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D8-text.md"
   },
   {
    "id": "19372914",
@@ -15850,7 +17497,10 @@
     "r02",
     "r08"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01D9.GOVERNANCE.👈🕕🍄🧲🪄∞",
+   "record_url": "https://www.alexanarch.org/s/records/622/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D9-text.md"
   },
   {
    "id": "19369124",
@@ -15872,7 +17522,10 @@
    "r": [
     "r05"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01DA.GOVERNANCE.⭕◀️🔧🎹❄️🐚",
+   "record_url": "https://www.alexanarch.org/s/records/623/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01DA-text.md"
   },
   {
    "id": "19366750",
@@ -15894,7 +17547,11 @@
    "r": [
     "r05"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01DB.GOVERNANCE.♣️🪧📦⏬🌑🌙",
+   "record_url": "https://www.alexanarch.org/s/records/624/",
+   "works_url": "/works/01db/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01DB-text.md"
   },
   {
    "id": "19359736",
@@ -15939,7 +17596,10 @@
    "r": [
     "r11"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:03CB.ARCHIVAL.♣️⚙️🎪🔓⭐🕗",
+   "record_url": "https://www.alexanarch.org/s/records/959/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03CB-text.md"
   },
   {
    "id": "19458363",
@@ -15962,7 +17622,11 @@
     "sp03",
     "sp01"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01EA.GOVERNANCE.⊗🧡🕒👉🎹☽",
+   "record_url": "https://www.alexanarch.org/s/records/53/",
+   "works_url": "/works/01ea/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01EA-text.md"
   },
   {
    "id": "19458359",
@@ -15983,7 +17647,10 @@
     "f03",
     "sp03"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01E9.GOVERNANCE.🤝🌊💜📏♣️⚡",
+   "record_url": "https://www.alexanarch.org/s/records/634/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01E9-text.md"
   },
   {
    "id": "19460376",
@@ -16006,7 +17673,10 @@
     "r08",
     "sp03"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:03D3.ARCHIVAL.∮△🕕🌹⚖️🔜",
+   "record_url": "https://www.alexanarch.org/s/records/967/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-03D3-text.md"
   },
   {
    "id": "19460665",
@@ -16050,7 +17720,10 @@
     "sp01",
     "f02"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:0576.UNCLASSIFIED.🏴⊕👇□🔚⛵",
+   "record_url": "https://www.alexanarch.org/s/records/1381/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0576-text.md"
   },
   {
    "id": "19460944",
@@ -16070,7 +17743,10 @@
    "r": [
     "r11"
    ],
-   "s": "RATIFIED"
+   "s": "RATIFIED",
+   "axn": "AXN:01D4.GOVERNANCE.∞🟠🌘🕛♾️🔵",
+   "record_url": "https://www.alexanarch.org/s/records/618/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-01D4-text.md"
   }
  ],
  "dodecad": [
@@ -16392,7 +18068,12 @@
   },
   "total_deposits_note": "REMOVED as a live figure. This was a snapshot of the ARCHIVE total frozen 2026-04-07 and drifted to 51 behind. The archive count belongs to https://www.alexanarch.org/api/counts.json and must be fetched. What this file legitimately counts is its OWN seated corpus: len(documents) and len(rooms).",
   "seated_documents": 482,
-  "seated_rooms": 38
+  "seated_rooms": 38,
+  "archive_links": {
+   "added": "2026-09-25",
+   "source": "alexanarch data/doi-resolution-index.json",
+   "note": "Documents carry axn, record_url and text_url in the Alexanarch archive; the Zenodo DOIs are severed (account terminated 2026-06-19) and kept as former identifiers. works_url and rooms' page_url point to this site's machine-facing pages."
+  }
  },
  "relations": [
   {
