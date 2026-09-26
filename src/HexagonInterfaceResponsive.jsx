@@ -153,6 +153,52 @@ function normalizeRelation(rel) {
   return { id: rel.id || `${rel.from}-${rel.type}-${rel.to}`, from: rel.from, to: rel.to, type: rel.type || "relates_to", status: rel.status || "RATIFIED" };
 }
 
+// ─── Fleet network (rendered from the canonical fleet index) ───
+const FLEET_URL = "https://www.alexanarch.org/api/fleet.json";
+function FleetNetwork({ isMobile }) {
+  const [fleet, setFleet] = useState(null);
+  useEffect(() => {
+    let live = true;
+    fetch(FLEET_URL, { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(d => { if (live && d?.sections) setFleet(d); }).catch(() => {});
+    return () => { live = false; };
+  }, []);
+  const linkStyle = { color: THEME.txMute, textDecoration: "none", borderBottom: `1px solid ${THEME.gold}33`, transition: THEME.t };
+  const hover = { onMouseEnter: e => e.currentTarget.style.color = THEME.gold, onMouseLeave: e => e.currentTarget.style.color = THEME.txMute };
+  return (
+    <div id="network" style={{ marginTop: 36, paddingTop: 18, borderTop: `1px solid ${THEME.border}`, textAlign: "left", fontFamily: THEME.ff.serif }}>
+      <div style={{ fontSize: 12, color: THEME.tx, marginBottom: 4 }}>Crimson Hexagonal Archive — Network</div>
+      <div style={{ fontSize: 10, color: THEME.txMute, fontStyle: "italic", marginBottom: 12 }}>Archive · Framework Sites · Heteronym Institutions · Allied Sites</div>
+      {!fleet && (
+        <a href="https://www.alexanarch.org/fleet/" target="_blank" rel="noreferrer" style={{ ...linkStyle, fontSize: 11 }} {...hover}>The fleet, at alexanarch.org/fleet/</a>
+      )}
+      {fleet && fleet.sections.map(sec => (
+        <div key={sec.name} style={{ marginBottom: 12 }}>
+          <div style={{ fontSize: 9, fontFamily: THEME.ff.mono, letterSpacing: THEME.ls.wide, color: THEME.txMute, textTransform: "uppercase", margin: "10px 0 6px" }}>{sec.name}</div>
+          <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(2, minmax(0, 1fr))" : "repeat(3, minmax(0, 1fr))", columnGap: 18, rowGap: 6, fontSize: 11, lineHeight: 1.5 }}>
+            {sec.sites.map(site => {
+              const href = site.url || `https://${site.d}/`;
+              const label = site.label || site.d;
+              return (
+                <div key={href} style={{ wordBreak: "break-word" }}>
+                  <a href={href} target="_blank" rel="noreferrer" style={linkStyle} {...hover}>{label}</a>
+                  {site.note && <span style={{ color: THEME.txMute, opacity: 0.7 }}> ({site.note})</span>}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+      {fleet && (fleet._footer || []).length > 0 && (
+        <div style={{ marginTop: 10, fontSize: 10, color: THEME.txMute }}>
+          {fleet._footer.map((f, i) => (
+            <span key={f}>{i > 0 && " · "}<a href={`https://${f}`} target="_blank" rel="noreferrer" style={{ ...linkStyle, borderBottom: "none" }} {...hover}>{f.split("/")[0]}</a></span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Archive Reader ───
 // The Zenodo account behind these DOIs was terminated on 2026-06-19. Texts are read from
 // Alexanarch, which serves them with open CORS; each document carries its text_url.
@@ -2162,8 +2208,9 @@ ${data.rooms.length} rooms, ${data.documents.length} deposits, ${data.relations.
               <span style={{ color: THEME.green }}>● Canonical</span>
               <span style={{ color: isSupabaseConfigured() ? THEME.green : THEME.txFaint }}>{isSupabaseConfigured() ? "●" : "○"} Supabase</span>
               <span style={{ color: isGravityWellConfigured() ? THEME.green : THEME.txFaint }}>{isGravityWellConfigured() ? "●" : "○"} GW</span>
-              <span style={{ color: THEME.green }}>● Zenodo</span>
+              <span style={{ color: THEME.green }}>● Alexanarch</span>
             </div>
+            <FleetNetwork isMobile={isMobile} />
           </div>
         </div>
       </div>
