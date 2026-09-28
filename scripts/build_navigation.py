@@ -76,7 +76,7 @@ color:#c8a868;margin:0 0 .7rem}}
 {body}
 <div class="prov">Generated {TODAY} from hexagon_canonical.json &middot;
 <a href="/rooms/">rooms</a> &middot; <a href="https://www.alexanarch.org/">alexanarch</a> &middot; &#8750; = 1</div>
-</div></body></html>"""
+</div><script src="https://www.alexanarch.org/assets/counts.js" defer></script></body></html>"""
 
 
 ROOMS = CANON["rooms"]
@@ -120,7 +120,7 @@ replace the texts, and that no map, dashboard or mode becomes the whole Archive.
 <p>Every node below is shown twice. <b>The current projection is generated, dated and disposable.
 The historical specification is a ratified document and is not edited.</b></p>
 <p>The four principal navigation documents describe the state of 16 March 2026 &mdash; 387
-DOI-anchored records, 2,851 typed edges. The archive now holds 1,488 deposits. <b>Those documents
+DOI-anchored records, 2,851 typed edges. The archive now holds <span data-count="deposits.total">1,647</span> deposits. <b>Those documents
 are not stale; they are evidence.</b> Rewriting them to contain the present would destroy the record
 of what the architecture was when it was ratified, and would make the DOI-era loss undocumentable.
 So their functions are re-executed here instead, and nothing generated is called a new version.</p>
