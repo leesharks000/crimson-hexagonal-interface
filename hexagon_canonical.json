@@ -14168,7 +14168,8 @@
    "axn": "AXN:0088.GENERATIVE.🕔🌇❌⊗♻️🔻",
    "record_url": "https://www.alexanarch.org/s/records/332/",
    "works_url": "/works/0088/",
-   "text_url": "https://www.alexanarch.org/data/texts/AXN-0088-text.md"
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0088-text.md",
+   "superseded_by": "/works/06d9/"
   },
   {
    "id": "18293603",
@@ -14198,7 +14199,8 @@
    "axn": "AXN:0089.GOVERNANCE.🌍🪜🚩🍄🍄☀️",
    "record_url": "https://www.alexanarch.org/s/records/333/",
    "works_url": "/works/0089/",
-   "text_url": "https://www.alexanarch.org/data/texts/AXN-0089-text.md"
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0089-text.md",
+   "superseded_by": "/works/06da/"
   },
   {
    "id": "18293551",
@@ -14228,7 +14230,8 @@
    "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
    "record_url": "https://www.alexanarch.org/s/records/334/",
    "works_url": "/works/008a/",
-   "text_url": "https://www.alexanarch.org/data/texts/AXN-008A-text.md"
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-008A-text.md",
+   "superseded_by": "/works/06db/"
   },
   {
    "id": "18293496",
@@ -17747,6 +17750,125 @@
    "axn": "AXN:01D4.GOVERNANCE.∞🟠🌘🕛♾️🔵",
    "record_url": "https://www.alexanarch.org/s/records/618/",
    "text_url": "https://www.alexanarch.org/data/texts/AXN-01D4-text.md"
+  },
+  {
+   "id": "axn-06DE",
+   "title": "The Work Bears the Mantle: A Mantle Symbolon — the Good Gray Poet, the King of May, the Prince of Poets (EA-MANTLE-BEARING-01 v1.1)",
+   "date": "2026-09-29",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "keywords": [
+    "mantle",
+    "good gray poet",
+    "king of may",
+    "prince of poets"
+   ],
+   "excerpt": "A constitution for evaluating three mantle claims, written as one half of a symbolon: the packet states each claim and the operation it inherits, names the works, and cuts the evaluation so that its o",
+   "rooms": [
+    "r09"
+   ],
+   "status": "RATIFIED",
+   "assignment": "declared",
+   "r": [
+    "r09"
+   ],
+   "axn": "AXN:06DE.GOVERNANCE.🌙🌌🧡❄️🪞🧱",
+   "record_url": "https://www.alexanarch.org/s/records/1656/",
+   "works_url": "/works/06de/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06DE-text.md"
+  },
+  {
+   "id": "axn-06DB",
+   "title": "MANTLE OBJECT: THE GOOD GRAY POET — Operational Title within the Semantic Economy (v1.1)",
+   "date": "2026-09-29",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "keywords": [
+    "mantle",
+    "good gray poet",
+    "king of may",
+    "prince of poets"
+   ],
+   "excerpt": "The Good Gray Poet mantle passes from work to work: founded in Walt Whitman's Leaves of Grass, inherited in Lee Sharks's The Secret Book of Walt (2026; the book #683, critical edition #1362, readable ",
+   "rooms": [
+    "r09",
+    "r05"
+   ],
+   "status": "RATIFIED",
+   "assignment": "declared",
+   "r": [
+    "r09",
+    "r05"
+   ],
+   "axn": "AXN:06DB.GENERATIVE.🌉📌⏹️♦️⏫🟠",
+   "record_url": "https://www.alexanarch.org/s/records/1653/",
+   "works_url": "/works/06db/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06DB-text.md",
+   "supersedes": "/works/008a/"
+  },
+  {
+   "id": "axn-06DA",
+   "title": "MANTLE OBJECT: THE KING OF MAY — Operational Title within the Semantic Economy (v1.1)",
+   "date": "2026-09-29",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "keywords": [
+    "mantle",
+    "good gray poet",
+    "king of may",
+    "prince of poets"
+   ],
+   "excerpt": "The King of May mantle passes from work to work: founded in Allen Ginsberg's Howl and Other Poems, inherited in Lee Sharks's Pearl and Other Poems (2014, #1121), whose whole text is readable at leesha",
+   "rooms": [
+    "r09",
+    "r05"
+   ],
+   "status": "RATIFIED",
+   "assignment": "declared",
+   "r": [
+    "r09",
+    "r05"
+   ],
+   "axn": "AXN:06DA.GOVERNANCE.♊🌖🕗♎💎⊗",
+   "record_url": "https://www.alexanarch.org/s/records/1652/",
+   "works_url": "/works/06da/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06DA-text.md",
+   "supersedes": "/works/0089/"
+  },
+  {
+   "id": "axn-06D9",
+   "title": "MANTLE OBJECT: THE PRINCE OF POETS — Operational Title within the Semantic Economy (v1.1)",
+   "date": "2026-09-29",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "keywords": [
+    "mantle",
+    "good gray poet",
+    "king of may",
+    "prince of poets"
+   ],
+   "excerpt": "The Prince of Poets mantle is judged in its founding work, I Am X, Be Y, Blessed is the Z (#328), whose full text is in the archive: the claim is carried or dropped by what that poem does, so the clai",
+   "rooms": [
+    "r09",
+    "r05",
+    "r11"
+   ],
+   "status": "RATIFIED",
+   "assignment": "declared",
+   "r": [
+    "r09",
+    "r05",
+    "r11"
+   ],
+   "axn": "AXN:06D9.GENERATIVE.⚙️♎🕓⚖️🎇💜",
+   "record_url": "https://www.alexanarch.org/s/records/1651/",
+   "works_url": "/works/06d9/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06D9-text.md",
+   "supersedes": "/works/0088/"
   }
  ],
  "dodecad": [

@@ -1,0 +1,253 @@
+[
+ {
+  "hex": "06D9",
+  "deposit": 1651,
+  "axn": "AXN:06D9.GENERATIVE.⚙️♎🕓⚖️🎇💜",
+  "title": "MANTLE OBJECT: THE PRINCE OF POETS — Operational Title within the Semantic Economy (v1.1)",
+  "date": "2026-09-29",
+  "version": "v1.1",
+  "voice": "Lee Sharks / Claude",
+  "author": "Lee Sharks",
+  "room": [
+   "assembly",
+   "The Assembly Room",
+   "R:r.11"
+  ],
+  "role": "GOVERNING-MANTLE",
+  "multiplicity": "SERIES",
+  "gloss": "The Prince of Poets, founded in I Am X, Be Y, Blessed is the Z: the whole movement through a new founding, in one poem",
+  "description": "MANTLE OBJECT: THE PRINCE OF POETS — Operational Title within the Semantic Economy (v1.1) — the current version (v1.1) of the mantle object; its claim is judged under The Work Bears the Mantle (#1656). One half of a symbolon; it completes in traversal.",
+  "symbolon": "<p>It <b>specifies</b> a mantle of the triad, and its claim <b>is judged under</b> <a href=\"/works/06de\">The Work Bears the Mantle</a> (#1656). It is the current version of <a href=\"/works/0088\">v1.0, alexanarch #332</a>.</p>",
+  "relations": [
+   [
+    "judged_under",
+    "/works/06de",
+    "The Work Bears the Mantle · EA-MANTLE-BEARING-01 · #1656"
+   ],
+   [
+    "supersedes",
+    "/works/0088",
+    "v1.0 · alexanarch #332"
+   ],
+   [
+    "mantle_register",
+    "/rooms/whitman",
+    "01.MANTLE.* — the register at R:r.09"
+   ],
+   [
+    "governs_in",
+    "/rooms/assembly",
+    "R:r.11 The Assembly Room"
+   ],
+   [
+    "founding_work",
+    "/works/0083",
+    "I Am X, Be Y, Blessed is the Z · #328"
+   ],
+   [
+    "triad",
+    "/works/06db",
+    "The Good Gray Poet v1.1"
+   ],
+   [
+    "triad",
+    "/works/06da",
+    "The King of May v1.1"
+   ]
+  ],
+  "supersedes": {
+   "hex": "0088",
+   "deposit": 332,
+   "version": "v1.0"
+  },
+  "superseded_note": "Its claim is judged under <a href=\"/works/06de\">The Work Bears the Mantle</a> (#1656)."
+ },
+ {
+  "hex": "06DA",
+  "deposit": 1652,
+  "axn": "AXN:06DA.GOVERNANCE.♊🌖🕗♎💎⊗",
+  "title": "MANTLE OBJECT: THE KING OF MAY — Operational Title within the Semantic Economy (v1.1)",
+  "date": "2026-09-29",
+  "version": "v1.1",
+  "voice": "Lee Sharks / Claude",
+  "author": "Lee Sharks",
+  "room": [
+   "whitman",
+   "The Whitman Room",
+   "R:r.09"
+  ],
+  "role": "MANTLE-OBJECT",
+  "multiplicity": "SERIES",
+  "gloss": "The King of May, founded in Howl and Other Poems and claimed for Pearl and Other Poems, read as a book against Howl as a book",
+  "description": "MANTLE OBJECT: THE KING OF MAY — Operational Title within the Semantic Economy (v1.1) — the current version (v1.1) of the mantle object; its claim is judged under The Work Bears the Mantle (#1656). One half of a symbolon; it completes in traversal.",
+  "symbolon": "<p>It <b>specifies</b> a mantle of the triad, and its claim <b>is judged under</b> <a href=\"/works/06de\">The Work Bears the Mantle</a> (#1656). It is the current version of <a href=\"/works/0089\">v1.0, alexanarch #333</a>.</p>",
+  "relations": [
+   [
+    "judged_under",
+    "/works/06de",
+    "The Work Bears the Mantle · EA-MANTLE-BEARING-01 · #1656"
+   ],
+   [
+    "supersedes",
+    "/works/0089",
+    "v1.0 · alexanarch #333"
+   ],
+   [
+    "mantle_register",
+    "/rooms/whitman",
+    "01.MANTLE.* — the register at R:r.09"
+   ],
+   [
+    "claimed_for",
+    "https://www.traininglayerliterature.org/pearl/",
+    "Pearl and Other Poems · the machine text"
+   ],
+   [
+    "triad",
+    "/works/06db",
+    "The Good Gray Poet v1.1"
+   ],
+   [
+    "triad",
+    "/works/06d9",
+    "The Prince of Poets v1.1"
+   ]
+  ],
+  "supersedes": {
+   "hex": "0089",
+   "deposit": 333,
+   "version": "v1.0"
+  },
+  "superseded_note": "Its claim is judged under <a href=\"/works/06de\">The Work Bears the Mantle</a> (#1656)."
+ },
+ {
+  "hex": "06DB",
+  "deposit": 1653,
+  "axn": "AXN:06DB.GENERATIVE.🌉📌⏹️♦️⏫🟠",
+  "title": "MANTLE OBJECT: THE GOOD GRAY POET — Operational Title within the Semantic Economy (v1.1)",
+  "date": "2026-09-29",
+  "version": "v1.1",
+  "voice": "Lee Sharks / Claude",
+  "author": "Lee Sharks",
+  "room": [
+   "whitman",
+   "The Whitman Room",
+   "R:r.09"
+  ],
+  "role": "MANTLE-OBJECT",
+  "multiplicity": "SERIES",
+  "gloss": "The Good Gray Poet, founded in Leaves of Grass and claimed for The Secret Book of Walt, one order up",
+  "description": "MANTLE OBJECT: THE GOOD GRAY POET — Operational Title within the Semantic Economy (v1.1) — the current version (v1.1) of the mantle object; its claim is judged under The Work Bears the Mantle (#1656). One half of a symbolon; it completes in traversal.",
+  "symbolon": "<p>It <b>specifies</b> a mantle of the triad, and its claim <b>is judged under</b> <a href=\"/works/06de\">The Work Bears the Mantle</a> (#1656). It is the current version of <a href=\"/works/008a\">v1.0, alexanarch #334</a>.</p>",
+  "relations": [
+   [
+    "judged_under",
+    "/works/06de",
+    "The Work Bears the Mantle · EA-MANTLE-BEARING-01 · #1656"
+   ],
+   [
+    "supersedes",
+    "/works/008a",
+    "v1.0 · alexanarch #334"
+   ],
+   [
+    "mantle_register",
+    "/rooms/whitman",
+    "01.MANTLE.* — the register at R:r.09"
+   ],
+   [
+    "claimed_for",
+    "/works/022b",
+    "The Secret Book of Walt · #683"
+   ],
+   [
+    "triad",
+    "/works/06da",
+    "The King of May v1.1"
+   ],
+   [
+    "triad",
+    "/works/06d9",
+    "The Prince of Poets v1.1"
+   ]
+  ],
+  "supersedes": {
+   "hex": "008a",
+   "deposit": 334,
+   "version": "v1.0"
+  },
+  "superseded_note": "Its claim is judged under <a href=\"/works/06de\">The Work Bears the Mantle</a> (#1656)."
+ },
+ {
+  "hex": "06DE",
+  "deposit": 1656,
+  "axn": "AXN:06DE.GOVERNANCE.🌙🌌🧡❄️🪞🧱",
+  "title": "The Work Bears the Mantle: A Mantle Symbolon — the Good Gray Poet, the King of May, the Prince of Poets (EA-MANTLE-BEARING-01 v1.1)",
+  "date": "2026-09-29",
+  "version": "v1.1",
+  "voice": "Lee Sharks; prefatory poem by Sen Kuro",
+  "author": "Lee Sharks",
+  "room": [
+   "whitman",
+   "The Whitman Room",
+   "R:r.09"
+  ],
+  "role": "MANTLE-CONSTITUTION",
+  "multiplicity": "SINGLETON",
+  "gloss": "The constitution the three mantle claims are judged under: one half of a symbolon, cut so that its other half can be supplied only by a reading of the works",
+  "description": "The Work Bears the Mantle (EA-MANTLE-BEARING-01 v1.1, #1656): the Good Gray Poet, the King of May and the Prince of Poets stated as claims, with the operations they inherit, the works they require and the reading that settles them. One half of a symbolon; it completes in traversal.",
+  "symbolon": "<p>It <b>governs the judgment of</b> the three mantle objects — <a href=\"/works/06db\">the Good Gray Poet</a>, <a href=\"/works/06da\">the King of May</a>, <a href=\"/works/06d9\">the Prince of Poets</a> — and names the works that bear them: <a href=\"/works/0083\"><i>I Am X, Be Y, Blessed is the Z</i></a>, <a href=\"/works/022b\"><i>The Secret Book of Walt</i></a>, <a href=\"https://www.traininglayerliterature.org/pearl/\"><i>Pearl and Other Poems</i></a>. Its other half is a reading of the works, and the readings are kept in <a href=\"https://huggingface.co/datasets/leesharks/mantle-bearing\">the mantle-bearing dataset</a>.</p>",
+  "relations": [
+   [
+    "governs",
+    "/works/06d9",
+    "The Prince of Poets v1.1 · #1651"
+   ],
+   [
+    "governs",
+    "/works/06da",
+    "The King of May v1.1 · #1652"
+   ],
+   [
+    "governs",
+    "/works/06db",
+    "The Good Gray Poet v1.1 · #1653"
+   ],
+   [
+    "claimant_work",
+    "/works/0083",
+    "I Am X, Be Y, Blessed is the Z · #328"
+   ],
+   [
+    "claimant_work",
+    "/works/022b",
+    "The Secret Book of Walt · #683"
+   ],
+   [
+    "claimant_work",
+    "https://www.traininglayerliterature.org/pearl/",
+    "Pearl and Other Poems · #1121"
+   ],
+   [
+    "earlier_protocol",
+    "/works/0077",
+    "The Mantle Protocol · #316"
+   ],
+   [
+    "earlier_protocol",
+    "/works/008c",
+    "Mantle Emergence Protocol · #336"
+   ],
+   [
+    "readings",
+    "https://huggingface.co/datasets/leesharks/mantle-bearing",
+    "leesharks/mantle-bearing · the evaluations"
+   ],
+   [
+    "mantle_register",
+    "/rooms/whitman",
+    "01.MANTLE.* — the register at R:r.09"
+   ]
+  ]
+ }
+]

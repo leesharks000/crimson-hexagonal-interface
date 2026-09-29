@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.crimsonhexagonal.org/</loc><lastmod>2026-09-06</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/</loc><lastmod>2026-09-28</lastmod><priority>1.0</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/map</loc><lastmod>2026-09-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/navigation</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/navigation</loc><lastmod>2026-09-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/navigation/central-map</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/navigation/fractal-map</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/navigation/registry</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/navigation/space-ark</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/queue</loc><lastmod>2026-09-06</lastmod><priority>0.5</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/3-60</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/airlock</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/assembly</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/assembly</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/borges</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/break-room</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/caritas</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/break-room</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/caritas</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/catullus</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/cti-wound</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/cti-wound</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/dove</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/eve</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/ezekiel</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/fbdp-source</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/frozen-sin-archive</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/fruiting-body-diffusion-plume</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/gravity-well</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/ichabod</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/gravity-well</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/ichabod</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/imploding-velcro-nativity</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/infinite-bliss</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/internet</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/job-room</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/josephus-thesis</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/lagrange-observatory</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/lambda-engine</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/library-of-pergamum</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/lambda-engine</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/library-of-pergamum</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/lunar-arm</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/machine-dialectic</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/machine-dialectic</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/macro-maquette</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/mandala</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/mandala</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/marx-room</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/maybe-space-baby-garden-lanes</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/migdal-room</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/moltbot-swarm</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/moving-statues-made-of-rubies-mint</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/operator-vertical</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/operator-vertical</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/portico</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/restored-academy</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/revelation</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/restored-academy</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/revelation</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/rosary-embassy</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/ruby-moot</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/sacred-heart</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/sappho</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/semantic-economy</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/sigil</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/singularity</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/semantic-economy</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/sigil</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/singularity</loc><lastmod>2026-09-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/space-ark</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/studio-for-patacinematics</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/thousand-worlds</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/underwater-construction-authority-of-dolphindiana</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/rooms/water-giraffe</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/rooms/water-giraffe</loc><lastmod>2026-09-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/rooms/whitman</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/structures/armature</loc><lastmod>2026-09-04</lastmod><priority>0.5</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/structures/pearl</loc><lastmod>2026-09-04</lastmod><priority>0.5</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/structures/secret-name</loc><lastmod>2026-09-04</lastmod><priority>0.5</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0024</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0026</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0028</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0029</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/structures/armature</loc><lastmod>2026-09-05</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/structures/pearl</loc><lastmod>2026-09-05</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/structures/secret-name</loc><lastmod>2026-09-05</lastmod><priority>0.5</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0024</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0026</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0028</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0029</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0030</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0038</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/003a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/003c</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/003a</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/003c</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/003f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0043</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0044</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -86,39 +86,39 @@
   <url><loc>https://www.crimsonhexagonal.org/works/006b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/006d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/006e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/006f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/006f</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0073</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0074</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0077</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/007f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0083</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0084</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0084</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0085</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0088</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0089</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/008a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/008c</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/008d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/008d</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/008f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0095</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/009a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/009a</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/009c</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/009d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/009e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00a0</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/009d</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/009e</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00a0</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00a1</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00a7</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00a8</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00a7</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00a8</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00a9</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00ac</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00ad</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00ae</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00b1</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00b2</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00b3</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00b4</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00b5</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00b6</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00ac</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00ad</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00ae</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00b1</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00b2</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00b3</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00b4</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00b5</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00b6</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00b7</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00c8</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00c9</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -126,10 +126,10 @@
   <url><loc>https://www.crimsonhexagonal.org/works/00cb</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00cf</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00d3</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00d8</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00da</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00db</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/00dc</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00d8</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00da</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00db</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/00dc</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00e5</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00e6</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/00ec</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -169,7 +169,7 @@
   <url><loc>https://www.crimsonhexagonal.org/works/013e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/013f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0142</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0144</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0144</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0146</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0147</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0148</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -204,7 +204,7 @@
   <url><loc>https://www.crimsonhexagonal.org/works/0183</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0184</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0185</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0186</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0186</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/018c</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/018d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/018e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -237,8 +237,8 @@
   <url><loc>https://www.crimsonhexagonal.org/works/01df</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/01e0</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/01e6</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/01e7</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/01e8</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/01e7</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/01e8</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/01ea</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/01ec</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/01ee</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -259,47 +259,47 @@
   <url><loc>https://www.crimsonhexagonal.org/works/0228</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0229</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/022b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/022d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/022d</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0231</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0237</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0245</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/024f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0250</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/024f</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0250</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/025d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0262</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0264</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0265</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0266</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0267</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0269</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/026a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0262</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0264</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0265</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0266</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0267</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0269</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/026a</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0272</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/027b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0281</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0282</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0283</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0286</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0281</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0282</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0283</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0286</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0287</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0288</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0289</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/028a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/028b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/028d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/028f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/028d</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/028f</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0293</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0294</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/029d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/029d</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02a1</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02a3</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02a4</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02a9</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/02bf</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/02bf</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02c7</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02e1</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02e8</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/02f9</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/02f9</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/02fc</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0300</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0300</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0306</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/030b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0311</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -309,7 +309,7 @@
   <url><loc>https://www.crimsonhexagonal.org/works/0339</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/033a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/033f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0348</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0348</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/034a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/034b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/034d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -341,15 +341,15 @@
   <url><loc>https://www.crimsonhexagonal.org/works/03e2</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/03e4</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/03ec</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/03ed</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/03ed</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/03f2</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/03f6</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/03ff</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/040d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/040d</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0426</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0446</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/045e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0465</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0465</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0478</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0479</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/047b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -366,7 +366,7 @@
   <url><loc>https://www.crimsonhexagonal.org/works/04f8</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0505</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0507</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/050d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/050d</loc><lastmod>2026-09-25</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0510</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0511</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0512</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -378,24 +378,24 @@
   <url><loc>https://www.crimsonhexagonal.org/works/051c</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/051d</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/051f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0524</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0524</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0525</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0526</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0527</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/052a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/052e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/052f</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0532</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0532</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0537</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0539</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0539</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/053a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/053b</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/053c</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0540</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0543</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/0546</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0543</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/0546</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/054a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
-  <url><loc>https://www.crimsonhexagonal.org/works/054e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/054e</loc><lastmod>2026-09-06</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0554</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/055e</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0562</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
@@ -428,4 +428,8 @@
   <url><loc>https://www.crimsonhexagonal.org/works/0619</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/061a</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.crimsonhexagonal.org/works/0623</loc><lastmod>2026-09-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/06d9</loc><lastmod>2026-09-29</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/06da</loc><lastmod>2026-09-29</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/06db</loc><lastmod>2026-09-29</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.crimsonhexagonal.org/works/06de</loc><lastmod>2026-09-29</lastmod><priority>0.6</priority></url>
 </urlset>

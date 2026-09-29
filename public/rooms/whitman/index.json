@@ -45,6 +45,72 @@
  ],
  "documents": [
   {
+   "title": "MANTLE OBJECT: THE PRINCE OF POETS — Operational Title within the Semantic Economy (v1.1)",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "The Prince of Poets mantle is judged in its founding work, I Am X, Be Y, Blessed is the Z (#328), whose full text is in the archive: the claim is carried or dropped by what that poem does, so the clai",
+   "axn": "AXN:06D9.GENERATIVE.⚙️♎🕓⚖️🎇💜",
+   "canonical_url": "https://www.alexanarch.org/s/records/1651/",
+   "deposit_number": 1651,
+   "date": "2026-09-29",
+   "version": "v1.1",
+   "works_url": "/works/06d9",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06D9-text.md",
+   "status": "ACTIVE",
+   "supersedes": 332,
+   "supersedes_works_url": "/works/0088"
+  },
+  {
+   "title": "MANTLE OBJECT: THE KING OF MAY — Operational Title within the Semantic Economy (v1.1)",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "The King of May mantle passes from work to work: founded in Allen Ginsberg's Howl and Other Poems, inherited in Lee Sharks's Pearl and Other Poems (2014, #1121), whose whole text is readable at leesha",
+   "axn": "AXN:06DA.GOVERNANCE.♊🌖🕗♎💎⊗",
+   "canonical_url": "https://www.alexanarch.org/s/records/1652/",
+   "deposit_number": 1652,
+   "date": "2026-09-29",
+   "version": "v1.1",
+   "works_url": "/works/06da",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06DA-text.md",
+   "status": "ACTIVE",
+   "supersedes": 333,
+   "supersedes_works_url": "/works/0089"
+  },
+  {
+   "title": "MANTLE OBJECT: THE GOOD GRAY POET — Operational Title within the Semantic Economy (v1.1)",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "The Good Gray Poet mantle passes from work to work: founded in Walt Whitman's Leaves of Grass, inherited in Lee Sharks's The Secret Book of Walt (2026; the book #683, critical edition #1362, readable ",
+   "axn": "AXN:06DB.GENERATIVE.🌉📌⏹️♦️⏫🟠",
+   "canonical_url": "https://www.alexanarch.org/s/records/1653/",
+   "deposit_number": 1653,
+   "date": "2026-09-29",
+   "version": "v1.1",
+   "works_url": "/works/06db",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06DB-text.md",
+   "status": "ACTIVE",
+   "supersedes": 334,
+   "supersedes_works_url": "/works/008a"
+  },
+  {
+   "title": "The Work Bears the Mantle: A Mantle Symbolon — the Good Gray Poet, the King of May, the Prince of Poets (EA-MANTLE-BEARING-01 v1.1)",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "A constitution for evaluating three mantle claims, written as one half of a symbolon: the packet states each claim and the operation it inherits, names the works, and cuts the evaluation so that its o",
+   "axn": "AXN:06DE.GOVERNANCE.🌙🌌🧡❄️🪞🧱",
+   "canonical_url": "https://www.alexanarch.org/s/records/1656/",
+   "deposit_number": 1656,
+   "date": "2026-09-29",
+   "version": "v1.1",
+   "works_url": "/works/06de",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06DE-text.md",
+   "status": "ACTIVE"
+  },
+  {
    "title": "Mantle Object: Good Gray Poet — Mantle Specification for the Whitman Succession Within the Crimson Hexagon — Crimson Hexagon Archive",
    "doi": "10.5281/zenodo.18293551",
    "creators": [
@@ -57,7 +123,10 @@
    "historical_doi_status": "SEVERED",
    "axn_bound_via": "doi-resolution-index/doi",
    "mapping_type": "direct_verified",
-   "deposit_number": 334
+   "deposit_number": 334,
+   "superseded_by": 1653,
+   "superseded_by_works_url": "/works/06db",
+   "status": "SUPERSEDED"
   },
   {
    "title": "The Constraint That Generates: A New Human Canon Declaration on Queneau, Oulipo, and the Governed Infinite",
@@ -1656,7 +1725,10 @@
    "historical_doi_status": "SEVERED",
    "axn_bound_via": "doi-resolution-index/doi",
    "mapping_type": "direct_verified",
-   "deposit_number": 332
+   "deposit_number": 332,
+   "superseded_by": 1651,
+   "superseded_by_works_url": "/works/06d9",
+   "status": "SUPERSEDED"
   },
   {
    "title": "Mantle Object: King of May — Mantle Specification for the Ginsberg Succession Within the Crimson Hexagon — Crimson Hexagon Archive",
@@ -1671,7 +1743,10 @@
    "historical_doi_status": "SEVERED",
    "axn_bound_via": "doi-resolution-index/doi",
    "mapping_type": "direct_verified",
-   "deposit_number": 333
+   "deposit_number": 333,
+   "superseded_by": 1652,
+   "superseded_by_works_url": "/works/06da",
+   "status": "SUPERSEDED"
   },
   {
    "title": "Heteronym Provenance: Lee Sharks — Persona Provenance and Mantle Architecture for the Crimson Hexagon — Crimson Hexagon Archive",

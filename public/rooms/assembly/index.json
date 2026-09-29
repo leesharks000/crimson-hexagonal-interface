@@ -44,6 +44,23 @@
  ],
  "documents": [
   {
+   "title": "MANTLE OBJECT: THE PRINCE OF POETS — Operational Title within the Semantic Economy (v1.1)",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "excerpt": "The Prince of Poets mantle is judged in its founding work, I Am X, Be Y, Blessed is the Z (#328), whose full text is in the archive: the claim is carried or dropped by what that poem does, so the clai",
+   "axn": "AXN:06D9.GENERATIVE.⚙️♎🕓⚖️🎇💜",
+   "canonical_url": "https://www.alexanarch.org/s/records/1651/",
+   "deposit_number": 1651,
+   "date": "2026-09-29",
+   "version": "v1.1",
+   "works_url": "/works/06d9",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-06D9-text.md",
+   "status": "ACTIVE",
+   "supersedes": 332,
+   "supersedes_works_url": "/works/0088"
+  },
+  {
    "title": "Assembly Substrate Governance Protocol: Procedures for Witness Membership, Review, and Status in the Assembly Chorus",
    "doi": "10.5281/zenodo.19352504",
    "creators": [
