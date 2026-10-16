@@ -1,6 +1,6 @@
 {
  "locative_key": "H:06.HOST.IVN.29",
- "hex_address": "41.ROOM.IVN",
+ "hex_address": "06.HOST.IVN.29",
  "name": "Imploding Velcro Nativity",
  "structure_type": "ROOM/HOSTED-COSMOLOGY",
  "standing": "DORMANT / CONSENT-GATED",
@@ -148,5 +148,9 @@
  "canonical_structure_type": "room",
  "hex_address_history": [
   "29.ROOM.IVN — reseated 2026-08-25 (number was doubly occupied; canonical seat at 41.ROOM.IVN)"
+ ],
+ "hex_aliases": [
+  "41.ROOM.IVN",
+  "29.ROOM.IVN"
  ]
 }

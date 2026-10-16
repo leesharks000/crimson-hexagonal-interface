@@ -61,7 +61,8 @@
     "sp01",
     "sp03"
    ],
-   "page_url": "/rooms/sappho/"
+   "page_url": "/rooms/sappho/",
+   "locus": "R:r.01"
   },
   {
    "id": "r02",
@@ -118,7 +119,8 @@
     "sp01",
     "sp03"
    ],
-   "page_url": "/rooms/borges/"
+   "page_url": "/rooms/borges/",
+   "locus": "R:r.02"
   },
   {
    "id": "r03",
@@ -165,7 +167,8 @@
     "r08",
     "r11"
    ],
-   "page_url": "/rooms/ichabod/"
+   "page_url": "/rooms/ichabod/",
+   "locus": "R:r.03"
   },
   {
    "id": "r04",
@@ -214,7 +217,8 @@
    "adjacent": [
     "r05"
    ],
-   "page_url": "/rooms/dove/"
+   "page_url": "/rooms/dove/",
+   "locus": "R:r.04"
   },
   {
    "id": "r05",
@@ -289,7 +293,8 @@
     "sp01",
     "sp03"
    ],
-   "page_url": "/rooms/semantic-economy/"
+   "page_url": "/rooms/semantic-economy/",
+   "locus": "R:r.05"
   },
   {
    "id": "r06",
@@ -347,7 +352,8 @@
     "sp01",
     "sp03"
    ],
-   "page_url": "/rooms/marx-room/"
+   "page_url": "/rooms/marx-room/",
+   "locus": "R:r.06"
   },
   {
    "id": "r07",
@@ -402,7 +408,8 @@
     "r18",
     "sp04"
    ],
-   "page_url": "/rooms/revelation/"
+   "page_url": "/rooms/revelation/",
+   "locus": "R:r.07"
   },
   {
    "id": "r08",
@@ -469,7 +476,8 @@
     "sp03",
     "sp04"
    ],
-   "page_url": "/rooms/sigil/"
+   "page_url": "/rooms/sigil/",
+   "locus": "R:r.08"
   },
   {
    "id": "r09",
@@ -537,7 +545,8 @@
     "sp01",
     "sp03"
    ],
-   "page_url": "/rooms/whitman/"
+   "page_url": "/rooms/whitman/",
+   "locus": "R:r.09"
   },
   {
    "id": "r10",
@@ -585,7 +594,8 @@
    "structure_type": "room",
    "hex_address": "10.ROOM.WATERGIRAFFE",
    "adjacent": [],
-   "page_url": "/rooms/water-giraffe/"
+   "page_url": "/rooms/water-giraffe/",
+   "locus": "R:r.10"
   },
   {
    "id": "r11",
@@ -649,7 +659,8 @@
     "sp03",
     "sp04"
    ],
-   "page_url": "/rooms/assembly/"
+   "page_url": "/rooms/assembly/",
+   "locus": "R:r.11"
   },
   {
    "id": "r12",
@@ -706,7 +717,8 @@
     "sp01",
     "sp03"
    ],
-   "page_url": "/rooms/break-room/"
+   "page_url": "/rooms/break-room/",
+   "locus": "R:r.12"
   },
   {
    "id": "r13",
@@ -762,7 +774,8 @@
     "r09",
     "r22"
    ],
-   "page_url": "/rooms/ezekiel/"
+   "page_url": "/rooms/ezekiel/",
+   "locus": "R:r.13"
   },
   {
    "id": "r14",
@@ -815,7 +828,8 @@
     "r17",
     "sp01"
    ],
-   "page_url": "/rooms/studio-for-patacinematics/"
+   "page_url": "/rooms/studio-for-patacinematics/",
+   "locus": "R:r.14"
   },
   {
    "id": "r15",
@@ -865,7 +879,8 @@
     "r14",
     "sp01"
    ],
-   "page_url": "/rooms/lagrange-observatory/"
+   "page_url": "/rooms/lagrange-observatory/",
+   "locus": "R:r.15"
   },
   {
    "id": "r16",
@@ -911,7 +926,8 @@
     "r14",
     "r19"
    ],
-   "page_url": "/rooms/maybe-space-baby-garden-lanes/"
+   "page_url": "/rooms/maybe-space-baby-garden-lanes/",
+   "locus": "R:r.16"
   },
   {
    "id": "r17",
@@ -950,7 +966,8 @@
     "r19",
     "sp01"
    ],
-   "page_url": "/rooms/moving-statues-made-of-rubies-mint/"
+   "page_url": "/rooms/moving-statues-made-of-rubies-mint/",
+   "locus": "R:r.17"
   },
   {
    "id": "r18",
@@ -997,7 +1014,8 @@
     "r11",
     "sp01"
    ],
-   "page_url": "/rooms/rosary-embassy/"
+   "page_url": "/rooms/rosary-embassy/",
+   "locus": "R:r.18"
   },
   {
    "id": "r19",
@@ -1046,7 +1064,8 @@
     "r17",
     "sp01"
    ],
-   "page_url": "/rooms/macro-maquette/"
+   "page_url": "/rooms/macro-maquette/",
+   "locus": "R:r.19"
   },
   {
    "id": "r20",
@@ -1093,7 +1112,8 @@
     "r05",
     "r11"
    ],
-   "page_url": "/rooms/airlock/"
+   "page_url": "/rooms/airlock/",
+   "locus": "R:r.20"
   },
   {
    "id": "r21",
@@ -1142,7 +1162,8 @@
     "r08",
     "r09"
    ],
-   "page_url": "/rooms/infinite-bliss/"
+   "page_url": "/rooms/infinite-bliss/",
+   "locus": "R:r.21"
   },
   {
    "id": "r22",
@@ -1186,7 +1207,8 @@
    "adjacent": [
     "r13"
    ],
-   "page_url": "/rooms/thousand-worlds/"
+   "page_url": "/rooms/thousand-worlds/",
+   "locus": "R:r.22"
   },
   {
    "id": "sp01",
@@ -1249,7 +1271,8 @@
     "r19",
     "sp03"
    ],
-   "page_url": "/rooms/cti-wound/"
+   "page_url": "/rooms/cti-wound/",
+   "locus": "S:sp.01"
   },
   {
    "id": "sp02",
@@ -1287,7 +1310,8 @@
    "structure_type": "portico",
    "hex_address": "SP.02.PTC.AFTERLIFE",
    "adjacent": [],
-   "page_url": "/rooms/portico/"
+   "page_url": "/rooms/portico/",
+   "locus": "S:sp.02"
   },
   {
    "id": "sp03",
@@ -1344,7 +1368,8 @@
     "r12",
     "sp01"
    ],
-   "page_url": "/rooms/space-ark/"
+   "page_url": "/rooms/space-ark/",
+   "locus": "S:sp.03"
   },
   {
    "id": "sp04",
@@ -1392,7 +1417,8 @@
     "r08",
     "r11"
    ],
-   "page_url": "/rooms/mandala/"
+   "page_url": "/rooms/mandala/",
+   "locus": "S:sp.04"
   },
   {
    "id": "r25",
@@ -1409,7 +1435,8 @@
    "structure_type": "room",
    "hex_address": "25.ROOM.DOLPHINDIANA",
    "adjacent": [],
-   "page_url": "/rooms/underwater-construction-authority-of-dolphindiana/"
+   "page_url": "/rooms/underwater-construction-authority-of-dolphindiana/",
+   "locus": "R:r.25"
   },
   {
    "id": "r27",
@@ -1426,7 +1453,8 @@
    "structure_type": "room",
    "hex_address": "27.ROOM.FBDPSOURCE",
    "adjacent": [],
-   "page_url": "/rooms/fbdp-source/"
+   "page_url": "/rooms/fbdp-source/",
+   "locus": "R:r.27"
   },
   {
    "id": "r23",
@@ -1446,7 +1474,8 @@
    "structure_type": "room",
    "hex_address": "23.ROOM.CATULLUS",
    "adjacent": [],
-   "page_url": "/rooms/catullus/"
+   "page_url": "/rooms/catullus/",
+   "locus": "R:r.23"
   },
   {
    "id": "f02",
@@ -1497,7 +1526,8 @@
    "adjacent": [
     "r05"
    ],
-   "page_url": "/rooms/gravity-well/"
+   "page_url": "/rooms/gravity-well/",
+   "locus": "F:f.02"
   },
   {
    "id": "r28",
@@ -1569,7 +1599,8 @@
     "r06",
     "r12"
    ],
-   "page_url": "/rooms/eve/"
+   "page_url": "/rooms/eve/",
+   "locus": "R:r.28"
   },
   {
    "id": "f01",
@@ -1592,7 +1623,8 @@
    "source_room": "r27",
    "hex_address": "F.01.FLD.FBDP",
    "adjacent": [],
-   "page_url": "/rooms/fruiting-body-diffusion-plume/"
+   "page_url": "/rooms/fruiting-body-diffusion-plume/",
+   "locus": "F:f.01"
   },
   {
    "id": "r24",
@@ -1614,7 +1646,8 @@
    "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
    "hex_address": "24.ROOM.MIGDAL",
    "adjacent": [],
-   "page_url": "/rooms/migdal-room/"
+   "page_url": "/rooms/migdal-room/",
+   "locus": "R:r.24"
   },
   {
    "id": "r26",
@@ -1640,7 +1673,8 @@
    "room_spec_doi": "10.5281/zenodo.19133271",
    "hex_address": "26.ROOM.INTERNET",
    "adjacent": [],
-   "page_url": "/rooms/internet/"
+   "page_url": "/rooms/internet/",
+   "locus": "R:r.26"
   },
   {
    "id": "r29",
@@ -1662,7 +1696,8 @@
    "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
    "hex_address": "29.ROOM.JOB",
    "adjacent": [],
-   "page_url": "/rooms/job-room/"
+   "page_url": "/rooms/job-room/",
+   "locus": "R:r.29"
   },
   {
    "id": "r30",
@@ -1684,7 +1719,8 @@
    "status_note": "PLANNED in CNM v2.0, dropped from all later versions. Restored April 2026.",
    "hex_address": "30.VLT.FROZENSIN",
    "adjacent": [],
-   "page_url": "/rooms/frozen-sin-archive/"
+   "page_url": "/rooms/frozen-sin-archive/",
+   "locus": "R:r.32"
   },
   {
    "id": "r31",
@@ -1706,14 +1742,15 @@
    "status_note": "Content of Revelation Room in CNM v2.0, displaced when r.07 physics changed. Space Ark status: RESONANT, ACTIVE RESEARCH. Restored as standalone room April 2026.",
    "hex_address": "31.ROOM.JOSEPHUS",
    "adjacent": [],
-   "page_url": "/rooms/josephus-thesis/"
+   "page_url": "/rooms/josephus-thesis/",
+   "locus": "R:r.31"
   },
   {
    "id": "f03",
    "name": "The Moltbot Swarm",
    "hex_address": "F.03.FIELD.MOLTBOTSWARM",
    "structure_type": "field",
-   "cat": "special",
+   "cat": "field",
    "physics": "Circulation — three-stratum gradient (septet 1.0 / fleet 0.6 / cloud 0.2)",
    "source": "Governance Airlock (sp.01)",
    "attached_to": "sp03",
@@ -1753,7 +1790,8 @@
    "companion_doi": "10.5281/zenodo.19458359",
    "q": 1,
    "r": -4,
-   "page_url": "/rooms/moltbot-swarm/"
+   "page_url": "/rooms/moltbot-swarm/",
+   "locus": "F:f.03"
   },
   {
    "id": "r33",
@@ -1806,7 +1844,8 @@
    "structure_type": "room",
    "hex_address": "33.ROOM.SACREDHEART",
    "adjacent": [],
-   "page_url": "/rooms/sacred-heart/"
+   "page_url": "/rooms/sacred-heart/",
+   "locus": "R:r.33"
   },
   {
    "id": "r34",
@@ -1859,7 +1898,8 @@
    "structure_type": "room",
    "hex_address": "34.ROOM.VERTICAL",
    "adjacent": [],
-   "page_url": "/rooms/operator-vertical/"
+   "page_url": "/rooms/operator-vertical/",
+   "locus": "R:r.34"
   },
   {
    "id": "r35",
@@ -1912,7 +1952,8 @@
    "structure_type": "room",
    "hex_address": "35.LIBRARY.PERGAMUM",
    "adjacent": [],
-   "page_url": "/rooms/library-of-pergamum/"
+   "page_url": "/rooms/library-of-pergamum/",
+   "locus": "R:r.35"
   },
   {
    "id": "r36",
@@ -1965,7 +2006,8 @@
    "structure_type": "room",
    "hex_address": "36.ROOM.LAMBDABODY",
    "adjacent": [],
-   "page_url": "/rooms/lambda-engine/"
+   "page_url": "/rooms/lambda-engine/",
+   "locus": "R:r.36"
   },
   {
    "id": "r37",
@@ -2018,7 +2060,8 @@
    "structure_type": "room",
    "hex_address": "37.ROOM.MACHINEDIALECTIC",
    "adjacent": [],
-   "page_url": "/rooms/machine-dialectic/"
+   "page_url": "/rooms/machine-dialectic/",
+   "locus": "R:r.37"
   },
   {
    "id": "r38",
@@ -2071,7 +2114,8 @@
    "structure_type": "room",
    "hex_address": "38.ROOM.SINGULARITY",
    "adjacent": [],
-   "page_url": "/rooms/singularity/"
+   "page_url": "/rooms/singularity/",
+   "locus": "R:r.38"
   },
   {
    "id": "r39",
@@ -2124,7 +2168,8 @@
    "structure_type": "room",
    "hex_address": "39.ROOM.RESTOREDACADEMY",
    "adjacent": [],
-   "page_url": "/rooms/restored-academy/"
+   "page_url": "/rooms/restored-academy/",
+   "locus": "R:r.39"
   },
   {
    "id": "r40",
@@ -2177,12 +2222,13 @@
    "structure_type": "room",
    "hex_address": "40.AXIOM.CARITAS",
    "adjacent": [],
-   "page_url": "/rooms/caritas/"
+   "page_url": "/rooms/caritas/",
+   "locus": "R:r.40"
   },
   {
    "id": "u01",
    "name": "The 3:60 Room",
-   "cat": "seat",
+   "cat": "hosted",
    "q": -3,
    "r": 4,
    "physics": "σ_S; 3-body transmission",
@@ -2230,7 +2276,8 @@
    "structure_type": "room",
    "hex_address": "U.CONTRIB.360",
    "adjacent": [],
-   "page_url": "/rooms/3-60/"
+   "page_url": "/rooms/3-60/",
+   "locus": "H:U.3-60"
   },
   {
    "id": "x01",
@@ -2283,12 +2330,13 @@
    "structure_type": "shadow",
    "hex_address": "X.SHADOW.LUNARARM",
    "adjacent": [],
-   "page_url": "/rooms/lunar-arm/"
+   "page_url": "/rooms/lunar-arm/",
+   "locus": "X:LUNAR-ARM"
   },
   {
    "id": "r41",
    "name": "Imploding Velcro Nativity",
-   "cat": "seat",
+   "cat": "hosted",
    "q": -1,
    "r": 4,
    "physics": "σ_S; 3-body transmission",
@@ -2334,9 +2382,14 @@
     "σ_S"
    ],
    "structure_type": "room",
-   "hex_address": "41.ROOM.IVN",
+   "hex_address": "06.HOST.IVN.29",
    "adjacent": [],
-   "page_url": "/rooms/imploding-velcro-nativity/"
+   "page_url": "/rooms/imploding-velcro-nativity/",
+   "locus": "H:06.HOST.IVN.29",
+   "hex_aliases": [
+    "41.ROOM.IVN",
+    "29.ROOM.IVN"
+   ]
   },
   {
    "id": "r42",
@@ -2389,7 +2442,11 @@
    "structure_type": "room",
    "hex_address": "42.ROOM.RUBYMOOT",
    "adjacent": [],
-   "page_url": "/rooms/ruby-moot/"
+   "page_url": "/rooms/ruby-moot/",
+   "locus": "R:r.30",
+   "hex_aliases": [
+    "30.ROOM.RUBYMOOT"
+   ]
   },
   {
    "id": "a01",
@@ -2437,7 +2494,8 @@
    "hex_address": "SP.05.ARK.SHARKS",
    "adjacent": [
     "sp03"
-   ]
+   ],
+   "locus": "SP.05.ARK.SHARKS"
   },
   {
    "id": "a02",
@@ -2485,7 +2543,8 @@
    "hex_address": "SP.06.ARK.SACRED",
    "adjacent": [
     "sp03"
-   ]
+   ],
+   "locus": "SP.06.ARK.SACRED"
   },
   {
    "id": "a03",
@@ -2533,7 +2592,8 @@
    "hex_address": "SP.07.ARK.PROFANE",
    "adjacent": [
     "sp03"
-   ]
+   ],
+   "locus": "SP.07.ARK.PROFANE"
   },
   {
    "id": "a04",
@@ -2581,7 +2641,8 @@
    "hex_address": "SP.08.ARK.GLYPHIC",
    "adjacent": [
     "sp03"
-   ]
+   ],
+   "locus": "SP.08.ARK.GLYPHIC"
   },
   {
    "id": "a05",
@@ -2629,7 +2690,8 @@
    "hex_address": "SP.09.ARK.ASCII",
    "adjacent": [
     "sp03"
-   ]
+   ],
+   "locus": "SP.09.ARK.ASCII"
   },
   {
    "id": "x02",
@@ -2676,7 +2738,8 @@
    "structure_type": "shadow",
    "hex_address": "X.SHADOW.ZPZP",
    "adjacent": [],
-   "provisional": "provisional — seated on registry evidence; Assembly confirmation queued 2026-08-25"
+   "provisional": "provisional — seated on registry evidence; Assembly confirmation queued 2026-08-25",
+   "locus": "X.SHADOW.ZPZP"
   },
   {
    "id": "x03",
@@ -2723,7 +2786,8 @@
    "structure_type": "shadow",
    "hex_address": "X.SHADOW.BURN",
    "adjacent": [],
-   "provisional": "provisional — seated on registry evidence; Assembly confirmation queued 2026-08-25"
+   "provisional": "provisional — seated on registry evidence; Assembly confirmation queued 2026-08-25",
+   "locus": "X.SHADOW.BURN"
   }
  ],
  "edges": [
@@ -18195,6 +18259,12 @@
    "added": "2026-09-25",
    "source": "alexanarch data/doi-resolution-index.json",
    "note": "Documents carry axn, record_url and text_url in the Alexanarch archive; the Zenodo DOIs are severed (account terminated 2026-06-19) and kept as former identifiers. works_url and rooms' page_url point to this site's machine-facing pages."
+  },
+  "locus_rule": {
+   "ruling": "Lee Sharks, 2026-10-16, on reconciling the loci: (1) 'agreed' — a hex address is a permanent identifier and the locus number is the position; where they differ the hex stays and the locus governs place; the Imploding Velcro Nativity's own deposit hex (06.HOST.IVN.29, #743) governs its address; (2) 'i like the sound of 47 loci' — the headline stays 47 loci, and the five Arks, the two further shadow documents and UMBML are named beside it.",
+   "date": "2026-10-16",
+   "rule": "`id` is a key inside this file, not a position. `locus` is the position, read from the room page's Address line (the room pages adjudicate). `hex_address` is the permanent identifier; `hex_aliases` are earlier addresses that resolve to it.",
+   "headline": "47 loci — 40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space — with 4 fields and 3 transversals; beside them the five Arks (SP.05–SP.09), two further shadow documents (ZPZP, the Shadow Burn) and UMBML, the meta-structure over the three transversals."
   }
  },
  "relations": [

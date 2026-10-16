@@ -13,7 +13,8 @@
   "entries": 50,
   "field_pages": 3,
   "counts_note": "50 entries: 47 loci (40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space) plus 3 field pages. The archive has 4 fields; f.04 the Perfusion Field is specified but has no locus page. Transversals (3) are not entries here. The Surface Map counts loci, fields and transversals separately; this record counts pages that carry relations.",
-  "field_note": "Fields do not join; they suffuse. Their relations carry an attenuation zone — SOURCE, DENSE PLUME, TRACE PLUME, RESIDUAL — rather than a join kind, and the inverse edge on a locus reads 'suffused by'. f.01 faces out, f.02 faces in, f.03 faces through, f.04 faces away. f.04 the Perfusion Field is specified in The Periwinkle Septagon but has no page and no relations yet."
+  "field_note": "Fields do not join; they suffuse. Their relations carry an attenuation zone — SOURCE, DENSE PLUME, TRACE PLUME, RESIDUAL — rather than a join kind, and the inverse edge on a locus reads 'suffused by'. f.01 faces out, f.02 faces in, f.03 faces through, f.04 faces away. f.04 the Perfusion Field is specified in The Periwinkle Septagon but has no page and no relations yet.",
+  "hex_rule": "2026-10-16, Lee Sharks: a hex is a permanent identifier and the locus number is the position. The Frozen Sin Archive is R:r.32 at hex 30.VLT.FROZENSIN; Ruby Moot is R:r.30 at hex 42.ROOM.RUBYMOOT (30.ROOM.RUBYMOOT an earlier form); the Imploding Velcro Nativity is H:06.HOST.IVN.29 at its deposit's own hex 06.HOST.IVN.29 (#743), 29.ROOM.IVN and 41.ROOM.IVN earlier forms."
  },
  "R:r.11": {
   "locus": "R:r.11",
@@ -910,7 +911,7 @@
  "R:r.30": {
   "locus": "R:r.30",
   "name": "Ruby Moot",
-  "hex": "30.ROOM.RUBYMOOT",
+  "hex": "42.ROOM.RUBYMOOT",
   "class": null,
   "relations": [
    {
@@ -925,6 +926,9 @@
     "kind": "Standing at the bar from R:r.25 — a nonhuman semantic agent admitted to practice",
     "source": "constitution.bench"
    }
+  ],
+  "hex_aliases": [
+   "30.ROOM.RUBYMOOT"
   ]
  },
  "R:r.33": {
@@ -1688,7 +1692,7 @@
  "H:06.HOST.IVN.29": {
   "locus": "H:06.HOST.IVN.29",
   "name": "Imploding Velcro Nativity",
-  "hex": "29.ROOM.IVN",
+  "hex": "06.HOST.IVN.29",
   "class": "HOSTED COSMOLOGY",
   "relations": [
    {
@@ -1709,6 +1713,10 @@
     "kind": "governed by Airlock Tier 3 — provisional host; a hosted cosmology is a hotel, not a home",
     "source": "constitution.governed_by"
    }
+  ],
+  "hex_aliases": [
+   "29.ROOM.IVN",
+   "41.ROOM.IVN"
   ]
  },
  "H:U.3-60": {
