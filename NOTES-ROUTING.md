@@ -65,3 +65,17 @@ to the new page. Sequence:
     python3 scripts/build_work_page.py scripts/pages/seated-works-<date>.json --alexanarch ../alexanarch
     python3 scripts/link_room_works.py scripts/pages/seated-works-<date>.json
     python3 scripts/normalize_urls.py && python3 scripts/sync_manifest.py && python3 scripts/build_sitemap.py
+
+## Rulings on the room reading (2026-10-16)
+
+Lee Sharks ruled on the reading's open questions (alexanarch `data/room-readings/rulings-applied-2026-10-16.json`,
+the ruling verbatim inside). The seats are built in alexanarch (`build_hexagon_seats.py`); here:
+
+- `scripts/build_umbml_structure.py --alexanarch ../alexanarch` writes `/structures/umbml` (the charter, #7, in full;
+  the ruling; the Logotic Foundation Triad). UMBML is not on the Surface Map: placing it is a map patch.
+- `scripts/add_room_readings.py` now also writes the reading section on the structure pages (Armature, Secret Name,
+  Pearl, UMBML), last on the page, or at `<!-- ROOM-READING:HERE -->` where a page names its place; it shows ruled
+  seats and the ruling notes (Gravity Well: the standard home for continuity tethers, linking machinemediation.org).
+- The three structure pages had their full text after `</body></html` (an old insertion); repaired 2026-10-16.
+
+Sequence: build_umbml_structure → add_room_readings → normalize_urls → sync_manifest → build_sitemap.

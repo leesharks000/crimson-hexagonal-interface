@@ -278,7 +278,7 @@
   ],
   "_generated": {
     "date": "2026-10-16",
-    "source_commit": "19b0618",
+    "source_commit": "006c91f",
     "source": "public/rooms tree + hexagon_canonical.json",
     "schema_version": "manifest/v2",
     "generator": "scripts/sync_manifest.py"

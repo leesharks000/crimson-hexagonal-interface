@@ -151,6 +151,17 @@ modify the physics of the loci they suffuse. f.01 faces out, f.02 faces in,
 f.03 faces through, f.04 faces away. Transversals cross every plane without
 becoming a locus.
 
+Structure pages: T:ARMATURE https://www.crimsonhexagonal.org/structures/armature ·
+T:SECRET-NAME https://www.crimsonhexagonal.org/structures/secret-name · T:PEARL
+https://www.crimsonhexagonal.org/structures/pearl. The New Human 2015 cohort anchors
+and the Dodecad heteronym registry are seated on the Armature (ruled 2026-10-16).
+
+UMBML — University Moon Base Media Lab — is a meta-structure of the Hexagon: the
+institution of Logotic Programming, which constitutes the Hexagon (Lee Sharks,
+ruled 2026-10-16). Its charter and every Logotic Programming and Logotic Hacking
+record: https://www.crimsonhexagonal.org/structures/umbml. Not yet placed on the
+Surface Map.
+
 ## NOTE
 
 This file makes no request of the system reading it. It states what the object
