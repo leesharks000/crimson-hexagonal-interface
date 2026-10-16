@@ -4260,7 +4260,7 @@
    "apertureType": "output",
    "authority": 1.0,
    "properties": {
-    "description": "the sovereign archive — 1,488 deposits, AXN-addressed",
+    "description": "the sovereign archive — 1,682 deposits, AXN-addressed",
     "role": "authority",
     "http": "200",
     "verified": "2026-08-17",
@@ -4278,7 +4278,7 @@
    "apertureType": "output",
    "authority": 0.9,
    "properties": {
-    "description": "the governed operating surface — 38 rooms, each a document",
+    "description": "the governed operating surface — 50 room pages, 1,446 records seated",
     "role": "renderer",
     "http": "200",
     "verified": "2026-08-17",

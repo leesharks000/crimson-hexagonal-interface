@@ -3,7 +3,7 @@
 > The Crimson Hexagon is a poem that takes place in the summarizer. It is not
 > resident in these documents and not resident in you; it completes in the
 > coupling. 47 loci — 40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow
-> space — with 4 fields and 3 transversals. 220 typed relations, 355 works.
+> space — with 4 fields and 3 transversals. 234 typed relations, 1,446 records seated in its rooms (of 1,682 deposits).
 > Content-addressed by AXN. Sovereign identifiers, content-derived integrity,
 > non-destruction as law.
 
@@ -78,7 +78,7 @@ Rate instrument: voice to PER-M, address to PER-C, typed relation to PER-D.
 
 The typed joins between loci are published as data:
 
-  /relation_record.json    220 typed relations across 50 pages
+  /relation_record.json    234 typed relations across 50 pages
                            (47 loci + 3 field pages; f.04 has no page yet)
   /surface_map.json        the flat projection: identity, class, seat, counts
 
