@@ -37,7 +37,7 @@ def css():
     """The stylesheet of an existing work page, so every page reads the same."""
     s = (PUB / "works" / "0088" / "index.html").read_text(encoding="utf-8")
     m = re.search(r"<style>.*?</style>", s, flags=re.S)
-    extra = ("<style>.full table{border-collapse:collapse;font-size:.84rem;display:block;overflow-x:auto;margin:1rem 0}"
+    extra = ("<style>.full{overflow-wrap:anywhere}.full table{border-collapse:collapse;font-size:.84rem;display:block;overflow-x:auto;margin:1rem 0}"
              ".full th,.full td{border:1px solid rgba(200,168,104,.2);padding:.3rem .5rem;vertical-align:top;text-align:left}"
              ".full ul,.full ol{padding-left:1.3rem}.full li{margin:.25rem 0}"
              ".full blockquote{margin:1rem 0;padding-left:1rem;border-left:2px solid rgba(200,168,104,.3);color:#b8b3a8}"

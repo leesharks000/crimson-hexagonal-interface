@@ -47,3 +47,21 @@ instead of Vercel's default 307. Both generators emit www directly; the normaliz
 ## The manifest is derived (2026-09-04)
 
 `public/manifest.json` drifted from the tree twice (08-17, and again after the 08-26 seating): 29 rooms / 38 slugs against 50 served room documents. `scripts/sync_manifest.py` now derives `_room_slugs`, `navigable_spaces`, `relations`, `documents` and `counts` from `public/rooms/` and `hexagon_canonical.json`; `--check` fails on drift. Sequence: build_rooms → build_navigation → sync_manifest → normalize_urls → build_sitemap.
+
+## Do not rerun build_rooms.py (2026-10-16)
+
+The room pages were repaired by hand after `build_rooms.py` last ran (DOI hrefs to archive records, work links, the
+2026-08-26 seating). A rerun on 2026-10-16 would have rewritten 95 files and removed 58,523 lines. Until the generator
+is brought level with the pages, edit room pages with targeted scripts only (`scripts/link_room_works.py`).
+
+## Works pages for seated documents (2026-10-16)
+
+Search Console (export 2026-10-16): 350 of 370 /works pages indexed. 266 documents were seated in rooms with no page.
+`scripts/build_work_specs.py` selects the seated, ACTIVE, full-text works cited by at least five active records
+(101 on 2026-10-16) and writes specs; `build_work_page.py` renders them; `link_room_works.py` links each room's listing
+to the new page. Sequence:
+
+    python3 scripts/build_work_specs.py --alexanarch ../alexanarch > scripts/pages/seated-works-<date>.json
+    python3 scripts/build_work_page.py scripts/pages/seated-works-<date>.json --alexanarch ../alexanarch
+    python3 scripts/link_room_works.py scripts/pages/seated-works-<date>.json
+    python3 scripts/normalize_urls.py && python3 scripts/sync_manifest.py && python3 scripts/build_sitemap.py

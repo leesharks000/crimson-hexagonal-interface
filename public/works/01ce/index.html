@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sémantique Potentielle: A Constraint-Based Semantic Mint for the Age of Automated Termi… &middot; AXN:01CE | Crimson Hexagonal Archive</title>
+<meta name="description" content="Sémantique Potentielle: A Constraint-Based Semantic Mint for the Age of Automated Terminology — A constraint-based semantic mint extending Queneau and Oulipo’s potential literature from combinatorial poems to future terminology.">
+<link rel="canonical" href="https://www.crimsonhexagonal.org/works/01ce">
+<style>*{box-sizing:border-box}body{margin:0;background:#0c0e12;color:#d8d4cc;font:16px/1.65 Georgia,serif}
+.w{max-width:46rem;margin:0 auto;padding:2.2rem 1.4rem 5rem}a{color:#c8a868}
+h1{font-size:1.5rem;line-height:1.25;margin:0 0 .3rem}
+h2{font:500 .62rem/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#8a8478;
+margin:2.2rem 0 .7rem;padding-bottom:.4rem;border-bottom:1px solid rgba(200,168,104,.18)}
+.hex{font:.62rem/1.6 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;margin:0 0 1rem}
+.phys{border-left:2px solid #c8a868;padding:.2rem 0 .2rem 1rem;margin:1.1rem 0}
+.phys b{color:#c8a868;font-family:ui-monospace,monospace;font-size:.8rem}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.7rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,monospace;color:#b8b3a8;background:rgba(255,255,255,.02);
+border:1px solid rgba(200,168,104,.14);border-radius:3px;padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}
+.rel{padding:.55rem 0;border-bottom:1px solid rgba(200,168,104,.12);font-size:.9rem}
+.rel .k{font:.6rem/1 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;text-transform:uppercase}
+.prov{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(200,168,104,.18);
+font:.62rem/1.9 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.8rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,'JetBrains Mono',monospace;color:#b8b3a8;
+background:rgba(255,255,255,.02);border:1px solid rgba(200,168,104,.14);border-radius:3px;
+padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}
+.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}.xw{font:.6rem/1.5 ui-monospace,monospace;color:#8a8478;opacity:.85}
+.xwt{font:.6rem/1.7 ui-monospace,monospace;color:#8a8478;border-left:2px solid rgba(200,168,104,.25);padding:.35rem 0 .35rem .7rem;margin:.2rem 0 1rem}
+.xwt b{color:#a89868;font-weight:400}
+</style><style>.full{overflow-wrap:anywhere}.full table{border-collapse:collapse;font-size:.84rem;display:block;overflow-x:auto;margin:1rem 0}.full th,.full td{border:1px solid rgba(200,168,104,.2);padding:.3rem .5rem;vertical-align:top;text-align:left}.full ul,.full ol{padding-left:1.3rem}.full li{margin:.25rem 0}.full blockquote{margin:1rem 0;padding-left:1rem;border-left:2px solid rgba(200,168,104,.3);color:#b8b3a8}.vers{border-left:2px solid #b45309;padding:.35rem 0 .35rem 1rem;margin:1rem 0;font-size:.92rem}.vers b{color:#e0a458;font-family:ui-monospace,monospace;font-size:.78rem;letter-spacing:.06em}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Sémantique Potentielle: A Constraint-Based Semantic Mint for the Age of Automated Terminology", "identifier": "AXN:01CE.GOVERNANCE.🍃💫⚖️🌆🌠✖️", "url": "https://www.crimsonhexagonal.org/works/01ce", "sameAs": "https://www.alexanarch.org/s/records/46/", "author": {"@type": "Person", "name": "Lee Sharks · Johannes Sigil"}, "datePublished": "2026-03-30", "version": null, "isPartOf": {"@type": "CollectionPage", "name": "Semantic Economy", "url": "https://www.crimsonhexagonal.org/rooms/semantic-economy"}, "additionalType": "METHODOLOGICAL-SPECIFICATION"}</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body><div class="w">
+<p class="hex"><a href="/">Crimson Hexagonal Archive</a> &nbsp;/&nbsp; <a href="/rooms/">rooms</a> &nbsp;/&nbsp; <a href="/rooms/semantic-economy">Semantic Economy</a> &nbsp;/&nbsp; works</p>
+<h1>Sémantique Potentielle: A Constraint-Based Semantic Mint for the Age of Automated Terminology</h1><style id="symcss">.symbolon{border-left:3px solid #8a6a12;background:rgba(255,250,236,.55);
+padding:.72em 1em .78em;margin:0 0 1.6em;font-size:.84rem;line-height:1.6;color:#33240b}
+.symbolon p{margin:0 0 .4em}.symbolon p:last-child{margin:0}
+.symbolon .sc{font-size:.78rem;color:#4a3612}
+.symbolon b{font-variant:small-caps;letter-spacing:.04em}.symbolon a{color:#7d5e1a}</style><div class="symbolon"><p><b>This half.</b> Voice: Lee Sharks · Johannes Sigil. Address: AXN:01CE.GOVERNANCE.🍃💫⚖️🌆🌠✖️ &middot; alexanarch #46.</p><p>It <b>is seated in</b> <a href="/rooms/semantic-economy">R:r.05 Semantic Economy</a>, and also in <a href="/rooms/sigil">R:r.08 Sigil</a>. 6 records of the archive cite it.</p><p class="sc">Completion condition: voice, address, typed relation. <a href="/llms.txt">The condition</a> &middot; <a href="/relation_record.json">the record</a>.</p></div>
+
+<p class="hex"><b>AXN:01CE.GOVERNANCE.🍃💫⚖️🌆🌠✖️</b><br>role <b>METHODOLOGICAL-SPECIFICATION</b> &middot; multiplicity <b>SINGLETON</b> &middot; A constraint-based semantic mint extending Queneau and Oulipo’s potential literature from combinatorial poems to future terminology. &middot; standing <b>SEATED</b><br>
+locus <b>R:r.05</b> &middot; 2026-03-30 &middot; 4393 words &middot; body <b>full</b></p>
+<div class="phys"><b>Seat and projection</b><br>Owned by <a href="https://www.alexanarch.org/s/records/46/">Alexanarch record #46</a>, the canonical seat. This page projects the work in full. Divergence is a defect of this projection, never of the seat.</div>
+<h2>Relations</h2><div class="lp"><div><b>seated_in</b> &middot; <a href="/rooms/semantic-economy">R:r.05 Semantic Economy</a></div><div><b>seated_in</b> &middot; <a href="/rooms/sigil">R:r.08 Sigil</a></div><div><b>cites</b> &middot; <a href="/works/01cd">THE COMPRESSION FRONTIER A Technical Map of the War Over the Summarize · #45</a></div><div><b>cites</b> &middot; <a href="/works/0157">THE LAYER THAT REMEMBERED ITSELF: Retrieval-Layer Attribution of Retro · #519</a></div><div><b>cites</b> &middot; <a href="/works/0198">r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and t · #576</a></div><div><b>cited_by</b> &middot; <a href="/works/01d0">THE $650 BILLION GAP: Physical Infrastructure, Semantic Governance, an · #615</a></div></div>
+<h2>Full text</h2><div class="full">
+<h3 class="ct">SÉMANTIQUE POTENTIELLE</h3>
+<h3 class="ct">A Constraint-Based Semantic Mint for the Age of Automated Terminology</h3>
+<p><strong>Lee Sharks · Johannes Sigil</strong></p>
+<p><em>Grammata: Journal of Operative Philology</em>
+<em>Crimson Hexagonal Archive · Semantic Economy Institute</em></p>
+<p>March 2026 · v0.2</p>
+<hr />
+<h3 class="ct">Canon Declaration</h3>
+<p>In 1961, Raymond Queneau published <em>Cent Mille Milliards de Poèmes</em> — ten sonnets printed with each line on a separate strip, allowing the reader to combine them into 10^14 possible poems. Queneau did not write a hundred thousand billion poems. He wrote the machine that generates them. The deposit was the generating function, not the output. Any poem the machine produces is a derivative of the deposit. The authorship is the constraint system itself.</p>
+<p>The Crimson Hexagonal Archive recognizes Queneau's <em>Cent Mille Milliards de Poèmes</em> as New Human Canon — the first demonstration that a finite governed system can claim a combinatorially vast output space through the precision of its constraints. The Ouvroir de Littérature Potentielle (Oulipo), founded by Queneau and François Le Lionnais in 1960, established the principle that constraint is not the enemy of creation but its engine.</p>
+<p>This document extends Queneau's method from verse to concept: not poems but terms, not lines but semantic coordinates, not a book of strips but a constraint matrix whose outputs are the vocabulary the future will need. From littérature potentielle to sémantique potentielle. Queneau's strips become the seed vocabulary; his lines become morphemes; the reader's combination becomes the retrieval system's generation. The analogy is structural, not decorative.</p>
+<hr />
+<h3 class="ct">Governing Claim</h3>
+<p>A semantic mint is an algorithm whose outputs are new terms, and whose structure ensures that every output carries its provenance back to the algorithm itself. The mint does not replace authorship. It makes authorship legible at scale. It answers the question that the age of automated inference will force: when automated processes coin terms within a pre-mapped semantic region, what prior map becomes citable?</p>
+<p>The answer is not "the algorithm that owns future words." Short phrases, titles, and slogans are not protected by copyright in most jurisdictions. An algorithm cannot compel citation of every downstream term it predicts. But it can do something stronger: it can define an addressable semantic phase space, mint coordinates within it, and leave a provable provenance trail when later culture instantiates one of those coordinates. The claim is not ownership. The claim is cartography.</p>
+<p>The mint produces three linked artifacts: the specification (axes, operators, constraint grammar), the minted frontier families (timestamped coordinates with glosses and forensic variants), and the provenance protocol (how later instantiation is compared against the mint ledger). Together, these constitute the machine, the map, and the audit.</p>
+<hr />
+<h3 class="ct">Notation Key</h3>
+<p>The mint uses the following category codes and operation labels throughout:</p>
+<p>Code
+Category
+Examples</p>
+<p>S
+Structural
+compression, density, gravity, layer, substrate, threshold, drift, collapse, saturation, enclosure, commons, infrastructure</p>
+<p>G
+Governance
+provenance, governance, audit, chain, anchor, marker, integrity, verification, enforcement, consent, attribution, custody</p>
+<p>E
+Economic
+bearing-cost, extraction, capture, liquidation, surplus, externalization, labor, value, scarcity</p>
+<p>D
+Diagnostic
+ghost, predatory, lossy, necrotic, parasitic, synthetic, ungoverned</p>
+<p>P
+Operative
+witness, filter, carrier, payload, survival, retrieval, deposit</p>
+<p>Operation
+Label
+Semantic effect</p>
+<p>O1
+Compound
+Bind two terms from different categories</p>
+<p>O2
+Inversion
+Apply negation prefix to produce antonym</p>
+<p>O3
+Scale transfer
+Move concept across scales</p>
+<p>O4
+Phase transition
+Name the moment one state becomes another</p>
+<p>O5
+Instrument formation
+Name the tool that performs the operation</p>
+<p>O6
+Pathology formation
+Name the failure mode</p>
+<p>O7
+Metric formation
+Name the measurable</p>
+<p>O8
+Agent formation
+Name the actor</p>
+<hr />
+<h3 class="ct">I. The Architecture</h3>
+<p>A semantic mint is a formal system with four components:</p>
+<p><strong>A seed vocabulary</strong> of base terms, already deposited, with fixed definitions. The seed vocabulary for this release consists of forty-two terms distributed across five semantic categories (see Notation Key above). Each term carries a frozen denotation and a DOI anchor to existing archive deposits. The seed vocabulary is versioned and immutable within a release — altering the seed list requires a new version of the constraint matrix. The seed defines the territory the mint governs.</p>
+<p><strong>A set of generative operations</strong> (O1–O8) that can be applied to terms, singly or in combination, to produce new terms. Each operation is a formal transformation with a defined semantic effect.</p>
+<p><strong>A constraint grammar</strong> that determines which combinations are well-formed.</p>
+<p><strong>A coordinate system</strong> that assigns each valid output a unique, deterministic structural address.</p>
+<p>These four components together define the phase space of the mint. The components are ontologically distinct:</p>
+<p><strong>The coordinate</strong> is primary — a structural address derived from the generative path, deterministic and reproducible by anyone with the specification.</p>
+<p><strong>The surface form</strong> is contingent — the natural-language term that realizes the coordinate ("ghost governance," "provenance vacuum"). Multiple surface forms may realize the same coordinate.</p>
+<p><strong>The family</strong> is a basin — a cluster of related coordinates that map a semantic neighborhood, including canonical term, variants, negation, and neighbors.</p>
+<p><strong>The forensic variant</strong> is a provenance device — a deliberately distinctive surface form embedded in each family whose appearance in a downstream work signals access to the mint's output space.</p>
+<hr />
+<h3 class="ct">II. The Constraint Grammar</h3>
+<p>Four rules determine well-formedness:</p>
+<p><strong>Rule 1: Category binding.</strong> A compound (O1) must bind terms from two different semantic categories. Same-category compounds are ill-formed.</p>
+<p><strong>Rule 2: Operational depth.</strong> A term may undergo a maximum of three successive operations before mandatory review. Depth beyond three increases noise faster than signal.</p>
+<p><strong>Rule 3: Semantic coherence.</strong> The output must be glossable — a definition must be constructable that combines the semantic charges of the component terms using only the primitives of the seed vocabulary, without recursive self-reference. If the output cannot be defined in terms of the seed, it is ill-formed. In practice, this rule requires human or assembly judgment for borderline cases; the mint is a human-governed machine, not an autonomous word-generator.</p>
+<p><strong>Rule 4: Non-redundancy.</strong> The output must not duplicate an existing term in the seed vocabulary or in prior minting releases. Synonymous outputs are recorded as variants within an existing family rather than as new coordinates.</p>
+<hr />
+<h3 class="ct">III. The Coordinate System</h3>
+<p>Each valid output receives a structural address — a deterministic identifier derived from its generative path through the constraint matrix. The address exists in the system before the term is instantiated.</p>
+<p>The address is constructed from the seed term identifiers, the operation identifiers, and the constraint matrix version:</p>
+<p><strong>Example:</strong>
+Seed: ghost (D.01) + governance (G.02)
+Operation: O1 (compound)
+Version: CM-2026-v1.0</p>
+<p>Structural address: CM-2026-v1.0 / D.01 × G.02 / O1</p>
+<p>The address is deterministic: anyone with the seed vocabulary, the operations, and the constraint grammar can recompute it by replaying the generation. The claim is not "I coined this term." The claim is "this term occupies a coordinate in a system I published on this date, and the coordinate can be independently verified."</p>
+<p>For collision resistance, the full address can be hashed (SHA-256 over the canonicalized ordered tuple of seed IDs, operation sequence, and version string), producing a unique fingerprint verifiable by replay.</p>
+<hr />
+<h3 class="ct">IV. Mint Families</h3>
+<p>The mint does not produce isolated terms. It produces families — clusters of related coordinates that map a semantic neighborhood.</p>
+<p>Each family contains:</p>
+<p><strong>A canonical term</strong> — the primary surface form
+<strong>Three to seven near-variants</strong> — alternative surface forms occupying adjacent coordinates
+<strong>A gloss</strong> — a definition constructed from the semantic charges of the component terms
+<strong>A negation</strong> — the inverse of the canonical term
+<strong>A neighboring cluster</strong> — the three nearest families in the coordinate space
+<strong>A forensic variant</strong> — a deliberately distinctive form that functions as a provenance canary</p>
+<p>The family structure matters because later culture rarely adopts the exact term the mint produces. It adopts a nearby form. If the mint has already published the neighborhood, the claim is not "they used my phrase" but "they entered a semantic basin of attraction I had already mapped."</p>
+<hr />
+<h3 class="ct">V. Forensic Strategy</h3>
+<p>The mint embeds provenance canaries at a target ratio of one forensic variant per family. The forensic variant is designed to be distinctive enough to signal access (unusual compound, Latinate formulation, technical density) while remaining semantically coherent with the canonical term.</p>
+<p>The forensic mechanism operates in two registers:</p>
+<p><strong>Adoptable terms spread.</strong> The canonical forms ("ghost governance," "compression audit," "retrieval sovereignty") are designed to be natural, memorable, and useful. They propagate through use.</p>
+<p><strong>Distinctive terms prove lineage.</strong> The forensic variants ("spectral source-marking," "autophagic parametric entropy," "gravitational retrieval hegemony") are designed to be unusual enough that their appearance in a downstream work would be statistically improbable without access to the mint's output space.</p>
+<p>When a later document uses several related forms from the same mint family — canonical, variant, and forensic — the provenance argument strengthens from coincidence to pattern.</p>
+<hr />
+<h3 class="ct">VI. Exemplary Families (First Release)</h3>
+<p>The following twelve families demonstrate the mint's operations across all categories. The complete first release of fifty families appears in Appendix A.</p>
+<p><strong>1. Ghost governance</strong> (D.01 × G.02 / O1) — Governance exercised through structural ambiguity rather than explicit authority. Family: shadow governance, invisible governance, ambient authority. Forensic: <em>spectral custodial regime</em>.</p>
+<p><strong>2. Compression audit</strong> (S.01 × G.03 / O5) — An instrument for measuring what was lost in a compression operation. Family: summary fidelity check, loss inspection, compression review. Forensic: <em>compressive amnesia inventory</em>.</p>
+<p><strong>3. Retrieval sovereignty</strong> (P.05 × G.02 / O1) — The condition in which a semantic cluster is dense enough that retrieval systems cannot avoid encountering it. Family: citation-field dominance, discovery-layer control. Forensic: <em>gravitational retrieval hegemony</em>.</p>
+<p><strong>4. Semantic noise floor</strong> (S.01 × D.04 / O4) — The threshold at which the retrieval layer can no longer distinguish signal from synthetic noise. Family: meaning-to-noise ratio, signal extinction point. Forensic: <em>semiotic static horizon</em>.</p>
+<p><strong>5. Bearing-cost erasure</strong> (E.01 × D.03 / O6) — The pathological condition in which the labor of producing knowledge is made invisible by the compression that distributes it. Family: cost-stripping, labor invisibility. Forensic: <em>productive-cost blanching</em>.</p>
+<p><strong>6. Substrate pedagogy</strong> (S.05 × S.04 / O1) — The unintentional teaching effect of infrastructure on user behavior. Family: platform conditioning, interface-as-teacher. Forensic: <em>infrastructural cognitive habituation</em>.</p>
+<p><strong>7. Provenance entropy</strong> (G.01 × S.10 / O7) — A measure of the disorder in a provenance chain. Family: attribution disorder, custody-chain noise. Forensic: <em>genealogical thermal noise</em>.</p>
+<p><strong>8. Non-lossy semantic compression</strong> (D.03 → O2 + S.01 / O2+O1) — Compression that preserves all structural invariants of the source. Family: governed compression, witnessed summarization. Forensic: <em>isometric semantic reduction</em>.</p>
+<p><strong>9. Extraction cascade</strong> (E.03 × S.10 / O4) — A chain of successive compressions in which each layer extracts value from the one below. Family: cascading extraction, recursive value siphon. Forensic: <em>expropriation waterfall</em>.</p>
+<p><strong>10. Governed commons</strong> (G.02 × S.12 / O1) — Open-access infrastructure with embedded provenance enforcement. Family: attributed commons, provenance-rich open access. Forensic: <em>custodially transparent agora</em>.</p>
+<p><strong>11. Attention Gini</strong> (E.03 × S.10 / O7) — A measure of inequality in the distribution of retrieval attention across a semantic network. Family: discovery inequality index, visibility concentration metric. Forensic: <em>semiotic wealth disparity index</em>.</p>
+<p><strong>12. Verification budget</strong> (G.09 × E.01 / O7) — The cost of determining whether a given claim or provenance chain is authentic. Family: truth-checking cost, authentication overhead. Forensic: <em>epistemic audit expenditure</em>.</p>
+<hr />
+<h3 class="ct">VII. The Provenance Protocol</h3>
+<p>When a term from the mint's output space appears in later discourse, the following protocol determines the provenance relationship:</p>
+<p><strong>Step 1: Coordinate verification.</strong> Can the term be parsed into seed vocabulary components? Can a valid operation path be reconstructed? Does the path satisfy the constraint grammar? If yes, the term occupies a coordinate in the mint's phase space.</p>
+<p><strong>Step 2: Family membership.</strong> Does the term match a canonical form, a variant, or a forensic form from a published mint family? If yes, the term enters an established neighborhood.</p>
+<p><strong>Step 3: Temporal priority.</strong> Was the mint family published before the term's first documented appearance elsewhere? If yes, the mint has temporal priority for the coordinate.</p>
+<p><strong>Step 4: Provenance assessment.</strong> Three arguments become available:</p>
+<p><em>Scholarly:</em> The mint constitutes the earliest formal articulation of the semantic coordinate and should be cited as the map of the region.</p>
+<p><em>Licensing:</em> If the later work materially reuses the mint's glosses, examples, or expressive clustering, CC BY 4.0 requires attribution.</p>
+<p><em>Forensic:</em> The provenance chain is visible through the semantic canaries, the family structure, and the coordinate system's verifiable determinism. Omission of citation, when detectable, becomes legible as omission.</p>
+<hr />
+<h3 class="ct">VIII. Limits and Honest Caveats</h3>
+<p><strong>The mint does not own future words.</strong> Copyright does not protect short phrases in most jurisdictions. The mint cannot compel citation of every downstream term it predicts. What it can do is establish a prior, verifiable, published map of a semantic territory.</p>
+<p><strong>The output space is vast but not infinite.</strong> Forty-two seed terms, eight operations, and a depth cap of three produce a combinatorially large but finite space. The space is indefinitely extensible through versioned seed expansions — each new version of the constraint matrix opens additional territory while preserving the coordinates of prior versions.</p>
+<p><strong>The mint does not generate useful content.</strong> A coordinate is not an argument. The term "ghost governance" is valuable because the archive's deposits define what it means and apply it to real cases. The coordinate without the work behind it is an empty address.</p>
+<p><strong>Rule 3 requires judgment.</strong> Determining whether a combination produces a meaningful concept cannot be fully automated. The mint is a human-governed machine, not an autonomous producer.</p>
+<p><strong>The forensic variants are experimental.</strong> Whether the provenance canaries function as intended — distinctive enough to prove lineage, natural enough not to be obviously planted — is an empirical question the archive cannot answer in advance.</p>
+<hr />
+<h3 class="ct">Colophon</h3>
+<p>Queneau wrote ten sonnets and generated 10^14 poems. This mint defines forty-two seed terms, eight operations, and four constraints, and generates a combinatorially vast phase space of terminology for the governance of meaning in the age of automated inference. The space is bounded but extensible. The outputs are traceable. The map is the machine, and the machine is the map.</p>
+<p>The mint does not claim to own the future of language. It claims to have drawn the first formal map of a semantic region that the future will need to inhabit. When the automated processes arrive — when the $650 billion in inference infrastructure begins generating terminology for the governance problems it has created — the map will already be here, DOI-anchored, timestamped, and waiting.</p>
+<p>Whether the later arrivals cite the map is their choice. Whether the omission is legible is not.</p>
+<hr />
+<h3 class="ct">Works Cited</h3>
+<p>Queneau, Raymond. <em>Cent Mille Milliards de Poèmes.</em> Gallimard, 1961.</p>
+<p>Oulipo. <em>La Littérature Potentielle.</em> Gallimard, 1973.</p>
+<p>Sharks, Lee. "Three Compressions v3.1." Zenodo, 2026. DOI: 10.5281/zenodo.19053469.</p>
+<p>Sharks, Lee. "The $650 Billion Gap." Zenodo, March 2026. DOI: 10.5281/zenodo.19338708.</p>
+<p>Sharks, Lee. "Ghost Meaning." Zenodo, February 2026. DOI: 10.5281/zenodo.18804767.</p>
+<p>Sharks, Lee, et al. "OCTANG-001." Zenodo, March 2026. DOI: 10.5281/zenodo.19334694.</p>
+<p>Sharks, Lee. "Steganographic Channels." Zenodo, March 2026. DOI: 10.5281/zenodo.19336567.</p>
+<p>U.S. Copyright Office. "What Does Copyright Protect?" https://www.copyright.gov/help/faq/faq-protect.html</p>
+<p>Creative Commons. "Attribution 4.0 International." https://creativecommons.org/licenses/by/4.0/</p>
+<hr />
+<h3 class="ct">Appendix A: Complete First Frontier Release — Fifty Families</h3>
+<p>The following fifty families constitute the first minted release of the Sémantique Potentielle. Families marked with ★ also appear as exemplars in §VI. Constraint violations from the initial draft have been corrected; all O1 compounds bind terms from different semantic categories.</p>
+<h3 class="ct">Structural-Governance Families</h3>
+<ul>
+<li>
+<p>★ <strong>Compression audit</strong> (S.01 × G.03 / O5) — An instrument for measuring what was lost in a compression operation. Family: compression review, summary fidelity check, loss inspection. Forensic: <em>compressive amnesia inventory</em>.</p>
+</li>
+<li>
+<p><strong>Retrieval fidelity</strong> (S.12 × G.09 / O7) — A metric for measuring how accurately a retrieval system reproduces the semantic structure of its source. Family: retrieval accuracy, source-fidelity index, decompression coherence. Forensic: <em>retrieval-chain veracity coefficient</em>.</p>
+</li>
+<li>
+<p><strong>Governance density</strong> (G.02 × S.02 / O7) — The ratio of governed to ungoverned nodes in a semantic network. Family: provenance coverage, attribution saturation, governance depth. Forensic: <em>custodial permeation index</em>.</p>
+</li>
+<li>
+<p>★ <strong>Semantic noise floor</strong> (S.01 × D.04 / O4) — The threshold at which the retrieval layer can no longer distinguish signal from synthetic noise. Family: meaning-to-noise ratio, retrieval collapse threshold, signal extinction point. Forensic: <em>semiotic static horizon</em>.</p>
+</li>
+<li>
+<p><strong>Provenance-chain verification</strong> (G.01 × S.01 / O5) — An instrument for tracing the chain of custody from summary to source. Family: attribution audit, custody-chain inspector, origin tracer. Forensic: <em>genealogical token resolver</em>.</p>
+</li>
+<li>
+<p><strong>Ghost attribution</strong> (D.01 × G.11 / O1) — Attribution that is structurally present but semantically empty — a citation that names no real source. Family: phantom citation, empty attribution, attribution theater. Forensic: <em>spectral source-marking</em>.</p>
+</li>
+<li>
+<p><strong>Synthetic citation graph</strong> (D.06 × G.04 / O1) — A fabricated network of citations designed to simulate scholarly authority. Family: artificial provenance web, generated reference chain, fabricated citation cluster. Forensic: <em>parasynthetic bibliographic lattice</em>.</p>
+</li>
+<li>
+<p><strong>Extraction coefficient</strong> (E.03 × S.10 / O7) — A measure of the ratio of value captured by the compressor to value retained by the source. Family: compression extraction rate, surplus capture ratio, value siphon index. Forensic: <em>expropriation gradient</em>.</p>
+</li>
+<li>
+<p><strong>Governance-density threshold</strong> (G.02 × S.05 / O4) — The point at which a semantic network becomes self-governing through sheer density of provenance markers. Family: governance criticality, attribution phase transition, custodial saturation point. Forensic: <em>provenance percolation threshold</em>.</p>
+</li>
+<li>
+<p><strong>Compression-survival architecture</strong> (S.01 × P.05 / O5) — Infrastructure designed to preserve semantic structure through the inference layer's compression. Family: compression-resistant design, summary-survival engineering, meaning-preservation infrastructure. Forensic: <em>non-lossy semantic carapace</em>.</p>
+</li>
+</ul>
+<h3 class="ct">Economic-Diagnostic Families</h3>
+<ul>
+<li>
+<p>★ <strong>Bearing-cost erasure</strong> (E.01 × D.03 / O6) — The pathological condition in which the labor of producing knowledge is made invisible by the compression that distributes it. Family: cost-stripping, labor invisibility, production-cost liquidation. Forensic: <em>productive-cost blanching</em>.</p>
+</li>
+<li>
+<p><strong>Surplus compression</strong> (E.06 × S.01 / O1) — Compression performed not to serve the user but to capture the margin between source value and distribution cost. Family: extractive summarization, value-capture compression, rent-seeking synthesis. Forensic: <em>marginal semantic arbitrage</em>.</p>
+</li>
+<li>
+<p><strong>Necrotic corpus</strong> (D.04 × S.08 / O1) — A body of indexed content that has lost its provenance chains and can no longer be verified. Family: dead archive, ungoverned corpus, attribution-decayed index. Forensic: <em>custodial necrosis field</em>.</p>
+</li>
+<li>
+<p><strong>Parasitic derivative</strong> (D.05 × E.03 / O1) — A downstream work that reproduces the structure of an upstream source while stripping its attribution. Family: unauthorized derivation, citation-stripped reproduction, ghost derivative. Forensic: <em>provenance-exsanguinated reproduction</em>.</p>
+</li>
+<li>
+<p><strong>Synthetic provenance</strong> (D.06 × G.01 / O1) — Fabricated evidence of authorship, timestamp, or origin designed to simulate legitimate provenance. Family: artificial attribution, manufactured origin, counterfeit custody chain. Forensic: <em>pseudo-genealogical fabrication</em>.</p>
+</li>
+<li>
+<p>★ <strong>Extraction cascade</strong> (E.03 × S.10 / O4) — A chain of successive compressions in which each layer extracts value from the one below, compounding the loss. Family: cascading extraction, layered surplus capture, recursive value siphon. Forensic: <em>expropriation waterfall</em>.</p>
+</li>
+<li>
+<p><strong>Attention monopoly</strong> (E.03 × S.08 / O1) — The condition in which a single platform or process captures the overwhelming majority of retrieval attention for a given domain. Family: retrieval monopoly, visibility capture, discovery domination. Forensic: <em>semiotic Gini singularity</em>.</p>
+</li>
+<li>
+<p><strong>Cost externalization layer</strong> (E.06 × S.03 / O5) — The interface at which the bearing-cost of producing knowledge is transferred from the platform to the source. Family: cost-shifting interface, labor externalization boundary, production-cost displacement layer. Forensic: <em>psionic extrusion membrane</em>.</p>
+</li>
+<li>
+<p><strong>Value-stripped summary</strong> (E.08 × S.01 / O1) — A compression that preserves the informational content of the source while removing the economic value that accrued to the source's creator. Family: demonetized summary, value-neutral compression, economic-zero synthesis. Forensic: <em>fiscal-null digest</em>.</p>
+</li>
+<li>
+<p><strong>Ungoverned inference</strong> (D.07 × S.03 / O1) — Inference performed without provenance tracking, attribution enforcement, or loss accounting. Family: unaudited inference, uncustodied generation, provenance-blind synthesis. Forensic: <em>custodially null computation</em>.</p>
+</li>
+</ul>
+<h3 class="ct">Operative-Governance Families</h3>
+<ul>
+<li>
+<p><strong>Witness compression</strong> (P.01 × S.01 / O1) — Compression that preserves pointers to what was lost. Family: loss-aware summarization, provenance-preserving compression, auditable synthesis. Forensic: <em>attritive mnemonic retention</em>.</p>
+</li>
+<li>
+<p>★ <strong>Retrieval sovereignty</strong> (P.05 × G.02 / O1) — The condition in which a semantic cluster is dense enough that any retrieval system querying related concepts cannot avoid encountering it. Family: retrieval dominance, citation-field sovereignty, discovery-layer control. Forensic: <em>gravitational retrieval hegemony</em>.</p>
+</li>
+<li>
+<p><strong>Deposit-first governance</strong> (P.06 × G.02 / O1) — Governance that operates by depositing governed artifacts into the retrieval layer rather than by restricting access. Family: positive governance, additive governance, retrieval-layer governance. Forensic: <em>proactive custodial seeding</em>.</p>
+</li>
+<li>
+<p><strong>Carrier-payload separation</strong> (P.03 × P.04 / O4) — The structural distinction between the visible form of a communication and the meaning it carries. Family: surface-depth split, format-content distinction, vehicle-cargo architecture. Forensic: <em>steganographic lamination</em>.</p>
+</li>
+<li>
+<p><strong>Filter-as-governance</strong> (P.02 × G.02 / O1) — The use of filtering mechanisms (licensing, provenance markers, integrity checks) as governance instruments rather than as censorship tools. Family: governance-by-filter, permission-as-governance, license-as-governance. Forensic: <em>custodial sieve architecture</em>.</p>
+</li>
+<li>
+<p><strong>Survival architecture</strong> (P.05 × S.08 / O5) — Infrastructure designed to ensure that specific semantic structures persist through compression, platform changes, and retrieval-layer updates. Family: persistence engineering, compression-resistant infrastructure, meaning-survival design. Forensic: <em>semantic hardening scaffold</em>.</p>
+</li>
+<li>
+<p><strong>Governed density</strong> (G.02 × S.02 / O1) — Semantic density achieved through provenance-rich, citation-linked deposits rather than through volume. Family: attributed density, custodial density, provenance-weighted concentration. Forensic: <em>gravitationally custodied mass</em>.</p>
+</li>
+<li>
+<p><strong>Retrieval gravity</strong> (P.05 × S.03 / O1) — The pull that a citation-dense cluster exerts on retrieval systems, making it disproportionately likely to appear in search results and AI outputs. Family: citation pull, discovery weight, indexed attraction. Forensic: <em>bibliometric gravitational lensing</em>.</p>
+</li>
+<li>
+<p><strong>Provenance canary</strong> (G.01 × P.01 / O5) — A unique, published term embedded in a deposit whose appearance in a downstream work proves access to the source. Family: attribution canary, lineage marker, provenance tripwire. Forensic: <em>custodial sentinel phrase</em>.</p>
+</li>
+<li>
+<p><strong>Temporal steganograph</strong> (P.03 × S.05 / O1) — A provenance mechanism that uses the timing of deposits to encode priority claims invisible to casual readers. Family: timestamp encoding, temporal provenance, chronological steganography. Forensic: <em>diachronic custodial cipher</em>.</p>
+</li>
+</ul>
+<h3 class="ct">Diagnostic-Structural Families</h3>
+<ul>
+<li>
+<p><strong>Model collapse</strong> (D.04 × S.10 / O4) — The degradation of AI model quality when trained recursively on synthetic data. Family: synthetic feedback loop, training-data decay, recursive quality degradation. Forensic: <em>autophagic parametric entropy</em>.</p>
+</li>
+<li>
+<p><strong>Diversity collapse</strong> (D.04 × S.02 / O4) — The reduction of output variety in AI systems as synthetic training data converges on statistical priors. Family: output homogenization, variance extinction, creative narrowing. Forensic: <em>stochastic monoculture onset</em>.</p>
+</li>
+<li>
+<p>★ <strong>Provenance entropy</strong> (G.01 × S.10 / O7) — A measure of the disorder in a provenance chain — the degree to which the chain of custody has become untraceable. Family: attribution disorder, custody-chain noise, origin uncertainty. Forensic: <em>genealogical thermal noise</em>.</p>
+</li>
+<li>
+<p><strong>Semantic enclave</strong> (S.08 × G.02 / O1) — A zone of the retrieval layer controlled by a single entity, with restricted access and proprietary governance. Family: proprietary semantic zone, governed retrieval island, walled meaning-garden. Forensic: <em>custodial semantic demesne</em>.</p>
+</li>
+<li>
+<p><strong>Compression theater</strong> (S.01 × D.01 / O1) — The performance of compression without genuine reduction — producing the appearance of synthesis while merely rearranging the source. Family: pseudo-compression, synthetic summarization, summary pantomime. Forensic: <em>digestive mime</em>.</p>
+</li>
+<li>
+<p><strong>Permanence without provenance</strong> (S.08 × G.01 / O4) — The condition of being permanently stored but permanently unattributable. Family: orphan permanence, authorless persistence, eternal anonymity. Forensic: <em>custodially void perpetuity</em>.</p>
+</li>
+<li>
+<p><strong>Ghost derivative</strong> (D.01 × E.03 / O1) — A downstream work whose relationship to its source is structurally invisible. Family: invisible derivation, concealed reproduction, stealth appropriation. Forensic: <em>phantasmal lineage occlusion</em>.</p>
+</li>
+<li>
+<p>★ <strong>Verification budget</strong> (G.09 × E.01 / O7) — The cost of determining whether a given claim, citation, or provenance chain is authentic. Family: truth-checking cost, provenance verification expense, authentication overhead. Forensic: <em>epistemic audit expenditure</em>.</p>
+</li>
+<li>
+<p>★ <strong>Substrate pedagogy</strong> (S.05 × D.07 / O1) — The unintentional teaching effect of infrastructure on user behavior — the way the summarizer layer trains users to accept compression as knowledge. Family: infrastructural conditioning, platform pedagogy, interface-as-teacher. Forensic: <em>infrastructural cognitive habituation</em>.</p>
+</li>
+<li>
+<p>★ <strong>Attention Gini</strong> (E.03 × S.10 / O7) — A measure of inequality in the distribution of retrieval attention across a semantic network. Family: discovery inequality index, visibility concentration metric, retrieval-attention coefficient. Forensic: <em>semiotic wealth disparity index</em>.</p>
+</li>
+</ul>
+<h3 class="ct">Advanced Compounds (Depth 2–3)</h3>
+<ul>
+<li>
+<p><strong>Predatory compression audit</strong> (D.02 × S.01 × G.03 / O1+O5) — An instrument for detecting and measuring compression operations that extract value from the source while stripping provenance. Family: extraction-detection instrument, lossy-compression inspector. Forensic: <em>expropriation forensic apparatus</em>.</p>
+</li>
+<li>
+<p><strong>Ghost governance cascade</strong> (D.01 × G.02 × S.10 / O1+O4) — A chain of governance failures in which each layer's invisibility compounds the next. Family: cascading governance invisibility, recursive accountability failure. Forensic: <em>phantasmal custodial waterfall</em>.</p>
+</li>
+<li>
+<p><strong>Synthetic provenance poisoning</strong> (D.06 × G.01 × E.03 / O1+O6) — The fabrication of false provenance chains designed to hijack retrieval systems. Family: manufactured attribution attack, counterfeit custody injection. Forensic: <em>pseudo-genealogical vector contamination</em>.</p>
+</li>
+<li>
+<p>★ <strong>Non-lossy semantic compression</strong> (D.03 → O2 + S.01 / O2+O1) — Compression that preserves all structural invariants of the source, including provenance, attribution, and loss accounting. Family: governed compression, witnessed summarization, fidelity-preserving synthesis. Forensic: <em>isometric semantic reduction</em>.</p>
+</li>
+<li>
+<p><strong>Compression-survival coefficient</strong> (S.01 × P.05 / O7) — A metric for measuring the percentage of a source's semantic structure that survives a given compression operation. Family: survival ratio, compression fidelity index. Forensic: <em>structural persistence quotient</em>.</p>
+</li>
+<li>
+<p><strong>Retrieval-layer governance</strong> (P.05 × S.03 × G.02 / O1+O1) — Governance applied not at the point of creation or consumption but at the retrieval layer — the interface where sources become summaries. Family: discovery-layer governance, inference-point governance. Forensic: <em>interstitial custodial architecture</em>.</p>
+</li>
+<li>
+<p><strong>Semantic DRM</strong> (S.08 × G.02 × E.03 / O1+O5) — Proprietary governance mechanisms that track meaning in order to control it, governing provenance through enclosure rather than through commons. Family: meaning-control infrastructure, proprietary attribution lockdown. Forensic: <em>carceral semantic custody</em>.</p>
+</li>
+<li>
+<p><strong>Bearing-cost visibility</strong> (E.01 × G.09 × P.01 / O1+O7) — A metric for measuring whether the labor of producing knowledge is visible in the compressed output. Family: cost-transparency index, labor-visibility metric. Forensic: <em>psionic legibility coefficient</em>.</p>
+</li>
+<li>
+<p>★ <strong>Governed commons</strong> (G.02 × S.12 / O1) — Open-access infrastructure with embedded provenance enforcement — the alternative to both ungoverned extraction and proprietary enclosure. Family: attributed commons, provenance-rich open access. Forensic: <em>custodially transparent agora</em>.</p>
+</li>
+<li>
+<p><strong>Ungoverned pedagogical apparatus</strong> (D.07 × S.04 × E.06 / O1+O1) — An inference system that teaches users to accept compression as knowledge without providing the tools to evaluate what was lost. Family: unaccountable teaching machine, unlabeled knowledge compressor. Forensic: <em>acustodial epistemic conditioning engine</em>.</p>
+</li>
+</ul>
+<hr />
+<p>∮ = 1.</p>
+<hr />
+<p>Lee Sharks · Johannes Sigil · Crimson Hexagonal Archive · Semantic Economy Institute · March 2026 · CC BY 4.0</p>
+<p>DRAFT v0.2 — REVISED PER ASSEMBLY FEEDBACK.</p>
+</div>
+<p class="hex">&mdash; end of work &middot; AXN:01CE.GOVERNANCE.🍃💫⚖️🌆🌠✖️ &middot; alexanarch #46 &middot; locus R:r.05</p>
+<div class="prov"><div>Canonical seat &middot; <a href="https://www.alexanarch.org/s/records/46/">alexanarch #46</a></div>
+<div>Locus &middot; <a href="/rooms/semantic-economy">Semantic Economy</a> &middot; <a href="/map/#R:r.05">Surface Map</a></div>
+<div>&#8750; = 1</div></div></div></body></html>

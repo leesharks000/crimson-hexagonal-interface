@@ -42,7 +42,7 @@
     "formal_object": "H = ⟨D, R, M, I, O, Φ, W⟩",
     "rooms": 13,
     "relations": 130,
-    "documents": 482,
+    "documents": 486,
     "operators": 39,
     "institutions": 15,
     "mantles": 7,
@@ -221,7 +221,7 @@
     "rooms": 50,
     "operators": 39,
     "typed_relations": 130,
-    "as_of": "2026-09-05",
+    "as_of": "2026-10-16",
     "source": "public/rooms/*/index.json + hexagon_canonical.json (sync_manifest.py)"
   },
   "_room_slugs": [
@@ -277,8 +277,8 @@
     "whitman"
   ],
   "_generated": {
-    "date": "2026-09-05",
-    "source_commit": "36b5b61",
+    "date": "2026-10-16",
+    "source_commit": "19b0618",
     "source": "public/rooms tree + hexagon_canonical.json",
     "schema_version": "manifest/v2",
     "generator": "scripts/sync_manifest.py"

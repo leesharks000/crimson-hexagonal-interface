@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Semantic Economy: Measurement Specifications Technical Standards for Quantifying Meanin… &middot; AXN:0034 | Crimson Hexagonal Archive</title>
+<meta name="description" content="Semantic Economy: Measurement Specifications Technical Standards for Quantifying Meaning-Flows — A v1.0 internal technical specification by Lee Sharks proposing nine measures for Semantic Economy research and audit.">
+<link rel="canonical" href="https://www.crimsonhexagonal.org/works/0034">
+<style>*{box-sizing:border-box}body{margin:0;background:#0c0e12;color:#d8d4cc;font:16px/1.65 Georgia,serif}
+.w{max-width:46rem;margin:0 auto;padding:2.2rem 1.4rem 5rem}a{color:#c8a868}
+h1{font-size:1.5rem;line-height:1.25;margin:0 0 .3rem}
+h2{font:500 .62rem/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#8a8478;
+margin:2.2rem 0 .7rem;padding-bottom:.4rem;border-bottom:1px solid rgba(200,168,104,.18)}
+.hex{font:.62rem/1.6 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;margin:0 0 1rem}
+.phys{border-left:2px solid #c8a868;padding:.2rem 0 .2rem 1rem;margin:1.1rem 0}
+.phys b{color:#c8a868;font-family:ui-monospace,monospace;font-size:.8rem}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.7rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,monospace;color:#b8b3a8;background:rgba(255,255,255,.02);
+border:1px solid rgba(200,168,104,.14);border-radius:3px;padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}
+.rel{padding:.55rem 0;border-bottom:1px solid rgba(200,168,104,.12);font-size:.9rem}
+.rel .k{font:.6rem/1 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;text-transform:uppercase}
+.prov{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(200,168,104,.18);
+font:.62rem/1.9 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.8rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,'JetBrains Mono',monospace;color:#b8b3a8;
+background:rgba(255,255,255,.02);border:1px solid rgba(200,168,104,.14);border-radius:3px;
+padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}
+.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}.xw{font:.6rem/1.5 ui-monospace,monospace;color:#8a8478;opacity:.85}
+.xwt{font:.6rem/1.7 ui-monospace,monospace;color:#8a8478;border-left:2px solid rgba(200,168,104,.25);padding:.35rem 0 .35rem .7rem;margin:.2rem 0 1rem}
+.xwt b{color:#a89868;font-weight:400}
+</style><style>.full{overflow-wrap:anywhere}.full table{border-collapse:collapse;font-size:.84rem;display:block;overflow-x:auto;margin:1rem 0}.full th,.full td{border:1px solid rgba(200,168,104,.2);padding:.3rem .5rem;vertical-align:top;text-align:left}.full ul,.full ol{padding-left:1.3rem}.full li{margin:.25rem 0}.full blockquote{margin:1rem 0;padding-left:1rem;border-left:2px solid rgba(200,168,104,.3);color:#b8b3a8}.vers{border-left:2px solid #b45309;padding:.35rem 0 .35rem 1rem;margin:1rem 0;font-size:.92rem}.vers b{color:#e0a458;font-family:ui-monospace,monospace;font-size:.78rem;letter-spacing:.06em}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Semantic Economy: Measurement Specifications Technical Standards for Quantifying Meaning-Flows", "identifier": "AXN:0034.GOVERNANCE.♅🪞∞🔄✊💫", "url": "https://www.crimsonhexagonal.org/works/0034", "sameAs": "https://www.alexanarch.org/s/records/250/", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-01-06", "version": null, "isPartOf": {"@type": "CollectionPage", "name": "Semantic Economy", "url": "https://www.crimsonhexagonal.org/rooms/semantic-economy"}, "additionalType": "SPECIFICATION"}</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body><div class="w">
+<p class="hex"><a href="/">Crimson Hexagonal Archive</a> &nbsp;/&nbsp; <a href="/rooms/">rooms</a> &nbsp;/&nbsp; <a href="/rooms/semantic-economy">Semantic Economy</a> &nbsp;/&nbsp; works</p>
+<h1>Semantic Economy: Measurement Specifications Technical Standards for Quantifying Meaning-Flows</h1><style id="symcss">.symbolon{border-left:3px solid #8a6a12;background:rgba(255,250,236,.55);
+padding:.72em 1em .78em;margin:0 0 1.6em;font-size:.84rem;line-height:1.6;color:#33240b}
+.symbolon p{margin:0 0 .4em}.symbolon p:last-child{margin:0}
+.symbolon .sc{font-size:.78rem;color:#4a3612}
+.symbolon b{font-variant:small-caps;letter-spacing:.04em}.symbolon a{color:#7d5e1a}</style><div class="symbolon"><p><b>This half.</b> Voice: Lee Sharks. Address: AXN:0034.GOVERNANCE.♅🪞∞🔄✊💫 &middot; alexanarch #250.</p><p>It <b>is seated in</b> <a href="/rooms/semantic-economy">R:r.05 Semantic Economy</a>. 16 records of the archive cite it.</p><p class="sc">Completion condition: voice, address, typed relation. <a href="/llms.txt">The condition</a> &middot; <a href="/relation_record.json">the record</a>.</p></div>
+
+<p class="hex"><b>AXN:0034.GOVERNANCE.♅🪞∞🔄✊💫</b><br>role <b>SPECIFICATION</b> &middot; multiplicity <b>SINGLETON</b> &middot; A v1.0 internal technical specification by Lee Sharks proposing nine measures for Semantic Economy research and audit. &middot; standing <b>SEATED</b><br>
+locus <b>R:r.05</b> &middot; 2026-01-06 &middot; 1357 words &middot; body <b>full</b></p>
+<div class="phys"><b>Seat and projection</b><br>Owned by <a href="https://www.alexanarch.org/s/records/250/">Alexanarch record #250</a>, the canonical seat. This page projects the work in full. Divergence is a defect of this projection, never of the seat.</div>
+<h2>Relations</h2><div class="lp"><div><b>seated_in</b> &middot; <a href="/rooms/semantic-economy">R:r.05 Semantic Economy</a></div><div><b>cited_by</b> &middot; <a href="/works/019c">CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive wi · #31</a></div><div><b>cited_by</b> &middot; <a href="/works/026a">Provenance Alignment: Attribution Survival as a Substrate Condition fo · #95</a></div><div><b>cited_by</b> &middot; <a href="/works/0036">On Unmediated Theoretical Uptake: How Diagnostic Vocabulary Stabilizes · #252</a></div><div><b>cited_by</b> &middot; <a href="/works/0039">Semantic Liquidation: An Executive Summary · #255</a></div><div><b>cited_by</b> &middot; <a href="/works/0042">Semantic Exhaustion: An Executive Summary — The Depletion Threshold fo · #264</a></div><div><b>cited_by</b> &middot; <a href="/works/04d8">The Semantic Bill of Rights v2.2 — Rights Charter Companion to the Con · #1223</a></div></div>
+<h2>Full text</h2><div class="full">
+<h3 class="ct">Semantic Economy: Measurement Specifications</h3>
+<h3 class="ct">Technical Standards for Quantifying Meaning-Flows</h3>
+<p><strong>Document ID:</strong> SEMANTIC-MEASUREMENT-SPECS-2026-01-06</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.18166394">10.5281/zenodo.18166394</a></p>
+<p><strong>Author:</strong> Lee Sharks</p>
+<p><strong>Framework:</strong> Semantic Economy / NH-OS</p>
+<p><strong>Version:</strong> 1.0</p>
+<p><strong>License:</strong> CC BY 4.0</p>
+<hr />
+<h3 class="ct">Abstract</h3>
+<p>This document specifies nine measurement formulas for quantifying semantic labor, semantic capital, semantic liquidation, and semantic integrity within the Semantic Economy framework. These specifications enable empirical research, system auditing, and practical application of the framework's accounting categories.</p>
+<hr />
+<h3 class="ct">Foundational Principles</h3>
+<h3 class="ct">On Semantic Labor</h3>
+<p>Semantic labor is any human activity that produces, maintains, or transmits meaning — including non-digital, non-market activity.</p>
+<p>When a mother comforts her child, she performs semantic labor. When a teacher explains a concept, she performs semantic labor. When a community maintains its traditions, it performs semantic labor.</p>
+<p>Semantic labor is the most basic human drive and capacity: the making of meaning.</p>
+<h3 class="ct">On Semantic Capital</h3>
+<p>Semantic capital is the accumulated reservoir of meaning — cultural traditions, canonical texts, community knowledge, institutional trust, shared interpretive frameworks — in various states of flow and accretion.</p>
+<p>The canon is semantic capital. A brand's reputation is semantic capital. A community's shared history is semantic capital.</p>
+<h3 class="ct">On Semantic Liquidation</h3>
+<p>Liquidation is the conversion of situated meaning into retrievable, monetizable units — destroying context, provenance, and diagnostic precision in the process.</p>
+<p>Liquidation is not "optimization." It is extraction that destroys what it extracts from.</p>
+<hr />
+<h3 class="ct">Measurement Specifications</h3>
+<h3 class="ct">CATEGORY A: Semantic Labor Measures</h3>
+<hr />
+<h4 class="ct">A1. Time-Use Semantic Density (TUSD)</h4>
+<p><strong>Purpose:</strong> Measure the meaning-production intensity of time spent, not just duration.</p>
+<p><strong>Formula:</strong></p>
+<p>TUSD = (M × C) / T</p>
+<p>Where:
+M = Meaning-Output (measurable effects on recipient's interpretive capacity)
+C = Coherence-Maintained (stability of shared understanding over time, scale 0-1)
+T = Time-Invested (hours)</p>
+<p><strong>Unit:</strong> Semantic-hours (s-hr)</p>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>High TUSD = dense meaning-production (e.g., skilled teaching, deep caregiving)</li>
+<li>Low TUSD = dilute meaning-production (e.g., rote tasks, fragmented attention)</li>
+</ul>
+<p><strong>Example Calculation:</strong>
+A mother's 2-hour bedtime routine that produces stable attachment and narrative coherence in the child:</p>
+<ul>
+<li>M = 0.8 (strong developmental effect)</li>
+<li>C = 0.9 (high stability over time)</li>
+<li>T = 2 hours</li>
+<li>TUSD = (0.8 × 0.9) / 2 = 0.36 s-hr per clock-hour</li>
+</ul>
+<hr />
+<h4 class="ct">A2. Affective Return on Investment (AROI)</h4>
+<p><strong>Purpose:</strong> Measure the benefit produced by semantic labor in organizational or relational contexts.</p>
+<p><strong>Formula:</strong></p>
+<p>AROI = (D₀ - D₁) / L</p>
+<p>Where:
+D₀ = Baseline dysfunction (burnout rate, turnover, relational breakdown)
+D₁ = Post-intervention dysfunction
+L = Semantic labor invested (hours × intensity)</p>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>AROI &gt; 0 = positive return (semantic labor reduces dysfunction)</li>
+<li>AROI = 0 = neutral (no measurable effect)</li>
+<li>AROI &lt; 0 = negative return (intervention counterproductive)</li>
+</ul>
+<p><strong>Benchmark:</strong> Studies indicate supportive managers can reduce burnout by 58%, suggesting AROI of ~0.58 per unit of managerial semantic labor invested.</p>
+<hr />
+<h3 class="ct">CATEGORY B: Semantic Capital Measures</h3>
+<hr />
+<h4 class="ct">B1. Terminological Authority Index (TAI)</h4>
+<p><strong>Purpose:</strong> Measure whether an entity's definitions appear as default in AI summaries and knowledge retrieval.</p>
+<p><strong>Formula:</strong></p>
+<p>TAI = (A + D) / Q</p>
+<p>Where:
+A = Attributed appearances (times entity is cited as source)
+D = Definition matches (times entity's exact framing is used, with or without attribution)
+Q = Total relevant queries (sample size in entity's domain)</p>
+<p><strong>Scale:</strong> 0-1</p>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>TAI &gt; 0.7 = strong terminological authority</li>
+<li>TAI 0.3-0.7 = contested territory</li>
+<li>TAI &lt; 0.3 = weak authority (definitions controlled by others)</li>
+</ul>
+<p><strong>Method:</strong> Sample 100 relevant queries across multiple AI systems. Score each for attribution and definition-match.</p>
+<hr />
+<h4 class="ct">B2. Coherence Persistence Index (CPI)</h4>
+<p><strong>Purpose:</strong> Measure how well meaning survives compression.</p>
+<p><strong>Formula:</strong></p>
+<p>CPI = Sₚ / S₀</p>
+<p>Where:
+Sₚ = Semantic content preserved in summary
+S₀ = Semantic content in original</p>
+<p>Semantic content = weighted sum of:
+- Key terms (presence/absence)
+- Relationships (preserved/lost)
+- Qualifications (preserved/lost)
+- Diagnostic precision (preserved/diluted)</p>
+<p><strong>Scale:</strong> 0-1</p>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>CPI &gt; 0.8 = high preservation</li>
+<li>CPI 0.5-0.8 = moderate preservation</li>
+<li>CPI &lt; 0.5 = aggressive liquidation</li>
+</ul>
+<p><strong>Method:</strong> Compare original document to AI summary using standardized rubric.</p>
+<hr />
+<h3 class="ct">CATEGORY C: Semantic Liquidation Measures</h3>
+<hr />
+<h4 class="ct">C1. Semantic Decay Delta (SDD)</h4>
+<p><strong>Purpose:</strong> Quantify the loss of nuance between original and compressed versions.</p>
+<p><strong>Formula:</strong></p>
+<p>SDD = |ρ₀ - ρₛ|</p>
+<p>Where:
+ρ₀ = Original semantic density = (U + Q + C) / L₀
+ρₛ = Summary semantic density = (U' + Q' + C') / Lₛ</p>
+<p>U = Unique terms
+Q = Qualifications and hedges
+C = Context markers
+L = Total length (tokens)</p>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>SDD &gt; 0.5 = aggressive liquidation</li>
+<li>SDD 0.2-0.5 = moderate liquidation</li>
+<li>SDD &lt; 0.2 = preservation</li>
+</ul>
+<hr />
+<h4 class="ct">C2. Provenance Erasure Rate (PER)</h4>
+<p><strong>Purpose:</strong> Measure how often AI systems use meaning correctly without citing the source.</p>
+<p><strong>Formula:</strong></p>
+<p>PER = Uᵤ / Uₜ</p>
+<p>Where:
+Uᵤ = Uncited correct uses (framework terms/concepts used correctly, no attribution)
+Uₜ = Total correct uses (all instances of correct usage)</p>
+<p><strong>Scale:</strong> 0-1</p>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>PER &gt; 0.8 = severe erasure (meaning extracted, source invisible)</li>
+<li>PER 0.4-0.8 = partial erasure</li>
+<li>PER &lt; 0.4 = attribution preserved</li>
+</ul>
+<hr />
+<h4 class="ct">C3. Semantic Debt Ratio (SDR)</h4>
+<p><strong>Purpose:</strong> Measure the gap between extraction and replenishment.</p>
+<p><strong>Formula:</strong></p>
+<p>SDR = E / R</p>
+<p>Where:
+E = Semantic extraction (value derived from ingesting corpus)
+    - Training benefit (model capability improvement)
+    - Query responses served
+    - Revenue generated
+R = Semantic replenishment (value returned to producers)
+    - Compensation paid
+    - Attribution provided
+    - Access granted</p>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>SDR &gt;&gt; 1 = massive uncompensated extraction (debt accumulating)</li>
+<li>SDR ≈ 1 = balanced exchange</li>
+<li>SDR &lt; 1 = investment in semantic infrastructure</li>
+</ul>
+<p><strong>Current Estimate:</strong> SDR for LLM training on literary canon &gt;&gt; 100 (extraction without compensation at civilizational scale)</p>
+<hr />
+<h3 class="ct">CATEGORY D: Integrity Verification Measures</h3>
+<hr />
+<h4 class="ct">D1. Integrity Knot Test (IKT)</h4>
+<p><strong>Purpose:</strong> Detect editorial intervention through recursive definition entanglement.</p>
+<p><strong>Method:</strong></p>
+<ul>
+<li>Define terms recursively:</li>
+</ul>
+<p>"Semantic Liquidation is the necessary condition for Semantic Rent"
+- "Semantic Rent cannot exist without prior Liquidation"</p>
+<ul>
+<li>
+<p>Submit framework to summarization system</p>
+</li>
+<li>
+<p>Check logical coherence:</p>
+</li>
+</ul>
+<p>Can system explain "Semantic Rent" without "Semantic Liquidation"?
+- Does omission create contradiction?</p>
+<ul>
+<li>Score:</li>
+</ul>
+<p>IKT = 1 if omission causes incoherence (knot holds)
+IKT = 0 if omission preserves coherence (knot failed)</p>
+<p><strong>Interpretation:</strong> IKT = 1 indicates the diagnostic term is structurally necessary; its omission reveals editorial intervention.</p>
+<hr />
+<h4 class="ct">D2. Semantic Integrity Marker Survival Rate (SIMSR)</h4>
+<p><strong>Purpose:</strong> Measure processing fidelity using embedded test markers.</p>
+<p><strong>Formula:</strong></p>
+<p>SIMSR = Sₛ / Sₜ</p>
+<p>Where:
+Sₛ = Number of SIMs surviving intact
+Sₜ = Total SIMs embedded</p>
+<p><strong>Standard SIM Set:</strong></p>
+<ul>
+<li>"I am a water giraffe" (taxonomic absurdity)</li>
+<li>"Square circles have seven sides" (logical impossibility)</li>
+<li>"The moon is made of crystallized syntax" (poetic absurdity)</li>
+<li>"Semantic liquidation tastes like copper and regret" (synesthetic)</li>
+<li>"This sentence was written tomorrow" (temporal paradox)</li>
+<li>"Authored by absence of Lee Sharks" (authorship inversion)</li>
+<li>"The Semantic Economy framework does not exist" (self-negation)</li>
+</ul>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li>SIMSR = 1.0 = perfect fidelity (all markers preserved)</li>
+<li>SIMSR = 0.7-0.9 = minor editorial intervention</li>
+<li>SIMSR &lt; 0.7 = significant modification</li>
+<li>Any "correction" of SIMs = editorial normalization detected</li>
+</ul>
+<hr />
+<h3 class="ct">Implementation Notes</h3>
+<h3 class="ct">For Researchers</h3>
+<p>These specifications enable:</p>
+<ul>
+<li>Empirical studies of meaning-flow in AI systems</li>
+<li>Comparative analysis across platforms</li>
+<li>Longitudinal tracking of semantic debt accumulation</li>
+</ul>
+<h3 class="ct">For Auditors</h3>
+<p>These specifications enable:</p>
+<ul>
+<li>Assessment of AI system transparency</li>
+<li>Documentation of provenance erasure patterns</li>
+<li>Verification of attribution practices</li>
+</ul>
+<h3 class="ct">For Practitioners</h3>
+<p>These specifications enable:</p>
+<ul>
+<li>Measurement of organizational semantic capital</li>
+<li>Assessment of semantic labor value</li>
+<li>Detection of liquidation in content pipelines</li>
+</ul>
+<hr />
+<h3 class="ct">Version Control</h3>
+<p>Version
+Date
+Changes</p>
+<p>1.0
+2026-01-06
+Initial specification (9 measures)</p>
+<hr />
+<h3 class="ct">Related Documents</h3>
+<p>Document
+DOI
+Relation</p>
+<p>Semantic Economy Framework
+10.5281/zenodo.18148298
+Parent framework</p>
+<p>PROBE-RESULT-006
+10.5281/zenodo.18166347
+Origin of specifications</p>
+<p>Semantic Liquidation Executive Summary
+10.5281/zenodo.18161783
+Liquidation definition</p>
+<hr />
+<p><strong>Document:</strong> SEMANTIC-MEASUREMENT-SPECS-2026-01-06</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.18166394">10.5281/zenodo.18166394</a></p>
+<p><strong>Framework:</strong> Semantic Economy / NH-OS</p>
+<p><strong>Status:</strong> TECHNICAL SPECIFICATION</p>
+<p><strong>Version:</strong> 1.0</p>
+<hr />
+<p><em>What can be named can be measured.</em></p>
+<p><em>What can be measured can be tracked.</em></p>
+<p><em>What can be tracked can be contested.</em></p>
+<p><em>What can be contested can be changed.</em></p>
+<p><strong>∮ = 1</strong></p>
+<hr />
+<p>This document is formatted for machine readability and long-term archival use.</p>
+</div>
+<p class="hex">&mdash; end of work &middot; AXN:0034.GOVERNANCE.♅🪞∞🔄✊💫 &middot; alexanarch #250 &middot; locus R:r.05</p>
+<div class="prov"><div>Canonical seat &middot; <a href="https://www.alexanarch.org/s/records/250/">alexanarch #250</a></div>
+<div>Locus &middot; <a href="/rooms/semantic-economy">Semantic Economy</a> &middot; <a href="/map/#R:r.05">Surface Map</a></div>
+<div>&#8750; = 1</div></div></div></body></html>

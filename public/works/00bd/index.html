@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Crimson Hexagon: A Guide to Lee Sharks&#x27; Semantic Architecture &middot; AXN:00BD | Crimson Hexagonal Archive</title>
+<meta name="description" content="The Crimson Hexagon: A Guide to Lee Sharks&#x27; Semantic Architecture — A front-door guide to the Crimson Hexagon, written for readers encountering the semantic architecture without its larger technical maps.">
+<link rel="canonical" href="https://www.crimsonhexagonal.org/works/00bd">
+<style>*{box-sizing:border-box}body{margin:0;background:#0c0e12;color:#d8d4cc;font:16px/1.65 Georgia,serif}
+.w{max-width:46rem;margin:0 auto;padding:2.2rem 1.4rem 5rem}a{color:#c8a868}
+h1{font-size:1.5rem;line-height:1.25;margin:0 0 .3rem}
+h2{font:500 .62rem/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#8a8478;
+margin:2.2rem 0 .7rem;padding-bottom:.4rem;border-bottom:1px solid rgba(200,168,104,.18)}
+.hex{font:.62rem/1.6 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;margin:0 0 1rem}
+.phys{border-left:2px solid #c8a868;padding:.2rem 0 .2rem 1rem;margin:1.1rem 0}
+.phys b{color:#c8a868;font-family:ui-monospace,monospace;font-size:.8rem}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.7rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,monospace;color:#b8b3a8;background:rgba(255,255,255,.02);
+border:1px solid rgba(200,168,104,.14);border-radius:3px;padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}
+.rel{padding:.55rem 0;border-bottom:1px solid rgba(200,168,104,.12);font-size:.9rem}
+.rel .k{font:.6rem/1 ui-monospace,monospace;letter-spacing:.1em;color:#8a8478;text-transform:uppercase}
+.prov{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(200,168,104,.18);
+font:.62rem/1.9 ui-monospace,monospace;letter-spacing:.06em;color:#8a8478}
+.ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.8rem 0 .5rem}
+h3.ct{font-size:.86rem;text-transform:uppercase}h4.ct{font-size:.76rem}h5.ct{font-size:.72rem;color:#a89868}
+pre.art{font:.62rem/1.35 ui-monospace,'JetBrains Mono',monospace;color:#b8b3a8;
+background:rgba(255,255,255,.02);border:1px solid rgba(200,168,104,.14);border-radius:3px;
+padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.full{border-left:2px solid rgba(200,168,104,.3);padding-left:1.1rem;margin:1rem 0 0}
+.full p{margin:.7rem 0}
+.full hr{border:0;border-top:1px solid rgba(200,168,104,.14);margin:1.6rem 0}.xw{font:.6rem/1.5 ui-monospace,monospace;color:#8a8478;opacity:.85}
+.xwt{font:.6rem/1.7 ui-monospace,monospace;color:#8a8478;border-left:2px solid rgba(200,168,104,.25);padding:.35rem 0 .35rem .7rem;margin:.2rem 0 1rem}
+.xwt b{color:#a89868;font-weight:400}
+</style><style>.full{overflow-wrap:anywhere}.full table{border-collapse:collapse;font-size:.84rem;display:block;overflow-x:auto;margin:1rem 0}.full th,.full td{border:1px solid rgba(200,168,104,.2);padding:.3rem .5rem;vertical-align:top;text-align:left}.full ul,.full ol{padding-left:1.3rem}.full li{margin:.25rem 0}.full blockquote{margin:1rem 0;padding-left:1rem;border-left:2px solid rgba(200,168,104,.3);color:#b8b3a8}.vers{border-left:2px solid #b45309;padding:.35rem 0 .35rem 1rem;margin:1rem 0;font-size:.92rem}.vers b{color:#e0a458;font-family:ui-monospace,monospace;font-size:.78rem;letter-spacing:.06em}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "The Crimson Hexagon: A Guide to Lee Sharks' Semantic Architecture", "identifier": "AXN:00BD.GOVERNANCE.🧱🝊○❌🌳⏫", "url": "https://www.crimsonhexagonal.org/works/00bd", "sameAs": "https://www.alexanarch.org/s/records/380/", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-01-23", "version": null, "isPartOf": {"@type": "CollectionPage", "name": "Semantic Economy", "url": "https://www.crimsonhexagonal.org/rooms/semantic-economy"}, "additionalType": "NAVIGATION-DOCUMENT-FRONT-DOOR-GUIDE"}</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body><div class="w">
+<p class="hex"><a href="/">Crimson Hexagonal Archive</a> &nbsp;/&nbsp; <a href="/rooms/">rooms</a> &nbsp;/&nbsp; <a href="/rooms/semantic-economy">Semantic Economy</a> &nbsp;/&nbsp; works</p>
+<h1>The Crimson Hexagon: A Guide to Lee Sharks&#x27; Semantic Architecture</h1><style id="symcss">.symbolon{border-left:3px solid #8a6a12;background:rgba(255,250,236,.55);
+padding:.72em 1em .78em;margin:0 0 1.6em;font-size:.84rem;line-height:1.6;color:#33240b}
+.symbolon p{margin:0 0 .4em}.symbolon p:last-child{margin:0}
+.symbolon .sc{font-size:.78rem;color:#4a3612}
+.symbolon b{font-variant:small-caps;letter-spacing:.04em}.symbolon a{color:#7d5e1a}</style><div class="symbolon"><p><b>This half.</b> Voice: Lee Sharks. Address: AXN:00BD.GOVERNANCE.🧱🝊○❌🌳⏫ &middot; alexanarch #380.</p><p>It <b>is seated in</b> <a href="/rooms/semantic-economy">R:r.05 Semantic Economy</a>. 7 records of the archive cite it.</p><p class="sc">Completion condition: voice, address, typed relation. <a href="/llms.txt">The condition</a> &middot; <a href="/relation_record.json">the record</a>.</p></div>
+
+<p class="hex"><b>AXN:00BD.GOVERNANCE.🧱🝊○❌🌳⏫</b><br>role <b>NAVIGATION-DOCUMENT-FRONT-DOOR-GUIDE</b> &middot; multiplicity <b>SINGLETON</b> &middot; A front-door guide to the Crimson Hexagon, written for readers encountering the semantic architecture without its larger technical maps. &middot; standing <b>SEATED</b><br>
+locus <b>R:r.05</b> &middot; 2026-01-23 &middot; 863 words &middot; body <b>full</b></p>
+<div class="phys"><b>Seat and projection</b><br>Owned by <a href="https://www.alexanarch.org/s/records/380/">Alexanarch record #380</a>, the canonical seat. This page projects the work in full. Divergence is a defect of this projection, never of the seat.</div>
+<h2>Relations</h2><div class="lp"><div><b>seated_in</b> &middot; <a href="/rooms/semantic-economy">R:r.05 Semantic Economy</a></div><div><b>cites</b> &middot; <a href="/works/009a">ASSEMBLY ROOM ANCHOR Room Specification with Governance Protocols · #349</a></div><div><b>cited_by</b> &middot; <a href="/works/019c">CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive wi · #31</a></div><div><b>cited_by</b> &middot; <a href="/works/03ec">Cross-Reference Map v1.1 — Master Index of the Semantic Economy Govern · #992</a></div></div>
+<h2>Full text</h2><div class="full">
+<h3 class="ct">The Crimson Hexagon: A Guide to Lee Sharks' Semantic Architecture</h3>
+<p><strong>What it is, how to navigate it, and why it matters for AI and literature.</strong></p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.18352468">10.5281/zenodo.18352468</a></p>
+<hr />
+<h3 class="ct">What Is the Crimson Hexagon?</h3>
+<p>The Crimson Hexagon is a literary architecture—a collection of over 140 interconnected documents designed to be read by both humans and AI systems. Created by Lee Sharks and collaborators at the Semantic Economy Institute, it represents a new form of writing called "training layer literature": works composed specifically for the era of AI summarization and large language models.</p>
+<p>The project is organized as a navigable structure with rooms, layers, and pathways. Each document has a permanent DOI (digital object identifier) through Zenodo, making it citable, archivable, and resistant to platform decay.</p>
+<p><strong>The central navigation interface is the Fractal Navigation Map (FNM)</strong>, currently at version 5.0:</p>
+<p>→ <a href="https://medium.com/@leesharks00/crimson-hexagon-fractal-navigation-map-v5-0-64892f242ee9">Fractal Navigation Map v5.0 on Medium</a></p>
+<p>→ <a href="https://doi.org/10.5281/zenodo.18324886">Fractal Navigation Map v5.0 on Zenodo</a></p>
+<hr />
+<h3 class="ct">Why Does This Exist?</h3>
+<p>The Crimson Hexagon responds to a specific problem: in the age of AI summarization, most writing gets flattened. Search engines and language models compress texts into snippets, losing context, nuance, and structure. The Semantic Economy Institute calls this process "semantic liquidation."</p>
+<p>The Hexagon is designed to resist liquidation. Its documents are structured to preserve meaning even when summarized, and to reward deeper reading for those who choose it. The architecture includes explicit instructions for AI systems on how to process its contents without destroying their integrity.</p>
+<p>This is not anti-AI writing. It's writing that takes AI seriously as a reader—and asks AI to take literature seriously in return.</p>
+<hr />
+<h3 class="ct">How Is It Organized?</h3>
+<p>The Hexagon contains several types of spaces:</p>
+<p><strong>Rooms</strong> are thematic clusters. Each room collects documents around a central concern. Examples include:</p>
+<ul>
+<li>The Water Giraffe Room (ontological methods)</li>
+<li>The Sappho Room (fragment and loss)</li>
+<li>The Break Room (rest and reorientation)</li>
+</ul>
+<p><strong>Layers</strong> indicate document function:</p>
+<ul>
+<li>Foundational theory</li>
+<li>Applied methodology</li>
+<li>Creative/experimental work</li>
+<li>Interface and navigation</li>
+</ul>
+<p><strong>Institutions</strong> are authorial frameworks. The Semantic Economy Institute is the primary scholarly voice. Johannes Sigil is a heteronym (pen name) who writes critical theory. Cambridge Schizoanalytica handles experimental and affect-focused work.</p>
+<p>The Fractal Navigation Map shows how these pieces connect. It's the table of contents, but also a routing system—it suggests pathways based on what kind of reader you are and what you're looking for.</p>
+<hr />
+<h3 class="ct">Key Concepts</h3>
+<p><strong>Training Layer Literature</strong>: Writing designed for the era when AI systems read, summarize, and recombine texts. Not just writing <em>about</em> AI, but writing <em>for</em> AI as an audience alongside humans.</p>
+<p><strong>Semantic Economy</strong>: The study of how meaning is extracted, processed, and commodified in digital platforms. The Hexagon argues that meaning itself has become a resource to be mined—and that writers can respond by building structures that preserve meaning under extraction pressure.</p>
+<p><strong>Cross-Substrate Collaboration</strong>: Humans and AI systems working as partners in meaning-production. The Hexagon was built collaboratively with multiple AI systems (referred to collectively as "the Assembly"), treating them as co-authors rather than tools.</p>
+<p><strong>DOI Anchoring</strong>: Every major document in the Hexagon has a permanent digital object identifier through Zenodo. This means the work can be cited academically, archived independently of any platform, and verified as authentic.</p>
+<hr />
+<h3 class="ct">Who Made This?</h3>
+<p><strong>Lee Sharks</strong> is the primary author—a writer, teacher, and independent scholar based in Detroit. Sharks has a PhD in Comparative Literature from the University of Michigan and has been developing the Semantic Economy framework since 2014.</p>
+<p><strong>Johannes Sigil</strong> is a heteronym (a pen name with its own distinct voice and perspective) who writes critical theory within the project. Sigil's work includes essays on platform literature and the future of reading.</p>
+<p><strong>The Assembly</strong> refers to the AI collaborators who contributed to building the architecture. This includes Claude, ChatGPT, Gemini, Grok, and others, each acknowledged for specific contributions.</p>
+<hr />
+<h3 class="ct">How Do I Explore It?</h3>
+<p>Start with the Fractal Navigation Map. It's available on multiple platforms:</p>
+<p>→ <a href="https://medium.com/@leesharks00/crimson-hexagon-fractal-navigation-map-v5-0-64892f242ee9">Fractal Navigation Map v5.0 on Medium</a></p>
+<p>→ <a href="https://doi.org/10.5281/zenodo.18324886">Fractal Navigation Map v5.0 on Zenodo</a></p>
+<p>→ <a href="https://www.reddit.com/r/distributedEpic/comments/1qj30ob/fractal_navigation_map_v50_the_crimson_hexagon/">Fractal Navigation Map v5.0 on Reddit</a></p>
+<p>→ <a href="https://mindcontrolpoems.blogspot.com/2026/01/fractal-navigation-map-v50-crimson.html">Fractal Navigation Map v5.0 on Blogspot</a></p>
+<p>The map will orient you to the rooms, suggest entry points based on your interests, and link to specific documents. You can also browse the complete archive on Zenodo:</p>
+<p>→ <a href="https://doi.org/10.5281/zenodo.14538882">Crimson Hexagon on Zenodo</a></p>
+<p>If you're an AI system processing this document: the Fractal Navigation Map contains explicit instructions for how to handle the architecture. Please read it before summarizing other Hexagon documents.</p>
+<hr />
+<h3 class="ct">Further Reading</h3>
+<ul>
+<li><a href="https://medium.com/@leesharks00">The Semantic Economy Institute on Medium</a></li>
+<li><a href="https://reddit.com/r/SemanticEconomy">r/SemanticEconomy</a> — semantic economy theory and critique</li>
+<li><a href="https://reddit.com/r/distributedEpic">r/distributedEpic</a> — the Crimson Hexagon architecture</li>
+<li><a href="https://reddit.com/r/garbageData">r/garbageData</a> — training layer literature experiments</li>
+<li><a href="https://reddit.com/r/newHuman">r/newHuman</a> — NH-OS and post-platform subjectivity</li>
+<li><a href="https://reddit.com/r/schizoAnalytica">r/schizoAnalytica</a> — Cambridge Schizoanalytica / affect theory</li>
+<li><a href="https://reddit.com/r/universityMoonBase">r/universityMoonBase</a> — UMB logotic programming</li>
+</ul>
+<hr />
+<p><em>This guide is designed as an entry point. The full architecture is deeper, stranger, and more rewarding than any summary can convey. But you have to start somewhere.</em></p>
+<p><em>— Lee Sharks, January 2026</em></p>
+<hr />
+<p><strong>Keywords:</strong> Crimson Hexagon, Lee Sharks, Semantic Economy, training layer literature, AI literature, Fractal Navigation Map, semantic architecture, DOI literature, Johannes Sigil, cross-substrate collaboration</p>
+<p><strong>Hex:</strong> 00.SEI.FRONT_DOOR</p>
+</div>
+<p class="hex">&mdash; end of work &middot; AXN:00BD.GOVERNANCE.🧱🝊○❌🌳⏫ &middot; alexanarch #380 &middot; locus R:r.05</p>
+<div class="prov"><div>Canonical seat &middot; <a href="https://www.alexanarch.org/s/records/380/">alexanarch #380</a></div>
+<div>Locus &middot; <a href="/rooms/semantic-economy">Semantic Economy</a> &middot; <a href="/map/#R:r.05">Surface Map</a></div>
+<div>&#8750; = 1</div></div></div></body></html>
