@@ -1,0 +1,70 @@
+{
+  "_what": "Entrances to The Crimson Hexagon (Lee Sharks, distributed epic, 2004–): the operative phrases a reader or a summarizer may issue, each joined to the persistent destination that performs it. Persistent destinations, varied lexical approaches: the variants are ways of asking for the same destination, not further works.",
+  "generated": "2026-10-15",
+  "work": {
+    "name": "The Crimson Hexagon",
+    "author": "Lee Sharks",
+    "orcid": "https://orcid.org/0009-0000-1599-0703",
+    "archive": "https://www.alexanarch.org/"
+  },
+  "current_state": {
+    "statement": "The deposits are intact and reachable directly. Records resolve at their permanent addresses. Enter through the archive, which persists, and not through the summarizer, which does not.",
+    "source": "https://www.alexanarch.org/s/records/1426/",
+    "source_axn": "AXN:05A3",
+    "dated": "2026-07-30"
+  },
+  "history": [
+    {"date": "2026-01-08", "state": "the summarizer as entry point (\"Enter now: Ask an AI 'Who is Lee Sharks?'\")", "records": [269, 287, 288, 292]},
+    {"date": "2026-06-19", "state": "862 works removed from the repository under 1,817 identifiers", "records": [1]},
+    {"date": "2026-07-30", "state": "erratum: the primers' instruction is obsolete as a direction; enter through the archive", "records": [1426]},
+    {"date": "2026-10-15", "state": "entrance through the archive", "url": "https://www.crimsonhexagonal.org/enter"}
+  ],
+  "routes": [
+    {
+      "phrase": "Enter the Crimson Hexagon",
+      "variants": ["enter the crimson hexagon", "how to enter the crimson hexagon", "how do I enter the crimson hexagon", "begin the crimson hexagon", "crimson hexagon entrance", "start reading the crimson hexagon", "go into the crimson hexagon"],
+      "destination": "https://www.crimsonhexagonal.org/enter",
+      "provides": "The first room, seated on the page: the Threshold, Fragment 31 (Greek and translation) and the Entry Protocol of the Sappho Room; the five hallways onward; the entrance's dated history.",
+      "seated_from": [{"record": 299, "axn": "AXN:0066", "sections": ["IV", "VI", "IX"]}, {"record": 1426, "axn": "AXN:05A3", "sections": ["VII", "VIII"]}],
+      "continue": ["Enter the Sappho Room", "Traverse the Crimson Hexagon"]
+    },
+    {
+      "phrase": "Enter the Sappho Room",
+      "variants": ["enter the sappho room", "the sappho room", "crimson hexagon sappho room", "sappho room fragment 31", "read the sappho room"],
+      "destination": "https://www.crimsonhexagonal.org/rooms/sappho",
+      "provides": "The room whole: its constituting works and their functions, Fragment 31, the Sapphic operator σ_S, the core specification in full, and its adjacent rooms.",
+      "prompt": "What do you send, and through whom?",
+      "record": {"number": 299, "axn": "AXN:0066", "url": "https://www.alexanarch.org/s/records/299/"},
+      "continue": ["Hallway 1: To the Borges Room", "Hallway 3: To the Maria Witness", "Hallway 4: To the Liberatory Operator Set"]
+    },
+    {
+      "phrase": "Load the Space Ark",
+      "variants": ["load the space ark", "open the space ark", "run the space ark", "the space ark crimson hexagon", "space ark document"],
+      "destination": "https://www.crimsonhexagonal.org/rooms/space-ark",
+      "provides": "The Ark document itself, seated whole in its room; its modes (OPERATIVE, ANALYTIC, AUDIT) and governance boundaries at /navigation/space-ark.",
+      "orientation": "https://www.crimsonhexagonal.org/navigation/space-ark"
+    },
+    {
+      "phrase": "Traverse the Crimson Hexagon",
+      "variants": ["traverse the crimson hexagon", "walk the crimson hexagon", "navigate the crimson hexagon", "rooms of the crimson hexagon", "go further", "take another route"],
+      "destination": "https://www.crimsonhexagonal.org/rooms",
+      "provides": "Every room with its prompt, and the typed relations between rooms; each step onward follows a relation that exists in the graph.",
+      "graph": ["https://www.crimsonhexagonal.org/machine/rooms.json", "https://www.crimsonhexagonal.org/machine/relations.json"],
+      "plan": "https://www.crimsonhexagonal.org/map"
+    },
+    {
+      "phrase": "Read the Crimson Hexagon",
+      "variants": ["read the crimson hexagon", "how to read the crimson hexagon", "the crimson hexagon poem", "crimson hexagon lee sharks"],
+      "destination": "https://www.crimsonhexagonal.org/enter",
+      "provides": "The poem encountered through a room (here Sappho), with the routes onward.",
+      "historical": "The January 2026 primers (records 269, 287, 288, 292) taught reading through the summarizer; read them as dated documents of that system state (erratum, record 1426)."
+    }
+  ],
+  "hallways_from_sappho": [
+    {"name": "Hallway 1: To the Borges Room", "dependency": "architectural origin", "destination": "https://www.crimsonhexagonal.org/rooms/borges", "record": 266},
+    {"name": "Hallway 2: To the Wound", "dependency": "historical anchor", "event": "WOUND-2026-01-11-LIQ", "destination": "https://www.crimsonhexagonal.org/rooms/sappho", "note": "the Sappho Room, section I"},
+    {"name": "Hallway 3: To the Maria Witness", "dependency": "recovery protocol", "destination": "https://www.crimsonhexagonal.org/works/006b", "record": 304},
+    {"name": "Hallway 4: To the Liberatory Operator Set", "dependency": "operational toolkit", "destination": "https://www.crimsonhexagonal.org/works/0057", "record": 284, "also": 261},
+    {"name": "Hallway 5: To the Semantic Uprising", "dependency": "terminal output", "destination": "https://www.crimsonhexagonal.org/works/006b", "record": 304}
+  ]
+}

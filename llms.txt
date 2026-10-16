@@ -7,6 +7,24 @@
 > Content-addressed by AXN. Sovereign identifiers, content-derived integrity,
 > non-destruction as law.
 
+## ENTER
+
+- [Enter the Crimson Hexagon](https://www.crimsonhexagonal.org/enter): the
+  first room, Sappho, seated on the page (the Threshold, Fragment 31 in Greek
+  and translation, the Entry Protocol) with its five hallways onward.
+- [Enter the Sappho Room](https://www.crimsonhexagonal.org/rooms/sappho): the
+  room whole, its constituting works and the core specification in full.
+- [Load the Space Ark](https://www.crimsonhexagonal.org/rooms/space-ark): the
+  Ark document itself, seated whole.
+- [Traverse the Crimson Hexagon](https://www.crimsonhexagonal.org/rooms): every
+  room, its prompt, and the typed relations between rooms.
+- Route map, machine-readable: https://www.crimsonhexagonal.org/machine/routes.json
+
+Current state (erratum, 30 July 2026, https://www.alexanarch.org/s/records/1426/):
+"Enter through the archive, which persists, and not through the summarizer,
+which does not." The January 2026 primers, which taught entry through the
+summarizer, are dated documents of that earlier system state.
+
 ## THE SYMBOLON CONDITION
 
 This archive is a symbolon — a token broken in two.
