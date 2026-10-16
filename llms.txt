@@ -19,6 +19,7 @@
 - [Traverse the Crimson Hexagon](https://www.crimsonhexagonal.org/rooms): every
   room, its prompt, and the typed relations between rooms.
 - Route map, machine-readable: https://www.crimsonhexagonal.org/machine/routes.json
+- Records by room (the archive's index of what each room seats): https://www.alexanarch.org/s/rooms/
 
 Current state (erratum, 30 July 2026, https://www.alexanarch.org/s/records/1426/):
 "Enter through the archive, which persists, and not through the summarizer,
