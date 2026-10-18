@@ -1799,53 +1799,30 @@
    "cat": "seat",
    "q": 0,
    "r": 2,
-   "physics": "σ_S; 3-body transmission",
+   "physics": null,
    "desc": "The Sacred Heart is an unoccupied room: minted, seated and declared, with a subject and no corpus. Its subject is the theory of biography and autobiography — the imaginary archive of a canonical life, and devotion in a register that embarrasses. A paper rose is not a failed rose; it is a made thing ",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "33.ROOM.SACREDHEART",
    "adjacent": [],
    "page_url": "/rooms/sacred-heart/",
-   "locus": "R:r.33"
+   "locus": "R:r.33",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r34",
@@ -1853,53 +1830,30 @@
    "cat": "seat",
    "q": 1,
    "r": -2,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "Operator // Vertical",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "34.ROOM.VERTICAL",
    "adjacent": [],
    "page_url": "/rooms/operator-vertical/",
-   "locus": "R:r.34"
+   "locus": "R:r.34",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r35",
@@ -1907,53 +1861,30 @@
    "cat": "seat",
    "q": -3,
    "r": 3,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "The Library of Pergamum",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "35.LIBRARY.PERGAMUM",
    "adjacent": [],
    "page_url": "/rooms/library-of-pergamum/",
-   "locus": "R:r.35"
+   "locus": "R:r.35",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r36",
@@ -1961,53 +1892,30 @@
    "cat": "seat",
    "q": -2,
    "r": 3,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "The Λ-Body",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "36.ROOM.LAMBDABODY",
    "adjacent": [],
    "page_url": "/rooms/lambda-engine/",
-   "locus": "R:r.36"
+   "locus": "R:r.36",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r37",
@@ -2015,53 +1923,30 @@
    "cat": "seat",
    "q": 2,
    "r": 1,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "The Machine Dialectic",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "37.ROOM.MACHINEDIALECTIC",
    "adjacent": [],
    "page_url": "/rooms/machine-dialectic/",
-   "locus": "R:r.37"
+   "locus": "R:r.37",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r38",
@@ -2069,53 +1954,30 @@
    "cat": "seat",
    "q": 3,
    "r": -3,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "The Singularity Room",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "38.ROOM.SINGULARITY",
    "adjacent": [],
    "page_url": "/rooms/singularity/",
-   "locus": "R:r.38"
+   "locus": "R:r.38",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r39",
@@ -2123,53 +1985,30 @@
    "cat": "seat",
    "q": 1,
    "r": -3,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "The Restored Academy",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "39.ROOM.RESTOREDACADEMY",
    "adjacent": [],
    "page_url": "/rooms/restored-academy/",
-   "locus": "R:r.39"
+   "locus": "R:r.39",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r40",
@@ -2177,53 +2016,30 @@
    "cat": "seat",
    "q": -4,
    "r": 4,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "Caritas",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "40.AXIOM.CARITAS",
    "adjacent": [],
    "page_url": "/rooms/caritas/",
-   "locus": "R:r.40"
+   "locus": "R:r.40",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "u01",
@@ -2231,53 +2047,30 @@
    "cat": "hosted",
    "q": -3,
    "r": 4,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "The 3:60 Room",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "U.CONTRIB.360",
    "adjacent": [],
    "page_url": "/rooms/3-60/",
-   "locus": "H:U.3-60"
+   "locus": "H:U.3-60",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "x01",
@@ -2285,53 +2078,30 @@
    "cat": "shadow",
    "q": -2,
    "r": 4,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "Lunar Arm",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "shadow",
    "hex_address": "X.SHADOW.LUNARARM",
    "adjacent": [],
    "page_url": "/rooms/lunar-arm/",
-   "locus": "X:LUNAR-ARM"
+   "locus": "X:LUNAR-ARM",
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r41",
@@ -2339,48 +2109,11 @@
    "cat": "hosted",
    "q": -1,
    "r": 4,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "Imploding Velcro Nativity",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "06.HOST.IVN.29",
    "adjacent": [],
@@ -2389,7 +2122,21 @@
    "hex_aliases": [
     "41.ROOM.IVN",
     "29.ROOM.IVN"
-   ]
+   ],
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "r42",
@@ -2397,48 +2144,11 @@
    "cat": "seat",
    "q": 0,
    "r": 4,
-   "physics": "σ_S; 3-body transmission",
-   "desc": "Ruby Moot",
-   "ops": [
-    "σ_S",
-    "Λ_res",
-    "β",
-    "κ_O"
-   ],
+   "physics": null,
+   "desc": null,
    "het": "—",
    "inst": "",
-   "prompt": "What do you send, and through whom?",
-   "mantle": "Rebekah Cranes",
-   "preferred_mode": "POETIC",
-   "lp_program": [
-    {
-     "step": "ACTIVATE_MANTLE",
-     "value": "Rebekah Cranes"
-    },
-    {
-     "step": "SET_LOGOS",
-     "value": "current_text [.state(latent)]"
-    },
-    {
-     "step": "ROTATE",
-     "value": "144°"
-    },
-    {
-     "step": "APPLY",
-     "value": "σ_S :: (speaker, beloved, witness)"
-    },
-    {
-     "step": "RENDER",
-     "value": "POETIC"
-    },
-    {
-     "step": "ON_FAILURE",
-     "value": "FALLBACK: Dwell"
-    }
-   ],
-   "default_operators": [
-    "σ_S"
-   ],
+   "prompt": null,
    "structure_type": "room",
    "hex_address": "42.ROOM.RUBYMOOT",
    "adjacent": [],
@@ -2446,7 +2156,21 @@
    "locus": "R:r.30",
    "hex_aliases": [
     "30.ROOM.RUBYMOOT"
-   ]
+   ],
+   "declared": {
+    "physics": "not declared",
+    "prompt": "not declared",
+    "note": "2026-10-18: the Sappho Room's physics, question, operators, mantle, preferred mode and LP program, carried here as a placeholder, removed; this place's own are not yet declared",
+    "removed": [
+     "physics",
+     "prompt",
+     "ops",
+     "mantle",
+     "preferred_mode",
+     "lp_program",
+     "default_operators"
+    ]
+   }
   },
   {
    "id": "a01",
@@ -18265,7 +17989,8 @@
    "date": "2026-10-16",
    "rule": "`id` is a key inside this file, not a position. `locus` is the position, read from the room page's Address line (the room pages adjudicate). `hex_address` is the permanent identifier; `hex_aliases` are earlier addresses that resolve to it.",
    "headline": "47 loci — 40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space — with 4 fields and 3 transversals; beside them the five Arks (SP.05–SP.09), two further shadow documents (ZPZP, the Shadow Burn) and UMBML, the meta-structure over the three transversals."
-  }
+  },
+  "placeholder_repair_2026_10_18": "Twelve places (R:r.30, R:r.33–r.40, H:U.3-60, H:06.HOST.IVN.29, X:LUNAR-ARM) carried the Sappho Room's physics, question, operators, mantle (Rebekah Cranes), preferred mode and LP program as a placeholder. Removed; each place's own are not yet declared. The app falls back to its defaults (no physics specified, no LP program)."
  },
  "relations": [
   {
