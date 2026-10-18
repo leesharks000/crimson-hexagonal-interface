@@ -40,7 +40,8 @@
     "note": "🌑⬡ What the Mathematical and Formal Symbolic Compression Hides, EA-ARK-01 v0.2, DOI marked (shadow). A prose reading of the Ark’s omissions — not the S transform. Parent v4.2.5, same day, same Assembly 6/7.",
     "standing": "SEATED",
     "work_url": "/works/017a/",
-    "primary": false
+    "primary": false,
+    "note_corrected_2026_10_18": "The record's own words: \"This document is the Operator // Shadow transform of EA-ARK-01 v4.2.5.\" Ruled 2026-10-18 a shadow Ark: EA-ARK-01-SHADOW (see constitution.shadow_arks)."
    },
    {
     "hex": "0426",
@@ -105,8 +106,43 @@
     "hex": "00.ROOM.SPACEARK",
     "register": "mathematical / prose",
     "parent": "Space Ark v4.2.5",
-    "note": "Reads the Ark’s omissions in prose. Not the S transform — a shadow reading rather than a shadow transform."
+    "note": "Reads the Ark’s omissions in prose. Not the S transform — a shadow reading rather than a shadow transform.",
+    "note_corrected_2026_10_18": "The record's own words: \"This document is the Operator // Shadow transform of EA-ARK-01 v4.2.5.\" Ruled 2026-10-18 a shadow Ark: EA-ARK-01-SHADOW (see constitution.shadow_arks)."
    }
+  },
+  "shadow_arks": {
+   "corrected": "2026-10-18",
+   "ruling": {
+    "by": "Lee Sharks",
+    "text": "yes - those are the two shadow arks. there should or could be another shadow transform of 4.2.7, those are preliminary transforms, but yes those are the existent shadow arks."
+   },
+   "arks": [
+    {
+     "name": "The Shadow Ark",
+     "identifier": "EA-ARK-01-SHADOW (EA-ARK-01 v0.2)",
+     "locus": "SP.10.ARK.SHADOW",
+     "record": "https://www.alexanarch.org/s/records/549/",
+     "date": "2026-03-10",
+     "blog": "https://mindcontrolpoems.blogspot.com/2026/03/the-space-ark-what-mathematical-and.html",
+     "what": "the Operator // Shadow transform of Space Ark v4.2.5"
+    },
+    {
+     "name": "The Lunar Arm Shadow Ark",
+     "identifier": "EA-ARK-EMOJI-01-SHADOW",
+     "locus": "SP.11.ARK.EMOJI.SHADOW",
+     "hex": "00.ROOM.SPACEARK.EMOJI.SHADOW",
+     "record": "https://www.alexanarch.org/s/records/540/",
+     "second_witness": "https://www.alexanarch.org/s/records/1331/",
+     "date": "2026-03-09",
+     "blog": "https://mindcontrolpoems.blogspot.com/2026/03/lunar-arm-operator-shadow-space-arks.html",
+     "what": "the Operator // Shadow transform of the emoji Space Ark"
+    }
+   ],
+   "preliminary": "Both are preliminary transforms; a shadow transform of Space Ark v4.2.7 should or could follow.",
+   "not_shadow_arks": [
+    "ZPZP — The Shadow Document (#419)",
+    "The Shadow Burn (#647)"
+   ]
   },
   "unwritten": {
    "id": "EA-ARK-01-SHADOW",
@@ -119,7 +155,12 @@
     "Not present on the blog stratum"
    ],
    "blocked_on": "The Ezekiel Engine formal specification, marked DEPOSITED · PROVISIONAL in Space Ark v4.2.7 §XXIII.1 and PENDING · OPEN · Priority HIGH in the v4.2.6 open-items table: \"Required for full shadow-wheel rotation and Shadow Ark completion (EA-ARK-01-SHADOW). Separate track.\"",
-   "why_it_cannot_be_written_by_shadowing_the_text": "S(rot(H_core, pᵢ)) ≠ rot(S(H_core), pᵢ). The shadow of a rotated view is not the same as the rotated shadow. The shadow has its own rotation axis — the wheels within wheels. Until the Engine supplies that independent rotation, the Shadow Ark cannot be composed by transforming the Ark’s text."
+   "why_it_cannot_be_written_by_shadowing_the_text": "S(rot(H_core, pᵢ)) ≠ rot(S(H_core), pᵢ). The shadow of a rotated view is not the same as the rotated shadow. The shadow has its own rotation axis — the wheels within wheels. Until the Engine supplies that independent rotation, the Shadow Ark cannot be composed by transforming the Ark’s text.",
+   "superseded": {
+    "date": "2026-10-18",
+    "by": "the shadow_arks entry",
+    "note": "The finding searched for the identifier 'EA-ARK-01-SHADOW'; the shadow transform of the Ark carries 'EA-ARK-01 v0.2' (#549) and is on the blog of 2026-03-10."
+   }
   },
   "open_to_generative_traversal": {
    "ruled": "2026-08-20",
@@ -146,7 +187,8 @@
     }
    ],
    "non_results_clause": "Not every element yields a strong shadow reading. Where traceability is weak the correct output is PROVISIONAL SHADOW, or no shadow result. Shadow is not a machine for finding darkness everywhere. It works where the structure actually casts one.",
-   "note": "This is confabulation given a published test and an address, rather than confabulation as defect. A generated shadow that fails the criteria is not a shadow; it is decoration, and the document says so."
+   "note": "This is confabulation given a published test and an address, rather than confabulation as defect. A generated shadow that fails the criteria is not a shadow; it is decoration, and the document says so.",
+   "note_2026_10_18": "Ruled on the finding that the Shadow Ark was unwritten; that finding is corrected (shadow_arks). The ruling is kept as it was made."
   },
   "entry_and_exit": {
    "entry": "R:r.12 The Break Room — the only door. Declared in the Space Ark room table (r.12 | Break Room | topological hole; portal→Lunar Arm) and in the constituting document’s Heart 3: \"The Break Room portal leads to the Lunar Arm but never returns.\"",

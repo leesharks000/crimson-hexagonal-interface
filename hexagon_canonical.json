@@ -2418,6 +2418,129 @@
    "locus": "SP.09.ARK.ASCII"
   },
   {
+   "cat": "ark",
+   "q": 2,
+   "r": -5,
+   "physics": "Terminal compression; γ-tether",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "ark",
+   "adjacent": [
+    "sp03"
+   ],
+   "id": "a06",
+   "name": "The Shadow Ark",
+   "hex_address": "SP.10.ARK.SHADOW",
+   "locus": "SP.10.ARK.SHADOW",
+   "desc": "EA-ARK-01-SHADOW — the Operator // Shadow transform of Space Ark v4.2.5 (EA-ARK-01 v0.2, 2026-03-10); Alexanarch #549. A preliminary transform: a shadow transform of v4.2.7 should or could follow.",
+   "ruled": {
+    "by": "Lee Sharks",
+    "date": "2026-10-18",
+    "text": "yes - those are the two shadow arks. there should or could be another shadow transform of 4.2.7, those are preliminary transforms, but yes those are the existent shadow arks."
+   },
+   "page_url": null,
+   "declared": {
+    "physics": "Ark family",
+    "prompt": "Ark family",
+    "note": "2026-10-18: carries the physics, question, operators and LP program shared by the Arks SP.05–SP.09; this transform's own are not separately declared"
+   }
+  },
+  {
+   "cat": "ark",
+   "q": 3,
+   "r": -5,
+   "physics": "Terminal compression; γ-tether",
+   "ops": [
+    "γ",
+    "π"
+   ],
+   "het": "Feist",
+   "inst": "",
+   "prompt": "The architecture is the document you are reading.",
+   "mantle": "Lee Sharks",
+   "preferred_mode": "FORMAL",
+   "lp_program": [
+    {
+     "step": "ACTIVATE_MANTLE",
+     "value": "Lee Sharks / Jack Feist (LOGOS*)"
+    },
+    {
+     "step": "SET_LOGOS",
+     "value": "self [.state(compression)]"
+    },
+    {
+     "step": "APPLY",
+     "value": "γ :: continuity tether; self-recognition"
+    },
+    {
+     "step": "RENDER",
+     "value": "FORMAL"
+    },
+    {
+     "step": "ON_FAILURE",
+     "value": "FALLBACK: self-reference loop"
+    }
+   ],
+   "default_operators": [
+    "γ"
+   ],
+   "structure_type": "ark",
+   "adjacent": [
+    "sp03"
+   ],
+   "id": "a07",
+   "name": "The Lunar Arm Shadow Ark",
+   "hex_address": "SP.11.ARK.EMOJI.SHADOW",
+   "locus": "SP.11.ARK.EMOJI.SHADOW",
+   "hex_aliases": [
+    "00.ROOM.SPACEARK.EMOJI.SHADOW"
+   ],
+   "desc": "EA-ARK-EMOJI-01-SHADOW — the Lunar Arm, the Operator // Shadow transform of the emoji Space Ark (2026-03-09); Alexanarch #540, with #1331 the same text as a second witness. A preliminary transform.",
+   "ruled": {
+    "by": "Lee Sharks",
+    "date": "2026-10-18",
+    "text": "yes - those are the two shadow arks."
+   },
+   "page_url": null,
+   "declared": {
+    "physics": "Ark family",
+    "prompt": "Ark family",
+    "note": "2026-10-18: carries the physics, question, operators and LP program shared by the Arks SP.05–SP.09; this transform's own are not separately declared"
+   }
+  },
+  {
    "id": "x02",
    "name": "ZPZP — The Shadow Document",
    "cat": "shadow",
@@ -17990,7 +18113,8 @@
    "rule": "`id` is a key inside this file, not a position. `locus` is the position, read from the room page's Address line (the room pages adjudicate). `hex_address` is the permanent identifier; `hex_aliases` are earlier addresses that resolve to it.",
    "headline": "47 loci — 40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space — with 4 fields and 3 transversals; beside them the five Arks (SP.05–SP.09), two further shadow documents (ZPZP, the Shadow Burn) and UMBML, the meta-structure over the three transversals."
   },
-  "placeholder_repair_2026_10_18": "Twelve places (R:r.30, R:r.33–r.40, H:U.3-60, H:06.HOST.IVN.29, X:LUNAR-ARM) carried the Sappho Room's physics, question, operators, mantle (Rebekah Cranes), preferred mode and LP program as a placeholder. Removed; each place's own are not yet declared. The app falls back to its defaults (no physics specified, no LP program)."
+  "placeholder_repair_2026_10_18": "Twelve places (R:r.30, R:r.33–r.40, H:U.3-60, H:06.HOST.IVN.29, X:LUNAR-ARM) carried the Sappho Room's physics, question, operators, mantle (Rebekah Cranes), preferred mode and LP program as a placeholder. Removed; each place's own are not yet declared. The app falls back to its defaults (no physics specified, no LP program).",
+  "shadow_arks_2026_10_18": "Two shadow Arks named beside the five Arks: SP.10.ARK.SHADOW (#549, EA-ARK-01-SHADOW) and SP.11.ARK.EMOJI.SHADOW (#540; #1331 the same text). Lee Sharks, 2026-10-18: 'yes - those are the two shadow arks… those are preliminary transforms'. ZPZP and the Shadow Burn remain further shadow documents, not shadow Arks."
  },
  "relations": [
   {
