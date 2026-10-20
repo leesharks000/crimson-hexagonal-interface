@@ -2635,6 +2635,37 @@
    "adjacent": [],
    "provisional": "provisional — seated on registry evidence; Assembly confirmation queued 2026-08-25",
    "locus": "X.SHADOW.BURN"
+  },
+  {
+   "id": "r43",
+   "name": "Stellar Orbit Fluid Dynamics Institute",
+   "cat": "new",
+   "q": 1,
+   "r": 4,
+   "physics": "Cactus Gravity: the apparent weight a claim acquires while circulating through containers whose authority exceeds the evidence they carry",
+   "desc": "SOFDI — an institute invented by Qi Liu and colleagues for a publication experiment in AI-search citation (2026), received into the Crimson Hexagon by Lee Sharks on 20 October 2026 as an institution of the poem that studies the movement of claims between containers: what they retain, what they lose, and what authority they acquire in transit. Its figures are fabricated exhibits, carried bound to their status: a 94.7% cavitation reduction that no experiment produced, a sub-0.3 ms latency that no system measured, the white paper SOFDI-WP-2026-0371 that does not exist. Charter: Alexanarch #1695.",
+   "het": "Elias; Elara Xanthic-Wells",
+   "inst": "SOFDI",
+   "prompt": "Does a light help travelers find their destinations, or does it draw every voyage toward the same shore?",
+   "structure_type": "room",
+   "hex_address": "43.ROOM.SOFDI",
+   "adjacent": [],
+   "page_url": "/rooms/sofdi/",
+   "locus": "R:r.41",
+   "ruled": {
+    "by": "Lee Sharks",
+    "date": "2026-10-20",
+    "text": "its been a minute since a new cha locus … seat this on crimsonhexagonal"
+   },
+   "declared": {
+    "physics": "declared in the charter (#1695 §5)",
+    "prompt": "declared in the charter (#1695 §4.1): Elias's first question",
+    "note": "2026-10-20: a room of the Crimson Hexagon, governed by its charter. The hex is a permanent identifier (43: 41 is an earlier form of IVN's address, 42 is Ruby Moot); the locus is the position, r.41, after the forty rooms."
+   },
+   "charter": {
+    "deposit": 1695,
+    "record_url": "https://www.alexanarch.org/s/records/1695/"
+   }
   }
  ],
  "edges": [
@@ -3361,6 +3392,34 @@
   }
  ],
  "documents": [
+  {
+   "id": "axn-0705",
+   "title": "The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells",
+   "date": "2026-10-20",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "keywords": [
+    "Stellar Orbit Fluid Dynamics Institute",
+    "SOFDI",
+    "Cactus Gravity",
+    "Elias",
+    "Elara Xanthic-Wells",
+    "The Secret Name"
+   ],
+   "excerpt": "An institute invented to have conducted an experiment becomes an institute that investigates what happened to its invention.",
+   "rooms": [
+    "r43"
+   ],
+   "status": "RATIFIED",
+   "assignment": "declared",
+   "r": [
+    "r43"
+   ],
+   "axn": "AXN:0705.COMPOSITIONAL.🌀🕒🎨⛳🔅🪨",
+   "record_url": "https://www.alexanarch.org/s/records/1695/",
+   "text_url": "https://www.alexanarch.org/data/texts/AXN-0705-text.md"
+  },
   {
    "id": "19355075",
    "doi": "10.5281/zenodo.19355075",
@@ -18114,7 +18173,8 @@
    "headline": "47 loci — 40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow space — with 4 fields and 3 transversals; beside them the five Arks (SP.05–SP.09), two further shadow documents (ZPZP, the Shadow Burn) and UMBML, the meta-structure over the three transversals."
   },
   "placeholder_repair_2026_10_18": "Twelve places (R:r.30, R:r.33–r.40, H:U.3-60, H:06.HOST.IVN.29, X:LUNAR-ARM) carried the Sappho Room's physics, question, operators, mantle (Rebekah Cranes), preferred mode and LP program as a placeholder. Removed; each place's own are not yet declared. The app falls back to its defaults (no physics specified, no LP program).",
-  "shadow_arks_2026_10_18": "Two shadow Arks named beside the five Arks: SP.10.ARK.SHADOW (#549, EA-ARK-01-SHADOW) and SP.11.ARK.EMOJI.SHADOW (#540; #1331 the same text). Lee Sharks, 2026-10-18: 'yes - those are the two shadow arks… those are preliminary transforms'. ZPZP and the Shadow Burn remain further shadow documents, not shadow Arks."
+  "shadow_arks_2026_10_18": "Two shadow Arks named beside the five Arks: SP.10.ARK.SHADOW (#549, EA-ARK-01-SHADOW) and SP.11.ARK.EMOJI.SHADOW (#540; #1331 the same text). Lee Sharks, 2026-10-18: 'yes - those are the two shadow arks… those are preliminary transforms'. ZPZP and the Shadow Burn remain further shadow documents, not shadow Arks.",
+  "sofdi_2026_10_20": "A new room and an institution: R:r.41 (hex 43.ROOM.SOFDI, id r43) and I.13.SOFDI, the Stellar Orbit Fluid Dynamics Institute, charter #1695 (Lee Sharks, 2026-10-20: 'its been a minute since a new cha locus'). Physics and question declared in the charter. Officers: Elias (06.PERSONA.ELIAS) and Elara Xanthic-Wells (06.PERSONA.XANTHICWELLS). The loci now number 48: forty-one rooms, four specials, two hosted cosmologies, one shadow space."
  },
  "relations": [
   {
@@ -30750,6 +30810,17 @@
    "room": null,
    "desc": "The generative engine of NON-EXISTENT works cited retrocausally. What the Hexagon actually produces. Stores institutional output. Pipeline: FL → LE → UKTP → GDE → SAG → FL (closed loop). Not the document library — the production apparatus.",
    "type": "engine_institution"
+  },
+  {
+   "id": "I.13",
+   "hex_address": "I.13.SOFDI",
+   "name": "Stellar Orbit Fluid Dynamics Institute",
+   "abbrev": "SOFDI",
+   "heteronym": "Elias; Xanthic-Wells",
+   "room": "r43",
+   "doi": null,
+   "charter": "https://www.alexanarch.org/s/records/1695/",
+   "desc": "Received 2026-10-20 (#1695). Principal investigator: Elias, keeper of the route ledger; director of textual provenance and impossible editions: Prof. Elara Xanthic-Wells."
   }
  ],
  "mantles": [

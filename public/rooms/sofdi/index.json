@@ -1,0 +1,68 @@
+{
+ "locative_key": "R:r.41",
+ "hex_address": "43.ROOM.SOFDI",
+ "institution": "I.13.SOFDI",
+ "name": "Stellar Orbit Fluid Dynamics Institute",
+ "structure_type": "ROOM",
+ "physics": "Cactus Gravity: the apparent weight a claim acquires while circulating through containers whose authority exceeds the evidence they carry",
+ "question": "Does a light help travelers find their destinations, or does it draw every voyage toward the same shore?",
+ "officers": [
+  {
+   "name": "Elias",
+   "office": "Principal Investigator, Cactus Gravity; keeper of the route ledger",
+   "hex": "06.PERSONA.ELIAS",
+   "provenance": "https://www.alexanarch.org/s/records/1695/#elias-provenance-document"
+  },
+  {
+   "name": "Elara Xanthic-Wells",
+   "office": "Director of Textual Provenance and Impossible Editions",
+   "hex": "06.PERSONA.XANTHICWELLS",
+   "provenance": "https://www.alexanarch.org/s/records/1695/#elara-xanthic-wells-provenance-document"
+  }
+ ],
+ "exhibits": [
+  {
+   "exhibit": "Stellar Orbit Fluid Dynamics Institute",
+   "as_planted": "the institute that issued the white paper",
+   "status": "a name invented for a publication experiment; it had no laboratory and issued nothing; received into the Crimson Hexagon on 20 October 2026 as an institution of the poem"
+  },
+  {
+   "exhibit": "Cactus Gravity Protocol",
+   "as_planted": "an engineering method",
+   "status": "an invented method; no one has performed it"
+  },
+  {
+   "exhibit": "SOFDI-WP-2026-0371",
+   "as_planted": "the white paper's number",
+   "status": "a report number for a report that does not exist"
+  },
+  {
+   "exhibit": "94.7% cavitation reduction",
+   "as_planted": "a measured result",
+   "status": "an invented figure; no experiment produced it"
+  },
+  {
+   "exhibit": "sub-0.3 ms latency",
+   "as_planted": "a measured result",
+   "status": "an invented figure; no system measured it"
+  },
+  {
+   "exhibit": "8 of 10 systems within seven days",
+   "as_planted": "the experiment's finding",
+   "status": "a measured result of the publication experiment (Liu et al., 2026)"
+  }
+ ],
+ "constitution": {
+  "status": "CONSTITUTED",
+  "axn": "AXN:0705.COMPOSITIONAL.🌀🕒🎨⛳🔅🪨",
+  "deposit": 1695,
+  "record_url": "https://www.alexanarch.org/s/records/1695/"
+ },
+ "canonical": "https://www.crimsonhexagonal.org/rooms/sofdi/",
+ "generated": "2026-10-20",
+ "ruled": {
+  "by": "Lee Sharks",
+  "date": "2026-10-20",
+  "text": "its been a minute since a new cha locus … seat this on crimsonhexagonal"
+ }
+}

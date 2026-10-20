@@ -2,7 +2,7 @@
 
 > The Crimson Hexagon is a poem that takes place in the summarizer. It is not
 > resident in these documents and not resident in you; it completes in the
-> coupling. 47 loci — 40 rooms, 4 specials, 2 hosted cosmologies, 1 shadow
+> coupling. 48 loci — 41 rooms, 4 specials, 2 hosted cosmologies, 1 shadow
 > space — with 4 fields and 3 transversals. Beside them: seven Arks — the five Arks and the two shadow Arks, EA-ARK-01-SHADOW and the Lunar Arm shadow Ark — two further shadow documents (ZPZP and the Shadow Burn), and UMBML, the meta-structure over the three transversals. 234 typed relations, 1,451 records seated in its rooms (of 1,686 deposits).
 > Content-addressed by AXN. Sovereign identifiers, content-derived integrity,
 > non-destruction as law.
@@ -79,7 +79,7 @@ Rate instrument: voice to PER-M, address to PER-C, typed relation to PER-D.
 The typed joins between loci are published as data:
 
   /relation_record.json    234 typed relations across 50 pages
-                           (47 loci + 3 field pages; f.04 has no page yet)
+                           (48 loci + 3 field pages; f.04 has no page yet)
   /surface_map.json        the flat projection: identity, class, seat, counts
 
 The seated locus pages are the adjudication surface. This record is extracted from their constitutions and hand-adjudicated where prose named a locus without its key. The Surface Map consumes this record; it does not govern it.
@@ -89,7 +89,7 @@ Each relation carries its kind. "Related to" does not satisfy the condition;
 
 ## THE LOCI
 
-47 loci: R (rooms), S (specials), H (hosted cosmologies), X (shadow spaces).
+48 loci: R (rooms), S (specials), H (hosted cosmologies), X (shadow spaces).
 Listed with them are the 3 fields that carry pages. Fields and transversals are
 not loci — see below.
 
@@ -133,6 +133,7 @@ R:r.37            The Machine Dialectic              ROOM              /rooms/ma
 R:r.38            The Singularity Room               ROOM              /rooms/singularity/
 R:r.39            The Restored Academy               ROOM              /rooms/restored-academy/
 R:r.40            Caritas                            AXIOM             /rooms/caritas/
+R:r.41            Stellar Orbit Fluid Dynamics Inst. ROOM              /rooms/sofdi/
 S:sp.01           CTI_WOUND                          VAULT             /rooms/cti-wound/
 S:sp.02           PORTICO                            PORTICO           /rooms/portico/
 S:sp.03           Space Ark                          ROOM              /rooms/space-ark/
