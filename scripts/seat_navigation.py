@@ -80,6 +80,9 @@ CSS = """<style id="nav-seated">/* seat_navigation.py (2026-10-30): the seated d
 .ct{color:#c8a868;font-family:ui-monospace,monospace;letter-spacing:.04em;margin:1.8rem 0 .5rem;font-size:.86rem;text-transform:uppercase}
 h4.ct,h5.ct{font-size:.76rem}
 .xw{font:.6rem/1.5 ui-monospace,monospace;color:#8a8478;opacity:.85}
+.dm table{border-collapse:collapse;font-size:.78rem;width:100%}.dm th,.dm td{border-bottom:1px solid rgba(200,168,104,.14);padding:.3rem .4rem;vertical-align:top;text-align:left}
+.dmt{overflow-x:auto;max-height:70vh;overflow-y:auto;margin-top:.6rem}.dm summary{cursor:pointer;color:#c8a868}.dm td:first-child{font-family:ui-monospace,monospace;white-space:nowrap}
+@media(max-width:640px){.dm thead{display:none}.dm table,.dm tbody,.dm tr,.dm td{display:block;width:100%}.dm tr{padding:.55rem 0;border-bottom:1px solid rgba(200,168,104,.18)}.dm td{border:0;padding:.08rem 0}.dm td:nth-child(3),.dm td:nth-child(4){display:inline;margin-right:.6rem}.dmt{max-height:none}}
 pre.art{font:.62rem/1.35 ui-monospace,'JetBrains Mono',monospace;color:#b8b3a8;background:rgba(255,255,255,.02);border:1px solid rgba(200,168,104,.14);
 border-radius:3px;padding:.7rem .8rem;overflow-x:auto;white-space:pre;margin:1rem 0}
 </style>"""
@@ -90,13 +93,59 @@ def rec_axn(n):
     return REG[n]["axn"]
 
 
-def doi_note(doi):
+CANON = {e["dead_doi"]: e for e in json.loads((ALEX / "data/doi-resolution-index.json").read_text(encoding="utf-8"))["mappings"]}
+SEVERED = {}   # a record's own former DOI, declared in its related identifiers as "(severed)"
+for _d in REG.values():
+    for _m in re.finditer(r"(10\.5281/zenodo\.\d+)\s*\(severed\)", str(_d.get("related_identifiers_raw") or "")):
+        SEVERED.setdefault(_m.group(1), []).append(_d["deposit_number"])
+
+
+def note_sup(n):
+    sb = REG[n].get("superseded_by_deposit_number") if REG[n].get("status") == "SUPERSEDED" else None
+    return f"; #{n} superseded by #{sb}" if sb else ""
+
+
+def norm(x):
+    return re.sub(r"[^a-z0-9]+", " ", str(x).lower()).strip()
+
+
+def resolve(doi, title=None):
+    """(record or None, basis, note), each DOI to the record the evidence names, without moving it along any chain.
+    resolves: the alexanarch resolver routes it (the canonical index has already applied its own rules, S among them).
+    declared: the resolver holds it, and exactly one record declares it as its own former DOI ("severed"): that record.
+    title: the resolver holds it, no record declares it, and exactly one record's title begins with the title the March
+    document gives it (the July 2026 remediation's exact-title rule). none: no record."""
     v = DMAP.get(doi)
-    if not v or not v[1]:
+    if v and v[1] and "/s/records/" in v[1]:
+        return int(re.search(r"/s/records/(\d+)/", v[1]).group(1)), "resolves", None
+    e = CANON.get(doi, {})
+    held = e.get("note") or e.get("mapping_type") or "no target"
+    s = SEVERED.get(doi, [])
+    if len(s) == 1:
+        return s[0], "declared", f"#{s[0]} declares it as its former DOI; the resolver holds it ({held}){note_sup(s[0])}"
+    if re.fullmatch(r"10\.5281/zenodo\.\d{1,6}", doi):
+        return None, "none", "a fragment of a DOI in the document's text, not an identifier"
+    if title:
+        k = norm(re.sub(r"\s*[—-]\s*Crimson Hexagon Archive$", "", title))
+        hits = [n for n, d in REG.items() if len(k) >= 20 and norm(d.get("title")).startswith(k[:60])]
+        if len(hits) == 1:
+            return hits[0], "title", f"one record's title begins with the March title; the resolver holds the DOI ({held}){note_sup(hits[0])}"
+        if hits:
+            return None, "none", f"{len(hits)} records share the March title: " + ", ".join(f"#{h}" for h in hits[:6])
+    blog = (e.get("live_urls") or {}).get("blog")
+    return None, "none", f"no alexanarch record; the resolver holds it ({held})" + (f"; its text is on the blog: {blog}" if blog else "")
+
+
+def doi_note(doi):
+    n, basis, _ = resolve(doi)
+    if not n or n not in REG:
         return ""
-    m = re.search(r"/s/records/(\d+)/", v[1])
-    axn = rec_axn(int(m.group(1))) if m and int(m.group(1)) in REG else v[0]
-    return f' <span class="xw">&rarr; {html.escape(axn)}</span>' if axn else ""
+    return f' <span class="xw">&rarr; {html.escape(rec_axn(n))}{"" if basis == "resolves" else " (" + basis + ")"}</span>'
+
+
+def doi_href(doi):
+    n, basis, _ = resolve(doi)
+    return f"{A}/go/?doi={doi}" if basis == "resolves" or not n else f"{A}/s/records/{n}/"
 
 
 def route_dois(h):
@@ -114,8 +163,50 @@ def route_dois(h):
             out.append(part); continue
         if in_a:
             out.append(part); continue
-        out.append(ZEN.sub(lambda m: f'<a href="{A}/go/?doi={m.group(0)}">{m.group(0)}</a>' + doi_note(m.group(0)), part))
+        out.append(ZEN.sub(lambda m: f'<a href="{doi_href(m.group(0))}">{m.group(0)}</a>' + doi_note(m.group(0)), part))
     return "".join(out)
+
+
+def registry_roster():
+    """The records DOI Registry v7.0 lists by DOI: its précis index, its new-documents tables and its orphan report."""
+    t = text_of(REG[31]["axn"][4:8], str(ALEX))
+    rows = {}
+    for m in re.finditer(r"^\*\*\d+\*\* \| (10\.5281/zenodo\.\d+) \| (T\d) \| ([^|]*)\| ([^|]*)\| E:\d+\n\*([^\n]*)\*", t, re.M):
+        rows.setdefault(m.group(1), {"doi": m.group(1), "title": m.group(5).rstrip(" |").strip(), "tier": m.group(2), "listed": "précis"})
+    new = t[t.index("## NEW DOCUMENTS"):t.index("## DOCUMENT TYPE")]
+    for m in re.finditer(r"^\|\s*(10\.5281/zenodo\.\d{7,})\s*\|\s*([^|]*)\|[^|]*\|[^|]*\|[^|]*\|\s*(\d)\s*\|", new, re.M):
+        rows.setdefault(m.group(1), {"doi": m.group(1), "title": m.group(2).strip(), "tier": "T" + m.group(3), "listed": "new since v6.0"})
+    orph = t[t.index("## ORPHAN REPORT"):t.index("## RELATION GRAPH")]
+    for m in re.finditer(r"\*\*(10\.5281/zenodo\.\d{7,})\*\* — ([^(\n]*)", orph):
+        rows.setdefault(m.group(1), {"doi": m.group(1), "title": m.group(2).strip(), "tier": None, "listed": "orphan report"})
+    return list(rows.values())
+
+
+def registry_map_block():
+    roster = registry_roster(); out, C = [], {"resolves": 0, "declared": 0, "title": 0, "none": 0}
+    for r in roster:
+        n, basis, note = resolve(r["doi"], r["title"]); C[basis] = C.get(basis, 0) + 1
+        r.update({"record": n, "axn": rec_axn(n) if n in REG else None, "status": REG[n]["status"] if n in REG else None, "basis": basis, "note": note})
+        out.append(r)
+    (NAV / "registry" / "doi-axn-v7.json").write_text(json.dumps({"name": "DOI Registry v7.0 mapped against AXN", "source": "alexanarch #31 (DOI Registry v7.0, 2026-03-16)",
+        "generated_by": "scripts/seat_navigation.py", "resolution": "resolves: alexanarch data/api/doi-axn-map.json; declared: the one record whose related identifiers give the DOI as its own severed former DOI; title: the one record whose title begins with the March title; none: no record. No record is moved along a supersession chain; supersession is noted.",
+        "counts": C, "records": out}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    tr = []
+    for r in out:
+        ax = f'<a href="{A}/s/axn/{r["axn"][4:8]}/">{html.escape(r["axn"])}</a>' if r["axn"] else "&mdash;"
+        rec = f'<a href="{A}/s/records/{r["record"]}/">#{r["record"]}</a>' if r["record"] else "&mdash;"
+        nt = html.escape(r["note"] or "")
+        nt = re.sub(r"(https://mindcontrolpoems\.blogspot\.com/\S+?\.html)", r'<a href="\1">the blog post</a>', nt)
+        b = r["basis"] + (f' <span class="xw">{nt}</span>' if nt else "")
+        tr.append(f'<tr><td><a href="{doi_href(r["doi"])}">{r["doi"][8:]}</a></td><td>{html.escape(r["title"])}</td><td>{rec}</td><td>{ax}</td><td>{b}</td></tr>')
+    n = len(out); mapped = n - C["none"]
+    return (f'<!-- NAV-DOIMAP-START (scripts/seat_navigation.py) --><div class="strata dm" id="doi-axn"><h3>The v7.0 registry mapped against AXN</h3>'
+            f'<p>The March registry lists {n} records by DOI (it states 387; {387 - n} are counted without a DOI line). <b>{mapped} of {n} map to an AXN</b>: '
+            f'{C["resolves"]} through the alexanarch resolver; {C["declared"]} through the record that declares the DOI as its own former DOI, which the resolver still holds; '
+            f'{C["title"]} by the one record whose title begins with the title the March document gives; {C["none"]} with no record found. A superseded record keeps its own AXN, its supersession noted. '
+            f'<a href="/navigation/registry/doi-axn-v7.json">The mapping as data</a>.</p>'
+            f'<details><summary>All {n} records, DOI to AXN</summary><div class="dmt"><table><thead><tr><th>DOI (zenodo.)</th><th>Title in v7.0</th><th>Record</th><th>AXN</th><th>Basis</th></tr></thead>'
+            f'<tbody>{"".join(tr)}</tbody></table></div></details></div><!-- NAV-DOIMAP-END -->'), C, n
 
 
 def plain(h):
@@ -162,6 +253,12 @@ def main():
                 if b not in t:
                     assert a in t, a; t = t.replace(a, b)
             t = t.replace("DOI <b>10.5281/zenodo.19013315</b>", f'DOI <a href="{A}/go/?doi=10.5281/zenodo.19013315"><b>10.5281/zenodo.19013315</b></a>')
+        t = re.sub(r"<!-- NAV-DOIMAP-START.*?<!-- NAV-DOIMAP-END -->\n", "", t, flags=re.S)
+        if slug == "registry":
+            blk_m, C, nrec = registry_map_block()
+            h0 = t.index('<div class="strata hist">')
+            t = t[:h0] + blk_m + "\n" + t[h0:]
+            print(f"registry: v7.0 mapped against AXN, {nrec} records: {C}")
         # 3. the document, seated whole, at the end of the historical-specification box
         h = t.index('<div class="strata hist"><h3>Historical specification</h3>')
         end = re.compile(r"</p>\s*</div>").search(t, h).start() + len("</p>")   # the box's last paragraph
