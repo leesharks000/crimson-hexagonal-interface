@@ -280,6 +280,9 @@ that render them are replaceable.</p></div>
 <p style="margin-top:.8rem">Not edited.</p></div>
 """))
     print("navigation: /navigation/ + registry, central-map, fractal-map, space-ark")
+    # each page then seats its document whole and gets its routes (2026-10-30); a rebuild without this would empty them again
+    import seat_navigation
+    seat_navigation.main()
 
 
 if __name__ == "__main__":
