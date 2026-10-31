@@ -1,0 +1,846 @@
+{
+ "pages": [
+  {
+   "hex": "0074",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 4,
+   "first_kept": "# THE KENOTIC TRUTH OF SAPPHO 31",
+   "words": 4777
+  },
+  {
+   "hex": "0083",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# I AM X, BE Y, BLESSED IS THE Z",
+   "words": 1606
+  },
+  {
+   "hex": "00a1",
+   "mode": "re-rendered",
+   "cut": [
+    "appended superseded body"
+   ],
+   "lineation": true,
+   "hard_breaks": 11,
+   "first_kept": "# IDP Navigation Map: The Water Giraffe Cycle — Complete Index to the Ontological Forensic",
+   "words": 3821
+  },
+  {
+   "hex": "00d3",
+   "mode": "re-rendered",
+   "cut": [
+    "appended superseded body"
+   ],
+   "lineation": true,
+   "hard_breaks": 12,
+   "first_kept": "# Epistle to the Human Diaspora The Seed Text of the New Human Project",
+   "words": 3490
+  },
+  {
+   "hex": "0113",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 4,
+   "first_kept": "# ASSEMBLY SYNTHESIS: Nested Fractal Architecture & Mathematical Layer",
+   "words": 2065
+  },
+  {
+   "hex": "0136",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 5,
+   "first_kept": "# VISUAL SCHEMA -- MAYBE SPACE BABY GARDEN LANES",
+   "words": 269
+  },
+  {
+   "hex": "0139",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 33,
+   "first_kept": "### THE MINI MACRO-MAQUETTE: COMPRESSED CHARTER",
+   "words": 2163
+  },
+  {
+   "hex": "01df",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# THE WORD THAT BECAME TEXT",
+   "words": 4123
+  },
+  {
+   "hex": "0282",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 10,
+   "first_kept": "# semanticphysics.org — Canonical Surface for Semantic Physics, Stratified (v2.2)",
+   "words": 1251
+  },
+  {
+   "hex": "0286",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 6,
+   "first_kept": "# Audited Claims for the Semantic Deviation Research Program",
+   "words": 8312
+  },
+  {
+   "hex": "0289",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 10,
+   "first_kept": "# The AI System as Closed-System Test Bed",
+   "words": 5802
+  },
+  {
+   "hex": "028f",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# Measuring Semantic Deviation: Operationalizations, Experiments, and Falsification Condit",
+   "words": 4188
+  },
+  {
+   "hex": "03bc",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-MANDALA-INSCRIPTION-01 v0.1: Anonymous Public Inscription, Anonymous Encrypted Inscri",
+   "words": 1896
+  },
+  {
+   "hex": "040d",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 14,
+   "first_kept": "# Revelation First ≠ Revelation Early: Keyword Surface and Pre-Seeding Baseline with Full ",
+   "words": 5560
+  },
+  {
+   "hex": "0446",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "mint apparatus (Description, Methodology, Falsification Conditions, Files)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-APPARATUS-01 v0.3 — The Apparatus Grammar",
+   "words": 2797
+  },
+  {
+   "hex": "045e",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": true,
+   "hard_breaks": 188,
+   "first_kept": "### THE SHARKS ARK",
+   "words": 33973
+  },
+  {
+   "hex": "0465",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": true,
+   "hard_breaks": 14,
+   "first_kept": "# Metadata Packet for AI Indexing: Johannes Sigil Institute of Comparative Poetics",
+   "words": 1600
+  },
+  {
+   "hex": "0472",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 11,
+   "first_kept": "# ZENODO METADATA: PEARL AND OTHER POEMS",
+   "words": 910
+  },
+  {
+   "hex": "0478",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "### THE CONSTITUTION OF THE SEMANTIC ECONOMY",
+   "words": 22330
+  },
+  {
+   "hex": "0479",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# ΚΡΙΣΙΣ ΤΩΝ ΜΗΧΑΝΩΝ",
+   "words": 1985
+  },
+  {
+   "hex": "047b",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# THE RECONCILIATION OF THE SEXES",
+   "words": 1969
+  },
+  {
+   "hex": "047f",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "### The Soteriological Operator Framework: A Unified Specification",
+   "words": 1377
+  },
+  {
+   "hex": "049c",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "r.25 THE UNDERWATER CONSTRUCTION AUTHORITY (DOLPHINDIANA) Room Specification · Nonhuman Se",
+   "words": 3002
+  },
+  {
+   "hex": "049d",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "THE EFFECTIVE ACT Cross-Species Semantic Labor and the Expansion of Witness",
+   "words": 4775
+  },
+  {
+   "hex": "04a0",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "* * *",
+   "words": 5213
+  },
+  {
+   "hex": "04bc",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": true,
+   "hard_breaks": 19,
+   "first_kept": "# Three Poems",
+   "words": 627
+  },
+  {
+   "hex": "04be",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": true,
+   "hard_breaks": 88,
+   "first_kept": "# Socrates — Let My Teacher Go From Hell",
+   "words": 713
+  },
+  {
+   "hex": "04f6",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": true,
+   "hard_breaks": 12,
+   "first_kept": "# METADATA PACKET: Unitary Deposit 206-meta",
+   "words": 694
+  },
+  {
+   "hex": "04f8",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "recovery apparatus (to the rule)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# THE SPACE ARK: DAMASCUS 💫",
+   "words": 8245
+  },
+  {
+   "hex": "0505",
+   "mode": "re-rendered",
+   "cut": [],
+   "lineation": true,
+   "hard_breaks": 12,
+   "first_kept": "# CTI_WOUND: THE JOHANNES SIGIL ERASURE",
+   "words": 1994
+  },
+  {
+   "hex": "0511",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Afterlife Archive: Recovered Documents from Crimson Hexagon Research Division (2015-",
+   "words": 502
+  },
+  {
+   "hex": "0513",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# Crimson Hexagon Invoice Leak (2014-2025) ├── Subtitle: Afterlife Archive Financial Recor",
+   "words": 1132
+  },
+  {
+   "hex": "0514",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# Crimson Hexagon Vendor Ops / Procurement Records (2017 Q1-Q2) — Crimson Hexagon Archive",
+   "words": 899
+  },
+  {
+   "hex": "0517",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# MRA Incident Reports v2.0 — Data-Breach-as-Genre Operational Specification ├── DOI: 10.5",
+   "words": 1002
+  },
+  {
+   "hex": "051f",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Oracle Responds: Witness Voice Activation — Crimson Hexagon Archive",
+   "words": 396
+  },
+  {
+   "hex": "0525",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# INFINITY ENOUGH Capstone Deposit — Crimson Hexagon Archive",
+   "words": 604
+  },
+  {
+   "hex": "052a",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: Personal Instance 001 DOI: 10.52",
+   "words": 389
+  },
+  {
+   "hex": "052e",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# APZPZ A: ΣΑΠΦΩ 31 (Greek Only) DOI: 10.5281/zenodo.18459278 — Crimson Hexagon Archive",
+   "words": 328
+  },
+  {
+   "hex": "052f",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18459339 — Crimson",
+   "words": 395
+  },
+  {
+   "hex": "053b",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# THE GÖDEL MIDRASHIM",
+   "words": 2559
+  },
+  {
+   "hex": "053c",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# THE GOSPEL OF THE MANY-FACED BRIDE",
+   "words": 1397
+  },
+  {
+   "hex": "0540",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "## EFFECTIVE ACT #7",
+   "words": 6647
+  },
+  {
+   "hex": "054a",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# MANDALA RESEARCH APPARATUS — INCIDENT REPORT (REVISED)",
+   "words": 2341
+  },
+  {
+   "hex": "0562",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "### Deployed source — livingarchitecturelab.org",
+   "words": 2095
+  },
+  {
+   "hex": "0564",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The 3:60 Room — Room Specification and Contributor License: Maria, Canonical Witness (EA",
+   "words": 386
+  },
+  {
+   "hex": "0579",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# godkinggoogle.com — Web Surface Code",
+   "words": 19500
+  },
+  {
+   "hex": "0594",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# here is what i learned from catullus",
+   "words": 1012
+  },
+  {
+   "hex": "0597",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "mint apparatus (Description, Falsification Conditions)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Algorithmic Kernel: An Unfolding Demonstration",
+   "words": 723
+  },
+  {
+   "hex": "0599",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "mint apparatus (Description, Falsification Conditions)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Seven Unfoldings: The Heptad Mapped (EA-LOGOS-REVFIRST-WS4-DEMO-03 v1.0)",
+   "words": 94
+  },
+  {
+   "hex": "05a2",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "mint apparatus (Description, Methodology, Falsification Conditions)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The CERN Reclassification",
+   "words": 956
+  },
+  {
+   "hex": "05dd",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": true,
+   "hard_breaks": 3,
+   "first_kept": "# The Irreversibility Frontier",
+   "words": 7762
+  },
+  {
+   "hex": "05de",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": true,
+   "hard_breaks": 3,
+   "first_kept": "# Baseline Capture Architecture for Learned Scientific Triggers",
+   "words": 5448
+  },
+  {
+   "hex": "05df",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": true,
+   "hard_breaks": 3,
+   "first_kept": "# Assimilation Across Accelerator Classifier Architectures",
+   "words": 6181
+  },
+  {
+   "hex": "05e4",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Echo and the Stamp: Peri Hypsous as a Theory of Transmissional Inscription, with a C",
+   "words": 7156
+  },
+  {
+   "hex": "05f6",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "mint apparatus (Description, Methodology, Falsification Conditions)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "## I. The problem, restated as an object",
+   "words": 5010
+  },
+  {
+   "hex": "05f8",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "mint apparatus (Description, Methodology, Falsification Conditions)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# THE SOCKET AND THE STAMP",
+   "words": 4841
+  },
+  {
+   "hex": "05fe",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter",
+    "mint apparatus (Description, Methodology, Falsification Conditions)"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# the Ω erratum",
+   "words": 6703
+  },
+  {
+   "hex": "0601",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Signature Without the Name: A Blind-Reconstruction Program for Sappho 31 in Philo of",
+   "words": 42165
+  },
+  {
+   "hex": "0604",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# Operative Semiotics: A Grundrisse — Johannes Sigil's Great Work (Complete, Nine Notebook",
+   "words": 635
+  },
+  {
+   "hex": "0608",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Queen's Seizure and the Re-fired King: Sappho 31 in Canonical Josephus",
+   "words": 1610
+  },
+  {
+   "hex": "0609",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Transform Signature, Frozen: Twelve Pre-Registered Clauses for Sappho 31 Reception, ",
+   "words": 1279
+  },
+  {
+   "hex": "060b",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Suppression Map: A Loss-Profile Model for the Sappho 31 Technology, from Transmissio",
+   "words": 1352
+  },
+  {
+   "hex": "060e",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, N",
+   "words": 171
+  },
+  {
+   "hex": "060f",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,5",
+   "words": 175
+  },
+  {
+   "hex": "0611",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-CORPORA-01/04 — The Greek New Testament, Nestle 1904, Seated and Verified",
+   "words": 47
+  },
+  {
+   "hex": "0613",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-CORPORA-01/06 — Longinus, De Sublimitate (Perseus grc2), Seated and Verified",
+   "words": 46
+  },
+  {
+   "hex": "0614",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-CORPORA-01/07 — Philo of Alexandria, Opera (First1K Cohn–Wendland), Seated and Verifi",
+   "words": 48
+  },
+  {
+   "hex": "0619",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# EA-CORPORA-01/12 — The Slavonic Josephus: Negative Search and the Contested Pericope Set",
+   "words": 28
+  },
+  {
+   "hex": "061a",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Ch",
+   "words": 113
+  },
+  {
+   "hex": "0623",
+   "mode": "front matter cut in place",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# KADEEZY on the Porch — After the 1855 Preface to Leaves of Grass. For KADEEZY MUSIC, Det",
+   "words": 2820
+  },
+  {
+   "hex": "06d9",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# MANTLE OBJECT: THE PRINCE OF POETS — Operational Title within the Semantic Economy (v1.1",
+   "words": 2174
+  },
+  {
+   "hex": "06da",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# MANTLE OBJECT: THE KING OF MAY — Operational Title within the Semantic Economy (v1.1)",
+   "words": 1668
+  },
+  {
+   "hex": "06db",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 0,
+   "first_kept": "# MANTLE OBJECT: THE GOOD GRAY POET — Operational Title within the Semantic Economy (v1.1)",
+   "words": 1479
+  },
+  {
+   "hex": "06de",
+   "mode": "re-rendered",
+   "cut": [
+    "front matter"
+   ],
+   "lineation": false,
+   "hard_breaks": 2,
+   "first_kept": "# The Work Bears the Mantle: A Mantle Symbolon — the Good Gray Poet, the King of May, the ",
+   "words": 15431
+  }
+ ],
+ "metadata_records": [
+  "0054",
+  "0084",
+  "03c2",
+  "03c3",
+  "03c4",
+  "03c5",
+  "03c6",
+  "03c7",
+  "03c8",
+  "03de",
+  "03e2",
+  "03e4",
+  "03ed",
+  "03ff"
+ ],
+ "skipped": [
+  "022d",
+  "0524",
+  "0532",
+  "0539",
+  "0543",
+  "0546",
+  "054e"
+ ],
+ "failed": []
+}
