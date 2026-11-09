@@ -39,14 +39,17 @@ def figures():
     rr = json.load(open(ROOT / 'public/relation_record.json'))['_record']
     return {'deposits': c['deposits']['total'], 'seated': h['seated_records'], 'seated_active': h['seated_records_active'],
             'active': h['active_records'], 'relations': rr['relations'],
-            'pages': len(glob.glob(str(ROOT / 'public/rooms/*/index.html')))}
+            'pages': len(glob.glob(str(ROOT / 'public/rooms/*/index.html'))), 'loci': h['loci'],
+            'spans': {'deposits.total': c['deposits']['total'], 'hexagon.seated_records': h['seated_records'], 'hexagon.seated_records_active': h['seated_records_active'],
+                      'hexagon.active_records': h['active_records'], 'hexagon.typed_relations': rr['relations']}}
 
 def span(key, v):
     return f'<span data-count="{key}">{v:,}</span>'
 
 def rules(f):
     D, S, SA, A, R, P = f['deposits'], f['seated'], f['seated_active'], f['active'], f['relations'], f['pages']
-    meta = f'47 loci, {R} typed relations, {S:,} records seated in its rooms.'
+    L = f['loci']   # declared in counts.json (hexagon.loci); was hard-set to 47 here, which left pages already reading 48 unsynced (2026-11-09)
+    meta = f'{L} loci, {R} typed relations, {S:,} records seated in its rooms.'
     vis = (f'{span("hexagon.typed_relations", R)} typed relations; {span("hexagon.seated_records", S)} records of the '
            f'archive’s {span("deposits.total", D)} seated in its rooms ({span("hexagon.seated_records_active", SA)} of '
            f'{span("hexagon.active_records", A)} active).')
@@ -56,7 +59,9 @@ def rules(f):
     N = r'[0-9][0-9,]*'
     return [
         # meta / og descriptions (and their earlier forms)
-        (re.compile(rf'47 loci, {N} typed relations, (?:{N} works|{N} records seated in its rooms)\.'), meta),
+        (re.compile(rf'{N} loci, {N} typed relations, (?:{N} works|{N} records seated in its rooms)\.'), meta),
+        # every data-count span carries the figure of the run in its server HTML, so the fallback agrees before counts.js runs (2026-11-09)
+        (re.compile(r'<span data-count="(' + '|'.join(re.escape(k) for k in f['spans']) + r')">' + N + r'</span>'), lambda m: span(m.group(1), f['spans'][m.group(1)])),
         # the visible line on the home page and the rooms index (earlier and current forms)
         (re.compile(rf'(?:<span data-count="hexagon\.typed_relations">)?{N}(?:</span>)? typed relations(?: between loci)?; '
                     rf'(?:{N} works seated\.|(?:<span[^>]*>)?{N}(?:</span>)? records of the archive’s .*? active\)\.)'), ('VIS', vis, plain)),
