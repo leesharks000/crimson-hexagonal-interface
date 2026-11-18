@@ -155,6 +155,20 @@
    "deposit_number": 306
   },
   {
+   "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v3.1)",
+   "creators": [
+    "Sharks, Lee"
+   ],
+   "date": "2026-11-18",
+   "axn": "AXN:0CC4.GENERATIVE.⚪🪟👋🔮🀄🪟",
+   "canonical_url": "https://www.alexanarch.org/s/records/1785/",
+   "works_url": "/works/0cc4/",
+   "deposit_number": 1785,
+   "version": "v3.1",
+   "supersedes": "/works/0507/",
+   "mapping_type": "declared"
+  },
+  {
    "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader — Crimson Hexagon Archive",
    "doi": "10.5281/zenodo.18202753",
    "creators": [
@@ -167,7 +181,8 @@
    "historical_doi_status": "SEVERED",
    "axn_bound_via": "doi-resolution-index/doi",
    "mapping_type": "direct_verified",
-   "deposit_number": 1270
+   "deposit_number": 1270,
+   "superseded_by": "/works/0cc4/"
   },
   {
    "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving — Crimson Hexagon Archive",

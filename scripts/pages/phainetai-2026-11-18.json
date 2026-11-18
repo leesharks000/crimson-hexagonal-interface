@@ -1,0 +1,10 @@
+[{"hex": "0CC4", "deposit": 1785, "axn": "AXN:0CC4.GENERATIVE.⚪🪟👋🔮🀄🪟",
+  "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v3.1)", "date": "2026-11-18", "version": "v3.1",
+  "voice": "Lee Sharks / Claude", "author": "Lee Sharks", "room": ["sappho", "The Sappho Room", "R:r.01"],
+  "role": "COMMENTARY", "multiplicity": "SERIES",
+  "gloss": "The current version of the reading first seated here as #1270: the seat of the future reader, the voice as addressee, the catalogue as the withdrawal of the performing body, the colour as the passage to the writing surface, the agentless dare; three readings on one scale; the reader in two stages, hearing and speaking, which makes the reader the poet",
+  "description": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v3.1) — the current version of the reading first deposited as #1270 (v1.0, under Rebekah Cranes). One half of a symbolon; it completes in traversal.",
+  "symbolon": "<p>It <b>comments on</b> <a href=\"/rooms/sappho\">R:r.01 Sappho</a> &mdash; work. It is the current version of <a href=\"/works/0507\">v1.0, alexanarch #1270</a>, published under Rebekah Cranes; versions 2.3–2.9 are alexanarch #1774–#1784.</p>",
+  "relations": [["supersedes", "/works/0507", "v1.0 · alexanarch #1270 (Rebekah Cranes)"], ["comments_on", "/rooms/sappho", "R:r.01 The Sappho Room"], ["apparatus_pair", "/works/0054", "the v1.0 deposit metadata · #281"]],
+  "supersedes": {"hex": "0507", "deposit": 1270, "version": "v1.0"},
+  "superseded_note": "Versions 2.3–2.9 are alexanarch #1774–#1784; the version history is at the end of v3.1."}]
